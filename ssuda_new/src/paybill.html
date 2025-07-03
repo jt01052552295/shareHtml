@@ -1,0 +1,89 @@
+@@include('partials/html-start.html', { "title": "급여명세서 내역" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">급여명세서 내역</p>
+  </div>
+</header>
+<div class="contents pt-70 height-100">
+  <div class="paybill">
+    <div class="inner">
+      <ul class="tab_con two">
+        <a href="contract_list.html" class="list">
+          <span class="t1">근로계약서</span>
+        </a>
+        <a href="paybill.html" class="list active">
+          <span class="t1">급여명세서</span>
+        </a>
+      </ul>
+      <div class="page_tit header-b">
+        <p class="t1">
+          모든 직원의 급여명세서를
+          <br />
+          모아볼 수 있어요
+        </p>
+      </div>
+
+      <div class="caution_con">
+        <p class="t1 large-b">급여명세서 꼭 작성해주세요</p>
+        <p class="t2 small-r">
+          2021년부터 근로기준법 개정으로 인해, 급여명세서를 작성하지 않으면 과태료 부과 대상에 포함됩니다.
+        </p>
+      </div>
+
+      <ul class="list_con paybill_list">
+        <li class="list">
+          <a class="right_arr" href="paybill_detail.html">
+            <div class="name_con">
+              <p class="t1 medium-m">홍길동</p>
+              <p class="t2 small-l">전송일 24.10.17</p>
+            </div>
+            <div class="price_con">
+              <p class="t1 large-b">1,814,240 원</p>
+              <p class="t2 small-l">24.10.01(화) - 24.10.31(목)</p>
+            </div>
+          </a>
+        </li>
+        <li class="list">
+          <a class="right_arr" href="paybill_detail.html">
+            <div class="name_con">
+              <p class="t1 medium-m">홍길은</p>
+              <p class="t2 small-l">전송일 24.10.17</p>
+            </div>
+            <div class="price_con">
+              <p class="t1 large-b">1,814,240 원</p>
+              <p class="t2 small-l">24.10.01(화) - 24.10.31(목)</p>
+            </div>
+          </a>
+        </li>
+        <li class="list">
+          <a class="right_arr" href="paybill_detail.html">
+            <div class="name_con">
+              <p class="t1 medium-m">홍길금</p>
+              <p class="t2 small-l">전송일 24.10.17</p>
+            </div>
+            <div class="price_con">
+              <p class="t1 large-b">1,814,240 원</p>
+              <p class="t2 small-l">24.10.01(화) - 24.10.31(목)</p>
+            </div>
+          </a>
+        </li>
+        <li class="list">
+          <a class="right_arr" href="paybill_detail.html">
+            <div class="name_con">
+              <p class="t1 medium-m">홍길동</p>
+              <p class="t2 small-l">전송일 24.10.17</p>
+            </div>
+            <div class="price_con">
+              <p class="t1 large-b">1,814,240 원</p>
+              <p class="t2 small-l">24.10.01(화) - 24.10.31(목)</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+@@include('partials/html-end.html')

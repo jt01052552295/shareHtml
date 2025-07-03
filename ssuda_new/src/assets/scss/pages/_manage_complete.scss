@@ -1,0 +1,36 @@
+.manage_complete {
+    .input_group {
+        margin-top: 50px;
+        .address_con {
+            margin-top: 30px;
+            .address_detail {
+                margin-top: 15px;
+            }
+        }
+    }
+    .form-check {
+        margin-top: 15px;
+        .check_label {
+            color: var(--gray-500);
+        }
+    }
+
+    .signature {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+        background-color: var(--gray-300);
+        border-radius: 10px;
+        &::before {
+            content: "";
+            display: block;
+            padding-bottom: 50%;
+        }
+        .t1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: var(--gray-500);
+        }
+    }
+}

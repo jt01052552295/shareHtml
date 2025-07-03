@@ -1,0 +1,169 @@
+@@include('partials/html-start.html', { "title": "근무현황" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">근무현황</p>
+  </div>
+</header>
+<section class="contents pt-70 pb-100">
+  <div class="work_progress">
+    <div class="inner">
+      <div class="card_con date_select">
+        <div class="box">
+          <button class="btn left_arr"></button>
+          <p class="tit" data-bs-toggle="offcanvas" data-bs-target="#dateSelect" aria-controls="offcanvasBottom">
+            2025년 4월
+          </p>
+          <button class="btn right_arr"></button>
+        </div>
+      </div>
+
+      <div class="basic_work">
+        <div class="date medium-m">
+          <span class="week medium-b">월 · 수 · 금</span>
+          10:00-14:00
+        </div>
+        <div class="date medium-m">
+          <span class="week medium-b">화 · 목</span>
+          09:00-11:00
+        </div>
+      </div>
+
+      <div class="working_days">
+        <div class="sum_day">
+          <p class="t1 medium-m">근무일수</p>
+          <p class="t2 medium-b">20일 / 48시간</p>
+        </div>
+        <ul class="detail_day">
+          <li class="list">
+            <a class="link link_arr" href="javascript:void(0)">
+              <p class="t1 medium-m type1">정상</p>
+              <p class="t2 medium-b">30</p>
+            </a>
+          </li>
+          <li class="list">
+            <a class="link link_arr" href="javascript:void(0)">
+              <p class="t1 medium-m type2">결근</p>
+              <p class="t2 medium-b">2</p>
+            </a>
+          </li>
+          <li class="list">
+            <a class="link link_arr" href="javascript:void(0)">
+              <p class="t1 medium-m type3">
+                지각
+                <span class="time">-30분</span>
+              </p>
+              <p class="t2 medium-b">2</p>
+            </a>
+          </li>
+          <li class="list">
+            <a class="link link_arr" href="javascript:void(0)">
+              <p class="t1 medium-m type4">
+                조퇴
+                <span class="time">-50분</span>
+              </p>
+              <p class="t2 medium-b">1</p>
+            </a>
+          </li>
+          <li class="list">
+            <a class="link link_arr" href="javascript:void(0)">
+              <p class="t1 medium-m type5">
+                연장
+                <span class="time">+70분</span>
+              </p>
+              <p class="t2 medium-b">1</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="working_detail">
+        <div class="attendance-table">
+          <div class="header">
+            <div class="date medium-m">날짜</div>
+            <div class="time medium-m">시간</div>
+            <div class="status medium-m">상태</div>
+          </div>
+
+          <div class="list">
+            <div class="date medium-m">05.21 화</div>
+            <div class="time medium-m">09:00-18:00</div>
+            <div class="status medium-b green">정상</div>
+          </div>
+
+          <div class="list">
+            <div class="date medium-m">05.20 월</div>
+            <div class="time medium-m gray delete">09:00-18:00</div>
+            <div class="status medium-b red">결근</div>
+          </div>
+
+          <div class="list">
+            <div class="date medium-m">05.19 일</div>
+            <div class="time medium-m">09:15-18:00</div>
+            <div class="status medium-b orange">
+              지각
+              <span class="time-diff">-15분</span>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="date medium-m">05.18 토</div>
+            <div class="time medium-m">09:00-18:30</div>
+            <div class="status medium-b blue">
+              연장
+              <span class="time-diff">+30분</span>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="date medium-m">05.17 금</div>
+            <div class="time medium-m">09:00-18:00</div>
+            <div class="status medium-b gray">휴가</div>
+          </div>
+
+          <div class="list">
+            <div class="date medium-m">05.16 목</div>
+            <div class="time medium-m">09:00-17:50</div>
+            <div class="status medium-b gray">
+              조퇴
+              <span class="time-diff">-10분</span>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="date medium-m">05.15 수</div>
+            <div class="time medium-m">09:00-18:00</div>
+            <div class="status medium-b green">정상</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="offcanvas offcanvas-bottom dateSelect" tabindex="-1" id="dateSelect" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <div class="year_select">
+      <button class="btn left_arr"></button>
+      <p class="year_txt large-b">2025</p>
+      <button class="btn right_arr"></button>
+    </div>
+    <ul class="date_list">
+      <li class="list medium-l">1월</li>
+      <li class="list medium-l">2월</li>
+      <li class="list medium-l">3월</li>
+      <li class="list active medium-b">4월</li>
+      <li class="list medium-l">5월</li>
+      <li class="list medium-l">6월</li>
+      <li class="list medium-l">7월</li>
+      <li class="list medium-l">8월</li>
+      <li class="list medium-l disabled">9월</li>
+      <li class="list medium-l disabled">10월</li>
+      <li class="list medium-l disabled">11월</li>
+      <li class="list medium-l disabled">12월</li>
+    </ul>
+  </div>
+</div>
+@@include('partials/html-end.html')

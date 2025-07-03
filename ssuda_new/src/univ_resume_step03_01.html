@@ -1,0 +1,199 @@
+@@include('partials/html-start.html', { "title": "이력/경력 작성" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">이력/경력 작성</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="resume univ_resume_step03">
+    <div class="inner">
+      <div class="progress_container">
+        <div class="step-indicator" id="stepIndicator">1 / 6</div>
+        <div class="progress_bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <img src="./assets/images/img/img_pencil.png" class="character" id="character" />
+      </div>
+
+      <div class="resume_tit">
+        <p class="t1 header-b">
+          <span class="point">경력사항</span>
+          이 있나요?
+        </p>
+        <p class="t2 medium-m">경력은 최대 40개까지 추가 가능합니다.</p>
+        <p class="t2 medium-m">이력서에는 장단기순, 최근 근무일 순으로 보여집니다.</p>
+      </div>
+
+      <div class="btn_con two">
+        <button onclick="location.href=`univ_resume_step03.html`" class="btn btn-lg btn-outline-secondary">신입</button>
+        <button onclick="location.href=`univ_resume_step03_01.html`" class="btn btn-lg btn-outline-primary">
+          경력
+        </button>
+      </div>
+
+      <div class="career">
+        <div
+          class="btn btn-lg btn-outline-secondary career_add w-100"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#resumeModal"
+          aria-controls="offcanvasBottom"
+        >
+          ✍경력 직접 추가하기
+        </div>
+      </div>
+
+      <div class="career_list">
+        <p class="univ_title">나의 경력사항</p>
+        <ul class="list_con">
+          <li class="list">
+            <div class="name_con">
+              <p class="t1 large-b">{상호명}</p>
+              <div class="icon_con">
+                <a class="edit" href="javascript:void(0)">
+                  <img src="./assets/images/icon/ico_edit.png" alt="" />
+                </a>
+                <button class="btn delete">
+                  <img src="./assets/images/icon/ico_delete.png" alt="" />
+                </button>
+                <!-- <img class="shape" src="./assets/images/icon/ico_check01.png" alt=""> -->
+              </div>
+            </div>
+            <div class="work_period">
+              <p class="t1 medium-m">
+                2024.05 ~ 2024.06
+                <span class="point">(1개월)</span>
+              </p>
+            </div>
+            <div class="work">
+              <p class="t1 medium-m">매장관리</p>
+            </div>
+          </li>
+          <li class="list">
+            <div class="name_con">
+              <p class="t1 large-b">{상호명}</p>
+              <div class="icon_con">
+                <a class="edit" href="javascript:void(0)">
+                  <img src="./assets/images/icon/ico_edit.png" alt="" />
+                </a>
+                <button class="btn delete">
+                  <img src="./assets/images/icon/ico_delete.png" alt="" />
+                </button>
+                <!-- <img class="shape" src="./assets/images/icon/ico_cancel.png" alt=""> -->
+              </div>
+            </div>
+            <div class="work_period">
+              <p class="t1 medium-m">
+                2024.05 ~ 2025.06
+                <span class="point">(1년 1개월)</span>
+              </p>
+            </div>
+            <div class="work">
+              <p class="t1 medium-m">매장관리</p>
+            </div>
+            <div class="attach">
+              <div class="upload-box">
+                <p class="t1 small-m">4대보험 내역을 업로드해주세요.</p>
+
+                <label for="fileInput" class="custom-file-upload">
+                  <i class="fas fa-upload"></i>
+                  파일 선택
+                </label>
+                <input type="file" class="" id="fileInput" />
+
+                <div class="file-name" id="fileName">선택된 파일이 없습니다.</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- <button class="btn btn-lg btn-outline-secondary w-100 add_btn">추가하기</button> -->
+      </div>
+
+      <div class="fix_btn two">
+        <button class="btn btn-lg btn-outline-secondary" onclick="location.href=`univ_resume_step02.html`">이전</button>
+        <button class="btn btn-lg btn-primary" onclick="location.href=`univ_resume_step04.html`">다음</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- offcanvas -->
+<div
+  class="offcanvas offcanvas-bottom resumeModal"
+  tabindex="-1"
+  id="resumeModal"
+  aria-labelledby="offcanvasBottomLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">경력사항</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    <div class="member_input store_name mb-3">
+      <p class="form-label required">업체명</p>
+      <input type="email" class="form-control" placeholder="업체명을 입력해주세요" />
+    </div>
+    <div class="member_input duration mb-3">
+      <p class="form-label required">근무기간</p>
+      <div class="date_con">
+        <div class="date_input">
+          <input type="text" class="form-control" placeholder="입사날" />
+        </div>
+        <p>-</p>
+        <div class="date_input">
+          <input type="text" class="form-control" placeholder="퇴사날" />
+        </div>
+      </div>
+    </div>
+    <div class="member_input work mb-3">
+      <p class="form-label required">담당업무</p>
+      <textarea name="" id="" class="form-control"></textarea>
+    </div>
+    <div class="attach">
+      <div class="upload-box">
+        <p class="t1 small-m">4대보험 내역을 업로드해주세요.</p>
+
+        <label for="fileInput" class="custom-file-upload">
+          <i class="fas fa-upload"></i>
+          파일 선택
+        </label>
+        <input type="file" class="" id="fileInput" />
+
+        <div class="file-name" id="fileName">선택된 파일이 없습니다.</div>
+      </div>
+    </div>
+    <button class="btn btn-lg btn-primary w-100" readonly>등록</button>
+  </div>
+</div>
+<script>
+  let currentStep = 3;
+  const totalSteps = 4;
+
+  function updateProgress(step) {
+    const progress = (step / totalSteps) * 100;
+    document.getElementById('progressFill').style.width = progress + '%';
+
+    const progressBarWidth = document.querySelector('.progress_bar').offsetWidth;
+    const character = document.getElementById('character');
+    character.style.left = `calc(${progress}% - ${character.offsetWidth / 2}px)`;
+
+    document.getElementById('stepIndicator').innerText = `${step} / ${totalSteps}`;
+  }
+
+  // 초기 설정
+  updateProgress(currentStep);
+
+  // 첨부파일
+  const fileInput = document.getElementById('fileInput');
+  const fileName = document.getElementById('fileName');
+
+  fileInput.addEventListener('change', () => {
+    if (fileInput.files.length > 0) {
+      fileName.textContent = `📄 ${fileInput.files[0].name}`;
+    } else {
+      fileName.textContent = '선택된 파일이 없습니다.';
+    }
+  });
+</script>
+@@include('partials/html-end.html')

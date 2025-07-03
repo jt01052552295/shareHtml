@@ -1,0 +1,151 @@
+@@include('partials/html-start.html', { "title": "주휴수당" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">주휴수당</p>
+  </div>
+</header>
+<section class="contents pt-70 pb-100">
+  <div class="week_pay">
+    <div class="inner">
+      <p class="form-label">발생시간 (1주 기준)</p>
+      <div class="time_input">
+        <input
+          type="text"
+          class="form-control large-b"
+          value="33"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom"
+        />
+        <p class="t1 unit large-b">시간</p>
+      </div>
+
+      <div class="card_con">
+        <p class="form-label">기본 시급</p>
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input radio_type" type="radio" value="" id="flexCheckDefault" name="sort" />
+          <label class="form-check-label radio_label small-l" for="flexCheckDefault">한 주 평균 시급</label>
+        </div>
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input radio_type" type="radio" value="" id="flexCheckDefault1" name="sort" />
+          <label class="form-check-label radio_label small-l" for="flexCheckDefault1">기본 시급</label>
+        </div>
+      </div>
+      <div class="card_con">
+        <p class="form-label">근로 인정시간 (하루 기준)</p>
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input radio_type" type="radio" value="" id="flexCheckDefault2" name="sort1" />
+          <label class="form-check-label radio_label small-l" for="flexCheckDefault2">8시간 까지</label>
+        </div>
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input radio_type" type="radio" value="" id="flexCheckDefault3" name="sort1" />
+          <label class="form-check-label radio_label small-l" for="flexCheckDefault3">8시간 이상</label>
+        </div>
+      </div>
+      <div class="card_con">
+        <p class="form-label">야간, 연장, 특근, 주휴수당 포함</p>
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input radio_type" type="radio" value="" id="flexCheckDefault4" name="sort2" />
+          <label class="form-check-label radio_label small-l" for="flexCheckDefault4">제외하기</label>
+        </div>
+        <div class="form-check d-flex align-items-center">
+          <input class="form-check-input radio_type" type="radio" value="" id="flexCheckDefault5" name="sort2" />
+          <label class="form-check-label radio_label small-l" for="flexCheckDefault5">포함하기</label>
+        </div>
+      </div>
+
+      <p class="form-label">주휴수당 계산방법</p>
+      <div class="time_input down_arr">
+        <input
+          type="text"
+          class="form-control large-b"
+          value="월에 1일부터 계산"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#weekpayModal"
+          aria-controls="weekpayBottom"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="fix_btn one">
+    <button class="btn btn-primary btn-lg" onclick="location.href='work_place_register.html'">완료</button>
+  </div>
+</section>
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="keypad_con">
+    <div class="box">
+      <div class="keypad">
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">00</div>
+        <div class="key zero">0</div>
+        <div class="key backspace">⌫</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="offcanvas offcanvas-bottom weekpayModal"
+  tabindex="-1"
+  id="weekpayModal"
+  aria-labelledby="offcanvasBottomLabel"
+>
+  <div class="offcanvas-body small">
+    <p class="tit large-b">주휴수당 계산방법</p>
+    <ul class="select">
+      <li class="list">
+        <button class="btn btn-link active">
+          <p class="t1">월에 1일부터 계산</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">일요일부터 계산</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">월요일부터 계산</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">화요일부터 계산</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">수요일부터 계산</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">목요일부터 계산</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">금요일부터 계산</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">토요일부터 계산</p>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+@@include('partials/html-end.html')

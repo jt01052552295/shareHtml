@@ -1,0 +1,387 @@
+.resume {
+    .progress_container {
+        width: 100%;
+        position: relative;
+        .progress_bar {
+            background-color: #eee;
+            height: 10px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            .progress-fill {
+                background-color: var(--blue-200);
+                height: 100%;
+                width: 0%;
+                // transition: width 0.5s ease;
+            }
+        }
+        .character {
+            position: absolute;
+            top: 45%;
+            left: 0;
+            width: 25px;
+            // transition: left 0.5s ease;
+        }
+        .step-indicator {
+            text-align: right;
+            margin-top: 5px;
+            font: {
+                size: 14px;
+                weight: 700;
+            }
+            color: var(--blue-200);
+        }
+    }
+
+    .resume_tit {
+        margin-block: 50px 15px;
+        .point {
+            color: var(--blue-200);
+        }
+    }
+
+    &.resume_view {
+        .thumb_edit {
+            text-align: center;
+            .profile-upload {
+                margin-bottom: 15px;
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 1px solid var(--gray-200);
+                background-color: rgba($color: #000000, $alpha: 0.1);
+                overflow: hidden;
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 90%;
+                    height: 90%;
+                    object-fit: cover;
+                }
+            }
+
+            input[type="file"] {
+                display: none;
+            }
+
+            .txt_con {
+                padding-bottom: 30px;
+                border-bottom: 1px solid var(--gray-200);
+                .t1 {
+                    margin-bottom: 5px;
+                    font: {
+                        size: 14px;
+                        weight: 500;
+                    }
+                    color: var(--gray-500);
+                }
+                .name {
+                    font: {
+                        size: 18px;
+                        weight: 700;
+                    }
+                }
+            }
+        }
+        .info_list {
+            margin-top: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--gray-200);
+            .list {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .t1 {
+                    width: 100px;
+                    color: var(--gray-500);
+                }
+                .t2 {
+                    text-align: left;
+                    .safe_num {
+                        display: inline-block;
+                        margin-left: 5px;
+                        padding: 2px 5px;
+                        border: 1px solid var(--blue-200);
+                        border-radius: 5px;
+                        background-color: rgba($color: #3751ae, $alpha: 0.1);
+                        color: var(--blue-200);
+                    }
+                }
+            }
+        }
+
+        .tit_con {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .tit {
+            }
+            .box {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .t1 {
+                    color: var(--point-orange);
+                }
+                .edit_link {
+                    .img {
+                    }
+                }
+            }
+        }
+
+        .career {
+            padding-block: 30px;
+            border-bottom: 1px solid var(--gray-200);
+            .career_list {
+                .list {
+                    position: relative;
+                    left: 20px;
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        background-color: var(--point-orange);
+                        border-radius: 50%;
+                        top: 8px;
+                        left: -15px;
+                    }
+                    .date {
+                        color: var(--gray-500);
+                        .total {
+                            display: inline-block;
+                            margin-left: 5px;
+                            padding: 2px 5px;
+                            border: 1px solid var(--blue-200);
+                            border-radius: 5px;
+                            background-color: rgba($color: #3751ae, $alpha: 0.1);
+                            color: var(--blue-200);
+                        }
+                    }
+                    .store_name {
+                    }
+                    .work {
+                        color: var(--gray-500);
+                    }
+                }
+            }
+        }
+    }
+
+    &.univ_resume_step01 {
+        .big_txt {
+            margin-block: 30px;
+            text-align: center;
+            .t1 {
+                .name {
+                    color: var(--blue-200);
+                }
+            }
+        }
+
+        .thumb_edit {
+            text-align: center;
+            .profile-upload {
+                margin-bottom: 15px;
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 1px solid var(--gray-200);
+                background-color: rgba($color: #000000, $alpha: 0.1);
+                overflow: hidden;
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 90%;
+                    height: 90%;
+                    object-fit: cover;
+                }
+            }
+
+            input[type="file"] {
+                display: none;
+            }
+
+            .txt_con {
+                padding-bottom: 30px;
+                border-bottom: 1px solid var(--gray-200);
+                .t1 {
+                    margin-bottom: 5px;
+                    font: {
+                        size: 14px;
+                        weight: 500;
+                    }
+                    color: var(--gray-500);
+                }
+                .name {
+                    font: {
+                        size: 18px;
+                        weight: 700;
+                    }
+                }
+            }
+        }
+        .info_list {
+            margin-top: 30px;
+            .list {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                .t1 {
+                    width: 100px;
+                    color: var(--gray-500);
+                }
+                .t2 {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    &.univ_resume_step02 {
+        .graduation {
+            .btn {
+                text-align: left;
+                &.down_arr {
+                    &::after {
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.univ_resume_step03 {
+        .career {
+            margin-top: 15px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--gray-200);
+            .career_add {
+            }
+        }
+
+        .career_list {
+            margin-block: 30px 100px;
+            .list_con {
+                .list {
+                    padding-block: 15px;
+                    border-bottom: 1px solid var(--gray-200);
+                    .name_con {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .t1 {
+                        }
+                        .icon_con {
+                            .edit {
+                                img {
+                                    width: 15px;
+                                }
+                            }
+                            .delete {
+                                img {
+                                    width: 15px;
+                                }
+                            }
+                            .shape {
+                                width: 20px;
+                            }
+                        }
+                    }
+                    .work_period {
+                        .t1 {
+                            .point {
+                                color: var(--blue-200);
+                            }
+                        }
+                    }
+                    .work {
+                        .t1 {
+                            color: var(--gray-500);
+                        }
+                    }
+                }
+            }
+            .add_btn {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    &.univ_resume_step04 {
+        .intro {
+            .t1 {
+                text-align: right;
+                .point {
+                    color: var(--point-orange);
+                }
+            }
+            .area {
+                margin-top: 10px;
+                height: 350px;
+                padding: 10px;
+                resize: none;
+            }
+        }
+    }
+}
+
+.attach {
+    margin-block: 15px;
+    .upload-box {
+        transition: all 0.3s ease;
+        .t1 {
+            margin-bottom: 5px;
+            color: var(--gray-500);
+        }
+    }
+
+    /* 📁 버튼 스타일 */
+    .custom-file-upload {
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 22px;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 15px;
+        border: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition:
+            background-color 0.3s ease,
+            transform 0.2s ease;
+    }
+
+    .custom-file-upload i {
+        font-size: 18px;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .file-name {
+        display: none;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #333;
+    }
+}

@@ -1,0 +1,111 @@
+@@include('partials/html-start.html', { "title": "매장관리" })
+<div class="contents pt-70 bg-gray-100 pb-100">
+    <section class="manage_store">
+        <div class="inner">
+            <div class="page_tit header-b">
+                <p class="t1">매장</p>
+                <a href="manage_place_register.html" class="store_connect">
+                    <img src="./assets/images/img/img_store_connect.png" alt="">
+                </a>
+            </div>
+
+            <div class="card_con">
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="tit">출퇴근 관리</p>
+                    <a href="commute_edit.html" class="">
+                        <img src="./assets/images/icon/ico_setting.png" alt="">
+                    </a>
+                </div>
+
+                <div class="staff_con">
+                    <div class="box work">
+                        <a href="manage_commute_list.html">
+                            <p class="sum small-b right_arr"><span class="num header-b">3</span>명 근무중</p>
+                            <ul class="list">
+                                <li class="list medium-m">김지훈</li>
+                                <li class="list medium-m">이서연</li>
+                                <li class="list medium-m">박준영</li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="box_con d-flex justify-content-between align-items-start">
+                        <div class="box rest">
+                            <a href="manage_commute_list.html">
+                                <p class="sum small-b right_arr"><span class="num header-b">3</span>명 휴식중</p>
+                                <ul class="list">
+                                    <li class="list medium-m">최민서</li>
+                                    <li class="list medium-m">정하늘</li>
+                                    <li class="list medium-m">윤도현</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box off">
+                            <a href="manage_commute_list.html">
+                                <p class="sum small-b right_arr"><span class="num header-b">3</span>명 퇴근</p>
+                                <ul class="list">
+                                    <li class="list medium-m">장예진</li>
+                                    <li class="list medium-m">한승우</li>
+                                    <li class="list medium-m">배수아</li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_con">
+                <a href="manage_staff_list.html" class="right_arr">
+                    <p class="tit">직원 관리</p>
+                </a>
+
+                <ul class="staff_sum">
+                    <li class="list">
+                        <p class="t1 header-b">3</p>
+                        <p class="t2 small-m">현재 직원</p>
+                    </li>
+                    <li class="list">
+                        <p class="t1 header-b">0</p>
+                        <p class="t2 small-m">퇴사 직원</p>
+                    </li>
+                </ul>
+
+                <div class="btn_con two">
+                    <a href="manage_staff_add.html" class="btn btn-lg btn-light">추가하기</a>
+                    <a href="manage_connecting.html" class="btn btn-lg btn-primary">연결하기</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <nav class="ft_nav">
+        <div class="inner">
+            <ul class="link_con">
+                <li class="link">
+                    <a href="manage_index.html">
+                        <img class="menu_icon" src="./assets/images/icon/ico_menu_work.svg" alt="">
+                        <p>근무</p>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="manage_salary.html">
+                        <img class="menu_icon" src="./assets/images/icon/ico_menu_salary.svg" alt="">
+                        <p>급여</p>
+                    </a>
+                </li>
+                <li class="link active">
+                    <a href="manage_store.html">
+                        <img class="menu_icon" src="./assets/images/icon/ico_menu_store.svg" alt="">
+                        <p>매장</p>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="manage_mypage.html">
+                        <img class="menu_icon" src="./assets/images/icon/ico_menu_more.svg" alt="">
+                        <p>더보기</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+@@include('partials/html-end.html')

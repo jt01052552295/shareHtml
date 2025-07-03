@@ -1,0 +1,34 @@
+@@include('partials/html-start.html', { "title": "언어선택" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">언어설정</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="language">
+    <div class="inner">
+      <div class="option">
+        <button class="btn btn-link active">
+          <span class="check_img"></span>
+          <span class="fs-18 opt large-b">한국어</span>
+        </button>
+      </div>
+      <div class="option">
+        <button class="btn btn-link">
+          <span class="check_img"></span>
+          <span class="fs-18 opt large-b">영어</span>
+        </button>
+      </div>
+      <div class="option">
+        <button class="btn btn-link">
+          <span class="check_img"></span>
+          <span class="fs-18 opt large-b">베트남어</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

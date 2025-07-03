@@ -1,0 +1,76 @@
+.manage_category {
+    .caution {
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--gray-200);
+        .list {
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 22px;
+                height: 25px;
+                top: 0;
+                left: 0;
+                background: url("../images/icon/ico_caution.png") no-repeat center / cover;
+            }
+        }
+    }
+
+    .kind {
+        margin-top: 30px;
+        .list {
+            position: relative;
+            margin-bottom: 10px;
+            padding: 20px 15px;
+            border-radius: 10px;
+            background-color: var(--gray-100);
+            .link {
+                position: relative;
+                display: block;
+                padding-left: 45px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    background: url("../images/icon/ico_prev_black_18px.png") no-repeat center / cover;
+                }
+                &.docu01 {
+                    &::before {
+                        background: url("../images/icon/ico_docu01.png") no-repeat center / cover;
+                    }
+                }
+                &.docu02 {
+                    &::before {
+                        background: url("../images/icon/ico_docu02.png") no-repeat center / cover;
+                    }
+                }
+                .t1 {
+                }
+                .t2 {
+                }
+            }
+        }
+    }
+}

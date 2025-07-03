@@ -1,0 +1,140 @@
+@@include('partials/html-start.html', { "title": "근로계약서" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">근로계약서</p>
+  </div>
+</header>
+<section class="contents pt-70 height-100 bg-gray-100">
+  <section class="contract_detail">
+    <div class="inner">
+      <p class="header-b manage_title">
+        {업체명}
+        <br />
+        근로계약서
+      </p>
+      <p class="medium-m add_txt">
+        {업체명}과(와) {이름}는(은)
+        <br />
+        다음과 같이 근로 계약을 체결한다.
+      </p>
+
+      <div class="card_con">
+        <div class="contract_card">
+          <p class="tit">업무</p>
+          <ul class="summary">
+            <li class="list">
+              <p class="t1 medium-l">계약 기간</p>
+              <p class="t2 medium-l">25.01.01~26.01.30</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-l">업무 내용</p>
+              <p class="t2 medium-l">서류</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-l">근무 장소</p>
+              <p class="t2 medium-l">부산 남구 문현금융로 40</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card_con">
+        <div class="contract_card">
+          <p class="tit">월, 화, 수, 목, 금</p>
+          <ul class="summary">
+            <li class="list">
+              <p class="t1 medium-l">소정 근로시간</p>
+              <p class="t2 medium-l">8시간</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-l">근무시간</p>
+              <p class="t2 medium-l">09:00 ~ 18:00</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-l">휴게시간</p>
+              <p class="t2 medium-l">12:00 ~ 13:00</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card_con contract_card">
+        <div class="contract_card">
+          <p class="tit">임금</p>
+          <ul class="summary">
+            <li class="list">
+              <p class="t1 medium-l">시급</p>
+              <p class="t2 medium-l">10,030 원</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-l">식비</p>
+              <p class="t2 medium-l">10,000 원</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-l">기타</p>
+              <p class="t2 medium-l">10,000 원</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-l">지급일</p>
+              <p class="t2 medium-l">매 월 10일</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-l">연차유급휴가</p>
+              <p class="t2 medium-l">근로기준법 정하는 바에 따라 부여함</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-l">사회보험</p>
+              <p class="t2 medium-l">국민연금, 건강보험,고용보험, 산재보험</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card_con">
+        <div class="contract_card">
+          <p class="tit">서명</p>
+          <ul class="summary">
+            <li class="list">
+              <p class="t1 medium-l">사업자명</p>
+              <p class="t2 medium-l">{업체명}</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-l">주소</p>
+              <p class="t2 medium-l">부산 남구 문현금융로 40</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-l">대표자</p>
+              <p class="t2 medium-l">{대표자명}</p>
+            </li>
+          </ul>
+          <div class="signature"></div>
+
+          <div class="worker">
+            <ul class="summary">
+              <li class="list">
+                <p class="t1 medium-l">주소</p>
+                <p class="t2 medium-l">부산 남구 문현금융로 1</p>
+              </li>
+              <li class="list">
+                <p class="t1 medium-l">근로자명</p>
+                <p class="t2 medium-l">{근로자명}</p>
+              </li>
+            </ul>
+            <div class="signature"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card_con">
+        <div class="contract_con">
+          <p class="t1 small-m">계약 일자</p>
+          <p class="contract_date large-b">2025년 1월 6일</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+@@include('partials/html-end.html')

@@ -1,0 +1,450 @@
+@@include('partials/html-start.html', { "title": "메인" })
+
+<header class="header_menu main">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="date_select btn down_arr" data-bs-toggle="offcanvas" data-bs-target="#dateSelect"
+      aria-controls="offcanvasBottom">
+      <span class="t1 large-b">2025년 4월</span>
+    </button>
+    <div class="btn_link d-flex align-items-center">
+      <!-- <button class="btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button> -->
+      <button class="btn alarmModal active" data-bs-toggle="offcanvas" data-bs-target="#alarmModal"
+        aria-controls="offcanvasTop">
+        <i class="fa-regular fa-bell"></i>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="offcanvas offcanvas-top alarmModal" tabindex="-1" id="alarmModal" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title large-b" id="offcanvasTopLabel">알람</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <button class="btn filter_btn">
+      <img src="./assets/images/icon/ico_filter.png" alt="" />
+    </button>
+    <div class="input_filter">
+      <div class="period">
+        <p class="form-label">기간</p>
+        <div class="input_con">
+          <button class="btn date_select" data-bs-toggle="modal" data-bs-target="#periodModal">
+            <span class="t1 small-m">선택</span>
+          </button>
+          <input type="text" class="form-control" value="2025.04.28 - 2025.05.28" />
+        </div>
+      </div>
+
+      <div class="division">
+        <p class="form-label">구분</p>
+        <input type="text" class="form-control" placeholder="전체" data-bs-toggle="modal"
+          data-bs-target="#divisionModal" />
+      </div>
+
+      <div class="status">
+        <p class="form-label">읽음상태</p>
+        <input type="text" class="form-control" placeholder="전체" data-bs-toggle="modal" data-bs-target="#statusModal" />
+      </div>
+
+      <div class="btn_con two">
+        <button class="btn btn-lg btn-secondary">초기화</button>
+        <button class="btn btn-lg btn-primary">검색하기</button>
+      </div>
+    </div>
+
+    <div class="tab_filter">
+      <ul class="list_con">
+        <li class="list active">
+          <a class="medium-m" href="javascript:void(0)">전체</a>
+        </li>
+        <li class="list">
+          <a class="medium-m" href="javascript:void(0)">회원</a>
+        </li>
+        <li class="list">
+          <a class="medium-m" href="javascript:void(0)">결제</a>
+        </li>
+        <li class="list">
+          <a class="medium-m" href="javascript:void(0)">서명</a>
+        </li>
+        <li class="list">
+          <a class="medium-m" href="javascript:void(0)">문서함</a>
+        </li>
+        <li class="list">
+          <a class="medium-m" href="javascript:void(0)">근무</a>
+        </li>
+        <li class="list">
+          <a class="medium-m" href="javascript:void(0)">급여</a>
+        </li>
+        <li class="list">
+          <a class="medium-m" href="javascript:void(0)">시스템</a>
+        </li>
+        <li class="list">
+          <a class="medium-m" href="javascript:void(0)">프로모션</a>
+        </li>
+        <li class="list">
+          <a class="medium-m" href="javascript:void(0)">리마인더</a>
+        </li>
+        <li class="list">
+          <a class="medium-m" href="javascript:void(0)">보안</a>
+        </li>
+        <li class="list">
+          <a class="medium-m" href="javascript:void(0)">기타</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="alram_con">
+      <div class="inner">
+        <ul class="list_con">
+          <li class="list">
+            <div class="tit_con d-flex align-items-center justify-content-between">
+              <p class="division large-b">[리마인더]</p>
+              <p class="date small-m">04.27</p>
+            </div>
+            <div class="txt_con">
+              <p class="t1 medium-b">금일(04.27) 출근시간 10분전 입니다.</p>
+              <p class="t2 medium-l">09:00 전까지 출근이 완료되어야합니다. 출근버튼을 꼭 눌러주세요!</p>
+            </div>
+          </li>
+          <li class="list">
+            <div class="tit_con d-flex align-items-center justify-content-between">
+              <p class="division large-b">[리마인더]</p>
+              <p class="date small-m">04.27</p>
+            </div>
+            <div class="txt_con">
+              <p class="t1 medium-b">금일(04.27) 출근시간 10분전 입니다.</p>
+              <p class="t2 medium-l">09:00 전까지 출근이 완료되어야합니다. 출근버튼을 꼭 눌러주세요!</p>
+            </div>
+          </li>
+          <li class="list">
+            <div class="tit_con d-flex align-items-center justify-content-between">
+              <p class="division large-b">[리마인더]</p>
+              <p class="date small-m">04.27</p>
+            </div>
+            <div class="txt_con">
+              <p class="t1 medium-b">금일(04.27) 출근시간 10분전 입니다.</p>
+              <p class="t2 medium-l">09:00 전까지 출근이 완료되어야합니다. 출근버튼을 꼭 눌러주세요!</p>
+            </div>
+          </li>
+          <li class="list">
+            <div class="tit_con d-flex align-items-center justify-content-between">
+              <p class="division large-b">[리마인더]</p>
+              <p class="date small-m">04.27</p>
+            </div>
+            <div class="txt_con">
+              <p class="t1 medium-b">금일(04.27) 출근시간 10분전 입니다.</p>
+              <p class="t2 medium-l">09:00 전까지 출근이 완료되어야합니다. 출근버튼을 꼭 눌러주세요!</p>
+            </div>
+          </li>
+          <li class="list">
+            <div class="tit_con d-flex align-items-center justify-content-between">
+              <p class="division large-b">[리마인더]</p>
+              <p class="date small-m">04.27</p>
+            </div>
+            <div class="txt_con">
+              <p class="t1 medium-b">금일(04.27) 출근시간 10분전 입니다.</p>
+              <p class="t2 medium-l">09:00 전까지 출근이 완료되어야합니다. 출근버튼을 꼭 눌러주세요!</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="contents">
+  <div class="index">
+    <div class="inner">
+      <div class="calendarBox">
+        <div id="month"></div>
+        <div id="calendar"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="ft_nav">
+  <div class="inner">
+    <ul class="link_con">
+      <li class="link active">
+        <a href="index.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_work.svg" alt="" />
+          <p>근무</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="salary.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_salary.svg" alt="" />
+          <p>급여</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="connection.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_connection.svg" alt="" />
+          <p>연결</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="mypage.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_more.svg" alt="" />
+          <p>더보기</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="modal fade periodModal" id="periodModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">기간선택</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <button class="btn btn-lg btn-outline-primary w-100 medium-m">받은 날짜</button>
+        <button class="btn btn-lg btn-outline-primary w-100 medium-m">읽은 날짜</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade divisionModal" id="divisionModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">구분선택</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <button class="btn btn-outline-primary medium-m">전체</button>
+        <button class="btn btn-outline-primary medium-m">회원</button>
+        <button class="btn btn-outline-primary medium-m">결제</button>
+        <button class="btn btn-outline-primary medium-m">서명</button>
+        <button class="btn btn-outline-primary medium-m">문서함</button>
+        <button class="btn btn-outline-primary medium-m">근무</button>
+        <button class="btn btn-outline-primary medium-m">급여</button>
+        <button class="btn btn-outline-primary medium-m">시스템</button>
+        <button class="btn btn-outline-primary medium-m">프로모션</button>
+        <button class="btn btn-outline-primary medium-m">리마인더</button>
+        <button class="btn btn-outline-primary medium-m">보안</button>
+        <button class="btn btn-outline-primary medium-m">기타</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade statusModal" id="statusModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">기간선택</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <button class="btn btn-lg btn-outline-primary w-100 medium-m">읽음</button>
+        <button class="btn btn-lg btn-outline-primary w-100 medium-m">안읽음</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-bottom dateSelect" tabindex="-1" id="dateSelect" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <div class="year_select">
+      <button class="btn left_arr"></button>
+      <p class="year_txt large-b">2025</p>
+      <button class="btn right_arr"></button>
+    </div>
+    <ul class="date_list">
+      <li class="list medium-l">1월</li>
+      <li class="list medium-l">2월</li>
+      <li class="list medium-l">3월</li>
+      <li class="list active medium-b">4월</li>
+      <li class="list medium-l">5월</li>
+      <li class="list medium-l">6월</li>
+      <li class="list medium-l">7월</li>
+      <li class="list medium-l">8월</li>
+      <li class="list medium-l disabled">9월</li>
+      <li class="list medium-l disabled">10월</li>
+      <li class="list medium-l disabled">11월</li>
+      <li class="list medium-l disabled">12월</li>
+    </ul>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-bottom schduleModal" tabindex="-1" id="schduleModal"
+  aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <button class="btn left_arr"></button>
+    <p class="large-b" id="exampleModalLabel">2024년 10월 17일 목요일</p>
+    <button class="btn right_arr"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="salary_info">
+      <p class="price fw-bold">19,720 원</p>
+      <div class="time">
+        <p class="small-l">0일 2시간</p>
+      </div>
+    </div>
+    <ul class="depth1">
+      <li class="list">
+        <a href="part_time_detail.html">
+          <div class="d-flex justify-content-between">
+            <p class="medium-b">딥브레인</p>
+            <p class="medium-b">9,860원</p>
+          </div>
+          <ul class="depth2">
+            <li class="calculate">
+              <div class="box d-flex justify-content-between">
+                <p class="t1">16:58 - 17:58</p>
+                <div class="time">
+                  <p>1시간</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </a>
+      </li>
+      <li class="list">
+        <a href="part_time_detail.html">
+          <div class="d-flex justify-content-between">
+            <p class="medium-b">딥브레인</p>
+            <p class="medium-b">9,860원</p>
+          </div>
+          <ul class="depth2">
+            <li class="calculate">
+              <div class="box d-flex justify-content-between">
+                <p class="t1">16:58 - 17:58</p>
+                <div class="time">
+                  <p>1시간</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  //이번 달 구하기
+  month = document.getElementById('month');
+
+  function printMonth() {
+    // 현재 날짜를 나타내는 Date 객체 생성
+    var currentDate = new Date();
+
+    // 현재 월을 가져옴
+    var currentMonth = currentDate.getMonth();
+
+    //영어로 바꾸기
+    var monthNames = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December'
+    ];
+
+    var currentMonthName = monthNames[currentMonth];
+
+    month.innerHTML = '<h2>' + currentMonthName + '</h2>';
+  }
+
+  //이번 달 달력 그리기
+  calendar_box = document.getElementById('calendar');
+
+  function printCalendar(y, m) {
+    //① 현재 날짜와 현재 달에 1일의 날짜 객체를 생성합니다.
+    var date = new Date(); //날짜 객체 생성
+    var nowY = date.getFullYear(); //현재 연도
+    var nowM = date.getMonth(); //현재 월
+    var nowD = date.getDate(); //현재 일
+
+    y = y != undefined ? y : nowY;
+    m = m != undefined ? m - 1 : nowM;
+
+    /* 현재 월의 1일에 요일을 구합니다. 
+            그럼 그달 달력에 첫 번째 줄 빈칸의 개수를 구할 수 있습니다.*/
+    var theDate = new Date(y, m, 1);
+    var theDay = theDate.getDay();
+
+    //② 현재 월에 마지막 일을 구해야 합니다.
+
+    //1월부터 12월까지 마지막 일을 배열로 저장함.
+    var last = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    /*현재 연도가 윤년(4년 주기이고 100년 주기는 제외합니다. 
+        또는 400년 주기)일경우 2월에 마지막 날짜는 29가 되어야 합니다.*/
+    if ((y % 4 == 0 && y % 100 != 0) || y % 400 == 0) lastDate = last[1] = 29;
+
+    var lastDate = last[m]; //현재 월에 마지막이 몇일인지 구합니다.
+
+    //③ 현재 월의 달력에 필요한 행의 개수를 구합니다.
+    var row = Math.ceil((theDay + lastDate) / 7); //필요한 행수
+
+    //④ 달력 년도/월 표기 및  달력 테이블 생성
+    calendar_box.innerHTML = '<h2>' + y + '.' + (m + 1) + '</h2>';
+
+    //문자결합 연산자를 사용해 요일이 나오는 행을 생성
+    var calendar = "<table border='1'>";
+    calendar += '<tr>';
+    calendar += '<th>월</th>';
+    calendar += '<th>화</th>';
+    calendar += '<th>수</th>';
+    calendar += '<th>목</th>';
+    calendar += '<th>금</th>';
+    calendar += '<th>토</th>';
+    calendar += '<th>일</th>';
+    calendar += '</tr>';
+
+    console.log(nowD);
+
+    var dNum = 1;
+    //이중 for문을 이용해 달력 테이블을 생성
+    for (var i = 1; i <= row; i++) {
+      //행 생성 (tr 태그 생성)
+      calendar += '<tr>';
+
+      for (var k = 1; k <= 7; k++) {
+        //열 생성 (td 태그 생성)
+        /*행이 첫 줄이고 현재 월의 1일의 요일 이전은 모두 빈열로
+                표기하고 날짜가 마지막 일보다 크면 빈열로 표기됩니다.*/
+        if ((i == 1 && k < theDay) || dNum > lastDate) {
+          calendar += '<td> &nbsp; </td>';
+        } else {
+          // 오늘 날짜에 대한 스타일 적용
+          if (dNum === nowD) {
+            calendar += "<td id='today'>" + dNum + '</td>';
+          } else {
+            calendar +=
+              '<td>' +
+              `<p class="small-b">${dNum}</p>` +
+              `<button class="btn schdule" data-bs-toggle="offcanvas" data-bs-target="#schduleModal"
+                aria-controls="offcanvasBottom"><span class="pay">9,860원</span><span class="store_name">딥브레인</span></button>` +
+              '</td>';
+          }
+          dNum++;
+        }
+      }
+      calendar += '<tr>';
+    }
+
+    //⑤ 문자로 결합된 달력 테이블을 문서에 출력
+    calendar_box.innerHTML = calendar;
+  }
+
+  //함수 실행
+  printMonth();
+  printCalendar();
+</script>
+
+@@include('partials/html-end.html')

@@ -1,0 +1,34 @@
+.tab_con {
+    display: flex;
+    .list {
+        border-bottom: 1px solid var(--gray-200);
+        padding: 10px 5px;
+        text-align: center;
+        cursor: pointer;
+        .t1 {
+            color: var(--gray-500);
+        }
+        &.active {
+            border-bottom: 2px solid var(--blue-200);
+            .t1 {
+                font-weight: 700;
+                color: var(--blue-200);
+            }
+        }
+    }
+    &.two {
+        .list {
+            width: calc(100% / 2);
+        }
+    }
+    &.three {
+        .list {
+            width: calc(100% / 3);
+        }
+    }
+    &.four {
+        .list {
+            width: calc(100% / 4);
+        }
+    }
+}

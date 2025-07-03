@@ -1,0 +1,22 @@
+<svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" width="27.34" height="28.4" viewBox="0 0 27.34 28.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #191919;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>대지 1 사본 2</title>
+  <g>
+    <g>
+      <path class="cls-1" d="M10.56,17.31a9.14,9.14,0,1,1,12.93,0A9.13,9.13,0,0,1,10.56,17.31Z"/>
+      <path class="cls-1" d="M10.56,17.31a9.14,9.14,0,1,1,12.93,0A9.13,9.13,0,0,1,10.56,17.31Z"/>
+      <path class="cls-1" d="M17,5.92A4.92,4.92,0,0,1,22,10.85"/>
+    </g>
+    <line class="cls-1" x1="10.01" y1="17.86" x2="1.17" y2="26.7"/>
+  </g>
+</svg>

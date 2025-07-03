@@ -1,0 +1,259 @@
+@@include('partials/html-start.html', { "title": "출퇴근 내역" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">출퇴근 내역</p>
+  </div>
+</header>
+<div class="contents pt-70">
+  <div class="manage_commute_list">
+    <div class="date_select">
+      <div class="inner">
+        <button
+          class="btn large-b down_arr"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#dateSelect"
+          aria-controls="offcanvasBottom"
+        >
+          2024년 10월
+        </button>
+        <ul class="week">
+          <li class="list">
+            <p class="t1">월</p>
+          </li>
+          <li class="list">
+            <p class="t1">화</p>
+          </li>
+          <li class="list">
+            <p class="t1">수</p>
+          </li>
+          <li class="list">
+            <p class="t1">목</p>
+          </li>
+          <li class="list">
+            <p class="t1">금</p>
+          </li>
+          <li class="list">
+            <p class="t1">토</p>
+          </li>
+          <li class="list">
+            <p class="t1">일</p>
+          </li>
+        </ul>
+        <ul class="day">
+          <li class="list one">
+            <p class="t1">1</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">2</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list active two">
+            <p class="t1">3</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">4</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">5</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">6</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list one">
+            <p class="t1">7</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">8</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">9</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">10</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">11</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">12</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">13</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">14</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">15</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">16</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">17</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1">18</p>
+            <div class="point">
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="work_condition">
+          <li class="list active">
+            <button class="btn option small-m">전체</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-m">근무 중</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-m">휴식 중</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-m">퇴근</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="inner">
+      <ul class="staff_list">
+        <li class="list">
+          <a href="manage_commute_detail.html">
+            <div class="box d-flex justify-content-between align-items-center">
+              <p class="name medium-m">{직원명}</p>
+              <div class="condition on">
+                <p class="t1 small-l">근무 중</p>
+              </div>
+            </div>
+            <div class="box time_con right_arr">
+              <p class="time large-b">09:00 -</p>
+            </div>
+          </a>
+        </li>
+        <li class="list">
+          <a href="manage_commute_detail.html">
+            <div class="box d-flex justify-content-between align-items-center">
+              <p class="name medium-m">{직원명}</p>
+              <div class="condition off">
+                <p class="t1 small-l">퇴근</p>
+              </div>
+            </div>
+            <div class="box time_con right_arr">
+              <p class="time large-b">09:00 - 18:00</p>
+            </div>
+          </a>
+        </li>
+        <li class="list">
+          <a href="manage_commute_detail.html">
+            <div class="box d-flex justify-content-between align-items-center">
+              <p class="name medium-m">{직원명}</p>
+              <div class="condition rest">
+                <p class="t1 small-l">휴식 중</p>
+              </div>
+            </div>
+            <div class="box time_con right_arr">
+              <p class="time large-b">09:00 -</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-bottom dateSelect" tabindex="-1" id="dateSelect" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <div class="year_select">
+      <button class="btn left_arr"></button>
+      <p class="year_txt large-b">2025</p>
+      <button class="btn right_arr"></button>
+    </div>
+    <ul class="date_list">
+      <li class="list medium-l">1월</li>
+      <li class="list medium-l">2월</li>
+      <li class="list medium-l">3월</li>
+      <li class="list active medium-b">4월</li>
+      <li class="list medium-l">5월</li>
+      <li class="list medium-l">6월</li>
+      <li class="list medium-l">7월</li>
+      <li class="list medium-l">8월</li>
+      <li class="list medium-l disabled">9월</li>
+      <li class="list medium-l disabled">10월</li>
+      <li class="list medium-l disabled">11월</li>
+      <li class="list medium-l disabled">12월</li>
+    </ul>
+  </div>
+</div>
+@@include('partials/html-end.html')

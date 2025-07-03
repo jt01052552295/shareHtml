@@ -1,0 +1,63 @@
+.manage_subscribe {
+    .tab_con {
+        margin-bottom: 15px;
+    }
+
+    .card_list {
+        .sub_tit {
+            color: var(--gray-500);
+        }
+        .tit {
+        }
+        .price_txt {
+            margin-top: 15px;
+            .price {
+                font: {
+                    size: 36px;
+                    weight: 700;
+                }
+            }
+            .months {
+            }
+        }
+        .promotion {
+            margin-top: 50px;
+            .list_con {
+                .list {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    .name {
+                    }
+                    .price {
+                    }
+                    .t1 {
+                        color: var(--gray-500);
+                    }
+                    .t2 {
+                        color: var(--gray-500);
+                    }
+                }
+            }
+
+            .total {
+                margin-top: 15px;
+                padding-top: 15px;
+                border-top: 1px dotted var(--gray-500);
+                .list {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .name {
+                    }
+                    .price {
+                    }
+                }
+            }
+        }
+        .btn_con {
+            margin-top: 30px;
+        }
+    }
+}

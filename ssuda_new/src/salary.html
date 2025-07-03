@@ -1,0 +1,181 @@
+@@include('partials/html-start.html', { "title": "급여관리" })
+<section class="contents bg-gray-100 pt-70 pb-100">
+  <div class="salary">
+    <div class="inner">
+      <div class="card_con">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="tit">4월 총 급여</p>
+          <div class="link_btn bg-gray-100">
+            <a href="./salary_list.html">
+              <p>내역</p>
+            </a>
+          </div>
+        </div>
+        <p class="salary_sum header-b">1,846,330원</p>
+      </div>
+      <div class="d-flex card_two">
+        <div class="card_con statistics img_card">
+          <a href="analyze.html">
+            <p class="tit link_arr">통계</p>
+            <p class="small-m">3월 같은 날 대비</p>
+            <p class="small-m price">+637,810원</p>
+          </a>
+          <img class="icon" src="./assets/images/img/img_statistics.svg" alt="" />
+        </div>
+        <div class="card_con goal img_card">
+          <a href="work_progress.html">
+            <p class="tit link_arr">근무현황</p>
+            <p class="small-m">근무일수</p>
+            <p class="small-m price">
+              20일 / 48시간
+            </p>
+          </a>
+          <img class="icon" src="./assets/images/img/img_goal.svg" alt="" />
+        </div>
+      </div>
+      <!-- offcanvas -->
+      <div class="card_con work salary_card">
+        <div class="d-flex justify-content-between align-items-center mb-20">
+          <p class="tit">근무지</p>
+          <button class="btn link_btn bg-gray-100 small-l" data-bs-toggle="offcanvas" data-bs-target="#exportModal"
+            aria-controls="offcanvasBottom">
+            <span>전송</span>
+          </button>
+        </div>
+
+        <div class="work_name link_arr">
+          <a href="salary_detail.html">
+            <div class="d-flex justify-content-between align-items-center mb-10">
+              <p class="name small-m">{work_name}</p>
+              <p class="price small-b">0원</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="d_day small-m">D-DAY</p>
+              <p class="date small-m">03.01~03.31</p>
+            </div>
+          </a>
+        </div>
+        <div class="btn_con two">
+          <button class="btn btn-lg bg-gray-200" onclick="location.href=`work_place_register.html`">
+            추가하기
+          </button>
+          <button class="btn btn-lg bg-gray-200" onclick="location.href=`mobile_connecting_step01.html`">
+            연결하기
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<nav class="ft_nav">
+  <div class="inner">
+    <ul class="link_con">
+      <li class="link">
+        <a href="index.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_work.svg" alt="" />
+          <p>근무</p>
+        </a>
+      </li>
+      <li class="link active">
+        <a href="salary.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_salary.svg" alt="" />
+          <p>급여</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="connection.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_connection.svg" alt="" />
+          <p>연결</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="mypage.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_more.svg" alt="" />
+          <p>더보기</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-bottom exportModal" tabindex="-1" id="exportModal"
+  aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <ul class="nav nav-tabs two" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true">
+          링크 내보내기
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+          엑셀 내보내기
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="method">
+          <p class="form-label">내보내기 방법</p>
+          <div class="btn_box">
+            <button class="btn method_btn active">급여 포함</button>
+            <button class="btn method_btn">근무 내역</button>
+          </div>
+        </div>
+        <div class="place">
+          <div class="form-check d-flex align-items-center">
+            <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault" name="sort" />
+            <label class="form-check-label check_label large-l" for="flexCheckDefault">
+              {사업자 명}
+            </label>
+          </div>
+          <p class="price large-b">810,985 원</p>
+        </div>
+        <div class="place">
+          <div class="form-check d-flex align-items-center">
+            <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault" name="sort" />
+            <label class="form-check-label check_label large-l" for="flexCheckDefault">
+              {사업자 명}
+            </label>
+          </div>
+          <p class="price large-b">810,985 원</p>
+        </div>
+        <div class="btn_con">
+          <button class="btn btn-primary btn-lg w-100">내보내기</button>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="method">
+          <p class="form-label">내보내기 방법</p>
+          <div class="btn_box">
+            <button class="btn method_btn active">급여 내역</button>
+            <button class="btn method_btn">근무 내역</button>
+          </div>
+        </div>
+        <div class="place">
+          <div class="form-check d-flex align-items-center">
+            <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault" name="sort" />
+            <label class="form-check-label check_label large-l" for="flexCheckDefault">
+              {사업자 명}
+            </label>
+          </div>
+          <p class="price large-b">810,985 원</p>
+        </div>
+        <div class="place">
+          <div class="form-check d-flex align-items-center">
+            <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault" name="sort" />
+            <label class="form-check-label check_label large-l" for="flexCheckDefault">
+              {사업자 명}
+            </label>
+          </div>
+          <p class="price large-b">810,985 원</p>
+        </div>
+        <div class="btn_con">
+          <button class="btn btn-primary btn-lg w-100">내보내기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('partials/html-end.html')

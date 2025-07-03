@@ -1,0 +1,113 @@
+@@include('partials/html-start.html', { "title": "이력/경력 작성" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">이력/경력 작성</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="resume univ_resume_step02">
+    <div class="inner">
+      <div class="progress_container">
+        <div class="step-indicator" id="stepIndicator">1 / 6</div>
+        <div class="progress_bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <img src="./assets/images/img/img_pencil.png" class="character" id="character" />
+      </div>
+
+      <div class="resume_tit">
+        <p class="t1 header-b">
+          <span class="point">학력정보</span>
+          를 입력해주세요
+        </p>
+      </div>
+
+      <div class="member_input univ_name mb-3">
+        <p class="form-label required">대학명</p>
+        <input type="email" class="form-control" placeholder="예) 부산대학교" />
+      </div>
+
+      <div class="member_input major mb-3">
+        <p class="form-label">전공</p>
+        <input type="email" class="form-control" placeholder="예) 전기공학과" />
+      </div>
+
+      <div class="member_input degree mb-3">
+        <p class="form-label">학년</p>
+        <input type="email" class="form-control" placeholder="예) 3학년" />
+      </div>
+
+      <div class="member_input graduation mb-3">
+        <p class="form-label">상태</p>
+        <div class="btn_con one">
+          <button
+            class="btn btn-lg btn-outline-secondary down_arr"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBottom"
+            aria-controls="offcanvasBottom"
+          >
+            상태
+          </button>
+        </div>
+      </div>
+
+      <div class="fix_btn two">
+        <button class="btn btn-lg btn-outline-secondary" onclick="location.href=`univ_resume_step01.html`">이전</button>
+        <button class="btn btn-lg btn-primary" onclick="location.href=`univ_resume_step03.html`">다음</button>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-body small">
+      <ul class="select">
+        <li class="list">
+          <button class="btn btn-link active">
+            <p class="t1">졸업</p>
+          </button>
+        </li>
+        <li class="list">
+          <button class="btn btn-link">
+            <p class="t1">재학</p>
+          </button>
+        </li>
+        <li class="list">
+          <button class="btn btn-link">
+            <p class="t1">휴학</p>
+          </button>
+        </li>
+        <li class="list">
+          <button class="btn btn-link">
+            <p class="t1">자퇴</p>
+          </button>
+        </li>
+        <li class="list">
+          <button class="btn btn-link">
+            <p class="t1">중퇴</p>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<script>
+  let currentStep = 2;
+  const totalSteps = 4;
+
+  function updateProgress(step) {
+    const progress = (step / totalSteps) * 100;
+    document.getElementById('progressFill').style.width = progress + '%';
+
+    const progressBarWidth = document.querySelector('.progress_bar').offsetWidth;
+    const character = document.getElementById('character');
+    character.style.left = `calc(${progress}% - ${character.offsetWidth / 2}px)`;
+
+    document.getElementById('stepIndicator').innerText = `${step} / ${totalSteps}`;
+  }
+
+  // 초기 설정
+  updateProgress(currentStep);
+</script>
+@@include('partials/html-end.html')

@@ -1,0 +1,371 @@
+@@include('partials/html-start.html', { "title": "근로계약서 작성" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <button class="btn large-b">종료하기</button>
+  </div>
+</header>
+<div class="contents pt-70">
+  <section class="manage_workdate">
+    <div class="inner">
+      <p class="header-b manage_title">
+        <b class="point">근무하는 날짜를</b>
+        입력해주세요.
+      </p>
+      <ul class="nav nav-tabs two" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link large-m active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            일수
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link large-m"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            요일
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <div class="date_con">
+            <div class="work_date">
+              <p class="form-label">근무요일</p>
+              <ul class="date_con">
+                <li class="list active">
+                  <p class="t1 medium-l">월</p>
+                </li>
+                <li class="list active">
+                  <p class="t1 medium-l">화</p>
+                </li>
+                <li class="list active">
+                  <p class="t1 medium-l">수</p>
+                </li>
+                <li class="list">
+                  <p class="t1 medium-l">목</p>
+                </li>
+                <li class="list">
+                  <p class="t1 medium-l">금</p>
+                </li>
+                <li class="list">
+                  <p class="t1 medium-l">토</p>
+                </li>
+                <li class="list">
+                  <p class="t1 medium-l">일</p>
+                </li>
+              </ul>
+            </div>
+            <div class="work_date">
+              <p class="form-label">주휴일</p>
+              <ul class="date_con">
+                <li class="list">
+                  <p class="t1 medium-l">월</p>
+                </li>
+                <li class="list">
+                  <p class="t1 medium-l">화</p>
+                </li>
+                <li class="list">
+                  <p class="t1 medium-l">수</p>
+                </li>
+                <li class="list">
+                  <p class="t1 medium-l">목</p>
+                </li>
+                <li class="list">
+                  <p class="t1 medium-l">금</p>
+                </li>
+                <li class="list active">
+                  <p class="t1 medium-l">토</p>
+                </li>
+                <li class="list active">
+                  <p class="t1 medium-l">일</p>
+                </li>
+              </ul>
+            </div>
+            <div class="time_con">
+              <div class="work_time">
+                <div>
+                  <p class="form-label">출근시간</p>
+                  <div
+                    class="link_arr"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom"
+                    aria-controls="offcanvasBottom"
+                  >
+                    <input type="text" class="form-control large-b" value="09:00" re />
+                  </div>
+                </div>
+                <div>
+                  <p class="form-label">퇴근시간</p>
+                  <div
+                    class="link_arr"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom"
+                    aria-controls="offcanvasBottom"
+                  >
+                    <input type="text" class="form-control large-b" value="18:00" />
+                  </div>
+                </div>
+              </div>
+              <div class="work_time mt-30">
+                <div>
+                  <p class="form-label">휴게시간</p>
+                  <div
+                    class="link_arr"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom"
+                    aria-controls="offcanvasBottom"
+                  >
+                    <input type="text" class="form-control large-b" value="12:00" re />
+                  </div>
+                </div>
+                <div>
+                  <p class="form-label">종료시간</p>
+                  <div
+                    class="link_arr"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom"
+                    aria-controls="offcanvasBottom"
+                  >
+                    <input type="text" class="form-control large-b" value="13:00" />
+                  </div>
+                </div>
+              </div>
+              <p class="small-m caution">근로 4시간은 30분, 8시간은 60분 휴식이 필수입니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <ul class="week_time">
+            <li class="list">
+              <div class="box">
+                <div class="form-check d-flex align-items-center">
+                  <input
+                    class="form-check-input check_type"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                    name="sort"
+                    checked
+                  />
+                  <label class="form-check-label check_label small-l" for="flexCheckDefault">월요일</label>
+                </div>
+                <div class="time_input">
+                  <input class="form-control" type="text" />
+                  <p class="t1">시간</p>
+                </div>
+              </div>
+              <div class="time_con">
+                <div class="work_time">
+                  <div>
+                    <p class="form-label">출근시간</p>
+                    <div
+                      class="link_arr"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasBottom"
+                      aria-controls="offcanvasBottom"
+                    >
+                      <input type="text" class="form-control large-b" value="09:00" re />
+                    </div>
+                  </div>
+                  <div>
+                    <p class="form-label">퇴근시간</p>
+                    <div
+                      class="link_arr"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasBottom"
+                      aria-controls="offcanvasBottom"
+                    >
+                      <input type="text" class="form-control large-b" value="18:00" />
+                    </div>
+                  </div>
+                </div>
+                <div class="work_time mt-30">
+                  <div>
+                    <p class="form-label">휴게시간</p>
+                    <div
+                      class="link_arr"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasBottom"
+                      aria-controls="offcanvasBottom"
+                    >
+                      <input type="text" class="form-control large-b" value="12:00" re />
+                    </div>
+                  </div>
+                  <div>
+                    <p class="form-label">종료시간</p>
+                    <div
+                      class="link_arr"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasBottom"
+                      aria-controls="offcanvasBottom"
+                    >
+                      <input type="text" class="form-control large-b" value="13:00" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="box">
+                <div class="form-check d-flex align-items-center">
+                  <input
+                    class="form-check-input check_type"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                    name="sort"
+                  />
+                  <label class="form-check-label check_label small-l" for="flexCheckDefault">화요일</label>
+                </div>
+                <div class="time_input">
+                  <input class="form-control" type="text" />
+                  <p class="t1">시간</p>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="box">
+                <div class="form-check d-flex align-items-center">
+                  <input
+                    class="form-check-input check_type"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                    name="sort"
+                  />
+                  <label class="form-check-label check_label small-l" for="flexCheckDefault">수요일</label>
+                </div>
+                <div class="time_input">
+                  <input class="form-control" type="text" />
+                  <p class="t1">시간</p>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="box">
+                <div class="form-check d-flex align-items-center">
+                  <input
+                    class="form-check-input check_type"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                    name="sort"
+                  />
+                  <label class="form-check-label check_label small-l" for="flexCheckDefault">목요일</label>
+                </div>
+                <div class="time_input">
+                  <input class="form-control" type="text" />
+                  <p class="t1">시간</p>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="box">
+                <div class="form-check d-flex align-items-center">
+                  <input
+                    class="form-check-input check_type"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                    name="sort"
+                  />
+                  <label class="form-check-label check_label small-l" for="flexCheckDefault">금요일</label>
+                </div>
+                <div class="time_input">
+                  <input class="form-control" type="text" />
+                  <p class="t1">시간</p>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="box">
+                <div class="form-check d-flex align-items-center">
+                  <input
+                    class="form-check-input check_type"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                    name="sort"
+                  />
+                  <label class="form-check-label check_label small-l" for="flexCheckDefault">토요일</label>
+                </div>
+                <div class="time_input">
+                  <input class="form-control" type="text" />
+                  <p class="t1">시간</p>
+                </div>
+              </div>
+            </li>
+            <li class="list">
+              <div class="box">
+                <div class="form-check d-flex align-items-center">
+                  <input
+                    class="form-check-input check_type"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                    name="sort"
+                  />
+                  <label class="form-check-label check_label small-l" for="flexCheckDefault">일요일</label>
+                </div>
+                <div class="time_input">
+                  <input class="form-control" type="text" />
+                  <p class="t1">시간</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="fix_btn one">
+    <button class="btn btn-primary btn-lg" onclick="location.href='manage_step04_workterm.html'">다음</button>
+  </div>
+</div>
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="keypad_con">
+    <div class="box">
+      <div class="keypad">
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">00</div>
+        <div class="key zero">0</div>
+        <div class="key backspace">⌫</div>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('partials/html-end.html')

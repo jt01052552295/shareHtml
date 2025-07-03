@@ -1,0 +1,99 @@
+.commute_edit {
+    .method {
+        margin-bottom: 35px;
+        .map_con {
+            margin-top: 15px;
+            border-radius: 15px;
+            overflow: hidden;
+            .cont {
+                display: none;
+            }
+            .wrap_controllers {
+                display: none;
+            }
+            .t1 {
+                margin-top: 10px;
+                color: var(--gray-500);
+            }
+        }
+
+        .detail_con {
+            margin-top: 35px;
+            .input_con {
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .commute_time {
+        .example {
+            position: relative;
+            gap: 55px;
+            &::before {
+                content: "";
+                @include center();
+                width: 1px;
+                height: 30px;
+                background-color: var(--gray-200);
+            }
+            .box {
+                flex-grow: 1;
+                .arr {
+                    position: relative;
+                    &::before {
+                        content: "\f061";
+                        @include center();
+                        display: block;
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        color: var(--point-orange);
+                    }
+                    .t1 {
+                    }
+                    .time {
+                        &.point {
+                            color: var(--point-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .time_select {
+        margin-top: 50px;
+        .time_list {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 10px;
+            margin-top: 25px;
+            overflow-x: scroll;
+            .list {
+                flex-shrink: 0;
+                padding: 6px 12px;
+                border: 1px solid var(--gray-500);
+                border-radius: 5px;
+                color: var(--gray-500);
+                &.active {
+                    background-color: rgba($color: #3751ae, $alpha: 0.1);
+                    border: 1px solid var(--blue-200);
+                    color: var(--blue-200);
+                }
+            }
+        }
+    }
+
+    .register_setting {
+        margin-top: 15px;
+        & > div {
+            margin-top: 15px;
+            .btn {
+                padding-right: 20px;
+            }
+        }
+    }
+}

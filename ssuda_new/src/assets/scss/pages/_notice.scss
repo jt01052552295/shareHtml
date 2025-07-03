@@ -1,0 +1,23 @@
+.notice {
+    .list_con {
+        position: relative;
+        .list {
+            padding: 20px;
+            background-color: var(--gray-100);
+            &.link_arr {
+                &::after {
+                    right: 20px;
+                }
+            }
+            &.active {
+                background-color: #fff;
+            }
+            .tit {
+                margin-bottom: 10px;
+            }
+            .date {
+                color: var(--gray-500);
+            }
+        }
+    }
+}

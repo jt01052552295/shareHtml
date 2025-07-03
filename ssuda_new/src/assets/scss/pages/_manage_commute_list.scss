@@ -1,0 +1,149 @@
+.manage_commute_list {
+    .down_arr {
+        padding-right: 20px;
+    }
+    .date_select {
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--gray-200);
+        .week {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            .list {
+                width: calc(100% / 7);
+                text-align: center;
+                .t1 {
+                }
+            }
+        }
+        .day {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            margin-top: 5px;
+            overflow-x: scroll;
+            .list {
+                width: calc(100% / 7);
+                flex-shrink: 0;
+                padding-block: 5px;
+                text-align: center;
+                .t1 {
+                    padding-block: 5px;
+                }
+                .point {
+                    display: flex;
+                    justify-content: center;
+                    gap: 4px;
+                    margin-top: 5px;
+                    .circle {
+                        display: none;
+                        width: 5px;
+                        height: 5px;
+                        background-color: var(--gray-500);
+                        border-radius: 50%;
+                    }
+                }
+                &.one {
+                    .point {
+                        .circle {
+                            &:first-child {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                &.two {
+                    .point {
+                        .circle {
+                            display: block;
+                        }
+                    }
+                }
+                &.active {
+                    .t1 {
+                        color: #fff;
+                        background-color: var(--blue-200);
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+
+        .work_condition {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+            .list {
+                width: calc((100% / 4) - 10px);
+                border: 1px solid var(--gray-500);
+                border-radius: 5px;
+                .option {
+                    width: 100%;
+                }
+                &.active {
+                    background-color: rgba($color: #3751ae, $alpha: 0.1);
+                    border: 1px solid var(--blue-200);
+                    .option {
+                        color: var(--blue-200);
+                    }
+                }
+            }
+        }
+    }
+
+    .staff_list {
+        .list {
+            position: relative;
+            padding-block: 15px;
+            a {
+                .box {
+                    .name {
+                    }
+                    .condition {
+                        position: relative;
+                        padding: 3px 5px 3px 18px;
+                        border-radius: 5px;
+                        .t1 {
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            top: 50%;
+                            left: 5px;
+                            transform: translateY(-50%);
+                        }
+                        &.on {
+                            background-color: rgba($color: #3751ae, $alpha: 0.1);
+                            &::before {
+                                background-color: var(--blue-200);
+                            }
+                        }
+                        &.off {
+                            background-color: rgba($color: #fe4f2d, $alpha: 0.1);
+                            &::before {
+                                background-color: var(--point-orange);
+                            }
+                        }
+                        &.rest {
+                            background-color: rgba($color: #2fd1d6, $alpha: 0.1);
+                            &::before {
+                                background-color: var(--point-color);
+                            }
+                        }
+                    }
+                    .time {
+                        color: var(--point-orange);
+                    }
+                    &.time_con {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

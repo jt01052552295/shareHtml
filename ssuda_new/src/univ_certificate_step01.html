@@ -1,0 +1,26 @@
+@@include('partials/html-start.html', { "title": "이력서발급" })
+<header class="header_menu univ">
+    <div class="inner d-flex justify-content-between">
+        <h1 class="logo">
+            <a class="link" href="univ_main.html">
+                <img class="logo" src="./assets/images/logo/logo_silla.png" alt="">
+            </a>
+        </h1>
+        <p class="title fs-20 fw-bold">이력서 발급</p>
+    </div>
+</header>
+<section class="contents pt-70 pb-100">
+    <div class="univ_certificate_step01">
+        <div class="inner">
+            <div class="select_btn">
+                <div class="box" onclick="location.href=`univ_certicifate_step02.html`">
+                    <button class="btn btn-lg btn-outline-primary w-100 right_arr">성적증명서</button>
+                </div>
+                <div class="box" onclick="location.href=`univ_certicifate_step02.html`">
+                    <button class="btn btn-lg btn-outline-primary w-100 right_arr">졸업증명서(최종학력증명서)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@@include('partials/html-end.html')

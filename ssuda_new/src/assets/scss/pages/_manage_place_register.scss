@@ -1,0 +1,43 @@
+.manage_place_register {
+    .thumb_edit {
+        text-align: center;
+        .profile-upload {
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid var(--gray-200);
+            overflow: hidden;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                height: 90%;
+                object-fit: cover;
+            }
+            .basic_img {
+                width: auto;
+                height: auto;
+            }
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+    }
+
+    .detail_con {
+        margin-block: 35px;
+        .input_con {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

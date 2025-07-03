@@ -1,0 +1,33 @@
+.manage_blockchain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .card_con {
+        .tit {
+            margin-bottom: 15px;
+            color: var(--blue-200);
+        }
+        .name_con {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .date {
+                color: var(--gray-500);
+            }
+        }
+
+        .info_con {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 15px;
+            .t1 {
+                flex-shrink: 0;
+            }
+            .t2 {
+                word-break: break-all;
+            }
+        }
+    }
+}

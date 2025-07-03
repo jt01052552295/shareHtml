@@ -1,0 +1,79 @@
+@@include('partials/html-start.html', { "title": "이력서발급" })
+<header class="header_menu univ">
+    <div class="inner d-flex justify-content-between">
+        <h1 class="logo">
+            <a class="link" href="univ_main.html">
+                <img class="logo" src="./assets/images/logo/logo_silla.png" alt="">
+            </a>
+        </h1>
+        <p class="title fs-20 fw-bold">이력서 발급</p>
+    </div>
+</header>
+<section class="contents pt-70 pb-100">
+    <div class="univ_certificate">
+        <div class="inner">
+            <p class="univ_title">학적정보 확인</p>
+            <div class="certi_info card_con">
+                <ul class="list_con">
+                    <li class="list">
+                        <p class="t1 large-m">학교명</p>
+                        <p class="t2 large-l">신라대학교</p>
+                    </li>
+                    <li class="list">
+                        <p class="t1 large-m">학위</p>
+                        <p class="t2 large-l">대학</p>
+                    </li>
+                    <li class="list">
+                        <p class="t1 large-m">학과</p>
+                        <p class="t2 large-l">화학공학과</p>
+                    </li>
+                    <li class="list">
+                        <p class="t1 large-m">학번</p>
+                        <p class="t2 large-l">1238033</p>
+                    </li>
+                    <li class="list">
+                        <p class="t1 large-m">이름</p>
+                        <p class="t2 large-l">이정우</p>
+                    </li>
+                    <li class="list">
+                        <p class="t1 large-m">영문명</p>
+                        <p class="t2 large-l"></p>
+                    </li>
+                    <li class="list">
+                        <p class="t1 large-m">상태</p>
+                        <p class="t2 large-l">졸업</p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <p class="univ_title">학위과정 선택</p>
+            <div class="degree_select" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom">
+                <button class="btn btn-outline-primary btn-lg w-100  down_arr">[대학]화학공학과</button>
+            </div>
+
+            <div class="fix_btn one">
+                <button class="btn btn-lg btn-primary center"
+                    onclick="location.href=`univ_certicifate_step02.html`">다음</button>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-body small">
+        <ul class="select">
+            <li class="list">
+                <button class="btn btn-link active">
+                    <p class="t1">[대학]화학공학과</p>
+                </button>
+            </li>
+            <li class="list">
+                <button class="btn btn-link">
+                    <p class="t1">[대학]전기공학과</p>
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+@@include('partials/html-end.html')

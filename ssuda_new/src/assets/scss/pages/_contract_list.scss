@@ -1,0 +1,61 @@
+.contract_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .inner {
+    position: static;
+  }
+  .tab_con {
+    margin-bottom: 30px;
+  }
+  .card_con {
+    .docu_list {
+      .tit {
+        margin-bottom: 15px;
+        color: var(--blue-200);
+      }
+      .name_con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .condition {
+          padding: 5px 8px;
+          border-radius: 5px;
+          background-color: var(--gray-100);
+          .t1 {
+            color: var(--gray-500);
+          }
+        }
+      }
+
+      .info_con {
+        margin-bottom: 15px;
+        .t1 {
+        }
+        .t2 {
+          .point {
+            color: var(--point-orange);
+          }
+          .kind {
+          }
+        }
+      }
+    }
+  }
+
+  .none_box {
+    @include center();
+    .none_img {
+      width: 100%;
+      text-align: center;
+      .none {
+        opacity: 0.2;
+      }
+      .t1 {
+        margin-top: 10px;
+        color: var(--gray-500);
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.inquiry {
+    .filter {
+        padding-right: 15px;
+        text-align: right;
+        .btn {
+        }
+    }
+    .list_con {
+        .card_con {
+            .link {
+                .condition {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    .division {
+                        padding: 3px 10px;
+                        background-color: var(--gray-300);
+                        border-radius: 50px;
+                        color: var(--gray-500);
+                        &.active {
+                            background-color: rgba($color: #fe4f2d, $alpha: 0.1);
+                            color: var(--point-orange);
+                        }
+                    }
+                    .date {
+                        color: var(--gray-500);
+                    }
+                }
+                .tit {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &.inquiry_answer {
+        .inner {
+            position: static;
+        }
+        .title {
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--gray-500);
+            .condition {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+                .division {
+                    padding: 3px 10px;
+                    background-color: var(--gray-300);
+                    border-radius: 50px;
+                    color: var(--gray-500);
+                    &.active {
+                        background-color: rgba($color: #fe4f2d, $alpha: 0.1);
+                        color: var(--point-orange);
+                    }
+                }
+                .date {
+                    color: var(--gray-500);
+                }
+            }
+            .tit {
+                font-size: 16px;
+            }
+        }
+        .answer_con {
+            margin-top: 15px;
+        }
+        .answer_none {
+            @include center();
+            .none_img {
+                width: 100%;
+                text-align: center;
+                .none {
+                    opacity: 0.2;
+                }
+                .t1 {
+                    margin-top: 10px;
+                    color: var(--gray-500);
+                }
+            }
+        }
+    }
+
+    &.inquiry_write {
+        .title_con {
+        }
+
+        .write_con {
+            margin-top: 15px;
+            textarea {
+                width: 100%;
+                min-height: 200px;
+                padding: 20px;
+                border: 1px solid var(--gray-300);
+                border-radius: 15px;
+                resize: none;
+            }
+        }
+
+        .btn_con {
+            margin-top: 15px;
+        }
+    }
+}

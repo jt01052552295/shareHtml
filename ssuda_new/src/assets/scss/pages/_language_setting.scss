@@ -1,0 +1,38 @@
+.language {
+    margin-top: 20px;
+    .option {
+        margin-bottom: 20px;
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid var(--gray-400);
+            border-radius: 12px;
+            .check_img {
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url(../images/img/img_notcheck_btn.png) no-repeat center;
+                background-size: 24px;
+            }
+            .opt {
+                color: var(--gray-400);
+            }
+            &.active {
+                border: 1px solid var(--blue-200);
+                background-color: #e1e6f9;
+                .check_img {
+                    background: url(../images/img/img_checked_btn.png) no-repeat center;
+                }
+                .opt {
+                    color: var(--blue-200);
+                }
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@@include('partials/html-start.html', { "title": "결제영수증" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">영수증</p>
+  </div>
+</header>
+<section class="contents pt-70 height-100">
+  <div class="manage_subscribe_bill">
+    <div class="inner">
+      <div class="bill_name">
+        <p class="t1 small-l">#자동이체</p>
+        <p class="name header-b">Standrad Plan</p>
+      </div>
+
+      <div class="bill_info">
+        <ul class="list_con">
+          <li class="list">
+            <p class="t1 medium-m">거래시간</p>
+            <p class="t2 medium-m">2025.05.02 | 11:11:11</p>
+          </li>
+          <li class="list">
+            <p class="t1 medium-m">거래구분</p>
+            <p class="t2 medium-m">자동이체</p>
+          </li>
+          <li class="list">
+            <p class="t1 medium-m">거래금액</p>
+            <p class="t2 medium-b">600원</p>
+          </li>
+          <li class="list">
+            <p class="t1 medium-m">승인번호</p>
+            <p class="t2 medium-b">60888211</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="fix_btn one">
+      <button
+        class="btn btn-lg btn-primary w-100"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#exportModal"
+        aria-controls="offcanvasBottom"
+      >
+        내역 전송하기
+      </button>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

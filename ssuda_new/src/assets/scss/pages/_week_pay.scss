@@ -1,0 +1,25 @@
+.week_pay {
+    .time_input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--gray-200);
+        margin-bottom: 15px;
+        .form-control {
+            border: none;
+        }
+        .unit {
+            flex-shrink: 0;
+        }
+    }
+
+    .card_con {
+        background-color: var(--gray-100);
+        .form-label {
+            margin-bottom: 15px;
+        }
+        .form-check {
+            margin-bottom: 15px;
+        }
+    }
+}

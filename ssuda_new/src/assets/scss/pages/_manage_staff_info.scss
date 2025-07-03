@@ -1,0 +1,27 @@
+.staff_info {
+    .card_con {
+        background-color: var(--gray-100);
+        .info {
+            .list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .t1 {
+                    color: var(--gray-500);
+                }
+                .t2 {
+                }
+                .badge_con {
+                    padding: 5px;
+                    border-radius: 5px;
+                    background-color: rgba($color: #3751ae, $alpha: 0.1);
+                    color: var(--blue-200);
+                }
+            }
+        }
+    }
+}

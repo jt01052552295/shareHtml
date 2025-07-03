@@ -1,0 +1,161 @@
+.commute_list {
+    .down_arr {
+        padding-right: 20px;
+    }
+    .date_select {
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--gray-200);
+        .week {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            .list {
+                width: calc(100% / 7);
+                text-align: center;
+                .t1 {
+                }
+            }
+        }
+        .day {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            margin-top: 5px;
+            overflow-x: scroll;
+            .list {
+                width: calc(100% / 7);
+                flex-shrink: 0;
+                padding-block: 5px;
+                text-align: center;
+                .t1 {
+                    padding-block: 5px;
+                }
+                .point {
+                    display: flex;
+                    justify-content: center;
+                    gap: 4px;
+                    margin-top: 5px;
+                    .circle {
+                        display: none;
+                        width: 5px;
+                        height: 5px;
+                        background-color: var(--gray-500);
+                        border-radius: 50%;
+                    }
+                }
+                &.one {
+                    .point {
+                        .circle {
+                            &:first-child {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                &.two {
+                    .point {
+                        .circle {
+                            display: block;
+                        }
+                    }
+                }
+                &.active {
+                    .t1 {
+                        color: #fff;
+                        background-color: var(--blue-200);
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .timeline {
+        padding-top: 30px;
+        .card_con {
+            .name_con {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+                .tit {
+                }
+                .condition {
+                    position: relative;
+                    padding: 3px 5px 3px 18px;
+                    border-radius: 5px;
+                    .t1 {
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        top: 50%;
+                        left: 5px;
+                        transform: translateY(-50%);
+                    }
+                    &.on {
+                        background-color: rgba($color: #3751ae, $alpha: 0.1);
+                        &::before {
+                            background-color: var(--blue-200);
+                        }
+                    }
+                    &.off {
+                        background-color: rgba($color: #fe4f2d, $alpha: 0.1);
+                        &::before {
+                            background-color: var(--point-orange);
+                        }
+                    }
+                    &.rest {
+                        background-color: rgba($color: #2fd1d6, $alpha: 0.1);
+                        &::before {
+                            background-color: var(--point-color);
+                        }
+                    }
+                }
+            }
+            .work_time {
+                display: flex;
+                justify-content: space-between;
+                align-items: center-;
+                .time {
+                    color: var(--blue-200);
+                }
+                .rest_time {
+                }
+            }
+            .map_con {
+                margin-top: 15px;
+                border-radius: 15px;
+                overflow: hidden;
+                .cont {
+                    display: none;
+                }
+                .wrap_controllers {
+                    display: none;
+                }
+                .t1 {
+                    margin-top: 10px;
+                    color: var(--gray-500);
+                }
+            }
+            .time_stamp {
+                margin-top: 15px;
+                .list {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    .t1 {
+                    }
+                    .t2 {
+                        color: var(--point-orange);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@@include('partials/html-start.html', { "title": "이력/경력 작성" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">이력/경력 작성</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="resume univ_resume_step03">
+    <div class="inner">
+      <div class="progress_container">
+        <div class="step-indicator" id="stepIndicator">1 / 6</div>
+        <div class="progress_bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <img src="./assets/images/img/img_pencil.png" class="character" id="character" />
+      </div>
+
+      <div class="resume_tit">
+        <p class="t1 header-b">
+          <span class="point">경력사항</span>
+          이 있나요?
+        </p>
+        <p class="t2 medium-m">경력은 최대 40개까지 추가 가능합니다.</p>
+        <p class="t2 medium-m">이력서에는 장단기순, 최근 근무일 순으로 보여집니다.</p>
+      </div>
+
+      <div class="btn_con two">
+        <button onclick="location.href=`univ_resume_step03.html`" class="btn btn-lg btn-outline-primary">신입</button>
+        <button onclick="location.href=`univ_resume_step03_01.html`" class="btn btn-lg btn-outline-secondary">
+          경력
+        </button>
+      </div>
+
+      <div class="fix_btn two">
+        <button class="btn btn-lg btn-outline-secondary" onclick="location.href=`univ_resume_step02.html`">이전</button>
+        <button class="btn btn-lg btn-primary" onclick="location.href=`univ_resume_step04.html`">다음</button>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  let currentStep = 3;
+  const totalSteps = 4;
+
+  function updateProgress(step) {
+    const progress = (step / totalSteps) * 100;
+    document.getElementById('progressFill').style.width = progress + '%';
+
+    const progressBarWidth = document.querySelector('.progress_bar').offsetWidth;
+    const character = document.getElementById('character');
+    character.style.left = `calc(${progress}% - ${character.offsetWidth / 2}px)`;
+
+    document.getElementById('stepIndicator').innerText = `${step} / ${totalSteps}`;
+  }
+
+  // 초기 설정
+  updateProgress(currentStep);
+</script>
+@@include('partials/html-end.html')

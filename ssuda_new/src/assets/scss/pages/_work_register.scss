@@ -1,0 +1,107 @@
+.work_register {
+    .type_con {
+        gap: 50px;
+        .color_con {
+            flex-grow: 1;
+            .box {
+                padding: 5px 10px;
+                border-radius: 10px;
+                p {
+                    position: relative;
+                    padding-left: 20px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        left: 0px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        border: 2px solid #fff;
+                        border-radius: 50%;
+                    }
+                }
+                &.yellow {
+                    background-color: rgb(249 249 217);
+                    p {
+                        &::before {
+                            background-color: yellow;
+                        }
+                    }
+                }
+            }
+        }
+        .type {
+            flex-grow: 8;
+            .link_arr {
+                margin-top: 5px;
+                font: {
+                    size: 16px;
+                    weight: 700;
+                }
+            }
+        }
+    }
+
+    .option_con {
+        margin-top: 50px;
+        .time {
+            gap: 20px;
+        }
+
+        .unit_con {
+            border-bottom: 1px solid var(--gray-400);
+            .form-control {
+                border-bottom: none;
+                text-align: left;
+            }
+            .unit {
+            }
+        }
+    }
+
+    .add_option {
+        margin-top: 20px;
+        gap: 10px;
+        background-color: var(--gray-100);
+        padding: 8px 12px;
+    }
+}
+
+.picker-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.picker {
+    width: 210px;
+    height: 150px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    position: relative;
+}
+
+.picker ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.picker li {
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    scroll-snap-align: center;
+    color: #333;
+}

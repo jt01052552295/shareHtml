@@ -1,0 +1,96 @@
+@@include('partials/html-start.html', { "title": "내 이력서 보기" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">내 이력서 보기</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="resume resume_view">
+    <div class="inner">
+      <div class="thumb_edit">
+        <label class="profile-upload" for="fileInput">
+          <img id="profileImage" src="./assets/images/logo/logo_logo_symbol.png" alt="프로필 이미지" />
+        </label>
+        <input type="file" id="fileInput" accept="image/*" />
+        <div class="txt_con">
+          <p class="name">홍길동</p>
+          <p class="t1 age">남자 · 29세</p>
+        </div>
+      </div>
+
+      <ul class="info_list">
+        <li class="list">
+          <p class="t1 large-r">주소</p>
+          <p class="t2 large-r">부산 사상구 괘법동</p>
+        </li>
+        <li class="list">
+          <p class="t1 large-r">휴대폰</p>
+          <p class="t2 large-r">
+            0507-444-6089
+            <span class="safe_num small-m">안심번호</span>
+          </p>
+        </li>
+        <li class="list">
+          <p class="t1 large-r">이메일</p>
+          <p class="t2 large-r">ssuda@ssuda.com</p>
+        </li>
+      </ul>
+
+      <div class="career">
+        <div class="tit_con">
+          <p class="tit header-b">최종학력</p>
+          <div class="box">
+            <p class="t1 large-m">대학(4년제)졸업</p>
+            <a class="edit_link" href="univ_resume_step02.html">
+              <img class="img" src="./assets/images/icon/ico_pencil.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="career">
+        <div class="tit_con">
+          <p class="tit header-b">경력사항</p>
+          <div class="box">
+            <p class="t1 large-m">1년1개월</p>
+            <a class="edit_link" href="univ_resume_step03.html">
+              <img class="img" src="./assets/images/icon/ico_pencil.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <ul class="career_list">
+          <li class="list mt-3">
+            <p class="date medium-m">
+              2025.02 - 2025.05
+              <span class="total small-m">4개월</span>
+            </p>
+            <p class="store_name medium-b">고깃집</p>
+            <p class="work medium-m">매장관리</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="career">
+        <div class="tit_con">
+          <p class="tit header-b">자기소개</p>
+          <div class="box">
+            <a class="edit_link" href="univ_resume_step04.html">
+              <img class="img" src="./assets/images/icon/ico_pencil.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="introduce mt-3">
+          <p>
+            자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개
+            자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개
+            자기소개
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

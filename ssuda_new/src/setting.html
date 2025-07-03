@@ -1,0 +1,64 @@
+@@include('partials/html-start.html', { "title": "앱 설정" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">앱 설정</p>
+  </div>
+</header>
+<div class="contents pt-70 height-100">
+  <div class="setting">
+    <div class="inner">
+      <div class="list d-flex justify-content-between">
+        <div class="txt_con">
+          <p class="large-b">알림</p>
+          <p class="small-l">앱 내의 정보/이벤트 관련 알림 허용</p>
+        </div>
+        <label for="toggle" class="toggleSwitch">
+          <span class="toggleButton"></span>
+        </label>
+      </div>
+      <div class="list d-flex justify-content-between">
+        <div class="txt_con">
+          <p class="large-b">연락방식</p>
+          <p class="small-l">문서 작성 시, 연락방식으로 알림이 발송됩니다.</p>
+        </div>
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom"
+        >
+          <span>카카오</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <ul class="select">
+      <li class="list">
+        <button class="btn btn-link active">
+          <p class="t1">카카오</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">이메일</p>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  const toggleList = document.querySelectorAll('.toggleSwitch');
+
+  toggleList.forEach(($toggle) => {
+    $toggle.onclick = () => {
+      $toggle.classList.toggle('active');
+    };
+  });
+</script>
+@@include('partials/html-end.html')

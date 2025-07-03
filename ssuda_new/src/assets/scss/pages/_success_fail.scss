@@ -1,0 +1,19 @@
+.result {
+    .inner {
+        position: static;
+    }
+    .box_con {
+        @include center();
+        width: 100%;
+        .img_con {
+            text-align: center;
+            .img {
+                width: 180px;
+            }
+        }
+        .t1 {
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+}

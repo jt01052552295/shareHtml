@@ -1,0 +1,31 @@
+@@include('partials/html-start.html', { "title": "문의하기" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">문의하기</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="inquiry inquiry_write">
+    <div class="inner">
+      <div class="title_con">
+        <p class="form-label">제목</p>
+        <input type="text" class="form-control" placeholder="문의제목을 입력해주세요" />
+      </div>
+      <div class="write_con">
+        <p class="form-label">문의내용</p>
+        <textarea class="form-control" name="" id=""></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="formFile" class="form-label">첨부파일</label>
+        <input class="form-control" type="file" id="formFile" />
+      </div>
+    </div>
+    <div class="btn_con one">
+      <button class="btn btn-primary btn-lg" onclick="location.href=`inquiry.html`">문의 등록하기</button>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

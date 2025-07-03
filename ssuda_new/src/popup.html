@@ -1,0 +1,69 @@
+@@include('partials/html-start.html', { "title": "index" })
+<header class="header_menu">
+    <div class="inner d-flex justify-content-between align-items-center">
+        <p class="title fs-20 fw-bold">팝업모음</p>
+    </div>
+</header>
+<div class="contents pt-70 pb-100 height-100">
+    <div class="popup">
+        <div class="inner">
+            <button class="btn btn-lg center btn-primary" data-bs-toggle="modal" data-bs-target="#btn-two">버튼
+                2개</button>
+            <div class="modal fade btn-two" id="btn-two" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title large-b" id="exampleModalLabel">{타이틀}</h1>
+                        </div>
+                        <div class="modal-body">
+                            <p class="t1 medium-m">버튼2개</p>
+                        </div>
+                        <div class="modal-footer btn_box two">
+                            <button class="btn btn-secondary" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">취소</button>
+                            <button class="btn btn-primary" onclick="location.href=`manage_store.html`">보내기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-lg center btn-primary" data-bs-toggle="modal" data-bs-target="#btn-one">버튼
+                1개</button>
+            <div class="modal fade btn-one" id="btn-one" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title large-b" id="exampleModalLabel">{타이틀}</h1>
+                        </div>
+                        <div class="modal-body">
+                            <p class="t1 medium-m">버튼 1개</p>
+                        </div>
+                        <div class="modal-footer btn_box one">
+                            <button class="btn btn-primary" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-lg center btn-primary" data-bs-toggle="modal" data-bs-target="#btn-0">버튼
+                0개</button>
+            <div class="modal fade btn-0" id="btn-0" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title large-b" id="exampleModalLabel">{타이틀}</h1>
+                        </div>
+                        <div class="modal-body">
+                            <p class="t1 medium-m">버튼 0개</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('partials/html-end.html')

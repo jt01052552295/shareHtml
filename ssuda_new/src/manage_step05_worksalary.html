@@ -1,0 +1,218 @@
+@@include('partials/html-start.html', { "title": "근로계약서 작성" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <button class="btn large-b">종료하기</button>
+  </div>
+</header>
+<div class="contents pt-70">
+  <section class="manage_worksalary">
+    <div class="inner">
+      <p class="header-b manage_title">
+        <b class="point">임금</b>
+        은 어떻게 되나요?
+      </p>
+
+      <ul class="nav nav-tabs three" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link large-m active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            시급
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link large-m"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            일급
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link large-m"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            월급
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <div class="hour_rate">
+            <p class="form-label">기본 시급 (원)</p>
+            <div
+              class="link_arr"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom"
+            >
+              <input type="text" class="form-control large-b" value="10,030" />
+            </div>
+          </div>
+
+          <div class="other_salary">
+            <p class="large-b">기타 급여</p>
+            <div class="input_box">
+              <p class="form-label">식비 (원)</p>
+              <div
+                class="link_arr"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom"
+              >
+                <input type="text" class="form-control large-b" value="10,000" />
+              </div>
+            </div>
+            <div class="input_box">
+              <p class="form-label">기타 (원)</p>
+              <div
+                class="link_arr"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom"
+              >
+                <input type="text" class="form-control large-b" value="10,000" />
+              </div>
+            </div>
+            <button class="btn btn-primary add_btn">추가하기</button>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="hour_rate">
+            <p class="form-label">일급 (원)</p>
+            <div
+              class="link_arr"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom"
+            >
+              <input type="text" class="form-control large-b" value="10,030" />
+            </div>
+          </div>
+
+          <div class="other_salary">
+            <p class="large-b">기타 급여</p>
+            <div class="input_box">
+              <p class="form-label">식비 (원)</p>
+              <div
+                class="link_arr"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom"
+              >
+                <input type="text" class="form-control large-b" value="10,000" />
+              </div>
+            </div>
+            <div class="input_box">
+              <p class="form-label">기타 (원)</p>
+              <div
+                class="link_arr"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom"
+              >
+                <input type="text" class="form-control large-b" value="10,000" />
+              </div>
+            </div>
+            <button class="btn btn-primary add_btn">추가하기</button>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          <div class="hour_rate">
+            <p class="form-label">월급 (원)</p>
+            <div
+              class="link_arr"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom"
+            >
+              <input type="text" class="form-control large-b" value="10,030" />
+            </div>
+          </div>
+
+          <div class="other_salary">
+            <p class="large-b">기타 급여</p>
+            <div class="input_box">
+              <p class="form-label">식비 (원)</p>
+              <div
+                class="link_arr"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom"
+              >
+                <input type="text" class="form-control large-b" value="10,000" />
+              </div>
+            </div>
+            <div class="input_box">
+              <p class="form-label">기타 (원)</p>
+              <div
+                class="link_arr"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom"
+              >
+                <input type="text" class="form-control large-b" value="10,000" />
+              </div>
+            </div>
+            <button class="btn btn-primary add_btn">추가하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="fix_btn one">
+    <button class="btn btn-primary btn-lg" onclick="location.href='manage_step06_payday.html'">다음</button>
+  </div>
+</div>
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="keypad_con">
+    <div class="box">
+      <div class="keypad">
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">00</div>
+        <div class="key zero">0</div>
+        <div class="key backspace">⌫</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@@include('partials/html-end.html')

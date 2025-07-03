@@ -1,0 +1,66 @@
+@@include('partials/html-start.html', { "title": "근로계약서 작성" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <button class="btn large-b">종료하기</button>
+  </div>
+</header>
+<div class="contents pt-70 pb-100">
+  <section class="manage_complete">
+    <div class="inner">
+      <p class="header-b manage_title">계약 서명을 완료해 주세요</p>
+      <div class="input_group">
+        <p class="form-label">사업장명</p>
+        <input type="text" class="form-control company_name" placeholder="" value="bifc16" />
+        <div class="address_con">
+          <p class="form-label">주소</p>
+          <div class="right_arr">
+            <input type="text" class="form-control address" placeholder="주소를 검색해주세요" />
+          </div>
+          <input type="text" class="form-control address_detail" placeholder="상세 주소를 입력해 주세요" />
+        </div>
+      </div>
+
+      <div class="input_group">
+        <p class="form-label">대표자명(실명)</p>
+        <input type="text" class="form-control" placeholder="" value="대표자명" />
+      </div>
+
+      <div class="signature mb-4">
+        <p class="t1 medium-m">여기에 서명해 주세요</p>
+      </div>
+    </div>
+  </section>
+  <div class="btn_con one">
+    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      근로자에게 전달하기
+    </button>
+  </div>
+</div>
+<div
+  class="modal fade basicComplete"
+  id="staticBackdrop"
+  data-bs-backdrop="true"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="tit header-b">계약을 완료할까요?</p>
+        <p class="t1 large-l">
+          연결된 직원에게 전달되면 3일 후에 만료되고 상호 계약이 되면 더 이상 수정할 수 없습니다.
+        </p>
+      </div>
+      <div class="modal-footer two">
+        <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">취소</button>
+        <button type="button" class="btn btn-lg btn-primary" onclick="location.href='manage_store.html'">확인</button>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('partials/html-end.html')

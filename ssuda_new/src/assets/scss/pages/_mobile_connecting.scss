@@ -1,0 +1,53 @@
+.mobile_connecting {
+    .txt_con {
+        .manage_title {
+        }
+        .add_txt {
+            color: var(--gray-500);
+        }
+    }
+
+    .input_con {
+        margin-top: 50px;
+    }
+
+    .search_store {
+        margin-top: 30px;
+        .list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-block: 15px;
+            .name_con {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .thumb_img {
+                    position: relative;
+                    width: 45px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 1px solid var(--gray-300);
+                    &::before {
+                        content: "";
+                        display: block;
+                        padding-bottom: 100%;
+                    }
+                    img {
+                        @include center();
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .name {
+                    color: var(--gray-500);
+                }
+            }
+            .connect_btn {
+                background-color: var(--gray-100);
+                color: var(--blue-200);
+            }
+        }
+    }
+}

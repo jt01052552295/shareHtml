@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/images/favicon/manifest.json" />
+    <link rel="icon" href="./assets/images/favicon/favicon1.ico" />
+    <meta name=" msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>쓰다</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <script src="./assets/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- fontawsome -->
+    <script defer="" src="https://kit.fontawesome.com/b82731c292.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- plugin -->
+
+    <!-- plugin -->
+</head>
+
+<body>
+    <div class="inner">
+        <div class="search_filter">
+            <button class="btn filter_btn">
+                <img src="./assets/images/icon/ico_filter.png" alt="">
+            </button>
+            <div class="input_filter">
+                <div class="period">
+                    <p class="form-label">기간</p>
+                    <div class="input_con">
+                        <button class="btn date_select" data-bs-toggle="modal" data-bs-target="#periodModal">
+                            <span class="t1 small-m">선택</span>
+                        </button>
+                        <input type="text" class="form-control" value="2025.04.28 - 2025.05.28">
+                    </div>
+                </div>
+
+                <div class="division">
+                    <p class="form-label">구분</p>
+                    <input type="text" class="form-control" placeholder="전체" data-bs-toggle="modal"
+                        data-bs-target="#divisionModal">
+                </div>
+
+                <div class="status">
+                    <p class="form-label">읽음상태</p>
+                    <input type="text" class="form-control" placeholder="전체" data-bs-toggle="modal"
+                        data-bs-target="#statusModal">
+                </div>
+
+                <div class="btn_con two">
+                    <button class="btn btn-lg btn-secondary">초기화</button>
+                    <button class="btn btn-lg btn-primary">검색하기</button>
+                </div>
+            </div>
+
+            <div class="tab_filter">
+                <ul class="list_con">
+                    <li class="list active">
+                        <a class="medium-m" href="javascript:void(0)">전체</a>
+                    </li>
+                    <li class="list">
+                        <a class="medium-m" href="javascript:void(0)">회원</a>
+                    </li>
+                    <li class="list">
+                        <a class="medium-m" href="javascript:void(0)">결제</a>
+                    </li>
+                    <li class="list">
+                        <a class="medium-m" href="javascript:void(0)">서명</a>
+                    </li>
+                    <li class="list">
+                        <a class="medium-m" href="javascript:void(0)">문서함</a>
+                    </li>
+                    <li class="list">
+                        <a class="medium-m" href="javascript:void(0)">근무</a>
+                    </li>
+                    <li class="list">
+                        <a class="medium-m" href="javascript:void(0)">급여</a>
+                    </li>
+                    <li class="list">
+                        <a class="medium-m" href="javascript:void(0)">시스템</a>
+                    </li>
+                    <li class="list">
+                        <a class="medium-m" href="javascript:void(0)">프로모션</a>
+                    </li>
+                    <li class="list">
+                        <a class="medium-m" href="javascript:void(0)">리마인더</a>
+                    </li>
+                    <li class="list">
+                        <a class="medium-m" href="javascript:void(0)">보안</a>
+                    </li>
+                    <li class="list">
+                        <a class="medium-m" href="javascript:void(0)">기타</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sort_order">
+                <div class="alarm">
+                    <p class="sum medium-m">총 <span>0</span>개</p>
+                </div>
+                <div class="sort_filter" data-bs-toggle="offcanvas" data-bs-target="#taxModal">
+                    <p class="t1 medium-m down_arr">최신순</p>
+                    <p class="t1 medium-m down_arr" style="display: none;">과거순</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+    </div>
+    <div class="offcanvas offcanvas-bottom taxModal" tabindex="-1" id="taxModal" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-body small">
+            <ul class="date_con">
+                <li class="list">
+                    <button class="btn btn-link active">
+                        <p class="t1">최신순</p>
+                    </button>
+                </li>
+                <li class="list">
+                    <button class="btn btn-link">
+                        <p class="t1">과거순</p>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script></script>
+</body>
+
+</html>

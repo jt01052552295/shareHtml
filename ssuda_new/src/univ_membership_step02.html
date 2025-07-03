@@ -1,0 +1,75 @@
+@@include('partials/html-start.html', { "title": "회원가입" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">필수정보 입력</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="univ_membership_step02">
+    <div class="inner">
+      <div class="txt_con">
+        <p class="t1 header-b">
+          <span class="">홍길동</span>
+          님,
+          <br />
+          회원가입을 환영합니다!
+        </p>
+      </div>
+
+      <div class="member_input mb-3">
+        <p class="form-label required">생년월일</p>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="YYYY.MM.DD"
+          aria-label="Recipient’s username"
+          aria-describedby="button-addon2"
+        />
+      </div>
+
+      <div class="member_input mb-3">
+        <p class="form-label required">성별</p>
+        <div class="btn_con two">
+          <button class="btn btn-lg btn-outline-primary">남성</button>
+          <button class="btn btn-lg btn-outline-primary active">여성</button>
+        </div>
+      </div>
+
+      <div class="member_input">
+        <p class="form-label required">주소</p>
+        <div class="input_con mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="지번, 도로명, 건물명으로 검색"
+            aria-label="Recipient’s username"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-secondary confirm" type="button" id="button-addon2">검색</button>
+        </div>
+      </div>
+
+      <div class="member_input policy">
+        <p class="form-label required">약관동의</p>
+        <div class="form-check d-flex align-items-center justify-content-between">
+          <div>
+            <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault" name="sort" />
+            <label class="form-check-label check_label large-l" for="flexCheckDefault">
+              <span>(필수)</span>
+              개인정보수집 및 이용 동의
+            </label>
+          </div>
+          <a href="javascript:void(0)" class="right_arr"></a>
+        </div>
+      </div>
+
+      <div class="fix_btn one">
+        <button class="btn btn-lg btn-primary center" onclick="location.href=`univ_complete.html`">입력완료</button>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

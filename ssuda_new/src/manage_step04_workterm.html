@@ -1,0 +1,42 @@
+@@include('partials/html-start.html', { "title": "근로계약서 작성" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <button class="btn large-b">종료하기</button>
+  </div>
+</header>
+<div class="contents pt-70">
+  <section class="manage_workterm">
+    <div class="inner">
+      <p class="header-b manage_title">
+        <b class="point">근무 조건</b>
+        을 확인해주세요
+      </p>
+      <div class="date_list d-flex justify-content-between align-items-center">
+        <p class="t1 large-b">월, 화, 수, 목, 금</p>
+        <button class="btn">수정</button>
+      </div>
+      <ul class="summary">
+        <li class="list">
+          <p class="t1 medium-l">소정 근로시간</p>
+          <p class="t2 medium-l">8시간</p>
+        </li>
+        <li class="list">
+          <p class="t1 medium-l">근무시간</p>
+          <p class="t2 medium-l">09:00 ~ 18:00</p>
+        </li>
+        <li class="list">
+          <p class="t1 medium-l">휴게시간</p>
+          <p class="t2 medium-l">12:00 ~ 13:00</p>
+        </li>
+      </ul>
+      <button class="btn btn-lg btn-outline-primary w-100">추가하기</button>
+    </div>
+  </section>
+  <div class="fix_btn one">
+    <button class="btn btn-primary btn-lg" onclick="location.href='manage_step05_worksalary.html'">다음</button>
+  </div>
+</div>
+@@include('partials/html-end.html')

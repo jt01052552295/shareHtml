@@ -1,0 +1,60 @@
+@@include('partials/html-start.html', { "title": "근무지 추가" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">근무지 추가</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="manage_place_register">
+    <div class="inner">
+      <div class="thumb_edit">
+        <label class="profile-upload" for="fileInput">
+          <img id="profileImage" class="basic_img" src="./assets/images/icon/ico_camera.png" alt="프로필 이미지" />
+        </label>
+        <input type="file" id="fileInput" accept="image/*" />
+      </div>
+      <div class="detail_con">
+        <div class="place_name mb-3">
+          <p class="form-label">사업장 이름(필수)</p>
+          <div>
+            <input type="text" class="form-control large-b" value="" placeholder="사업장 이름을 입력해주세요" />
+          </div>
+        </div>
+        <div class="input_con mb-3">
+          <p class="form-label">매장 주소 설정</p>
+          <div class="right_arr">
+            <input type="text" class="form-control large-b" value="" placeholder="주소를 입력해주세요" />
+          </div>
+        </div>
+        <div class="distance mb-3">
+          <p class="form-label">상세정보</p>
+          <div class="">
+            <input type="text" class="form-control large-b" value="" placeholder="상세주소를 입력해주세요" />
+          </div>
+        </div>
+        <div class="business">
+          <p class="form-label">사업자 번호</p>
+          <div class="">
+            <input type="text" class="form-control large-b" value="" placeholder="사업자 번호를 입력해주세요" />
+          </div>
+        </div>
+      </div>
+      <div class="btn_con one">
+        <button class="btn btn-primary btn-lg" onclick="location.href=`manage_store.html`">완료하기</button>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const toggleList = document.querySelectorAll('.toggleSwitch');
+
+  toggleList.forEach(($toggle) => {
+    $toggle.onclick = () => {
+      $toggle.classList.toggle('active');
+    };
+  });
+</script>
+@@include('partials/html-end.html')

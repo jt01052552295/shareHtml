@@ -1,0 +1,113 @@
+.card_con {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  .tit {
+    font: {
+      size: 18px;
+      weight: 700;
+    }
+  }
+  .link_btn {
+    padding: 5px 7px;
+    border-radius: 5px;
+    a {
+      p {
+        font: {
+          size: 14px;
+          weight: 300;
+        }
+      }
+    }
+  }
+
+  .salary_sum {
+    color: var(--blue-200);
+  }
+  &.img_card {
+    position: relative;
+    padding-bottom: 95px;
+
+    a {
+      position: relative;
+      z-index: 2;
+      .price {
+        color: var(--point-orange);
+      }
+    }
+  }
+  .icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 70px;
+    z-index: 1;
+  }
+
+  &.salary_card {
+    .work_name {
+      padding-right: 20px;
+      a {
+        .name {
+        }
+        .price {
+        }
+        .d_day {
+          font: {
+            weight: 500;
+          }
+          color: var(--point-orange);
+        }
+        .date {
+          color: var(--gray-500);
+        }
+      }
+    }
+    .btn_con {
+      margin-top: 30px;
+    }
+  }
+}
+
+.card_con {
+  &.date_select {
+    border-radius: 100px;
+    .box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .tit {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.card_two {
+  gap: 15px;
+  .card_con {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 480px) {
+  .card_con {
+    .tit {
+      font: {
+        size: 1rem;
+      }
+    }
+  }
+  .link_btn {
+    a {
+      p {
+        font: {
+          size: 0.7rem;
+        }
+      }
+    }
+  }
+}

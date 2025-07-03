@@ -1,0 +1,97 @@
+@@include('partials/html-start.html', { "title": "연결하기" })
+<div class="contents bg-gray-100 pt-70 pb-100">
+    <div class="connection">
+        <div class="inner">
+            <div class="thumb_con">
+                <div class="img_con rect">
+                    <img src="./assets/images/img/img_statistics.svg" alt="">
+                </div>
+                <div class="txt_con">
+                    <p>{근무지 명}</p>
+                </div>
+            </div>
+            <div class="card_con">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="tit">출퇴근 체크</div>
+                    <a href="commute_setting.html" class="btn">
+                        <img src="./assets/images/icon/ico_setting.png" alt="">
+                    </a>
+                </div>
+                <div class="current_date">
+                    <p class="date">4월 14일 (월)</p>
+                    <p class="time">09:11</p>
+                </div>
+                <ul class="work_con">
+                    <li class="list working_time">
+                        <p class="t1 medium-b">출·퇴근 시간</p>
+                        <p class="t2 medium-r">09:00 - 18:00</p>
+                    </li>
+                    <li class="list rest_time">
+                        <p class="t1 medium-b">휴식 시간</p>
+                        <p class="t2 medium-r">12:00 - 13:00</p>
+                    </li>
+                </ul>
+                <div class="btn_con one">
+                    <button class="btn btn-lg btn-primary" onclick="location.href=`connection_working.html`">
+                        출근
+                    </button>
+                </div>
+            </div>
+            <div class="card_con">
+                <ul class="shop_menu">
+                    <li class="list">
+                        <a href="mobile_connecting_step01.html">
+                            <p class="t1 connection">연결 요청</p>
+                        </a>
+                    </li>
+                    <!-- <li class="list">
+                                <a href="javascript:void(0)">
+                                    <p class="t1 schdule">매장 스케줄</p>
+                                </a>
+                            </li> -->
+                    <li class="list">
+                        <a href="commute_list.html">
+                            <p class="t1 commute">출퇴근 내역</p>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="contract_list.html">
+                            <p class="t1 contract">문서함</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="ft_nav">
+    <div class="inner">
+        <ul class="link_con">
+            <li class="link">
+                <a href="index.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_menu_work.svg" alt="">
+                    <p>근무</p>
+                </a>
+            </li>
+            <li class="link">
+                <a href="salary.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_menu_salary.svg" alt="">
+                    <p>급여</p>
+                </a>
+            </li>
+            <li class="link active">
+                <a href="connection.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_menu_connection.svg" alt="">
+                    <p>연결</p>
+                </a>
+            </li>
+            <li class="link ">
+                <a href="mypage.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_menu_more.svg" alt="">
+                    <p>더보기</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+@@include('partials/html-end.html')

@@ -1,0 +1,33 @@
+@@include('partials/html-start.html', { "title": "근로계약서 작성" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <button class="btn">종료하기</button>
+  </div>
+</header>
+<div class="contents pt-70">
+  <section class="manage_workspace">
+    <div class="inner">
+      <p class="header-b manage_title">
+        <b class="point">어디에서</b>
+        근무하나요?
+      </p>
+      <div class="input_group">
+        <div class="link_arr">
+          <input type="text" class="form-control address" placeholder="주소를 검색해주세요" />
+        </div>
+        <input type="text" class="form-control address_detail" placeholder="상세 주소를 입력해 주세요" />
+      </div>
+      <div class="form-check d-flex align-items-center">
+        <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault" name="sort" />
+        <label class="form-check-label check_label small-l" for="flexCheckDefault">사업장 정보에도 변경하기</label>
+      </div>
+    </div>
+  </section>
+  <div class="fix_btn one">
+    <button class="btn btn-primary btn-lg" onclick="location.href='manage_step03_workdate.html'">다음</button>
+  </div>
+</div>
+@@include('partials/html-end.html')

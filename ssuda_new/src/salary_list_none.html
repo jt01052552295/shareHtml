@@ -1,0 +1,125 @@
+@@include('partials/html-start.html', { "title": "급여상세" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">급여내역</p>
+  </div>
+</header>
+<section class="contents height-100 pt-70 pb-100">
+  <div class="salary_list">
+    <div class="inner">
+      <div class="calendar_date">
+        <button class="btn">
+          <img src="./assets/images/icon/ico_back_18px.png" alt="" />
+        </button>
+        <p
+          class="date_area fs-16 fw-bold"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#excellModal"
+          aria-controls="offcanvasBottom"
+        >
+          25.04.01(화) - 25.04.30(수)
+        </p>
+        <button class="btn">
+          <img src="./assets/images/icon/ico_prev_black_18px.png" alt="" />
+        </button>
+      </div>
+      <div class="salary_info">
+        <p class="fs-16 fw-medium">실수령액</p>
+        <p class="price fw-bold">0 원</p>
+        <div class="time">
+          <p class="small-l">0일 0시간</p>
+        </div>
+      </div>
+
+      <div class="work_list">
+        <div class="none_box">
+          <div class="none_img">
+            <img class="none" src="./assets/images/img/img_none.svg" alt="" />
+            <p class="t1 medium-m">급여내역이 없습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body small">...</div>
+    </div>
+    <!-- offcanvas -->
+  </div>
+</section>
+<nav class="ft_nav">
+  <div class="inner">
+    <ul class="link_con">
+      <li class="link">
+        <a href="index.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_work.svg" alt="" />
+          <p>근무</p>
+        </a>
+      </li>
+      <li class="link active">
+        <a href="salary.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_salary.svg" alt="" />
+          <p>급여</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="connection.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_connection.svg" alt="" />
+          <p>연결</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="mypage.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_more.svg" alt="" />
+          <p>더보기</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div
+  class="offcanvas offcanvas-bottom excellModal"
+  tabindex="-1"
+  id="excellModal"
+  aria-labelledby="offcanvasBottomLabel"
+>
+  <div class="offcanvas-body small">
+    <ul class="filter">
+      <li class="list">
+        <button class="btn option active small-l">선택</button>
+      </li>
+      <li class="list">
+        <button class="btn option small-l">일주일</button>
+      </li>
+      <li class="list">
+        <button class="btn option small-l">이번달</button>
+      </li>
+      <li class="list">
+        <button class="btn option small-l">1개월</button>
+      </li>
+      <li class="list">
+        <button class="btn option small-l">3개월</button>
+      </li>
+    </ul>
+
+    <div class="calendar_con">
+      <button class="btn btn-outline-primary date_select">
+        <span class="date medium-b">2024.10.01</span>
+      </button>
+      <p>-</p>
+      <button class="btn btn-outline-primary date_select">
+        <span class="date medium-b">2024.10.01</span>
+      </button>
+    </div>
+    <button class="btn btn-primary btn-lg w-100">내보내기</button>
+  </div>
+  <script></script>
+</div>
+@@include('partials/html-end.html')

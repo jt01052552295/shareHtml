@@ -1,0 +1,49 @@
+@@include('partials/html-start.html', { "title": "index" })
+<header class="header_menu main">
+    <div class="inner d-flex justify-content-between align-items-center">
+        <button class="date_select btn down_arr" data-bs-toggle="offcanvas" data-bs-target="#dateSelect"
+            aria-controls="offcanvasBottom">
+            <span class="t1 large-b">2025년 4월</span>
+        </button>
+        <div class="btn_link d-flex align-items-center">
+            <!-- <button class="btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button> -->
+            <button class="btn alarmModal active" data-bs-toggle="offcanvas" data-bs-target="#alarmModal"
+                aria-controls="offcanvasTop">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+        </div>
+    </div>
+</header>
+<nav class="ft_nav">
+    <div class="inner">
+        <ul class="link_con">
+            <li class="link active">
+                <a href="manage_index.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_menu_work.svg" alt="" />
+                    <p>근무</p>
+                </a>
+            </li>
+            <li class="link">
+                <a href="manage_salary.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_menu_salary.svg" alt="" />
+                    <p>급여</p>
+                </a>
+            </li>
+            <li class="link">
+                <a href="manage_store.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_menu_store.svg" alt="" />
+                    <p>매장</p>
+                </a>
+            </li>
+            <li class="link">
+                <a href="manage_mypage.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_menu_more.svg" alt="" />
+                    <p>더보기</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+@@include('partials/html-end.html')

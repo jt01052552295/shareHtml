@@ -1,0 +1,229 @@
+@@include('partials/html-start.html', { "title": "index" })
+<header class="header_menu univ">
+  <div class="inner d-flex justify-content-between">
+    <h1 class="logo">
+      <a class="link" href="univ_main.html">
+        <img class="logo" src="./assets/images/logo/logo_sseuda.png" alt="" />
+      </a>
+    </h1>
+  </div>
+</header>
+<section class="contents pt-70 pb-100">
+  <div class="univ_main_type02">
+    <div class="inner">
+      <div
+        class="card_con"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasBottom"
+        aria-controls="offcanvasBottom"
+      >
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="t1 medium-l">학력증명서</p>
+          <p class="t2 medium-b">D-27</p>
+        </div>
+        <div class="user_info">
+          <p class="t1 header-b">이정우</p>
+          <p class="t2 header-b">010-1234-1234</p>
+        </div>
+        <ul class="num_info">
+          <li class="d-flex justify-content-between align-items-center">
+            <p class="t1 medium-l">생년월일</p>
+            <p class="t2 medium-l">1995.06.22 / 남 / 내국인</p>
+          </li>
+          <li class="d-flex justify-content-between align-items-center">
+            <p class="t1 medium-l">학번</p>
+            <p class="t2 medium-l">10140632</p>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="sub_menu">
+        <li class="list" style="background-color: #d9f3f2">
+          <a class="link" href="javascript:void(0)">
+            <div class="img_con">
+              <img class="img" src="./assets/images/img/img_univ_pdf.png" alt="" />
+            </div>
+            <p class="t2 small-m">학력증명</p>
+            <p class="tit medium-m">발급신청</p>
+          </a>
+        </li>
+        <li class="list" style="background-color: #e3f0ff">
+          <a class="link" href="javascript:void(0)">
+            <div class="img_con">
+              <img class="img" src="./assets/images/img/img_univ_history.png" alt="" />
+            </div>
+            <p class="t2 small-m">문서저장</p>
+            <p class="tit medium-m">내 보관함</p>
+          </a>
+        </li>
+        <li class="list" style="background-color: #fef8d8">
+          <a class="link" href="javascript:void(0)">
+            <div class="img_con">
+              <img class="img" src="./assets/images/img/img_univ_confirmation.png" alt="" />
+            </div>
+            <p class="t2 small-m">위조방지</p>
+            <p class="tit medium-m">진위확인</p>
+          </a>
+        </li>
+      </ul>
+
+      <div class="event_banner">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/img//img_banner_sample.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/img//img_banner_sample.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/img//img_banner_sample.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/img//img_banner_sample.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<nav class="ft_nav">
+  <div class="inner">
+    <ul class="link_con">
+      <li class="link">
+        <a href="univ_certificate.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_list.svg" alt="" />
+          <p>발급하기</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="univ_save.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_save.svg" alt="" />
+          <p>보관함</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="univ_confirm.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_confirm.svg" alt="" />
+          <p>진위확인</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="univ_mypage.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_mypage.svg" alt="" />
+          <p>마이페이지</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- offcanvas -->
+<div
+  class="offcanvas offcanvas-bottom certificate"
+  tabindex="-1"
+  id="offcanvasBottom"
+  aria-labelledby="offcanvasBottomLabel"
+>
+  <!-- <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+                Offcanvas bottom
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div> -->
+  <div class="offcanvas-body small">
+    <div class="flip-container" id="flip-card">
+      <div class="flipper">
+        <div class="front">
+          <button class="rotate_btn front_btn btn" onclick="flipCard()" style="color: #fff">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+          <div class="upper">
+            <p class="title large-m">학력증명서</p>
+            <p class="t1 header-b">신라대학교</p>
+          </div>
+          <div class="thumb">
+            <img src="./assets/images/icon/ico_camera.png" alt="" />
+          </div>
+          <div class="lower">
+            <p class="name header-b">이정우</p>
+            <p class="phone_num large-r">010-1234-1234</p>
+            <ul class="user_info">
+              <li class="list">
+                <p class="t1 medium-m">생년월일</p>
+                <p class="t2 medium-m">1995.06.22</p>
+              </li>
+              <li class="list">
+                <p class="t1 medium-m">성별</p>
+                <p class="t2 medium-m">남</p>
+              </li>
+              <li class="list">
+                <p class="t1 medium-m">만료일</p>
+                <p class="t2 medium-m">2026.05.05</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn p-0">
+          <button class="rotate_btn back_btn btn" onclick="flipCard()"><i class="fa-solid fa-rotate-right"></i></button>
+          <div class="tit_con">
+            <p class="title large-r">학력증명서</p>
+            <p class="t1 header-b">신라대학교</p>
+          </div>
+
+          <ul class="detail_info">
+            <li class="list">
+              <p class="t1 medium-m">이름</p>
+              <p class="t2 medium-m">이정우</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">휴대전화 번호</p>
+              <p class="t2 medium-m">010-1234-1234</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">생년월일</p>
+              <p class="t2 medium-m">1995.06.22</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">성별</p>
+              <p class="t2 medium-m">남</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">내/외국인 여부</p>
+              <p class="t2 medium-m">내국인</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">만료일</p>
+              <p class="t2 medium-m">2026.06.05</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- <button class="rotate_btn btn" onclick="flipCard()"><i class="fa-solid fa-rotate-right"></i></button> -->
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  function flipCard() {
+    const card = document.getElementById('flip-card');
+    card.classList.toggle('flipped');
+  }
+  var swiper = new Swiper('.mySwiper', {
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    loop: true,
+    autoplay: {
+      delay: 3000
+    },
+    spaceBetween: 15
+  });
+</script>
+@@include('partials/html-end.html')

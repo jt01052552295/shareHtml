@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>달력 - 2024년 8월</title>
+    <style>
+        .controls {
+            margin-bottom: 20px;
+        }
+
+        select {
+            padding: 6px 10px;
+            font-size: 14px;
+        }
+
+        .calendar {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .calendar th,
+        .calendar td {
+            width: 14.28%;
+            height: 80px;
+            text-align: left;
+            vertical-align: top;
+            border: 1px solid #eee;
+            padding: 6px;
+            position: relative;
+        }
+
+        .calendar thead th {
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        .highlight {
+            display: inline-block;
+            padding: 2px 6px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-top: 4px;
+        }
+
+        .yellow {
+            background-color: #ffe28a;
+            color: #333;
+        }
+
+        .green {
+            background-color: #b6f1c2;
+            color: #0c703f;
+        }
+
+        .blue {
+            background-color: #b5d7ff;
+            color: #004080;
+        }
+
+        .pink {
+            background-color: #ffb6b6;
+            color: #800000;
+        }
+
+        .today {
+            border: 2px solid #ff5722;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+
+            .calendar td,
+            .calendar th {
+                height: 60px;
+                font-size: 12px;
+                padding: 4px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="controls">
+        <label for="year">년도:</label>
+        <select id="year"></select>
+        <label for="month">월:</label>
+        <select id="month"></select>
+    </div>
+
+    <table class="calendar" id="calendar">
+        <thead>
+            <tr>
+                <th>일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+            </tr>
+        </thead>
+        <tbody id="calendar-body">
+        </tbody>
+    </table>
+
+    <script>
+        const events = {
+            '2024-08-02': [{ text: '-15분', class: 'yellow' }],
+            '2024-08-03': [{ text: '+15분', class: 'green' }],
+            '2024-08-05': [{ text: '결근', class: 'pink' }],
+            '2024-08-07': [{ text: '4시간30분', class: 'green' }],
+            '2024-08-09': [{ text: '+10분', class: 'green' }],
+            '2024-08-12': [{ text: '-15분', class: 'yellow' }, { text: '-15분', class: 'blue' }],
+            '2024-08-14': [{ text: '-15분', class: 'yellow' }],
+            '2024-08-16': [{ text: '4시간', class: 'green' }],
+            '2024-08-20': [{ text: '-30분', class: 'blue' }],
+            '2024-08-21': [{ text: '4시간', class: 'green' }, { text: '+15분', class: 'green' }],
+            '2024-08-23': [{ text: '4시간', class: 'green' }]
+        };
+
+        const now = new Date();
+        const yearSelect = document.getElementById('year');
+        const monthSelect = document.getElementById('month');
+        const calendarBody = document.getElementById('calendar-body');
+
+        for (let y = 2020; y <= 2030; y++) {
+            const opt = document.createElement('option');
+            opt.value = y;
+            opt.textContent = `${y}년`;
+            yearSelect.appendChild(opt);
+        }
+
+        for (let m = 0; m < 12; m++) {
+            const opt = document.createElement('option');
+            opt.value = m;
+            opt.textContent = `${m + 1}월`;
+            monthSelect.appendChild(opt);
+        }
+
+        yearSelect.value = 2024;
+        monthSelect.value = 7; // 8월 (0-indexed)
+
+        function renderCalendar(year, month) {
+            calendarBody.innerHTML = '';
+            const firstDay = new Date(year, month, 1);
+            const lastDate = new Date(year, month + 1, 0).getDate();
+            let row = document.createElement('tr');
+
+            for (let i = 0; i < firstDay.getDay(); i++) {
+                row.appendChild(document.createElement('td'));
+            }
+
+            for (let d = 1; d <= lastDate; d++) {
+                const date = new Date(year, month, d);
+                const cell = document.createElement('td');
+                const dateStr = `${year}-${(month + 1).toString().padStart(2, '0')}-${d.toString().padStart(2, '0')}`;
+
+                cell.textContent = d;
+                if (
+                    date.getFullYear() === now.getFullYear() &&
+                    date.getMonth() === now.getMonth() &&
+                    date.getDate() === now.getDate()
+                ) {
+                    cell.classList.add('today');
+                }
+
+                if (events[dateStr]) {
+                    events[dateStr].forEach(e => {
+                        const tag = document.createElement('div');
+                        tag.textContent = e.text;
+                        tag.className = `highlight ${e.class}`;
+                        cell.appendChild(tag);
+                    });
+                }
+
+                row.appendChild(cell);
+                if (date.getDay() === 6) {
+                    calendarBody.appendChild(row);
+                    row = document.createElement('tr');
+                }
+            }
+
+            if (row.children.length > 0) {
+                calendarBody.appendChild(row);
+            }
+        }
+
+        yearSelect.addEventListener('change', () => {
+            renderCalendar(+yearSelect.value, +monthSelect.value);
+        });
+
+        monthSelect.addEventListener('change', () => {
+            renderCalendar(+yearSelect.value, +monthSelect.value);
+        });
+
+        renderCalendar(2024, 7);
+    </script>
+</body>
+
+</html>

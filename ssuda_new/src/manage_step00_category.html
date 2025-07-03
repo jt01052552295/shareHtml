@@ -1,0 +1,45 @@
+@@include('partials/html-start.html', { "title": "근로계약서 작성" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+  </div>
+</header>
+<div class="contents pt-70">
+  <section class="manage_category">
+    <div class="inner">
+      <p class="header-b manage_title">
+        <span class="point">계약 유형</span>
+        을 선택해주세요.
+      </p>
+      <ul class="caution">
+        <li class="list medium-m">
+          <b class="point">실제 채용이 결정된 후</b>
+          해당 근로자 및 사업주를 상대로 근로계약서를 작성하여야 합니다.
+        </li>
+        <li class="list medium-m">
+          근로자와 사업주
+          <b class="point">양측 모두 전자서명까지 반드시 완료</b>
+          되어야 효력이 발생합니다.
+        </li>
+      </ul>
+
+      <ul class="kind">
+        <li class="list">
+          <a class="link docu01" href="./manage_step01_work.html">
+            <p class="t1 large-m">표준 근로 계약서</p>
+            <p class="t2 small-r">기본 근로 계약서</p>
+          </a>
+        </li>
+        <li class="list">
+          <a class="link docu02" href="javascript:void(0)">
+            <p class="t1 large-m">단시간 근로자 계약서</p>
+            <p class="t2 small-r">단시간 근로자를 위한 계약서</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+@@include('partials/html-end.html')

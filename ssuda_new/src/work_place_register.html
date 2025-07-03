@@ -1,0 +1,717 @@
+@@include('partials/html-start.html', { "title": "근무지 추가" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">근무지 추가</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="work_place_setting">
+    <div class="inner">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">근무지명</label>
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="exampleFormControlInput1"
+          placeholder=""
+          value="{근무지명}"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">기본 시급</label>
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="exampleFormControlInput1"
+          placeholder=""
+          value="10,000"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">계산 기간</label>
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="exampleFormControlInput1"
+          placeholder=""
+          data-bs-toggle="offcanvas"
+          data-bs-target="#dateModal"
+          value=" 1일 ~ 말일"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">월급일</label>
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="exampleFormControlInput1"
+          placeholder=""
+          data-bs-toggle="offcanvas"
+          data-bs-target="#paydayModal"
+          value="10일"
+        />
+      </div>
+
+      <div class="switch_con mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="fs-16 fw-normal">주휴수당</p>
+          <label for="toggle" class="toggleSwitch">
+            <span class="toggleButton" onclick="location.href=`week_pay.html`"></span>
+          </label>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="fs-16 fw-normal">세금</p>
+          <label for="toggle" class="toggleSwitch">
+            <span
+              class="toggleButton"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#taxModal"
+              aria-controls="weekpayBottom"
+            ></span>
+          </label>
+        </div>
+      </div>
+      <div class="btn_con one">
+        <button class="btn btn-primary btn-lg" onclick="location.href=`salary.html`">입력 완료하기</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="keypad_con">
+    <div class="box">
+      <div class="keypad">
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">00</div>
+        <div class="key zero">0</div>
+        <div class="key backspace">⌫</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-bottom dateModal" tabindex="-1" id="dateModal" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <ul class="nav nav-tabs three" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#home-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="home-tab-pane"
+          aria-selected="true"
+        >
+          월급
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="profile-tab-pane"
+          aria-selected="false"
+        >
+          주급
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="work"
+          data-bs-toggle="tab"
+          data-bs-target="#work-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="work-tab-pane"
+          aria-selected="false"
+        >
+          반복
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <p class="tit large-b">계산 기간이 어떻게 되나요?</p>
+        <ul class="select">
+          <li class="list">
+            <button class="btn btn-link active">
+              <p class="t1">1일 ~ 말일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">2일 ~ 1일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">3일 ~ 2일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">4일 ~ 3일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">5일 ~ 4일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">6일 ~ 5일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">7일 ~ 6일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">8일 ~ 7일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">9일 ~ 8일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">10일 ~ 9일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">11일 ~ 10일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">12일 ~ 11일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">13일 ~ 12일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">14일 ~ 13일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">15일 ~ 14일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">16일 ~ 15일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">17일 ~ 16일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">18일 ~ 17일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">19일 ~ 18일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">20일 ~ 19일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">21일 ~ 20일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">22일 ~ 21일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">23일 ~ 22일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">24일 ~ 23일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">25일 ~ 24일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">26일 ~ 25일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">27일 ~ 26일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">28일 ~ 27일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">29일 ~ 28일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">30일 ~ 29일</p>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <p class="tit large-b">계산 기간이 어떻게 되나요?</p>
+        <ul class="select">
+          <li class="list">
+            <button class="btn btn-link active">
+              <p class="t1">일요일 ~ 토요일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">월요일 ~ 일요일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">화요일 ~ 월요일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">수요일 ~ 화요일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">목요일 ~ 수요일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">금요일 ~ 목요일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">토요일 ~ 금요일</p>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="work-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <p class="tit large-b">며칠 마다 받으시나요?</p>
+        <ul class="select">
+          <li class="list">
+            <button class="btn btn-link active">
+              <p class="t1">1일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">2일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">3일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">4일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">5일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">6일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">7일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">8일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">9일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">10일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">11일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">12일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">13일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">14일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">15일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">16일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">17일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">18일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">19일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">20일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">21일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">22일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">23일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">24일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">25일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">26일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">27일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">28일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">29일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">30일</p>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-link">
+              <p class="t1">31일</p>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="offcanvas offcanvas-bottom paydayModal"
+  tabindex="-1"
+  id="paydayModal"
+  aria-labelledby="offcanvasBottomLabel"
+>
+  <div class="offcanvas-body small">
+    <p class="tit large-b">며칠 마다 받으시나요?</p>
+    <ul class="select">
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">1일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">2일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">3일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">4일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">5일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">6일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">7일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">8일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">9일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link active">
+          <p class="t1">10일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">11일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">12일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">13일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">14일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">15일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">16일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">17일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">18일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">19일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">20일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">21일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">22일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">23일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">24일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">25일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">26일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">27일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">28일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">29일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">30일</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">31일</p>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-bottom taxModal" tabindex="-1" id="taxModal" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <p class="tit large-b">계산 방법</p>
+    <ul class="select">
+      <li class="list">
+        <button class="btn btn-link" onclick="location.href=`tax_setting_01.html`">
+          <p class="t1">정규직</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link" onclick="location.href=`tax_setting_02.html`">
+          <p class="t1">일용직</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link" onclick="location.href=`tax_setting_03.html`">
+          <p class="t1">프리랜서</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link" onclick="location.href=`tax_setting_04.html`">
+          <p class="t1">직접 설정</p>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  const toggleList = document.querySelectorAll('.toggleSwitch');
+
+  toggleList.forEach(($toggle) => {
+    $toggle.onclick = () => {
+      $toggle.classList.toggle('active');
+    };
+  });
+</script>
+@@include('partials/html-end.html')

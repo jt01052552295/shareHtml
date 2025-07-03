@@ -1,0 +1,72 @@
+@@include('partials/html-start.html', { "title": "근로계약서 작성" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <button class="btn large-b">종료하기</button>
+  </div>
+</header>
+<div class="contents pt-70">
+  <section class="manage_insurance">
+    <div class="inner">
+      <p class="header-b manage_title">
+        <b class="point">사회보험</b>
+        을 선택해 주세요
+      </p>
+      <ul class="check_con">
+        <li class="list">
+          <button class="btn btn-outline-primary toggle">
+            <div class="form-check d-flex align-items-center">
+              <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault" name="sort" />
+              <label class="form-check-label check_label medium-m" for="flexCheckDefault">국민연금</label>
+            </div>
+          </button>
+        </li>
+        <li class="list">
+          <button class="btn btn-outline-primary toggle active">
+            <div class="form-check d-flex align-items-center">
+              <input
+                class="form-check-input check_type"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault0"
+                name="sort"
+                checked
+              />
+              <label class="form-check-label check_label medium-m" for="flexCheckDefault0">건강보험</label>
+            </div>
+          </button>
+        </li>
+        <li class="list">
+          <button class="btn btn-outline-primary toggle">
+            <div class="form-check d-flex align-items-center">
+              <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault1" name="sort" />
+              <label class="form-check-label check_label medium-m" for="flexCheckDefault1">고용보험</label>
+            </div>
+          </button>
+        </li>
+        <li class="list">
+          <button class="btn btn-outline-primary toggle">
+            <div class="form-check d-flex align-items-center">
+              <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault2" name="sort" />
+              <label class="form-check-label check_label medium-m" for="flexCheckDefault2">산재보험</label>
+            </div>
+          </button>
+        </li>
+        <li class="list">
+          <button class="btn btn-outline-primary toggle">
+            <div class="form-check d-flex align-items-center">
+              <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault3" name="sort" />
+              <label class="form-check-label check_label medium-m" for="flexCheckDefault3">해당없음</label>
+            </div>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="fix_btn one">
+    <button class="btn btn-primary btn-lg" onclick="location.href='manage_step08_contract_view.html'">완료</button>
+  </div>
+</div>
+@@include('partials/html-end.html')

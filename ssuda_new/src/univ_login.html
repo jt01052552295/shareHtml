@@ -1,0 +1,63 @@
+@@include('partials/html-start.html', { "title": "로그인" })
+<section class="contents">
+    <div class="univ_login">
+        <div class="login_email">
+            <div class="inner">
+                <div class="logo_con">
+                    <img src="./assets/images/logo/logo_logo_symbol.png" alt="">
+                </div>
+
+                <div class="login_input">
+
+                    <div class="validity mb-20">
+                        <input type="text" id="" class="form-control form-control-lg id_input fs-6 fw-normal"
+                            placeholder="이이디를 입력해주세요.">
+                    </div>
+                    <div class="validity">
+                        <input type="text" id="" class="form-control form-control-lg pw_input fs-6 fw-normal"
+                            placeholder="비밀번호를 입력해주세요.">
+                    </div>
+
+                </div>
+                <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label check_label fs-6 fw-medium main" for="flexCheckDefault">
+                        아이디 기억하기
+                    </label>
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-lg btn-primary" type="button"
+                        onclick="location.href=`univ_main.html`">로그인</button>
+                </div>
+                <div class="account_opt">
+                    <a href="univ_membership_step01.html" class="membership medium-b">회원가입</a>
+                    <div class="">|</div>
+                    <a href="javascript:void(0)" class="find_account medium-m">아이디 · 비밀번호 찾기</a>
+                </div>
+
+
+                <div class="sns_link">
+                    <div class="sns_title">
+                        <p class="t1 sns_tit medium-l">간편로그인</p>
+                    </div>
+                    <ul class="sns_list">
+                        <li class="sns kakao">
+                            <a href="javascript:void(0)" class="link">
+                                <img src="./assets/images/img/img_kakao.png" alt="">
+                            </a>
+                        </li>
+                        <li class="sns naver">
+                            <a href="javascript:void(0)" class="link">
+                                <img src="./assets/images/img/img_naver.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="alarm_toast show " style="display: none;">
+                <p>아이디를 다시 확인해주세요!</p>
+            </div>
+        </div>
+    </div>
+</section>
+@@include('partials/html-end.html')

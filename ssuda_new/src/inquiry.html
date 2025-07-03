@@ -1,0 +1,97 @@
+@@include('partials/html-start.html', { "title": "문의하기" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">문의하기</p>
+    <a href="inquiry_write.html">
+      <span class="medium-b">작성하기</span>
+    </a>
+  </div>
+</header>
+<section class="contents pt-70 bg-gray-100">
+  <div class="inquiry">
+    <div class="inner">
+      <div class="filter down_arr">
+        <button
+          class="btn filterModal"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#filterModal"
+          aria-controls="offcanvasBottom"
+        >
+          <span class="t1 small-m">전체</span>
+        </button>
+      </div>
+      <ul class="list_con">
+        <li class="card_con">
+          <a class="link" href="inquiry_answer.html">
+            <div class="condition">
+              <p class="division small-m active">답변완료</p>
+              <p class="date small-m">25.05.07</p>
+            </div>
+            <p class="tit text_line_2">
+              문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.
+            </p>
+          </a>
+        </li>
+        <li class="card_con">
+          <a class="link" href="inquiry_answer_none.html">
+            <div class="condition">
+              <p class="division small-m">답변대기</p>
+              <p class="date small-m">25.05.07</p>
+            </div>
+            <p class="tit text_line_2">
+              문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.
+            </p>
+          </a>
+        </li>
+        <li class="card_con">
+          <a class="link" href="inquiry_answer.html">
+            <div class="condition">
+              <p class="division small-m active">답변완료</p>
+              <p class="date small-m">25.05.07</p>
+            </div>
+            <p class="tit text_line_2">
+              문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.
+            </p>
+          </a>
+        </li>
+        <li class="card_con">
+          <a class="link" href="inquiry_answer_none.html">
+            <div class="condition">
+              <p class="division small-m">답변대기</p>
+              <p class="date small-m">25.05.07</p>
+            </div>
+            <p class="tit text_line_2">
+              문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.문의제목입니다.
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="filterModal" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <ul class="filter_con">
+      <li class="list">
+        <button class="btn btn-link w-100 active">
+          <p class="t1">전체</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn w-100 btn-link">
+          <p class="t1">답변완료</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn w-100 btn-link">
+          <p class="t1">답변대기</p>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+@@include('partials/html-end.html')

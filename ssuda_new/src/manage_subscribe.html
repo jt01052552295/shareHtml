@@ -1,0 +1,88 @@
+@@include('partials/html-start.html', { "title": "구독하기" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">구독하기</p>
+  </div>
+</header>
+<section class="contents pt-70 bg-gray-100 height-100">
+  <div class="manage_subscribe">
+    <div class="inner">
+      <ul class="tab_con two">
+        <li class="list active">
+          <p class="t1">연간 결제</p>
+        </li>
+        <li class="list">
+          <p class="t1">월간 결제</p>
+        </li>
+      </ul>
+      <ul class="card_list">
+        <li class="card_con">
+          <p class="sub_tit small-m">쓰다 정기구독</p>
+          <p class="tit">Standard Plan</p>
+          <div class="price_txt">
+            <p class="price">
+              5,900원
+              <span class="months small-b">/ 1개월</span>
+            </p>
+          </div>
+          <div class="promotion">
+            <ul class="list_con">
+              <li class="list">
+                <p class="name large-b">Standard Plan</p>
+                <p class="price large-b">5,900원</p>
+              </li>
+              <li class="list minus">
+                <p class="t1 medium-m">결제 할인</p>
+                <p class="t2 medium-m">- 0원</p>
+              </li>
+            </ul>
+            <ul class="total">
+              <li class="list">
+                <p class="name large-b">총 결제 금액</p>
+                <p class="price large-b">5,900원</p>
+              </li>
+            </ul>
+          </div>
+          <div class="btn_con one">
+            <button class="btn btn-lg btn-primary">결제하기</button>
+          </div>
+        </li>
+        <li class="card_con">
+          <p class="sub_tit small-m">쓰다 정기구독</p>
+          <p class="tit">Standard Plan</p>
+          <div class="price_txt">
+            <p class="price">
+              64,900원
+              <span class="months small-b">/ 12개월</span>
+            </p>
+          </div>
+          <div class="promotion">
+            <ul class="list_con">
+              <li class="list">
+                <p class="name large-b">Standard Plan</p>
+                <p class="price large-b">70,800원</p>
+              </li>
+              <li class="list minus">
+                <p class="t1 medium-m">결제 할인</p>
+                <p class="t2 medium-m">- 5,900원</p>
+              </li>
+            </ul>
+            <ul class="total">
+              <li class="list">
+                <p class="name large-b">총 결제 금액</p>
+                <p class="price large-b">64,900원</p>
+              </li>
+            </ul>
+          </div>
+          <div class="btn_con one">
+            <button class="btn btn-lg btn-primary">결제하기</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

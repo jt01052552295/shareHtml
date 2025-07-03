@@ -1,0 +1,51 @@
+@@include('partials/html-start.html', { "title": "근무시간" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">2024년 10월 17일</p>
+  </div>
+</header>
+<div class="contents pt-70 height_100">
+  <div class="part_time_detail">
+    <div class="inner">
+      <div class="summary">
+        <p class="store_name large-b">딥브레인</p>
+        <div class="d-flex align-items-end">
+          <p class="sum">19,720 원</p>
+          <span class="hour large-b">2시간</span>
+        </div>
+      </div>
+
+      <div class="pay_detail">
+        <div class="pay_con">
+          <p class="pay large-b">9,860 원</p>
+          <ul class="type">
+            <li class="list medium-m basic">기본</li>
+            <li class="list medium-m night">야근</li>
+            <li class="list medium-m over">초과수당</li>
+          </ul>
+        </div>
+
+        <div class="time_detail">
+          <ul class="time_con">
+            <li class="list">
+              <p class="t1 medium-m">시급</p>
+              <p class="t2 large-b">9,860원</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">근무시간</p>
+              <p class="t2 large-b">16:58 - 18:58 (2시간)</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">휴게시간</p>
+              <p class="t2 large-b">0분</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('partials/html-end.html')

@@ -1,0 +1,81 @@
+@@include('partials/html-start.html', { "title": "이력/경력 작성" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">이력/경력 작성</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="resume univ_resume_step01">
+    <div class="inner">
+      <div class="progress_container">
+        <div class="step-indicator" id="stepIndicator">1 / 6</div>
+        <div class="progress_bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <img src="./assets/images/img/img_pencil.png" class="character" id="character" />
+      </div>
+
+      <div class="big_txt">
+        <p class="t1 header-b">
+          <span class="name">홍길동</span>
+          님의 정보가 맞나요?
+        </p>
+      </div>
+      <div class="thumb_edit">
+        <label class="profile-upload" for="fileInput">
+          <img id="profileImage" src="./assets/images/logo/logo_logo_symbol.png" alt="프로필 이미지" />
+        </label>
+        <input type="file" id="fileInput" accept="image/*" />
+        <div class="txt_con">
+          <p class="name">홍길동</p>
+          <p class="t1 age">남자 · 29세</p>
+        </div>
+      </div>
+
+      <ul class="info_list">
+        <li class="list">
+          <p class="t1 large-r">주소</p>
+          <p class="t2 large-r">부산 사상구 괘법동</p>
+        </li>
+        <li class="list">
+          <p class="t1 large-r">휴대폰</p>
+          <p class="t2 large-r">010-1234-1234</p>
+        </li>
+        <li class="list">
+          <p class="t1 large-r">이메일</p>
+          <p class="t2 large-r">ssuda@ssuda.com</p>
+        </li>
+      </ul>
+
+      <div class="fix_btn two">
+        <button class="btn btn-lg btn-outline-secondary" onclick="location.href=`univ_profile_edit.html`">
+          수정하기
+        </button>
+        <button class="btn btn-lg btn-primary" onclick="location.href=`univ_resume_step02.html`">다음</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  let currentStep = 1;
+  const totalSteps = 4;
+
+  function updateProgress(step) {
+    const progress = (step / totalSteps) * 100;
+    document.getElementById('progressFill').style.width = progress + '%';
+
+    const progressBarWidth = document.querySelector('.progress_bar').offsetWidth;
+    const character = document.getElementById('character');
+    character.style.left = `calc(${progress}% - ${character.offsetWidth / 2}px)`;
+
+    document.getElementById('stepIndicator').innerText = `${step} / ${totalSteps}`;
+  }
+
+  // 초기 설정
+  updateProgress(currentStep);
+</script>
+@@include('partials/html-end.html')

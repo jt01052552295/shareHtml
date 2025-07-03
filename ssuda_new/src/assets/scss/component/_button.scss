@@ -1,0 +1,60 @@
+.btn_con {
+    width: calc(100% - 40px);
+    margin: 0 auto 30px;
+    background-color: #fff;
+    &.one {
+        .btn {
+            width: 100%;
+        }
+    }
+    &.two {
+        display: flex;
+        gap: 15px;
+        .btn {
+            width: calc(100% / 2);
+        }
+    }
+}
+
+.inner {
+    .btn_con {
+        width: 100%;
+    }
+}
+
+.fix_btn {
+    position: fixed;
+    display: flex;
+    gap: 10px;
+    width: calc(100% - 40px);
+    max-width: 576px;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    &.one {
+        .btn {
+            width: 100%;
+        }
+    }
+    &.two {
+        .btn {
+            width: 50%;
+            &.left {
+                flex-grow: 9;
+                color: #fff;
+            }
+            &.right {
+                flex-grow: 1;
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.btn-link {
+    text-decoration: none;
+}

@@ -1,0 +1,66 @@
+.part_time_detail {
+    .summary {
+        .d-flex {
+            gap: 15px;
+            .sum {
+                font: {
+                    size: 36px;
+                    weight: 700;
+                }
+                color: var(--blue-200);
+            }
+            .hour {
+                margin-bottom: 8px;
+                color: var(--gray-500);
+            }
+        }
+    }
+
+    .pay_detail {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid var(--gray-100);
+        .pay_con {
+            .pay {
+                margin-bottom: 15px;
+            }
+            .type {
+                display: flex;
+                gap: 10px;
+                .list {
+                    padding: 5px 15px;
+                    border-radius: 10px;
+                    &.basic {
+                        color: var(--blue-200);
+                        background-color: rgba($color: #3751ae, $alpha: 0.1);
+                    }
+                    &.night {
+                        color: var(--blue-100);
+                        background-color: rgba($color: #02224a, $alpha: 0.1);
+                    }
+                    &.over {
+                        color: var(--point-orange);
+                        background-color: rgba($color: #fe4f2d, $alpha: 0.1);
+                    }
+                }
+            }
+        }
+
+        .time_detail {
+            margin-top: 30px;
+            .time_con {
+                .list {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    .t1 {
+                        color: var(--gray-500);
+                    }
+                    .t2 {
+                    }
+                }
+            }
+        }
+    }
+}

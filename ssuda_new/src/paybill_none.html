@@ -1,0 +1,31 @@
+@@include('partials/html-start.html', { "title": "급여명세서 내역" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">급여명세서 내역</p>
+  </div>
+</header>
+<div class="contents pt-70 height-100">
+  <div class="paybill">
+    <div class="inner">
+      <ul class="tab_con two">
+        <a href="contract_list_none.html" class="list">
+          <span class="t1">근로계약서</span>
+        </a>
+        <a href="paybill_none.html" class="list active">
+          <span class="t1">급여명세서</span>
+        </a>
+      </ul>
+
+      <div class="none_box">
+        <div class="none_img">
+          <img class="none" src="./assets/images/img/img_none.svg" alt="" />
+          <p class="t1 medium-m">작성된 근로계약서가 없습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('partials/html-end.html')

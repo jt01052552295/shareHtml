@@ -1,0 +1,78 @@
+@@include('partials/html-start.html', { "title": "이벤트" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">이벤트</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="event">
+    <div class="inner">
+      <div class="filter_con d-flex justify-content-between align-items=center">
+        <p class="sum medium-m">
+          총
+          <span class="medium-b">3</span>
+          개
+        </p>
+        <button class="btn date_select down_arr" data-bs-toggle="offcanvas" data-bs-target="#taxModal">
+          <span class="t1 small-m">최신순</span>
+        </button>
+      </div>
+      <ul class="list_con">
+        <li class="list">
+          <a class="link" href="event_detail.html">
+            <div class="img_con">
+              <img class="event_img" src="./assets/images/img/img_event_sample.svg" alt="" />
+            </div>
+            <div class="txt_con">
+              <p class="t1 medium-m">오픈기념 할인 이벤트</p>
+              <p class="t2 large-b text_line_2">지금 1년 결제하면 한 달이 무료</p>
+            </div>
+          </a>
+        </li>
+        <li class="list">
+          <a class="link" href="event_detail.html">
+            <div class="img_con">
+              <img class="event_img" src="./assets/images/img/img_event_sample.svg" alt="" />
+            </div>
+            <div class="txt_con">
+              <p class="t1 medium-m">오픈기념 할인 이벤트</p>
+              <p class="t2 large-b text_line_2">지금 1년 결제하면 한 달이 무료</p>
+            </div>
+          </a>
+        </li>
+        <li class="list">
+          <a class="link" href="event_detail.html">
+            <div class="img_con">
+              <img class="event_img" src="./assets/images/img/img_event_sample.svg" alt="" />
+            </div>
+            <div class="txt_con">
+              <p class="t1 medium-m">오픈기념 할인 이벤트</p>
+              <p class="t2 large-b text_line_2">지금 1년 결제하면 한 달이 무료</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="offcanvas offcanvas-bottom taxModal" tabindex="-1" id="taxModal" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <ul class="date_con">
+      <li class="list">
+        <button class="btn btn-link active">
+          <p class="t1">최신순</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">마감임박순</p>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+@@include('partials/html-end.html')

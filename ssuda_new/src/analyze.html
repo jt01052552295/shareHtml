@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/images/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/images/favicon/manifest.json" />
+    <link rel="icon" href="./assets/images/favicon/favicon1.ico" />
+    <meta name=" msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./assets/images/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>쓰다</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <script src="./assets/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- fontawsome -->
+    <script defer="" src="https://kit.fontawesome.com/b82731c292.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/header.js"></script>
+
+    <!-- plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css" />
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+    <!-- plugin -->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header_menu">
+        <div class="inner d-flex justify-content-between">
+          <button class="btn p-0" onclick="history.back()">
+            <img src="./assets/images/icon/ico_back.png" alt="" />
+          </button>
+          <p class="title fs-20 fw-bold">한달 통계</p>
+        </div>
+      </header>
+      <div class="contents pt-70 bg-gray-100 height-100">
+        <div class="analyze">
+          <div class="inner">
+            <div class="card_con date_select">
+              <div class="box">
+                <button class="btn left_arr"></button>
+                <p class="tit">2025년 4월</p>
+                <button class="btn right_arr"></button>
+              </div>
+            </div>
+
+            <div class="card_con analyze_pay">
+              <p class="tit">최근 1년 급여</p>
+              <div class="analyze_box">
+                <div class="box">
+                  <div class="tit_con">
+                    <p class="t1 medium-b">합계</p>
+                    <span class="t2 small-m">2개</span>
+                  </div>
+                  <p class="pay_sum medium-b">763,991원</p>
+                  <img src="./assets/images/img/img_gold.png" alt="" class="icon" />
+                </div>
+
+                <div class="box">
+                  <div class="tit_con">
+                    <p class="t1 medium-b">월 평균</p>
+                    <span class="t2 small-m">1.0개</span>
+                  </div>
+                  <p class="pay_sum medium-b">254,663원</p>
+                  <img src="./assets/images/img/img_graph_bar.png" alt="" class="icon" />
+                </div>
+              </div>
+            </div>
+
+            <div class="card_con">
+              <div id="Chart"></div>
+            </div>
+
+            <ul class="store_list">
+              <li class="card_con">
+                <p class="tit large-b">딥브레인</p>
+                <p class="pay large-m">463,091원</p>
+              </li>
+              <li class="card_con">
+                <p class="tit large-b">BIFC</p>
+                <p class="pay large-m">300,900원</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var chart = c3.generate({
+        bindto: '#Chart',
+        data: {
+          columns: [
+            ['딥브레인', 45, 42, 44, 150, 32, 10], //제목, 데이터
+            ['BIFC', 10, 20, 35, 25, 60, 55]
+          ],
+          type: 'bar', // 차트 종류
+          colors: {
+            딥브레인: '#ff8888', // 각 차트 색상
+            BIFC: '#165783'
+          }
+        },
+        size: {
+          height: 280
+        } // 차트 크기
+      });
+    </script>
+  </body>
+</html>

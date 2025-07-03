@@ -1,0 +1,79 @@
+@@include('partials/html-start.html', { "title": "내 정보 수정" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">내 정보 수정</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="resume profile_edit">
+    <div class="inner">
+      <div class="thumb_edit">
+        <label class="profile-upload" for="fileInput">
+          <img id="profileImage" src="./assets/images/logo/logo_logo_symbol.png" alt="프로필 이미지" />
+        </label>
+        <input type="file" id="fileInput" accept="image/*" />
+        <div class="txt_con">
+          <p class="name">홍길동</p>
+          <p class="t1 age">남자 · 29세</p>
+        </div>
+      </div>
+
+      <ul class="info_list">
+        <li class="member_input">
+          <p class="form-label required">주소</p>
+          <div class="input_con mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="지번, 도로명, 건물명으로 검색"
+              aria-label="Recipient’s username"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-secondary confirm" type="button" id="button-addon2">검색</button>
+          </div>
+        </li>
+        <li class="member_input phone">
+          <p class="form-label required">휴대폰</p>
+          <div class="input_con mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="휴대폰 번호 '-'제외하고 입력"
+              aria-label="Recipient’s username"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-secondary confirm" type="button" id="button-addon2">인증번호</button>
+          </div>
+          <div class="input_con mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="인증번호 입력"
+              aria-label="Recipient’s username"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-secondary confirm" type="button" id="button-addon2">확인</button>
+          </div>
+        </li>
+        <li class="member_input email mb-3">
+          <p class="form-label required">이메일</p>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="예) univ@univ.com"
+            aria-label="Recipient’s username"
+            aria-describedby="button-addon2"
+          />
+        </li>
+      </ul>
+
+      <div class="fix_btn one">
+        <button class="btn btn-lg btn-primary w-100" onclick="location.href=`univ_mypage.html`">완료</button>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

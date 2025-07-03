@@ -1,0 +1,96 @@
+.manage_mypage {
+    .account_info {
+        a {
+            .name {
+                margin-bottom: 15px;
+            }
+            .email {
+                color: var(--gray-500);
+            }
+            .period {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 15px;
+                padding-block: 15px;
+                border-top: 1px solid var(--gray-100);
+                .t1 {
+                }
+                .t2 {
+                    padding-right: 20px;
+                    color: var(--point-orange);
+                }
+            }
+        }
+    }
+
+    .store_select {
+        display: flex;
+        align-items: center;
+        .thumb_img {
+            position: relative;
+            width: 45px;
+            height: 45px;
+            background-color: var(--gray-100);
+            border-radius: 15px;
+            img {
+                @include center();
+                width: 80%;
+            }
+        }
+    }
+
+    .guide {
+        .list_con {
+            .list {
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                    .thumb_img {
+                        position: relative;
+                        width: 45px;
+                        height: 45px;
+                        background-color: var(--gray-100);
+                        border-radius: 15px;
+                        img {
+                            @include center();
+                            width: 80%;
+                        }
+                    }
+                    .txt_con {
+                        padding-left: 12px;
+                        .t1 {
+                            margin-bottom: 5px;
+                        }
+                        .t2 {
+                            color: var(--gray-500);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .menu {
+        .list_con {
+            .list {
+                margin-bottom: 30px;
+                a {
+                    .t1 {
+                        font: {
+                            size: 18px;
+                            weight: 500;
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

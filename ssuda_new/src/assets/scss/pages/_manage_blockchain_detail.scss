@@ -1,0 +1,22 @@
+.manage_blockchain_detail {
+    .card_con {
+        .summary {
+            margin-top: 30px;
+            .list {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 20px;
+                margin-bottom: 15px;
+                .t1 {
+                    width: 100px;
+                    flex-shrink: 0;
+                    color: var(--gray-500);
+                }
+                .t2 {
+                    word-break: break-all;
+                }
+            }
+        }
+    }
+}

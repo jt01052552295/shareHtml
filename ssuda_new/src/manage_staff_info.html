@@ -1,0 +1,389 @@
+@@include('partials/html-start.html', { "title": "직원 정보" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">직원 정보</p>
+    <a href="profile_edit.html" class="btn large-b">수정</a>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="staff_info">
+    <div class="inner">
+      <ul class="nav nav-tabs three" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            기본
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            프로필
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="commute-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#commute-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="commute-tab-pane"
+            aria-selected="false"
+          >
+            근무 내역
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <div class="card_con">
+            <ul class="info">
+              <li class="list">
+                <p class="t1 medium-l">고용형태</p>
+                <div class="badge_con small-m">정규직</div>
+              </li>
+              <li class="list">
+                <p class="t1 medium-l">이름</p>
+                <p class="t2 medium-l">홍길동</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card_con">
+            <ul class="info">
+              <li class="list">
+                <p class="t1 medium-l">주 근로시간</p>
+                <div class="t2">8시간</div>
+              </li>
+              <li class="list">
+                <p class="t1 medium-l">계약직 여부</p>
+                <div class="badge_con small-m">No</div>
+              </li>
+              <li class="list">
+                <p class="t1 medium-l">입사일자</p>
+                <div class="t2">2024.10.09</div>
+              </li>
+              <li class="list">
+                <p class="t1 medium-l">업무내용</p>
+                <div class="t2">없음</div>
+              </li>
+              <li class="list">
+                <p class="t1 medium-l">메모</p>
+                <div class="t2">없음</div>
+              </li>
+            </ul>
+          </div>
+          <div class="btn_con one">
+            <a href="contract_detail.html" class="btn btn-lg btn-primary">근로계약서 보기</a>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="card_con">
+            <ul class="info">
+              <li class="list">
+                <p class="t1 medium-l">핸드폰 번호</p>
+                <a href="tel:01011231234" class="t2">01012341234</a>
+              </li>
+              <li class="list">
+                <p class="t1 medium-l">계좌번호</p>
+                <div class="t2">없음</div>
+              </li>
+              <li class="list">
+                <p class="t1 medium-l">주소</p>
+                <div class="t2">없음</div>
+              </li>
+              <li class="list">
+                <p class="t1 medium-l">주민번호</p>
+                <div class="t2">없음</div>
+              </li>
+            </ul>
+          </div>
+          <div class="btn_con one">
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              직원에게 추가 정보 요청하기
+            </button>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="commute-tab-pane" role="tabpanel" aria-labelledby="commute-tab" tabindex="0">
+          <div class="card_con">
+            <div class="commute_list">
+              <div class="date_select">
+                <button class="btn large-b down_arr">2024년 10월</button>
+                <ul class="week">
+                  <li class="list">
+                    <p class="t1">월</p>
+                  </li>
+                  <li class="list">
+                    <p class="t1">화</p>
+                  </li>
+                  <li class="list">
+                    <p class="t1">수</p>
+                  </li>
+                  <li class="list">
+                    <p class="t1">목</p>
+                  </li>
+                  <li class="list">
+                    <p class="t1">금</p>
+                  </li>
+                  <li class="list">
+                    <p class="t1">토</p>
+                  </li>
+                  <li class="list">
+                    <p class="t1">일</p>
+                  </li>
+                </ul>
+                <ul class="day">
+                  <li class="list one">
+                    <p class="t1">1</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">2</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list active two">
+                    <p class="t1">3</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">4</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">5</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">6</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list one">
+                    <p class="t1">7</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">8</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">9</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">10</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">11</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">12</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">13</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">14</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">15</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">16</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">17</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                  <li class="list">
+                    <p class="t1">18</p>
+                    <div class="point">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="timeline bg-gray-100">
+                <div class="card_con" style="padding: 0">
+                  <div class="name_con">
+                    <p class="tit medium-m">{회사명}</p>
+                    <div class="condition on">
+                      <span class="t1 small-l">출근</span>
+                    </div>
+                    <div class="condition rest">
+                      <span class="t1 small-l">휴식</span>
+                    </div>
+                    <div class="condition off">
+                      <span class="t1 small-l">퇴근</span>
+                    </div>
+                  </div>
+                  <div class="work_time">
+                    <p class="time large-b">09:00 - 18:00</p>
+                    <p class="rest_time medium-m">
+                      휴식
+                      <span>0</span>
+                      분
+                    </p>
+                  </div>
+
+                  <div class="map_con">
+                    <div
+                      id="daumRoughmapContainer1745480289399"
+                      class="root_daum_roughmap root_daum_roughmap_landing map"
+                      style="width: 100%"
+                    ></div>
+
+                    <script
+                      charset="UTF-8"
+                      class="daum_roughmap_loader_script"
+                      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+                    ></script>
+
+                    <script charset="UTF-8">
+                      new daum.roughmap.Lander({
+                        timestamp: '1745480289399',
+                        key: '2ntim',
+                        mapHeight: '300'
+                      }).render();
+                    </script>
+                    <p class="t1 small-l">인터넷 환경에 따라 위치에 오차가 있을 수 있습니다.</p>
+                  </div>
+
+                  <ul class="time_stamp">
+                    <li class="list">
+                      <p class="t1 medium-b">출근</p>
+                      <p class="t2 medium-b">09:00</p>
+                    </li>
+                    <li class="list">
+                      <p class="t1 medium-b">휴식 시작</p>
+                      <p class="t2 medium-b">12:00</p>
+                    </li>
+                    <li class="list">
+                      <p class="t1 medium-b">휴식 종료</p>
+                      <p class="t2 medium-b">13:00</p>
+                    </li>
+                    <li class="list">
+                      <p class="t1 medium-b">퇴근</p>
+                      <p class="t2 medium-b">18:00</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div
+  class="modal fade basicComplete"
+  id="staticBackdrop"
+  data-bs-backdrop="true"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p class="tit header-b">추가정보 요청을 보낼까요?</p>
+        <p class="t1 large-l">직원에게 프로필 수정을 추가/수정을 요청할 수 있습니다.</p>
+      </div>
+      <div class="modal-footer two">
+        <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal">취소</button>
+        <button type="button" class="btn btn-lg btn-primary" onclick="location.href=''">확인</button>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('partials/html-end.html')

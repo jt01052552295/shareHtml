@@ -1,0 +1,76 @@
+@@include('partials/html-start.html', { "title": "프로필 설정" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">프로필 설정</p>
+    <a href="profile_edit.html" class="btn large-b">수정</a>
+  </div>
+</header>
+<section class="contents bg-gray-100 pt-70 pb-100">
+  <div class="profile_setting">
+    <div class="inner">
+      <div class="profile">
+        <div class="thumb_img">
+          <img src="./assets/images/logo/logo_logo_symbol.png" alt="" />
+        </div>
+        <div class="txt_con">
+          <p class="t1">이메일</p>
+          <p class="email">Ssuda@naver.com</p>
+        </div>
+      </div>
+
+      <div class="profile_info">
+        <ul class="info">
+          <li class="list">
+            <p class="tit">이름</p>
+            <p class="t1">최동혁</p>
+          </li>
+          <li class="list">
+            <p class="tit">핸드폰 번호</p>
+            <p class="t1">없음</p>
+          </li>
+          <li class="list">
+            <p class="tit">성별</p>
+            <p class="t1">없음</p>
+          </li>
+        </ul>
+        <ul class="info">
+          <li class="list">
+            <p class="tit">은행</p>
+            <p class="t1">없음</p>
+          </li>
+          <li class="list">
+            <p class="tit">계좌번호</p>
+            <p class="t1">없음</p>
+          </li>
+          <li class="list">
+            <p class="tit">주소</p>
+            <p class="t1">없음</p>
+          </li>
+          <li class="list">
+            <p class="tit">주민번호</p>
+            <p class="t1">없음</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="login_con">
+        <ul class="list_con">
+          <li class="list">
+            <a href="javascript:void(0)">
+              <p class="t1 right_arr logout">로그아웃 하기</p>
+            </a>
+          </li>
+          <li class="list">
+            <a href="javascript:void(0)">
+              <p class="t1 right_arr secession">탈퇴하기</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

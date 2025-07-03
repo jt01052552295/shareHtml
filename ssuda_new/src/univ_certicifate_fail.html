@@ -1,0 +1,27 @@
+@@include('partials/html-start.html', { "title": "이력서발급" })
+<header class="header_menu univ">
+    <div class="inner d-flex justify-content-between">
+        <h1 class="logo">
+            <a class="link" href="univ_main.html">
+                <img class="logo" src="./assets/images/logo/logo_silla.png" alt="">
+            </a>
+        </h1>
+        <p class="title fs-20 fw-bold">이력서 발급</p>
+    </div>
+</header>
+<section class="contents pt-70 pb-100 height-100">
+    <div class="univ_certificate_complete">
+        <div class="inner">
+            <div class="box_con">
+                <div class="img_con">
+                    <img class="complete_img" src="./assets/images/img/img_univ_fail.png" alt="">
+                </div>
+                <p class="t1 large-l">신청 중 오류가 발생했습니다. <span class="nl">잠시 후 다시 시도해 주세요.</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="fix_btn one">
+        <button class="btn btn-primary btn-lg center" onclick="location.href='univ_main.html'">홈으로</button>
+    </div>
+</section>
+@@include('partials/html-end.html')

@@ -1,0 +1,90 @@
+@import "../mixin/base";
+.manage_store {
+    .page_tit {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .store_connect {
+            img {
+                width: 25px;
+            }
+        }
+    }
+    .card_con {
+        .tit {
+            margin-bottom: 0;
+        }
+        .staff_con {
+            margin-top: 15px;
+            .box {
+                padding: 20px;
+                // border: 2px solid var(--blue-200);
+                border-radius: 15px;
+                background-color: rgba($color: #3751ae, $alpha: 0.1);
+                .sum {
+                    margin-bottom: 15px;
+                    color: var(--blue-200);
+                }
+                &.work {
+                }
+            }
+            .box_con {
+                margin-top: 10px;
+                gap: 10px;
+                .box {
+                    width: calc((100% / 2) - 5px);
+                    padding: 20px;
+                    &.rest {
+                        // border: 2px solid var(--point-color);
+                        background-color: rgba($color: #2fd1d6, $alpha: 0.1);
+                        .sum {
+                            color: var(--point-color);
+                        }
+                    }
+                    &.off {
+                        // border: 2px solid var(--point-orange);
+                        background-color: rgba($color: #fe4f2d, $alpha: 0.1);
+                        .sum {
+                            color: var(--point-orange);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .staff_sum {
+        display: flex;
+        margin-top: 30px;
+        text-align: center;
+        .list {
+            position: relative;
+            width: calc(100% / 2);
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 1px;
+                height: 40px;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: var(--gray-500);
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+            .t1 {
+            }
+            .t2 {
+                color: var(--gray-500);
+            }
+        }
+    }
+
+    .btn_con {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,53 @@
+.event {
+    .filter_con {
+        margin-bottom: 15px;
+        .date_select {
+            padding-right: 20px;
+            padding-block: 0;
+        }
+    }
+
+    .list_con {
+        .list {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .link {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .img_con {
+                    position: relative;
+                    width: 115px;
+                    border-radius: 25px;
+                    overflow: hidden;
+                    &::before {
+                        content: "";
+                        display: block;
+                        padding-bottom: 100%;
+                    }
+                    .event_img {
+                        @include center();
+                        width: 100%;
+                    }
+                }
+                .txt_con {
+                    .t1 {
+                        color: var(--gray-500);
+                        word-break: keep-all;
+                    }
+                    .t2 {
+                        word-break: keep-all;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.event_detail {
+    .event_img {
+        width: 100%;
+    }
+}

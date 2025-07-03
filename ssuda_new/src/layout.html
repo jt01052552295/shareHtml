@@ -1,0 +1,173 @@
+@@include('partials/html-start.html', { "title": "index" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()" disabled>
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">타이틀</p>
+  </div>
+</header>
+<header class="header_menu main" style="top: 70px">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button
+      class="date_select btn down_arr"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#dateSelect"
+      aria-controls="offcanvasBottom"
+    >
+      <span class="t1 large-b">2025년 4월</span>
+    </button>
+    <div class="btn_link d-flex align-items-center">
+      <!-- <button class="btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button> -->
+      <button
+        class="btn alarmModal active"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#alarmModal"
+        aria-controls="offcanvasTop"
+      >
+        <i class="fa-regular fa-bell"></i>
+      </button>
+    </div>
+  </div>
+</header>
+<header class="header_menu" style="top: 140px">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">문의하기</p>
+    <a href="inquiry_write.html">
+      <span class="medium-b">작성하기</span>
+    </a>
+  </div>
+</header>
+<header class="header_menu" style="top: 270px">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">{근무지명}</p>
+    <button class="link_img" onclick="location.href=`work_place_setting.html`">
+      <img src="./assets/images/icon/ico_setting.png" alt="" />
+    </button>
+  </div>
+</header>
+<header class="header_menu" style="top: 350px">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">직원 목록</p>
+    <button class="link_img" onclick="location.href=`manage_staff_add.html`">
+      <img src="./assets/images/icon/ico_plus.png" alt="" />
+    </button>
+  </div>
+</header>
+<header class="header_menu univ" style="top: 420px">
+  <div class="inner d-flex justify-content-between">
+    <h1 class="logo">
+      <a class="link" href="univ_main.html">
+        <img class="logo" src="./assets/images/logo/logo_silla.png" alt="" />
+      </a>
+    </h1>
+    <p class="title fs-20 fw-bold">이력서 발급</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="layout">
+    <div class="inner"></div>
+  </div>
+</section>
+<nav class="ft_nav" style="bottom: 140px">
+  <div class="inner">
+    <ul class="link_con">
+      <li class="link">
+        <a href="univ_certificate.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_list.svg" alt="" />
+          <p>발급하기</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="univ_save.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_save.svg" alt="" />
+          <p>보관함</p>
+        </a>
+      </li>
+      <li class="link active">
+        <a href="univ_confirm.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_confirm.svg" alt="" />
+          <p>진위확인</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="univ_mypage.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_mypage.svg" alt="" />
+          <p>마이페이지</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<nav class="ft_nav" style="bottom: 70px">
+  <div class="inner">
+    <ul class="link_con">
+      <li class="link">
+        <a href="manage_index.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_work.svg" alt="" />
+          <p>근무</p>
+        </a>
+      </li>
+      <li class="link active">
+        <a href="manage_salary.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_salary.svg" alt="" />
+          <p>급여</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="manage_store.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_store.svg" alt="" />
+          <p>매장</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="manage_mypage.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_more.svg" alt="" />
+          <p>더보기</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<nav class="ft_nav">
+  <div class="inner">
+    <ul class="link_con">
+      <li class="link">
+        <a href="index.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_work.svg" alt="" />
+          <p>근무</p>
+        </a>
+      </li>
+      <li class="link active">
+        <a href="salary.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_salary.svg" alt="" />
+          <p>급여</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="connection.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_connection.svg" alt="" />
+          <p>연결</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="mypage.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_more.svg" alt="" />
+          <p>더보기</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+@@include('partials/html-end.html')

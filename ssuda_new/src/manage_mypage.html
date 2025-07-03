@@ -1,0 +1,157 @@
+@@include('partials/html-start.html', { "title": "마이페이지" })
+<div class="contents pt-70 bg-gray-100 pb-100">
+    <section class="manage_mypage">
+        <div class="inner">
+            <div class="card_con">
+                <div class="account_info">
+                    <a class="right_arr" href="manage_profile_setting.html">
+                        <p class="name large-b">{사용자명}</p>
+                        <p class="email medium-m">test@naver.com</p>
+                    </a>
+                    <a class="right_arr" href="manage_subscribe_info.html">
+                        <div class="period">
+                            <p class="t1 medium-m">남은기간</p>
+                            <p class="t2 medium-b">D-30</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card_con">
+                <div class="store_select down_arr" data-bs-toggle="offcanvas" data-bs-target="#storeList"
+                    aria-controls="offcanvasBottom">
+                    <div class="thumb_img">
+                        <img src="./assets/images/img/img_store.png" alt="">
+                    </div>
+                    <button class="btn">
+                        <span class="medium-m store_name">{업체명}</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card_con">
+                <div class="guide">
+                    <ul class="list_con">
+                        <li class="list right_arr">
+                            <a href="manage_guide.html">
+                                <div class="thumb_img">
+                                    <img src="./assets/images/img/img_guide.png" alt="">
+                                </div>
+                                <div class="txt_con">
+                                    <p class="t1 medium-b">기그 사용 설명서</p>
+                                    <p class="t2 small-m">사장님을 위한 필수 가이드</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card_con">
+                <div class="menu">
+                    <ul class="list_con">
+                        <li class="list">
+                            <a class="right_arr" href="manage_staff_list.html">
+                                <p class="t1 large-m">직원 목록</p>
+                            </a>
+                        </li>
+                        <!-- <li class="list">
+                                    <a class="right_arr" href="javascript:void(0)">
+                                        <p class="t1 large-m">직원 복구</p>
+                                    </a>
+                                </li> -->
+                        <li class="list ">
+                            <a class="right_arr" href="notice.html">
+                                <p class="t1 large-m">공지사항</p>
+                            </a>
+                        </li>
+                        <li class="list ">
+                            <a class="right_arr" href="manage_subscribe.html">
+                                <p class="t1 large-m">구독 관리</p>
+                            </a>
+                        </li>
+                        <!-- <li class="list ">
+                                    <a class="right_arr" href="javascript:void(0)">
+                                        <p class="t1 large-m">연간 회원 혜택</p>
+                                    </a>
+                                </li> -->
+                        <li class="list ">
+                            <a class="right_arr" href="manage_blockchain.html">
+                                <p class="t1 large-m">블록체인</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="ft_nav">
+        <div class="inner">
+            <ul class="link_con">
+                <li class="link">
+                    <a href="manage_index.html">
+                        <img class="menu_icon" src="./assets/images/icon/ico_menu_work.svg" alt="">
+                        <p>근무</p>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="manage_salary.html">
+                        <img class="menu_icon" src="./assets/images/icon/ico_menu_salary.svg" alt="">
+                        <p>급여</p>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="manage_store.html">
+                        <img class="menu_icon" src="./assets/images/icon/ico_menu_store.svg" alt="">
+                        <p>매장</p>
+                    </a>
+                </li>
+                <li class="link active">
+                    <a href="manage_mypage.html">
+                        <img class="menu_icon" src="./assets/images/icon/ico_menu_more.svg" alt="">
+                        <p>더보기</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="offcanvas offcanvas-bottom storeList" tabindex="-1" id="storeList" aria-labelledby="offcanvasBottomLabel">
+
+    <div class="offcanvas-body small">
+        <ul class="check_con">
+            <li class="list">
+                <button class="btn btn-outline-primary toggle">
+                    <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault"
+                            name="sort">
+                        <label class="form-check-label check_label medium-m" for="flexCheckDefault">
+                            {업체명}
+                        </label>
+                    </div>
+                </button>
+            </li>
+            <li class="list">
+                <button class="btn btn-outline-primary toggle active">
+                    <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault0"
+                            name="sort" checked>
+                        <label class="form-check-label check_label medium-m" for="flexCheckDefault0">
+                            {업체명}
+                        </label>
+                    </div>
+                </button>
+            </li>
+            <li class="list">
+                <button class="btn btn-outline-primary toggle ">
+                    <div class="form-check d-flex align-items-center">
+                        <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault1"
+                            name="sort">
+                        <label class="form-check-label check_label medium-m" for="flexCheckDefault1">
+                            {업체명}
+                        </label>
+                    </div>
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+@@include('partials/html-end.html')

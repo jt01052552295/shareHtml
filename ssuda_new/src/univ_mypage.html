@@ -1,0 +1,71 @@
+@@include('partials/html-start.html', { "title": "마이페이지" })
+<header class="header_menu univ">
+    <div class="inner d-flex justify-content-between">
+        <h1 class="logo">
+            <a class="link" href="univ_main.html">
+                <img class="logo" src="./assets/images/logo/logo_univ_logo_sample.png" alt="">
+            </a>
+        </h1>
+        <p class="title fs-20 fw-bold">마이페이지</p>
+    </div>
+</header>
+<section class="contents pt-70 pb-100">
+    <div class="univ_mypage">
+        <div class="inner">
+            <div class="thumb_edit">
+                <label class="profile-upload" for="fileInput">
+                    <img id="profileImage" src="./assets/images/logo/logo_logo_symbol.png" alt="프로필 이미지" />
+                </label>
+                <input type="file" id="fileInput" accept="image/*" />
+                <div class="txt_con">
+                    <p class="name">이정우</p>
+                    <p class="t1 age">남자 · 29세</p>
+                </div>
+            </div>
+
+            <ul class="menu_list">
+                <li class="list right_arr">
+                    <a class="link" href="univ_profile.html">
+                        <p class="t1 large-m">내정보 관리</p>
+                    </a>
+                </li>
+                <li class="list right_arr">
+                    <a class="link" href="univ_resume_view.html">
+                        <p class="t1 large-m">이력서관리</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<nav class="ft_nav">
+    <div class="inner">
+        <ul class="link_con">
+            <li class="link">
+                <a href="univ_certificate.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_univ_list.svg" alt="">
+                    <p>발급하기</p>
+                </a>
+            </li>
+            <li class="link">
+                <a href="univ_save.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_univ_save.svg" alt="">
+                    <p>보관함</p>
+                </a>
+            </li>
+            <li class="link ">
+                <a href="univ_confirm.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_univ_confirm.svg" alt="">
+                    <p>진위확인</p>
+                </a>
+            </li>
+            <li class="link active">
+                <a href="univ_mypage.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_univ_mypage.svg" alt="">
+                    <p>마이페이지</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+@@include('partials/html-end.html')

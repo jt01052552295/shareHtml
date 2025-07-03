@@ -1,0 +1,18 @@
+.univ_membership_step02 {
+    .txt_con {
+        border-bottom: 1px solid var(--gray-200);
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        .t1 {
+            span {
+                color: var(--blue-200);
+            }
+        }
+    }
+
+    .member_input {
+        &.policy {
+            margin-top: 50px;
+        }
+    }
+}

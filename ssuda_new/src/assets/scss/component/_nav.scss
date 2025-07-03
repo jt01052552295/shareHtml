@@ -1,0 +1,36 @@
+.ft_nav {
+    position: fixed;
+    width: 100%;
+    max-width: 576px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    padding-block: 10px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    .link_con {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        .link {
+            width: calc(100% / 4);
+            text-align: center;
+            opacity: 0.3;
+            a {
+                .menu_icon {
+                    width: 30px;
+                }
+                p {
+                    margin-top: 5px;
+                    font: {
+                        size: 10px;
+                        weight: 500;
+                    }
+                }
+            }
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+}

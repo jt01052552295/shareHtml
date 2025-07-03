@@ -1,0 +1,94 @@
+.header_menu {
+    position: fixed;
+    width: 100%;
+    max-width: 576px;
+    height: 60px;
+    left: 50%;
+    background-color: transparent;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 100;
+    transition: all 0.4s;
+    &.active {
+        background-color: #fff;
+        box-shadow: 0px 3px 4px rgba($color: #000000, $alpha: 0.1);
+        transition: all 0.4s;
+    }
+    .inner {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 20px;
+        gap: 10px;
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font: {
+                size: 20px;
+                weight: 700;
+            }
+        }
+        @media (max-width: 480px) {
+            .title {
+                font: {
+                    size: 1rem;
+                    weight: 700;
+                }
+            }
+        }
+        .back {
+            border: none;
+            outline: none;
+            background: none;
+        }
+        .link_img {
+            width: 25px;
+            border: none;
+            outline: none;
+            background: none;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &.main {
+        .date_select {
+            padding-right: 20px;
+        }
+        .btn_link {
+            .alarmModal {
+                padding: 0;
+                i {
+                    font-size: 24px;
+                }
+                &.active {
+                    position: relative;
+                    border: none;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        top: 0;
+                        right: 0;
+                        background-color: red;
+                    }
+                }
+            }
+        }
+    }
+    &.univ {
+        .logo {
+            .link {
+                .logo {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

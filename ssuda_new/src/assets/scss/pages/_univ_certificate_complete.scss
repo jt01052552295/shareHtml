@@ -1,0 +1,39 @@
+.univ_certificate_complete {
+    .inner {
+        position: static;
+    }
+    .box_con {
+        @include center();
+        width: 100%;
+        text-align: center;
+        .img_con {
+            .complete_img {
+                width: 50%;
+            }
+        }
+        .t1 {
+            margin-top: 15px;
+            color: var(--gray-500);
+        }
+    }
+}
+
+.univ_complete {
+    .inner {
+        position: static;
+    }
+    .box_con {
+        @include center();
+        width: 100%;
+        text-align: center;
+        .img_con {
+            .complete_img {
+                width: 50%;
+            }
+        }
+        .t1 {
+            margin-top: 15px;
+            color: var(--gray-500);
+        }
+    }
+}

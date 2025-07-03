@@ -1,0 +1,51 @@
+@@include('partials/html-start.html', { "title": "내 정보 수정" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">내 정보 수정</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="resume univ_resume_step01">
+    <div class="inner">
+      <div class="big_txt">
+        <p class="t1 header-b">
+          <span class="name">홍길동</span>
+          님의 정보가 맞나요?
+        </p>
+      </div>
+      <div class="thumb_edit">
+        <label class="profile-upload" for="fileInput">
+          <img id="profileImage" src="./assets/images/logo/logo_logo_symbol.png" alt="프로필 이미지" />
+        </label>
+        <input type="file" id="fileInput" accept="image/*" />
+        <div class="txt_con">
+          <p class="name">홍길동</p>
+          <p class="t1 age">남자 · 29세</p>
+        </div>
+      </div>
+
+      <ul class="info_list">
+        <li class="list">
+          <p class="t1 large-r">주소</p>
+          <p class="t2 large-r">부산 사상구 괘법동</p>
+        </li>
+        <li class="list">
+          <p class="t1 large-r">휴대폰</p>
+          <p class="t2 large-r">010-1234-1234</p>
+        </li>
+        <li class="list">
+          <p class="t1 large-r">이메일</p>
+          <p class="t2 large-r">ssuda@ssuda.com</p>
+        </li>
+      </ul>
+
+      <div class="fix_btn one">
+        <button class="btn btn-lg btn-primary w-100" onclick="location.href=`univ_profile_edit.html`">수정하기</button>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

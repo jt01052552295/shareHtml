@@ -1,0 +1,142 @@
+.profile_setting {
+    .profile {
+        text-align: center;
+        .thumb_img {
+            margin-bottom: 15px;
+            img {
+            }
+        }
+        .txt_con {
+            .t1 {
+                margin-bottom: 5px;
+                font: {
+                    size: 18px;
+                    weight: 500;
+                }
+                color: var(--gray-500);
+            }
+            .email {
+                font: {
+                    size: 18px;
+                    weight: 700;
+                }
+            }
+        }
+    }
+
+    .profile_info {
+        margin-top: 50px;
+        .info {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--gray-200);
+            .list {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                .tit {
+                    font: {
+                        size: 18px;
+                        weight: 400;
+                    }
+                    color: var(--gray-500);
+                }
+                .t1 {
+                    font: {
+                        size: 18px;
+                        weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    .login_con {
+        .list_con {
+            .list {
+                a {
+                    .t1 {
+                        position: relative;
+                        margin-bottom: 30px;
+                        padding-left: 30px;
+                        font: {
+                            size: 18px;
+                            weight: 500;
+                        }
+                        &::before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            width: 16px;
+                            height: 20px;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
+                            background: url("../images/icon/ico_menu_logout.png") no-repeat;
+                        }
+                        &.secession {
+                            &::before {
+                                height: 22px;
+                                background: url("../images/icon/ico_menu_delet.png") no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .profile_setting {
+        .profile {
+            text-align: center;
+            .thumb_img {
+                img {
+                }
+            }
+            .txt_con {
+                .t1 {
+                    font: {
+                        size: 1rem;
+                    }
+                }
+                .email {
+                    font: {
+                        size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .profile_info {
+            .info {
+                .list {
+                    .tit {
+                        font: {
+                            size: 1rem;
+                        }
+                    }
+                    .t1 {
+                        font: {
+                            size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .login_con {
+            .list_con {
+                .list {
+                    a {
+                        .t1 {
+                            font: {
+                                size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

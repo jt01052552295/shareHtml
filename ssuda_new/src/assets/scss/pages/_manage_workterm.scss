@@ -1,0 +1,27 @@
+.manage_workterm {
+    margin-top: 50px;
+    .date_list {
+        .btn {
+            padding: 0;
+            color: var(--gray-500);
+        }
+    }
+    .summary {
+        margin-top: 30px;
+        .list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            .t1 {
+                color: var(--gray-500);
+            }
+            .t2 {
+            }
+        }
+    }
+
+    .btn-outline-primary {
+        margin-top: 30px;
+    }
+}

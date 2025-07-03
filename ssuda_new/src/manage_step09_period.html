@@ -1,0 +1,39 @@
+@@include('partials/html-start.html', { "title": "근로계약서 작성" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+  </div>
+</header>
+<div class="contents pt-70">
+  <section class="manage_period">
+    <div class="inner">
+      <p class="header-b manage_title">
+        <b class="point">계약 정보</b>
+        를 입력해 주세요
+      </p>
+      <div class="input_group">
+        <p class="form-label">계약기간</p>
+        <div class="down_arr">
+          <input type="text" class="form-control address" value="2025년 1월 1일부터" />
+        </div>
+        <input type="text" class="form-control address_detail" value="2026년 1월 30일까지" />
+      </div>
+      <div class="form-check d-flex align-items-center">
+        <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault" name="sort" />
+        <label class="form-check-label check_label small-l" for="flexCheckDefault">종료일 없음</label>
+      </div>
+      <div class="input_group mb-4">
+        <p class="form-label">계약일자</p>
+        <div class="down_arr">
+          <input type="text" class="form-control" value="2025년 1월 6일" />
+        </div>
+      </div>
+    </div>
+    <div class="btn_con one">
+      <button class="btn btn-primary btn-lg" onclick="location.href='manage_step10_complete.html'">서명하기</button>
+    </div>
+  </section>
+</div>
+@@include('partials/html-end.html')

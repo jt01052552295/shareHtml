@@ -1,0 +1,409 @@
+/* css 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 576px;
+    margin: 0 auto !important;
+    font-family: "Pretendard" !important;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+    color: #191919;
+}
+
+@media (max-width: 480px) {
+    body {
+        font: {
+            size: 0.9rem;
+        }
+    }
+}
+
+/* css 초기화 */
+
+/* 레이아웃 */
+
+.contents {
+    position: relative;
+}
+
+.inner {
+    position: relative;
+    max-width: 576px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.link_arr {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 14px;
+        height: 14px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url("../images/icon/ico_prev_14px.png") no-repeat center / cover;
+    }
+}
+
+.right_arr {
+    position: relative;
+    display: block;
+    &::after {
+        content: "\f105";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+}
+
+.left_arr {
+    position: relative;
+    display: block;
+    &::after {
+        content: "\f104";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+}
+
+.down_arr {
+    position: relative;
+    display: block;
+    &::after {
+        content: "\f078";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+}
+
+.nl {
+    display: block;
+    line-height: inherit;
+}
+
+.rect {
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// .manage_title {
+//     color: var(--blue-200);
+// }
+
+.univ_title {
+    margin-bottom: 10px;
+    font: {
+        size: 18px;
+        weight: 700;
+    }
+}
+
+// 회원가입
+.member_input {
+    .form-label {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 5px;
+        &.required {
+            &::after {
+                content: "*";
+                position: absolute;
+                display: block;
+                top: -5px;
+                right: -10px;
+                color: red;
+            }
+        }
+    }
+    .input_con {
+        display: flex;
+        gap: 10px;
+        .confirm {
+            width: 82px;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.certified_time {
+    color: var(--blue-200);
+}
+
+/* 레이아웃 */
+
+.height-100 {
+    min-height: 100vh;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+/* font size */
+
+.small-l {
+    font: {
+        size: 14px;
+        weight: 300;
+    }
+}
+
+.small-r {
+    font: {
+        size: 14px;
+        weight: 400;
+    }
+}
+
+.small-m {
+    font: {
+        size: 14px;
+        weight: 500;
+    }
+}
+
+.small-b {
+    font: {
+        size: 14px;
+        weight: 700;
+    }
+}
+
+.medium-r {
+    font: {
+        size: 16px;
+        weight: 400;
+    }
+}
+
+.medium-m {
+    font: {
+        size: 16px;
+        weight: 500;
+    }
+}
+
+.medium-b {
+    font: {
+        size: 16px;
+        weight: 700;
+    }
+}
+
+.large-l {
+    font: {
+        size: 18px;
+        weight: 300;
+    }
+}
+
+.large-r {
+    font: {
+        size: 18px;
+        weight: 400;
+    }
+}
+
+.large-m {
+    font: {
+        size: 18px;
+        weight: 500;
+    }
+}
+
+.large-b {
+    font: {
+        size: 18px;
+        weight: 700;
+    }
+}
+
+.header-b {
+    font: {
+        size: 24px;
+        weight: 700;
+    }
+}
+
+.text_align_r {
+    text-align: right;
+}
+
+.text_line_1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.text_line_2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.text_line_3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.point {
+    color: var(--blue-200);
+}
+
+@media (max-width: 480px) {
+    .small-l {
+        font: {
+            size: 0.8rem;
+            weight: 300;
+        }
+    }
+
+    .small-r {
+        font: {
+            size: 0.8rem;
+            weight: 400;
+        }
+    }
+
+    .small-m {
+        font: {
+            size: 0.8rem;
+            weight: 500;
+        }
+    }
+
+    .small-b {
+        font: {
+            size: 0.8rem;
+            weight: 700;
+        }
+    }
+
+    .medium-r {
+        font: {
+            size: 0.9rem;
+            weight: 400;
+        }
+    }
+
+    .medium-m {
+        font: {
+            size: 0.9rem;
+            weight: 500;
+        }
+    }
+
+    .medium-b {
+        font: {
+            size: 0.9rem;
+            weight: 700;
+        }
+    }
+
+    .large-l {
+        font: {
+            size: 1rem;
+            weight: 300;
+        }
+    }
+
+    .large-r {
+        font: {
+            size: 1rem;
+            weight: 400;
+        }
+    }
+
+    .large-m {
+        font: {
+            size: 1rem;
+            weight: 500;
+        }
+    }
+
+    .large-b {
+        font: {
+            size: 1rem;
+            weight: 700;
+        }
+    }
+
+    .header-b {
+        font: {
+            size: 1.2rem;
+            weight: 700;
+        }
+    }
+}

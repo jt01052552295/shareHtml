@@ -1,0 +1,71 @@
+.paybill {
+  .inner {
+    position: static;
+  }
+  .tab_con {
+    margin-bottom: 30px;
+  }
+  .caution_con {
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--gray-100);
+    .t1 {
+    }
+    .t2 {
+      margin-top: 15px;
+      color: var(--gray-500);
+    }
+  }
+
+  .none_box {
+    @include center();
+    .none_img {
+      width: 100%;
+      text-align: center;
+      .none {
+        opacity: 0.2;
+      }
+      .t1 {
+        margin-top: 10px;
+        color: var(--gray-500);
+      }
+    }
+  }
+}
+
+.paybill_list {
+  &.list_con {
+    margin-top: 50px;
+    .list {
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .name_con {
+          .t1 {
+          }
+          .t2 {
+            padding: 3px;
+            border-radius: 5px;
+            background-color: var(--gray-100);
+            color: var(--gray-500);
+          }
+        }
+        .price_con {
+          padding-right: 20px;
+          text-align: right;
+          .t1 {
+          }
+          .t2 {
+            color: var(--gray-500);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.manage_work {
+    .form-control {
+        margin-top: 50px;
+    }
+    .recomment {
+        margin-top: 30px;
+        color: var(--blue-200);
+    }
+    .recomment_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 15px;
+        .list {
+            padding: 7px 20px;
+            border: 1px solid var(--gray-200);
+            border-radius: 100px;
+            .t1 {
+                color: var(--gray-500);
+            }
+        }
+    }
+}

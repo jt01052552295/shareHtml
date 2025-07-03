@@ -1,0 +1,58 @@
+@@include('partials/html-start.html', { "title": "근로계약" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">근로계약서</p>
+  </div>
+</header>
+<section class="contents pt-70 height-100 bg-gray-100">
+  <div class="contract_list">
+    <div class="inner">
+      <div class="card_con">
+        <div class="docu_list">
+          <div class="name_con">
+            <p class="contract_type small-b">정직원</p>
+            <div class="condition">
+              <p class="t1 small-l">계약 완료</p>
+            </div>
+          </div>
+          <p class="tit large-b">{직원명}</p>
+
+          <div class="info_con">
+            <p class="t1 medium-l date">25.01.01 - 26.01.30</p>
+            <p class="t2 large-b price">
+              <span class="kind small-l">시급</span>
+              <span class="point">10,030 원</span>
+            </p>
+          </div>
+
+          <button class="btn btn-light btn-lg w-100" onclick="location.href=`contract_detail.html`">상세보기</button>
+        </div>
+      </div>
+      <div class="card_con">
+        <div class="docu_list">
+          <div class="name_con">
+            <p class="contract_type small-b">계약직</p>
+            <div class="condition">
+              <p class="t1 small-l">계약 전</p>
+            </div>
+          </div>
+          <p class="tit large-b">{직원명}</p>
+
+          <div class="info_con">
+            <p class="t1 medium-l date">25.01.01 - 26.01.30</p>
+            <p class="t2 large-b price">
+              <span class="kind small-l">시급</span>
+              <span class="point">10,030 원</span>
+            </p>
+          </div>
+
+          <button class="btn btn-light btn-lg w-100" onclick="location.href=`contract_detail.html`">상세보기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

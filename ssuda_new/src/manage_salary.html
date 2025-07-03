@@ -1,0 +1,262 @@
+@@include('partials/html-start.html', { "title": "급여관리" })
+<div class="contents pt-70">
+  <section class="manage_salary">
+    <div class="inner">
+      <div class="page_tit header-b">
+        <div class="d-flex align-items-center">
+          <div class="img_con">
+            <img src="./assets/images/img/img_staff.png" alt="" />
+          </div>
+          <a href="javascript:void(0)">
+            <p class="t1">전체 직원</p>
+          </a>
+        </div>
+        <a href="javascript:void(0)" class="">
+          <img src="./assets/images/icon/ico_setting.png" alt="" />
+        </a>
+      </div>
+
+      <div class="card_con">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="tit">4월 총 급여</p>
+        </div>
+        <p class="salary_sum header-b">1,902,980원</p>
+        <div class="time">
+          <p class="small-l">22일 176시간</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="staff_menu bg-gray-100">
+      <div class="inner">
+        <ul class="docu_menu">
+          <li class="list">
+            <a href="manage_paybill.html">
+              <p class="t1 medium-b">급여명세서<br />내역 보기</p>
+              <div class="img_con">
+                <img class="icon_img" src="./assets/images/icon/ico_paybill.png" alt="" />
+              </div>
+            </a>
+          </li>
+          <li class="list">
+            <a href="./manage_contract_list.html">
+              <p class="t1 medium-b">근로계약서<br />내역보기</p>
+              <div class="img_con">
+                <img class="icon_img" src="./assets/images/icon/ico_contract.png" alt="" />
+              </div>
+            </a>
+          </li>
+          <li class="list">
+            <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#excellModal"
+              aria-controls="offcanvasBottom">
+              <p class="t1 medium-b">엑셀<br />내보내기</p>
+              <div class="img_con">
+                <img class="icon_img" src="./assets/images/icon/ico_excell.png" alt="" />
+              </div>
+            </a>
+          </li>
+          <li class="list">
+            <a href="event.html">
+              <p class="t1 medium-b">제휴<br />이벤트</p>
+              <div class="img_con">
+                <img class="icon_img" src="./assets/images/icon/ico_event.png" alt="" />
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <div class="staff_list">
+          <div class="card_con">
+            <p class="tit">직원별 보기</p>
+            <ul class="list_con">
+              <li class="list right_arr">
+                <a href="salary_detail.html">
+                  <div class="name_box">
+                    <p class="t1 medium-b">홍길금</p>
+                    <p class="t2 small-m">D-24</p>
+                  </div>
+                  <div class="pay_box">
+                    <p class="t1 medium-b">0 원</p>
+                    <p class="t2 small-m">10.01 - 10.31</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list right_arr">
+                <a href="salary_detail.html">
+                  <div class="name_box">
+                    <p class="t1 medium-b">홍길은</p>
+                    <p class="t2 small-m">D-24</p>
+                  </div>
+                  <div class="pay_box">
+                    <p class="t1 medium-b">88,740 원</p>
+                    <p class="t2 small-m">10.01 - 10.31</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list right_arr">
+                <a href="salary_detail.html">
+                  <div class="name_box">
+                    <p class="t1 medium-b">홍길동</p>
+                    <p class="t2 small-m">D-24</p>
+                  </div>
+                  <div class="pay_box">
+                    <p class="t1 medium-b">1,814,240 원</p>
+                    <p class="t2 small-m">10.01 - 10.31</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<nav class="ft_nav">
+  <div class="inner">
+    <ul class="link_con">
+      <li class="link">
+        <a href="manage_index.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_work.svg" alt="" />
+          <p>근무</p>
+        </a>
+      </li>
+      <li class="link active">
+        <a href="manage_salary.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_salary.svg" alt="" />
+          <p>급여</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="manage_store.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_store.svg" alt="" />
+          <p>매장</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="manage_mypage.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_menu_more.svg" alt="" />
+          <p>더보기</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-bottom excellModal" tabindex="-1" id="excellModal"
+  aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <ul class="nav nav-tabs three" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true">
+          근무
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+          급여명세
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="work" data-bs-toggle="tab" data-bs-target="#work-tab-pane" type="button" role="tab"
+          aria-controls="work-tab-pane" aria-selected="false">
+          출퇴근
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <ul class="filter">
+          <li class="list">
+            <button class="btn option active small-l">선택</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">일주일</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">이번달</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">1개월</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">3개월</button>
+          </li>
+        </ul>
+
+        <div class="calendar_con">
+          <button class="btn btn-outline-primary date_select">
+            <span class="date medium-b">2024.10.01</span>
+          </button>
+          <p>-</p>
+          <button class="btn btn-outline-primary date_select">
+            <span class="date medium-b">2024.10.01</span>
+          </button>
+        </div>
+        <button class="btn btn-primary btn-lg w-100">내보내기</button>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <ul class="filter">
+          <li class="list">
+            <button class="btn option active small-l">선택</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">일주일</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">이번달</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">1개월</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">3개월</button>
+          </li>
+        </ul>
+
+        <div class="calendar_con">
+          <button class="btn btn-outline-primary date_select">
+            <span class="date medium-b">2024.10.01</span>
+          </button>
+          <p>-</p>
+          <button class="btn btn-outline-primary date_select">
+            <span class="date medium-b">2024.10.01</span>
+          </button>
+        </div>
+        <button class="btn btn-primary btn-lg w-100">내보내기</button>
+      </div>
+      <div class="tab-pane fade" id="work-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <ul class="filter">
+          <li class="list">
+            <button class="btn option active small-l">선택</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">일주일</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">이번달</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">1개월</button>
+          </li>
+          <li class="list">
+            <button class="btn option small-l">3개월</button>
+          </li>
+        </ul>
+
+        <div class="calendar_con">
+          <button class="btn btn-outline-primary date_select">
+            <span class="date medium-b">2024.10.01</span>
+          </button>
+          <p>-</p>
+          <button class="btn btn-outline-primary date_select">
+            <span class="date medium-b">2024.10.01</span>
+          </button>
+        </div>
+        <button class="btn btn-primary btn-lg w-100">내보내기</button>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('partials/html-end.html')

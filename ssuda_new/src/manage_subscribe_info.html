@@ -1,0 +1,90 @@
+@@include('partials/html-start.html', { "title": "구독관리" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">구독관리</p>
+  </div>
+</header>
+<section class="contents pt-70 bg-gray-100 height-100">
+  <div class="manage_subscribe_info">
+    <div class="inner">
+      <div class="card_con">
+        <div class="plan_name d-flex align-items-center justify-content-between">
+          <p class="tit">Standard Plan</p>
+          <div class="condition">
+            <p class="t1 small-m">구독중</p>
+          </div>
+        </div>
+
+        <div class="payment_date d-flex justify-content-between align-items-center">
+          <p class="t1">결제일</p>
+          <p class="t2">03월21일(매년)</p>
+        </div>
+
+        <div class="plan_date">
+          <p class="tit">사용일 확인</p>
+          <div class="date d-flex align-items-center justify-content-between">
+            <p class="t1 medium-m">이용기간</p>
+            <p class="t2 medium-m">2025.03.21 - 2026.03.20</p>
+          </div>
+          <div class="capacity d-flex align-items-center justify-content-between">
+            <p class="t1 medium-m">이용인원</p>
+            <p class="t2 medium-m">
+              <span class="people">10명</span>
+              /
+              <span class="maximun">15명</span>
+            </p>
+          </div>
+          <!-- <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div> -->
+        </div>
+        <div class="btn_con one">
+          <button class="btn btn-primary">해지하기</button>
+        </div>
+      </div>
+
+      <div class="card_con">
+        <div class="pay_list">
+          <p class="tit">구독내역</p>
+          <ul class="list_con">
+            <li class="list">
+              <a class="right_arr" href="manage_subscribe_bill.html">
+                <div class="plan_name d-flex justify-content-between align-items-center">
+                  <p class="t1 large-b">Standard Plan</p>
+                  <p class="t2 small-b">결제</p>
+                </div>
+                <div class="pay_info d-flex justify-content-between align-items-center">
+                  <p class="t1 medium-l">
+                    03.21
+                    <span>| 19:54</span>
+                  </p>
+                  <p class="t2 medium-b">600원</p>
+                </div>
+              </a>
+            </li>
+            <li class="list">
+              <a class="right_arr" href="manage_subscribe_bill.html">
+                <div class="plan_name d-flex justify-content-between align-items-center">
+                  <p class="t1 large-b">Standard Plan</p>
+                  <p class="t2 small-b">결제</p>
+                </div>
+                <div class="pay_info d-flex justify-content-between align-items-center">
+                  <p class="t1 medium-l">
+                    03.21
+                    <span>| 19:54</span>
+                  </p>
+                  <p class="t2 medium-b">600원</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

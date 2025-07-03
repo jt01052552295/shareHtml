@@ -1,0 +1,56 @@
+.contract_detail {
+  .add_txt {
+    margin-bottom: 30px;
+    color: var(--gray-500);
+  }
+}
+
+.card_con {
+  .contract_card {
+    .summary {
+      margin-top: 30px;
+      .list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 15px;
+        .t1 {
+          width: 100px;
+          flex-shrink: 0;
+          color: var(--gray-500);
+        }
+        .t2 {
+        }
+      }
+    }
+
+    .signature {
+      position: relative;
+      width: 100%;
+      margin-top: 15px;
+      background-color: var(--gray-300);
+      border-radius: 10px;
+      &::before {
+        content: "";
+        display: block;
+        padding-bottom: 50%;
+      }
+    }
+
+    .worker {
+      margin-top: 30px;
+      border-top: 1px solid var(--gray-300);
+    }
+
+    .contract_con {
+      text-align: center;
+      .t1 {
+        margin-bottom: 10px;
+        color: var(--gray-500);
+      }
+      .contract_date {
+      }
+    }
+  }
+}

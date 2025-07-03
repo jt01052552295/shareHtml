@@ -1,0 +1,147 @@
+@@include('partials/html-start.html', { "title": "세금설정" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">세금설정</p>
+  </div>
+</header>
+<section class="contents pt-70 pb-100">
+  <div class="tax_setting">
+    <div class="inner">
+      <div class="tax_select d-flex justify-content-between">
+        <p class="tit medium-m">계산 방법</p>
+        <button class="btn down_arr" data-bs-toggle="offcanvas" data-bs-target="#taxModal">
+          <span class="t1 medium-m">직접 설정</span>
+        </button>
+      </div>
+    </div>
+    <div class="tax_con edit">
+      <div class="inner">
+        <ul class="tax_list">
+          <li class="list">
+            <p class="t1 large-r">국민연금</p>
+            <div
+              class="edit_con"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom"
+            >
+              <input type="text" class="form-control large-b" value="4.5" />
+              <span class="unit">%</span>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1 large-r">건강보험</p>
+            <div
+              class="edit_con"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom"
+            >
+              <input type="text" class="form-control large-b" value="3.545" />
+              <span class="unit">%</span>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1 large-r">건강보험</p>
+            <p class="t2 large-r">건강보험의 12.95%</p>
+          </li>
+          <li class="list">
+            <p class="t1 large-r">고용보험</p>
+            <div
+              class="edit_con"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom"
+            >
+              <input type="text" class="form-control large-b" value="0.9" />
+              <span class="unit">%</span>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1 large-r">소득세</p>
+            <div
+              class="edit_con"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom"
+            >
+              <input type="text" class="form-control large-b" value="0" />
+              <span class="unit">%</span>
+            </div>
+          </li>
+          <li class="list">
+            <p class="t1 large-r">지방소득세</p>
+            <p class="t2 large-r">소득세의 10%</p>
+          </li>
+          <li class="list">
+            <p class="t1 large-r">기타세금</p>
+            <div
+              class="edit_con"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom"
+            >
+              <input type="text" class="form-control large-b" value="0" />
+              <span class="unit">%</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="fix_btn one">
+    <button class="btn btn-primary btn-lg center" onclick="location.href='work_place_register.html'">적용하기</button>
+  </div>
+</section>
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="keypad_con">
+    <div class="box">
+      <div class="keypad">
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">00</div>
+        <div class="key zero">0</div>
+        <div class="key backspace">⌫</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-bottom taxModal" tabindex="-1" id="taxModal" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <p class="tit large-b">계산 방법</p>
+    <ul class="select">
+      <li class="list">
+        <button class="btn btn-link" onclick="location.href=`tax_setting_01.html`">
+          <p class="t1">정규직</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link" onclick="location.href=`tax_setting_02.html`">
+          <p class="t1">일용직</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link" onclick="location.href=`tax_setting_03.html`">
+          <p class="t1">프리랜서</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link active" onclick="location.href=`tax_setting_04.html`">
+          <p class="t1">직접 설정</p>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+@@include('partials/html-end.html')

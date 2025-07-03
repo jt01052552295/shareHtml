@@ -1,0 +1,221 @@
+@@include('partials/html-start.html', { "title": "출퇴근 설정" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">출퇴근 설정</p>
+  </div>
+</header>
+<section class="contents pt-70 height-100 bg-gray-100">
+  <div class="commute_edit">
+    <div class="inner">
+      <div class="card_con">
+        <p class="tit">출퇴근 방법</p>
+        <div class="method">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="fs-16 fw-normal">매장 근처</p>
+            <label for="toggle" class="toggleSwitch">
+              <span class="toggleButton"></span>
+            </label>
+          </div>
+          <div class="map_con">
+            <div
+              id="daumRoughmapContainer1745480289399"
+              class="root_daum_roughmap root_daum_roughmap_landing map"
+              style="width: 100%"
+            ></div>
+
+            <script
+              charset="UTF-8"
+              class="daum_roughmap_loader_script"
+              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+            ></script>
+
+            <script charset="UTF-8">
+              new daum.roughmap.Lander({
+                timestamp: '1745480289399',
+                key: '2ntim',
+                mapHeight: '300'
+              }).render();
+            </script>
+            <p class="t1 small-l">인터넷 환경에 따라 위치에 오차가 있을 수 있습니다.</p>
+          </div>
+          <div class="detail_con">
+            <div class="input_con">
+              <p class="form-label">매장 주소 설정</p>
+              <div class="right_arr">
+                <input type="text" class="form-control large-b" value="부산광역시 문현" />
+              </div>
+            </div>
+            <div class="select">
+              <p class="form-label">적용 반경</p>
+              <div
+                class="down_arr"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom"
+              >
+                <input type="text" class="form-control large-b" value="100m" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="method">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="fs-16 fw-normal">매장 WI-FI</p>
+            <label for="toggle" class="toggleSwitch">
+              <span class="toggleButton"></span>
+            </label>
+          </div>
+          <div class="detail_con">
+            <div class="select">
+              <p class="form-label">적용 반경</p>
+              <div
+                class="down_arr"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom"
+              >
+                <input type="text" class="form-control large-b" value="100m" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="method">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="fs-16 fw-normal">제한 없음</p>
+            <label for="toggle" class="toggleSwitch">
+              <span class="toggleButton"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card_con">
+        <div class="commute_time">
+          <p class="tit">출퇴근 시간</p>
+          <p class="form-label">예시</p>
+          <div class="example d-flex justify-content-between">
+            <div class="box">
+              <p class="t1 small-l">출근</p>
+              <div class="arr d-flex justify-content-between">
+                <p class="time large-b">09:34</p>
+                <p class="time large-b point">09:34</p>
+              </div>
+            </div>
+            <div class="box">
+              <p class="t1 small-l">퇴근</p>
+              <div class="arr d-flex justify-content-between">
+                <p class="time large-b">09:34</p>
+                <p class="time large-b point">09:34</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="time_select">
+          <p class="tit">출근 시간</p>
+          <ul class="time_list">
+            <li class="list active small-m">기본</li>
+            <li class="list small-m">5분 단위</li>
+            <li class="list small-m">10분 단위</li>
+            <li class="list small-m">15분 단위</li>
+            <li class="list small-m">20분 단위</li>
+            <li class="list small-m">25분 단위</li>
+            <li class="list small-m">30분 단위</li>
+          </ul>
+        </div>
+        <div class="time_select">
+          <p class="tit">퇴근 시간</p>
+          <ul class="time_list">
+            <li class="list active small-m">기본</li>
+            <li class="list small-m">5분 단위</li>
+            <li class="list small-m">10분 단위</li>
+            <li class="list small-m">15분 단위</li>
+            <li class="list small-m">20분 단위</li>
+            <li class="list small-m">25분 단위</li>
+            <li class="list small-m">30분 단위</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card_con">
+        <p class="tit">근무 등록 설정</p>
+        <div class="register_setting">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="medium-m">출퇴근 체크로만</p>
+            <label for="toggle" class="toggleSwitch">
+              <span class="toggleButton"></span>
+            </label>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="medium-m">퇴근 불인정</p>
+            <button class="btn down_arr" data-bs-toggle="offcanvas" data-bs-target="#deductionModal">
+              <span>출근 후 23시간</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btn_con one">
+    <button class="btn btn-primary btn-lg" onclick="location.href='manage_store.html'">저장하기</button>
+  </div>
+</section>
+<div
+  class="offcanvas offcanvas-bottom deductionModal"
+  tabindex="-1"
+  id="deductionModal"
+  aria-labelledby="offcanvasBottomLabel"
+>
+  <div class="offcanvas-body small">
+    <p class="tit large-b">퇴근 불인정 시간을 선택해주세요</p>
+    <ul class="time_con">
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1 large-b">월급</p>
+          <p class="t2 small-m">매달 받는 고정 급여를 기준으로 계산합니다</p>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-body small">
+    <p class="tit large-b">거리설정하기</p>
+    <ul class="select">
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">50m</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link active">
+          <p class="t1">100m</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">150m</p>
+        </button>
+      </li>
+      <li class="list">
+        <button class="btn btn-link">
+          <p class="t1">200m</p>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  const toggleList = document.querySelectorAll('.toggleSwitch');
+
+  toggleList.forEach(($toggle) => {
+    $toggle.onclick = () => {
+      $toggle.classList.toggle('active');
+    };
+  });
+</script>
+@@include('partials/html-end.html')

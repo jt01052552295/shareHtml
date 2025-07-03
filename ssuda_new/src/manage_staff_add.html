@@ -1,0 +1,227 @@
+@@include('partials/html-start.html', { "title": "직원추가" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">직원추가</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="manage_staff_add">
+    <div class="inner">
+      <div class="card_con">
+        <div class="thumb_con d-flex align-items-center">
+          <div class="thumb_edit">
+            <label class="profile-upload" for="fileInput">
+              <img id="profileImage" src="./assets/images/logo/logo_logo_symbol.png" alt="프로필 이미지" />
+            </label>
+            <input type="file" id="fileInput" accept="image/*" />
+            <div class="img_con">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+          </div>
+          <div class="txt_con">
+            <p class="t1 medium-m">프로필 이미지를 설정해주세요</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info_edit">
+        <div class="card_con">
+          <div class="mb-3">
+            <label for="" class="form-label">이름 (실명)</label>
+            <input type="text" class="form-control" id="" placeholder="홍길동" />
+          </div>
+          <label for="" class="form-label">성별</label>
+          <div class="mb-3 box_con d-flex">
+            <div class="form-check d-flex align-items-center">
+              <input
+                class="form-check-input radio_type"
+                type="radio"
+                value=""
+                id="flexCheckDefault"
+                name="sort"
+                checked=""
+              />
+              <label class="form-check-label radio_label large-m main" for="flexCheckDefault">남성</label>
+            </div>
+            <div class="form-check d-flex align-items-center">
+              <input
+                class="form-check-input radio_type"
+                type="radio"
+                value=""
+                id="flexCheckDefault"
+                name="sort"
+                checked=""
+              />
+              <label class="form-check-label radio_label large-m main" for="flexCheckDefault">여성</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="card_con">
+          <div class="email_certi">
+            <div class="mb-3">
+              <label for="" class="form-label">이메일 인증</label>
+              <div class="d-flex mb-3">
+                <input type="text" class="form-control" placeholder="이메일을 입력해주세요" />
+                <button class="btn btn-outline-primary" type="button" id="">요청</button>
+              </div>
+              <input type="text" class="form-control" placeholder="인증번호 6자리를 입력해주세요" />
+              <span for="mt_email_confirm" class="form-label fs-6 fw-medium label_txt certi_num text_align_r">
+                <p class="certified_time" id="hp_confirm_timer">03:00</p>
+              </span>
+              <p style="display: block" class="invalid-feedback">유효한 이메일 주소를 입력해주세요.</p>
+              <p style="display: block" class="valid-feedback">이메일 입력이 완료되었습니다.</p>
+            </div>
+          </div>
+          <div class="mobile_certi">
+            <div class="mb-3">
+              <label for="" class="form-label">핸드폰 번호 인증</label>
+              <div class="d-flex mb-3">
+                <input type="text" class="form-control" placeholder="휴대폰 번호를 입력해주세요" />
+                <button class="btn btn-outline-primary" type="button" id="">요청</button>
+              </div>
+              <input type="text" class="form-control" placeholder="인증번호 6자리를 입력해주세요" />
+              <span for="mt_email_confirm" class="form-label fs-6 fw-medium label_txt certi_num text_align_r">
+                <p class="certified_time" id="hp_confirm_timer">03:00</p>
+              </span>
+              <p style="display: block" class="invalid-feedback">올바른 형식의 번호를 입력해주세요.</p>
+              <p style="display: block" class="valid-feedback">휴대폰 번호 입력이 완료되었습니다.</p>
+            </div>
+          </div>
+          <div class="bank_select">
+            <div class="mb-3">
+              <label for="" class="form-label">은행</label>
+              <div class="right_arr">
+                <button
+                  class="btn info_btn"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#bankModal"
+                  aria-controls="offcanvasBottom"
+                >
+                  <span>은행을 선택해주세요</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="bank_account">
+            <div class="mb-3">
+              <label for="" class="form-label">계좌번호</label>
+              <div class="">
+                <input type="text" class="form-control" placeholder="계좌번호를 입력해주세요" />
+              </div>
+            </div>
+          </div>
+          <div class="address">
+            <div class="mb-3">
+              <label for="" class="form-label">주소</label>
+              <div class="right_arr">
+                <input type="text" class="form-control" placeholder="주소를 입력해주세요" />
+              </div>
+            </div>
+          </div>
+          <div class="address">
+            <div class="mb-3">
+              <label for="" class="form-label">주민번호</label>
+              <div class="">
+                <input type="text" class="form-control" placeholder="주민번호를 입력해주세요" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="btn_con one">
+  <button class="btn btn-primary btn-lg" onclick="location.href=`manage_staff_list.html`">완료</button>
+</div>
+<div class="offcanvas offcanvas-bottom bankModal" tabindex="-1" id="bankModal" aria-labelledby="bankModal">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title medium-b" id="offcanvasBottomLabel">금융기관 선택</h5>
+  </div>
+  <div class="offcanvas-body small">
+    <ul class="nav nav-tabs two" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#home-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="home-tab-pane"
+          aria-selected="true"
+        >
+          은행
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="profile-tab-pane"
+          aria-selected="false"
+        >
+          증권사
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <ul class="bank_list">
+          <li class="list">
+            <button class="btn btn-light">
+              <div class="box">
+                <div class="img_con">
+                  <img src="./assets/images/logo/logo_kb.png" alt="" class="logo" />
+                </div>
+                <span class="t1">국민은행</span>
+              </div>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-light">
+              <div class="box">
+                <div class="img_con">
+                  <img src="./assets/images/logo/logo_bnk.png" alt="" class="logo" />
+                </div>
+                <span class="t1">부산은행</span>
+              </div>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-light">
+              <div class="box">
+                <div class="img_con">
+                  <img src="./assets/images/logo/logo_citi.png" alt="" class="logo" />
+                </div>
+                <span class="t1">한국씨티은행</span>
+              </div>
+            </button>
+          </li>
+          <li class="list">
+            <button class="btn btn-light">
+              <div class="box">
+                <div class="img_con">
+                  <img src="./assets/images/logo/logo_ibk.png" alt="" class="logo" />
+                </div>
+                <span class="t1">IBK기업은행</span>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
+@@include('partials/html-end.html')

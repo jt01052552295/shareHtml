@@ -1,0 +1,28 @@
+.univ_certificate {
+    .certi_info {
+        background-color: var(--gray-100);
+        .list_con {
+            .list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .degree_select {
+        .down_arr {
+            &::after {
+                right: 20px;
+                color: var(--blue-200);
+            }
+        }
+        .btn {
+            text-align: left;
+        }
+    }
+}

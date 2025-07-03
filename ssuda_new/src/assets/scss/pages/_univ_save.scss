@@ -1,0 +1,33 @@
+.univ_save {
+    .sum_con {
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--gray-500);
+    }
+    .card_con {
+        margin-top: 30px;
+        .date_con {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-block: 10px;
+            border-bottom: 1px solid var(--gray-200);
+            .date {
+            }
+            .expiration {
+                .t1 {
+                }
+            }
+        }
+        .info_con {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-block: 10px;
+            .tit {
+            }
+            .d_day {
+                color: var(--point-orange);
+            }
+        }
+    }
+}

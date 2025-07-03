@@ -1,0 +1,33 @@
+.alarm_toast {
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    padding: 7px 16px 7px 8px;
+    background-color: rgba($color: #1c1c1c, $alpha: 0.75);
+    border-radius: 100px;
+    text-align: center;
+    z-index: 10;
+    p {
+        position: relative;
+        margin: 0;
+        padding-left: 21px;
+        font: {
+            size: 14px;
+            weight: 500;
+        }
+        white-space: nowrap;
+        color: #fff;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 18px;
+            height: 18px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: url("../../assets/images/icon/ico_toast.svg") no-repeat center / cover;
+        }
+    }
+}

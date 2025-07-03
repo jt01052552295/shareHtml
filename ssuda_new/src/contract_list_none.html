@@ -1,0 +1,30 @@
+@@include('partials/html-start.html', { "title": "문서함" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">문서함</p>
+  </div>
+</header>
+<section class="contents pt-70 height-100 bg-gray-100">
+  <div class="contract_list">
+    <div class="inner">
+      <ul class="tab_con two">
+        <a href="contract_list_none.html" class="list active">
+          <span class="t1">근로계약서</span>
+        </a>
+        <a href="paybill_none.html" class="list">
+          <span class="t1">급여명세서</span>
+        </a>
+      </ul>
+      <div class="none_box">
+        <div class="none_img">
+          <img class="none" src="./assets/images/img/img_none.svg" alt="" />
+          <p class="t1 medium-m">작성된 급여명세서가 없습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

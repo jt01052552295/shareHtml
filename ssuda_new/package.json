@@ -1,0 +1,39 @@
+{
+  "name": "ssuda_html",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development gulp",
+    "build": "cross-env NODE_ENV=production gulp build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "cross-env": "^7.0.3",
+    "del": "6.1.0",
+    "dotenv": "^17.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cached": "1.1.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "2.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-npm-dist": "^1.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "1.1.4",
+    "gulp-rtlcss": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "3.0.2",
+    "gulp-useref-plus": "0.0.8",
+    "sass": "1.69.5"
+  }
+}

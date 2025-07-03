@@ -1,0 +1,76 @@
+@@include('partials/html-start.html', { "title": "연결하기" })
+<header class="header_menu">
+    <div class="inner">
+        <button class="btn p-0" onclick="history.back()">
+            <img src="./assets/images/icon/ico_back.png" alt="">
+        </button>
+        <p class="title fs-20 fw-bold">사장님과 연결</p>
+    </div>
+</header>
+<section class="contents height-100 pt-70 pb-100">
+    <div class="mobile_connecting">
+        <div class="inner">
+            <div class="txt_con">
+                <p class="header-b manage_title">사장님과 연결하면 근무를 함께 작성하고 급여를 실시간으로 조회할 수 있어요.</p>
+                <p class="medium-l add_txt">사장님(담당자) 번호를 입력해주세요.</p>
+            </div>
+
+            <div class="input_con">
+                <input type="text" class="form-control large-b" placeholder="" value="01012341234"></input>
+            </div>
+            <ul class="search_store">
+                <li class="list">
+                    <div class="name_con">
+                        <div class="thumb_img">
+                            <img src="./assets/images/icon/ico_excell.png" alt="">
+                        </div>
+                        <p class="name small-l">{업체명}</p>
+                    </div>
+                    <button class="btn connect_btn small-m" data-bs-toggle="modal"
+                        data-bs-target="#contactModal">연결하기</button>
+                </li>
+                <li class="list">
+                    <div class="name_con">
+                        <div class="thumb_img">
+                            <img src="./assets/images/icon/ico_excell.png" alt="">
+                        </div>
+                        <p class="name small-l">{업체명}</p>
+                    </div>
+                    <button class="btn connect_btn small-m">연결하기</button>
+                </li>
+                <li class="list">
+                    <div class="name_con">
+                        <div class="thumb_img">
+                            <img src="./assets/images/icon/ico_excell.png" alt="">
+                        </div>
+                        <p class="name small-l">{업체명}</p>
+                    </div>
+                    <button class="btn connect_btn small-m">연결하기</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div class="fix_btn one">
+    <button class="btn btn-primary btn-lg" onclick="location.href='mobile_connecting_step02.html'">연결하기</button>
+</div>
+<div class="modal fade connectModal" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">연결하기</h1>
+            </div>
+            <div class="modal-body">
+                <p class="t1">사장님(담당자)와 연결하시겠습니까?</p>
+
+            </div>
+            <div class="modal-footer btn_box two">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                <button type="button" class="btn btn-primary">연결하기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('partials/html-end.html')

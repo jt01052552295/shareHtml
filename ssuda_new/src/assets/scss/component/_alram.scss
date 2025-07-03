@@ -1,0 +1,27 @@
+.alram_con {
+    padding-block: 20px;
+    background-color: var(--gray-100);
+    .list_con {
+        .list {
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #fff;
+            .tit_con {
+                margin-bottom: 10px;
+                .division {
+                }
+                .date {
+                    color: var(--gray-500);
+                }
+            }
+            .txt_con {
+                .t1 {
+                }
+                .t2 {
+                    color: var(--gray-500);
+                }
+            }
+        }
+    }
+}

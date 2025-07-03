@@ -1,0 +1,101 @@
+@@include('partials/html-start.html', { "title": "근로계약서 작성" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">근로계약서</p>
+    <button class="btn large-b">삭제</button>
+  </div>
+</header>
+<div class="contents pt-70">
+  <section class="manage_contract_view">
+    <div class="inner">
+      <p class="header-b manage_title">
+        <b class="point">홍길동</b>
+        <br />
+        근로계약서
+      </p>
+      <p class="medium-m add_txt">필요한 부분만 수정할 수 있어요</p>
+
+      <div class="card_con">
+        <p class="tit">업무</p>
+        <ul class="summary">
+          <li class="list">
+            <p class="t1 medium-l">업무 내용</p>
+            <p class="t2 medium-l">서류</p>
+          </li>
+          <li class="list">
+            <p class="t1 medium-l">근무 장소</p>
+            <p class="t2 medium-l">부산 남구 문현금융로 40</p>
+          </li>
+        </ul>
+        <button class="btn btn-lg btn-light w-100">수정하기</button>
+      </div>
+
+      <div class="card_con">
+        <p class="tit">월, 화, 수, 목, 금</p>
+        <ul class="summary">
+          <li class="list">
+            <p class="t1 medium-l">소정 근로시간</p>
+            <p class="t2 medium-l">8시간</p>
+          </li>
+          <li class="list">
+            <p class="t1 medium-l">근무시간</p>
+            <p class="t2 medium-l">09:00 ~ 18:00</p>
+          </li>
+          <li class="list">
+            <p class="t1 medium-l">휴게시간</p>
+            <p class="t2 medium-l">12:00 ~ 13:00</p>
+          </li>
+        </ul>
+        <button class="btn btn-lg btn-light w-100">수정하기</button>
+      </div>
+
+      <div class="card_con">
+        <p class="tit">임금</p>
+        <ul class="summary">
+          <li class="list">
+            <p class="t1 medium-l">시급</p>
+            <p class="t2 medium-l">10,030 원</p>
+          </li>
+          <li class="list">
+            <p class="t1 medium-l">식비</p>
+            <p class="t2 medium-l">10,000 원</p>
+          </li>
+          <li class="list">
+            <p class="t1 medium-l">기타</p>
+            <p class="t2 medium-l">10,000 원</p>
+          </li>
+          <li class="list">
+            <p class="t1 medium-l">지급일</p>
+            <p class="t2 medium-l">매 월 10일</p>
+          </li>
+          <li class="list">
+            <p class="t1 medium-l">연차유급휴가</p>
+            <p class="t2 medium-l">근로기준법 정하는 바에 따라 부여함</p>
+          </li>
+          <li class="list">
+            <p class="t1 medium-l">사회보험</p>
+            <p class="t2 medium-l">국민연금, 건강보험,고용보험, 산재보험</p>
+          </li>
+        </ul>
+        <button class="btn btn-lg btn-light w-100">수정하기</button>
+      </div>
+
+      <div class="txt_con">
+        <p class="t1 large-b">기타사항</p>
+        <p class="t2 small-l">
+          사업주는 근로계약을 체결함과 동시에 본 계약서를 사본하여 근로자의 교부 요구와 관계없이 근로자에게 교부함
+          <br />
+          (근로기준법 제 17조 이행)
+        </p>
+        <p class="t2 small-l">이 계약에 정함이 없는 사항은 근로기준법에 의함</p>
+      </div>
+      <div class="btn_con one">
+        <button class="btn btn-primary btn-lg" onclick="location.href='manage_step09_period.html'">계약하기</button>
+      </div>
+    </div>
+  </section>
+</div>
+@@include('partials/html-end.html')

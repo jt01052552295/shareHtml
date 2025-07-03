@@ -1,0 +1,62 @@
+.manage_profile_setting {
+    .profile_info {
+        margin-top: 50px;
+        .info {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--gray-200);
+            .list {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                .tit {
+                    font: {
+                        size: 18px;
+                        weight: 400;
+                    }
+                    color: var(--gray-500);
+                }
+                .t1 {
+                    font: {
+                        size: 18px;
+                        weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    .login_con {
+        .list_con {
+            .list {
+                a {
+                    .t1 {
+                        position: relative;
+                        margin-bottom: 30px;
+                        padding-left: 30px;
+                        font: {
+                            size: 18px;
+                            weight: 500;
+                        }
+                        &::before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            width: 16px;
+                            height: 20px;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
+                            background: url("../images/icon/ico_menu_logout.png") no-repeat;
+                        }
+                        &.secession {
+                            &::before {
+                                height: 22px;
+                                background: url("../images/icon/ico_menu_delet.png") no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

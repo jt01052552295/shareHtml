@@ -1,0 +1,89 @@
+@@include('partials/html-start.html', { "title": "회원가입" })
+<header class="header_menu">
+  <div class="inner">
+    <button class="btn p-0" onclick="history.back()">
+      <img src="./assets/images/icon/ico_back.png" alt="" />
+    </button>
+    <p class="title fs-20 fw-bold">회원가입</p>
+  </div>
+</header>
+<section class="contents pt-70">
+  <div class="univ_membership_step01">
+    <div class="inner">
+      <div class="member_input phone">
+        <p class="form-label required">휴대폰</p>
+        <div class="input_con mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="휴대폰 번호 '-'제외하고 입력"
+            aria-label="Recipient’s username"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-secondary confirm" type="button" id="button-addon2">인증번호</button>
+        </div>
+        <div class="input_con mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="인증번호 입력"
+            aria-label="Recipient’s username"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-secondary confirm" type="button" id="button-addon2">확인</button>
+        </div>
+      </div>
+
+      <div class="member_input id mb-3">
+        <p class="form-label required">아이디</p>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="6-12자 사이로 입력"
+          aria-label="Recipient’s username"
+          aria-describedby="button-addon2"
+        />
+      </div>
+
+      <div class="member_input pw mb-3">
+        <p class="form-label required">비밀번호</p>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="8-16자의 영문, 숫자, 특수기호"
+          aria-label="Recipient’s username"
+          aria-describedby="button-addon2"
+        />
+      </div>
+
+      <div class="member_input name mb-3">
+        <p class="form-label required">이름</p>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="이름(실명)"
+          aria-label="Recipient’s username"
+          aria-describedby="button-addon2"
+        />
+      </div>
+
+      <div class="member_input email mb-3">
+        <p class="form-label required">이메일</p>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="예) univ@univ.com"
+          aria-label="Recipient’s username"
+          aria-describedby="button-addon2"
+        />
+      </div>
+
+      <div class="fix_btn one">
+        <button class="btn btn-lg btn-primary center" onclick="location.href=`univ_membership_step02.html`">
+          다음
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+@@include('partials/html-end.html')

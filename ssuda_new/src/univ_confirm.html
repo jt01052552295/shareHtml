@@ -1,0 +1,59 @@
+@@include('partials/html-start.html', { "title": "진위확인" })
+<header class="header_menu univ">
+    <div class="inner d-flex justify-content-between">
+        <h1 class="logo">
+            <a class="link" href="univ_main.html">
+                <img class="logo" src="./assets/images/logo/logo_silla.png" alt="">
+            </a>
+        </h1>
+        <p class="title fs-20 fw-bold">진위확인</p>
+    </div>
+</header>
+<section class="contents pt-70 pb-100">
+    <div class="univ_confirm">
+        <div class="inner">
+            <div class="certi_check">
+                <p class="t1 medium-m">증명서 번호 조회</p>
+                <input type="text" class="form-control" placeholder="증면서 번호를 '-' 없이 입력하세요.">
+            </div>
+            <div class="caution">
+                <p class="t1 small-m">상단 문서확인번호로 실제 증명서와 대조 가능합니다.</p>
+                <p class="t1 small-m">증명서 진위확인은 발급일로부터 90일 확인 가능합니다.</p>
+            </div>
+            <div class="btn_con one">
+                <button class="btn btn-lg btn-primary center">확인하기</button>
+            </div>
+        </div>
+    </div>
+</section>
+<nav class="ft_nav">
+    <div class="inner">
+        <ul class="link_con">
+            <li class="link">
+                <a href="univ_certificate.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_univ_list.svg" alt="">
+                    <p>발급하기</p>
+                </a>
+            </li>
+            <li class="link">
+                <a href="univ_save.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_univ_save.svg" alt="">
+                    <p>보관함</p>
+                </a>
+            </li>
+            <li class="link active">
+                <a href="univ_confirm.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_univ_confirm.svg" alt="">
+                    <p>진위확인</p>
+                </a>
+            </li>
+            <li class="link ">
+                <a href="univ_mypage.html">
+                    <img class="menu_icon" src="./assets/images/icon/ico_univ_mypage.svg" alt="">
+                    <p>마이페이지</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+@@include('partials/html-end.html')

@@ -1,0 +1,178 @@
+.connection {
+    .thumb_con {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+        .img_con {
+            width: 50px;
+            border-radius: 5px;
+            overflow: hidden;
+            &.rect {
+                img {
+                }
+            }
+        }
+
+        .txt_con {
+            p {
+            }
+        }
+    }
+
+    .card_con {
+        .current_date {
+            margin-bottom: 30px;
+            text-align: center;
+            .date {
+                font: {
+                    size: 18px;
+                    weight: 500;
+                }
+                color: var(--gray-500);
+            }
+            .time {
+                font: {
+                    size: 60px;
+                    weight: 700;
+                }
+            }
+        }
+
+        .work_time {
+            margin-bottom: 30px;
+            .t1 {
+                position: relative;
+                padding-left: 35px;
+                color: var(--point-orange);
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 30px;
+                    height: 25.5px;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    background: url("../images/icon/ico_clock.png") no-repeat center / cover;
+                }
+            }
+            .t2 {
+                margin-top: 5px;
+            }
+        }
+
+        .work_con {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 1px;
+                height: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: var(--gray-500);
+            }
+            .list {
+                width: 50%;
+                .t1 {
+                }
+                .t2 {
+                }
+                &.working_time {
+                }
+                &.rest_time {
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        .timeline {
+            margin-bottom: 30px;
+            .progress {
+                .progress-bar {
+                    background-color: var(--blue-200);
+                }
+            }
+            .time {
+                margin-top: 5px;
+            }
+        }
+
+        .shop_menu {
+            .list {
+                margin-bottom: 30px;
+                .t1 {
+                    position: relative;
+                    padding-left: 30px;
+                    font: {
+                        size: 18px;
+                        weight: 500;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        width: 20px;
+                        height: 20px;
+                    }
+                    &::after {
+                        content: "\f105";
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                    }
+                    &.connection {
+                        &::before {
+                            background: url("../images/icon/ico_shop_menu_connect.png") no-repeat center / cover;
+                        }
+                    }
+                    &.schdule {
+                        &::before {
+                            background: url("../images/icon/ico_shop_menu_schdule.png") no-repeat center / cover;
+                        }
+                    }
+                    &.commute {
+                        &::before {
+                            background: url("../images/icon/ico_shop_menu_commute.png") no-repeat center / cover;
+                        }
+                    }
+                    &.contract {
+                        &::before {
+                            background: url("../images/icon/ico_shop_menu_contract.png") no-repeat center / cover;
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .connection {
+        .card_con {
+            .shop_menu {
+                .list {
+                    .t1 {
+                        font: {
+                            size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

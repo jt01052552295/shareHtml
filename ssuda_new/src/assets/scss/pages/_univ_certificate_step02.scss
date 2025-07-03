@@ -1,0 +1,41 @@
+.univ_certificate_step02 {
+    .form-control {
+        margin-top: 5px;
+        padding: 17px 20px;
+        border: 1px solid var(--gray-200);
+        border-radius: 0.5rem;
+    }
+    .certi_info {
+        background-color: var(--gray-100);
+        .list_con {
+            .list {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .use_select {
+        .btn_box {
+            .down_arr {
+                &::after {
+                    right: 20px;
+                }
+            }
+            .btn {
+                text-align: left;
+            }
+        }
+    }
+
+    .submit_space {
+        .form-control {
+            margin-top: 0;
+        }
+    }
+}

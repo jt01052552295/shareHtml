@@ -1,0 +1,176 @@
+@@include('partials/html-start.html', { "title": "증명서 보관함" })
+<header class="header_menu univ">
+  <div class="inner d-flex justify-content-between">
+    <h1 class="logo">
+      <a class="link" href="univ_main.html">
+        <img class="logo" src="./assets/images/logo/logo_silla.png" alt="" />
+      </a>
+    </h1>
+    <p class="title fs-20 fw-bold">증명서 보관함</p>
+  </div>
+</header>
+<section class="contents pt-70 pb-100 bg-gray-200 height-100">
+  <div class="univ_save">
+    <div class="inner">
+      <div class="sum_con">
+        <p class="t1 small-b">
+          총
+          <span>2</span>
+          건
+        </p>
+        <p class="t2 small-l">증명서는 발급일로부터 30일간 이용이 가능합니다.</p>
+      </div>
+      <div
+        class="card_con"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasBottom"
+        aria-controls="offcanvasBottom"
+      >
+        <div class="date_con">
+          <p class="date medium-m">2025.05.05</p>
+          <div class="expiration">
+            <span class="t1 medium-m">사용가능</span>
+          </div>
+        </div>
+        <div class="info_con">
+          <p class="tit">신라대학교 이정우 학업증명서</p>
+          <p class="d_day medium-b">D-20</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<nav class="ft_nav">
+  <div class="inner">
+    <ul class="link_con">
+      <li class="link">
+        <a href="univ_certificate.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_list.svg" alt="" />
+          <p>발급하기</p>
+        </a>
+      </li>
+      <li class="link active">
+        <a href="univ_save.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_save.svg" alt="" />
+          <p>보관함</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="univ_confirm.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_confirm.svg" alt="" />
+          <p>진위확인</p>
+        </a>
+      </li>
+      <li class="link">
+        <a href="univ_mypage.html">
+          <img class="menu_icon" src="./assets/images/icon/ico_univ_mypage.svg" alt="" />
+          <p>마이페이지</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- offcanvas -->
+<div
+  class="offcanvas offcanvas-bottom certificate"
+  tabindex="-1"
+  id="offcanvasBottom"
+  aria-labelledby="offcanvasBottomLabel"
+>
+  <!-- <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+                Offcanvas bottom
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div> -->
+  <div class="offcanvas-body small">
+    <div class="flip-container" id="flip-card">
+      <div class="flipper">
+        <div class="front">
+          <button class="rotate_btn front_btn btn" onclick="flipCard()" style="color: #fff">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+          <div class="upper">
+            <p class="title large-m">학력증명서</p>
+            <p class="t1 header-b">신라대학교</p>
+          </div>
+          <div class="thumb">
+            <img src="./assets/images/icon/ico_camera.png" alt="" />
+          </div>
+          <div class="lower">
+            <p class="name header-b">이정우</p>
+            <p class="phone_num large-r">010-1234-1234</p>
+            <ul class="user_info">
+              <li class="list">
+                <p class="t1 medium-m">생년월일</p>
+                <p class="t2 medium-m">1995.06.22</p>
+              </li>
+              <li class="list">
+                <p class="t1 medium-m">성별</p>
+                <p class="t2 medium-m">남</p>
+              </li>
+              <li class="list">
+                <p class="t1 medium-m">만료일</p>
+                <p class="t2 medium-m">2026.05.05</p>
+              </li>
+            </ul>
+            <a href="./assets/file/test_docu.pdf" download class="btn btn-primary w-100">다운로드</a>
+          </div>
+        </div>
+        <div class="btn p-0">
+          <button class="rotate_btn back_btn btn" onclick="flipCard()"><i class="fa-solid fa-rotate-right"></i></button>
+          <div class="tit_con">
+            <p class="title large-r">학력증명서</p>
+            <p class="t1 header-b">신라대학교</p>
+          </div>
+
+          <ul class="detail_info">
+            <li class="list">
+              <p class="t1 medium-m">이름</p>
+              <p class="t2 medium-m">이정우</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">휴대전화 번호</p>
+              <p class="t2 medium-m">010-1234-1234</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">생년월일</p>
+              <p class="t2 medium-m">1995.06.22</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">성별</p>
+              <p class="t2 medium-m">남</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">내/외국인 여부</p>
+              <p class="t2 medium-m">내국인</p>
+            </li>
+            <li class="list">
+              <p class="t1 medium-m">만료일</p>
+              <p class="t2 medium-m">2026.06.05</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- <button class="rotate_btn btn" onclick="flipCard()"><i class="fa-solid fa-rotate-right"></i></button> -->
+  </div>
+</div>
+<script>
+  function flipCard() {
+    const card = document.getElementById('flip-card');
+    card.classList.toggle('flipped');
+  }
+  var swiper = new Swiper('.mySwiper', {
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    loop: true,
+    autoplay: {
+      delay: 3000
+    },
+    spaceBetween: 15
+  });
+</script>
+@@include('partials/html-end.html')

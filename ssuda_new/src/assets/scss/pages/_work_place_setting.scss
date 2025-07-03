@@ -1,0 +1,52 @@
+.work_place_setting {
+    .switch_con {
+        padding: 20px;
+        border-radius: 15px;
+        background-color: var(--gray-100);
+        & > div {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .unit_con {
+        border-bottom: 1px solid var(--gray-400);
+        .form-control {
+            border-bottom: none;
+            text-align: left;
+        }
+        .unit {
+        }
+    }
+
+    .delet_setting {
+        margin-top: 20px;
+        li {
+            position: relative;
+            padding-left: 30px;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &.quit {
+                margin-bottom: 10px;
+                &::before {
+                    background: url("../images/icon/ico_quit.svg") no-repeat center / cover;
+                }
+            }
+            &.delet {
+                &::before {
+                    background: url("../images/icon/ico_delet.svg") no-repeat center / cover;
+                }
+            }
+        }
+    }
+}

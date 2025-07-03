@@ -1,0 +1,87 @@
+@@include('partials/html-start.html', { "title": "증명서발급" })
+<header class="header_menu univ">
+    <div class="inner d-flex justify-content-between">
+        <h1 class="logo">
+            <a class="link" href="univ_main.html">
+                <img class="logo" src="./assets/images/logo/logo_silla.png" alt="">
+            </a>
+        </h1>
+        <p class="title fs-20 fw-bold">증명서 발급</p>
+    </div>
+</header>
+<section class="contents pt-70 pb-100">
+    <div class="univ_certificate_step02">
+        <div class="inner">
+            <p class="univ_title">증명서 신청정보</p>
+            <div class="card_con certi_info">
+                <ul class="list_con">
+                    <li class="list">
+                        <p class="t1 large-m">증명서 종류</p>
+                        <p class="t2 large-l">성적증명서</p>
+                    </li>
+                    <li class="list">
+                        <p class="t1 large-m">통수</p>
+                        <p class="t2 large-l">1통</p>
+                    </li>
+                    <li class="list">
+                        <p class="t1 large-m">발급형태</p>
+                        <p class="t2 large-l">PDF</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="use_select mt-3">
+                <p class="univ_title">용도</p>
+                <div class="btn_box ">
+                    <button class="btn btn-lg btn-outline-primary w-100 down_arr" data-bs-toggle="offcanvas"
+                        data-bs-target="#useModal" aria-controls="offcanvasBottom">
+                        <span>직접입력</span>
+                    </button>
+                </div>
+                <input type="text" class="form-control" placeholder="최대 국문 8자, 영문 16자를 입력해주세요.">
+            </div>
+
+            <div class="submit_space mt-3">
+                <p class="univ_title">제출처</p>
+                <input type="text" class="form-control" placeholder="최대 국문 11자, 영문 22자를 입력해주세요.">
+            </div>
+            <div class="fix_btn one">
+                <button class="btn btn-primary btn-lg center" onclick="location.href='univ_complete.html'">신청하기</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-bottom useModal" tabindex="-1" id="useModal" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">용도</h5>
+    </div>
+    <div class="offcanvas-body small">
+        <ul class="list_con">
+            <li class="list">
+                <button class="btn btn-lg btn-outline-primary w-100">직접입력</button>
+            </li>
+            <li class="list">
+                <button class="btn btn-lg btn-outline-primary w-100">일반용</button>
+            </li>
+            <li class="list">
+                <button class="btn btn-lg btn-outline-primary w-100">회사제출용</button>
+            </li>
+            <li class="list">
+                <button class="btn btn-lg btn-lg btn-outline-primary w-100">교육기관용</button>
+            </li>
+            <li class="list">
+                <button class="btn btn-lg btn-outline-primary w-100">의료기관용</button>
+            </li>
+            <li class="list">
+                <button class="btn btn-lg btn-outline-primary w-100">공공기관용</button>
+            </li>
+            <li class="list">
+                <button class="btn btn-lg btn-outline-primary w-100">금융기관용</button>
+            </li>
+            <li class="list">
+                <button class="btn btn-lg btn-outline-primary w-100">비자발급용</button>
+            </li>
+        </ul>
+    </div>
+</div>
+@@include('partials/html-end.html')

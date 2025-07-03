@@ -1,0 +1,87 @@
+.search_con {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray-200);
+    border-radius: 15px;
+    overflow: hidden;
+    .search_info {
+        width: 100%;
+        border: none;
+        &::placeholder {
+            font: {
+                size: 14px;
+                weight: 500;
+            }
+        }
+    }
+    .search_btn {
+        flex-shrink: 0;
+    }
+}
+
+.search_filter {
+    position: relative;
+    max-height: 100vh;
+    padding: 0;
+    .filter_btn {
+        position: absolute;
+        right: 0;
+        img {
+            width: 20px;
+        }
+    }
+    .input_filter {
+        & > div {
+            margin-top: 25px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        .period {
+            .input_con {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .date_select {
+                    flex-shrink: 0;
+                    border: 1px solid var(--gray-500);
+                }
+            }
+        }
+    }
+
+    .tab_filter {
+        .list_con {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 10px;
+            overflow-x: scroll;
+            .list {
+                flex-shrink: 0;
+                border: 1px solid var(--gray-300);
+                border-radius: 10px;
+                a {
+                    display: block;
+                    padding: 3px 15px;
+                    color: var(--gray-300);
+                }
+                &.active {
+                    border: 1px solid var(--blue-200);
+                    font-weight: 700;
+                    a {
+                        color: var(--blue-200);
+                    }
+                }
+            }
+        }
+    }
+
+    .sort_order {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        .t1 {
+            padding-right: 20px;
+        }
+    }
+}
