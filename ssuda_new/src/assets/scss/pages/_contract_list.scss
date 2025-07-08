@@ -23,6 +23,12 @@
           padding: 5px 8px;
           border-radius: 5px;
           background-color: var(--gray-100);
+          &.on {
+            background-color: var(--blue-200);
+            .t1 {
+              color: #fff;
+            }
+          }
           .t1 {
             color: var(--gray-500);
           }

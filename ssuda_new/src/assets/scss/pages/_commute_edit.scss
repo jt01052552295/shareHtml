@@ -74,9 +74,9 @@
             overflow-x: scroll;
             .list {
                 flex-shrink: 0;
-                padding: 6px 12px;
+                padding: 6px 18px;
                 border: 1px solid var(--gray-500);
-                border-radius: 5px;
+                border-radius: 20px;
                 color: var(--gray-500);
                 &.active {
                     background-color: rgba($color: #3751ae, $alpha: 0.1);

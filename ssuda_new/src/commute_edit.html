@@ -13,24 +13,18 @@
       <div class="card_con">
         <p class="tit">출퇴근 방법</p>
         <div class="method">
-          <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex justify-content-between align-items-center mb-3">
             <p class="fs-16 fw-normal">매장 근처</p>
-            <label for="toggle" class="toggleSwitch">
-              <span class="toggleButton"></span>
-            </label>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            </div>
           </div>
           <div class="map_con">
-            <div
-              id="daumRoughmapContainer1745480289399"
-              class="root_daum_roughmap root_daum_roughmap_landing map"
-              style="width: 100%"
-            ></div>
+            <div id="daumRoughmapContainer1745480289399" class="root_daum_roughmap root_daum_roughmap_landing map"
+              style="width: 100%"></div>
 
-            <script
-              charset="UTF-8"
-              class="daum_roughmap_loader_script"
-              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
-            ></script>
+            <script charset="UTF-8" class="daum_roughmap_loader_script"
+              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
             <script charset="UTF-8">
               new daum.roughmap.Lander({
@@ -50,44 +44,36 @@
             </div>
             <div class="select">
               <p class="form-label">적용 반경</p>
-              <div
-                class="down_arr"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasBottom"
-                aria-controls="offcanvasBottom"
-              >
+              <div class="down_arr" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom">
                 <input type="text" class="form-control large-b" value="100m" />
               </div>
             </div>
           </div>
         </div>
         <div class="method">
-          <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex justify-content-between align-items-center mb-3">
             <p class="fs-16 fw-normal">매장 WI-FI</p>
-            <label for="toggle" class="toggleSwitch">
-              <span class="toggleButton"></span>
-            </label>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            </div>
           </div>
           <div class="detail_con">
             <div class="select">
               <p class="form-label">적용 반경</p>
-              <div
-                class="down_arr"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasBottom"
-                aria-controls="offcanvasBottom"
-              >
+              <div class="down_arr" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom">
                 <input type="text" class="form-control large-b" value="100m" />
               </div>
             </div>
           </div>
         </div>
         <div class="method">
-          <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex justify-content-between align-items-center mb-3">
             <p class="fs-16 fw-normal">제한 없음</p>
-            <label for="toggle" class="toggleSwitch">
-              <span class="toggleButton"></span>
-            </label>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            </div>
           </div>
         </div>
       </div>
@@ -143,11 +129,11 @@
       <div class="card_con">
         <p class="tit">근무 등록 설정</p>
         <div class="register_setting">
-          <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex justify-content-between align-items-center mb-3">
             <p class="medium-m">출퇴근 체크로만</p>
-            <label for="toggle" class="toggleSwitch">
-              <span class="toggleButton"></span>
-            </label>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            </div>
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <p class="medium-m">퇴근 불인정</p>
@@ -163,12 +149,8 @@
     <button class="btn btn-primary btn-lg" onclick="location.href='manage_store.html'">저장하기</button>
   </div>
 </section>
-<div
-  class="offcanvas offcanvas-bottom deductionModal"
-  tabindex="-1"
-  id="deductionModal"
-  aria-labelledby="offcanvasBottomLabel"
->
+<div class="offcanvas offcanvas-bottom deductionModal" tabindex="-1" id="deductionModal"
+  aria-labelledby="offcanvasBottomLabel">
   <div class="offcanvas-body small">
     <p class="tit large-b">퇴근 불인정 시간을 선택해주세요</p>
     <ul class="time_con">

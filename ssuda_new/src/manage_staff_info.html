@@ -13,56 +13,27 @@
     <div class="inner">
       <ul class="nav nav-tabs three" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="home-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#home-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="home-tab-pane"
-            aria-selected="true"
-          >
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
             기본
           </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="profile-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#profile-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="profile-tab-pane"
-            aria-selected="false"
-          >
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
             프로필
           </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="commute-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#commute-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="commute-tab-pane"
-            aria-selected="false"
-          >
+          <button class="nav-link" id="commute-tab" data-bs-toggle="tab" data-bs-target="#commute-tab-pane"
+            type="button" role="tab" aria-controls="commute-tab-pane" aria-selected="false">
             근무 내역
           </button>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
-        <div
-          class="tab-pane fade show active"
-          id="home-tab-pane"
-          role="tabpanel"
-          aria-labelledby="home-tab"
-          tabindex="0"
-        >
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0">
           <div class="card_con">
             <ul class="info">
               <li class="list">
@@ -295,12 +266,12 @@
                 <div class="card_con" style="padding: 0">
                   <div class="name_con">
                     <p class="tit medium-m">{회사명}</p>
-                    <div class="condition on">
+                    <!-- <div class="condition on">
                       <span class="t1 small-l">출근</span>
                     </div>
                     <div class="condition rest">
                       <span class="t1 small-l">휴식</span>
-                    </div>
+                    </div> -->
                     <div class="condition off">
                       <span class="t1 small-l">퇴근</span>
                     </div>
@@ -315,17 +286,11 @@
                   </div>
 
                   <div class="map_con">
-                    <div
-                      id="daumRoughmapContainer1745480289399"
-                      class="root_daum_roughmap root_daum_roughmap_landing map"
-                      style="width: 100%"
-                    ></div>
+                    <div id="daumRoughmapContainer1745480289399"
+                      class="root_daum_roughmap root_daum_roughmap_landing map" style="width: 100%"></div>
 
-                    <script
-                      charset="UTF-8"
-                      class="daum_roughmap_loader_script"
-                      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
-                    ></script>
+                    <script charset="UTF-8" class="daum_roughmap_loader_script"
+                      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
                     <script charset="UTF-8">
                       new daum.roughmap.Lander({
@@ -364,15 +329,8 @@
     </div>
   </div>
 </section>
-<div
-  class="modal fade basicComplete"
-  id="staticBackdrop"
-  data-bs-backdrop="true"
-  data-bs-keyboard="false"
-  tabindex="-1"
-  aria-labelledby="staticBackdropLabel"
-  aria-hidden="true"
->
+<div class="modal fade basicComplete" id="staticBackdrop" data-bs-backdrop="true" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body">

@@ -10,26 +10,22 @@
 <div class="contents pt-70 height-100">
   <div class="setting">
     <div class="inner">
-      <div class="list d-flex justify-content-between">
+      <div class="d-flex justify-content-between align mb-3">
         <div class="txt_con">
           <p class="large-b">알림</p>
           <p class="small-l">앱 내의 정보/이벤트 관련 알림 허용</p>
         </div>
-        <label for="toggle" class="toggleSwitch">
-          <span class="toggleButton"></span>
-        </label>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+        </div>
       </div>
       <div class="list d-flex justify-content-between">
         <div class="txt_con">
           <p class="large-b">연락방식</p>
           <p class="small-l">문서 작성 시, 연락방식으로 알림이 발송됩니다.</p>
         </div>
-        <button
-          class="btn btn-primary"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom"
-        >
+        <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom">
           <span>카카오</span>
         </button>
       </div>

@@ -22,7 +22,7 @@
     }
 
     .delet_setting {
-        margin-top: 20px;
+        margin-block: 20px 50px;
         li {
             position: relative;
             padding-left: 30px;
@@ -48,5 +48,8 @@
                 }
             }
         }
+    }
+    .account_opt {
+        margin-block: 30px;
     }
 }

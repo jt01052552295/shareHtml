@@ -32,194 +32,194 @@
   background-color: var(--point-red);
 }
 
-input[type='radio']:disabled,
-input[type='checkbox']:disabled {
+input[type="radio"]:disabled,
+input[type="checkbox"]:disabled {
   display: none;
 }
 
 /*--------- 공통 ---------- */
-@import './pages/common';
+@import "./pages/common";
 /*--------- 폰트 ---------- */
-@import './pages/font';
+@import "./pages/font";
 
 // pages
 /*--------- 메인 ---------- */
-@import './pages/index';
+@import "./pages/index";
 /*--------- 급여 ---------- */
-@import './pages/salary';
+@import "./pages/salary";
 /*--------- 근무현황 ---------- */
-@import './pages/work_progress';
+@import "./pages/work_progress";
 /*--------- 급여목록 ---------- */
-@import './pages/salary_list';
+@import "./pages/salary_list";
 /*--------- 근무지 수정 ---------- */
-@import './pages/work_place_setting';
+@import "./pages/work_place_setting";
 /*--------- 근무지 추가 ---------- */
-@import './pages/work_place_register';
+@import "./pages/work_place_register";
 /*--------- 세금 설정 ---------- */
-@import './pages/tax_setting';
+@import "./pages/tax_setting";
 /*--------- 근무등록 ---------- */
-@import './pages/work_register';
+@import "./pages/work_register";
 /*--------- 주휴수당 ---------- */
-@import './pages/week_pay';
+@import "./pages/week_pay";
 /*--------- 연결 ---------- */
-@import './pages/connection';
+@import "./pages/connection";
 /*--------- 더보기 ---------- */
-@import './pages/mypage';
+@import "./pages/mypage";
 /*--------- 프로필 설정 ---------- */
-@import './pages/profile_setting';
+@import "./pages/profile_setting";
 /*--------- 프로필 수정 ---------- */
-@import './pages/profile_edit';
+@import "./pages/profile_edit";
 /*--------- 공지사항 ---------- */
-@import './pages/notice';
+@import "./pages/notice";
 /*--------- 계약서유형 ---------- */
-@import './pages/manage_category';
+@import "./pages/manage_category";
 /*--------- 업무장소 ---------- */
-@import './pages/manage_workspace';
+@import "./pages/manage_workspace";
 /*--------- 업무종류 ---------- */
-@import './pages/manage_work';
+@import "./pages/manage_work";
 /*--------- 업무날짜 ---------- */
-@import './pages/manage_workdate';
+@import "./pages/manage_workdate";
 /*--------- 업무조건 ---------- */
-@import './pages/manage_workterm';
+@import "./pages/manage_workterm";
 /*--------- 업무임금 ---------- */
-@import './pages/manage_worksalary';
+@import "./pages/manage_worksalary";
 /*--------- 급여 지급일 ---------- */
-@import './pages/manage_payday';
+@import "./pages/manage_payday";
 /*--------- 사회보험 ---------- */
-@import './pages/manage_insurance';
+@import "./pages/manage_insurance";
 /*--------- 근로계약서 보기 ---------- */
-@import './pages/manage_contract_view';
+@import "./pages/manage_contract_view";
 /*--------- 근로기간 ---------- */
-@import './pages/manage_period';
+@import "./pages/manage_period";
 /*--------- 근로계약서 완료 ---------- */
-@import './pages/manage_complete';
+@import "./pages/manage_complete";
 /*--------- 급여명세서 내역 ---------- */
-@import './pages/paybill';
+@import "./pages/paybill";
 /*--------- 급여명세서 상세 ---------- */
-@import './pages/paybill_detail';
+@import "./pages/paybill_detail";
 /*--------- 직원목록 ---------- */
-@import './pages/manage_staff_list';
+@import "./pages/manage_staff_list";
 /*--------- 직원정보 ---------- */
-@import './pages/manage_staff_info';
+@import "./pages/manage_staff_info";
 /*--------- 직원추가 ---------- */
-@import './pages/manage_staff_add';
+@import "./pages/manage_staff_add";
 /*--------- 출퇴근 내역 ---------- */
-@import './pages/commute_list';
+@import "./pages/commute_list";
 /*--------- 출퇴근 방법 ---------- */
-@import './pages/commute_setting';
+@import "./pages/commute_setting";
 /*--------- 출퇴근 설정 ---------- */
-@import './pages/commute_edit';
+@import "./pages/commute_edit";
 /*--------- 근로계약서 목록 ---------- */
-@import './pages/contract_list';
+@import "./pages/contract_list";
 /*--------- 근로계약서 상세보기 ---------- */
-@import './pages/contract_detail';
+@import "./pages/contract_detail";
 /*--------- 문의하기 ---------- */
-@import './pages/inquiry';
+@import "./pages/inquiry";
 /*--------- 약관 및 정책 ---------- */
-@import './pages/policy';
+@import "./pages/policy";
 /*--------- 앱 설정 ---------- */
-@import './pages/setting';
+@import "./pages/setting";
 /*--------- 이벤트 ---------- */
-@import './pages/event';
+@import "./pages/event";
 /*--------- 성공/실패 ---------- */
-@import './pages/success_fail';
+@import "./pages/success_fail";
 /*--------- 언어선택 ---------- */
-@import './pages/language_setting';
+@import "./pages/language_setting";
 
 /*--------- 사장 - 급여명세서 내역 ---------- */
-@import './pages/manage_paybill';
+@import "./pages/manage_paybill";
 /*--------- 사장 - 매장 ---------- */
-@import './pages/manage_store';
+@import "./pages/manage_store";
 /*--------- 사장 - 급여 ---------- */
-@import './pages/manage_salary';
+@import "./pages/manage_salary";
 /*--------- 사장 - 연결하기 ---------- */
-@import './pages/mobile_connecting';
+@import "./pages/mobile_connecting";
 /*--------- 사장 - 출퇴근 내역 ---------- */
-@import './pages/manage_commute_list';
+@import "./pages/manage_commute_list";
 /*--------- 사장 - 마이페이지 ---------- */
-@import './pages/manage_mypage';
+@import "./pages/manage_mypage";
 /*--------- 사장 - 프로필 설정 ---------- */
-@import './pages/manage_profile_setting';
+@import "./pages/manage_profile_setting";
 /*--------- 사장 - 프로필 수정 ---------- */
-@import './pages/manage_profile_edit';
+@import "./pages/manage_profile_edit";
 /*--------- 사장 - 근무지 추가 ---------- */
-@import './pages/manage_place_register';
+@import "./pages/manage_place_register";
 /*--------- 사장 - 프로필 수정 ---------- */
-@import './pages/manage_profile_setting';
+@import "./pages/manage_profile_setting";
 /*--------- 사장 - 근로계약서 목록 ---------- */
-@import './pages/manage_contract_list';
+@import "./pages/manage_contract_list";
 /*--------- 시급 상세보기 ---------- */
-@import './pages/part_time_detail';
+@import "./pages/part_time_detail";
 /*--------- 사장 - 메인 ---------- */
-@import './pages/manage_index';
+@import "./pages/manage_index";
 /*--------- 통계 ---------- */
-@import './pages/analyze';
+@import "./pages/analyze";
 /*--------- 사장 - 블록체인 ---------- */
-@import './pages/manage_blockchain';
+@import "./pages/manage_blockchain";
 /*--------- 사장 - 블록체인 상세보기 ---------- */
-@import './pages/manage_blockchain_detail';
+@import "./pages/manage_blockchain_detail";
 /*--------- 사장 - 구독하기 ---------- */
-@import './pages/manage_subscribe';
+@import "./pages/manage_subscribe";
 /*--------- 사장 - 이용가이드 ---------- */
-@import './pages/manage_guide';
+@import "./pages/manage_guide";
 /*--------- 사장 - 구독관리 ---------- */
-@import './pages/manage_subscribe_info';
+@import "./pages/manage_subscribe_info";
 /*--------- 사장 - 영수증 ---------- */
-@import './pages/manage_subscribe_bill';
+@import "./pages/manage_subscribe_bill";
 
 // 대학교
 /*--------- 메인 ---------- */
-@import './pages/univ_main';
+@import "./pages/univ_main";
 /*--------- 증명서 발급 ---------- */
-@import './pages/univ_certificate';
-@import './pages/univ_certificate_step01';
-@import './pages/univ_certificate_step02';
-@import './pages/univ_certificate_complete';
+@import "./pages/univ_certificate";
+@import "./pages/univ_certificate_step01";
+@import "./pages/univ_certificate_step02";
+@import "./pages/univ_certificate_complete";
 /*--------- 로그인 ---------- */
-@import './pages/univ_login';
+@import "./pages/univ_login";
 /*--------- 회원가입 ---------- */
-@import './pages/univ_membership_step01';
-@import './pages/univ_membership_step02';
+@import "./pages/univ_membership_step01";
+@import "./pages/univ_membership_step02";
 /*--------- 이력서 ---------- */
-@import './pages/univ_resume';
+@import "./pages/univ_resume";
 /*--------- 보관함 ---------- */
-@import './pages/univ_save';
+@import "./pages/univ_save";
 /*--------- 진위확인 ---------- */
-@import './pages/univ_confirm';
+@import "./pages/univ_confirm";
 /*--------- 마이페이지 ---------- */
-@import './pages/univ_mypage';
+@import "./pages/univ_mypage";
 
 // components
 /*--------- 메뉴 ---------- */
-@import './component/nav';
+@import "./component/nav";
 /*--------- 해더 ---------- */
-@import './component/header';
+@import "./component/header";
 /*--------- 카드섹션 ---------- */
-@import './component/card';
+@import "./component/card";
 /*--------- 버튼 ---------- */
-@import './component/button';
+@import "./component/button";
 /*--------- 스위치 ---------- */
-@import './component/toggle_switch';
+@import "./component/toggle_switch";
 /*--------- input ---------- */
-@import './component/input';
+@import "./component/input";
 /*--------- check box ---------- */
-@import './component/check_box';
+@import "./component/check_box";
 /*--------- 탭 ---------- */
-@import './component/tab';
+@import "./component/tab";
 /*--------- offcanvas ---------- */
-@import './component/offcanvas';
+@import "./component/offcanvas";
 /*--------- 검색창 ---------- */
-@import './component/search';
+@import "./component/search";
 /*--------- 모달창 ---------- */
-@import './component/modal';
+@import "./component/modal";
 /*--------- 알림창 ---------- */
-@import './component/alram';
+@import "./component/alram";
 /*--------- 대학메뉴 ---------- */
-@import './component/univ_menu';
+@import "./component/univ_menu";
 /*--------- 토스트 ---------- */
-@import './component/toast';
+@import "./component/toast";
 /*--------- 키패드 ---------- */
-@import './component/keypad';
+@import "./component/keypad";
 
 // mixin
-@import './mixin/transform';
+@import "./mixin/transform";

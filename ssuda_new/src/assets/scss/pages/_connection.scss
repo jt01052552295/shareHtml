@@ -85,9 +85,15 @@
                 .t2 {
                 }
                 &.working_time {
+                    .t1 {
+                        color: var(--blue-200);
+                    }
                 }
                 &.rest_time {
                     padding-left: 20px;
+                    .t1 {
+                        color: var(--point-orange);
+                    }
                 }
             }
         }

@@ -21,3 +21,98 @@
         }
     }
 }
+
+.notice_view {
+    .inner {
+        position: static;
+    }
+    .title {
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--gray-500);
+        .condition {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            .division {
+                padding: 3px 10px;
+                background-color: var(--gray-300);
+                border-radius: 50px;
+                color: var(--gray-500);
+                &.active {
+                    background-color: rgba($color: #fe4f2d, $alpha: 0.1);
+                    color: var(--point-orange);
+                }
+            }
+            .date {
+                color: var(--gray-500);
+            }
+            .ip_num {
+                color: var(--gray-500);
+            }
+        }
+        .tit {
+            font-size: 16px;
+        }
+    }
+    .answer_con {
+        padding-block: 15px;
+    }
+    .answer_box {
+        position: relative;
+        padding: 20px 20px 20px 40px;
+        border-top: 1px solid var(--gray-300);
+        background-color: var(--gray-100);
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 17px;
+            left: 15px;
+            width: 15px;
+            height: 17px;
+            background: url("../images/icon/ico_answer_arr.png") no-repeat center / cover;
+        }
+        .answer_date {
+            margin-top: 10px;
+            text-align: right;
+        }
+    }
+    .answer_none {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .none_img {
+            width: 100%;
+            text-align: center;
+            .none {
+                opacity: 0.2;
+            }
+            .t1 {
+                margin-top: 10px;
+                color: var(--gray-500);
+            }
+        }
+    }
+}
+
+.inquiry_write {
+    .title_con {
+    }
+    .write_con {
+        margin-top: 15px;
+        textarea {
+            width: 100%;
+            min-height: 200px;
+            padding: 20px;
+            border: 1px solid var(--gray-300);
+            border-radius: 15px;
+            resize: none;
+        }
+    }
+
+    .btn_con {
+        margin-top: 15px;
+    }
+}

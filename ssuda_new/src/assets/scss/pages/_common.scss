@@ -174,6 +174,41 @@ p {
     color: var(--blue-200);
 }
 
+.account_opt {
+    .list_con {
+        .list {
+            a {
+                .t1 {
+                    position: relative;
+                    margin-bottom: 10px;
+                    padding-left: 30px;
+                    font: {
+                        size: 18px;
+                        weight: 500;
+                    }
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 16px;
+                        height: 20px;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        background: url("../images/icon/ico_menu_logout.png") no-repeat;
+                    }
+                    &.secession {
+                        &::before {
+                            height: 22px;
+                            background: url("../images/icon/ico_menu_delet.png") no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* 레이아웃 */
 
 .height-100 {

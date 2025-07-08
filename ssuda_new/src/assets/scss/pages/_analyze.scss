@@ -1,15 +1,25 @@
 .analyze {
     .analyze_pay {
         .analyze_box {
+            position: relative;
             display: flex;
-            gap: 15px;
+            gap: 45px;
             margin-top: 15px;
             border-radius: 15px;
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 1px;
+                height: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: var(--gray-500);
+            }
             .box {
                 position: relative;
                 width: calc((100% / 2) - 7.5px);
-                padding: 15px 15px 90px 15px;
-                background-color: var(--gray-100);
                 .tit_con {
                     display: flex;
                     align-items: center;
@@ -22,12 +32,6 @@
                 }
                 .pay_sum {
                     color: var(--point-orange);
-                }
-                .icon {
-                    position: absolute;
-                    bottom: 20px;
-                    right: 20px;
-                    width: 50px;
                 }
             }
         }
