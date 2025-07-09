@@ -21,6 +21,13 @@
     }
 
     .card_con {
+        .setting_btn {
+            width: 25px;
+            .img {
+                width: 100%;
+            }
+        }
+
         .current_date {
             margin-bottom: 30px;
             text-align: center;
@@ -155,6 +162,7 @@
                     }
                     &.contract {
                         &::before {
+                            height: 21px;
                             background: url("../images/icon/ico_shop_menu_contract.png") no-repeat center / cover;
                         }
                     }

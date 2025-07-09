@@ -7,7 +7,7 @@
     <p class="title fs-20 fw-bold">근무등록</p>
   </div>
 </header>
-<section class="contents pt-70 pb-100">
+<section class="contents pt-70">
   <div class="work_register">
     <div class="inner">
       <div class="type_con d-flex">
@@ -27,71 +27,30 @@
         <div class="time d-flex justify-content-between">
           <div class="">
             <label for="exampleFormControlInput1" class="form-label">출근 시간</label>
-            <input
-              type="text"
-              class="form-control form-control-lg right_arr"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasBottom"
-              aria-controls="offcanvasBottom"
-              id="exampleFormControlInput1"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#timeModal"
-              placeholder=""
-              value="09:00"
-              readonly
-            />
+            <input type="text" class="form-control form-control-lg right_arr" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" id="exampleFormControlInput1"
+              data-bs-toggle="offcanvas" data-bs-target="#timeModal" placeholder="" value="09:00" readonly />
           </div>
           <div class="">
             <label for="exampleFormControlInput1" class="form-label">퇴근 시간</label>
-            <input
-              type="text"
-              class="form-control form-control-lg right_arr"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasBottom"
-              aria-controls="offcanvasBottom"
-              id="exampleFormControlInput1"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#timeModal"
-              placeholder=""
-              value="18:00"
-              readonly
-            />
+            <input type="text" class="form-control form-control-lg right_arr" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" id="exampleFormControlInput1"
+              data-bs-toggle="offcanvas" data-bs-target="#timeModal" placeholder="" value="18:00" readonly />
           </div>
         </div>
         <label for="exampleFormControlInput1" class="form-label mt-20">휴게 시간</label>
-        <input
-          type="text"
-          class="form-control form-control-lg right_arr"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom"
-          placeholder=""
-          value="09:00"
-          readonly
-        />
+        <input type="text" class="form-control form-control-lg right_arr" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" placeholder="" value="09:00" readonly />
         <div class="unit_con">
           <label for="exampleFormControlInput1" class="form-label mt-20">기본 시급</label>
-          <input
-            type="text"
-            class="form-control form-control-lg wageInput"
-            id="exampleFormControlInput1"
-            placeholder=""
-            value="10,000"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasBottom"
-            aria-controls="offcanvasBottom"
-          />
+          <input type="text" class="form-control form-control-lg wageInput" id="exampleFormControlInput1" placeholder=""
+            value="10,000" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+            aria-controls="offcanvasBottom" />
         </div>
         <div class="add_option d-flex">
           <div class="form-check">
-            <input
-              class="form-check-input check_type"
-              type="checkbox"
-              value=""
-              id="flexCheckDefault1"
-              name="sort"
-              checked
-            />
+            <input class="form-check-input check_type" type="checkbox" value="" id="flexCheckDefault1" name="sort"
+              checked />
             <label class="form-check-label check_label large-m main" for="flexCheckDefault1">야간</label>
           </div>
           <div class="form-check">
@@ -131,12 +90,8 @@
     </div>
   </div>
 </div>
-<div
-  class="offcanvas offcanvas-bottom payTypeModal"
-  tabindex="-1"
-  id="payTypeModal"
-  aria-labelledby="offcanvasBottomLabel"
->
+<div class="offcanvas offcanvas-bottom payTypeModal" tabindex="-1" id="payTypeModal"
+  aria-labelledby="offcanvasBottomLabel">
   <div class="offcanvas-body small">
     <p class="tit large-b">급여유형을 선택해주세요</p>
     <ul class="date_con">

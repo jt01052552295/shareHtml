@@ -195,12 +195,12 @@ p {
                         top: 50%;
                         left: 0;
                         transform: translateY(-50%);
-                        background: url("../images/icon/ico_menu_logout.png") no-repeat;
+                        background: url("../images/icon/ico_menu_logout.png") no-repeat center / cover;
                     }
                     &.secession {
                         &::before {
-                            height: 22px;
-                            background: url("../images/icon/ico_menu_delet.png") no-repeat;
+                            height: 24px;
+                            background: url("../images/icon/ico_menu_delet.png") no-repeat center / cover;
                         }
                     }
                 }

@@ -16,39 +16,44 @@
         padding-right: 30px;
       }
     }
+    .setting_btn {
+      width: 25px;
+      .img {
+        width: 100%;
+      }
+    }
   }
 
-  .card_con {
-    .salary_sum {
-    }
-    &.img_card {
-      position: relative;
-      padding-bottom: 95px;
+  .salary_sum {
+    color: var(--blue-200);
+  }
+  &.img_card {
+    position: relative;
+    padding-bottom: 95px;
 
-      a {
-        position: relative;
-        z-index: 2;
-        .price {
-          color: var(--point-orange);
-        }
+    a {
+      position: relative;
+      z-index: 2;
+      .price {
+        color: var(--point-orange);
       }
     }
-    .icon {
-      position: absolute;
-      right: 10px;
-      bottom: 10px;
-      width: 70px;
-      z-index: 1;
-    }
-    .time {
-      display: inline-block;
-      background-color: var(--gray-100);
-      margin-top: 10px;
-      padding: 8px 12px;
-      border-radius: 5px;
-      p {
-        color: var(--gray-500);
-      }
+  }
+  .icon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 70px;
+    z-index: 1;
+  }
+  .time {
+    display: inline-block;
+    background-color: var(--gray-100);
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    p {
+      color: var(--gray-500);
     }
   }
 }

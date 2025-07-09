@@ -5,11 +5,10 @@
             .btn {
                 display: block;
                 width: 100%;
-                padding: 0;
+                padding-left: 0;
                 text-align: left;
                 .t1 {
                     position: relative;
-                    padding-block: 10px;
                 }
                 &.active {
                     .t1 {
@@ -40,7 +39,7 @@
         margin-top: 10px;
     }
     .method {
-        margin-top: 30px;
+        margin-block: 30px;
         .btn_box {
             display: flex;
             gap: 10px;
@@ -53,7 +52,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-block: 30px;
+        margin-block: 15px;
     }
     .btn_con {
         margin-top: 30px;
@@ -117,11 +116,10 @@
     .date_con {
         margin-top: 15px;
         .list {
-            padding-block: 10px;
             .btn {
                 display: block;
                 width: 100%;
-                padding: 0;
+                padding-left: 0;
                 text-align: left;
                 .t1 {
                     position: relative;
@@ -154,11 +152,10 @@
     .date_con {
         margin-top: 15px;
         .list {
-            padding-block: 10px;
             .btn {
                 display: block;
                 width: 100%;
-                padding: 0;
+                padding-left: 0;
                 text-align: left;
                 .t1 {
                     position: relative;
@@ -191,11 +188,10 @@
     .date_con {
         margin-top: 15px;
         .list {
-            padding-block: 10px;
             .btn {
                 display: block;
                 width: 100%;
-                padding: 0;
+                padding-left: 0;
                 text-align: left;
                 .t1 {
                     position: relative;
@@ -228,11 +224,10 @@
     .date_con {
         margin-top: 15px;
         .list {
-            padding-block: 10px;
             .btn {
                 display: block;
                 width: 100%;
-                padding: 0;
+                padding-left: 0;
                 text-align: left;
                 &.active {
                     .t1 {
@@ -391,6 +386,7 @@
             margin-top: 20px;
             .list {
                 margin-bottom: 20px;
+                padding-right: 20px;
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -556,11 +552,10 @@
     .time_con {
         margin-top: 15px;
         .list {
-            padding-block: 10px;
             .btn {
                 display: block;
                 width: 100%;
-                padding: 0;
+                padding-left: 0;
                 text-align: left;
                 .t1 {
                 }
@@ -809,7 +804,6 @@
     .offcanvas-body {
         .filter_con {
             .list {
-                padding-block: 10px;
                 .btn-link {
                     text-align: left;
                     &.active {
