@@ -209,6 +209,21 @@ p {
     }
 }
 
+.list_box {
+    .list {
+        position: relative;
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
 /* 레이아웃 */
 
 .height-100 {
