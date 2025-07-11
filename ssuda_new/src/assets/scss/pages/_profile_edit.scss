@@ -1,7 +1,7 @@
 .profile_edit {
     .card_con {
         background-color: var(--gray-100);
-        input {
+        .form-control {
             background: none;
         }
     }
@@ -54,7 +54,8 @@
     .info_edit {
         .info_btn {
             width: 100%;
-            border-bottom: 1px solid var(--gray-200);
+            border-bottom: 1px solid var(--gray-400);
+            border-radius: 0;
             text-align: left;
             font: {
                 size: 0.9rem;
