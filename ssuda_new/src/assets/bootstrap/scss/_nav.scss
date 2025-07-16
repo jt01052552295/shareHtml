@@ -58,19 +58,19 @@
 
 .nav-tabs {
   // scss-docs-start nav-tabs-css-vars
-  // --#{$prefix}nav-tabs-border-width: #{$nav-tabs-border-width};
+  --#{$prefix}nav-tabs-border-width: #{$nav-tabs-border-width};
   --#{$prefix}nav-tabs-border-color: #{$nav-tabs-border-color};
-  // --#{$prefix}nav-tabs-border-radius: #{$nav-tabs-border-radius};
+  --#{$prefix}nav-tabs-border-radius: #{$nav-tabs-border-radius};
   --#{$prefix}nav-tabs-link-hover-border-color: #{$nav-tabs-link-hover-border-color};
   --#{$prefix}nav-tabs-link-active-color: #{$nav-tabs-link-active-color};
   --#{$prefix}nav-tabs-link-active-bg: #{$nav-tabs-link-active-bg};
   --#{$prefix}nav-tabs-link-active-border-color: #{$nav-tabs-link-active-border-color};
   // scss-docs-end nav-tabs-css-vars
-  margin-bottom: 20px;
+
   border-bottom: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
 
   .nav-link {
-    // margin-bottom: calc(-1 * var(--#{$prefix}nav-tabs-border-width)); // stylelint-disable-line function-disallowed-list
+    margin-bottom: calc(-1 * var(--#{$prefix}nav-tabs-border-width)); // stylelint-disable-line function-disallowed-list
     border: var(--#{$prefix}nav-tabs-border-width) solid transparent;
     @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
 
@@ -78,7 +78,7 @@
     &:focus {
       // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
       isolation: isolate;
-      // border-color: var(--#{$prefix}nav-tabs-link-hover-border-color);
+      border-color: var(--#{$prefix}nav-tabs-link-hover-border-color);
     }
   }
 
@@ -86,9 +86,7 @@
   .nav-item.show .nav-link {
     color: var(--#{$prefix}nav-tabs-link-active-color);
     background-color: var(--#{$prefix}nav-tabs-link-active-bg);
-    border-bottom: 2px solid $main;
-    font-weight: 600;
-    // border-color: var(--#{$prefix}nav-tabs-link-active-border-color);
+    border-color: var(--#{$prefix}nav-tabs-link-active-border-color);
   }
 
   .dropdown-menu {
@@ -97,28 +95,8 @@
     // Remove the top rounded corners here since there is a hard edge above the menu
     @include border-top-radius(0);
   }
-
-  .nav-item {
-    border-bottom: 1px solid var(--gray-200);
-  }
-
-  &.two {
-    .nav-item {
-      width: calc(100% / 2);
-      .nav-link {
-        width: 100%;
-      }
-    }
-  }
-  &.three {
-    .nav-item {
-      width: calc(100% / 3);
-      .nav-link {
-        width: 100%;
-      }
-    }
-  }
 }
+
 
 //
 // Pills
@@ -141,6 +119,7 @@
     @include gradient-bg(var(--#{$prefix}nav-pills-link-active-bg));
   }
 }
+
 
 //
 // Underline
@@ -174,6 +153,7 @@
   }
 }
 
+
 //
 // Justified variants
 //
@@ -189,8 +169,8 @@
 .nav-justified {
   > .nav-link,
   .nav-item {
-    flex-basis: 0;
     flex-grow: 1;
+    flex-basis: 0;
     text-align: center;
   }
 }
@@ -201,6 +181,7 @@
     width: 100%; // Make sure button will grow
   }
 }
+
 
 // Tabbable tabs
 //

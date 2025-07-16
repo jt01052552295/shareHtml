@@ -4,12 +4,10 @@
 
 .form-label {
   margin-bottom: $form-label-margin-bottom;
-  // @include font-size($form-label-font-size);
-  font-size: 0.8rem;
+  @include font-size($form-label-font-size);
   font-style: $form-label-font-style;
   font-weight: $form-label-font-weight;
-  // color: $form-label-color;
-  color: var(--gray-500);
+  color: $form-label-color;
 }
 
 // For use with horizontal and inline forms, when you need the label (or legend)
