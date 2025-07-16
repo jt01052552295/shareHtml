@@ -35,12 +35,8 @@
       </div>
 
       <div class="career">
-        <div
-          class="btn btn-lg btn-outline-secondary career_add w-100"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#resumeModal"
-          aria-controls="offcanvasBottom"
-        >
+        <div class="btn btn-lg btn-outline-secondary career_add w-100" data-bs-toggle="offcanvas"
+          data-bs-target="#resumeModal" aria-controls="offcanvasBottom">
           ✍경력 직접 추가하기
         </div>
       </div>
@@ -50,15 +46,20 @@
         <ul class="list_con">
           <li class="list">
             <div class="name_con">
-              <p class="t1 large-b">{상호명}</p>
+              <p class="t1 large-b">외식 1번가</p>
               <div class="icon_con">
-                <a class="edit" href="javascript:void(0)">
-                  <img src="./assets/images/icon/ico_edit.png" alt="" />
-                </a>
-                <button class="btn delete">
+                <button class="btn p-1">
+                  <a class="edit" href="javascript:void(0)">
+                    <img src="./assets/images/icon/ico_edit.png" alt="" />
+                  </a>
+                </button>
+                <button class="btn p-1 delete">
                   <img src="./assets/images/icon/ico_delete.png" alt="" />
                 </button>
-                <!-- <img class="shape" src="./assets/images/icon/ico_check01.png" alt=""> -->
+                <button class="btn p-1">
+                  <img class="shape" src="./assets/images/icon/ico_check01.png" alt="">
+                  <p class="t1" style="font-size: 12px;">인증완료</p>
+                </button>
               </div>
             </div>
             <div class="work_period">
@@ -68,20 +69,25 @@
               </p>
             </div>
             <div class="work">
-              <p class="t1 medium-m">매장관리</p>
+              <p class="t1 medium-m">서빙</p>
             </div>
           </li>
           <li class="list">
             <div class="name_con">
-              <p class="t1 large-b">{상호명}</p>
+              <p class="t1 large-b">메가커피</p>
               <div class="icon_con">
-                <a class="edit" href="javascript:void(0)">
-                  <img src="./assets/images/icon/ico_edit.png" alt="" />
-                </a>
-                <button class="btn delete">
+                <button class="btn p-1">
+                  <a class="edit" href="javascript:void(0)">
+                    <img src="./assets/images/icon/ico_edit.png" alt="" />
+                  </a>
+                </button>
+                <button class="btn p-1 delete">
                   <img src="./assets/images/icon/ico_delete.png" alt="" />
                 </button>
-                <!-- <img class="shape" src="./assets/images/icon/ico_cancel.png" alt=""> -->
+                <button class="btn p-1">
+                  <img class="shape" src="./assets/images/icon/ico_cancel.png" alt="">
+                  <p class="t1" style="font-size: 12px;">인증대기</p>
+                </button>
               </div>
             </div>
             <div class="work_period">
@@ -95,11 +101,10 @@
             </div>
             <div class="attach">
               <div class="upload-box">
-                <p class="t1 small-m">4대보험 내역을 업로드해주세요.</p>
 
                 <label for="fileInput" class="custom-file-upload">
                   <i class="fas fa-upload"></i>
-                  파일 선택
+                  4대보험 내역을 업로드해주세요.
                 </label>
                 <input type="file" class="" id="fileInput" />
 
@@ -119,12 +124,8 @@
   </div>
 </section>
 <!-- offcanvas -->
-<div
-  class="offcanvas offcanvas-bottom resumeModal"
-  tabindex="-1"
-  id="resumeModal"
-  aria-labelledby="offcanvasBottomLabel"
->
+<div class="offcanvas offcanvas-bottom resumeModal" tabindex="-1" id="resumeModal"
+  aria-labelledby="offcanvasBottomLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasBottomLabel">경력사항</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>

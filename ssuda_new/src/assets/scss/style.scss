@@ -1,10 +1,18 @@
+@import '../bootstrap/scss/functions';
+@import '../bootstrap/scss/variables';
+@import '../bootstrap/scss/variables-dark';
+@import '../bootstrap/scss/maps';
+@import '../bootstrap/scss/mixins';
+@import '../bootstrap/scss/utilities';
+
 :root {
-  --blue-000: #000000;
+  --blue-000: #000;
   --blue-100: #02224a;
   --blue-200: #3751ae;
   --point-color: #2fd1d6;
   --point-orange: #fe4f2d;
   --point-red: #cb0404;
+  --point-green: #198754;
 
   --gray-100: #fafafa;
   --gray-200: #f2f2f2;
@@ -220,6 +228,8 @@ input.check_type[type='checkbox']:disabled {
 @import './component/toast';
 /*--------- 키패드 ---------- */
 @import './component/keypad';
+/*--------- 뱃지 ---------- */
+@import './component/badge';
 
 // mixin
 @import './mixin/transform';

@@ -2,7 +2,7 @@
 <header class="header_menu univ">
   <div class="inner d-flex justify-content-between">
     <h1 class="logo">
-      <a class="link" href="univ_main.html">
+      <a class="link" href="univ_main_type2_1.html">
         <img class="logo" src="./assets/images/logo/logo_silla.png" alt="" />
       </a>
     </h1>
@@ -79,15 +79,14 @@
     <div class="flip-container" id="flip-card">
       <div class="flipper">
         <div class="front">
-          <button class="rotate_btn front_btn btn" onclick="flipCard()" style="color: #fff">
-            <i class="fa-solid fa-rotate-right"></i>
-          </button>
+          <button class="rotate_btn front_btn btn" onclick="flipCard()" style="color: #fff;"><i
+              class="fa-solid fa-rotate-right"></i></button>
           <div class="upper">
             <p class="title large-m">학력증명서</p>
             <p class="t1 header-b">신라대학교</p>
           </div>
           <div class="thumb">
-            <img src="./assets/images/icon/ico_camera.png" alt="" />
+            <img src="./assets/images/icon/ico_camera.png" alt="">
           </div>
           <div class="lower">
             <p class="name header-b">이정우</p>
@@ -107,9 +106,10 @@
               </li>
             </ul>
             <a href="./assets/file/test_docu.pdf" download class="btn btn-primary w-100">다운로드</a>
+
           </div>
         </div>
-        <div class="btn p-0">
+        <div class="back">
           <button class="rotate_btn back_btn btn" onclick="flipCard()"><i class="fa-solid fa-rotate-right"></i></button>
           <div class="tit_con">
             <p class="title large-r">학력증명서</p>
@@ -149,20 +149,24 @@
     <!-- <button class="rotate_btn btn" onclick="flipCard()"><i class="fa-solid fa-rotate-right"></i></button> -->
   </div>
 </div>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
 <script>
   function flipCard() {
     const card = document.getElementById('flip-card');
     card.classList.toggle('flipped');
   }
-  var swiper = new Swiper('.mySwiper', {
+  var swiper = new Swiper(".mySwiper", {
     pagination: {
-      el: '.swiper-pagination'
+      el: ".swiper-pagination",
     },
     loop: true,
     autoplay: {
       delay: 3000
     },
-    spaceBetween: 15
+    spaceBetween: 15,
   });
 </script>
 @@include('partials/html-end.html')

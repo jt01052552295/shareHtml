@@ -7,18 +7,20 @@
   width: 100%;
   padding: $input-padding-y $input-padding-x;
   font-family: $input-font-family;
-  @include font-size($input-font-size);
+  // @include font-size($input-font-size);
+  font-size: 0.9rem;
   font-weight: $input-font-weight;
   line-height: $input-line-height;
   color: $input-color;
   appearance: none; // Fix appearance for date inputs in Safari
   background-color: $input-bg;
   background-clip: padding-box;
-  border: $input-border-width solid $input-border-color;
-
+  // border: $input-border-width solid $input-border-color;
+  border: none;
+  border-bottom: 1px solid var(--gray-400);
+  border-radius: 0;
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
-  @include border-radius($input-border-radius, 0);
-
+  // @include border-radius($input-border-radius, 0);
   @include box-shadow($input-box-shadow);
   @include transition($input-transition);
 
@@ -73,8 +75,11 @@
 
   // Placeholder
   &::placeholder {
-    color: $input-placeholder-color;
+    // color: $input-placeholder-color;
+    color: var(--gray-500);
     // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    font-size: 0.9rem;
+    font-weight: 400;
     opacity: 1;
   }
 
@@ -83,11 +88,23 @@
   // HTML5 says that controls under a fieldset > legend:first-child won't be
   // disabled if the fieldset is disabled. Due to implementation difficulty, we
   // don't honor that edge case; we style them as disabled anyway.
+  // &:disabled {
+  //   color: $input-disabled-color;
+  //   background-color: $input-disabled-bg;
+  //   border-color: $input-disabled-border-color;
+  //   iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
+  //   opacity: 1;
   &:disabled {
     color: $input-disabled-color;
-    background-color: $input-disabled-bg;
-    border-color: $input-disabled-border-color;
-    // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
+    background-color: #bfbec7 !important;
+    border-color: #bfbec7 !important;
+    opacity: 1;
+  }
+
+  &:read-only {
+    color: $input-disabled-color;
+    background-color: #bfbec7 !important;
+    border-color: #bfbec7 !important;
     opacity: 1;
   }
 
@@ -163,7 +180,7 @@
   min-height: $input-height-lg;
   padding: $input-padding-y-lg $input-padding-x-lg;
   @include font-size($input-font-size-lg);
-  @include border-radius($input-border-radius-lg);
+  // @include border-radius($input-border-radius-lg);
 
   &::file-selector-button {
     padding: $input-padding-y-lg $input-padding-x-lg;
@@ -209,6 +226,10 @@ textarea {
     @include border-radius($input-border-radius);
   }
 
-  &.form-control-sm { height: $input-height-sm; }
-  &.form-control-lg { height: $input-height-lg; }
+  &.form-control-sm {
+    height: $input-height-sm;
+  }
+  &.form-control-lg {
+    height: $input-height-lg;
+  }
 }
