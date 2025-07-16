@@ -1,0 +1,551 @@
+@@include('partials/html-start.html', { "title": "메인" })
+
+<style>
+	.go_top2 {
+
+		display: none;
+
+	}
+</style>
+
+<div class="wrap">
+
+	<div class="sub_pg">
+
+		<!-- 상단필터 영역-->
+
+		<section class="mem_filter   py-3">
+
+			<div class="container">
+
+				<div class="sch_ip border align-items-center">
+
+					<input type="search" class="form-control fs_14 flex-fill border-0" placeholder="검색어를 입력해주세요">
+
+					<button class="btn btn-icon flex-shrink-0"><img src="./img/ico_search.png"
+							style="width:2.0rem;"></button>
+
+				</div>
+
+				<div class="srchfltr_wrap srchfltr-wrap px-0">
+
+					<div class="srchfltr d-flex">
+
+						<div class="touch_scroll scroll_bar_none flex-fill">
+
+							<div class="  btn-group-toggle">
+
+								<button class="btn btn-outline-secondary btn-md flex-shrink-0 px-3"><img
+										src="./img/clockwise.svg" alt="새로고침" style="width: auto;"></button>
+
+								<label class="btn btn-outline-secondary btn-md active ">
+
+									<input type="checkbox" name="options" id="option1" checked=""> <span class="mr-2">종류
+									</span><img src="./img/selectarrow.png" alt="">
+
+								</label>
+
+								<label class="btn btn-outline-secondary btn-md  ">
+
+									<input type="checkbox" name="options" id="option2"> <span class="mr-2">금액
+									</span><img src="./img/selectarrow.png" alt="">
+
+								</label>
+
+								<label class="btn btn-outline-secondary btn-md  ">
+
+									<input type="checkbox" name="options" id="option3"> <span class="mr-2">홀수
+									</span><img src="./img/selectarrow.png" alt="">
+
+								</label>
+
+								<label class="btn btn-outline-secondary btn-md  ">
+
+									<input type="checkbox" name="options" id="option4"> <span class="mr-2">거리
+									</span><img src="./img/selectarrow.png" alt="">
+
+								</label>
+
+								<label class="btn btn-outline-secondary btn-md  ">
+
+									<input type="checkbox" name="options" id="option5"> <span class="mr-2">예약율
+									</span><img src="./img/selectarrow.png" alt="">
+
+								</label>
+
+							</div>
+
+						</div>
+
+						<button type="button" class=" btn2 flex-shrink-0" data-toggle="modal"
+							data-target="#modal_full2"><img src="./img/ico_filter.png" alt="필터" width="68px" class=" ">
+						</button>
+
+
+
+					</div>
+
+					<p class="fs_13 text-gray mt-3">' * ' 표시는 거래건수가 높은 회원권</p>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+		<!-- 장소정보 //지도의 위치푯말 클릭하면 열리는곳 -->
+
+		<div class="map_info_wp">
+
+			<div class="box">
+
+				<button class="info_close btn2"><img src="./img/ico_x2.png" alt="닫기" width="40px" class=" "></button>
+
+				<button class="touch_bar btn2"><span></Span></button>
+
+				<ul class="map_info_li">
+
+					<li>
+
+						<a href="./item_detail.php">
+
+							<div class="infobox media">
+
+								<div class="media_img flex-shrink-0">
+
+									<div class="rect2 rounded ">
+
+										<img src="./img/sample01.jpg" alt="">
+
+									</div>
+
+								</div>
+
+								<div class="media-body">
+
+									<p class="fs_18 fw_700 mb-1 line1_text">캐슬렉스-개인부담금 캐슬렉스-개인부담금</p>
+
+									<p class="line1_text">정회원1인+가족회원1인+지명회원1인 정회원1인+가족회원1인+지명회원1인</p>
+
+									<p class="d-flex justify-content-between  mt-3">
+
+										<span class="text-gray">매매가능금액</span>
+
+										<span class=" text-primary fw_700">9,825만원</span>
+
+									</p>
+
+								</div>
+
+							</div>
+
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="./item_detail.php">
+
+							<div class="infobox media">
+
+								<div class="media_img flex-shrink-0">
+
+									<div class="rect2 rounded ">
+
+										<img src="./img/sample01.jpg" alt="">
+
+									</div>
+
+								</div>
+
+								<div class="media-body">
+
+									<p class="fs_18 fw_700 mb-1 line1_text">캐슬렉스-개인부담금 캐슬렉스-개인부담금</p>
+
+									<p class="line1_text">정회원1인+가족회원1인+지명회원1인 정회원1인+가족회원1인+지명회원1인</p>
+
+									<p class="d-flex justify-content-between  mt-3">
+
+										<span class="text-gray">매매가능금액</span>
+
+										<span class=" text-primary fw_700">9,825만원</span>
+
+									</p>
+
+								</div>
+
+							</div>
+
+						</a>
+
+					</li>
+
+
+
+					<li>
+
+						<a href="./item_detail.php">
+
+							<div class="infobox media">
+
+								<div class="media_img  flex-shrink-0">
+
+									<div class="rect2 rounded">
+
+										<img src="./img/sample01.jpg" alt="">
+
+									</div>
+
+								</div>
+
+								<div class="media-body">
+
+									<p class="fs_18 fw_700 mb-1">캐슬렉스-개인부담금</p>
+
+									<p>정회원1인+가족회원1인+지명회원1인</p>
+
+									<p class="d-flex justify-content-between  mt-3">
+
+										<span class="text-gray">매매가능금액</span>
+
+										<span class=" text-primary fw_700">9,825만원</span>
+
+									</p>
+
+								</div>
+
+							</div>
+
+						</a>
+
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+
+
+		<!-- 지도 영역-->
+
+		<div class="map_view">
+
+			<a href="" class="my_loca"> </a><!--나의위치 -->
+
+			<a href="" class="tooltip_box">
+
+				<div class="tooltip-bubble">
+
+					<span>경기골프장-부분부담금</span>
+
+					<strong>10,800만</strong>
+
+				</div>
+
+			</a>
+
+			<a href="" class="tooltip_box " style="top:250px">
+
+				<div class="tooltip-bubble active">
+
+					<span>경기골프장-부분부담금</span>
+
+					<strong>10,800만</strong>
+
+				</div>
+
+			</a>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- data-toggle="modal" data-target="#modal_full2" 필터열림 모달 -->
+
+<div class="modal modal_full" id="modal_full2" tabindex="-1" aria-hidden="true">
+
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+
+		<div class="modal-content">
+
+			<div class="modal-header">
+
+				<div class="hd_btn justify-content-start"><button class="btn2   "><img src="./img/clockwise.svg"
+							alt="새로고침" style="width: auto;"></button></div>
+
+				<div class="page_tit line1_text fs_18 text-center fw_800 flex-fill">필터</div>
+
+				<div class="hd_btn justify-content-end"><button type="button" data-dismiss="modal"><img
+							src="./img/ico_x.png" alt="닫기"></button></div>
+
+			</div>
+
+			<div class="modal-body">
+
+				<div class="filter_box">
+
+					<div class="tit d-flex justify-content-between">
+
+						<h2 class="tit_h2">회원권 종류</h2>
+
+						<a href="" class=" text-primary py-2">전체선택</a>
+
+					</div>
+
+					<div class="btn-group-toggle grid grid_4" data-toggle="buttons">
+
+						<label class="btn btn-outline-primary active">
+
+							<input type="checkbox" name="options" id="filter1_1" checked> 정회원
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter1_2"> 무기명
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter1_3"> 주중개인
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter1_4"> 주중가족
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter1_5"> 주중무기
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter1_6"> 법인회원
+
+						</label>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="filter_box">
+
+					<div class="tit d-flex justify-content-between">
+
+						<h2 class="tit_h2">회원권 금액</h2>
+
+						<a href="" class=" text-gray py-2">단위:만원</a>
+
+					</div>
+
+					<div>
+
+						<!--이미지만 넣어놓음 // 기능 구현 요청드립니다.-->
+
+						<img src="./img/img.jpg" class="w-100">
+
+					</div>
+
+				</div>
+
+
+
+				<div class="filter_box">
+
+					<div class="tit d-flex justify-content-between">
+
+						<h2 class="tit_h2">홀수</h2>
+
+						<a href="" class=" text-primary py-2">전체선택</a>
+
+					</div>
+
+					<div class="btn-group-toggle grid grid_5" data-toggle="buttons">
+
+						<label class="btn btn-outline-primary active">
+
+							<input type="checkbox" name="options" id="filter2_1" checked> 18홀
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter2_2"> 27홀
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter2_3"> 36홀
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter2_4"> 그외
+
+						</label>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="filter_box">
+
+					<div class="tit d-flex justify-content-between">
+
+						<h2 class="tit_h2">거리</h2>
+
+						<a href="" class=" text-primary py-2">전체선택</a>
+
+					</div>
+
+					<div class="btn-group-toggle grid grid_5" data-toggle="buttons">
+
+						<label class="btn btn-outline-primary ">
+
+							<input type="checkbox" name="options" id="filter3_1"> 20km
+
+						</label>
+
+						<label class="btn btn-outline-primary active">
+
+							<input type="checkbox" name="options" id="filter3_2" checked> 40km
+
+						</label>
+
+						<label class="btn btn-outline-primary active">
+
+							<input type="checkbox" name="options" id="filter3_3" checked> 80km
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter3_4"> 120km
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter3_5"> 그외
+
+						</label>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="filter_box">
+
+					<div class="tit d-flex justify-content-between">
+
+						<h2 class="tit_h2">회원예약율</h2>
+
+						<a href="" class=" text-primary py-2">전체선택</a>
+
+					</div>
+
+					<div class="btn-group-toggle grid grid_3" data-toggle="buttons">
+
+						<label class="btn btn-outline-primary active">
+
+							<input type="checkbox" name="options" id="filter4_1" checked> 월 주중 1회
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter4_2"> 월 주중 2회
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter4_3"> 월 주중 3회
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter4_4"> 월 주중 4회 이상
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter4_5"> 월 주말 1회
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter4_6"> 월 주말 2회
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter4_7"> 월 주중 3회
+
+						</label>
+
+						<label class="btn btn-outline-primary">
+
+							<input type="checkbox" name="options" id="filter4_8"> 월 주말 4회 이상
+
+						</label>
+
+
+
+					</div>
+
+				</div>
+
+
+
+
+
+
+
+			</div>
+
+			<div class="modal-footer">
+
+				<button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">필터적용</button>
+
+				<!-- <div class="form-row">
+
+					<div class="col"><button type="button" class="btn btn-outline-light text-black btn-block" data-dismiss="modal">이전</button></div>
+
+					<div class="col"><button type="button" class="btn btn-primary btn-block" data-dismiss="modal">확인</button></div>
+
+				</div> -->
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+@@include('partials/html-end.html')
