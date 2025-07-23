@@ -67,7 +67,7 @@ const paths = {
 
 // 공통 템플릿 변수
 const templateData = {
-  baseUrl: basePath.endsWith('/') ? basePath : basePath + '/',
+  baseUrl: basePath.replace(/\/$/, ''),
   version: '1.0.0',
   cssPath: (basePath + '/assets/css').replace(/\/{2,}/g, '/'),
   jsPath: (basePath + '/assets/js').replace(/\/{2,}/g, '/'),
