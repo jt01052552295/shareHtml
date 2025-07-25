@@ -4,11 +4,11 @@
 
 .btn {
   // scss-docs-start btn-css-vars
-  --#{$prefix}btn-padding-x: #{$btn-padding-x};
-  --#{$prefix}btn-padding-y: #{$btn-padding-y};
+  // --#{$prefix}btn-padding-x: #{$btn-padding-x};
+  // --#{$prefix}btn-padding-y: #{$btn-padding-y};
   --#{$prefix}btn-font-family: #{$btn-font-family};
-  @include rfs($btn-font-size, --#{$prefix}btn-font-size);
-  --#{$prefix}btn-font-weight: #{$btn-font-weight};
+  // @include rfs($btn-font-size, --#{$prefix}btn-font-size);
+  // --#{$prefix}btn-font-weight: #{$btn-font-weight};
   --#{$prefix}btn-line-height: #{$btn-line-height};
   --#{$prefix}btn-color: #{$btn-color};
   --#{$prefix}btn-bg: transparent;
@@ -18,7 +18,7 @@
   --#{$prefix}btn-hover-border-color: transparent;
   --#{$prefix}btn-box-shadow: #{$btn-box-shadow};
   --#{$prefix}btn-disabled-opacity: #{$btn-disabled-opacity};
-  --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), .5);
+  --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), 0.5);
   // scss-docs-end btn-css-vars
 
   display: inline-block;
@@ -39,6 +39,12 @@
   @include gradient-bg(var(--#{$prefix}btn-bg));
   @include box-shadow(var(--#{$prefix}btn-box-shadow));
   @include transition($btn-transition);
+
+  height: 4.8rem;
+  padding-inline: 1.9rem;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 
   &:hover {
     color: var(--#{$prefix}btn-hover-color);
@@ -80,11 +86,14 @@
 
   .btn-check:checked + &,
   :not(.btn-check) + &:active,
-  &:first-child:active,
   &.active,
   &.show {
-    color: var(--#{$prefix}btn-active-color);
-    background-color: var(--#{$prefix}btn-active-bg);
+    // color: var(--#{$prefix}btn-active-color);
+    // background-color: var(--#{$prefix}btn-active-bg);
+
+    background-color: $blue;
+    color: #fff;
+
     // Remove CSS gradients if they're enabled
     background-image: if($enable-gradients, none, null);
     border-color: var(--#{$prefix}btn-active-border-color);
@@ -112,16 +121,19 @@
   &:disabled,
   &.disabled,
   fieldset:disabled & {
-    color: var(--#{$prefix}btn-disabled-color);
-    pointer-events: none;
-    background-color: var(--#{$prefix}btn-disabled-bg);
-    background-image: if($enable-gradients, none, null);
-    border-color: var(--#{$prefix}btn-disabled-border-color);
-    opacity: var(--#{$prefix}btn-disabled-opacity);
+    // color: var(--#{$prefix}btn-disabled-color);
+    // pointer-events: none;
+    // background-color: var(--#{$prefix}btn-disabled-bg);
+    // background-image: if($enable-gradients, none, null);
+    // border-color: var(--#{$prefix}btn-disabled-border-color);
+    // opacity: var(--#{$prefix}btn-disabled-opacity);
+    opacity: 1;
+    color: #e7eaef !important;
+    background: #9ea4ab;
+    border-color: #9ea4ab;
     @include box-shadow(none);
   }
 }
-
 
 //
 // Alternate buttons
@@ -130,7 +142,7 @@
 // scss-docs-start btn-variant-loops
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
-    @if $color == "light" {
+    @if $color == 'light' {
       @include button-variant(
         $value,
         $value,
@@ -139,7 +151,7 @@
         $active-background: shade-color($value, $btn-active-bg-shade-amount),
         $active-border: shade-color($value, $btn-active-border-shade-amount)
       );
-    } @else if $color == "dark" {
+    } @else if $color == 'dark' {
       @include button-variant(
         $value,
         $value,
@@ -160,7 +172,6 @@
   }
 }
 // scss-docs-end btn-variant-loops
-
 
 //
 // Link buttons
@@ -201,7 +212,6 @@
 
   // No need for an active state here
 }
-
 
 //
 // Button Sizes

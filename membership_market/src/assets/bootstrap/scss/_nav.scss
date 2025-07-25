@@ -67,12 +67,20 @@
   --#{$prefix}nav-tabs-link-active-border-color: #{$nav-tabs-link-active-border-color};
   // scss-docs-end nav-tabs-css-vars
 
-  border-bottom: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
+  // border-bottom: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
 
+  padding: 0.8rem;
+  background-color: #f5f6f8;
+  border-radius: 0.8rem;
   .nav-link {
     margin-bottom: calc(-1 * var(--#{$prefix}nav-tabs-border-width)); // stylelint-disable-line function-disallowed-list
     border: var(--#{$prefix}nav-tabs-border-width) solid transparent;
-    @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
+    // @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
+
+    height: 4.4rem;
+    font-size: 1.4rem;
+    color: #999;
+    padding-inline: 0.2rem;
 
     &:hover,
     &:focus {
@@ -84,9 +92,13 @@
 
   .nav-link.active,
   .nav-item.show .nav-link {
-    color: var(--#{$prefix}nav-tabs-link-active-color);
-    background-color: var(--#{$prefix}nav-tabs-link-active-bg);
-    border-color: var(--#{$prefix}nav-tabs-link-active-border-color);
+    // color: var(--#{$prefix}nav-tabs-link-active-color);
+    color: #000;
+    // background-color: var(--#{$prefix}nav-tabs-link-active-bg);
+    background-color: #fff;
+    // border-color: var(--#{$prefix}nav-tabs-link-active-border-color);
+    border-color: #dee2e6 #dee2e6;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.06);
   }
 
   .dropdown-menu {
@@ -96,7 +108,6 @@
     @include border-top-radius(0);
   }
 }
-
 
 //
 // Pills
@@ -110,7 +121,11 @@
   // scss-docs-end nav-pills-css-vars
 
   .nav-link {
-    @include border-radius(var(--#{$prefix}nav-pills-border-radius));
+    // @include border-radius(var(--#{$prefix}nav-pills-border-radius));
+    border: 0;
+    border-radius: 1rem;
+    background: #aab1b7;
+    color: #fff;
   }
 
   .nav-link.active,
@@ -119,7 +134,6 @@
     @include gradient-bg(var(--#{$prefix}nav-pills-link-active-bg));
   }
 }
-
 
 //
 // Underline
@@ -131,28 +145,30 @@
   --#{$prefix}nav-underline-border-width: #{$nav-underline-border-width};
   --#{$prefix}nav-underline-link-active-color: #{$nav-underline-link-active-color};
   // scss-docs-end nav-underline-css-vars
-
+  border-bottom: 1px solid #e3e3e3;
   gap: var(--#{$prefix}nav-underline-gap);
 
   .nav-link {
     padding-right: 0;
     padding-left: 0;
     border-bottom: var(--#{$prefix}nav-underline-border-width) solid transparent;
-
-    &:hover,
-    &:focus {
-      border-bottom-color: currentcolor;
-    }
+    color: #000;
+    font-weight: 600;
+    // &:hover,
+    // &:focus {
+    //   border-bottom-color: currentcolor;
+    // }
   }
 
   .nav-link.active,
   .show > .nav-link {
     font-weight: $font-weight-bold;
-    color: var(--#{$prefix}nav-underline-link-active-color);
-    border-bottom-color: currentcolor;
+    // color: var(--#{$prefix}nav-underline-link-active-color);
+    // border-bottom-color: $primary;
+    color: $primary;
+    border-bottom: 0.2rem solid $primary;
   }
 }
-
 
 //
 // Justified variants
@@ -181,7 +197,6 @@
     width: 100%; // Make sure button will grow
   }
 }
-
 
 // Tabbable tabs
 //

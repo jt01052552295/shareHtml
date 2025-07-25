@@ -1,0 +1,57 @@
+.membership_contract {
+  .contract_card {
+    .list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding: 3.5rem 2.5rem;
+      border: 1px solid var(--border);
+      border-radius: 0.8rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .left {
+        .t1 {
+          margin-bottom: 0.5rem;
+          font: {
+            size: 1.4rem;
+            weight: 500;
+          }
+          &.sell {
+            color: #ff8c21;
+          }
+          &.buy {
+            color: #21a2ff;
+          }
+        }
+        .t2 {
+          font: {
+            size: 1.6rem;
+            weight: 600;
+          }
+        }
+      }
+      .right {
+        text-align: right;
+        .badge_custom {
+          width: 6.7rem;
+          margin-bottom: 0.5rem;
+          text-align: center;
+        }
+        .price {
+          font: {
+            size: 1.8rem;
+            weight: 700;
+          }
+          span {
+            font: {
+              size: 1.4rem;
+              weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}

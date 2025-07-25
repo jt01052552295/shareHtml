@@ -138,7 +138,7 @@ p {
 .univ_title {
   margin-bottom: 10px;
   font: {
-    size: 18px;
+    size: 24px;
     weight: 700;
   }
 }
@@ -481,6 +481,14 @@ p {
   }
 
   .header-b {
+    font: {
+      size: 1.2rem;
+      weight: 700;
+    }
+  }
+
+  .univ_title {
+    margin-bottom: 10px;
     font: {
       size: 1.2rem;
       weight: 700;

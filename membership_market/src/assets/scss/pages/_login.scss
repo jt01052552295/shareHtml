@@ -1,0 +1,41 @@
+.login_logo {
+  width: 163px;
+  img {
+    width: 100%;
+  }
+}
+
+.login_txt {
+  font: {
+    size: 2.4rem;
+    weight: 700;
+  }
+}
+
+.login_option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  .list {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 12px;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      background-color: #e3e3e3;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+    a {
+    }
+  }
+}

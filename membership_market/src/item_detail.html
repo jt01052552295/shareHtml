@@ -2,494 +2,677 @@
 <div class="wrap">
 
     <div class="sub_pg ">
-
-
-
         <!-- 회원권 이미지-->
-
         <section class="mb-4">
-
             <div class="swiper memimg_slide  ">
-
                 <div class="swiper-wrapper">
-
                     <div class="swiper-slide">
-
                         <div class="rect2">
-
-                            <img src="./img/sample01.jpg" alt="이미지1">
-
+                            <img src="@@imgPath/img/sample01.jpg" alt="이미지1">
                         </div>
-
                     </div>
-
                     <div class="swiper-slide">
-
                         <div class="rect2">
-
-                            <img src="./img/sample02.jpg" alt="이미지2">
-
+                            <img src="@@imgPath/img/sample02.jpg" alt="이미지2">
                         </div>
-
                     </div>
-
                 </div>
-
                 <div class="swiper-pagination pag_st"></div>
-
             </div>
-
             <script class="">
-
                 var swiper = new Swiper(".memimg_slide", {
-
                     pagination: {
-
                         el: ".swiper-pagination",
-
                         type: "fraction",
-
                     },
-
                 });
-
             </script>
-
         </section>
-
         <div class="container">
-
             <div class="d-flex justify-content-between align-items-center mb-4">
-
                 <p class="tit_h2">아시아나-일반 무기명 10000</p>
-
-                <p>
-
-                    <img src="./img/ico_tip.svg">
-
-                    <!-- 마우스를 올리면 '회원권명-분류-분양금액을 표시합니다.' 라는 글귀가 나와야합니다(툴팁)-->
-
-                </p>
-
+                <div class="popover-wrapper">
+                    <div class="popover_con">
+                        <img class="popover-toggle" src="@@imgPath/icon/ico_tip.svg" alt="도움말">
+                    </div>
+                    <div class="popover-box right">
+                        회원권명-분류-분양금액을 표시합니다.
+                    </div>
+                </div>
+                <!-- 마우스를 올리면 '회원권명-분류-분양금액을 표시합니다.' 라는 글귀가 나와야합니다(툴팁)-->
             </div>
-
             <p class=" line_h1_3">경기도 용인시 처인구 원삼면 죽앙대로 2000번길 60<br>
-
                 정회원권 / 회원수 : 450명 / 36홀 / 1991.06 개장<br>
-
                 <a href="https://www.asianacc.co.kr" target="_blank"> https://www.asianacc.co.kr/</a>
-
             </p>
-
             <div class="form-row mt-4">
-
-                <div class="col"><button type="button" class="btn btn-outline-secondary  btn-block"><img
-                            src="./img/ico_cheak.png " alt=" " width="22px" class="mr-2">회원권 인증</button></div>
-
-                <div class="col"><button type="button" class="btn btn-outline-secondary btn-block"><img
-                            src="./img/ico_reivew.png" alt=" " width="22px" class="mr-2">회원권 리뷰</button></div>
-
+                <div class="col">
+                    <button type="button" class="btn btn-outline-secondary  btn-block"
+                        onclick="location.href=`membership_confirm.html`">
+                        <img src="@@imgPath/icon/ico_cheak.png " alt=" " width="22px" class="mr-2">회원권
+                        인증</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-secondary btn-block"
+                        onclick="location.href=`review.html`">
+                        <img src="@@imgPath/icon/ico_reivew.png" alt=" " width="22px" class="mr-2">회원권
+                        리뷰</button>
+                </div>
             </div>
-
         </div>
-
         <div class="bar"></div>
-
-
-
         <div class="container">
-
             <ul class="list_txt_info">
-
                 <li>
-
                     <p>최근 매매 실거래가</p>
-
                     <p class="fw_700">73,000만원</p>
-
                 </li>
-
                 <li>
-
                     <p>매매 가능 금액</p>
-
                     <p class="fw_700">76,000만원</p>
-
                 </li>
-
             </ul>
-
         </div>
-
         <div class="bar"></div>
-
-
-
         <div class="container">
+            <nav class="tab_fixed">
+                <ul class="nav nav-underline flex-nowrap" id="nav-tab" role="tablist">
+                    <li class="nav-item w-100">
+                        <button class="nav-link w-100 active" id="tab03_tab1" data-toggle="tab" data-target="#tab03_1"
+                            type="button" role="tab" aria-selected="true">1개월</button>
+                    </li>
+                    <li class="nav-item w-100">
+                        <button class="nav-link w-100" id="tab03_tab2" data-toggle="tab" data-target="#tab03_2"
+                            type="button" role="tab" aria-selected="false">3개월</button>
+                    </li>
+                    <li class="nav-item w-100">
+                        <button class="nav-link w-100" id="tab03_tab3" data-toggle="tab" data-target="#tab03_3"
+                            type="button" role="tab" aria-selected="false">6개월</button>
+                    </li>
+                    <li class="nav-item w-100">
+                        <button class="nav-link w-100" id="tab03_tab2" data-toggle="tab" data-target="#tab03_4"
+                            type="button" role="tab" aria-selected="false">1년</button>
+                    </li>
+                    <li class="nav-item w-100">
+                        <button class="nav-link w-100" id="tab03_tab3" data-toggle="tab" data-target="#tab03_5"
+                            type="button" role="tab" aria-selected="false">전체</button>
+                    </li>
+                </ul>
+            </nav>
 
-            <img src="./img/graph.jpg " alt=" " class="w-100">
 
+            <div class="tab-content" id="nav_Content02">
+                <div class="tab-pane fade show active" id="tab03_1">
+                    <img src="@@imgPath/img/graph.jpg" alt="">
+                </div>
+                <div class="tab-pane fade show" id="tab03_2">
+                    <img src="@@imgPath/img/graph.jpg" alt="">
+                </div>
+                <div class="tab-pane fade show" id="tab03_3">
+                    <img src="@@imgPath/img/graph.jpg" alt="">
+                </div>
+                <div class="tab-pane fade show" id="tab03_4">
+                    <img src="@@imgPath/img/graph.jpg" alt="">
+                </div>
+                <div class="tab-pane fade show" id="tab03_5">
+                    <img src="@@imgPath/img/graph.jpg" alt="">
+                </div>
+            </div>
         </div>
-
         <div class="bar"></div>
-
-
-
         <div class="container">
-
             <div class="tit_wrap d-flex justify-content-between border-bottom ">
-
                 <h2 class="tit_h2">실거래가</h2>
-
                 <button type="button" class="btn btn-outline-secondary   btn-sm rounded-pill">전체보기</button>
-
             </div>
-
-
-
             <ul class="list_txt_info">
-
                 <li>
-
                     <p class="text-gray2">2025.05</p>
-
                     <p class="fw_700">73,000만원</p>
-
                 </li>
-
                 <li>
-
                     <p class="text-gray2">2025.05</p>
-
                     <p class="fw_700">76,000만원</p>
-
                 </li>
-
                 <li>
-
                     <p class="text-gray2">2025.05</p>
-
                     <p class="fw_700">76,000만원</p>
-
                 </li>
-
                 <li>
-
                     <p class="text-gray2">2025.05</p>
-
                     <p class="fw_700">76,000만원</p>
-
                 </li>
-
                 <li>
-
                     <p class="text-gray2">2025.05</p>
-
                     <p class="fw_700">76,000만원</p>
-
                 </li>
-
+            </ul>
+            <div class="form-row mt-5">
+                <div class="col"><button type="button" class="btn btn-outline-secondary btn-block"
+                        data-bs-toggle="offcanvas" data-bs-target="#membershipSell" aria-controls="offcanvasBottom"> 회원권
+                        바로 내놓기</button>
+                </div>
+                <div class="col"><button type="button" class="btn btn-outline-secondary btn-block"
+                        data-bs-toggle="offcanvas" data-bs-target="#membershipSell" aria-controls="offcanvasBottom"> 회원권
+                        바로 사기</button>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary  btn-block mt-3" data-bs-toggle="offcanvas"
+                data-bs-target="#membershipSell" aria-controls="offcanvasBottom"> 매물 리스트 보기</button>
+        </div>
+    </div>
+    <!-- 회원권 바로팔기 -->
+    <div class="offcanvas offcanvas-bottom membership_sell" tabindex="-1" id="membershipSell"
+        aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header justify-content-center " style="padding-bottom: 1.6rem;">
+            <button class="btn p-0"></button>
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">회원권 바로 내놓기</h5>
+        </div>
+        <div class="offcanvas-body small">
+            <ul class="list_con type2">
+                <li class="list">
+                    <p class="t1">최근 매매 실거래가</p>
+                    <p class="t2">73,000원</p>
+                </li>
+                <li class="list">
+                    <p class="t1">체결 가능 금액</p>
+                    <p class="t2">76,000원</p>
+                </li>
             </ul>
 
-            <div class="form-row mt-5">
-
-                <div class="col"><button type="button" class="btn btn-outline-secondary  btn-block"> 회원권 바로 내놓기</button>
+            <div class="price_card mb_30">
+                <p class="tit">매각대기 3건</p>
+                <div class="bill">
+                    <ul class="bill_list">
+                        <li class="quick_sell">즉시 매각하기 75,000만원</li>
+                        <li class="list">
+                            <p class="t1">77,000만원</p>
+                            <p class="t2">개인 고**</p>
+                        </li>
+                        <li class="list">
+                            <p class="t1">77,000만원</p>
+                            <p class="t2">법인(주) 이**</p>
+                        </li>
+                        <li class="list">
+                            <p class="t1">77,000만원</p>
+                            <p class="t2">개인 고**</p>
+                        </li>
+                    </ul>
+                    <div class="summation">
+                        <p class="t1">매각 희망가등록</p>
+                        <a href="buy_register.html">
+                            <p class="t2">매매가능금액 <b>31,100</b>만원</p>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="col"><button type="button" class="btn btn-outline-secondary btn-block"> 회원권 바로 사기</button>
-                </div>
-
             </div>
 
-            <button type="button" class="btn btn-primary  btn-block mt-3"> 매물 리스트 보기</button>
+            <div class="price_card">
+                <p class="tit">매각대기 3건</p>
+                <div class="bill">
+                    <ul class="bill_list">
+                        <li class="quick_sell">즉시 매각하기 75,000만원</li>
+                        <li class="list">
+                            <p class="t1">77,000만원</p>
+                            <p class="t2">개인 고**</p>
+                        </li>
+                        <li class="list">
+                            <p class="t1">77,000만원</p>
+                            <p class="t2">법인(주) 이**</p>
+                        </li>
+                        <li class="list">
+                            <p class="t1">77,000만원</p>
+                            <p class="t2">개인 고**</p>
+                        </li>
+                    </ul>
+                    <div class="summation">
+                        <p class="t1">매각 희망가등록</p>
+                        <a href="buy_register.html">
+                            <p class="t2">매매가능금액 <b>31,100</b>만원</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+            <p class="caution_txt mt_16"> 매각/매입 금액은 본인이 희망하는 가격으로 등록하시고\체결가능 <br>금액을 참조해서 희망가를 등혹하시면 호가 최상우로
+                등록되어집니다.</p>
+
+            <div class="bottom_btn_con two mt_12">
+                <button class="btn btn-outline-light" onclick="location.href=`purchase.html`">즉시매입 견적서</button>
+                <button class="btn btn-secondary" onclick="location.href=`purchase.html`">즉시매각 견적서</button>
+            </div>
         </div>
-
     </div>
-
+    <!-- 회원권 바로팔기 -->
     <div class="bar"></div>
-
-
-
-
-
     <div class="container">
-
         <div class="d-flex asking_price">
-
             <div class=" ">
-
                 <h2 class="tit_h2 mb-4">매도호가</h2>
-
                 <table class="text-gray3">
-
                     <tr>
-
                         <th>177,000만원</th>
-
                         <td>개인 고**</td>
-
                     </tr>
-
                     <tr>
-
                         <th>77,000만원</th>
-
                         <td>개인 고**</td>
-
                     </tr>
-
                     <tr>
-
                         <th>77,000만원</th>
-
                         <td>개인 고**</td>
-
                     </tr>
-
                 </table>
-
             </div>
-
             <div class=" ">
-
                 <h2 class="tit_h2 mb-4">매수호가</h2>
-
                 <table class="text-gray3">
-
                     <tr>
-
                         <th>77,000만원</th>
-
                         <td>개인 고**</td>
-
                     </tr>
-
                     <tr>
-
                         <th>77,000만원</th>
-
                         <td>법인(주)이**</td>
-
                     </tr>
-
                     <tr>
-
                         <th>77,000만원</th>
-
                         <td>개인 고**</td>
-
                     </tr>
-
                 </table>
-
             </div>
-
         </div>
-
         <p class="mt-4 pt-4 text-right border-top">
-
             <span class="text-gray3 mr-3">거래예상가격</span> <b>76,000만원</b>
-
         </p>
-
     </div>
-
     <div class="bar"></div>
-
-
-
     <div class="container line_h1_4">
-
         <div class="mb-5">
-
             <h2 class="tit_h2 mb-4">회원구성</h2>
-
             <p class=" ">
-
                 *개인 : 정회원1인+지명1인+가족1인<br>
-
                 *법인 : 정회원1인+지명1인+가족1인(가족또는 임직원)
-
             </p>
-
         </div>
-
-
-
         <div class="mb-5 line_h1_4">
-
             <h2 class="tit_h2 mb-4  ">이용요금</h2>
-
-            <table class="table_01">
-
-                <tr>
-
-                    <th class="  " colspan="3">그린피</th>
-
-                </tr>
-
-                <tr>
-
-                    <td>정회원</td>
-
-                    <td>주중 8만 8천원</td>
-
-                    <td>주말 9만8천원</td>
-
-                </tr>
-
-                <tr>
-
-                    <td>지명회원</td>
-
-                    <td>주중 8만 8천원</td>
-
-                    <td>주말 9만8천원</td>
-
-                </tr>
-
-                <tr>
-
-                    <td>가족회원</td>
-
-                    <td>주중 8만 8천원</td>
-
-                    <td>주말 9만8천원</td>
-
-                </tr>
-
-                <tr>
-
-                    <td>비회원</td>
-
-                    <td>주중 8만 8천원</td>
-
-                    <td>주말 9만8천원</td>
-
-                </tr>
-
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="" colspan="3">그린피</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>정회원</td>
+                        <td>주중 8만 8천원</td>
+                        <td>주말 9만8천원</td>
+                    </tr>
+                    <tr>
+                        <td>지명회원</td>
+                        <td>주중 8만 8천원</td>
+                        <td>주말 9만8천원</td>
+                    </tr>
+                    <tr>
+                        <td>가족회원</td>
+                        <td>주중 8만 8천원</td>
+                        <td>주말 9만8천원</td>
+                    </tr>
+                    <tr>
+                        <td>비회원</td>
+                        <td>주중 8만 8천원</td>
+                        <td>주말 9만8천원</td>
+                    </tr>
+                </tbody>
             </table>
-
         </div>
 
         <div class="mb-5 line_h1_4">
-
             <div class="mb-4 d-flex justify-content-between ">
-
                 <h2 class="tit_h2">회원혜택</h2>
-
                 <p class="text-gray2 fs_12">*월 최대 예약 가능 횟수</p>
-
             </div>
-
             <div>
-
                 · 주중 - 12월~8월 5회 / 9월~11월 3회<br>
-
                 · 토요일 - 12월~8월 3회 / 9월~11월 2회<br>
-
                 · 일요일 및 공휴일- 12월~8월 3회 / 9월~11월 2회
-
             </div>
-
         </div>
-
-
-
         <div class="mb-5 line_h1_4">
-
             <div class="mb-4 d-flex justify-content-between ">
-
                 <h2 class="tit_h2">매매 시 특이사항</h2>
-
             </div>
-
             <div>
-
                 *법인 입회 시 등기이사도 재직증명서 첨부 <br>
-
                 *재외국민 배우자의 경우 가족관계증명서 첨부 <br>
-
                 *명의개서료 : 66만원(VAT포함) (202303기준)<br>
-
                 - 매수 시에는 개서료 66만원과 지명회원 및 <br>
-
                 가족/지정회원 등록비 1인당 44만원씩을 납부해야 함 <br>
-
                 *정회원 변경 수수료 : 66만원(VAT포함)<br>
-
                 *지명/가족회원 등록 및 변경 수수료 : 각 44만원(VAT포함)<br>
-
                 *계좌번호 : 농협 355-0017-8824-13<br>
-
                 예금주 금호리조트㈜ <br>
-
                 *명의 변경 시 <br>
-
                 - 양도/양수 신청서(확정일자)<br>
-
                 - 매매계약서(확정일자)<br>
-
                 - 양도각서(서류공증) <br>
-
                 *회원 입회 시 네임텍(영어이니셜) 제작 해줌
+            </div>
+        </div>
+    </div>
+    <div class="bar"></div>
+    <div class="container">
+        <div class="mb-4 d-flex justify-content-between ">
+            <h2 class="tit_h2">위치</h2>
+        </div>
+        <!-- 지도가 나옴 현재는 이미지만 부쳐놓은 상태 -->
+        <p><img src="@@imgPath/img/map_img.jpg" class="w-100"></p>
+        <div class="d-flex mt-3 align-items-center">
+            <img src="@@imgPath/icon/ico_map.png" width="27px" class="mr-2 flex-shrink-0">
+            <p>경기도 용인시 처인구 원삼면 죽앙대로 2000번길 60</p>
+        </div>
+    </div>
+    <div class="bar"></div>
+    <div class="container">
+        <div class="review_con">
+            <div class="title_con d-flex justify-content-between align-items-center">
+                <p class="t1">리뷰 전체보기 <span>(2)</span></p>
+                <div class="btn_con">
+                    <button class="btn btn-outline-light rounded-pill" onclick="location.href=`review.html`">리뷰
+                        전체보기</button>
+                    <a href="review_write.html"
+                        class="btn btn-secondary rounded-pill d-flex justify-content-center align-items-center gap-2">
+                        <img src="@@imgPath/icon/ico_edit_w.png" alt="">
+                        <span>리뷰작성</span>
+                    </a>
+                </div>
+            </div>
+            <ul class="review_list">
+                <li class="list">
+                    <div class="rating_con">
+                        <div class="rating">
+                            <p class="avg">7.9</p>
+                            <span>/</span>
+                            <p class="sum">10</p>
+                        </div>
+                        <button class="btn p-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                            <img src="@@imgPath/icon/dots-three-vertical.png" alt="">
+                        </button>
 
+                    </div>
+                    <div class="review_contents">
+                        <p class="t1">리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰
+                            내용입니다.
+                            리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다.
+                        </p>
+                    </div>
+
+                    <div class="writer_info">
+                        <div class="writer">
+                            <p class="name">홍** | </p>
+                            <p class="date">2024.05.14</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="rating_con">
+                        <div class="rating">
+                            <p class="avg">7.9</p>
+                            <span>/</span>
+                            <p class="sum">10</p>
+                        </div>
+                        <button class="btn p-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                            <img src="@@imgPath/icon/dots-three-vertical.png" alt="">
+                        </button>
+
+                    </div>
+                    <div class="review_contents">
+                        <p class="t1">리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰
+                            내용입니다.
+                            리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다. 리뷰 내용입니다.
+                        </p>
+                    </div>
+
+                    <div class="writer_info">
+                        <div class="writer">
+                            <p class="name">홍** | </p>
+                            <p class="date">2024.05.14</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="bar"></div>
+    <div class="container">
+        <div class="membership_wrap mt-0">
+            <div class="tit_h1 d-flex align-items-center">
+                <p class=" ">함께 많이 본 회원권</p>
             </div>
 
+
+            <section>
+                <!-- item slide Swiper -->
+                <div class="swiper memship_list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item_box">
+                                <div class="item_img">
+                                    <label class="like_btn">
+                                        <input type="checkbox" name="chk_like1">
+                                        <div class="ic_heart">
+                                        </div>
+                                    </label>
+                                    <p class="item_bet">매매가능금액<span class="text-primary ml-2 fw_600">9,825만원</span></p>
+                                    <div class="rect2 ">
+                                        <img src="@@imgPath/img/sample01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt flex-fill">
+                                    <div>
+                                        <p class="fw_700 fs_20">캐슬렉스-개인부담금</p>
+                                        <p class="fw_700 mt-1">정회원1인+가족회원1인+지명회원1인</p>
+                                        <p class="mt-4 fs_15">
+                                            *그린피<br>
+                                            -정회원: 주중 8.8만원 주말 9.8만원<br>
+                                            -가족회원: 1인 주중 9.8만원 주말 15만원<br>
+                                            -지명회원: 주중 8.8만원 주말 9.8만원<br><br>
+                                            예약율 : 월 평균 주중 1회 / 주말 0.5회 가능
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item_txt mt-0 border-top pt-4">
+                                    <div class="">
+                                        <div class="d-flex justify-content-between ">
+                                            <p class="fw_700">최근매매거래가</p>
+                                            <p class="fw_700 text-primary">9,850만원</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <p class=" ">즉시 매도가</p>
+                                            <p class="fw_700  ">19,850만원</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <p class=" ">즉시 매입가</p>
+                                            <p class="fw_700  ">9,850만원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="./item_detail.html" class="item_link">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_box">
+                                <div class="item_img">
+                                    <label class="like_btn">
+                                        <input type="checkbox" name="chk_like1">
+                                        <div class="ic_heart">
+                                        </div>
+                                    </label>
+                                    <p class="item_bet">매매가능금액<span class="text-primary ml-2 fw_600">9,825만원</span></p>
+                                    <div class="rect2 ">
+                                        <img src="@@imgPath/img/sample01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt flex-fill">
+                                    <div>
+                                        <p class="fw_700 fs_20">캐슬렉스-개인부담금</p>
+                                        <p class="fw_700 mt-1">정회원1인+가족회원1인+지명회원1인</p>
+                                        <p class="mt-4 fs_15">
+                                            *그린피<br>
+
+                                            -지명회원: 주중 8.8만원 주말 9.8만원<br><br>
+                                            예약율 : 월 평균 주중 1회 / 주말 0.5회 가능
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item_txt mt-0 border-top pt-4">
+                                    <div class="">
+                                        <div class="d-flex justify-content-between ">
+                                            <p class="fw_700">최근매매거래가</p>
+                                            <p class="fw_700 text-primary">9,850만원</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <p class=" ">즉시 매도가</p>
+                                            <p class="fw_700  ">19,850만원</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <p class=" ">즉시 매입가</p>
+                                            <p class="fw_700  ">9,850만원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="./item_detail.html" class="item_link">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item_box">
+                                <div class="item_img">
+                                    <label class="like_btn">
+                                        <input type="checkbox" name="chk_like1">
+                                        <div class="ic_heart">
+                                        </div>
+                                    </label>
+                                    <p class="item_bet">매매가능금액<span class="text-primary ml-2 fw_600">9,825만원</span></p>
+                                    <div class="rect2 ">
+                                        <img src="./@@imgPath/img/sample01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="item_txt flex-fill">
+                                    <div>
+                                        <p class="fw_700 fs_20">캐슬렉스-개인부담금</p>
+                                        <p class="fw_700 mt-1">정회원1인+가족회원1인+지명회원1인</p>
+                                        <p class="mt-4 fs_15">
+                                            *그린피<br>
+                                            -정회원: 주중 8.8만원 주말 9.8만원<br>
+                                            -가족회원: 1인 주중 9.8만원 주말 15만원<br>
+                                            -지명회원: 주중 8.8만원 주말 9.8만원<br><br>
+                                            예약율 : 월 평균 주중 1회 / 주말 0.5회 가능
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item_txt mt-0 border-top pt-4">
+                                    <div class="">
+                                        <div class="d-flex justify-content-between ">
+                                            <p class="fw_700">최근매매거래가</p>
+                                            <p class="fw_700 text-primary">9,850만원</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <p class=" ">즉시 매도가</p>
+                                            <p class="fw_700  ">19,850만원</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <p class=" ">즉시 매입가</p>
+                                            <p class="fw_700  ">9,850만원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="./item_detail.html" class="item_link">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-
-
-
-
-
     </div>
-
     <div class="bar"></div>
-
-
-
-    <div class="container">
-
-        <div class="mb-4 d-flex justify-content-between ">
-
-            <h2 class="tit_h2">위치</h2>
-
+    <div class="container pb_100">
+        <div class="other_amount">
+            <div class="tax">
+                <div class="d-flex align-items-center gap-3 mb_6">
+                    <p class="tit">취득세 - 2.2%</p>
+                    <div class="popover-wrapper">
+                        <div class="popover_con">
+                            <img class="popover-toggle" src="@@imgPath/icon/ico_tip.svg" alt="도움말">
+                        </div>
+                        <div class="popover-box left">
+                            취득세는 매매가와 기준시가 중 높은 금액으로 신고됩니다.
+                        </div>
+                    </div>
+                </div>
+                <p class="t1">총 합계 약1,400만원</p>
+                <ul class="tax_con">
+                    <li class="list t1">취득세 1,273만원</li>
+                    <li class="list t1">지방교육세 127만원</li>
+                    <li class="list t1">농어촌특별세 0원</li>
+                </ul>
+            </div>
+            <div class="charge">
+                <div class="d-flex align-items-center gap-3 mb_6">
+                    <p class="tit">중개수수료</p>
+                    <!-- <div class="popover-wrapper">
+                        <img class=" popover-toggle" src="@@imgPath/icon/ico_tip.svg">
+                        <div class="popover-box">이건 커스텀 .</div>
+                    </div> -->
+                </div>
+                <p class="t1">최소 700만원(VAT 별도)</p>
+                <p class="t1">상한율2%</p>
+            </div>
         </div>
-
-        <!-- 지도가 나옴 현재는 이미지만 부쳐놓은 상태 -->
-
-        <p><img src="./img/map_img.jpg" class="w-100"></p>
-
-        <div class="d-flex mt-3 align-items-center">
-
-            <img src="./img/ico_map.png" width="27px" class="mr-2 flex-shrink-0">
-
-            <p>경기도 용인시 처인구 원삼면 죽앙대로 2000번길 60</p>
-
+        <div class="fixed_bottom d-flex justify-content-between gap-2">
+            <button class="btn btn-secondary btn-lg w-100">전화상담</button>
+            <button class="btn btn-lg kakao_link w-100">카톡상담</button>
         </div>
-
     </div>
-
-    <div class="bar"></div>
-
-    <div class="container">
-
-        회원권 리뷰가 나올 차례
-
-    </div>
-
-    <div class="bar"></div>
-
-
-
-
-
-
-
-
 
 </div>
 
-</div>
+<script>
+    document.querySelectorAll('.popover-toggle').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            const wrapper = this.closest('.popover-wrapper');
+            const popover = wrapper.querySelector('.popover-box');
+            popover.classList.toggle('show');
+
+            // 다른 popover 닫기
+            document.querySelectorAll('.popover-box').forEach(el => {
+                if (el !== popover) el.classList.remove('show');
+            });
+        });
+    });
+
+    // 외부 클릭 시 팝오버 닫기
+    document.addEventListener('click', function () {
+        document.querySelectorAll('.popover-box').forEach(el => el.classList.remove('show'));
+    });
+
+    /* item slide Swiper */
+    var swiper = new Swiper(".memship_list", {
+        slidesPerView: "auto",
+        spaceBetween: 8,
+        breakpoints: {
+            767.98: {
+                spaceBetween: 15,
+            },
+        }
+    });
+</script>
+
 @@include('partials/html-end.html')

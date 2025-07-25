@@ -1,0 +1,16 @@
+.membership_interest {
+  .notice_search {
+    background-color: #fff;
+  }
+
+  .border-bl {
+  }
+
+  .region {
+    padding-block: 2rem;
+    overflow-x: scroll;
+    label {
+      flex-shrink: 0;
+    }
+  }
+}

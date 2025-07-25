@@ -1,0 +1,137 @@
+@@include('partials/html-start.html', { "title": "매입희망가 등록" })
+
+
+<div class="idx_pg">
+    <div class="container pb_60">
+        <div class="buy_info">
+            <p class="tit">아시아나-일반</p>
+            <div class="d-flex mt_16">
+                <p class="t1">매매가능금액</p>
+                <p class="t2">76,000만원</p>
+            </div>
+            <div class="border-bb"></div>
+        </div>
+        <div class="input_con mt_40">
+            <label for="validationCustom01" class="form-label">희망가</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="희망가를 입력해주세요." value=""
+                required="">
+        </div>
+        <div class="input_con mt_40">
+            <label for="validationCustom01" class="form-label">회원권번호</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="회원권 번호를 입력해주세요." value=""
+                required="">
+        </div>
+        <div class="touch_scroll scroll_bar_none mt_40">
+            <label for="validationCustom01" class="form-label">회원권사진</label>
+            <div class="d-flex ">
+                <div class="image_upload">
+                    <input id="ip_file" type="file" class="d-none">
+                    <label for="ip_file" class="upload_box">
+                        <div class="rect">
+                        </div>
+                        <p class="max_img">이미지등록</p>
+                    </label>
+                    <button type="button" class="btn upload_del"><img src="@@imgPath/icon/ico_x2.png"></button>
+                </div>
+                <div class="image_upload on">
+                    <input id="ip_file" type="file" class="d-none">
+                    <label for="ip_file" class="upload_box">
+                        <div class="rect">
+                            <img src="@@imgPath/img/sample01.jpg">
+                        </div>
+                    </label>
+                    <button type="button" class="btn upload_del"><img src="@@imgPath/icon/ico_x2.png"></button>
+                </div>
+                <div class="image_upload on">
+                    <input id="ip_file" type="file" class="d-none">
+                    <label for="ip_file" class="upload_box">
+                        <div class="rect">
+                            <img src="@@imgPath/img/sample02.jpg">
+                        </div>
+                    </label>
+                    <button type="button" class="btn upload_del"><img src="@@imgPath/icon/ico_x2.png"></button>
+                </div>
+                <div class="image_upload on">
+                    <input id="ip_file" type="file" class="d-none">
+                    <label for="ip_file" class="upload_box">
+                        <div class="rect">
+                            <img src="@@imgPath/img/sample03.jpg">
+                        </div>
+                    </label>
+                    <button type="button" class="btn upload_del"><img src="@@imgPath/icon/ico_x2.png"></button>
+                </div>
+                <div class="image_upload on">
+                    <input id="ip_file" type="file" class="d-none">
+                    <label for="ip_file" class="upload_box">
+                        <div class="rect">
+                            <img src="@@imgPath/img/sample04.jpg">
+                        </div>
+                    </label>
+                    <button type="button" class="btn upload_del"><img src="@@imgPath/icon/ico_x2.png"></button>
+                </div>
+                <div class="image_upload on">
+                    <input id="ip_file" type="file" class="d-none">
+                    <label for="ip_file" class="upload_box">
+                        <div class="rect">
+                            <img src="@@imgPath/img/sample04.jpg">
+                        </div>
+                    </label>
+                    <button type="button" class="btn upload_del"><img src="./icon/ico_x2.png"></button>
+                </div>
+            </div>
+        </div>
+        <div class="check_con mt_40">
+            <p class="form-label">회원구분</p>
+            <div class="box">
+                <div class="form-check">
+                    <input class="form-check-input" name="divide" type="radio" value="" id="flexCheckDefault1">
+                    <label class="form-check-label" for="flexCheckDefault1">
+                        법인
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="divide" type="radio" value="" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckDefault2">
+                        개인
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="input_con mt_40">
+            <label for="validationCustom01" class="form-label">보증금(입회금)</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="보증금(입회금)을 입력해주세요." value=""
+                required="">
+        </div>
+        <div class="input_con mt_40">
+            <label for="validationCustom01" class="form-label">기타 특이사항</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="기타 특이사항을 입력해주세요." value=""
+                required="">
+        </div>
+        <div class="check_con mt_40">
+            <p class="form-label">회원구분</p>
+            <div class="form-check justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+                    <input class="form-check-input" name="divide" type="checkbox" value="" id="flexCheckDefault1">
+                    <label class="form-check-label" for="flexCheckDefault1">
+                        김회장 회원권마켓 이용정책에 동의하십니까?
+                    </label>
+                </div>
+                <a class="policy_view" href="javascript:void(0)">보기</a>
+            </div>
+            <div class="form-check justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+                    <input class="form-check-input" name="divide" type="checkbox" value="" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckDefault2">
+                        개인정보 수집 및 이용에 동의하십니까?
+                    </label>
+                </div>
+                <a class="policy_view" href="javascript:void(0)">보기</a>
+            </div>
+        </div>
+        <div class="fixed_bottom">
+            <button class="btn btn-secondary btn-lg w-100">희망가 등록</button>
+        </div>
+    </div>
+</div>
+
+@@include('partials/html-end.html')

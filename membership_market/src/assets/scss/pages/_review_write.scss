@@ -1,0 +1,66 @@
+.rate_setting {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  .list {
+    width: calc((100% - 0.5rem) / 2);
+    margin-top: 2.5rem;
+    .tit {
+      margin-bottom: 1rem;
+      font: {
+        size: 1.8rem;
+        weight: 700;
+      }
+    }
+    .star_con {
+      display: flex;
+      gap: 0.4rem;
+      .star {
+        width: 2.7rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.form-group {
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem 0;
+  .box {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 0.6rem;
+    &:has(textarea:focus) {
+      border: 2px solid #333;
+    }
+    .form-textarea {
+      width: 100%;
+      min-height: 225px;
+      border: none;
+      outline: none;
+      font: {
+        size: 1.6rem;
+        weight: 400;
+      }
+      resize: none;
+
+      // textarea 자체에는 focus 효과 없음
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .char-count {
+      text-align: right;
+      font: {
+        size: 1.4rem;
+        weight: 400;
+      }
+      color: #a2a2a2;
+      margin-top: 0.3rem;
+    }
+  }
+}

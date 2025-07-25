@@ -1,0 +1,45 @@
+.alarm_con {
+  .list {
+    position: relative;
+    padding-top: 2.4rem;
+    .delete_btn {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      .delete_img {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+    .t1 {
+      width: calc(100% - 35px);
+      margin-bottom: 0.5rem;
+      font: {
+        size: 1.6rem;
+        weight: 400;
+      }
+    }
+    .date {
+      font: {
+        size: 1.4rem;
+        weight: 500;
+      }
+      color: #a2a2a2;
+    }
+    .border-bl {
+      padding-bottom: 2.4rem;
+    }
+  }
+}
+
+// 알람없음
+
+.no_alarm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  img {
+  }
+}

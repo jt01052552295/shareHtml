@@ -23,17 +23,17 @@
   <link rel="icon" type="image/png" sizes="32x32" href="@@imgPath/favicon/favicon-32x32.png?v=@@version" />
   <link rel="icon" type="image/png" sizes="96x96" href="@@imgPath/favicon/favicon-96x96.png?v=@@version" />
   <link rel="icon" type="image/png" sizes="16x16" href="@@imgPath/favicon/favicon-16x16.png?v=@@version" />
-  <link rel="manifest" href="@@imgPath/favicon/manifest.json" />
-  <link rel="icon" href="@@imgPath/favicon/favicon1.ico?v=@@version" />
+  <!-- <link rel="manifest" href="@@imgPath/favicon/manifest.json" /> -->
+  <link rel="icon" href="@@imgPath/favicon/favicon1.ico" />
   <meta name=" msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="@@imgPath/favicon/ms-icon-144x144.png?v=@@version" />
   <meta name="theme-color" content="#ffffff" />
   <title>@@title</title>
 
-  <link rel="stylesheet" href="@@cssPath/bootstrap.min.css?v=@@version" />
-  <link rel="stylesheet" href="@@cssPath/style.css?v=@@version" />
+  <link rel="stylesheet" href="@@cssPath/bootstrap.min.css" />
+  <link rel="stylesheet" href="@@cssPath/style.css" />
   <script src="@@jsPath/bootstrap.js"></script>
-  <script defer src="@@jsPath/header.js?v=@@version"></script>
+
 
   <!-- plugin -->
   <!-- 제이쿼리 -->
@@ -49,26 +49,24 @@
   <script src="@@jsPath//jalert.js"></script>
 
   <!-- Swiper -->
-  <link rel="stylesheet" href="@@cssPath/swiper-bundle.min.css" />
   <script src="@@jsPath/swiper-bundle.min.js"></script>
 
   <!-- 별점 -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raty/2.8.0/jquery.raty.min.js"></script>
+  <script type="text/javascript" src="https:/cdnjs.cloudflare.com/ajax/libs/raty/2.8.0/jquery.raty.min.js"></script>
 
 
   <!--부트스트랩-->
-  <link rel="stylesheet" href="@@cssPath/boot_custom.css">
-  <script src="@@jsPath//bootstrap.bundle.min.js"></script>
+  <script src="@@jsPath/bootstrap.bundle.min.js"></script>
 
   <!-- 로티 -->
-  <script src="@@jsPath//lottie-player.js"></script>
+  <script src="@@jsPath/lottie-player.js"></script>
 
 
   <!-- ie css 변수적용 -->
-  <script src="@@jsPath//ie11CustomProperties.min.js"></script>
+  <script src="@@jsPath/ie11CustomProperties.min.js"></script>
 
   <!-- JS -->
-  <script src="@@jsPath//custom.js?v=<?=$v_txt?>" defer></script>
+  <script src="@@jsPath/custom.js" defer></script>
 
 
 
@@ -88,7 +86,7 @@
             믿을 수 있는 파트너 회원권마켓
           </p>
           <button type="button" class="btn btn-primary fs_18 mt-5 rounded-lg">지금 시작하세요!<img
-              src="../assets/images/img/arrow_w.svg" alt="바로가기" class="ml-2"></button>
+              src="@@imgPath/img/arrow_w.svg" alt="바로가기" class="ml-2"></button>
         </div>
       </div>
     </div>
@@ -97,44 +95,44 @@
       <!-- 상단 -->
       <!-- 1번메뉴/메인   -->
       <div class="hd_m align-items-center justify-content-between border-0">
-        <div class="logo"><a href="./"><img src="../assets/images/logo/logo.png" alt="로고"></a></div>
+        <div class="logo"><a href="./"><img src="@@imgPath/logo/logo.png" alt="로고"></a></div>
         <div class="hd_btn">
           <button class="  " type="button" onclick="location.href='./링크이동'">
-            <img src="../assets/" alt="공유 바로가기">
+            <img src="@@imgPath/icon/ico_share.png" alt="공유 바로가기">
           </button>
-          <button class="top_alim ml-4" type="button" onclick="location.href='./alim.php'">
-            <img src="../assets/images/icon/ico_alim.png" alt="알림목록 바로가기">
+          <button class="top_alim ml-4" type="button" onclick="location.href='alarm.html'">
+            <img src="@@imgPath/icon/ico_alim.png" alt="알림목록 바로가기">
             <span></span>
           </button>
-          <button class="  ml-4" type="button" onclick="location.href='./search.php'">
-            <img src="../assets/images/icon/ico_search.png" alt="검색 바로가기">
+          <button class="  ml-4" type="button" onclick="location.href='map_search.html'">
+            <img src="@@imgPath/icon/ico_search.png" alt="검색 바로가기">
           </button>
-          <div class="hd_menu_btn"><a href="#menu" class=" ml-4"><img src="../assets/images/icon/ico_menu.png"
+          <div class="hd_menu_btn"><a href="#menu" class=" ml-4"><img src="@@imgPath/icon/ico_menu.png"
                 alt="전체메뉴 보기"></a></div>
         </div>
       </div>
 
       <!-- 2번메뉴/가장 많이쓰이는 메뉴   -->
-      <div class="hd_m align-items-center justify-content-between">
-        <button class=" " type="button" onclick="history.back()"><img src="../assets/images/icon/ico_back.png"
+      <!-- <div class="hd_m align-items-center justify-content-between">
+        <button class=" " type="button" onclick="history.back()"><img src="@@imgPath/icon/ico_back.png"
             alt="뒤로가기"></button>
-        <!-- 이전 결과값이 아닌 이전페이지로 이동되어야 합니다. -->
+        이전 결과값이 아닌 이전페이지로 이동되어야 합니다.
         <div class="page_tit line1_text fs_18 fw_800 flex-fill"></div>
-        <div class="hd_menu_btn"><a href="#menu"><img src="../assets/images/icon/ico_menu.png" alt="전체메뉴 보기"></a></div>
-      </div>
+        <div class="hd_menu_btn"><a href="#menu"><img src="@@imgPath/icon/ico_menu.png" alt="전체메뉴 보기"></a></div>
+      </div> -->
 
 
       <!-- 3번메뉴/회원권상세   -->
-      <div class="hd_m align-items-center justify-content-between">
+      <!-- <div class="hd_m align-items-center justify-content-between">
         <div>
-          <button class=" " type="button" onclick="history.back()"><img src="../assets/images/icon/ico_back.png"
+          <button class=" " type="button" onclick="history.back()"><img src="@@imgPath/icon/ico_back.png"
               alt="뒤로가기"></button>
-          <button class=" " type="button" onclick="location.href='./'"><img src="../assets/images/icon/ico_home.png"
+          <button class=" " type="button" onclick="location.href='./'"><img src="@@imgPath/icon/ico_home.png"
               alt="홈"></button>
         </div>
 
 
-        <!-- 이전 결과값이 아닌 이전페이지로 이동되어야 합니다. -->
+        이전 결과값이 아닌 이전페이지로 이동되어야 합니다.
         <div class="page_tit line1_text fs_18 fw_800 flex-fill"></div>
         <div>
 
@@ -144,10 +142,10 @@
             </div>
           </label>
           <button class="ml-2" type="button" onclick="location.href='./링크이동'">
-            <img src="../assets/images/icon/ico_share.png" alt="공유 바로가기">
+            <img src="@@imgPath/icon/ico_share.png" alt="공유 바로가기">
           </button>
         </div>
-      </div>
+      </div> -->
 
 
 
@@ -155,6 +153,74 @@
       <!-- 모바일 메뉴 영역 -->
       <div class="m_menu_wr">
         <div class="m_nav">
+          <nav class="nav_wr">
+            <div class="navtop_wrap">
+              <div class="d-flex justify-content-between align-items-center ">
+                <p class="fw_800 fs_18">로그인 해주세요</p>
+                <div class="d-flex hd_m_nav ">
+                  <button class="top_alim ml-4 position-relative" type="button" onclick="location.href='./alarm.html'">
+                    <img src="@@imgPath/icon/ico_alim.png" alt="알림목록 바로가기">
+                    <span></span>
+                  </button>
+                  <button class="  ml-4" type="button" onclick="location.href='./map_search.html'">
+                    <img src="@@imgPath/icon/ico_search.png" alt="검색 바로가기">
+                  </button>
+                  <div class="close_btn_wr ml-4">
+                    <button class="close_btn   px-0" type="button"><img src="@@imgPath/icon/ico_x.png" alt="전체메뉴 보기">
+                  </div>
+                </div>
+              </div>
+              <p class=" mt-2"><a href="@@baseUrl/login.html" class="text-gray fs_13"> 로그인 <img
+                    src="@@imgPath/img/next_ico.png" style="width: 16px;" class="ml-1"></a></p>
+            </div>
+
+            <ul class="nav_ul">
+              <li class="nav_li">
+                <a href="@@baseUrl/notice.html" class="nav_a">공지사항 </a>
+              </li>
+              <li class="nav_li">
+                <a href="@@baseUrl/event.html" class="nav_a">이벤트 </a>
+              </li>
+              <li class="nav_li">
+                <a href="@@baseUrl/faq.html" class="nav_a">FAQ </a>
+              </li>
+              <li class="nav_li">
+                <a href="@@baseUrl/my_inquiry_write.html" class="nav_a">1:1 문의 </a>
+              </li>
+              <li class="nav_li">
+                <a href="@@baseUrl/membership_confirm.html" class="nav_a">회원권 인증하기 </a>
+              </li>
+              <li class="nav_li">
+                <a href="@@baseUrl/membership_contract.html" class="nav_a">회원권 계약현황 </a>
+              </li>
+              <li class="nav_li">
+                <a href="@@baseUrl/membership_interest.html" class="nav_a">관심 회원권 </a>
+              </li>
+              <li class="nav_li">
+                <a href="@@baseUrl/membership_contract.html" class="nav_a">회원권 계약현황 </a>
+              </li>
+              <li class="nav_li">
+                <a href="@@baseUrl/policy.html" class="nav_a">이용약관 </a>
+              </li>
+              <li class="nav_li">
+                <a href="@@baseUrl/terms.html" class="nav_a">개인정보 처리방침 </a>
+              </li>
+
+
+            </ul>
+            <div class="foot_info bg-light text-gray line_h1_2">
+              <p class="mb-2 fs_14">주식회사 회원권 마켓</p>
+              <p class="fs_13 ">
+                <span class="mr-2">대표자: 고재성</span>
+                <span class="mr-2">대표전화: 02-529-5700 </span><br>
+                <span class="mr-2">이메일: kjs76371204@naver.com</span>
+                <br>
+                <span class="mr-2">주소: 서울특별시 강남구 테헤란로 82길 15, 1088호
+                  (대치동,디아이타워)</span><br>
+                <span class="mr-2">사업자등록번호: 889-81-02109</span>
+              </p>
+            </div>
+          </nav>
         </div>
         <div class="menu_bg"></div>
       </div>

@@ -1,0 +1,101 @@
+.community_search {
+  .sch_ip {
+    margin-top: 2rem;
+  }
+  .region {
+    padding-top: 2rem;
+    overflow-x: scroll;
+    label {
+      flex-shrink: 0;
+    }
+  }
+  .border-bb {
+    margin-top: 2rem;
+  }
+}
+
+.community_review {
+  .title_con {
+    padding: 1.7rem 2.8rem;
+    border-radius: 0.6rem;
+    background-color: #f5f5f5;
+    .tit {
+      position: relative;
+      display: inline-block;
+      padding-right: 2rem;
+      font: {
+        size: 2rem;
+        weight: 700;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1.6rem;
+        height: 1.6rem;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background: url('../../assets/images/icon/ico_right_arr.png') no-repeat center / cover;
+      }
+    }
+    .review_sum {
+      font: {
+        size: 1.6rem;
+        weight: 700;
+      }
+      color: var(--primary);
+    }
+  }
+}
+
+// 게시글 상세
+
+.community_detail {
+  .review_list {
+    .list {
+      padding-bottom: 0;
+      border-bottom: none !important;
+      .title {
+        .writer {
+          font: {
+            size: 1.6rem;
+            weight: 500;
+          }
+        }
+      }
+      .info_summation {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-block: 1.5rem 1.2rem;
+        .t1 {
+          font: {
+            size: 1.6rem;
+            weight: 400;
+          }
+        }
+        .star_con {
+          display: flex;
+          align-items: center;
+          .box {
+            display: flex;
+            align-items: center;
+            .star {
+              img {
+                width: 1.8rem;
+              }
+            }
+          }
+          .num {
+            font: {
+              size: 1.6rem;
+              weight: 400;
+            }
+            color: #777;
+          }
+        }
+      }
+    }
+  }
+}

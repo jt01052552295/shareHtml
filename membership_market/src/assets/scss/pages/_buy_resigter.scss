@@ -1,0 +1,39 @@
+.buy_info {
+  .tit {
+    font: {
+      size: 1.6rem;
+      weight: 700;
+    }
+  }
+  .d-flex {
+    gap: 1.6rem;
+    .t1 {
+      font: {
+        size: 1.4rem;
+        weight: 500;
+      }
+    }
+    .t2 {
+      font: {
+        size: 1.4rem;
+        weight: 700;
+      }
+    }
+  }
+  .border-bb {
+    margin-block: 2rem;
+    border: 0.4rem solid var(--border);
+  }
+}
+
+.check_con {
+  .form-check {
+    .policy_view {
+      text-decoration: underline;
+      font: {
+        size: 1.2rem;
+        weight: 700;
+      }
+    }
+  }
+}

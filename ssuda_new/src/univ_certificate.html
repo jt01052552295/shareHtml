@@ -1,4 +1,4 @@
-@@include('partials/html-start.html', { "title": "이력서발급" })
+@@include('partials/html-start.html', { "title": "이력 증명" })
 <header class="header_menu univ">
     <div class="inner d-flex justify-content-between">
         <h1 class="logo">
@@ -6,11 +6,99 @@
                 <img class="logo" src="./assets/images/logo/logo_silla.png" alt="">
             </a>
         </h1>
-        <p class="title fs-20 fw-bold">이력서 발급</p>
+        <p class="title fs-20 fw-bold">이력 증명</p>
     </div>
 </header>
 <section class="contents pt-70 pb-100">
-    <div class="univ_certificate">
+
+    <div class="resume resume_view">
+        <div class="inner">
+            <div class="thumb_edit">
+                <label class="profile-upload" for="fileInput">
+                    <img id="profileImage" src="./assets/images/logo/logo_logo_symbol.png" alt="프로필 이미지" />
+                </label>
+                <input type="file" id="fileInput" accept="image/*" />
+                <div class="txt_con">
+                    <p class="name">홍길동</p>
+                    <p class="t1 age">남자 · 29세</p>
+                </div>
+            </div>
+
+            <ul class="info_list">
+                <li class="list">
+                    <p class="t1 large-r">주소</p>
+                    <p class="t2 large-r">부산 사상구 괘법동</p>
+                </li>
+                <li class="list">
+                    <p class="t1 large-r">휴대폰</p>
+                    <p class="t2 large-r">
+                        0507-444-6089
+                        <span class="safe_num small-m">안심번호</span>
+                    </p>
+                </li>
+                <li class="list">
+                    <p class="t1 large-r">이메일</p>
+                    <p class="t2 large-r">ssuda@ssuda.com</p>
+                </li>
+            </ul>
+
+            <div class="career">
+                <div class="tit_con">
+                    <p class="tit header-b">최종학력</p>
+                    <div class="box">
+                        <p class="t1 large-m">대학(4년제)졸업</p>
+                        <a class="edit_link" href="univ_resume_step02.html">
+                            <button class="btn btn-light">수정하기</button>
+                            <!-- <img class="img" src="./assets/images/icon/ico_pencil.png" alt="" /> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="career">
+                <div class="tit_con">
+                    <p class="tit header-b">경력사항</p>
+                    <div class="box">
+                        <p class="t1 large-m">1년1개월</p>
+                        <a class="edit_link d-flex align-items-center" href="univ_resume_step03.html">
+                            <button class="btn btn-light">수정하기</button>
+                            <!-- <img class="img" src="./assets/images/icon/ico_pencil.png" alt="" /> -->
+                        </a>
+                    </div>
+                </div>
+                <ul class="career_list">
+                    <li class="list mt-3">
+                        <p class="date medium-m">
+                            2025.02 - 2025.05
+                            <span class="total small-m">4개월</span>
+                        </p>
+                        <p class="store_name medium-b">고깃집</p>
+                        <p class="work medium-m">매장관리</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="career">
+                <div class="tit_con">
+                    <p class="tit header-b">자기소개</p>
+                    <div class="box">
+                        <a class="edit_link" href="univ_resume_step04.html">
+                            <button class="btn btn-light">수정하기</button>
+                            <!-- <img class="img" src="./assets/images/icon/ico_pencil.png" alt="" /> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="introduce mt-3">
+                    <p>
+                        자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개
+                        자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개 자기소개
+                        자기소개
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="univ_certificate mt-30">
         <div class="inner">
             <p class="univ_title">학적정보 확인</p>
             <div class="certi_info card_con">
@@ -47,11 +135,11 @@
             </div>
 
 
-            <p class="univ_title">학위과정 선택</p>
+            <!-- <p class="univ_title">학위과정 선택</p>
             <div class="degree_select" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
                 aria-controls="offcanvasBottom">
                 <button class="btn btn-outline-primary btn-lg w-100  down_arr">[대학]화학공학과</button>
-            </div>
+            </div> -->
 
             <div class="fix_btn one">
                 <button class="btn btn-lg btn-primary center"

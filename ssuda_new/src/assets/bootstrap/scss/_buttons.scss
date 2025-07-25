@@ -80,7 +80,6 @@
 
   .btn-check:checked + &,
   :not(.btn-check) + &:active,
-  &:first-child:active,
   &.active,
   &.show {
     color: var(--#{$prefix}btn-active-color);
@@ -140,7 +139,7 @@
 // scss-docs-start btn-variant-loops
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
-    @if $color == "light" {
+    @if $color == 'light' {
       @include button-variant(
         $value,
         $value,
@@ -149,7 +148,7 @@
         $active-background: shade-color($value, $btn-active-bg-shade-amount),
         $active-border: shade-color($value, $btn-active-border-shade-amount)
       );
-    } @else if $color == "dark" {
+    } @else if $color == 'dark' {
       @include button-variant(
         $value,
         $value,

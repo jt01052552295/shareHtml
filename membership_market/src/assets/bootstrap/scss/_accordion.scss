@@ -44,8 +44,8 @@
   @include transition(var(--#{$prefix}accordion-transition));
 
   &:not(.collapsed) {
-    color: var(--#{$prefix}accordion-active-color);
-    background-color: var(--#{$prefix}accordion-active-bg);
+    // color: var(--#{$prefix}accordion-active-color);
+    // background-color: var(--#{$prefix}accordion-active-bg);
     box-shadow: inset 0 calc(-1 * var(--#{$prefix}accordion-border-width)) 0 var(--#{$prefix}accordion-border-color); // stylelint-disable-line function-disallowed-list
 
     &::after {
@@ -60,7 +60,7 @@
     width: var(--#{$prefix}accordion-btn-icon-width);
     height: var(--#{$prefix}accordion-btn-icon-width);
     margin-left: auto;
-    content: "";
+    content: '';
     background-image: var(--#{$prefix}accordion-btn-icon);
     background-repeat: no-repeat;
     background-size: var(--#{$prefix}accordion-btn-icon-width);
@@ -119,7 +119,6 @@
   padding: var(--#{$prefix}accordion-body-padding-y) var(--#{$prefix}accordion-body-padding-x);
 }
 
-
 // Flush accordion items
 //
 // Remove borders and border-radius to keep accordion items edge-to-edge.
@@ -130,8 +129,12 @@
     border-left: 0;
     @include border-radius(0);
 
-    &:first-child { border-top: 0; }
-    &:last-child { border-bottom: 0; }
+    &:first-child {
+      border-top: 0;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
 
     // stylelint-disable selector-max-class
     > .accordion-collapse,

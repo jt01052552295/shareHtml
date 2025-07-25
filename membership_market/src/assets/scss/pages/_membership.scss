@@ -1,0 +1,147 @@
+.membership_list {
+  .card_con {
+    display: flex;
+    gap: 3.6rem;
+    margin-bottom: 2rem;
+    padding: 3rem 2.5rem;
+    border: 1px solid var(--border);
+    border-radius: 1.2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .img_con {
+      width: 165px;
+      flex-shrink: 0;
+      aspect-ratio: 33 / 50;
+      border-radius: 1.2rem;
+      overflow: hidden;
+      //   &::after {
+      //     content: '';
+      //     display: block;
+      //     padding-bottom: ;
+      //   }
+      .card_img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .txt_con {
+      width: 100%;
+      .price_con {
+        .sell_price {
+          padding: 0.7rem 1.2rem;
+          background-color: rgba($color: #000000, $alpha: 0.6);
+          border-radius: 150px;
+          font: {
+            size: 14px;
+            weight: 400;
+          }
+          color: var(--white);
+          text-align: center;
+          .point {
+            display: inline-block;
+            padding-left: 0.7rem;
+            font-weight: 700;
+          }
+        }
+      }
+      .btn-link {
+        .delet_img {
+        }
+      }
+
+      .title {
+        padding-block: 2.6rem 1.6rem;
+        border-bottom: 1px solid var(--border);
+        .t1 {
+          font: {
+            size: 2rem;
+            weight: 700;
+          }
+        }
+      }
+
+      .list_con {
+        margin-block: 1.6rem 2.3rem;
+      }
+
+      .sell_info {
+        display: flex;
+        gap: 1.3rem;
+        .list {
+          position: relative;
+          font: {
+            size: 1.4rem;
+            weight: 500;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 1px;
+            height: 100%;
+            top: 50%;
+            right: -0.6rem;
+            transform: translateY(-50%);
+            background-color: #ccc;
+          }
+          &:last-child {
+            &::after {
+              display: none;
+            }
+          }
+          span {
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    .card_con {
+      .img_con {
+        flex-shrink: initial;
+        .card_img {
+        }
+      }
+    }
+  }
+}
+
+// memebership_view
+
+.membership_info {
+  .title {
+    margin-bottom: 0.7rem;
+    font: {
+      size: 2rem;
+      weight: 700;
+    }
+  }
+  .t1 {
+    font: {
+      size: 1.6rem;
+      weight: 400;
+    }
+    line-height: 2.4rem;
+  }
+  .address {
+  }
+  .info {
+  }
+  .website {
+  }
+  .conform {
+    margin-top: 1rem;
+    .ico_check {
+      width: 2.2rem;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+// 회원권 인증
+
+.membership_confirm {
+}

@@ -8,15 +8,21 @@
 
   display: block;
   width: 100%;
-  padding: $form-select-padding-y $form-select-indicator-padding $form-select-padding-y $form-select-padding-x;
+  min-width: 13.5rem;
+  height: 4.8rem;
+  // padding: $form-select-padding-y $form-select-indicator-padding $form-select-padding-y $form-select-padding-x;
+  padding-right: 3.5rem;
+  padding-left: 1.5rem;
   font-family: $form-select-font-family;
-  @include font-size($form-select-font-size);
-  font-weight: $form-select-font-weight;
+  // @include font-size($form-select-font-size);
+  font-size: 1.4rem;
+  font-weight: 400;
+  // font-weight: $form-select-font-weight;
   line-height: $form-select-line-height;
   color: $form-select-color;
   appearance: none;
   background-color: $form-select-bg;
-  background-image: var(--#{$prefix}form-select-bg-img), var(--#{$prefix}form-select-bg-icon, none);
+  // background-image: var(--#{$prefix}form-select-bg-img), var(--#{$prefix}form-select-bg-icon, none);
   background-repeat: no-repeat;
   background-position: $form-select-bg-position;
   background-size: $form-select-bg-size;
@@ -37,7 +43,7 @@
   }
 
   &[multiple],
-  &[size]:not([size="1"]) {
+  &[size]:not([size='1']) {
     padding-right: $form-select-padding-x;
     background-image: none;
   }

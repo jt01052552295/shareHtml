@@ -1,0 +1,134 @@
+@@include('partials/html-start.html', { "title": "회원권 지역명 검색" })
+
+
+<div class="idx_pg">
+    <div class="container">
+        <section class="search_bar">
+            <div class="sch_ip border align-items-center">
+                <input type="search" class="form-control fs_14 flex-fill border-0" placeholder="골프장명 입력">
+                <button class="btn btn-icon flex-shrink-0 p-0">
+                    <img class="search_icon" src="@@imgPath/icon/ico_search.png">
+                </button>
+            </div>
+        </section>
+        <p class="fs_13 fw_400 mt-3" style="color: #a2a2a2;">'*'표시는 거래건수가 높은 회원권</p>
+        <div class="membership_wrap mt_30">
+            <div class="slide_section mb_50">
+                <div class="d-flex justify-content-between align-items-cemter mb_30">
+                    <div>
+                        <p class="sub_tit down_arr">무기명</p>
+                        <p class="fs_13 fw_400 mt_6" style="color: #a2a2a2;">업데이트 최신일자 : 2025-07-02</p>
+                    </div>
+                    <div class="layout_btn">
+                        <div class="btn-group" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-secondary btn-sm"
+                                onclick="location.href=`location_search2.html`">
+                                <img src="@@imgPath/icon/ico_layout_table_on.png" alt="">
+                            </button>
+                            <button type="button" class="btn btn-outline-light btn-sm"
+                                onclick="location.href=`location_search.html`">
+                                <img src="@@imgPath/icon/ico_layout_off.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <table class="table">
+                    <colgroup>
+                        <col width="5%">
+                        <col width="30%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="20%">
+                        <col width="5%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="" colspan=""></th>
+                            <th class="" colspan="">골프회원권명</th>
+                            <th class="" colspan="">즉시매각가</th>
+                            <th class="" colspan="">즉시매입가</th>
+                            <th class="" colspan="">매매예상가</th>
+                            <th class="" colspan=""></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td valign="middle">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td valign="middle" class="text-left">*자산-주중 무기명 1000</td>
+                            <td valign="middle">75,000</td>
+                            <td valign="middle">77,500</td>
+                            <td valign="middle">74,500</td>
+                            <td valign="middle">
+                                <label class="like_btn">
+                                    <input type="checkbox" name="chk_like1">
+                                    <div class="ic_heart">
+                                    </div>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td valign="middle" class="text-left">*자산-주중 무기명 1000</td>
+                            <td valign="middle">75,000</td>
+                            <td valign="middle">77,500</td>
+                            <td valign="middle">74,500</td>
+                            <td valign="middle">
+                                <label class="like_btn">
+                                    <input type="checkbox" name="chk_like1">
+                                    <div class="ic_heart">
+                                    </div>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td valign="middle" class="text-left">*자산-주중 무기명 1000</td>
+                            <td valign="middle">75,000</td>
+                            <td valign="middle">77,500</td>
+                            <td valign="middle">74,500</td>
+                            <td valign="middle">
+                                <label class="like_btn">
+                                    <input type="checkbox" name="chk_like1">
+                                    <div class="ic_heart">
+                                    </div>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                            </td>
+                            <td valign="middle" class="text-left">*자산-주중 무기명 1000</td>
+                            <td valign="middle">75,000</td>
+                            <td valign="middle">77,500</td>
+                            <td valign="middle">74,500</td>
+                            <td valign="middle">
+                                <label class="like_btn">
+                                    <input type="checkbox" name="chk_like1">
+                                    <div class="ic_heart">
+                                    </div>
+                                </label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="fs_12 fw_400 text-right" style="color: #777;">*만원</p>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('partials/html-end.html')
