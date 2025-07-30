@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <title>@@title</title>
+
+  <link rel="stylesheet" href="@@cssPath/bootstrap.min.css" />
+  <link rel="stylesheet" href="@@cssPath/style.css" />
+  <script src="@@jsPath/bootstrap.js"></script>
+
+  <!-- plugin -->
+  <!-- jqury -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!--부트스트랩-->
+  <script src="@@jsPath/bootstrap.bundle.min.js"></script>
+  <!-- plugin -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header_menu">
+      <div class="d-flex justify-content-between align-items-center inner">
+        <div class="logo_con">
+          <a href="/">
+            <img src="" alt="LOGO">
+          </a>
+        </div>
+        <p class="title header-b">전자영수증</p>
+        <a class="hamburger" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </header>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        ...
+      </div>
+    </div>

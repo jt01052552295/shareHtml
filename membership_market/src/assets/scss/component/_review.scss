@@ -100,20 +100,36 @@
           align-items: center;
           gap: 1.5rem;
           font: {
-            size: 1.4rem;
+            size: 1.4rem !important;
             weight: 500;
           }
-          .act {
-            img {
-            }
-            .sum {
-              font: {
-                size: 1.4rem;
-                weight: 500;
+          .like {
+            height: auto;
+            background: none;
+            text-decoration: none;
+            color: #a2a2a2;
+            .heart {
+              position: relative;
+              padding-left: 30px;
+              &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 27px;
+                height: 25px;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                background: url('../../assets/images/icon/ico_like.png') no-repeat center / cover;
               }
             }
-          }
-          .like {
+            &.active {
+              .heart {
+                &::before {
+                  background: url('../../assets/images/icon/ico_like_on.png') no-repeat center / cover;
+                }
+              }
+            }
           }
         }
       }

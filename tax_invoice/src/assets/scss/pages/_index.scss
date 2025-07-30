@@ -1,0 +1,87 @@
+.current {
+  position: relative;
+  border-radius: 6px;
+  background-color: var(--main-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  p {
+    color: #fff;
+  }
+  .info_con {
+    padding: 15px;
+    .date {
+      margin-bottom: 15px;
+      .t1 {
+      }
+    }
+    .name {
+    }
+    .price {
+    }
+  }
+
+  .detail_link {
+    padding: 15px;
+    background-color: #5e93f3;
+    .d-flex {
+      justify-content: space-between;
+      align-items: center;
+      .t1 {
+      }
+      .t2 {
+        position: relative;
+        padding-right: 20px;
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 16px;
+          height: 16px;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          background: url('../../assets/images/icon/ico_right_arr_white.png') no-repeat center / cover;
+        }
+      }
+    }
+  }
+}
+
+.quick_con {
+  margin-top: 45px;
+  .quick_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .list {
+      position: relative;
+      width: calc(100% / 3);
+      text-align: center;
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: 30px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: #222;
+      }
+      .menu {
+        .img_con {
+          img {
+            width: 50%;
+          }
+        }
+        .t1 {
+        }
+      }
+    }
+  }
+}
