@@ -219,6 +219,21 @@
           background: url('../../assets/images/icon/ico_reply.png') no-repeat center / cover;
         }
       }
+
+      .reply_input {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        // height: 4.6rem;
+        padding: 0.7rem 1.2rem;
+        border-radius: 0.4rem;
+        background-color: #efefef;
+        .reply_register {
+          border: none;
+          outline: none;
+          background: none;
+        }
+      }
     }
   }
   .fixed_bottom {
