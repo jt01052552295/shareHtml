@@ -1,0 +1,52 @@
+@@include('partials/html-start.html', { "title": "이메일 로그인" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">이메일 로그인</p>
+    </div>
+</header>
+<section class="contents">
+    <ul class="tab_con mt-10 mb-20">
+        <li class="tab active">
+            <a class="link" href="email_login.html">
+                <p class="t1">견사회원</p>
+            </a>
+        </li>
+        <li class="tab">
+            <a class="link" href="email_login01.html">
+                <p class="t1">펫샵회원</p>
+            </a>
+        </li>
+    </ul>
+    <div class="inner">
+        <div class="form-group">
+            <div class="mb-15">
+                <label class="input_label" for="name">이메일</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                    placeholder="example@example.com">
+            </div>
+
+            <div class="">
+                <label class="input_label" for="phone">비밀번호</label>
+                <input type="password" class="form-control" id="phone" aria-describedby="emailHelp"
+                    placeholder="비밀번호를 입력해주세요.">
+            </div>
+        </div>
+        <button class="btn btn-main w-100 btn-height mt-40" onclick="location.href=`index.html`">로그인</button>
+        <ul class="email_login mt-25">
+            <li class="list">
+                <a href="find_account.html" class="link">아이디찾기</a>
+            </li>
+            <li class="list">
+                <a href="find_account02.html" class="link">비밀번호 찾기</a>
+            </li>
+        </ul>
+    </div>
+
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

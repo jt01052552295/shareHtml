@@ -1,0 +1,539 @@
+// 공통
+
+:root {
+  --main-color: #e82561;
+  --gray-color: #c8c9cd;
+  --white-color: #fff;
+  --black-color: #222;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Pretendard";
+  color: var(--black-color);
+}
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  max-width: 640px;
+  margin: 0 auto;
+  padding-inline: 10px;
+}
+
+.contents {
+  padding-top: 60px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.border-top {
+  border-top: 1px solid #f2f2f2;
+}
+
+/* 레이아웃 */
+
+.height-100 {
+  min-height: 100vh;
+}
+
+/* Padding Top */
+@for $i from 0 through 20 {
+  .pt-#{$i * 5} {
+    padding-top: #{$i * 5}px;
+  }
+}
+
+/* Padding Bottom */
+@for $i from 0 through 20 {
+  .pb-#{$i * 5} {
+    padding-bottom: #{$i * 5}px;
+  }
+}
+
+/* Margin Top */
+@for $i from 0 through 20 {
+  .mt-#{$i * 5} {
+    margin-top: #{$i * 5}px;
+  }
+}
+
+/* Margin Bottom */
+@for $i from 0 through 20 {
+  .mb-#{$i * 5} {
+    margin-bottom: #{$i * 5}px;
+  }
+}
+
+@for $i from 0 through 20 {
+  .mr-#{$i * 5} {
+    margin-right: #{$i * 5}px;
+  }
+}
+
+/* font size */
+.fs-10 {
+  font-size: 1rem;
+} // 10px
+.fs-12 {
+  font-size: 1.2rem;
+} // 12px
+.fs-14 {
+  font-size: 1.4rem;
+} // 14px
+.fs-16 {
+  font-size: 1.6rem;
+} // 16px
+.fs-18 {
+  font-size: 1.8rem;
+} // 18px
+.fs-20 {
+  font-size: 2rem;
+} // 20px
+.fs-24 {
+  font-size: 2.4rem;
+} // 24px
+.fs-28 {
+  font-size: 2.8rem;
+} // 28px
+.fs-32 {
+  font-size: 3.2rem;
+} // 32px
+
+.fw-300 {
+  font-weight: 300;
+} // light
+.fw-400 {
+  font-weight: 400;
+} // regular
+.fw-500 {
+  font-weight: 500;
+} // medium
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+} // bold
+
+.text_align_r {
+  text-align: right;
+}
+
+.text_line_1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.text_line_2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.text_line_3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.point {
+  color: var(--main-color);
+}
+
+// 타이틀
+
+.title_con {
+  .sub_title {
+    font: {
+      size: 1.4rem;
+      weight: 500;
+    }
+  }
+  .title {
+    font: {
+      size: 1.8rem;
+      weight: 700;
+    }
+  }
+  .d-flex {
+    .link {
+      position: relative;
+      display: block;
+      margin-right: 10px;
+      padding-right: 10px;
+      font: {
+        size: 1.4rem;
+        weight: 500;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 8px;
+        height: 10px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background: url("../../assets/images/ico/ico_link_arr.png") no-repeat center / cover;
+      }
+    }
+  }
+}
+
+// 정사각형
+
+.rect {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 4px;
+
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+// 탭
+
+.tab_con {
+  display: flex;
+  align-items: center;
+  .tab {
+    width: 50%;
+    border-bottom: 2px solid var(--gray-color);
+    text-align: center;
+    .link {
+      display: block;
+      padding-block: 10px;
+      .t1 {
+        font: {
+          size: 1.6rem;
+          weight: 500;
+        }
+        color: var(--gray-color);
+      }
+    }
+    &.active {
+      border-bottom: 2px solid var(--main-color);
+      .link {
+        .t1 {
+          font-weight: 700;
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+}
+
+// input form
+
+.form-group {
+  .input_label {
+    margin-bottom: 10px;
+    font: {
+      size: 1.6rem;
+      weight: 500;
+    }
+    color: var(--black-color);
+    &.require {
+      position: relative;
+      &::after {
+        content: "*";
+        position: absolute;
+        display: block;
+        top: 0;
+        right: -10px;
+        font: {
+          size: 1.4rem;
+          weight: 500;
+        }
+        color: var(--main-color);
+      }
+    }
+  }
+  input {
+    &.form-control {
+      font: {
+        size: 1.6rem;
+        weight: 500;
+      }
+      color: var(--black-color);
+    }
+  }
+  .form-control {
+    padding: 10px;
+    border-radius: 6px;
+    &::placeholder {
+      color: var(--gray-color);
+      font-weight: 400;
+    }
+  }
+
+  textarea.form-control {
+    font: {
+      size: 1.6rem;
+      weight: 500;
+    }
+    &::placeholder {
+      color: var(--gray-color);
+      font-weight: 400;
+    }
+  }
+
+  .valid-feedback {
+    font: {
+      size: 1.4rem;
+    }
+    color: #66a3f2;
+  }
+  .invalid-feedback {
+    font: {
+      size: 1.4rem;
+    }
+    color: var(--main-color);
+  }
+
+  .address {
+    display: flex;
+    gap: 10px;
+    .form-control {
+      flex: 4;
+    }
+    .btn {
+      flex: 1;
+      flex-shrink: 0;
+      height: 46px;
+    }
+    @media (max-width: 480px) {
+      .btn {
+        height: 40px;
+      }
+    }
+  }
+}
+
+// button custom
+
+.btn {
+  border-radius: 10px;
+  font: {
+    size: 1.4rem;
+  }
+}
+.btn-height {
+  height: 50px;
+}
+.btn-outline-main {
+  &.btn {
+    &:hover {
+      color: var(--white-color);
+    }
+  }
+}
+.btn-secondary {
+  background-color: var(--gray-color);
+  border: none;
+  font: {
+    size: 1.4rem;
+  }
+}
+.btn-dark {
+  font: {
+    size: 1.4rem;
+  }
+}
+
+.btn_con {
+  &.two {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.certi_btn {
+  height: 50px;
+}
+@media (max-width: 480px) {
+  .certi_btn {
+    height: 38px;
+  }
+}
+
+.fixed_bottom {
+  position: fixed;
+  left: calc(50% - 45px);
+  bottom: 0;
+  max-width: 640px;
+  width: 100%;
+  padding: 15px 10px 30px;
+  background-color: #fff;
+  z-index: 100;
+  .btn {
+    height: 50px;
+  }
+  @media (max-width: 480px) {
+    .btn {
+      height: 38px;
+    }
+  }
+
+  &.buy_btn {
+    display: flex;
+    gap: 10px;
+    .btn-link {
+      flex-shrink: 0;
+      width: 50px;
+      padding: 0;
+      background-color: #eee;
+    }
+    .cart {
+      width: 20px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .fixed_bottom {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// swiper-slide
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.like_btn input {
+  display: none;
+}
+
+.like_btn .ic_heart {
+  width: 29px;
+  height: 27px;
+  background: url("../../assets/images/ico/ico_heart_off.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.like_btn input:checked + .ic_heart {
+  background: url("../../assets/images/ico/ico_heart_on.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.thumb_nail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  .img_con {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    .img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .txt_con {
+    .name {
+      font: {
+        size: 1.6rem;
+        weight: 700;
+      }
+    }
+  }
+}
+
+.pill_con {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  .pill {
+    padding: 4px 16px;
+    border: 1px solid var(--main-color);
+    border-radius: 30px;
+    font: {
+      size: 1.4rem;
+      weight: 500;
+    }
+    color: var(--main-color);
+    &.active {
+      background-color: var(--main-color);
+      color: var(--white-color);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 9px;
+  }
+  .btn-height {
+    height: 38px;
+  }
+}

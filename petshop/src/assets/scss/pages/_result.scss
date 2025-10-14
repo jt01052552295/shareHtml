@@ -1,0 +1,22 @@
+.result_img {
+    position: relative;
+    width: 210px;
+    margin: 100px auto 45px;
+    img {
+        width: 100%;
+    }
+}
+
+.result_txt {
+    margin-bottom: 120px;
+    text-align: center;
+    .t1 {
+        font: {
+            size: 2.4rem;
+            weight: 500;
+        }
+        .point {
+            font-weight: 700;
+        }
+    }
+}

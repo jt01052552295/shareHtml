@@ -1,0 +1,220 @@
+@@include('partials/html-start.html', { "title": "컴포넌트" })
+
+<section class="contents">
+    <div class="inner">
+        <div class="component_box">
+            <div class="btn_style">
+                <p>button_style</p>
+
+                <div class="d-flex align-items-start gap-3">
+                    <button class="btn btn-lg btn-main">btn-lg</button>
+                    <button class="btn btn-main">normal</button>
+                    <button class="btn btn-md btn-main">md</button>
+                    <button class="btn btn-sm btn-main">sm</button>
+                </div>
+
+                <div class="d-flex align-items-start gap-3">
+                    <button class="btn btn-lg btn-secondary">btn-lg</button>
+                    <button class="btn btn-secondary">normal</button>
+                    <button class="btn btn-md btn-secondary">md</button>
+                    <button class="btn btn-sm btn-secondary">sm</button>
+                </div>
+
+                <div class="d-flex align-items-start gap-3">
+                    <button class="btn btn-lg btn-outline-main">btn-lg</button>
+                    <button class="btn btn-outline-main">normal</button>
+                    <button class="btn btn-md btn-outline-main">md</button>
+                    <button class="btn btn-sm btn-outline-main">sm</button>
+                </div>
+
+                <div class="d-flex align-items-start gap-3">
+                    <button class="btn btn-lg btn-outline-secondary">btn-lg</button>
+                    <button class="btn btn-outline-secondary">normal</button>
+                    <button class="btn btn-md btn-outline-secondary">md</button>
+                    <button class="btn btn-sm btn-outline-secondary">sm</button>
+                </div>
+
+                <div class="d-flex align-items-start gap-3">
+                    <button disabled class="btn btn-lg btn-secondary">btn-lg</button>
+                    <button disabled class="btn btn-secondary">normal</button>
+                    <button disabled class="btn btn-md btn-secondary">md</button>
+                    <button disabled class="btn btn-sm btn-secondary">sm</button>
+                </div>
+            </div>
+        </div>
+        <div class="tag_box">
+            <p>tag_style</p>
+            <div class="d-flex">
+                <button class="btn btn-main rounded-pill badge">태그</button>
+                <button class="btn btn-secondary rounded-pill badge">태그</button>
+                <button class="btn btn-outline-secondary rounded-pill badge">태그</button>
+            </div>
+        </div>
+
+        <div class="check_box">
+            <p>check_box_style</p>
+            <div class="d-">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        체크박스1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                    <label class="form-check-label" for="flexCheckDefault">
+                        체크박스1
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="header_box">
+            <p>header_style</p>
+            <header class="header_bar sty01">
+                <button class="btn p-0 back">
+                    <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+                </button>
+                <p class="title">타이틀</p>
+                <button class="btn p-0 search">
+                    <img src="@@imgPath/ico/ico_search.png" alt="검색하기">
+                </button>
+            </header>
+            <header class="header_bar sty02">
+                <button class="btn p-0">
+                    <a href="/" class="logo_img">
+                        <img src="@@imgPath/logo/logo_header.png" alt="유토피아">
+                    </a>
+                </button>
+                <button class="btn p-0 lang">
+                    <img src="@@imgPath/ico/ico_lang.png" alt="언어선택">
+                </button>
+            </header>
+            <header class="header_bar sty03">
+                <p class="title">타이틀</p>
+                <button class="btn p-0 close">
+                    <img src="@@imgPath/ico/ico_x.png" alt="닫기">
+                </button>
+            </header>
+            <header class="header_bar sty04">
+                <button class="btn p-0 back">
+                    <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+                </button>
+                <input type="text" class="form-control" placeholder="검색어를 입력해주세요">
+                <button class="btn p-0 search">
+                    <img src="@@imgPath/ico/ico_search.png" alt="검색하기">
+                </button>
+            </header>
+            <header class="header_bar sty01">
+                <button class="btn p-0 back">
+                    <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+                </button>
+                <p class="title">상세</p>
+                <button class="btn p-0 more">
+                    <img src="@@imgPath/ico/ico_more.png" alt="더보기">
+                </button>
+            </header>
+            <header class="header_bar sty05">
+                <button class="btn back p-0 back">
+                    <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+                </button>
+                <p class="title">타이틀</p>
+            </header>
+        </div>
+
+        <div class="item_list_box">
+            <p>item_list_box</p>
+            <ul class="item_con mx-r">
+                <li class="item">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_item_sample.png" alt="상품" class="item_img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="t1">벤츠 S-클래스 ww221</p>
+                        <p class="t2">10,200만원</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_item_sample.png" alt="상품" class="item_img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="t1">벤츠 S-클래스 ww221</p>
+                        <p class="t2">10,200만원</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_item_sample.png" alt="상품" class="item_img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="t1">벤츠 S-클래스 ww221</p>
+                        <p class="t2">10,200만원</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="inner">
+        <div class="d-flex flex-wrap upload_con">
+            <div class="image_upload">
+                <input id="ip_file" type="file" class="d-none">
+                <label for="ip_file" class="upload_box">
+                    <div class="rect">
+                    </div>
+                    <p class="max_img">이미지등록</p>
+                </label>
+                <button type="button" class="btn upload_del"><img src="@@imgPath/ico/ico_del.png"></button>
+            </div>
+            <div class="image_upload on">
+                <input id="ip_file" type="file" class="d-none">
+                <label for="ip_file" class="upload_box">
+                    <div class="rect">
+                        <img src="@@imgPath/img/img_car_sample01.png">
+                    </div>
+                </label>
+                <button type="button" class="btn upload_del"><img src="@@imgPath/ico/ico_del.png"></button>
+            </div>
+            <div class="image_upload on">
+                <input id="ip_file" type="file" class="d-none">
+                <label for="ip_file" class="upload_box">
+                    <div class="rect">
+                        <img src="@@imgPath/img/img_car_sample01.png">
+                    </div>
+                </label>
+                <button type="button" class="btn upload_del"><img src="@@imgPath/ico/ico_del.png"></button>
+            </div>
+            <div class="image_upload on">
+                <input id="ip_file" type="file" class="d-none">
+                <label for="ip_file" class="upload_box">
+                    <div class="rect">
+                        <img src="@@imgPath/img/img_car_sample01.png">
+                    </div>
+                </label>
+                <button type="button" class="btn upload_del"><img src="@@imgPath/ico/ico_del.png"></button>
+            </div>
+            <div class="image_upload on">
+                <input id="ip_file" type="file" class="d-none">
+                <label for="ip_file" class="upload_box">
+                    <div class="rect">
+                        <img src="@@imgPath/img/img_car_sample01.png">
+                    </div>
+                </label>
+                <button type="button" class="btn upload_del"><img src="@@imgPath/ico/ico_del.png"></button>
+            </div>
+            <div class="image_upload on">
+                <input id="ip_file" type="file" class="d-none">
+                <label for="ip_file" class="upload_box">
+                    <div class="rect">
+                        <img src="@@imgPath/img/img_car_sample01.png">
+                    </div>
+                </label>
+                <button type="button" class="btn upload_del"><img src="@@imgPath/ico/ico_del.png"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@@include('partials/html-end.html')

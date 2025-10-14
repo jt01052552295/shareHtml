@@ -1,0 +1,32 @@
+@@include('partials/html-start.html', { "title": "나의 문의 내역" })
+
+
+<div class="idx_pg">
+    <div class="container">
+
+        <ul class="my_inquiry_list">
+            <li class="title_con">
+                <a href="my_inquiry_detail.html">
+                    <div class="d-flex align-items-center">
+                        <p class="title">1:1 문의 제목입니다.</p>
+                        <button class="btn btn-primary btn-sm ">답변완료</button>
+                    </div>
+                    <p class="date">2023.06.06</p>
+                    <div class="border-bl"></div>
+                </a>
+            </li>
+            <li class="title_con">
+                <a href="my_inquiry_detail.html">
+                    <div class="d-flex align-items-center">
+                        <p class="title">1:1 문의 제목입니다.</p>
+                        <button class="btn btn-light btn-sm ">답변대기</button>
+                    </div>
+                    <p class="date">2023.06.06</p>
+                    <div class="border-bl"></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+@@include('partials/html-end.html')

@@ -1,0 +1,64 @@
+.nose_banner {
+    border-radius: 15px;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+.nose_guide {
+    .tit {
+        font: {
+            size: 1.8rem;
+            weight: 700;
+        }
+        color: var(--main-color);
+    }
+    .guide_txt {
+        .sub_tit {
+            position: relative;
+            margin-bottom: 15px;
+            padding-left: 20px;
+            font: {
+                size: 1.6rem;
+                weight: 700;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 15px;
+                height: 12px;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                background: url("../../assets/images/ico/ico_camera.png") no-repeat center / cover;
+            }
+        }
+
+        .txt_con {
+            .list {
+                position: relative;
+                margin-bottom: 10px;
+                padding-left: 20px;
+                font: {
+                    size: 1.4rem;
+                    weight: 400;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    top: 3px;
+                    left: 0;
+                    background: url("../../assets/images/ico/ico_foot.png") no-repeat center / cover;
+                }
+            }
+        }
+    }
+}

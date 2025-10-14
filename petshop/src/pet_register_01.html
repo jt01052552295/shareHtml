@@ -1,0 +1,38 @@
+@@include('partials/html-start.html', { "title": "펫등록" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">펫등록</p>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="inner">
+        <p class="pet_register_txt">등록하려는 품종 <br>비문등록 여부를 체크해주세요.</p>
+
+        <div class="option-wrap">
+            <label class="option">
+                <input type="radio" name="doneCheck" checked>
+                <div class="circle-btn">○</div>
+                <span>했어요</span>
+            </label>
+
+            <label class="option">
+                <input type="radio" name="doneCheck">
+                <div class="circle-btn">X</div>
+                <span>안 했어요</span>
+            </label>
+        </div>
+
+        <div class="fixed_bottom">
+            <button class="btn btn-main w-100" onclick="location.href=`pet_register_02.html`">다음</button>
+        </div>
+
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

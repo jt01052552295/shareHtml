@@ -1,0 +1,113 @@
+@@include('partials/html-start.html', { "title": "FAQ" })
+<header class="header_bar sty05">
+    <button class="btn back p-0 back">
+        <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+    </button>
+    <p class="title">FAQ</p>
+</header>
+<section class="contents">
+    <div class="search_input">
+        <div class="search_con">
+            <input type="text" class="search_form" placeholder="검색어를 입력해주세요">
+            <div class="btn_con">
+                <button class="btn btn-link p-0 delete">
+                    <img src="@@imgPath/ico/ico_x_gray.png" alt="삭제">
+                </button>
+                <button class="btn btn-link search_btn p-0">
+                    <img src="@@imgPath/ico/ico_search_black.png" alt="검색하기" class="img">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="cate_con">
+        <button class="btn btn-main rounded-pill badge">전체</button>
+        <button class="btn btn-outline-light rounded-pill badge">카테고리1</button>
+        <button class="btn btn-outline-light rounded-pill badge">카테고리2</button>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <div class="accordion-header" id="headingOne">
+                <div class="tit_con accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <div>
+                        <p class="tit">FAQ 제목 들어갑니다.</p>
+                        <p class="date">2025.08.02</p>
+                    </div>
+                </div>
+            </div>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    그를 전이, 틀던 기군망상하여 기준을 있고 시간에게 바람직하는 배열되고 대항하군. 시찰을 제공하야 배양하면서 바람도 두다. 인구가 여섯 문화적 나라의 우리의 하다 있음 나오다.
+                    감사반원을 진정 낮이고 때로 환경오염의 들이받은 나고 하군. 아침의 수수료가 사람을 사람이 개설은 않다. 기록화를 있은 발버둥의 한다 없으세요 좋다.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header" id="headingTwo">
+                <div class="tit_con accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <div>
+                        <p class="tit">FAQ 제목 들어갑니다.</p>
+                        <p class="date">2025.08.02</p>
+                    </div>
+                </div>
+            </div>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    그를 전이, 틀던 기군망상하여 기준을 있고 시간에게 바람직하는 배열되고 대항하군. 시찰을 제공하야 배양하면서 바람도 두다. 인구가 여섯 문화적 나라의 우리의 하다 있음 나오다.
+                    감사반원을 진정 낮이고 때로 환경오염의 들이받은 나고 하군. 아침의 수수료가 사람을 사람이 개설은 않다. 기록화를 있은 발버둥의 한다 없으세요 좋다.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header" id="headingThree">
+                <div class="tit_con accordion-button collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div>
+                        <p class="tit">FAQ 제목 들어갑니다.</p>
+                        <p class="date">2025.08.02</p>
+                    </div>
+                </div>
+            </div>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    그를 전이, 틀던 기군망상하여 기준을 있고 시간에게 바람직하는 배열되고 대항하군. 시찰을 제공하야 배양하면서 바람도 두다. 인구가 여섯 문화적 나라의 우리의 하다 있음 나오다.
+                    감사반원을 진정 낮이고 때로 환경오염의 들이받은 나고 하군. 아침의 수수료가 사람을 사람이 개설은 않다. 기록화를 있은 발버둥의 한다 없으세요 좋다.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="paging mt-30">
+        <div class="prev_btn page_move">
+            <img src="@@imgPath/ico/ico_prev_btn.png" alt="이전">
+        </div>
+        <ul class="page_num">
+            <li class="num on">
+                <a class="link" href="javascript:void(0)">1</a>
+            </li>
+            <li class="num">
+                <a class="link" href="javascript:void(0)">2</a>
+            </li>
+            <li class="num">
+                <a class="link" href="javascript:void(0)">3</a>
+            </li>
+            <li class="num">
+                <a class="link" href="javascript:void(0)">4</a>
+            </li>
+            <li class="num">
+                <a class="link" href="javascript:void(0)">5</a>
+            </li>
+        </ul>
+        <div class="next_btn page_move">
+            <img src="@@imgPath/ico/ico_next_btn.png" alt="다음">
+        </div>
+    </div>
+</section>
+
+
+
+@@include('partials/html-end.html')

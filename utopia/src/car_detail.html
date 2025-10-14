@@ -1,0 +1,257 @@
+@@include('partials/html-start.html', { "title": "상세" })
+<header class="header_bar sty01">
+    <button class="btn p-0 back">
+        <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+    </button>
+    <p class="title">상세</p>
+    <button class="btn p-0 more">
+        <img src="@@imgPath/ico/ico_more.png" alt="더보기">
+    </button>
+</header>
+<section class="contents">
+    <div class="detail_slide">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_detail_sample.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_detail_sample.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_detail_sample.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_detail_sample.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="detail_info">
+        <p class="name">벤츠 S-클래스 WW221</p>
+        <p class="info">21/08식 · 80,221KM · 1,000CC · 가솔린</p>
+        <p class="price">8,800 <span>만원</span></p>
+    </div>
+    <div class="edit_txt">
+        <p>애디터로 작성한 내용이 나옵니다.</p>
+        <img src="@@imgPath/img/img_detail_sample.png" alt="" style="width: 100%;">
+    </div>
+    <div class="writer_profile">
+        <div class="box">
+            <div class="avatar">
+                <img src="@@imgPath/img/img_detail_sample.png" alt="프로필" class="img">
+            </div>
+            <div class="txt_con">
+                <p class="nickname">벤츠가 최고다</p>
+                <p class="date">25.09.06(금) 15:00</p>
+            </div>
+        </div>
+    </div>
+
+    <ul class="reply_con">
+        <li class="reply">
+            <div class="reply_box">
+                <div class="avatar">
+                    <img src="@@imgPath/img/img_car_sample01.png" alt="" class="profile_img">
+                </div>
+                <div class="write">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="nickname">닉네임작성</p>
+                        <button class="btn btn-link p-0" style="height: auto;" data-toggle="modal"
+                            data-target="#declaration">신고</button>
+                    </div>
+                    <p class="t1">애매했던 부분 구체적으로 적용해 볼 수 있네요~</p>
+                    <div class="date_con">
+                        <p class="date">25.09.06(금) 15:00</p>
+                        <button class="btn btn-link p-0" style="height: auto;">답글달기</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="reply">
+            <div class="reply_box">
+                <div class="avatar">
+                    <img src="@@imgPath/img/img_car_sample02.png" alt="" class="profile_img">
+                </div>
+                <div class="write">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="nickname">닉네임작성</p>
+                        <button class="btn btn-link p-0" style="height: auto;" data-toggle="modal"
+                            data-target="#declaration">신고</button>
+                    </div>
+                    <p class="t1">애매했던 부분 구체적으로 적용해 볼 수 있네요~</p>
+                    <div class="date_con">
+                        <p class="date">25.09.06(금) 15:00</p>
+                        <button class="btn btn-link p-0" style="height: auto;">답글달기</button>
+                    </div>
+                </div>
+            </div>
+            <ul class="re_reply">
+                <li class="write">
+                    <div class="reply_box">
+                        <div class="avatar">
+                            <img src="@@imgPath/img/img_car_sample04.png" alt="" class="profile_img">
+                        </div>
+                        <div class="write">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="nickname">닉네임작성</p>
+                                <button class="btn btn-link p-0" style="height: auto;" data-toggle="modal"
+                                    data-target="#declaration">신고</button>
+                            </div>
+                            <p class="t1">애매했던 부분 구체적으로 적용해 볼 수 있네요~</p>
+                            <div class="date_con">
+                                <p class="date">25.09.06(금) 15:00</p>
+                                <button class="btn btn-link p-0" style="height: auto;">답글달기</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="write">
+                    <div class="reply_box">
+                        <div class="avatar">
+                            <img src="@@imgPath/img/img_car_sample03.png" alt="" class="profile_img">
+                        </div>
+                        <div class="write">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="nickname">닉네임작성</p>
+                                <button class="btn btn-link p-0" style="height: auto;" data-toggle="modal"
+                                    data-target="#declaration">신고</button>
+                            </div>
+                            <p class="t1">애매했던 부분 구체적으로 적용해 볼 수 있네요~</p>
+                            <div class="date_con">
+                                <p class="date">25.09.06(금) 15:00</p>
+                                <button class="btn btn-link p-0" style="height: auto;">답글달기</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="reply">
+            <div class="reply_box">
+                <div class="avatar">
+                    <img src="@@imgPath/img/img_car_sample01.png" alt="" class="profile_img">
+                </div>
+                <div class="write">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="nickname">닉네임작성</p>
+                        <button class="btn btn-link p-0" style="height: auto;" data-toggle="modal"
+                            data-target="#declaration">신고</button>
+                    </div>
+                    <p class="t1">애매했던 부분 구체적으로 적용해 볼 수 있네요~</p>
+                    <div class="date_con">
+                        <p class="date">25.09.06(금) 15:00</p>
+                        <button class="btn btn-link p-0" style="height: auto;">답글달기</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="reply_input">
+        <input type="text" class="reply_write" placeholder="댓글을 입력해주세요.">
+        <button class="send_btn">
+            <img src="@@imgPath/ico/ico_reply_send.png" class="send_img">
+        </button>
+    </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="declaration" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered layout declaration" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="basic">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                사진 도용 및 사칭 / 명예훼손 / 저작권 침해
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                음란성, 폭력성 또는 부적절한 게시물
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                중복게시글 도배
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                개인정보 노출
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                기타
+                            </label>
+                        </div>
+                        <div class="button_con two">
+                            <button class="btn btn-outline-light" data-dismiss="modal">취소</button>
+                            <button class="btn btn-secondary">신고하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+
+@@include('partials/html-end.html')

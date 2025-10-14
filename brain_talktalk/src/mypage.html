@@ -1,0 +1,71 @@
+@@include('partials/html-start.html', { "title": "마이페이지" })
+
+
+<div class="idx_pg">
+    <div class="container">
+        <div class="mypage_info">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="txt_con">
+                    <p class="name">홍길동 (test12345)</p>
+                    <p class="email">dmonster@gmail.com</p>
+                    <p class="phone_num">010-1234-1234</p>
+                </div>
+                <button class="btn btn-outline-light btn-sm">로그아웃</button>
+            </div>
+            <a href="javascript:void(0)" class="btn btn-lg kakao_link w-100">카카오톡 채널 추가</a>
+            <div class="border-bl"></div>
+        </div>
+
+        <div class="mypage_menu">
+            <div class="menu_con mt_30">
+                <p class="tit">계정관리</p>
+                <ul class="menu_list">
+                    <li class="list">
+                        <a class="link" href="profile_edit.html">
+                            <p class="t1">정보수정</p>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a class="link" href="password_edit.html">
+                            <p class="t1">비밀번호 변경</p>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a class="link" href="phone_edit.html">
+                            <p class="t1">휴대폰번호 변경</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_con mt_30">
+                <p class="tit">계정관리</p>
+                <ul class="menu_list">
+                    <li class="switch">
+                        <p class="t1">정보수정</p>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+                        </div>
+                    </li>
+                    <li class="switch">
+                        <p class="t1">비밀번호 변경</p>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_con mt_30" style="border-bottom: none;">
+                <p class="tit">앱 버전 정보</p>
+                <div class="version">
+                    <p class="t1">18.0v <span class="condition">최신버전</span></p>
+                    <a href="javascript:void(0)" class="btn btn-light btn-sm">업데이트</a>
+                </div>
+            </div>
+        </div>
+        <div class="secession">
+            <a href="secession.html">회원탈퇴</a>
+        </div>
+    </div>
+</div>
+
+@@include('partials/html-end.html')

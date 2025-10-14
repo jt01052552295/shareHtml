@@ -1,0 +1,28 @@
+@@include('partials/html-start.html', { "title": "아이디/비밀번호찾기" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">아이디/비밀번호찾기</p>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="inner">
+        <div class="result_img">
+            <img src="@@imgPath/ico/ico_success.png" alt="성공">
+        </div>
+        <div class="result_txt">
+            <p class="t1">휴대폰 번호랑 일치하는 아이디는 <br><span class="point">petshop12</span>입니다.</p>
+        </div>
+        <div class="btn_con two">
+            <button class="btn btn-outline-main btn-height w-100" onclick="location.href=`login.html`">로그인하기</button>
+            <button class="btn btn-main btn-height w-100" onclick="location.href=`find_account02.html`">비밀번호 찾기</button>
+        </div>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

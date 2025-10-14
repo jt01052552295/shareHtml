@@ -1,0 +1,121 @@
+.category_title {
+    margin-bottom: 3rem;
+    padding-block: 3rem 2rem;
+    border-bottom: 1px solid #000;
+    font: {
+        size: 1.7rem;
+        weight: 700;
+    }
+}
+
+.cate_menu {
+    .menu {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .link {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 2rem;
+                height: 2rem;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background: url("../images/ico/ico_link.png") no-repeat center / cover;
+            }
+            .img_con {
+                position: relative;
+                width: 56px;
+                height: 56px;
+                border-radius: 8px;
+                background-color: var(--gray-100);
+                .img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    &.car {
+                        width: 24px;
+                    }
+                    &.lux {
+                        width: 28px;
+                    }
+                    &.watch {
+                        width: 17px;
+                    }
+                    &.house {
+                        width: 21px;
+                    }
+                    &.community {
+                        width: 19px;
+                    }
+                }
+            }
+            .txt_con {
+                .cate {
+                    font: {
+                        size: 1.6rem;
+                        weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cate_menu {
+    .list {
+        position: relative;
+        height: 105px;
+        margin-bottom: 10px;
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            background: url("../images/ico/ico_back_white.png") no-repeat center / cover;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &.car {
+            background: url("../images/img/img_cate05.png") no-repeat center / cover;
+        }
+        &.lux {
+            background: url("../images/img/img_cate02.png") no-repeat center / cover;
+        }
+        &.watch {
+            background: url("../images/img/img_cate01.png") no-repeat center / cover;
+        }
+        &.house {
+            background: url("../images/img/img_cate03.png") no-repeat center / cover;
+        }
+        &.community {
+            background: url("../images/img/img_cate04.png") no-repeat center / cover;
+        }
+        .link {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            .cate {
+                padding-left: 3rem;
+                font: {
+                    size: 1.8rem;
+                    weight: 700;
+                }
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,261 @@
+.inquiry_item {
+    border-bottom: 1px solid var(--gray-color);
+    &.cart_item {
+        .list {
+            .price_con {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+.inquiry_textarea {
+    height: 260px;
+}
+
+.inquiry_list {
+    .list {
+        padding: 15px 22px;
+        border-top: 1px solid var(--gray-color);
+        &:last-child {
+            border-bottom: 1px solid var(--gray-color);
+        }
+        .link {
+            position: relative;
+            display: flex;
+            align-items: start;
+            gap: 12px;
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 8px;
+                height: 15px;
+                top: 50%;
+                right: 0;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                background: url(../../assets/images/ico/ico_link_arr.png) no-repeat center / cover;
+            }
+            .txt_con {
+                .tit {
+                    font: {
+                        size: 1.4rem;
+                        weight: 700;
+                    }
+                    line-height: 2.2;
+                }
+                .date {
+                    margin-top: 10px;
+                    font: {
+                        size: 1.2rem;
+                        weight: 500;
+                    }
+                    color: #777;
+                }
+            }
+            .condition {
+                .btn {
+                    padding: 4px 9px;
+                    font: {
+                        size: 1.2rem;
+                        weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.inquiry_write {
+    position: fixed;
+    right: calc(50% - 565px);
+    bottom: 20px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    .link {
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+        }
+    }
+}
+
+.inquiry_content {
+    font: {
+        size: 1.6rem;
+        weight: 400;
+    }
+    line-height: 22px;
+    .inquiry_item {
+        .list {
+            border: none;
+            .info_con {
+                border-bottom: none;
+                .item_info {
+                    padding: 0;
+                }
+            }
+            .price_con {
+            }
+        }
+    }
+}
+
+.register_btn {
+    .btn {
+        height: 50px;
+    }
+}
+
+.answer_con {
+    padding-block: 20px;
+    background-color: #eee;
+    .thumb_nail {
+        margin-bottom: 15px;
+        .img_con {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .desc {
+        font: {
+            size: 1.6rem;
+            weight: 400;
+        }
+        line-height: 22px;
+    }
+    .date {
+        margin-top: 10px;
+        font: {
+            size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .inquiry_write {
+        right: calc(50% - 300px);
+    }
+}
+
+@media (max-width: 640px) {
+    .inquiry_write {
+        right: 20px;
+    }
+}
+
+// 견사-리뷰
+
+.Kennel_inquiry {
+    .list {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--gray-color);
+        .inquiry_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            .status_con {
+                display: flex;
+                align-items: center;
+                .status {
+                    padding: 4px 12px;
+                    border-radius: 30px;
+                    background-color: var(--main-color);
+                    font: {
+                        size: 1.2rem;
+                        weight: 500;
+                    }
+                    color: var(--white-color);
+                    &.wait {
+                        border: 1px solid var(--main-color);
+                        background-color: transparent;
+                        color: var(--main-color);
+                    }
+                }
+                .breed {
+                    margin-left: 5px;
+                    font: {
+                        size: 1.2rem;
+                        weight: 500;
+                    }
+                }
+            }
+            .date {
+                font: {
+                    size: 1.2rem;
+                    weight: 500;
+                }
+                color: var(--gray-color);
+            }
+        }
+        .inquiry_body {
+            display: flex;
+            gap: 10px;
+            .img_con {
+                flex-shrink: 0;
+                width: 80px;
+                .img {
+                }
+            }
+            .txt_con {
+                .tit {
+                    font: {
+                        size: 1.2rem;
+                        weight: 700;
+                    }
+                }
+                .desc {
+                    margin-top: 8px;
+                    font: {
+                        size: 1.2rem;
+                        weight: 500;
+                    }
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+
+    .inquiry_answer {
+        .tit {
+            font: {
+                size: 1.4rem;
+                weight: 700;
+            }
+            .date {
+                margin-left: 10px;
+                font: {
+                    size: 1.2rem;
+                    weight: 500;
+                }
+                color: var(--gray-color);
+            }
+        }
+        .desc {
+            margin-top: 5px;
+            font: {
+                size: 1.2rem;
+                weight: 500;
+            }
+            line-height: 18px;
+        }
+
+        .inquiry_textarea {
+            font: {
+                size: 1.4rem;
+                weight: 500;
+            }
+        }
+    }
+}

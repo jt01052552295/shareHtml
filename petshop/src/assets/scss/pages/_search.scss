@@ -1,0 +1,50 @@
+.recent_search {
+    .tit {
+        font: {
+            size: 1.4rem;
+            weight: 400;
+        }
+    }
+
+    .search_word {
+        .swiper-slide {
+            width: auto;
+            .list {
+                flex-shrink: 0;
+                .link {
+                    display: block;
+                    padding: 5px 15px;
+                    border: 1px solid var(--main-color);
+                    border-radius: 30px;
+                    font: {
+                        size: 1.2rem;
+                        weight: 400;
+                    }
+                    color: var(--main-color);
+                }
+                &:hover {
+                    background-color: var(--main-color);
+                    border-radius: 30px;
+                    .link {
+                        color: var(--white-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search_page {
+    margin-left: 10px;
+    .tit {
+        font: {
+            size: 1.4rem;
+            weight: 400;
+        }
+    }
+    .recent {
+        .swiper-slide {
+            width: calc(100% / 3);
+        }
+    }
+}

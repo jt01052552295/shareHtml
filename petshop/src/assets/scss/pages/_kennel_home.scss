@@ -1,0 +1,108 @@
+.home_bg {
+    position: relative;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+    .bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.kennel_home {
+    .thumb_nail {
+        .img_con {
+            width: 50px;
+            height: 50px;
+        }
+        .txt_con {
+            .t1 {
+                font: {
+                    size: 1.4rem;
+                    weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.kennel_slide {
+    .swiper-wrapper {
+        .swiper-slide {
+            flex-direction: column;
+            align-items: start;
+            padding: 10px;
+            border: 1px solid var(--gray-color);
+            border-radius: 6px;
+            .thumb_nail {
+                gap: 5px;
+                margin-bottom: 10px;
+                .img_con {
+                    .img {
+                    }
+                }
+                .txt_con {
+                    .name {
+                    }
+                }
+            }
+
+            .info_date {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .rating {
+                    position: relative;
+                    padding-left: 14px;
+                    font: {
+                        size: 1.2rem;
+                        weight: 500;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 12px;
+                        height: 12px;
+                        top: 42%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        background: url("../../assets/images/ico/ico_star_on.png") no-repeat center / cover;
+                    }
+                    .rate {
+                        .sum {
+                            color: var(--gray-color);
+                        }
+                    }
+                }
+                .date {
+                    font: {
+                        size: 1.2rem;
+                        weight: 500;
+                    }
+                }
+            }
+
+            .pet_img {
+                display: flex;
+                gap: 5px;
+                width: 100%;
+                .list {
+                    width: calc(100% / 3);
+                }
+            }
+            .desc {
+                font: {
+                    size: 1.4rem;
+                    weight: 500;
+                }
+            }
+        }
+    }
+}

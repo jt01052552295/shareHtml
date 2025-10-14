@@ -1,0 +1,219 @@
+@@include('partials/html-start.html', { "title": "자동차 등록" })
+<header class="header_bar sty01">
+    <button class="btn p-0 back">
+        <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+    </button>
+    <p class="title">자동차 등록</p>
+    <button class="btn p-0">
+        <p class="register_btn">등록</p>
+    </button>
+</header>
+<section class="contents">
+    <div class="inner">
+        <div class="register_condition">
+            <p class="title">판매 상태</p>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">판매중</button>
+                <button type="button" class="btn btn-outline-light">판매완료</button>
+            </div>
+        </div>
+    </div>
+    <ul class="filter_pick">
+        <li class="pick">
+            <a href="javascript:void(0)" class="link">
+                <p class="t1">제조사</p>
+                <div class="info">
+                    <p class="t2">랜드로바</p>
+                    <button class="delete btn btn-link p-0" style="height: auto;">
+                        <img src="@@imgPath/ico/ico_x2.png" alt="삭제하기">
+                    </button>
+                </div>
+            </a>
+        </li>
+        <li class="pick">
+            <a href="javascript:void(0)" class="link">
+                <p class="t1">모델</p>
+                <div class="info">
+                    <p class="t2">레인지로버 이보크</p>
+                    <button class="delete btn btn-link p-0" style="height: auto;">
+                        <img src="@@imgPath/ico/ico_x2.png" alt="삭제하기">
+                    </button>
+                </div>
+            </a>
+        </li>
+        <li class="pick">
+            <a href="javascript:void(0)" class="link">
+                <p class="t1">세부모델</p>
+                <div class="info">
+                    <p class="t2">뉴 레인지로버 이보크</p>
+                    <button class="delete btn btn-link p-0" style="height: auto;">
+                        <img src="@@imgPath/ico/ico_x2.png" alt="삭제하기">
+                    </button>
+                </div>
+            </a>
+        </li>
+        <li class="pick">
+            <a href="javascript:void(0)" class="link">
+                <p class="t1">등급</p>
+                <div class="info">
+                    <p class="t2">가솔린 1500cc</p>
+                    <button class="delete btn btn-link p-0" style="height: auto;">
+                        <img src="@@imgPath/ico/ico_x2.png" alt="삭제하기">
+                    </button>
+                </div>
+            </a>
+        </li>
+        <li class="pick">
+            <a href="javascript:void(0)" class="link">
+                <p class="t1">연식</p>
+                <div class="info">
+                    <p class="t2">24/01식~26/12식</p>
+                    <button class="delete btn btn-link p-0" style="height: auto;">
+                        <img src="@@imgPath/ico/ico_x2.png" alt="삭제하기">
+                    </button>
+                </div>
+            </a>
+        </li>
+        <li class="pick">
+            <a href="javascript:void(0)" class="link">
+                <p class="t1">주행거리</p>
+                <div class="info">
+                    <p class="t2">50,000km~50,000km</p>
+                    <button class="delete btn btn-link p-0" style="height: auto;">
+                        <img src="@@imgPath/ico/ico_x2.png" alt="삭제하기">
+                    </button>
+                </div>
+            </a>
+        </li>
+        <li class="pick">
+            <a href="javascript:void(0)" class="link">
+                <p class="t1">가격</p>
+                <div class="info">
+                    <p class="t2">300만원 이상</p>
+                    <button class="delete btn btn-link p-0" style="height: auto;">
+                        <img src="@@imgPath/ico/ico_x2.png" alt="삭제하기">
+                    </button>
+                </div>
+            </a>
+        </li>
+        <li class="pick">
+            <a href="javascript:void(0)" class="link">
+                <p class="t1">차종</p>
+                <div class="info">
+                    <p class="t2">중형차</p>
+                    <button class="delete btn btn-link p-0" style="height: auto;">
+                        <img src="@@imgPath/ico/ico_x2.png" alt="삭제하기">
+                    </button>
+                </div>
+                <div class="info">
+                    <p class="t2">스포츠카</p>
+                    <button class="delete btn btn-link p-0" style="height: auto;">
+                        <img src="@@imgPath/ico/ico_x2.png" alt="삭제하기">
+                    </button>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="inner mb-20">
+        <div class="upload_con mt-20">
+            <p class="title">대표 이미지<span class="required">*</span></p>
+            <div class="upload-box" id="uploadBox">
+                <!-- 업로드 버튼 -->
+                <label class="upload-item upload-btn" id="uploadBtn">
+                    <input type="file" id="fileInput" accept="image/*" multiple>
+                    <div class="upload-placeholder">
+                        <img src="@@imgPath/ico/ico_camera_white.png" alt="" class="ico_camera">
+                        <span class="count-label">0/1</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="upload_con mt-30">
+            <p class="title">상세 이미지<span class="required">*</span></p>
+            <div class="upload-box" id="uploadBox">
+                <!-- 업로드 버튼 -->
+                <label class="upload-item upload-btn" id="uploadBtn">
+                    <input type="file" id="fileInput" accept="image/*" multiple>
+                    <div class="upload-placeholder">
+                        <img src="@@imgPath/ico/ico_camera_white.png" alt="" class="ico_camera">
+                        <span class="count-label">0/9</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered layout" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="basic">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_mark.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="t1">딜러 회원 승인 요청하시겠습니까?</p>
+                        <p class="t2">최고관리자 승인 후 딜러 회원 승인 처리 됩니다.</p>
+                    </div>
+                    <div class="button_con two">
+                        <button class="btn btn-outline-light" data-dismiss="modal">취소</button>
+                        <button class="btn btn-secondary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const fileInput = document.getElementById("fileInput");
+    const uploadBox = document.getElementById("uploadBox");
+    const uploadBtn = document.getElementById("uploadBtn");
+    const countLabel = uploadBtn.querySelector(".count-label");
+
+    let filesArr = [];
+    const maxFiles = 9;
+
+    fileInput.addEventListener("change", (e) => {
+        const newFiles = Array.from(e.target.files);
+
+        newFiles.forEach(file => {
+            if (filesArr.length >= maxFiles) {
+                alert("최대 9장까지 업로드 가능합니다.");
+                return;
+            }
+            filesArr.push(file);
+
+            const reader = new FileReader();
+            reader.onload = (ev) => {
+                const div = document.createElement("div");
+                div.classList.add("upload-item");
+
+                div.innerHTML = `
+            <img src="${ev.target.result}" alt="preview">
+            <img src="@@imgPath/ico/ico_del.png" class="remove-btn">
+          `;
+
+                div.querySelector(".remove-btn").addEventListener("click", () => {
+                    filesArr = filesArr.filter(f => f !== file);
+                    div.remove();
+                    updateCount();
+                });
+
+                // 오른쪽에 추가되도록 appendChild
+                uploadBox.appendChild(div);
+                updateCount();
+            };
+            reader.readAsDataURL(file);
+        });
+
+        fileInput.value = ""; // 같은 파일 다시 선택 가능하게 초기화
+    });
+
+    function updateCount() {
+        countLabel.textContent = `${filesArr.length}/${maxFiles}`;
+    }
+</script>
+@@include('partials/html-end.html')

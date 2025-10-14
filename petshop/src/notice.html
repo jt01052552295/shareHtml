@@ -1,0 +1,39 @@
+@@include('partials/html-start.html', { "title": "공지사항" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">공지사항</p>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="inner">
+        <div class="search_con">
+            <input type="text" class="form-control search_input" placeholder="검색어를 입력하세요">
+            <button class="btn btn-link">
+                <img src="@@imgPath/ico/ico_search.png" alt="검색" class="search_icon">
+            </button>
+        </div>
+        <ul class="notice_list">
+            <li class="list">
+                <a href="notice_detail.html" class="link">
+                    <p class="tit text_line_1">공지사항 제목 들어갑니다.</p>
+                    <p class="date">2025.08.02</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="notice_detail.html" class="link">
+                    <p class="tit text_line_1">공지사항 제목 들어갑니다.공지사항 제목 들어갑니다.공지사항 제목 들어갑니다.공지사항 제목 들어갑니다.공지사항 제목
+                        들어갑니다.공지사항 제목 들어갑니다.공지사항 제목 들어갑니다.공지사항 제목 들어갑니다.공지사항 제목 들어갑니다.공지사항 제목 들어갑니다.</p>
+                    <p class="date">2025.08.02</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

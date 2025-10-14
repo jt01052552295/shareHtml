@@ -1,0 +1,35 @@
+@@include('partials/html-start.html', { "title": "로그인" })
+<header class="header_bar sty03">
+    <p class="title">로그인</p>
+    <button class="btn p-0 close">
+        <img src="@@imgPath/ico/ico_x.png" alt="닫기">
+    </button>
+</header>
+<section class="contents">
+    <div class="inner">
+        <div class="login_logo">
+            <img src="@@imgPath/logo/logo_login.png" alt="유토피아">
+        </div>
+        <div class="login_info">
+            <input type="text" class="form-control id" placeholder="이메일 입력">
+            <input type="text" class="form-control password" placeholder="비밀번호 입력">
+            <p class="find_password">
+                <a href="@@baseUrl/find_password.html">
+                    비밀번호 찾기
+                </a>
+            </p>
+        </div>
+        <div class="login_btn">
+            <button class="btn btn-lg btn-main w-100">로그인</button>
+            <p class="t1">아직 회원이 아니신가요? <a href="membership01.html">회원가입</a></p>
+        </div>
+        <div class="sns_login">
+            <button class="btn btn-lg btn-naver w-100">Naver 로그인</button>
+            <button class="btn btn-lg btn-kakao w-100">카카오 로그인</button>
+        </div>
+    </div>
+</section>
+
+
+
+@@include('partials/html-end.html')

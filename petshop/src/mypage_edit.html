@@ -1,0 +1,99 @@
+@@include('partials/html-start.html', { "title": "마이페이지" })
+<header class="header_menu  sty_1">
+    <div class="inner d-flex justify-content-between align-items-center">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">마이페이지</p>
+        <div class="d-flex gap-3">
+            <div class="search_btn">
+                <a href="search.html">
+                    <img src="@@imgPath/ico/ico_search.png" style="width: 25px;" alt="">
+                </a>
+            </div>
+            <div class="cart_btn">
+                <a href="cart.html">
+                    <img src="@@imgPath/ico/ico_cart.png" style="width: 25px;" alt="장바구니">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="inner">
+        <div class="profile-wrapper">
+            <div class="profile-image">
+                <img id="profileImg" src="@@imgPath/img/img_item_sample.png" alt="프로필">
+                <label for="fileInput" class="profile-edit">
+                    <img src="@@imgPath/ico/ico_menu_edit.png" alt="edit">
+                </label>
+                <input type="file" id="fileInput" accept="image/*" style="display:none;">
+            </div>
+            <div class="profile-info">
+                <p class="category">펫샵</p>
+                <h3 class="shop-name">야옹아 멍멍해봐</h3>
+            </div>
+        </div>
+
+        <div class="form-group mt-30">
+            <div class="mb-20">
+                <label class="input_label" for="email">이메일</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    placeholder="example@emample.com" value="example@emample.com">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="mb-20">
+                <label class="input_label" for="password">비밀번호</label>
+                <input type="password" class="form-control mb-10" id="password" placeholder="영문/숫자/특수문자 혼합 8-20자"
+                    value="">
+                <input type="password" class="form-control" id="password" placeholder="영문/숫자/특수문자 혼합 8-20자" value="">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="mb-20">
+                <label class="input_label" for="nickname">닉네임</label>
+                <input type="text" class="form-control" id="nickname" placeholder="사용할 닉네임을 입력해주세요" value="야옹아 멍멍해봐">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="mb-20">
+                <label class="input_label require" for="phone">휴대폰 번호</label>
+                <input type="text" class="form-control mb-10" id="phone" aria-describedby="emailHelp"
+                    placeholder="'-'를 제외한 숫자만 입력해주세요">
+                <input type="text" class="form-control" id="phone" aria-describedby="emailHelp"
+                    placeholder="인증번호 6자리를 입력해주세요">
+                <div class="invalid-feedback">
+                    Please choose a username.
+                </div>
+                <button class="btn btn-main w-100 certi_btn mt-10">인증하기</button>
+            </div>
+        </div>
+    </div>
+    <div class="fixed_bottom">
+        <button class="btn btn-main w-100">정보수정하기</button>
+    </div>
+</section>
+
+
+<script>
+    document.getElementById('fileInput').addEventListener('change', function (event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('profileImg').src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+</script>
+@@include('partials/html-end.html')

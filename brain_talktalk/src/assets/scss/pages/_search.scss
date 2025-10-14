@@ -1,0 +1,61 @@
+.search_bar {
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+  padding-block: 1rem;
+  background-color: #f5f5f5;
+  .sch_ip {
+    margin-inline: 15px;
+  }
+}
+
+.recent_word {
+  .sub_tit {
+    margin-bottom: 2rem;
+  }
+  .word {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: scroll;
+    .list {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.membership_wrap {
+  .sub_tit {
+    margin-bottom: 2rem;
+    &.down_arr {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 0;
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1.6rem;
+        height: 1.6rem;
+        top: 50%;
+        right: -2rem;
+        transform: translateY(-50%);
+        background: url('../../assets/images/icon/selectarrow.png') no-repeat center / cover;
+      }
+    }
+  }
+}
+
+.memship_list {
+  .swiper-wrapper {
+    .swiper-slide {
+      .item_box {
+        .form-check {
+          position: absolute;
+          top: 1.4rem;
+          left: 1.2rem;
+          z-index: 40;
+        }
+      }
+    }
+  }
+}

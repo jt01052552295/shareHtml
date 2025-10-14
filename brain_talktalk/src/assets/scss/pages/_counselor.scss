@@ -1,0 +1,293 @@
+.counselor {
+    display: flex;
+    gap: 80px;
+    .left_box {
+        flex-shrink: 0;
+        .thumb_con {
+            margin-bottom: 20px;
+            .img_con {
+                .img_thumb {
+                }
+            }
+        }
+        .txt_con {
+            .name {
+                font: {
+                    size: 2.4rem;
+                    weight: 700;
+                }
+            }
+            .rating {
+                padding-left: 10px;
+                .rate {
+                    position: relative;
+                    padding-left: 30px;
+                    font: {
+                        size: 2.4rem;
+                        weight: 700;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 25px;
+                        height: 25px;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        background: url("../../assets/images/icon/ico_rate_star.png") no-repeat center / cover;
+                    }
+                    span {
+                        font: {
+                            size: 1.6rem;
+                            weight: 500;
+                        }
+                        color: #b2b2b2;
+                    }
+                }
+            }
+        }
+        .hash {
+            display: flex;
+            gap: 3px;
+            margin-top: 5px;
+            .tag {
+                padding: 3px 6px;
+                border-radius: 10px;
+                font: {
+                    size: 1.2rem;
+                    weight: 500;
+                }
+                &:nth-child(1) {
+                    background-color: #e3f2fd; // 연한 하늘색
+                    color: #1e88e5; // 파란 계열 진한색
+                }
+                &:nth-child(2) {
+                    background-color: #e8f5e9; // 연한 초록
+                    color: #43a047; // 진한 초록
+                }
+                &:nth-child(3) {
+                    background-color: #fff8e1; // 연한 노랑
+                    color: #f9a825; // 머스타드 계열 진한색
+                }
+                &:nth-child(4) {
+                    background-color: #f3e5f5; // 연한 보라
+                    color: #8e24aa; // 진한 보라
+                }
+                &:nth-child(5) {
+                    background-color: #ffebee; // 연한 핑크
+                    color: #e53935; // 진한 레드/핑크
+                }
+                &:nth-child(6) {
+                    background-color: #e0f7fa; // 연한 민트
+                    color: #00838f; // 진한 민트/청록
+                }
+            }
+        }
+    }
+    .right_box {
+        width: 100%;
+        .point_con {
+            padding: 45px 35px;
+            background-color: #e3f2fd;
+            border-radius: 15px;
+            .list {
+                position: relative;
+                margin-bottom: 20px;
+                padding-left: 30px;
+                font: {
+                    size: 1.8rem;
+                    weight: 500;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    top: 6px;
+                    left: 0;
+                    border-radius: 50%;
+                    background-color: #222;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .trait {
+            margin-top: 45px;
+            .txt_con {
+                p {
+                    font: {
+                        size: 1.8rem;
+                        weight: 500;
+                    }
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .history_con {
+            display: flex;
+            gap: 70px;
+            margin-top: 45px;
+            .box {
+                .list {
+                    position: relative;
+                    margin-bottom: 10px;
+                    padding-left: 16px;
+                    font: {
+                        size: 1.8rem;
+                        weight: 700;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 5px;
+                        height: 5px;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        border-radius: 50%;
+                    }
+                }
+
+                &.history {
+                    .tit {
+                        color: #1e88e5;
+                    }
+                    .list {
+                        color: #1e88e5;
+                        &::before {
+                            background-color: #1e88e5;
+                        }
+                    }
+                }
+                &.qualifications {
+                    .tit {
+                        color: #43a047;
+                    }
+                    .list {
+                        color: #43a047;
+                        &::before {
+                            background-color: #43a047;
+                        }
+                    }
+                }
+            }
+        }
+
+        .specialization {
+            margin-block: 45px;
+            padding-bottom: 45px;
+            border-bottom: 1px solid #eee;
+            .t1 {
+                font: {
+                    size: 1.8rem;
+                    weight: 500;
+                }
+            }
+        }
+    }
+
+    .treatment_list {
+        .list {
+            display: flex;
+            gap: 20px;
+            .thumb_con {
+                .img_con {
+                    width: 50px;
+                    height: 50px;
+                    .img_thumb {
+                    }
+                }
+            }
+
+            .review_desc {
+                margin-bottom: 10px;
+                .writer_info {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding-block: 15px;
+                    .name {
+                        font: {
+                            size: 1.6rem;
+                            weight: 700;
+                        }
+                    }
+                    .rating {
+                        .sum {
+                            position: relative;
+                            padding-left: 25px;
+                            font: {
+                                size: 1.8rem;
+                                weight: 700;
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                display: block;
+                                width: 20px;
+                                height: 20px;
+                                top: 50%;
+                                left: 0;
+                                transform: translateY(-50%);
+                                background: url("../../assets/images/icon/ico_rate_star.png") no-repeat center / cover;
+                            }
+                        }
+                    }
+                }
+                .desc {
+                    font: {
+                        size: 1.6rem;
+                        weight: 500;
+                    }
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    .tit {
+        margin-bottom: 15px;
+        font: {
+            size: 2.4rem;
+            weight: 700;
+        }
+        .num {
+            color: #b2b2b2;
+        }
+    }
+    .fixed_bottom {
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1000px;
+        width: 100%;
+        .btn {
+            padding-block: 10px;
+            font: {
+                size: 1.8rem;
+                weight: 700;
+            }
+        }
+    }
+}
+
+.thumb_con {
+    .img_con {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        .img_thumb {
+        }
+    }
+}

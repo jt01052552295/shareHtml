@@ -1,0 +1,42 @@
+.header_menu {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    z-index: 100;
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        height: 70px;
+        margin: 0 auto;
+    }
+    .logo_con {
+        img {
+            height: 20px;
+        }
+    }
+    .gnb {
+        .depth_01 {
+            display: flex;
+            gap: 20px;
+            .menu {
+                a {
+                    font: {
+                        size: 1.6rem;
+                        weight: 500;
+                    }
+                    transition: all 0.3;
+                    &:hover {
+                        font: {
+                            weight: 700;
+                        }
+                        color: #00412e;
+                        transition: all 0.3;
+                    }
+                }
+            }
+        }
+    }
+}

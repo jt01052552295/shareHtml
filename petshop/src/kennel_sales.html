@@ -1,0 +1,213 @@
+@@include('partials/html-start.html', { "title": "판매내역" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">판매내역</p>
+    </div>
+</header>
+
+<section class="contents pb-50">
+    <div class="inner">
+        <div class="search_con">
+            <input type="text" class="form-control search_input" placeholder="검색어를 입력하세요">
+            <button class="btn btn-link">
+                <img src="@@imgPath/ico/ico_search.png" alt="검색" class="search_icon">
+            </button>
+        </div>
+
+        <ul class="pill_con mt-15">
+            <li class="pill active">전체</li>
+            <li class="pill">배송완료</li>
+            <li class="pill">배송준비중</li>
+            <li class="pill">주문취소</li>
+        </ul>
+
+        <div class="kennel_sales mt-30">
+            <ul class="cart_item">
+                <li class="list">
+                    <div class="date_con">
+                        <p class="date">2025.08.12</p>
+                        <div class="more_menu">
+                            <p class="condition">배송완료</p>
+                            <button class="btn btn-link p-0" data-bs-toggle="offcanvas" data-bs-target="#exposure"
+                                aria-controls="offcanvasBottom">
+                                <img src="@@imgPath/ico/ico_more_menu.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="info_con">
+                        <div class="item_info">
+                            <div class="box">
+                                <div class="rect">
+                                    <img class="img" src="@@imgPath/img/img_item_sample.png" alt="상품이미지">
+                                </div>
+                                <div class="txt_con">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="brand">포메라니안 / 남</p>
+                                        <p class="nose ">비문</p>
+                                    </div>
+                                    <div class="breed_con">
+                                        <p class="breed"><b>모견</b>포메라니안</p>
+                                        <p class="breed"><b>부견</b>포메라니안</p>
+                                    </div>
+                                    <p class="birth">2025.02.01 (6개월)</p>
+                                </div>
+                            </div>
+                            <p class="vaccine" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                aria-controls="offcanvasBottom">예방접종여부</p>
+                        </div>
+                    </div>
+                    <div class="price_con">
+                        <p class="t1">금액</p>
+                        <p class="price">250,000원</p>
+                    </div>
+                    <div class="buyer">
+                        <p class="t1">구매자 : 냥냥뇽뇽(010-****-1234)</p>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="date_con">
+                        <p class="date">2025.08.12</p>
+                        <div class="more_menu">
+                            <p class="condition">배송준비중</p>
+                            <button class="btn btn-link p-0" data-bs-toggle="offcanvas" data-bs-target="#exposure"
+                                aria-controls="offcanvasBottom">
+                                <img src="@@imgPath/ico/ico_more_menu.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="info_con">
+                        <div class="item_info">
+                            <div class="box">
+                                <div class="rect">
+                                    <img class="img" src="@@imgPath/img/img_item_sample.png" alt="상품이미지">
+                                </div>
+                                <div class="txt_con">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="brand">포메라니안 / 남</p>
+                                        <p class="nose ">비문</p>
+                                    </div>
+                                    <div class="breed_con">
+                                        <p class="breed"><b>모견</b>포메라니안</p>
+                                        <p class="breed"><b>부견</b>포메라니안</p>
+                                    </div>
+                                    <p class="birth">2025.02.01 (6개월)</p>
+                                </div>
+                            </div>
+                            <p class="vaccine" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                aria-controls="offcanvasBottom">예방접종여부</p>
+                        </div>
+                    </div>
+                    <div class="price_con">
+                        <p class="t1">금액</p>
+                        <p class="price">250,000원</p>
+                    </div>
+                    <div class="buyer">
+                        <p class="t1">구매자 : 냥냥뇽뇽(010-****-1234)</p>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="date_con">
+                        <p class="date">2025.08.12</p>
+                        <div class="more_menu">
+                            <p class="condition cancel">주문취소</p>
+                            <button class="btn btn-link p-0" data-bs-toggle="offcanvas" data-bs-target="#exposure"
+                                aria-controls="offcanvasBottom">
+                                <img src="@@imgPath/ico/ico_more_menu.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="info_con">
+                        <div class="item_info">
+                            <div class="box">
+                                <div class="rect">
+                                    <img class="img" src="@@imgPath/img/img_item_sample.png" alt="상품이미지">
+                                </div>
+                                <div class="txt_con">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="brand">포메라니안 / 남</p>
+                                        <p class="nose ">비문</p>
+                                    </div>
+                                    <div class="breed_con">
+                                        <p class="breed"><b>모견</b>포메라니안</p>
+                                        <p class="breed"><b>부견</b>포메라니안</p>
+                                    </div>
+                                    <p class="birth">2025.02.01 (6개월)</p>
+                                </div>
+                            </div>
+                            <p class="vaccine" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                aria-controls="offcanvasBottom">예방접종여부</p>
+                        </div>
+                    </div>
+                    <div class="price_con">
+                        <p class="t1">금액</p>
+                        <p class="price">250,000원</p>
+                    </div>
+                    <div class="buyer">
+                        <p class="t1">구매자 : 냥냥뇽뇽(010-****-1234)</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+<div class="offcanvas offcanvas-bottom exposure" tabindex="-1" id="exposure" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">상태설정</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+        <ul class="exposure_con">
+            <li class="list on">배송완료</li>
+            <li class="list">배송준비중</li>
+            <li class="list">주문취소</li>
+        </ul>
+    </div>
+</div>
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+        <p class="offcanvas-title" id="offcanvasBottomLabel">예방접종</p>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+        <ul class="vaccine_list">
+            <li class="list">
+                <p class="vaccine on">코로나 장염 1차</p>
+            </li>
+            <li class="list">
+                <p class="vaccine off">코로나 장염 2차</p>
+            </li>
+            <li class="list">
+                <p class="vaccine on">켄넬코프 1차</p>
+            </li>
+            <li class="list">
+                <p class="vaccine off">켄넬코프 2차</p>
+            </li>
+            <li class="list">
+                <p class="vaccine on">신종플루 1차</p>
+            </li>
+            <li class="list">
+                <p class="vaccine on">광견병 예방접종</p>
+            </li>
+            <li class="list">
+                <p class="vaccine on">심장사상충 예방</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var recent_search = new Swiper(".search_word", {
+        slidesPerView: "auto",
+        spaceBetween: "5"
+    });
+
+</script>
+@@include('partials/html-end.html')

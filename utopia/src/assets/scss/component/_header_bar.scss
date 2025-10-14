@@ -1,0 +1,115 @@
+.header_bar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 580px;
+    width: 100%;
+    height: 50px;
+    padding-inline: 1.6rem;
+    background-color: #000;
+    z-index: 100;
+    .back {
+        width: 24px;
+        img {
+            width: 100%;
+        }
+    }
+    .close {
+        width: 24px;
+        img {
+            width: 100%;
+        }
+    }
+    .search {
+        width: 24px;
+        img {
+            width: 100%;
+        }
+    }
+    .more {
+        width: 24px;
+        img {
+            width: 100%;
+        }
+    }
+    .title {
+        font: {
+            size: 1.7rem;
+            weight: 700;
+        }
+        color: #fff;
+    }
+    &.sty01 {
+        justify-content: space-between;
+        align-items: center;
+        .register_btn {
+            font: {
+                size: 1.7rem;
+                weight: 700;
+            }
+            color: #ffd2c2;
+        }
+    }
+    &.sty02 {
+        justify-content: space-between;
+        align-items: center;
+        .logo_img {
+            display: block;
+            width: 146px;
+            img {
+                width: 100%;
+            }
+        }
+        .lang {
+            width: 24px;
+            height: 24px;
+            border: none;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &.sty03 {
+        justify-content: center;
+        align-items: center;
+        .close {
+            position: absolute;
+            top: 50%;
+            right: 1.6rem;
+            transform: translateY(-50%);
+        }
+    }
+    &.sty04 {
+        justify-content: center;
+        align-items: center;
+        .form-control {
+            background-color: transparent;
+            border: none;
+            font: {
+                size: 1.7rem;
+                weight: 700;
+            }
+            color: #fff;
+            &::placeholder {
+                color: var(--gray-500);
+            }
+        }
+    }
+    &.sty05 {
+        justify-content: center;
+        align-items: center;
+        .back {
+            position: absolute;
+            top: 50%;
+            left: 1.6rem;
+            transform: translateY(-50%);
+        }
+    }
+}
+.header_box {
+    .header_bar {
+        position: relative;
+    }
+}

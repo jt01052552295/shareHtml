@@ -1,0 +1,56 @@
+.popover-wrapper {
+  position: relative;
+  display: inline-block;
+
+  .popover_con {
+    position: relative;
+    text-align: right;
+  }
+}
+
+.popover-box {
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  z-index: 100;
+  display: none;
+
+  /* ✅ 반응형 너비 설정 */
+  max-width: 500px;
+  min-width: 210px;
+  width: 100%;
+
+  &.left {
+    top: -200%;
+    left: 0;
+  }
+
+  &.right {
+    top: -200%;
+    right: 0;
+  }
+
+  &.show {
+    display: block;
+  }
+
+  //   &::after {
+  //     content: '';
+  //     position: absolute;
+  //     bottom: -6px;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //     border-width: 6px;
+  //     border-style: solid;
+  //     border-color: #333 transparent transparent transparent;
+  //   }
+}
+
+@media (max-width: 480px) {
+  .popover-box {
+    min-width: 170px;
+  }
+}

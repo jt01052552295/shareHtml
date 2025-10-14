@@ -1,0 +1,139 @@
+@@include('partials/html-start.html', { "title": "마이페이지" })
+<header class="header_bar sty03">
+    <p class="title">마이페이지</p>
+</header>
+<section class="contents">
+    <div class="my_profile">
+        <div class="profile_con">
+            <div class="profile_img">
+                <img src="@@imgPath/img/img_profile_sample.jpg" alt="프로필" class="img">
+            </div>
+            <div class="txt_con">
+                <div class="grade">일반회원</div>
+                <p class="nickname">벤츠가 최고다</p>
+            </div>
+            <a href="mypage_edit_01.html" class="profile_setting">
+                <img src="@@imgPath/ico/ico_profile.png" alt="프로필" class="img">
+            </a>
+        </div>
+        <div class="inner">
+            <button class="btn btn-md btn-outline-light w-100" data-toggle="modal" data-target="#exampleModalCenter">딜러
+                회원
+                승인 요청</button>
+        </div>
+    </div>
+    <div class="inner">
+        <ul class="mypage_menu">
+            <li class="menu board">
+                <a class="link" href="post_manage.html">
+                    <p class="t1">게시글 관리</p>
+                </a>
+            </li>
+            <li class="menu reply">
+                <a class="link" href="post_reply_manage.html">
+                    <p class="t1">댓글 관리</p>
+                </a>
+            </li>
+            <li class="menu inquiry">
+                <a class="link" href="inquiry.html">
+                    <p class="t1">1:1문의</p>
+                </a>
+            </li>
+            <li class="menu notice">
+                <a class="link" href="notice.html">
+                    <p class="t1">공지사항</p>
+                </a>
+            </li>
+            <li class="menu faq">
+                <a class="link" href="faq.html">
+                    <p class="t1">FAQ</p>
+                </a>
+            </li>
+            <li class="menu logout">
+                <a class="link" href="log.html">
+                    <p class="t1">로그아웃</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<nav class="ft_nav">
+    <ul class="bottom_menu">
+        <li class="menu">
+            <a href="category_01.html">
+                <div class="img_con">
+                    <img src="@@imgPath/ico/ico_menu_cate.png" alt="카테고리">
+                </div>
+                <div class="txt_con">
+                    <p class="t1">카테고리</p>
+                </div>
+            </a>
+        </li>
+        <li class="menu">
+            <a href="search.html">
+                <div class="img_con">
+                    <img src="@@imgPath/ico/ico_menu_search.png" alt="검색">
+                </div>
+                <div class="txt_con">
+                    <p class="t1">검색</p>
+                </div>
+            </a>
+        </li>
+        <li class="menu home">
+            <a href="/" class="link">
+                <div class="img_con">
+                    <img src="@@imgPath/logo/logo_menu.png" alt="홈">
+                </div>
+                <div class="txt_con">
+                    <p class="t1">홈</p>
+                </div>
+            </a>
+        </li>
+        <li class="menu">
+            <a href="wish.html">
+                <div class="img_con">
+                    <img src="@@imgPath/ico/ico_menu_wish.png" alt="찜">
+                </div>
+                <div class="txt_con">
+                    <p class="t1">찜</p>
+                </div>
+            </a>
+        </li>
+        <li class="menu on">
+            <a href="mypage.html">
+                <div class="img_con">
+                    <img src="@@imgPath/ico/ico_menu_mypage_on.png" alt="마이페이지">
+                </div>
+                <div class="txt_con">
+                    <p class="t1">마이페이지</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered layout" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="basic">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_mark.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="t1">딜러 회원 승인 요청하시겠습니까?</p>
+                        <p class="t2">최고관리자 승인 후 딜러 회원 승인 처리 됩니다.</p>
+                    </div>
+                    <div class="button_con two">
+                        <button class="btn btn-outline-light" data-dismiss="modal">취소</button>
+                        <button class="btn btn-secondary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('partials/html-end.html')

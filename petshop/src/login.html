@@ -1,0 +1,82 @@
+@@include('partials/html-start.html', { "title": "로그인" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">로그인</p>
+    </div>
+</header>
+<section class="contents">
+    <div class="inner login_con">
+        <div class="login_logo">
+            <img src="@@imgPath/logo/logo_logo.png" alt="펫샵">
+        </div>
+
+        <ul class="tab_con mt-10 mb-20">
+            <li class="tab active">
+                <a class="link" href="javascript:void(0)">
+                    <p class="t1">견사회원</p>
+                </a>
+            </li>
+            <li class="tab">
+                <a class="link" href="javascript:void(0)">
+                    <p class="t1">펫샵회원</p>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="sns_login mb-50">
+            <li class="list mb-15">
+                <button class="btn kakao w-100 btn-height">카카오톡으로 시작하기</button>
+            </li>
+            <li class="list">
+                <button class="btn naver w-100 btn-height">네이버로 시작하기</button>
+            </li>
+        </ul>
+
+        <ul class="email_login">
+            <li class="list">
+                <a href="email_login.html" class="link">이메일로 로그인</a>
+            </li>
+            <li class="list">
+                <a href="email_membership.html" class="link">이메일로 회원가입</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .modal {
+        position: fixed !important;
+        z-index: 9999 !important;
+    }
+
+    .modal-backdrop {
+        z-index: 9998 !important;
+    }
+</style>
+
+@@include('partials/html-end.html')

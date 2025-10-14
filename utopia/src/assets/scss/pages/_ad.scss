@@ -1,0 +1,13 @@
+.ad_con {
+    position: fixed;
+    top: 0;
+    right: calc((100% / 2) - 720px);
+    width: 400px;
+    height: 100vh;
+
+    .ad_box {
+        .ad_img {
+            width: 100%;
+        }
+    }
+}

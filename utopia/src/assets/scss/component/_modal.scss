@@ -1,0 +1,61 @@
+.modal {
+    .layout {
+        max-width: 310px;
+        width: 100%;
+        margin: 0 auto;
+        .modal-content {
+            .modal-body {
+                padding: 20px;
+                .basic {
+                    .img_con {
+                        position: relative;
+                        margin-bottom: 20px;
+                        text-align: center;
+                        .img {
+                            display: inline-block;
+                            width: 60px;
+                        }
+                    }
+                    .txt_con {
+                        text-align: center;
+                        .t1 {
+                            margin-bottom: 6px;
+                            font: {
+                                size: 1.7rem;
+                                weight: 600;
+                            }
+                        }
+                        .t2 {
+                            font: {
+                                size: 1.3rem;
+                                weight: 500;
+                            }
+                        }
+                    }
+                    .button_con {
+                        display: flex;
+                        margin-top: 15px;
+                        &.two {
+                            gap: 5px;
+                            .btn {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .declaration {
+        max-width: 480px;
+        .modal-body {
+            .form-check {
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

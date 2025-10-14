@@ -1,0 +1,36 @@
+.other_amount {
+  .tit {
+    font: {
+      size: 2rem;
+      weight: 700;
+    }
+  }
+  .t1 {
+    font: {
+      size: 1.6rem;
+      weight: 400;
+    }
+    line-height: 2.4rem;
+  }
+  .tax {
+    margin-bottom: 3rem;
+    .tax_con {
+      .list {
+        position: relative;
+        padding-left: 2rem;
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 3px;
+          height: 3px;
+          border-radius: 50%;
+          top: 50%;
+          left: 0.5rem;
+          transform: translateY(-50%);
+          background-color: #222;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+@@include('partials/html-start.html', { "title": "1:1문의" })
+<header class="header_bar sty05">
+    <button class="btn back p-0 back">
+        <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+    </button>
+    <p class="title">1:1 문의</p>
+</header>
+<section class="contents">
+    <div class="inner">
+
+        <div class="inquiry_filter mt-30">
+            <div class="dropdown" data-bs-toggle="offcanvas" data-bs-target="#period_filter"
+                aria-controls="offcanvasBottom">
+                <p class="t1">최근 1개월</p>
+            </div>
+            <div class="dropdown" data-bs-toggle="offcanvas" data-bs-target="#filter_condition"
+                aria-controls="offcanvasBottom">
+                <p class="t1">전체</p>
+            </div>
+        </div>
+
+        <ul class="qa-list mt-10">
+            <!-- 카드 예시 (복제해서 사용) -->
+            <li class="qa-card" data-expanded="false">
+                <button class="card-header" aria-expanded="false">
+                    <div class="condition">답변완료</div>
+                    <h3 class="title">제품에 대한 문의제목이 들어갑니다.</h3>
+                    <time class="date">2025.08.02</time>
+                    <span class="chev" aria-hidden="true"><img src="@@imgPath/ico/ico_selectarrow.png" alt=""></span>
+                </button>
+
+                <div class="card-body">
+                    <p class="summary">
+                        문의 내용 들어갑니다. 문의 내용 들어갑니다. 문의 내용 들어갑니다. 문의 내용 들어갑니다.
+                        문의 내용 들어갑니다. 문의 내용 들어갑니다. 문의 내용 들어갑니다. 문의 내용 들어갑니다.
+                    </p>
+
+                    <div class="answer-block">
+                        <div class="box">
+                            <div class="avatar" aria-hidden="true">
+                                <img src="@@imgPath/logo/logo_avatar.png" alt="유토피아" class="avatar">
+                            </div>
+                            <div class="answer-content">
+                                <div class="answer-meta">
+                                    <div class="answer-name">유토피아 코리아</div>
+                                    <div class="answer-date">2025.08.02</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="answer-text">답변 내용 들어갑니다. 답변 내용 들어갑니다. 답변 내용 들어갑니다.</p>
+                    </div>
+
+                </div>
+            </li>
+
+            <!-- 다른 카드 (예: 답변 대기) -->
+            <li class="qa-card" data-expanded="false">
+                <button class="card-header" aria-expanded="false">
+                    <div class="condition pending">답변대기</div>
+                    <h3 class="title">제품에 대한 문의제목이 들어갑니다.</h3>
+                    <time class="date">2025.07.01</time>
+                    <span class="chev" aria-hidden="true"><img src="@@imgPath/ico/ico_selectarrow.png" alt=""></span>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="write_btn">
+        <a href="inquiry_write.html" class="link">
+            <img src="@@imgPath/ico/ico_write_white.png" alt="글쓰기" class="img">
+        </a>
+    </div>
+    <div class="offcanvas offcanvas-bottom filter" tabindex="-1" id="period_filter"
+        aria-labelledby="offcanvasBottomLabel">
+
+        <div class="offcanvas-body small">
+            <p class="tit">기간선택</p>
+            <div class="btn-group w-100" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">1개월</button>
+                <button type="button" class="btn btn-outline-light">3개월</button>
+                <button type="button" class="btn btn-outline-light">지난달</button>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-bottom filter" tabindex="-1" id="filter_condition"
+        aria-labelledby="offcanvasBottomLabel">
+
+        <div class="offcanvas-body small">
+            <p class="tit">답변유무</p>
+            <div class="btn-group w-100" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">전체</button>
+                <button type="button" class="btn btn-outline-light">답변완료</button>
+                <button type="button" class="btn btn-outline-light">답변대기</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('click', (e) => {
+        const header = e.target.closest('.card-header');
+        if (!header) return;
+        const card = header.closest('.qa-card');
+        const expanded = card.classList.toggle('expanded');
+        // 상태 속성(접근성)
+        header.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        card.setAttribute('data-expanded', expanded ? 'true' : 'false');
+    });
+</script>
+
+@@include('partials/html-end.html')

@@ -1,0 +1,36 @@
+@@include('partials/html-start.html', { "title": "커뮤니티 글쓰기" })
+<header class="header_bar sty01">
+    <button class="btn p-0 back">
+        <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+    </button>
+    <p class="title">명품 게시글 등록</p>
+    <button class="btn p-0">
+        <p class="register_btn">등록</p>
+    </button>
+</header>
+<section class="contents">
+    <div class="inner">
+        <div class="form-group mt-30">
+            <label class="tit" for="formGroupExampleInput">제목 <span class="required">*</span></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="제목을 입력하세요.">
+        </div>
+
+        <div class="upload_con mt-20">
+            <p class="title">대표 이미지</p>
+            <div class="upload-box" id="uploadBox">
+                <!-- 업로드 버튼 -->
+                <label class="upload-item upload-btn" id="uploadBtn">
+                    <input type="file" id="fileInput" accept="image/*" multiple>
+                    <div class="upload-placeholder">
+                        <img src="@@imgPath/ico/ico_camera_white.png" alt="" class="ico_camera">
+                        <span class="count-label">0/1</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@@include('partials/html-end.html')

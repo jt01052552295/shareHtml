@@ -1,0 +1,42 @@
+@@include('partials/html-start.html', { "title": "이메일 로그인" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">이메일 로그인</p>
+    </div>
+</header>
+<section class="contents">
+    <ul class="tab_con mt-10 mb-20">
+        <li class="tab active">
+            <a class="link" href="javascript:void(0)">
+                <p class="t1">견사회원</p>
+            </a>
+        </li>
+        <li class="tab">
+            <a class="link" href="javascript:void(0)">
+                <p class="t1">펫샵회원</p>
+            </a>
+        </li>
+    </ul>
+    <div class="inner">
+        <div class="form-group">
+            <div class="mb-15">
+                <label class="input_label" for="name">아이디</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="이메일">
+            </div>
+
+            <div class="">
+                <label class="input_label" for="phone">비밀번호</label>
+                <input type="email" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="비밀번호">
+            </div>
+        </div>
+        <button class="btn btn-secondary w-100 mt-40 btn-height" onclick="location.href=`./`">로그인</button>
+    </div>
+
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

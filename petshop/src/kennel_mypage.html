@@ -1,0 +1,151 @@
+@@include('partials/html-start.html', { "title": "마이페이지" })
+<header class="header_menu  sty_1">
+    <div class="inner d-flex justify-content-between align-items-center">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">마이페이지</p>
+        <div class="d-flex gap-3">
+            <div class="search_btn">
+                <a href="search.html">
+                    <img src="@@imgPath/ico/ico_search.png" style="width: 25px;" alt="">
+                </a>
+            </div>
+            <div class="cart_btn">
+                <a href="cart.html">
+                    <img src="@@imgPath/ico/ico_cart.png" style="width: 25px;" alt="장바구니">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="inner">
+        <div class="user_info">
+            <div class="box">
+                <div class="thumb_con">
+                    <img src="@@imgPath/img/img_item_sample.jpg" alt="" class="thumb">
+                </div>
+                <div class="txt_con">
+                    <p class="t1">펫샵</p>
+                    <p class="nickname">야옹아멍멍해봐</p>
+                </div>
+            </div>
+            <a href="mypage_edit.html" class="edit">
+                <img src="@@imgPath/ico/ico_menu_edit.png" alt="내정보 수정하기">
+            </a>
+        </div>
+
+        <ul class="product_situation mt-30">
+            <li class="item">
+                <p class="tit">총 상품</p>
+                <p class="sum main">16</p>
+            </li>
+            <li class="item">
+                <p class="tit">판매중</p>
+                <p class="sum">7</p>
+            </li>
+            <li class="item">
+                <p class="tit">판매완료</p>
+                <p class="sum">5</p>
+            </li>
+        </ul>
+
+        <ul class="menu_con mt-20 pb-20">
+            <li class="menu">
+                <a href="" class="link register">
+                    <p class="t1">상품등록</p>
+                </a>
+            </li>
+            <li class="menu sale_history">
+                <a href="" class="link sale_history">
+                    <p class="t1">판매내역</p>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="" class="link shorts">
+                    <p class="t1">숏츠관리</p>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="" class="link product_manage">
+                    <p class="t1">상품관리</p>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="" class="link print">
+                    <p class="t1">비문등록</p>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="" class="link notice">
+                    <p class="t1">공지사항</p>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="" class="link inquiry">
+                    <p class="t1">문의하기</p>
+                </a>
+            </li>
+            <li class="menu review_manage">
+                <a href="" class="link review">
+                    <p class="t1">리뷰관리</p>
+                </a>
+            </li>
+        </ul>
+
+        <a href="javascript:void(0)" class="logout mt-20">
+            <p class="t1">로그아웃</p>
+        </a>
+    </div>
+</section>
+
+<nav class="ft_nav">
+    <div class="inner">
+        <ul class="ft_menu">
+            <li class="list">
+                <a href="order_list.html" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/ico/ico_ft_order.png" alt="주문내역" class="icon">
+                    </div>
+                    <p class="tit">주문내역</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="search.html" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/ico/ico_ft_search.png" alt="검색" class="icon">
+                    </div>
+                    <p class="tit">검색</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/ico/ico_ft_home.png" alt="홈" class="icon">
+                    </div>
+                    <p class="tit">홈</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="shorts.html" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/ico/ico_ft_shorts.png" alt="숏츠" class="icon">
+                    </div>
+                    <p class="tit">숏츠</p>
+                </a>
+            </li>
+            <li class="list on">
+                <a href="mypage.html" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/ico/ico_ft_mypage_on.png" alt="내정보" class="icon">
+                    </div>
+                    <p class="tit">내정보</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+@@include('partials/html-end.html')

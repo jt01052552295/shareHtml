@@ -1,0 +1,33 @@
+// 공통
+
+ol,
+ul,
+li {
+  text-decoration: none;
+}
+
+// 부트스트랩 수정
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  &:hover {
+    background-color: var(--primary-hover);
+  }
+}
+
+.btn-outline-primary {
+  &:hover {
+    // background-color: ;
+  }
+}

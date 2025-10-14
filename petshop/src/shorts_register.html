@@ -1,0 +1,72 @@
+@@include('partials/html-start.html', { "title": "숏츠등록" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">숏츠등록</p>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="inner">
+        <ul class="shorts_register pb-50">
+            <li class="list">
+                <div class="img_con add">
+                    <img src="@@imgPath/ico/btn_add_img.png" alt="" class="camera">
+                </div>
+            </li>
+            <li class="list">
+                <input type="checkbox" id="cb1" class="cb-input" />
+                <label for="cb1" class="cb-label tit"></label>
+                <div class="img_con">
+                    <img src="@@imgPath/img/img_shorts_01.png" alt="" class="shorts">
+                </div>
+            </li>
+            <li class="list">
+                <input type="checkbox" id="cb1" class="cb-input" />
+                <label for="cb1" class="cb-label tit"></label>
+                <div class="img_con">
+                    <img src="@@imgPath/img/img_shorts_02.png" alt="" class="shorts">
+                </div>
+            </li>
+            <li class="list">
+                <input type="checkbox" id="cb1" class="cb-input" />
+                <label for="cb1" class="cb-label tit"></label>
+                <div class="img_con">
+                    <img src="@@imgPath/img/img_shorts_03.png" alt="" class="shorts">
+                </div>
+            </li>
+            <li class="list">
+                <input type="checkbox" id="cb1" class="cb-input" />
+                <label for="cb1" class="cb-label tit"></label>
+                <div class="img_con">
+                    <img src="@@imgPath/img/img_shorts_04.png" alt="" class="shorts">
+                </div>
+            </li>
+            <li class="list">
+                <input type="checkbox" id="cb1" class="cb-input" />
+                <label for="cb1" class="cb-label tit"></label>
+                <div class="img_con">
+                    <img src="@@imgPath/img/img_shorts_05.png" alt="" class="shorts">
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+<div class="offcanvas offcanvas-bottom exposure" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">설정</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+        <ul class="exposure_con">
+            <li class="list p-0">수정</li>
+            <li class="list p-0">삭제</li>
+        </ul>
+    </div>
+</div>
+@@include('partials/html-end.html')

@@ -1,0 +1,76 @@
+@@include('partials/html-start.html', { "title": "메인" })
+<header class="header_bar">
+
+</header>
+<section class="contents">
+    <div class="inner">
+        <div class="distance">
+            <div class="modal-header">
+                <p class="title">주행거리</p>
+                <span class="close">✕</span>
+            </div>
+            <div class="range-values" id="range-values">50,000km ~ 70,000km</div>
+
+            <div class="range-container">
+                <div class="range-track"></div>
+                <div class="range-fill" id="range-fill"></div>
+                <input type="range" id="minRange" min="0" max="400000" step="1000" value="50000">
+                <input type="range" id="maxRange" min="0" max="400000" step="1000" value="70000">
+            </div>
+
+            <div class="range-labels">
+                <span>0</span>
+                <span>400,000km</span>
+            </div>
+            <div class="btn_con filter_box">
+                <button class="btn-outline-light btn btn-lg refresh"><img class="refresh_img"
+                        src="@@imgPath/ico/ico_refresh.png" alt="새로고침" onclick="resetRange()">초기화</button>
+                <button class="btn btn-secondary btn-lg confirm">확인</button>
+            </div>
+
+        </div>
+
+        <script>
+            const minRange = document.getElementById("minRange");
+            const maxRange = document.getElementById("maxRange");
+            const rangeValues = document.getElementById("range-values");
+            const rangeFill = document.getElementById("range-fill");
+
+            function formatNumber(num) {
+                return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+
+            function updateRange() {
+                const min = parseInt(minRange.value);
+                const max = parseInt(maxRange.value);
+
+                if (min > max) {
+                    [minRange.value, maxRange.value] = [max, min];
+                }
+
+                rangeValues.textContent = `${formatNumber(minRange.value)}km ~ ${formatNumber(maxRange.value)}km`;
+
+                const percent1 = (minRange.value / minRange.max) * 100;
+                const percent2 = (maxRange.value / maxRange.max) * 100;
+
+                rangeFill.style.left = percent1 + "%";
+                rangeFill.style.width = (percent2 - percent1) + "%";
+            }
+
+            function resetRange() {
+                minRange.value = 0;
+                maxRange.value = 400000;
+                updateRange();
+            }
+
+            minRange.addEventListener("input", updateRange);
+            maxRange.addEventListener("input", updateRange);
+
+            updateRange();
+        </script>
+    </div>
+</section>
+
+
+
+@@include('partials/html-end.html')

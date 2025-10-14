@@ -1,0 +1,24 @@
+@@include('partials/html-start.html', { "title": "회원가입 완료" })
+<header class="header_bar sty05">
+    <button class="btn back p-0">
+        <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+    </button>
+    <p class="title">회원가입 완료</p>
+</header>
+<section class="contents">
+    <div class="inner">
+        <div class="complete_img">
+            <img src="@@imgPath/ico/ico_complete.png" alt="완료">
+        </div>
+
+        <div class="complete_txt">
+            <p class="t1">회원가입이 완료되었습니다.</p>
+            <p class="t2">이제 서비스를 편리하게 이용해 보세요!</p>
+        </div>
+
+        <button class="btn btn-lg btn-secondary w-100 mt-30" onclick="location.href=`index.html`">지금 바로 시작하기</button>
+    </div>
+</section>
+
+
+@@include('partials/html-end.html')

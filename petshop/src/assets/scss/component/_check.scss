@@ -1,0 +1,107 @@
+// ==========================
+// Custom Checkbox SCSS
+// ==========================
+
+// 공통 변수
+$cb-size: 2.4rem; // 1rem = 10px 기준이면 24px
+$cb-unchecked: url("../../assets/images/ico/ico_check_off.png");
+$cb-checked: url("../../assets/images/ico/ico_check_on.png");
+$cb-disabled-opacity: 0.5;
+
+// 체크박스 래퍼
+.checkbox-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+// 실제 input 숨기기 (접근성 유지)
+.cb-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
+
+    // focus 되었을 때 label::before에 효과 주기
+    &:focus + .cb-label::before,
+    &:focus-visible + .cb-label::before {
+        box-shadow: 0 0 0 3px rgba(51, 102, 255, 0.18);
+    }
+
+    // 체크된 상태
+    &:checked + .cb-label::before {
+        background-image: $cb-checked;
+    }
+
+    // 비활성화 상태
+    &:disabled + .cb-label {
+        opacity: $cb-disabled-opacity;
+        cursor: not-allowed;
+    }
+}
+
+// 라벨 (체크박스 대신 보이는 부분)
+.cb-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    font: {
+        size: 1.6rem;
+        weight: 500;
+    }
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: $cb-size;
+        height: $cb-size;
+        flex: 0 0 $cb-size;
+        background-image: $cb-unchecked;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: background-image 0.2s ease;
+        border-radius: 4px; // 원한다면 둥글게
+    }
+
+    &.tit {
+        font-weight: 700;
+    }
+}
+
+// 작은 사이즈 예시
+.checkbox-wrap.small {
+    .cb-label::before {
+        width: $cb-size * 0.7;
+        height: $cb-size * 0.7;
+        flex: 0 0 $cb-size * 0.7;
+    }
+}
+
+.cb_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .checkbox-wrap {
+        .cb-label {
+            .gray {
+                color: var(--gray-color);
+            }
+        }
+    }
+}
+
+.all_check {
+    display: block;
+    border-bottom: 1px solid var(--gray-color);
+}

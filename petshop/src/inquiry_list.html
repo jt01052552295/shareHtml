@@ -1,0 +1,46 @@
+@@include('partials/html-start.html', { "title": "문의내역" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">문의내역</p>
+    </div>
+</header>
+
+<section class="contents">
+    <ul class="inquiry_list">
+        <li class="list">
+            <a class="link" href="inquiry_detail.html">
+                <div class="txt_con">
+                    <p class="tit">1:1 문의 제목입니다.</p>
+                    <p class="date">2025.02.01</p>
+                </div>
+                <div class="condition">
+                    <button class="btn btn-main">답변완료</button>
+                </div>
+            </a>
+        </li>
+        <li class="list">
+            <a class="link" href="inquiry_detail.html">
+                <div class="txt_con">
+                    <p class="tit">1:1 문의 제목입니다.</p>
+                    <p class="date">2025.02.01</p>
+                </div>
+                <div class="condition">
+                    <button class="btn btn-outline-main">답변대기</button>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <div class="inquiry_write">
+        <a href="inquiry_write.html" class="link">
+            <img src="@@imgPath/ico/ico_review_write.png" alt="문의작성하기">
+        </a>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

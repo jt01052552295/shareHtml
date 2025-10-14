@@ -1,0 +1,27 @@
+.my_inquiry_list {
+  .title_con {
+    padding-top: 1.5rem;
+    .d-flex {
+      gap: 1rem;
+      margin-bottom: 15px;
+      .title {
+        font: {
+          size: 1.6rem;
+          weight: 700;
+        }
+      }
+      .btn {
+      }
+    }
+    .date {
+      font: {
+        size: 1.2rem;
+        weight: 500;
+      }
+      color: #777;
+    }
+    .border-bl {
+      padding-top: 1.5rem;
+    }
+  }
+}

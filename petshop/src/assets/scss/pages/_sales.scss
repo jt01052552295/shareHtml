@@ -1,0 +1,68 @@
+.kennel_sales {
+    .cart_item {
+        .list {
+            .date_con {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                border-bottom: 1px solid var(--gray-color);
+                .date {
+                    font: {
+                        size: 1.6rem;
+                        weight: 500;
+                    }
+                }
+                .more_menu {
+                    display: flex;
+                    align-items: center;
+                    .condition {
+                        font: {
+                            size: 1.2rem;
+                            weight: 500;
+                        }
+                        &.cancel {
+                            color: var(--main-color);
+                        }
+                    }
+                    .btn {
+                        img {
+                            width: 16px;
+                        }
+                    }
+                }
+            }
+
+            .info_con {
+                border-bottom: none;
+                .item_info {
+                    .box {
+                    }
+                }
+            }
+
+            .price_con {
+                padding-left: 10px;
+                padding-block: 0 10px;
+            }
+
+            .buyer {
+                padding: 15px 10px;
+                border-top: 1px solid var(--gray-color);
+                .t1 {
+                    font: {
+                        size: 1.4rem;
+                        weight: 500;
+                    }
+                    color: var(--gray-color);
+                }
+            }
+        }
+
+        .pill_con {
+            .btn {
+                border-radius: 30px;
+            }
+        }
+    }
+}

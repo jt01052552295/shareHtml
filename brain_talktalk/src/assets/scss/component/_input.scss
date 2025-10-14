@@ -1,0 +1,47 @@
+.form-label {
+  position: relative;
+  margin-bottom: 0.8rem;
+  font: {
+    size: 1.6rem;
+    weight: 600;
+  }
+  &.required {
+    &::after {
+      content: '*';
+      position: absolute;
+      top: -3px;
+      right: -10px;
+      font: {
+        size: 1.4rem;
+        weight: 700;
+      }
+      color: #ff9636;
+    }
+  }
+}
+
+input {
+  &.selectBox {
+    position: relative;
+    background-image: url('../../assets/images/icon/selectarrow.png');
+    background-size: 1.6rem;
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+  }
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.check_con {
+  .box {
+    display: flex;
+    gap: 1.5rem;
+  }
+}
+
+textarea.text_area {
+  min-height: 250px;
+}

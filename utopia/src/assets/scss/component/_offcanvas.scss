@@ -1,0 +1,11 @@
+.offcanvas {
+    &.filter {
+        .tit {
+            margin-bottom: 5px;
+            font: {
+                size: 1.6rem;
+                weight: 600;
+            }
+        }
+    }
+}

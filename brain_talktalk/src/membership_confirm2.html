@@ -1,0 +1,94 @@
+@@include('partials/html-start.html', { "title": "회원권 인증" })
+
+
+<div class="idx_pg">
+    <div class="container">
+        <div class="input_con">
+            <label for="validationCustom01" class="form-label">회원권종류</label>
+            <input type="text" class="form-control selectBox" id="validationCustom01" placeholder="회원권 종류를 선택해주세요."
+                value="" required="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom">
+        </div>
+        <div class="check_con mt_40">
+            <p class="form-label">회원구분</p>
+            <div class="box">
+                <div class="form-check">
+                    <input class="form-check-input" name="divide" type="radio" value="" id="flexCheckDefault1">
+                    <label class="form-check-label" for="flexCheckDefault1">
+                        법인
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="divide" type="radio" value="" id="flexCheckDefault2">
+                    <label class="form-check-label" for="flexCheckDefault2">
+                        개인
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="input_con mt_40">
+            <label for="validationCustom01" class="form-label">이름/법인명</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="이름/법인명을 입력해주세요." value=""
+                required="">
+        </div>
+        <div class="input_con mt_40">
+            <label for="validationCustom01" class="form-label">주민등록번호(앞 6자리) / 사업자번호</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="주민등록번호 앞 6자리/사업자번호" value=""
+                required="">
+        </div>
+        <div class="input_con mt_40">
+            <label for="validationCustom01" class="form-label">회원권번호</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="회원권번호를 입력해주세요." value=""
+                required="">
+            <div class="form-check mt_10">
+                <input class="form-check-input" name="divide" type="checkbox" value="" id="Check">
+                <label class="form-check-label" for="Check">
+                    모름
+                </label>
+            </div>
+        </div>
+
+        <div class="file_upload mt_40">
+            <p class="form-label">회원권 사진</p>
+            <div class="touch_scroll scroll_bar_none">
+                <div class="d-flex">
+                    <div class="image_upload">
+                        <input id="ip_file" type="file" class="d-none">
+                        <label for="ip_file" class="upload_box">
+                            <div class="rect">
+                            </div>
+                            <p class="max_img">이미지등록</p>
+                        </label>
+                        <button type="button" class="btn upload_del"><img src="@@imgPath/icon/ico_x2.png"></button>
+                    </div>
+                    <div class="image_upload on">
+                        <input id="ip_file" type="file" class="d-none">
+                        <label for="ip_file" class="upload_box">
+                            <div class="rect">
+                                <img src="@@imgPath/img/sample01.jpg">
+                            </div>
+                        </label>
+                        <button type="button" class="btn upload_del"><img src="@@imgPath/icon/ico_x2.png"></button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="fs_12 mt-3 point">*사진은 최대 3장까지 등록 가능합니다.</div>
+        </div>
+        <button class="btn btn-secondary btn-lg w-100 mt_25">인증요청</button>
+    </div>
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">골프장 선택하기</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <ul class="canvas_list">
+                <li class="list">골프장</li>
+                <li class="list">골프장</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@@include('partials/html-end.html')

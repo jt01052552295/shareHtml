@@ -1,0 +1,32 @@
+// common
+@import "./pages/common";
+@import "./pages/font";
+@import "./pages/intro";
+@import "./pages/result";
+
+// page
+@import "./pages/index";
+@import "./pages/login";
+@import "./pages/complete";
+@import "./pages/pet_detail";
+@import "./pages/cart";
+@import "./pages/order";
+@import "./pages/mypage";
+@import "./pages/review";
+@import "./pages/shorts";
+@import "./pages/inquiry";
+@import "./pages/notice";
+@import "./pages/search";
+
+@import "./pages/kennel_home";
+@import "./pages/pet_register";
+@import "./pages/sales";
+@import "./pages/nose";
+
+// component
+@import "./component/header";
+@import "./component/footer";
+@import "./component/check";
+@import "./component/offcanvas";
+@import "./component/filter";
+@import "./component/modal";

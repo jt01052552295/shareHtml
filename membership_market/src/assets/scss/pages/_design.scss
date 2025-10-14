@@ -1,5 +1,10 @@
 @charset "UTF-8";
-
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --wrap: 1000px;
   --wrap_wd: 500px;
@@ -31,6 +36,7 @@ body {
   top: 0;
   height: 100%;
 }
+
 .left_txt_wrap {
   display: flex;
   align-items: center;

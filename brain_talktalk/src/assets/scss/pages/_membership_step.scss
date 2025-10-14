@@ -1,0 +1,27 @@
+.all_check {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  .form-check {
+    .form-check-label {
+      font-weight: 500;
+    }
+  }
+}
+
+.sub_check {
+  .form-check {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    .box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .btn {
+        text-decoration: underline;
+      }
+    }
+  }
+}

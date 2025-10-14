@@ -1,0 +1,471 @@
+@@include('partials/html-start.html', { "title": "메인" })
+<header class="header_menu">
+  <div class="inner d-flex justify-content-between align-items-center">
+    <div class="logo_con">
+      <a class="logo_link" href="/">
+        <img class="logo" src="@@imgPath/logo/logo_logo.png" alt="LOGO">
+      </a>
+    </div>
+    <div class="d-flex gap-3">
+      <div class="search_btn">
+        <a href="search.html">
+          <a href="search.html">
+            <img src="@@imgPath/ico/ico_search.png" style="width: 25px;" alt="">
+          </a>
+        </a>
+      </div>
+      <div class="cart_btn">
+        <a href="cart.html">
+          <img src="@@imgPath/ico/ico_cart.png" style="width: 25px;" alt="장바구니">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="contents pb-100">
+  <div class="swiper-card swiper-default swiper01 mb-30">
+    <div class="swiper-wrapper">
+      <div class="item swiper-slide">
+        <img src="@@imgPath/img/img_slide_sample01.jpg">
+      </div>
+      <div class="item swiper-slide">
+        <img src="@@imgPath/img/img_slide_sample02.jpg">
+      </div>
+      <div class="item swiper-slide">
+        <img src="@@imgPath/img/img_slide_sample03.jpg">
+      </div>
+    </div>
+    <!-- <div class="bar_wrap">
+      <p>Progress Bar</p>
+      <div class="bar">
+        <div class="back"></div>
+      </div>
+    </div> -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="item_view mb-30">
+    <div class="title_con mb-15">
+      <p class="sub_title">최근 본 강아지</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <p class="title">최근 만난 친구들</p>
+        <a href="pet_list.html" class="link">더보기</a>
+      </div>
+
+    </div>
+    <div class="swiper mySwiper recent">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="inner">
+    <div class="title_con mb-15">
+      <p class="sub_title">가장 인기있는 품종</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <p class="title">품종 랭킹</p>
+        <a href="pet_list.html" class="link" style="margin-right: 0;">더보기</a>
+      </div>
+    </div>
+    <ul class="rank_con mb-30">
+      <li class="list">
+        <p class="num top">1</p>
+        <div class="rank_info">
+          <div class="box">
+            <div class="img_con">
+              <div class="rect">
+                <img src="@@imgPath/img/img_item_sample.jpg" alt="랭킹순위" class="img">
+              </div>
+            </div>
+            <p class="breed">포메라니안</p>
+          </div>
+          <button class="btn btn-main btn-sm" onclick="location.href=`pet_list.html`">둘러보기</button>
+        </div>
+      </li>
+      <li class="list">
+        <p class="num">2</p>
+        <div class="rank_info">
+          <div class="box">
+            <div class="img_con">
+              <div class="rect">
+                <img src="@@imgPath/img/img_item_sample.jpg" alt="랭킹순위" class="img">
+              </div>
+            </div>
+            <p class="breed">비숑</p>
+          </div>
+          <button class="btn btn-main btn-sm" onclick="location.href=`pet_list.html`">둘러보기</button>
+        </div>
+      </li>
+      <li class="list">
+        <p class="num">3</p>
+        <div class="rank_info">
+          <div class="box">
+            <div class="img_con">
+              <div class="rect">
+                <img src="@@imgPath/img/img_item_sample.jpg" alt="랭킹순위" class="img">
+              </div>
+            </div>
+            <p class="breed">푸들</p>
+          </div>
+          <button class="btn btn-main btn-sm" onclick="location.href=`pet_list.html`">둘러보기</button>
+        </div>
+      </li>
+      <li class="list">
+        <p class="num">4</p>
+        <div class="rank_info">
+          <div class="box">
+            <div class="img_con">
+              <div class="rect">
+                <img src="@@imgPath/img/img_item_sample.jpg" alt="랭킹순위" class="img">
+              </div>
+            </div>
+            <p class="breed">치와와</p>
+          </div>
+          <button class="btn btn-main btn-sm" onclick="location.href=`pet_list.html`">둘러보기</button>
+        </div>
+      </li>
+      <li class="list">
+        <p class="num">5</p>
+        <div class="rank_info">
+          <div class="box">
+            <div class="img_con">
+              <div class="rect">
+                <img src="@@imgPath/img/img_item_sample.jpg" alt="랭킹순위" class="img">
+              </div>
+            </div>
+            <p class="breed">말티즈</p>
+          </div>
+          <button class="btn btn-main btn-sm" onclick="location.href=`pet_list.html`">둘러보기</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="item_view mb-30">
+    <div class="title_con mb-15">
+      <p class="sub_title">추천하는 강아지</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <p class="title">오늘의 추천 친구</p>
+        <a href="pet_list.html" class="link">더보기</a>
+      </div>
+    </div>
+    <div class="swiper mySwiper recent">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item_view mb-30">
+    <div class="title_con mb-15">
+      <p class="sub_title">신규견사</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <p class="title">새로운 가족 찾기</p>
+        <a href="pet_list.html" class="link">더보기</a>
+      </div>
+    </div>
+    <div class="swiper mySwiper recent">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a class="item_box" href="pet_detail.html">
+            <div class="rect">
+              <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+            </div>
+            <div class="txt_con">
+              <p class="region">[부산]</p>
+              <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 </p>
+              <p class="breed">포메라니안</p>
+              <p class="price">400,000원</p>
+            </div>
+            <div class="rate_con">
+              <p class="rating">5.0<span class="sum"> (22)</span></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="inner">
+    <div class="event_banner">
+      <img src="@@imgPath/img/img_banner_sample.png" alt="">
+    </div>
+  </div>
+</section>
+
+<nav class="ft_nav">
+  <div class="inner">
+    <ul class="ft_menu">
+      <li class="list">
+        <a href="order_list.html" class="link">
+          <div class="img_con">
+            <img src="@@imgPath/ico/ico_ft_order.png" alt="주문내역" class="icon">
+          </div>
+          <p class="tit">주문내역</p>
+        </a>
+      </li>
+      <li class="list">
+        <a href="search.html" class="link">
+          <div class="img_con">
+            <img src="@@imgPath/ico/ico_ft_search.png" alt="검색" class="icon">
+          </div>
+          <p class="tit">검색</p>
+        </a>
+      </li>
+      <li class="list on">
+        <a href="./" class="link">
+          <div class="img_con">
+            <img src="@@imgPath/ico/ico_ft_home_on.png" alt="홈" class="icon">
+          </div>
+          <p class="tit">홈</p>
+        </a>
+      </li>
+      <li class="list">
+        <a href="shorts.html" class="link">
+          <div class="img_con">
+            <img src="@@imgPath/ico/ico_ft_shorts.png" alt="숏츠" class="icon">
+          </div>
+          <p class="tit">숏츠</p>
+        </a>
+      </li>
+      <li class="list">
+        <a href="mypage.html" class="link">
+          <div class="img_con">
+            <img src="@@imgPath/ico/ico_ft_mypage.png" alt="내정보" class="icon">
+          </div>
+          <p class="tit">내정보</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var Back = $('.back')
+
+  var swiperMain = new Swiper(".swiper01", {
+    slidesPerView: 1,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 500,
+    loop: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+      formatFractionCurrent: function (number) {
+        return number < 10 ? '0' + number : number;
+      },
+      formatFractionTotal: function (number) {
+        return number < 10 ? '0' + number : number;
+      },
+      renderFraction: function (currentClass, totalClass) {
+        return (
+          '<span class="' + currentClass + '"></span>' +
+          '<div class="bar_wrap">' +
+          '<div class="bar">' +
+          '<div class="back"></div>' +
+          '</div>' +
+          '</div>' +
+          '<span class="' + totalClass + '"></span>'
+        );
+      },
+    }
+  });
+
+
+  // Swiper v8+ 전용: autoplay 진행률 이벤트
+  swiperMain.on("autoplayTimeLeft", function (s, time, progress) {
+    var percent = (1 - progress) * 100;
+
+    $(".bar .back").css({
+      width: percent + "%"
+    });
+  });
+
+  // 최근 본 목록
+  var recent = new Swiper(".recent", {
+    slidesPerView: "auto",
+    spaceBetween: 8,
+
+  });
+</script>
+@@include('partials/html-end.html')

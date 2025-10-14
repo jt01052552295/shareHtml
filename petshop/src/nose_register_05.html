@@ -1,0 +1,49 @@
+@@include('partials/html-start.html', { "title": "상품등록" })
+<header class="header_menu sty_2">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">상품등록</p>
+        <a href="javascript:void(0)" class="cancel">취소</a>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="inner">
+        <div class="register_step">
+            <p class="step">Step.5 성별</p>
+            <ul class="step_dot">
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot active"></li>
+                <li class="dot"></li>
+            </ul>
+        </div>
+
+        <p class="register_txt mt-30 mb-30">등록하려는 상품의 <br>성별을 입력해주세요.</p>
+
+
+        <div class="gender-select">
+            <div class="option w-100">
+                <input type="radio" id="male" name="gender" checked>
+                <label class="w-100" for="male">암컷</label>
+            </div>
+
+            <div class="option w-100">
+                <input type="radio" id="female" name="gender">
+                <label class="w-100" for="female">수컷</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed_bottom">
+        <button class="btn btn-main w-100" onclick="location.href=`nose_register_06.html`">다음</button>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

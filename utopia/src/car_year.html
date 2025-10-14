@@ -1,0 +1,30 @@
+@@include('partials/html-start.html', { "title": "연식" })
+<header class="header_bar sty03">
+    <p class="title">연식</p>
+    <button class="btn p-0 close">
+        <img src="@@imgPath/ico/ico_x.png" alt="닫기">
+    </button>
+</header>
+<section class="contents">
+    <div class="inner">
+        <p class="year_txt">원하시는 자동차 연식을 <br>입력해주세요</p>
+
+        <div class="year_con">
+            <div class="year_box">
+                <div class="year_input minimum">
+                    <p class="t1">최소연식</p>
+                    <input type="text" class="year" placeholder="1990년">
+                </div>
+                <p class="wave">~</p>
+                <div class="year_input miximum">
+                    <p class="t1">최대연식</p>
+                    <input type="text" class="year" placeholder="2025년">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@@include('partials/html-end.html')

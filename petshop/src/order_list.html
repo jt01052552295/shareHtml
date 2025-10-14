@@ -1,0 +1,385 @@
+@@include('partials/html-start.html', { "title": "주문내역" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">주문내역</p>
+    </div>
+</header>
+
+<section class="contents">
+    <ul class="tab_con mt-10 mb-20">
+        <li class="tab active">
+            <a class="link" href="order_list.html">
+                <p class="t1">구매완료</p>
+            </a>
+        </li>
+        <li class="tab">
+            <a class="link" href="order_list1.html">
+                <p class="t1">진행중</p>
+            </a>
+        </li>
+    </ul>
+    <div class="inner">
+        <div class="accordion order_list  pb-100" id="accordionExample">
+            <div class="accordion-item">
+                <p class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        2025.08.12 <span>총 2건</span>
+                    </button>
+                </p>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <ul class="cart_item">
+                        <li class="list">
+                            <div class="info_con">
+                                <div class="item_info">
+                                    <div class="box">
+                                        <div class="rect">
+                                            <img class="img" src="@@imgPath/img/img_item_sample.png" alt="상품이미지">
+                                        </div>
+                                        <div class="txt_con">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="brand">포메라니안 / 남</p>
+                                                <p class="nose ">비문</p>
+                                            </div>
+                                            <div class="breed_con">
+                                                <p class="breed"><b>모견</b>포메라니안</p>
+                                                <p class="breed"><b>부견</b>포메라니안</p>
+                                            </div>
+                                            <p class="birth">2025.02.01 (6개월)</p>
+                                        </div>
+                                    </div>
+                                    <p class="vaccine" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                        aria-controls="offcanvasBottom">예방접종여부</p>
+                                </div>
+                            </div>
+                            <div class="price_con">
+                                <p class="t1">금액</p>
+                                <p class="price">250,000원</p>
+                            </div>
+                        </li>
+                        <li class="list">
+
+                            <div class="info_con">
+                                <div class="item_info">
+                                    <div class="box">
+                                        <div class="rect">
+                                            <img class="img" src="@@imgPath/img/img_item_sample.png" alt="상품이미지">
+                                        </div>
+                                        <div class="txt_con">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="brand">포메라니안 / 남</p>
+                                                <p class="nose ">비문</p>
+                                            </div>
+                                            <div class="breed_con">
+                                                <p class="breed"><b>모견</b>포메라니안</p>
+                                                <p class="breed"><b>부견</b>포메라니안</p>
+                                            </div>
+                                            <p class="birth">2025.02.01 (6개월)</p>
+                                        </div>
+                                    </div>
+                                    <p class="vaccine" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                        aria-controls="offcanvasBottom">예방접종여부</p>
+                                </div>
+                            </div>
+                            <div class="price_con">
+                                <p class="t1">금액</p>
+                                <p class="price">250,000원</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="payment_con mt-20 mb-30">
+                        <p class="tit">결제 / 배송정보</p>
+                        <ul class="pay_detail">
+                            <li class="list">
+                                <p class="t1">주소</p>
+                                <p class="t2">부산시 문현금융로 40</p>
+                            </li>
+                            <li class="list">
+                                <p class="t1">주문 상품 수</p>
+                                <p class="t2">총 1개</p>
+                            </li>
+                            <li class="list">
+                                <p class="t1">배송비</p>
+                                <p class="t2">0원</p>
+                            </li>
+                            <li class="list sum">
+                                <p class="t1">총 결제 금액</p>
+                                <p class="t2">500,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2025.08.12 <span>총 2건</span>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="cart_item">
+                            <li class="list">
+                                <div class="info_con">
+                                    <div class="item_info">
+                                        <div class="box">
+                                            <div class="rect">
+                                                <img class="img" src="@@imgPath/img/img_item_sample.png" alt="상품이미지">
+                                            </div>
+                                            <div class="txt_con">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="brand">포메라니안 / 남</p>
+                                                    <p class="nose ">비문</p>
+                                                </div>
+                                                <div class="breed_con">
+                                                    <p class="breed"><b>모견</b>포메라니안</p>
+                                                    <p class="breed"><b>부견</b>포메라니안</p>
+                                                </div>
+                                                <p class="birth">2025.02.01 (6개월)</p>
+                                            </div>
+                                        </div>
+                                        <p class="vaccine" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">예방접종여부</p>
+                                    </div>
+                                </div>
+                                <div class="price_con">
+                                    <p class="t1">금액</p>
+                                    <p class="price">250,000원</p>
+                                </div>
+                            </li>
+                            <li class="list">
+                                <div class="info_con">
+                                    <div class="item_info">
+                                        <div class="box">
+                                            <div class="rect">
+                                                <img class="img" src="@@imgPath/img/img_item_sample.png" alt="상품이미지">
+                                            </div>
+                                            <div class="txt_con">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="brand">포메라니안 / 남</p>
+                                                    <p class="nose ">비문</p>
+                                                </div>
+                                                <div class="breed_con">
+                                                    <p class="breed"><b>모견</b>포메라니안</p>
+                                                    <p class="breed"><b>부견</b>포메라니안</p>
+                                                </div>
+                                                <p class="birth">2025.02.01 (6개월)</p>
+                                            </div>
+                                        </div>
+                                        <p class="vaccine" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">예방접종여부</p>
+                                    </div>
+                                </div>
+                                <div class="price_con">
+                                    <p class="t1">금액</p>
+                                    <p class="price">250,000원</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="payment_con mt-20 mb-30">
+                            <p class="tit">결제 / 배송정보</p>
+                            <ul class="pay_detail">
+                                <li class="list">
+                                    <p class="t1">주소</p>
+                                    <p class="t2">부산시 문현금융로 40</p>
+                                </li>
+                                <li class="list">
+                                    <p class="t1">주문 상품 수</p>
+                                    <p class="t2">총 1개</p>
+                                </li>
+                                <li class="list">
+                                    <p class="t1">배송비</p>
+                                    <p class="t2">0원</p>
+                                </li>
+                                <li class="list sum">
+                                    <p class="t1">총 결제 금액</p>
+                                    <p class="t2">500,000원</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        2025.08.12 <span>총 2건</span>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="cart_item">
+                            <li class="list">
+                                <div class="info_con">
+                                    <div class="item_info">
+                                        <div class="box">
+                                            <div class="rect">
+                                                <img class="img" src="@@imgPath/img/img_item_sample.png" alt="상품이미지">
+                                            </div>
+                                            <div class="txt_con">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="brand">포메라니안 / 남</p>
+                                                    <p class="nose ">비문</p>
+                                                </div>
+                                                <div class="breed_con">
+                                                    <p class="breed"><b>모견</b>포메라니안</p>
+                                                    <p class="breed"><b>부견</b>포메라니안</p>
+                                                </div>
+                                                <p class="birth">2025.02.01 (6개월)</p>
+                                            </div>
+                                        </div>
+                                        <p class="vaccine" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">예방접종여부</p>
+                                    </div>
+                                </div>
+                                <div class="price_con">
+                                    <p class="t1">금액</p>
+                                    <p class="price">250,000원</p>
+                                </div>
+                            </li>
+                            <li class="list">
+                                <div class="info_con">
+                                    <div class="item_info">
+                                        <div class="box">
+                                            <div class="rect">
+                                                <img class="img" src="@@imgPath/img/img_item_sample.png" alt="상품이미지">
+                                            </div>
+                                            <div class="txt_con">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <p class="brand">포메라니안 / 남</p>
+                                                    <p class="nose ">비문</p>
+                                                </div>
+                                                <div class="breed_con">
+                                                    <p class="breed"><b>모견</b>포메라니안</p>
+                                                    <p class="breed"><b>부견</b>포메라니안</p>
+                                                </div>
+                                                <p class="birth">2025.02.01 (6개월)</p>
+                                            </div>
+                                        </div>
+                                        <p class="vaccine" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">예방접종여부</p>
+                                    </div>
+                                </div>
+                                <div class="price_con">
+                                    <p class="t1">금액</p>
+                                    <p class="price">250,000원</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="payment_con mt-20 mb-30">
+                            <p class="tit">결제 / 배송정보</p>
+                            <ul class="pay_detail">
+                                <li class="list">
+                                    <p class="t1">주소</p>
+                                    <p class="t2">부산시 문현금융로 40</p>
+                                </li>
+                                <li class="list">
+                                    <p class="t1">주문 상품 수</p>
+                                    <p class="t2">총 1개</p>
+                                </li>
+                                <li class="list">
+                                    <p class="t1">배송비</p>
+                                    <p class="t2">0원</p>
+                                </li>
+                                <li class="list sum">
+                                    <p class="t1">총 결제 금액</p>
+                                    <p class="t2">500,000원</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+        <p class="offcanvas-title" id="offcanvasBottomLabel">예방접종</p>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+        <ul class="vaccine_list">
+            <li class="list">
+                <p class="vaccine on">코로나 장염 1차</p>
+            </li>
+            <li class="list">
+                <p class="vaccine off">코로나 장염 2차</p>
+            </li>
+            <li class="list">
+                <p class="vaccine on">켄넬코프 1차</p>
+            </li>
+            <li class="list">
+                <p class="vaccine off">켄넬코프 2차</p>
+            </li>
+            <li class="list">
+                <p class="vaccine on">신종플루 1차</p>
+            </li>
+            <li class="list">
+                <p class="vaccine on">광견병 예방접종</p>
+            </li>
+            <li class="list">
+                <p class="vaccine on">심장사상충 예방</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<nav class="ft_nav">
+    <div class="inner">
+        <ul class="ft_menu">
+            <li class="list on">
+                <a href="order_list.html" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/ico/ico_ft_order_on.png" alt="주문내역" class="icon">
+                    </div>
+                    <p class="tit">주문내역</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="search.html" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/ico/ico_ft_search.png" alt="검색" class="icon">
+                    </div>
+                    <p class="tit">검색</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="./" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/ico/ico_ft_home.png" alt="홈" class="icon">
+                    </div>
+                    <p class="tit">홈</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="shorts.html" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/ico/ico_ft_shorts.png" alt="숏츠" class="icon">
+                    </div>
+                    <p class="tit">숏츠</p>
+                </a>
+            </li>
+            <li class="list">
+                <a href="mypage.html" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/ico/ico_ft_mypage.png" alt="내정보" class="icon">
+                    </div>
+                    <p class="tit">내정보</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+@@include('partials/html-end.html')

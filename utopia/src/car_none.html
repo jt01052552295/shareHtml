@@ -1,0 +1,72 @@
+@@include('partials/html-start.html', { "title": "자동차" })
+<header class="header_bar sty01">
+    <button class="btn p-0 back">
+        <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+    </button>
+    <p class="title">자동차</p>
+    <button class="btn p-0 search">
+        <img src="@@imgPath/ico/ico_search.png" alt="검색하기" onclick="location.href=`search.html`">
+    </button>
+</header>
+<section class="contents">
+    <div class="inner">
+        <button class="btn btn-outline-main w-100 mt-20 mb-20 car_filter" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <p class="filter_txt">어떤 차를
+                찾고있나요?</p>
+        </button>
+
+        <div class="car_none mt-50">
+            <div class="img_con">
+                <img src="@@imgPath/img/img_no_car.png" alt="검색결과 없음" class="img">
+            </div>
+            <div class="txt_con">
+                <p class="t1">조건에 맞는 차량이 없습니다.</p>
+                <p class="t2">다른 조건으로 검색해주세요.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+@@include('partials/html-end.html') <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel">
+
+    <header class="header_bar sty03" style="position: relative;">
+        <p class="title">필터</p>
+        <button class="btn p-0 close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="@@imgPath/ico/ico_x.png" alt="닫기">
+        </button>
+    </header>
+    <div class="offcanvas-body small p-0">
+        <ul class="filter_list">
+            <li class="filter auto">
+                <a href="car_brand.html" class="link">
+                    <p class="t1">제조사 / 모델</p>
+                </a>
+            </li>
+            <li class="filter">
+                <a href="car_year.html" class="link">
+                    <p class="t1">연식</p>
+                </a>
+            </li>
+            <li class="filter">
+                <a href="car_distance.html" class="link">
+                    <p class="t1">주행거리</p>
+                </a>
+            </li>
+            <li class="filter">
+                <a href="javascript:void(0)" class="link">
+                    <p class="t1">가격</p>
+                </a>
+            </li>
+            <li class="filter">
+                <a href="car_kind.html" class="link">
+                    <p class="t1">차종</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

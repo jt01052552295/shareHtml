@@ -1,0 +1,249 @@
+.detail_slide {
+    &.swiper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .swiper-pagination-fraction {
+        position: absolute;
+        width: 40px;
+        height: 18px;
+        right: 10px;
+        bottom: 10px;
+        left: initial;
+        background-color: #222;
+        border-radius: 10px;
+        font: {
+            size: 1rem;
+            weight: 500;
+        }
+        color: var(--white-color);
+        line-height: 17px;
+    }
+}
+
+.seller_thumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .img_con {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        .thumb_img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .name {
+        font: {
+            size: 1.6rem;
+            weight: 700;
+        }
+    }
+}
+
+.detail_info {
+    .price_con {
+        .price {
+            font: {
+                size: 2.4rem;
+                weight: 700;
+            }
+        }
+    }
+
+    .sub_tit {
+        font: {
+            size: 1.8rem;
+            weight: 700;
+        }
+        color: var(--main-color);
+    }
+}
+
+.detail_profile {
+    .info_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 30px;
+        .list {
+            width: calc((100% / 2) - 30px);
+            .box {
+                display: flex;
+                gap: 15px;
+                .t1 {
+                    font: {
+                        size: 1.6rem;
+                        weight: 700;
+                    }
+                }
+                .t2 {
+                    font: {
+                        size: 1.6rem;
+                        weight: 400;
+                    }
+                }
+            }
+            .vaccination {
+                margin-top: 12px;
+                .vaccin {
+                    position: relative;
+                    padding-left: 12px;
+                    font: {
+                        size: 1.6rem;
+                        weight: 400;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+                    &.on {
+                        &::before {
+                            width: 10px;
+                            height: 10px;
+                            background: url("../../assets/images/ico/ico_o.png") no-repeat center / cover;
+                        }
+                    }
+                    &.off {
+                        &::before {
+                            width: 10px;
+                            height: 10px;
+                            background: url("../../assets/images/ico/ico_x.png") no-repeat center / cover;
+                        }
+                    }
+                }
+            }
+            .register {
+                margin-top: 12px;
+                font: {
+                    size: 1.6rem;
+                    weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.add_info {
+    .info {
+        font: {
+            size: 1.4rem;
+            weight: 500;
+        }
+    }
+}
+
+.item_sum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .sum {
+        font: {
+            size: 1.4rem;
+            weight: 500;
+        }
+        .num {
+            color: var(--main-color);
+        }
+    }
+
+    .btn {
+        font: {
+            size: 1.4rem;
+            weight: 500;
+        }
+    }
+}
+
+.item_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+    .item {
+        width: calc((100% / 3) - 7px);
+        .link {
+            .rect {
+                .img {
+                }
+            }
+        }
+
+        .txt_con {
+            margin-top: 12px;
+            .region {
+                font: {
+                    size: 1.2rem;
+                    weight: 500;
+                }
+            }
+            .shop_name {
+                font: {
+                    size: 1.2rem;
+                    weight: 500;
+                }
+            }
+            .breed {
+                font: {
+                    size: 1.2rem;
+                    weight: 500;
+                }
+            }
+            .price {
+                font: {
+                    size: 1.2rem;
+                    weight: 700;
+                }
+            }
+        }
+        .rate_con {
+            .rating {
+                position: relative;
+                padding-left: 14px;
+                font: {
+                    size: 1.2rem;
+                    weight: 500;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    top: 42%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    background: url("../../assets/images/ico/ico_star_on.png") no-repeat center / cover;
+                }
+                .sum {
+                    color: var(--gray-color);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+@@include('partials/html-start.html', { "title": "리뷰작성" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">리뷰작성</p>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="inner">
+        <div class="review_write">
+            <div class="cart_item">
+                <div class="list">
+                    <div class="info_con">
+                        <div class="item_info">
+                            <div class="box">
+                                <div class="rect">
+                                    <img class="img" src="@@imgPath/img/img_item_sample.png" alt="상품이미지">
+                                </div>
+                                <div class="txt_con">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="brand">포메라니안 / 남</p>
+                                        <p class="nose ">비문</p>
+                                    </div>
+                                    <div class="breed_con">
+                                        <p class="breed"><b>모견</b>포메라니안</p>
+                                        <p class="breed"><b>부견</b>포메라니안</p>
+                                    </div>
+                                    <p class="birth">2025.02.01 (6개월)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review_rating mt-15 mb-30">
+                <p class="tit">만족도</p>
+                <ul class="rating_con">
+                    <li class="rate">
+                        <img src="@@imgPath/ico/ico_star_on.png" alt="">
+                    </li>
+                    <li class="rate">
+                        <img src="@@imgPath/ico/ico_rate_star_off.png" alt="">
+                    </li>
+                    <li class="rate">
+                        <img src="@@imgPath/ico/ico_rate_star_off.png" alt="">
+                    </li>
+                    <li class="rate">
+                        <img src="@@imgPath/ico/ico_rate_star_off.png" alt="">
+                    </li>
+                    <li class="rate">
+                        <img src="@@imgPath/ico/ico_rate_star_off.png" alt="">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="img_upload">
+                <p class="tit">이미지 등록</p>
+                <div class="touch_scroll scroll_bar_none">
+                    <div class="upload_con">
+                        <div class="image_upload">
+                            <input id="ip_file" type="file" class="d-none">
+                            <label for="ip_file" class="upload_box">
+                                <div class="rect">
+                                </div>
+                                <p class="max_img">이미지등록</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="txt_area mt-30">
+                <div class="d-flex align-items-center justify-content-between">
+                    <p class="tit">후기작성</p>
+                    <p class="txt_cnt"><span>0</span> / 1000</p>
+                </div>
+                <textarea class="form-control" id="" value="구매 후기를 남겨주세요."></textarea>
+            </div>
+
+            <div class="btn_con mt-30">
+                <button class="btn btn-main w-100 btn-height">리뷰 등록하기</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<nav class="ft_nav"></nav>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const container = document.querySelector(".touch_scroll .upload_con");
+        const fileInput = document.querySelector(".image_upload input[type=file]"); // 업로드 버튼의 input만 선택
+
+        // 파일 선택 이벤트
+        fileInput.addEventListener("change", function (e) {
+            const files = e.target.files;
+            if (!files.length) return;
+
+            for (let file of files) {
+                const reader = new FileReader();
+                reader.onload = function (event) {
+                    // 새로운 이미지 업로드 박스 생성
+                    const newBox = document.createElement("div");
+                    newBox.classList.add("image_upload", "on");
+
+                    newBox.innerHTML = `
+          <input type="file" class="d-none">
+          <label class="upload_box">
+            <div class="rect">
+              <img src="${event.target.result}" alt="업로드 이미지">
+            </div>
+          </label>
+          <button type="button" class="btn upload_del">
+            <img src="/petshop/assets/images/ico/ico_x2.png">
+          </button>
+        `;
+
+                    // 삭제 버튼 기능
+                    newBox.querySelector(".upload_del").addEventListener("click", function () {
+                        newBox.remove();
+                    });
+
+                    // 항상 업로드 버튼 뒤에 추가
+                    container.appendChild(newBox);
+                };
+                reader.readAsDataURL(file);
+            }
+
+            // input 초기화 (같은 파일 다시 선택 가능하게)
+            e.target.value = "";
+        });
+    });
+
+</script>
+@@include('partials/html-end.html')

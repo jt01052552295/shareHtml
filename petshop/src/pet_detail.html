@@ -1,0 +1,321 @@
+@@include('partials/html-start.html', { "title": "견종정보" })
+<header class="header_menu sty_2">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">견종정보</p>
+        <div class="cart_btn">
+            <a class="link" href="javascript:void(0)">
+                <img src="@@imgPath/ico/ico_cart.png" alt="" class="cart_img">
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="swiper mySwiper detail_slide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="detail_img" src="@@imgPath/img/img_detail_sample.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="detail_img" src="@@imgPath/img/img_detail_sample.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="detail_img" src="@@imgPath/img/img_detail_sample.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="detail_img" src="@@imgPath/img/img_detail_sample.png" alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="inner">
+        <div class="detail_info mt-20">
+            <div class="seller_thumb">
+                <div class="img_con">
+                    <img src="@@imgPath/img/img_item_sample.jpg" alt="" class="thumb_img">
+                </div>
+                <p class="name">야옹아 멍멍해봐</p>
+            </div>
+
+            <div class="price_con mt-15 mb-20">
+                <p class="price">250,000원</p>
+            </div>
+
+            <div class="detail_profile border-bottom pb-25">
+                <p class="sub_tit mb-15">상세 프로필</p>
+                <ul class="info_list">
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">모견</p>
+                            <p class="t2">포메라니안</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">부견</p>
+                            <p class="t2">포메라니안</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">견종</p>
+                            <p class="t2">포메라니안</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">성별</p>
+                            <p class="t2">남</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">출생</p>
+                            <p class="t2">25.02.01</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">체중</p>
+                            <p class="t2">1kg</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">예방접종 여부</p>
+                        </div>
+                        <ul class="vaccination">
+                            <li class="vaccin on">코로나 장염 1차</li>
+                            <li class="vaccin on">코로나 장염 2차</li>
+                            <li class="vaccin on">켄넬코프 1차</li>
+                            <li class="vaccin off">켄넬코프 2차</li>
+                            <li class="vaccin on">신종플루 1차</li>
+                            <li class="vaccin off">광견병 예방접족</li>
+                            <li class="vaccin on">심장사상충 예방</li>
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">비문등록</p>
+                        </div>
+                        <p class="register">등록완료</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="add_info border-bottom mt-25 pb-25">
+                <p class="sub_tit mb-15">추가정보</p>
+                <p class="info">
+                    상세프로필 이외에 정보를 입력할 수 있습니다. 상세프로필 이외
+                    에 정보를 입력할 수 있습니다. 상세프로필 이외에 정보를 입력할
+                    수 있습니다. 상세프로필 이외에 정보를 입력할 수 있습니다. 상세
+                    프로필 이외에 정보를 입력할 수 있습니다. 상세프로필 이외에 정보를 입력할 수 있습니다.
+                </p>
+                <button class="btn btn-outline-main w-100 mt-15 btn-lg"
+                    onclick="location.href=`inquiry_write.html`">문의하기</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail_info mt-25 pb-100 ">
+        <div class="item_view pb-25">
+            <p class="sub_tit mb-15">견사 등록 친구</p>
+            <div class="swiper mySwiper recent">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="premium-flag">프리<br>미엄</div>
+                        <a class="item_box" href="javascript:void(0)">
+                            <div class="rect">
+                                <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+                            </div>
+                            <div class="txt_con">
+                                <p class="region">[부산]</p>
+                                <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
+                                    견사이름
+                                </p>
+                                <p class="breed">포메라니안</p>
+                                <p class="price">400,000원</p>
+                            </div>
+                            <div class="rate_con">
+                                <p class="rating">5.0<span class="sum"> (22)</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="item_box" href="javascript:void(0)">
+                            <div class="rect">
+                                <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+                            </div>
+                            <div class="txt_con">
+                                <p class="region">[부산]</p>
+                                <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
+                                    견사이름
+                                </p>
+                                <p class="breed">포메라니안</p>
+                                <p class="price">400,000원</p>
+                            </div>
+                            <div class="rate_con">
+                                <p class="rating">5.0<span class="sum"> (22)</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="item_box" href="javascript:void(0)">
+                            <div class="rect">
+                                <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+                            </div>
+                            <div class="txt_con">
+                                <p class="region">[부산]</p>
+                                <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
+                                    견사이름
+                                </p>
+                                <p class="breed">포메라니안</p>
+                                <p class="price">400,000원</p>
+                            </div>
+                            <div class="rate_con">
+                                <p class="rating">5.0<span class="sum"> (22)</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="item_box" href="javascript:void(0)">
+                            <div class="rect">
+                                <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+                            </div>
+                            <div class="txt_con">
+                                <p class="region">[부산]</p>
+                                <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
+                                    견사이름
+                                </p>
+                                <p class="breed">포메라니안</p>
+                                <p class="price">400,000원</p>
+                            </div>
+                            <div class="rate_con">
+                                <p class="rating">5.0<span class="sum"> (22)</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-bottom" style="max-width: calc(100% - 20px);margin: 0 auto;"></div>
+        <div class="item_view mt-25 pb-25">
+            <p class="sub_tit mb-15">최근 등록된 견종</p>
+            <div class="swiper mySwiper recent">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="premium-flag">프리<br>미엄</div>
+                        <a class="item_box" href="javascript:void(0)">
+                            <div class="rect">
+                                <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+                            </div>
+                            <div class="txt_con">
+                                <p class="region">[부산]</p>
+                                <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
+                                    견사이름
+                                </p>
+                                <p class="breed">포메라니안</p>
+                                <p class="price">400,000원</p>
+                            </div>
+                            <div class="rate_con">
+                                <p class="rating">5.0<span class="sum"> (22)</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="item_box" href="javascript:void(0)">
+                            <div class="rect">
+                                <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+                            </div>
+                            <div class="txt_con">
+                                <p class="region">[부산]</p>
+                                <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
+                                    견사이름
+                                </p>
+                                <p class="breed">포메라니안</p>
+                                <p class="price">400,000원</p>
+                            </div>
+                            <div class="rate_con">
+                                <p class="rating">5.0<span class="sum"> (22)</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="item_box" href="javascript:void(0)">
+                            <div class="rect">
+                                <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+                            </div>
+                            <div class="txt_con">
+                                <p class="region">[부산]</p>
+                                <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
+                                    견사이름
+                                </p>
+                                <p class="breed">포메라니안</p>
+                                <p class="price">400,000원</p>
+                            </div>
+                            <div class="rate_con">
+                                <p class="rating">5.0<span class="sum"> (22)</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="item_box" href="javascript:void(0)">
+                            <div class="rect">
+                                <img class="img" src="@@imgPath/img/img_item_sample.jpg" alt="상품이미지">
+                            </div>
+                            <div class="txt_con">
+                                <p class="region">[부산]</p>
+                                <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
+                                    견사이름
+                                </p>
+                                <p class="breed">포메라니안</p>
+                                <p class="price">400,000원</p>
+                            </div>
+                            <div class="rate_con">
+                                <p class="rating">5.0<span class="sum"> (22)</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed_bottom buy_btn">
+        <button class="btn btn-link">
+            <img src="@@imgPath/ico/ico_+.png" alt="" class="cart">
+        </button>
+        <button class="btn btn-main w-100">구매하기</button>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".detail_slide", {
+        loop: true,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    // 최근 본 목록
+    var recent = new Swiper(".recent", {
+        slidesPerView: "auto",
+        spaceBetween: 8,
+
+    });
+</script>
+@@include('partials/html-end.html')

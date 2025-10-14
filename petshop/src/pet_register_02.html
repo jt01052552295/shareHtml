@@ -1,0 +1,196 @@
+@@include('partials/html-start.html', { "title": "펫등록" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">펫등록</p>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="inner">
+        <div class="form-group">
+            <div class="mb-20">
+                <label class="input_label require" for="item">상품명</label>
+                <input type="text" class="form-control" id="item" aria-describedby="emailHelp"
+                    placeholder="상품명을 입력해주세요">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="form-flex">
+                <div class="mb-20 w-100">
+                    <label class="input_label " for="item">모견</label>
+                    <input type="text" class="form-control" id="item" aria-describedby="emailHelp"
+                        placeholder="품종을 입력해주세요">
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="mb-20 w-100">
+                    <label class="input_label " for="item">부견</label>
+                    <input type="text" class="form-control" id="item" aria-describedby="emailHelp"
+                        placeholder="품종을 입력해주세요">
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="mb-20">
+                <label class="input_label require" for="item">품종</label>
+                <input type="text" class="form-control" id="item" aria-describedby="emailHelp" placeholder="품종을 입력해주세요">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-20">
+                <label class="input_label require" for="item">출생</label>
+                <input type="text" class="form-control" id="item" aria-describedby="emailHelp" placeholder="YYYY.MM.DD">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-20">
+                <label class="input_label require" for="item">출생</label>
+                <div class="gender-select">
+                    <div class="option w-100">
+                        <input type="radio" id="male" name="gender" checked>
+                        <label class="w-100" for="male">암컷</label>
+                    </div>
+
+                    <div class="option w-100">
+                        <input type="radio" id="female" name="gender">
+                        <label class="w-100" for="female">수컷</label>
+                    </div>
+                </div>
+            </div>
+            <div class="img_upload mb-20">
+                <label class="input_label require" for="item">사진등록</label>
+                <div class="touch_scroll scroll_bar_none">
+                    <div class="upload_con">
+                        <div class="image_upload">
+                            <input id="ip_file" type="file" class="d-none">
+                            <label for="ip_file" class="upload_box">
+                                <div class="rect">
+                                </div>
+                                <p class="max_img">이미지등록</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vaccine-list">
+                <label class="input_label require" for="item">사진등록</label>
+                <div class="item">
+                    <span>코로나 장염 1차</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="item">
+                    <span>코로나 장염 2차</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="item">
+                    <span>켄넬코프 1차</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="item">
+                    <span>켄넬코프 2차</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="item">
+                    <span>신종플루 1차</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="item">
+                    <span>광견병 예방접종</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="item">
+                    <span>심장사상충 예방</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn btn-main w-100 btn-lg btn-height mt-30"
+            onclick="location.href=`pet_register_03.html`">등록하기</button>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const container = document.querySelector(".touch_scroll .upload_con");
+        const fileInput = document.querySelector(".image_upload input[type=file]"); // 업로드 버튼의 input만 선택
+
+        // 파일 선택 이벤트
+        fileInput.addEventListener("change", function (e) {
+            const files = e.target.files;
+            if (!files.length) return;
+
+            for (let file of files) {
+                const reader = new FileReader();
+                reader.onload = function (event) {
+                    // 새로운 이미지 업로드 박스 생성
+                    const newBox = document.createElement("div");
+                    newBox.classList.add("image_upload", "on");
+
+                    newBox.innerHTML = `
+          <input type="file" class="d-none">
+          <label class="upload_box">
+            <div class="rect">
+              <img src="${event.target.result}" alt="업로드 이미지">
+            </div>
+          </label>
+          <button type="button" class="btn upload_del">
+            <img src="/assets/images/ico/ico_x2.png">
+          </button>
+        `;
+
+                    // 삭제 버튼 기능
+                    newBox.querySelector(".upload_del").addEventListener("click", function () {
+                        newBox.remove();
+                    });
+
+                    // 항상 업로드 버튼 뒤에 추가
+                    container.appendChild(newBox);
+                };
+                reader.readAsDataURL(file);
+            }
+
+            // input 초기화 (같은 파일 다시 선택 가능하게)
+            e.target.value = "";
+        });
+    });
+
+</script>
+@@include('partials/html-end.html')

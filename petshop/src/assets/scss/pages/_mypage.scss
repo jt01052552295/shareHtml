@@ -1,0 +1,288 @@
+.user_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 35px 20px;
+    border-bottom: 1px solid var(--gray-color);
+    .box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .thumb_con {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50%;
+            .thumb {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .txt_con {
+            .t1 {
+                font: {
+                    size: 1.2rem;
+                    weight: 500;
+                }
+                color: var(--main-color);
+            }
+            .nickname {
+                font: {
+                    size: 1.8rem;
+                    weight: 700;
+                }
+            }
+        }
+    }
+    .edit {
+        display: block;
+        width: 25px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.menu_con {
+    border-bottom: 1px solid var(--gray-color);
+    .menu {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .link {
+            position: relative;
+            display: block;
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 16px;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 8px;
+                height: 15px;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background: url("../../assets/images/ico/ico_link_arr.png") no-repeat center / cover;
+            }
+            &.list {
+                &::before {
+                    height: 17px;
+                    background: url("../../assets/images/ico/ico_menu_list.png") no-repeat center / cover;
+                }
+            }
+            &.cart {
+                &::before {
+                    height: 15px;
+                    background: url("../../assets/images/ico/ico_menu_cart.png") no-repeat center / cover;
+                }
+            }
+            &.exchange {
+                &::before {
+                    height: 17px;
+                    background: url("../../assets/images/ico/ico_menu_cancel.png") no-repeat center / cover;
+                }
+            }
+            &.review {
+                &::before {
+                    height: 17px;
+                    background: url("../../assets/images/ico/ico_menu_review.png") no-repeat center / cover;
+                }
+            }
+            &.cscenter {
+                &::before {
+                    height: 14px;
+                    background: url("../../assets/images/ico/ico_menu_cscenter.png") no-repeat center / cover;
+                }
+            }
+            &.notice {
+                &::before {
+                    height: 16px;
+                    background: url("../../assets/images/ico/ico_menu_notice.png") no-repeat center / cover;
+                }
+            }
+            &.inquiry {
+                &::before {
+                    height: 19.5px;
+                    background: url("../../assets/images/ico/ico_menu_inquiry.png") no-repeat center / cover;
+                }
+            }
+            &.register {
+                &::before {
+                    height: 17px;
+                    background: url("../../assets/images/ico/ico_menu_register.png") no-repeat center / cover;
+                }
+            }
+            &.sale_history {
+                &::before {
+                    height: 11.5px;
+                    background: url("../../assets/images/ico/ico_menu_sales.png") no-repeat center / cover;
+                }
+            }
+            &.shorts {
+                &::before {
+                    height: 23px;
+                    background: url("../../assets/images/ico/ico_menu_shorts.png") no-repeat center / cover;
+                }
+            }
+            &.product_manage {
+                &::before {
+                    height: 15px;
+                    background: url("../../assets/images/ico/ico_menu_manage.png") no-repeat center / cover;
+                }
+            }
+            &.print {
+                &::before {
+                    height: 20px;
+                    background: url("../../assets/images/ico/ico_menu_print.png") no-repeat center / cover;
+                }
+            }
+            .t1 {
+                padding-left: 35px;
+                font: {
+                    size: 1.6rem;
+                    weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.logout {
+    position: relative;
+    display: block;
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background: url("../../assets/images/ico/ico_menu_logout.png") no-repeat center / cover;
+    }
+    .t1 {
+        font: {
+            size: 1.6rem;
+            weight: 500;
+        }
+        padding-left: 35px;
+    }
+}
+
+// 마이페이지 수정
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .profile-image {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .profile-edit {
+            position: absolute;
+            right: -0;
+            bottom: -0;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .profile-info {
+        .category {
+            font: {
+                size: 1.2rem;
+                weight: 500;
+            }
+            color: var(--main-color);
+            margin: 0;
+        }
+
+        .shop-name {
+            font: {
+                size: 1.8rem;
+                weight: 700;
+            }
+        }
+    }
+}
+
+.product_situation {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid var(--gray-color);
+    border-radius: 10px;
+    .item {
+        position: relative;
+        width: calc(100% / 3);
+        text-align: center;
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 1px;
+            height: 50px;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: var(--gray-color);
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        .tit {
+            font: {
+                size: 1.6rem;
+                weight: 500;
+            }
+        }
+        .sum {
+            margin-top: 10px;
+            font: {
+                size: 1.8rem;
+                weight: 700;
+            }
+            &.main {
+                color: var(--main-color);
+            }
+        }
+    }
+}

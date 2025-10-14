@@ -1,0 +1,227 @@
+@@include('partials/html-start.html', { "title": "자동차" })
+<header class="header_bar sty01">
+    <button class="btn p-0 back">
+        <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+    </button>
+    <p class="title">자동차</p>
+    <button class="btn p-0 search">
+        <img src="@@imgPath/ico/ico_search.png" alt="검색하기" onclick="location.href=`search.html`">
+    </button>
+</header>
+<section class="contents">
+    <div class="inner">
+        <button class="btn btn-outline-main w-100 mt-20 mb-20 car_filter" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <p class="filter_txt">어떤 차를
+                찾고있나요?</p>
+        </button>
+
+        <div class="d-flex justify-content-between align-items-center mb-15 search_filter">
+            <p class="sub_title">전체 <span class="point">245</span>대</p>
+            <button class="btn btn-link p-0 filter_btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#filter" aria-controls="offcanvasBottom">
+                <img class="filter" src="@@imgPath/ico/ico_filter.png" alt="필터">
+                <span class="t1">최신순</span>
+            </button>
+        </div>
+
+        <ul class="item_column">
+            <li class="item">
+                <a class="link" href="car_detail.html">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_car_sample01.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">벤츠 S-클래스 ww221</p>
+                        <p class="specs">21/08식ㆍ80,221KMㆍ1,000CCㆍ가솔린</p>
+                        <p class="price">10,200만원</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="link" href="car_detail.html">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_car_sample02.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">벤츠 S-클래스 ww221</p>
+                        <p class="specs">21/08식ㆍ80,221KMㆍ1,000CCㆍ가솔린</p>
+                        <p class="price">10,200만원</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="link" href="car_detail.html">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_car_sample03.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">벤츠 S-클래스 ww221</p>
+                        <p class="specs">21/08식ㆍ80,221KMㆍ1,000CCㆍ가솔린</p>
+                        <p class="price">10,200만원</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="link" href="car_detail.html">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_car_sample04.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">벤츠 S-클래스 ww221</p>
+                        <p class="specs">21/08식ㆍ80,221KMㆍ1,000CCㆍ가솔린</p>
+                        <p class="price">10,200만원</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="link" href="car_detail.html">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_car_sample01.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">벤츠 S-클래스 ww221</p>
+                        <p class="specs">21/08식ㆍ80,221KMㆍ1,000CCㆍ가솔린</p>
+                        <p class="price">10,200만원</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="link" href="car_detail.html">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_car_sample02.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">벤츠 S-클래스 ww221</p>
+                        <p class="specs">21/08식ㆍ80,221KMㆍ1,000CCㆍ가솔린</p>
+                        <p class="price">10,200만원</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="link" href="car_detail.html">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_car_sample03.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">벤츠 S-클래스 ww221</p>
+                        <p class="specs">21/08식ㆍ80,221KMㆍ1,000CCㆍ가솔린</p>
+                        <p class="price">10,200만원</p>
+                    </div>
+                </a>
+            </li>
+            <li class="item">
+                <a class="link" href="car_detail.html">
+                    <div class="ratio-3-2">
+                        <img src="@@imgPath/img/img_car_sample04.png" alt="상품" class="item_img">
+                        <div class="like_con">
+                            <label class="like_btn" data-gmt-idx="111">
+                                <input type="checkbox" name="chk_like">
+                                <div class="ic_heart"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">벤츠 S-클래스 ww221</p>
+                        <p class="specs">21/08식ㆍ80,221KMㆍ1,000CCㆍ가솔린</p>
+                        <p class="price">10,200만원</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+</section>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+
+    <header class="header_bar sty03" style="position: relative;">
+        <p class="title">필터</p>
+        <button class="btn p-0 close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="@@imgPath/ico/ico_x.png" alt="닫기">
+        </button>
+    </header>
+    <div class="offcanvas-body small p-0">
+        <ul class="filter_list">
+            <li class="filter auto">
+                <a href="car_brand.html" class="link">
+                    <p class="t1">제조사 / 모델</p>
+                </a>
+            </li>
+            <li class="filter">
+                <a href="car_year.html" class="link">
+                    <p class="t1">연식</p>
+                </a>
+            </li>
+            <li class="filter">
+                <a href="car_distance.html" class="link">
+                    <p class="t1">주행거리</p>
+                </a>
+            </li>
+            <li class="filter">
+                <a href="javascript:void(0)" class="link">
+                    <p class="t1">가격</p>
+                </a>
+            </li>
+            <li class="filter">
+                <a href="car_kind.html" class="link">
+                    <p class="t1">차종</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-bottom filter" tabindex="-1" id="filter" aria-labelledby="offcanvasBottomLabel">
+
+    <div class="offcanvas-body small">
+        <ul class="filter_opt">
+            <li class="opt">최신순</li>
+            <li class="opt">과거순</li>
+        </ul>
+    </div>
+</div>

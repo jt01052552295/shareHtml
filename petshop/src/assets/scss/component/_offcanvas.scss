@@ -1,0 +1,226 @@
+.offcanvas {
+    &.offcanvas-bottom {
+        max-width: 640px;
+        width: 100%;
+        left: calc(50% - 45px);
+        height: auto;
+        border-radius: 20px 20px 0 0;
+        .offcanvas-header {
+            padding: 20px;
+            .offcanvas-title {
+                font: {
+                    size: 1.8rem;
+                    weight: 700;
+                }
+            }
+        }
+        .offcanvas-body {
+            padding: 20px;
+            padding-top: 0;
+        }
+    }
+}
+
+// 숏츠 댓글
+
+.offcanvas-bottom {
+    &.shorts_reply {
+        max-height: 70%;
+        overflow-y: scroll;
+        -ms-overflow-style: none; /* IE, Edge */
+        scrollbar-width: none; /* Firefox */
+        &::-webkit-scrollbar {
+            /* Chrome, Safari */
+            display: none;
+        }
+        .offcanvas-body {
+        }
+        .reply_con {
+            .comment {
+                position: relative;
+                margin-bottom: 20px;
+                .thumb_nail {
+                    align-items: start;
+                    .img_con {
+                        flex-shrink: 0;
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .txt_con {
+                        position: relative;
+                        .ment {
+                            margin-top: 5px;
+                            font: {
+                                size: 1.4rem;
+                                weight: 500;
+                            }
+                        }
+                        .reply_write {
+                            margin-top: 5px;
+                            font: {
+                                size: 1.2rem;
+                                weight: 500;
+                            }
+                            color: var(--gray-color);
+                        }
+                        .reply_more {
+                            position: relative;
+                            margin-top: 10px;
+                            padding-left: 80px;
+                            font: {
+                                size: 1.4rem;
+                                weight: 500;
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                display: block;
+                                width: 65px;
+                                height: 1px;
+                                top: 50%;
+                                left: 0;
+                                transform: translateY(-50%);
+                                background-color: var(--gray-color);
+                            }
+                        }
+                    }
+                }
+                .like_btn {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    .num {
+                        margin-top: 3px;
+                        text-align: center;
+                        font: {
+                            size: 1.4rem;
+                            weight: 500;
+                        }
+                    }
+                }
+
+                .like_btn .ic_heart {
+                    width: 19px;
+                    height: 17px;
+                    background: url("../../assets/images/ico/ico_heart_reply.png");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+
+                .like_btn input:checked + .ic_heart {
+                    background: url("../../assets/images/ico/ico_heart_on.png");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+
+                .ment_reply {
+                    margin-top: 15px;
+                    padding-left: 60px;
+                    .list {
+                        position: relative;
+                        margin-top: 10;
+                        .thumb_nail {
+                            .img_con {
+                                width: 35px;
+                                height: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .reply_input {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 15px 25px;
+            background-color: var(--white-color);
+            .input_box {
+                display: flex;
+                padding: 10px 15px;
+                border: 1px solid var(--gray-color);
+                border-radius: 6px;
+                .reply_form {
+                    border: none;
+                    outline: none;
+                    flex: auto;
+                    font: {
+                        size: 1.4rem;
+                        weight: 500;
+                    }
+                }
+                .btn-link {
+                    flex: 0;
+                    padding: 0;
+                    height: auto;
+                    img {
+                        width: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 노출필터
+.exposure {
+    .exposure_con {
+        .list {
+            position: relative;
+            margin-bottom: 15px;
+            padding-left: 20px;
+            font: {
+                size: 1.4rem;
+                weight: 500;
+            }
+            cursor: pointer;
+            &.on {
+                font: {
+                    weight: 700;
+                }
+                color: var(--main-color);
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    background: url("../../assets/images/ico/ico_check.png") no-repeat center / cover;
+                }
+            }
+        }
+    }
+}
+
+//기본
+.basic {
+    .opt_select {
+        position: relative;
+        .list {
+            margin-bottom: 15px;
+            font: {
+                size: 1.4rem;
+                weight: 500;
+            }
+            cursor: pointer;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .offcanvas {
+        &.offcanvas-bottom {
+            left: initial;
+            right: initial;
+        }
+    }
+}

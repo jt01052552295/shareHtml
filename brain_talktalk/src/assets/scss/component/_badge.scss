@@ -1,0 +1,25 @@
+.badge_custom {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  font: {
+    size: 1.3rem;
+    weight: 500;
+  }
+  &.orange {
+    background-color: rgba($color: #ff9636, $alpha: 0.1);
+    color: #ff6e30;
+  }
+  &.green {
+    background-color: rgba($color: #27ae60, $alpha: 0.1);
+    color: #27ae60;
+  }
+  &.blue {
+    background-color: rgba($color: #21a2ff, $alpha: 0.1);
+    color: #21a2ff;
+  }
+  &.gray {
+    background-color: rgba($color: #a2a2a2, $alpha: 0.1);
+    color: #a5a5a5;
+  }
+}

@@ -1,0 +1,51 @@
+// common
+@import "./pages/design";
+@import "./pages/custom";
+@import "./pages/swiper-bundle.min";
+@import "./pages/common";
+@import "./pages/font";
+
+// page
+@import "./pages/map_search";
+@import "./pages/membership";
+@import "./pages/search";
+@import "./pages/alarm";
+@import "./pages/review_write";
+@import "./pages/buy_resigter";
+@import "./pages/community";
+@import "./pages/notice";
+@import "./pages/event";
+@import "./pages/faq";
+@import "./pages/my_inquiry";
+@import "./pages/membership_contract";
+@import "./pages/membership_interest";
+@import "./pages/mypage";
+@import "./pages/secession";
+@import "./pages/login";
+@import "./pages/membership_step";
+@import "./pages/find_id";
+@import "./pages/success";
+@import "./pages/item_detail";
+
+@import "./pages/intro";
+@import "./pages/counselor";
+@import "./pages/company";
+
+// component
+@import "./component/modal";
+@import "./component/review";
+@import "./component/offcanvas";
+@import "./component/input";
+@import "./component/badge";
+@import "./component/popover";
+@import "./component/header";
+@import "./component/footer";
+
+// 원하는 색상으로 변수만 변경
+// $btn-primary-hover-color: #ffffff;
+// $btn-primary-hover-bg: #ff9900;
+// $btn-primary-hover-border-color: #ff8800;
+
+// 그 외 필요한 기본 색상도 지정 가능
+// $btn-primary-bg: #ff6600;
+// $btn-primary-color: #000;

@@ -1,0 +1,106 @@
+@@include('partials/html-start.html', { "title": "시세알림설정" })
+
+
+<div class="idx_pg">
+    <div class="container">
+        <button class="btn btn-outline-light active" data-bs-toggle="offcanvas" data-bs-target="#kind"
+            aria-controls="offcanvasBottom">
+            <span>시세알림설정</span>
+        </button>
+    </div>
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="kind" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header pb-0">
+            <button class="btn p-0"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div class="check_box">
+                <div class="title d-flex justify-content-between align-items-center w-100">
+                    <p class="offcanvas-title" id="offcanvasBottomLabel">거래유형</p>
+                    <p class="all-check">전체선택</p>
+                </div>
+                <div class="d-flex check_group five" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck1">매수</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">매도</label>
+                </div>
+            </div>
+            <div class="check_box">
+                <div class="title d-flex justify-content-between align-items-center w-100">
+                    <p class="offcanvas-title" id="offcanvasBottomLabel">대분류</p>
+                    <p class="all-check">전체선택</p>
+                </div>
+                <div class="d-flex check_group five" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck1">정회원</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">주중</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">법인</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">무기명</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">기타</label>
+                </div>
+            </div>
+            <div class="check_box">
+                <div class="title d-flex justify-content-between align-items-center w-100">
+                    <p class="offcanvas-title" id="offcanvasBottomLabel">소분류</p>
+                    <p class="all-check">전체선택</p>
+                </div>
+                <div class="d-flex check_group five" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck1">무기명</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">개인</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">가족</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">남성</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">여성</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">기타</label>
+                </div>
+            </div>
+            <div class="check_box">
+                <div class="title d-flex justify-content-between align-items-center w-100">
+                    <p class="offcanvas-title" id="offcanvasBottomLabel">회원예약률</p>
+                    <p class="all-check">전체선택</p>
+                </div>
+                <div class="d-flex check_group three" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck1">매매 실거래가</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">매매 가능금액</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">매도호가</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">매수호가</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-light btn-sm d-flex justify-content-center align-items-center"
+                        for="btncheck2">리뷰</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('partials/html-end.html')

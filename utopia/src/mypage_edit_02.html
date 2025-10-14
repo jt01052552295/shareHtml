@@ -1,0 +1,60 @@
+@@include('partials/html-start.html', { "title": "현재 비밀번호 입력" })
+<header class="header_bar sty05">
+    <button class="btn back p-0 back">
+        <img src="@@imgPath/ico/ico_back.png" onclick="history.back()" alt="뒤로가기">
+    </button>
+    <p class="title">현재 비밀번호 입력</p>
+</header>
+<section class="contents">
+    <div class="inner">
+        <div class="profile_edit">
+            <div class="profile-container">
+                <div class="profile-image" id="profileImage">
+                    <img id="preview" class="profile" src="@@imgPath/img/img_profile_sample.jpg" alt="프로필이미지" style="">
+                </div>
+                <div class="camera-icon" id="uploadBtn">
+                    <img src="@@imgPath/ico/ico_camera.png" alt="프로필변경">
+                </div>
+                <input type="file" id="fileInput" accept="image/*" />
+
+            </div>
+            <p class="email">id1234@naver.com</p>
+        </div>
+
+        <div class="form-group mt-30">
+            <label class="tit" for="formGroupExampleInput">비밀번호 <span class="required">*</span></label>
+            <input type="password" class="form-control" id="formGroupExampleInput"
+                placeholder="영소문, 숫자, 특수문자 조합 8자리 이상">
+        </div>
+
+        <div class="form-group mt-30">
+            <label class="tit" for="formGroupExampleInput">비밀번호 확인 <span class="required">*</span></label>
+            <input type="password" class="form-control" id="formGroupExampleInput" placeholder="재입력해주세요">
+        </div>
+
+        <div class="form-group mt-30">
+            <label class="tit" for="formGroupExampleInput">이름 <span class="required">*</span></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="이름 입력">
+        </div>
+
+        <div class="form-group mt-30">
+            <label class="tit" for="formGroupExampleInput">닉네임 <span class="required">*</span></label>
+            <div class="input_box d-flex align-items-center">
+                <div class="box">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="2자리 이상 입력">
+                </div>
+                <button class="btn btn-outline-light p-0">중복확인</button>
+            </div>
+            <div class="invalid-feedback" style="display: block;">
+                인증번호를 잘못 입력하셨습니다. 다시 입력해 주세요.
+            </div>
+        </div>
+
+        <button class="btn btn-lg btn-light w-100 mt-30" onclick="location.href=`mypage.html`">수정</button>
+        <button class="btn btn-secondary w-100 mt-10" onclick="location.href=`secession.html`">회원탈퇴</button>
+    </div>
+</section>
+
+
+
+@@include('partials/html-end.html')

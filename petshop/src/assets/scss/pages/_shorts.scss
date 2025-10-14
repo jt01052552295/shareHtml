@@ -1,0 +1,257 @@
+.shorts_con {
+    position: relative;
+    color: var(--white-color);
+    .shorts_video {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        display: block;
+    }
+    .side_menu {
+        position: fixed;
+        top: 50%;
+        right: calc(50% - 565px);
+        transform: translateY(-50%);
+        .menu {
+            margin-bottom: 30px;
+            text-align: center;
+            cursor: pointer;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .img_con {
+                width: 29px;
+                margin: 0 auto;
+                .img {
+                    width: 100%;
+                }
+            }
+            .txt {
+                margin-top: 4px;
+                font: {
+                    size: 1.2rem;
+                    weight: 700;
+                }
+                color: var(--white-color);
+            }
+        }
+    }
+
+    .shorts_txt {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 30px;
+        &.show {
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                bottom: 0;
+                background: linear-gradient(360deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 100%);
+                z-index: 1;
+            }
+            .desc {
+                width: 100%;
+                .simply {
+                    display: inline-block;
+                    padding-left: 10px;
+                }
+            }
+            .txt {
+                width: 100%;
+                .date {
+                    display: block;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .thumb_nail {
+            position: relative;
+            z-index: 2;
+        }
+        .txt {
+            position: relative;
+            width: 90%;
+            z-index: 2;
+            .desc {
+                margin-top: 10px;
+                font: {
+                    size: 1.6rem;
+                    weight: 500;
+                }
+                .simply {
+                    position: relative;
+                    z-index: 3;
+                    font: {
+                        size: 1.4rem;
+                        weight: 500;
+                    }
+                    color: var(--gray-color);
+                }
+            }
+            .date {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .shorts_con {
+        .side_menu {
+            position: fixed;
+            top: 50%;
+            left: initial;
+            right: calc(50% - 290px);
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .shorts_con {
+        .side_menu {
+            right: 30px;
+        }
+    }
+}
+
+// 숏츠 등록하기
+
+.shorts_register {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    .list {
+        position: relative;
+        width: calc((100% / 3) - 4px);
+
+        .cb-label {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 10;
+        }
+        .img_con {
+            position: relative;
+            aspect-ratio: 130 / 178;
+            border-radius: 6px;
+            overflow: hidden;
+            &.add {
+                background-color: #d9d9d9;
+            }
+            .shorts {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .camera {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+// 숏츠목록
+
+.shorts_list {
+    .list {
+        position: relative;
+        display: flex;
+        gap: 15px;
+        margin-bottom: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .img_con {
+            width: 130px;
+            aspect-ratio: 130 / 178;
+            border-radius: 6px;
+            overflow: hidden;
+            .img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .txt_con {
+            .tit {
+                margin-bottom: 15px;
+                font: {
+                    size: 1.6rem;
+                    weight: 700;
+                }
+            }
+            .view {
+                font: {
+                    size: 1.6rem;
+                    weight: 400;
+                }
+            }
+            .date {
+                font: {
+                    size: 1.6rem;
+                    weight: 400;
+                }
+            }
+            .opt_con {
+                display: flex;
+                gap: 25px;
+                .opt {
+                    position: relative;
+                    padding-left: 20px;
+                    font: {
+                        size: 1.6rem;
+                        weight: 400;
+                    }
+                    &.good {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            width: 12px;
+                            height: 12px;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background: url("../../assets/images/ico/ico_good.png") no-repeat center / cover;
+                        }
+                    }
+                    &.review {
+                        cursor: pointer;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            width: 12px;
+                            height: 11px;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background: url("../../assets/images/ico/ico_review.png") no-repeat center / cover;
+                        }
+                    }
+                }
+            }
+        }
+
+        .more_menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            img {
+                width: 16px;
+                filter: invert(1);
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.sch_ip {
+  .btn-icon {
+    height: auto;
+    .search_icon {
+      width: 2rem;
+    }
+  }
+}
+
+.map_search_bar {
+  .srchfltr {
+    .btn-group-gray {
+      .btn-outline-light {
+        flex-shrink: 0;
+        font: {
+          size: 1.5rem;
+          weight: 600;
+        }
+        &.reset {
+          .reset_btn {
+            width: 2.5rem;
+            height: 2.5rem;
+            opacity: 0.6;
+          }
+        }
+        &.active {
+          color: var(--primary);
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

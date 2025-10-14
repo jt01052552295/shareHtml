@@ -1,0 +1,45 @@
+@@include('partials/html-start.html', { "title": "아이디/비밀번호 찾기" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">아이디/비밀번호 찾기</p>
+    </div>
+</header>
+<section class="contents">
+    <ul class="tab_con mt-10 mb-20">
+        <li class="tab active">
+            <a class="link" href="find_account.html">
+                <p class="t1">아이디찾기</p>
+            </a>
+        </li>
+        <li class="tab">
+            <a class="link" href="find_account02.html">
+                <p class="t1">비밀번호 찾기</p>
+            </a>
+        </li>
+    </ul>
+    <div class="inner">
+        <div class="form-group">
+            <div class="mb-15">
+                <label class="input_label" for="name">이름</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                    placeholder="이름 또는 닉네임을 입력해주세요">
+            </div>
+
+            <div class="">
+                <label class="input_label" for="phone">휴대폰 번호</label>
+                <input type="email" class="form-control" id="phone" aria-describedby="emailHelp"
+                    placeholder="'-'를 제외한 숫자만 입력해주세요">
+            </div>
+        </div>
+        <button class="btn btn-secondary w-100 btn-height mt-40" onclick="location.href=`find_account01.html`">인증번호
+            전송</button>
+    </div>
+
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

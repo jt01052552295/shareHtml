@@ -1,0 +1,239 @@
+.cart_item {
+    .list {
+        margin-bottom: 10px;
+        border: 1px solid var(--gray-color);
+        border-radius: 6px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .seller_thumb {
+            padding: 10px;
+        }
+        .delete_btn {
+            width: 15px;
+        }
+
+        .info_con {
+            display: flex;
+            align-items: start;
+            gap: 5px;
+            padding: 10px;
+            width: 100%;
+            border-bottom: 1px solid var(--gray-color);
+            .box {
+                display: flex;
+                gap: 5px;
+                width: 100%;
+            }
+            .item_info {
+                width: 100%;
+                .rect {
+                    width: 60px;
+                    flex-shrink: 0;
+                    border-radius: 6px;
+                    .img {
+                        width: 100%;
+                    }
+                }
+                .vaccine {
+                    position: relative;
+                    display: inline-block;
+                    margin-top: 10px;
+                    padding-right: 20px;
+                    font: {
+                        size: 1.6rem;
+                        weight: 700;
+                    }
+                    cursor: pointer;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        background: url("../../assets/images/ico/ico_!.png") no-repeat center / cover;
+                    }
+                }
+            }
+        }
+
+        .txt_con {
+            width: 100%;
+            .brand {
+                font: {
+                    size: 1.6rem;
+                    weight: 700;
+                }
+            }
+            .nose {
+                position: relative;
+                padding-right: 20px;
+                font: {
+                    size: 1.6rem;
+                    weight: 700;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 14px;
+                    height: 14px;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    background: url("../../assets/images/ico/ico_x.png") no-repeat center / cover;
+                }
+                &.on {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        background: url("../../assets/images/ico/ico_o.png") no-repeat center / cover;
+                    }
+                }
+            }
+            .breed_con {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                .breed {
+                    font: {
+                        size: 1.2rem;
+                        weight: 500;
+                    }
+                    color: #aaa;
+                    b {
+                        display: inline-block;
+                        padding-right: 5px;
+                    }
+                }
+            }
+            .birth {
+                font: {
+                    size: 1.2rem;
+                    weight: 500;
+                }
+                color: #aaa;
+            }
+        }
+
+        .price_con {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 10px 10px 40px;
+            .t1 {
+                font: {
+                    size: 1.6rem;
+                    weight: 700;
+                }
+            }
+            .price {
+                font: {
+                    size: 1.6rem;
+                    weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.payment_con {
+    .tit {
+        margin-bottom: 15px;
+        font: {
+            size: 1.6rem;
+            weight: 700;
+        }
+    }
+    .pay_detail {
+        .list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+            .t1 {
+                font: {
+                    size: 1.4rem;
+                    weight: 500;
+                }
+            }
+            .t2 {
+                font: {
+                    size: 1.4rem;
+                    weight: 500;
+                }
+            }
+            &.sum {
+                margin-top: 15px;
+                margin-bottom: 0;
+                padding-top: 15px;
+                border-top: 1px solid var(--black-color);
+                .t1 {
+                    font: {
+                        size: 1.6rem;
+                        weight: 700;
+                    }
+                }
+                .t2 {
+                    font: {
+                        size: 1.6rem;
+                        weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.offcanvas-body {
+    padding: 20px;
+    padding-top: 0;
+    .vaccine_list {
+        .list {
+            .vaccine {
+                position: relative;
+                padding-left: 15px;
+                font: {
+                    size: 1.6rem;
+                    weight: 500;
+                }
+                line-height: 29px;
+                &.on {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        background: url("../../assets/images/ico/ico_o.png") no-repeat center / cover;
+                    }
+                }
+                &.off {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        background: url("../../assets/images/ico/ico_x.png") no-repeat center / cover;
+                    }
+                }
+            }
+        }
+    }
+}

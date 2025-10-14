@@ -1,0 +1,53 @@
+.cate_con {
+    display: flex;
+    gap: 6px;
+    padding: 15px 1.6rem;
+}
+
+.accordion {
+    border: none;
+    .accordion-item {
+        border: none;
+        .accordion-header {
+            padding: 20px 1.6rem;
+            border-bottom: 1px solid var(--gray-200);
+            .tit_con {
+                // display: block;
+                background: none;
+                border: none;
+                border-radius: 0;
+                box-shadow: none;
+                padding: 0;
+                color: var(--black);
+                &::after {
+                    width: 24px;
+                    height: 24px;
+                    background: url("../images/ico/ico_downarrow.png") no-repeat center / cover;
+                }
+                font: {
+                    size: inherit;
+                }
+                .tit {
+                }
+                .date {
+                    font: {
+                        size: 1.3rem;
+                        weight: 500;
+                    }
+                    color: var(--gray-400);
+                }
+            }
+        }
+
+        .accordion-collapse {
+            .accordion-body {
+                padding: 20px 1.6rem;
+                background-color: var(--gray-100);
+                font: {
+                    size: 1.5rem;
+                    weight: 400;
+                }
+            }
+        }
+    }
+}

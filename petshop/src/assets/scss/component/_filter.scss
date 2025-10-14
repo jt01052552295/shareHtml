@@ -1,0 +1,29 @@
+.filter_con {
+    .filter_slide {
+        .swiper-wrapper {
+            .swiper-slide {
+                width: auto;
+                padding: 4px 12px;
+                border: 1px solid var(--main-color);
+                border-radius: 30px;
+                .t1 {
+                    font: {
+                        size: 1.4rem;
+                        weight: 500;
+                    }
+                    color: var(--main-color);
+                }
+                &.active {
+                    background-color: var(--main-color);
+                    .t1 {
+                        font: {
+                            weight: 700;
+                        }
+                        color: var(--white-color);
+                    }
+                }
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@media (max-width: 1440px) {
+    .ad_con {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .write_btn {
+        right: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    html {
+        font-size: 9px;
+    }
+}

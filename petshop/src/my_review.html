@@ -1,0 +1,59 @@
+@@include('partials/html-start.html', { "title": "나의리뷰" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">나의리뷰</p>
+    </div>
+</header>
+
+<section class="contents pb-50">
+    <div class="inner">
+        <div class="my_review">
+            <div class="review_cnt">
+                <p class="tit">작성한 리뷰 <span>2</span>건</p>
+            </div>
+        </div>
+
+        <ul class="my_review_list mt-15">
+            <li class="list">
+                <a href="review_detail.html" class="link">
+                    <div class="rect">
+                        <img src="@@imgPath/img/img_item_sample.png" alt="">
+                    </div>
+                    <div class="posting_title">
+                        <p class="address">부산시 남구 문현금융로</p>
+                        <p class="company">야옹아멍멍해봐</p>
+                    </div>
+                </a>
+            </li>
+            <li class="list">
+                <a href="review_detail.html" class="link">
+                    <div class="rect">
+                        <img src="@@imgPath/img/img_item_sample.png" alt="">
+                    </div>
+                    <div class="posting_title">
+                        <p class="address">부산시 남구 문현금융로</p>
+                        <p class="company">야옹아멍멍해봐</p>
+                    </div>
+                </a>
+            </li>
+            <li class="list">
+                <a href="review_detail.html" class="link">
+                    <div class="rect no-img">
+
+                    </div>
+                    <div class="posting_title">
+                        <p class="address">부산시 남구 문현금융로</p>
+                        <p class="company">야옹아멍멍해봐</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')
