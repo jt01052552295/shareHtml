@@ -1,3 +1,5 @@
+@import "../bootstrap/scss/bootstrap";
+
 // common
 @import "./pages/design";
 @import "./pages/custom";
@@ -30,6 +32,8 @@
 @import "./pages/intro";
 @import "./pages/counselor";
 @import "./pages/company";
+@import "./pages/web_review";
+@import "./pages/solution";
 
 // component
 @import "./component/modal";
@@ -40,12 +44,3 @@
 @import "./component/popover";
 @import "./component/header";
 @import "./component/footer";
-
-// 원하는 색상으로 변수만 변경
-// $btn-primary-hover-color: #ffffff;
-// $btn-primary-hover-bg: #ff9900;
-// $btn-primary-hover-border-color: #ff8800;
-
-// 그 외 필요한 기본 색상도 지정 가능
-// $btn-primary-bg: #ff6600;
-// $btn-primary-color: #000;

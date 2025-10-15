@@ -23,13 +23,15 @@
         overflow: hidden;
         z-index: 1;
         h1 {
-            font-size: 4rem;
+            font-size: 2.4rem;
             font-weight: bold;
             flex-direction: column; // 줄마다 세로 정렬
             white-space: pre-wrap; // 줄바꿈과 띄어쓰기 유지
             text-align: center;
             line-height: 1.5;
-
+            @include media-breakpoint-up(md) {
+                font-size: 4rem;
+            }
             span {
                 color: #888; // 기본 회색
                 transition: color 0.2s ease;
@@ -41,7 +43,10 @@
 .sub_banner {
     position: relative;
     width: 100%;
-    height: 360px;
+    height: 240px;
+    @include media-breakpoint-up(md) {
+        height: 360px;
+    }
     &::before {
         content: "";
         position: absolute;
@@ -73,10 +78,15 @@
 }
 
 .about {
-    display: flex;
-    align-items: start;
-    gap: 30px;
+    flex-direction: column;
     margin-block: 100px 30px;
+    @include media-breakpoint-up(md) {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 30px;
+        margin-block: 100px 30px;
+    }
     .txt_con {
         flex: 2;
         .sub_tit {
@@ -96,10 +106,18 @@
             &:last-child {
                 margin-bottom: 0;
             }
+            @include media-breakpoint-up(lg) {
+                font-size: 2rem;
+            }
         }
     }
+
     .img_con {
         flex: 1;
+        display: none;
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
         img {
             width: 100%;
         }

@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="Generator" content="회원권마켓">
-  <meta name="Author" content="회원권마켓">
-  <meta name="Keywords" content="회원권마켓">
-  <meta name="Description" content="회원권마켓">
+  <meta name="Generator" content="브레인톡톡">
+  <meta name="Author" content="브레인톡톡">
+  <meta name="Keywords" content="브레인톡톡">
+  <meta name="Description" content="브레인톡톡">
   <meta name="viewport"
     content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no" />
-  <meta name="apple-mobile-web-app-title" content="회원권마켓">
+  <meta name="apple-mobile-web-app-title" content="브레인톡톡">
   <link rel="apple-touch-icon" sizes="57x57" href="@@imgPath/favicon/apple-icon-57x57.png?v=@@version" />
   <link rel="apple-touch-icon" sizes="60x60" href="@@imgPath/favicon/apple-icon-60x60.png?v=@@version" />
   <link rel="apple-touch-icon" sizes="72x72" href="@@imgPath/favicon/apple-icon-72x72.png?v=@@version" />
@@ -73,41 +73,29 @@
 
 <body>
   <div id="wrap">
-    <div class="left_wrapper">
-      <div class="left_txt_wrap">
-        <div>
-          <p class="txt1">골프회원권시세 1등 <br>
-            애플리케이션 <b>회원권마켓</b>
-          </p>
-          <p class=" ">골프/콘도/헬스 회원권 정확한 시세와 정보전달.<br>
-            믿을 수 있는 파트너 회원권마켓
-          </p>
-          <button type="button" class="btn btn-primary fs_18 mt-5 rounded-lg">지금 시작하세요!<img
-              src="@@imgPath/img/arrow_w.svg" alt="바로가기" class="ml-2"></button>
-        </div>
-      </div>
-    </div>
     <div class="right_wrapper">
 
       <!-- 상단 -->
       <!-- 1번메뉴/메인   -->
-      <div class="hd_m align-items-center justify-content-between border-0">
-        <div class="logo"><a href="./"><img src="@@imgPath/logo/logo.png" alt="로고"></a></div>
-        <div class="hd_btn">
-          <button class="  " type="button" onclick="location.href='./링크이동'">
-            <img src="@@imgPath/icon/ico_share.png" alt="공유 바로가기">
-          </button>
-          <button class="top_alim ml-4" type="button" onclick="location.href='alarm.html'">
-            <img src="@@imgPath/icon/ico_alim.png" alt="알림목록 바로가기">
-            <span></span>
-          </button>
-          <button class="  ml-4" type="button" onclick="location.href='map_search.html'">
-            <img src="@@imgPath/icon/ico_search.png" alt="검색 바로가기">
-          </button>
-          <div class="hd_menu_btn"><a href="#menu" class=" ml-4"><img src="@@imgPath/icon/ico_menu.png"
-                alt="전체메뉴 보기"></a></div>
+      <!-- <div class="hd_m ">
+        <div class="inner d-flex align-items-center justify-content-between border-0">
+          <div class="logo"><a href="./"><img src="@@imgPath/logo/logo.png" alt="로고"></a></div>
+          <div class="hd_btn">
+            <button class="  " type="button" onclick="location.href='./링크이동'">
+              <img src="@@imgPath/icon/ico_share.png" alt="공유 바로가기">
+            </button>
+            <button class="top_alim ml-4" type="button" onclick="location.href='alarm.html'">
+              <img src="@@imgPath/icon/ico_alim.png" alt="알림목록 바로가기">
+              <span></span>
+            </button>
+            <button class="  ml-4" type="button" onclick="location.href='map_search.html'">
+              <img src="@@imgPath/icon/ico_search.png" alt="검색 바로가기">
+            </button>
+            <div class="hd_menu_btn"><a href="#menu" class=" ml-4"><img src="@@imgPath/icon/ico_menu.png"
+                  alt="전체메뉴 보기"></a></div>
+          </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- 2번메뉴/가장 많이쓰이는 메뉴   -->
       <!-- <div class="hd_m align-items-center justify-content-between">
@@ -143,9 +131,39 @@
           </button>
         </div>
       </div> -->
-
-
-
+      <header class="header_menu">
+        <div class="inner">
+          <div class="logo_con">
+            <a href="@@baseUrl/intro.html">
+              <img src="@@imgPath/logo/logo.png" alt="브레인톡톡">
+            </a>
+          </div>
+          <nav class="gnb">
+            <ul class="depth_01">
+              <li class="menu">
+                <a href="@@baseUrl/company.html">브레인톡톡</a>
+              </li>
+              <li class="menu">
+                <a href="@@baseUrl/solution.html">언어치료 솔루션</a>
+              </li>
+              <li class="menu">
+                <a href="@@baseUrl/web_review.html">고객 리뷰</a>
+              </li>
+              <li class="menu">
+                <a href="javascript:void(0)">프로세스</a>
+              </li>
+              <li class="menu">
+                <a href="javascript:void(0)">빠른상담</a>
+              </li>
+              <li class="hd_menu_btn m_menu_btn">
+                <a href="#menu" class=" ml-4">
+                  <img src="@@imgPath/icon/ico_menu.png" alt="전체메뉴 보기">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
       <!-- 모바일 메뉴 영역 -->
       <div class="m_menu_wr">
@@ -173,40 +191,29 @@
 
             <ul class="nav_ul">
               <li class="nav_li">
-                <a href="@@baseUrl/notice.html" class="nav_a">공지사항 </a>
+                <a href="@@baseUrl/company.html" class="nav_a">브레인톡톡</a>
               </li>
               <li class="nav_li">
-                <a href="@@baseUrl/event.html" class="nav_a">이벤트 </a>
+                <a href="@@baseUrl/.html" class="nav_a">언어치료 솔루션 </a>
               </li>
               <li class="nav_li">
-                <a href="@@baseUrl/faq.html" class="nav_a">FAQ </a>
+                <a href="@@baseUrl/web_review.html" class="nav_a">리뷰</a>
               </li>
               <li class="nav_li">
-                <a href="@@baseUrl/my_inquiry_write.html" class="nav_a">1:1 문의 </a>
+                <a href="@@baseUrl/.html" class="nav_a">프로세스</a>
               </li>
               <li class="nav_li">
-                <a href="@@baseUrl/membership_confirm.html" class="nav_a">회원권 인증하기 </a>
+                <a href="@@baseUrl/.html" class="nav_a">자가진단</a>
               </li>
               <li class="nav_li">
-                <a href="@@baseUrl/membership_contract.html" class="nav_a">회원권 계약현황 </a>
+                <a href="@@baseUrl/.html" class="nav_a">예약하기</a>
               </li>
               <li class="nav_li">
-                <a href="@@baseUrl/membership_interest.html" class="nav_a">관심 회원권 </a>
+                <a href="@@baseUrl/.html" class="nav_a">예약목록</a>
               </li>
-              <li class="nav_li">
-                <a href="@@baseUrl/membership_contract.html" class="nav_a">회원권 계약현황 </a>
-              </li>
-              <li class="nav_li">
-                <a href="@@baseUrl/policy.html" class="nav_a">이용약관 </a>
-              </li>
-              <li class="nav_li">
-                <a href="@@baseUrl/terms.html" class="nav_a">개인정보 처리방침 </a>
-              </li>
-
-
             </ul>
             <div class="foot_info bg-light text-gray line_h1_2">
-              <p class="mb-2 fs_14">주식회사 회원권 마켓</p>
+              <p class="mb-2 fs_14">브레인톡톡</p>
               <p class="fs_13 ">
                 <span class="mr-2">대표자: 고재성</span>
                 <span class="mr-2">대표전화: 02-529-5700 </span><br>

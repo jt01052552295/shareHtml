@@ -1,0 +1,36 @@
+.web_review {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    .sub_title {
+        font: {
+            size: 3.6rem;
+            weight: 500;
+        }
+    }
+}
+
+.review_con {
+    &.web {
+        margin-top: 50px;
+        .title_con {
+            margin-bottom: 30px;
+        }
+        .review_list {
+            .list {
+                .specialist {
+                    margin-bottom: 5px;
+                    font: {
+                        size: 2rem;
+                        weight: 700;
+                    }
+                }
+                .rating_con {
+                }
+                .review_contents {
+                }
+            }
+        }
+    }
+}

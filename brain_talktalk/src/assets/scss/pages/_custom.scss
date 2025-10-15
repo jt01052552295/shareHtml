@@ -1,49 +1,11 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
 :root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #ff5858;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #4695ed;
-  --white: #fff;
   --gray: #585e65;
   --gray1: #abb5be;
   --gray2: #9ea4ab;
-  --primary: #00402d;
-  --primary-light: rgba(51, 102, 204, 0.08);
-  --primary-hover: #01291d;
-  --secondary: #222222;
-  --secondary-hover: #222222;
-  --success: #3366cc;
-  --info: #4695ed;
-  --warning: #ffc107;
-  --danger: #f23728;
-  --light: #f6f6f6;
-  --light-hover: #eee;
-  --dark: #1a1a1a;
-  --dark-hover: #000000;
-  --main: #00412e;
   --border: #e3e3e3;
-  --border-light: #f6f6f6;
-  --text: #222;
-  --bg-light: #fff;
-  --input_placeholder: #9ea4ab;
-  --input_disabled: #f6f6f6;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif:
-    Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --primary: #00402d;
 }
 
 :root {
@@ -68,11 +30,15 @@ div::-webkit-scrollbar-thumb {
 }
 
 html {
-  font-size: 10px;
-}
-@media (max-width: 480px) {
-  html {
+  font-size: 8px;
+  @include media-breakpoint-up(sm) {
     font-size: 8px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 9px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 10px;
   }
 }
 body {
@@ -183,6 +149,11 @@ img {
   display: inline-block;
   height: auto;
 }
+.container {
+  @include media-breakpoint-up(lg) {
+    max-width: 1000px;
+  }
+}
 .container-fluid {
   max-width: 2560px;
 }
@@ -195,8 +166,10 @@ img {
 
 /*메인*/
 .idx_pg {
-  padding-top: var(--hd_height_m);
-  // padding-bottom: 5rem;
+  padding-top: 50px;
+  @include media-breakpoint-up(sm) {
+    padding-top: 70px;
+  }
 }
 .curs_pointer {
   cursor: pointer;

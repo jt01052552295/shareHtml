@@ -1,0 +1,123 @@
+.recommend {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+    margin-top: 150px;
+    .tit_con {
+        .title {
+            text-align: left;
+        }
+    }
+    .txt_con {
+        .list {
+            position: relative;
+            margin-bottom: 15px;
+            padding: 15px 30px;
+            border-radius: 30px;
+            background-color: rgba($color: #00402d, $alpha: 0.1);
+            p {
+                position: relative;
+                padding-left: 35px;
+                font: {
+                    size: 1.6rem;
+                    weight: 400;
+                }
+                &::before {
+                    content: "1";
+                    position: absolute;
+                    display: block;
+                    top: -3px;
+                    left: 0;
+                    font: {
+                        size: 2rem;
+                        weight: 700;
+                    }
+                    color: var(--primary);
+                }
+            }
+            &:nth-child(1) {
+                p {
+                    &::before {
+                        content: "01.";
+                    }
+                }
+            }
+            &:nth-child(2) {
+                p {
+                    &::before {
+                        content: "02.";
+                    }
+                }
+            }
+            &:nth-child(3) {
+                p {
+                    &::before {
+                        content: "03.";
+                    }
+                }
+            }
+            &:nth-child(4) {
+                p {
+                    &::before {
+                        content: "04.";
+                    }
+                }
+            }
+        }
+    }
+}
+
+.method {
+    margin-block: 150px 50px;
+    .method_con {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        .list {
+            position: relative;
+            width: calc((100% - 30px) / 3);
+            border-radius: 15px;
+            background-color: #eee;
+            &::before {
+                content: "";
+                display: block;
+                padding-bottom: 100%;
+            }
+            .box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                .img_con {
+                    position: relative;
+                    height: 124px;
+                    margin-bottom: 30px;
+                    text-align: center;
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .txt_con {
+                    text-align: center;
+                    .t1 {
+                        margin-bottom: 10px;
+                        font: {
+                            size: 2.4rem;
+                            weight: 700;
+                        }
+                    }
+                    .t2 {
+                        font: {
+                            size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

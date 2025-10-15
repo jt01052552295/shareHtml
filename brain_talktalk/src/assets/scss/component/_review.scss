@@ -39,7 +39,7 @@
           gap: 0.3rem;
           padding-left: 2rem;
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             display: block;
             width: 2rem;
@@ -47,7 +47,7 @@
             left: 0;
             top: 40%;
             transform: translateY(-50%);
-            background: url('../../assets/images/icon/ico_star_on.png') no-repeat center / cover;
+            background: url("../../assets/images/icon/ico_star_on.png") no-repeat center / cover;
           }
           .avg {
             font: {
@@ -68,7 +68,7 @@
       }
 
       .review_contents {
-        p {
+        .t1 {
           font: {
             size: 1.6rem;
             weight: 400;
@@ -112,7 +112,7 @@
               position: relative;
               padding-left: 30px;
               &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 display: block;
                 width: 27px;
@@ -120,13 +120,13 @@
                 top: 50%;
                 left: 0;
                 transform: translateY(-50%);
-                background: url('../../assets/images/icon/ico_like.png') no-repeat center / cover;
+                background: url("../../assets/images/icon/ico_like.png") no-repeat center / cover;
               }
             }
             &.active {
               .heart {
                 &::before {
-                  background: url('../../assets/images/icon/ico_like_on.png') no-repeat center / cover;
+                  background: url("../../assets/images/icon/ico_like_on.png") no-repeat center / cover;
                 }
               }
             }
@@ -209,14 +209,14 @@
         margin-top: 2rem;
         padding-left: 2rem;
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           display: block;
           top: 2rem;
           left: 0.5rem;
           width: 0.8rem;
           height: 0.8rem;
-          background: url('../../assets/images/icon/ico_reply.png') no-repeat center / cover;
+          background: url("../../assets/images/icon/ico_reply.png") no-repeat center / cover;
         }
       }
 

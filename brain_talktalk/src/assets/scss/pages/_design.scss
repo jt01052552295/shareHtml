@@ -12,51 +12,29 @@
   --menu_w: 400px;
 }
 body {
-  background: url("../../assets/images/img/bg.jpg") center bottom #f5f4f3 no-repeat;
-  background-size: contain;
   font-size: 1.6rem;
   line-height: 1.15;
 }
 
 #wrap {
-  overflow: hidden;
-  position: relative;
+  // overflow: hidden;
+  // position: relative;
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  max-width: var(--wrap);
   margin: 0 auto;
-}
-.left_wrapper {
-  width: 50%;
-  max-width: var(--wrap_wd);
-  padding: 5rem 3rem;
-  position: fixed;
-  right: 50%;
-  top: 0;
-  height: 100%;
-}
-
-.left_txt_wrap {
-  display: flex;
-  align-items: center;
-  font-size: 1.8rem;
-  align-items: center;
-  height: 100%;
-}
-.left_txt_wrap .txt1 {
-  font-family: "GmarketSansMedium";
-  font-size: 3.6rem;
-  margin-bottom: 1.6rem;
 }
 
 .right_wrapper {
   width: 50%;
-  max-width: var(--wrap_wd);
-  overflow-y: scroll;
+  // max-width: var(--wrap_wd);
+  // overflow-y: scroll;
   -ms-overflow-style: none;
   min-height: 100vh;
   background: #fff;
+  @include media-breakpoint-up(lg) {
+    max-width: 100%;
+  }
 }
 .right_wrapper::-webkit-scrollbar {
   display: none;
@@ -64,7 +42,19 @@ body {
 
 .inner {
   max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
+  padding-inline: 12px;
+  @include media-breakpoint-up(lg) {
+  }
+}
+
+.nl {
+  display: inline;
+  line-height: inherit;
+  @include media-breakpoint-up(sm) {
+    display: block;
+  }
 }
 
 /* bar */
@@ -119,7 +109,6 @@ body {
   z-index: 1000;
   border-bottom: 1px solid #f6f6f6;
   left: 50%;
-  max-width: var(--wrap_wd);
 }
 
 .hd_m button {
@@ -452,7 +441,6 @@ body.menu_on {
   visibility: hidden;
   opacity: 0;
   transform: translateX(-50%);
-  max-width: var(--wrap_wd);
 }
 .menu_on .menu_bg {
   visibility: visible;
@@ -910,8 +898,8 @@ body.menu_on {
 @media (max-width: 992px) {
   .m_menu_wr {
     width: 100%;
-    left: 50%;
-    transform: translate(-50%);
+    left: initial;
+    right: 0;
     max-width: var(--wrap_wd);
   }
   .menu_bg {
@@ -1142,13 +1130,11 @@ body.menu_on {
 
 @media (min-width: 800px) {
   .hd_m {
-    max-width: 800px;
     left: 50%;
     transform: translateX(-50%);
   }
   .right_wrapper {
     width: 100%;
-    max-width: 800px;
   }
   .fixed_bottom {
     width: 800px;
@@ -1159,17 +1145,10 @@ body.menu_on {
 
 @media (min-width: 1000px) {
   .hd_m {
-    max-width: 1000px;
     left: 50%;
     transform: translateX(-50%);
   }
-  .left_wrapper {
-    display: none;
-  }
-  .right_wrapper {
-    width: 100%;
-    max-width: 1000px;
-  }
+
   .fixed_bottom {
     width: 1000px;
     left: 50%;

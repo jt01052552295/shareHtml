@@ -1,35 +1,56 @@
 .w_ft {
     padding-block: 50px;
     background-color: #222;
-    .ft_logo {
-        width: 200px;
-    }
-    .policy {
+    .depth {
         display: flex;
-        gap: 15px;
-        .list {
-            .link {
-                display: block;
-                width: 150px;
-                height: 35px;
-                border: 1px solid #fff;
-                border-radius: 30px;
-                text-align: center;
-                .t1 {
-                    font: {
-                        size: 1.4rem;
-                        weight: 500;
+        flex-direction: column;
+        align-items: center;
+        @include media-breakpoint-up(sm) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ft_logo {
+            width: 200px;
+            margin-bottom: 15px;
+            @include media-breakpoint-up(sm) {
+                width: 200px;
+                margin-bottom: 0;
+            }
+        }
+        .policy {
+            display: flex;
+            gap: 15px;
+            .list {
+                .link {
+                    display: block;
+                    width: 150px;
+                    height: 35px;
+                    border: 1px solid #fff;
+                    border-radius: 30px;
+                    text-align: center;
+                    .t1 {
+                        font: {
+                            size: 1.4rem;
+                            weight: 500;
+                        }
+                        line-height: 35px;
+                        color: #fff;
                     }
-                    line-height: 35px;
-                    color: #fff;
                 }
             }
         }
     }
+
     .copyright {
         margin-top: 30px;
         padding-top: 30px;
         border-top: 1px solid #fff;
+        text-align: center;
+        @include media-breakpoint-up(sm) {
+            text-align: left;
+        }
         .copy {
             color: #fff;
         }
