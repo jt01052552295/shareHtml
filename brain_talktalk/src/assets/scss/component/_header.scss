@@ -50,17 +50,17 @@
                     display: block;
                 }
             }
-            .m_menu_btn {
-                display: block;
-                width: 30px;
-                @include media-breakpoint-up(sm) {
-                    width: 30px;
-                }
-                @include media-breakpoint-up(lg) {
-                    display: none;
-                    width: 50px;
-                }
-            }
+        }
+    }
+
+    .m_menu_btn {
+        display: block;
+        width: 30px;
+        @include media-breakpoint-up(sm) {
+            width: 30px;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 50px;
         }
     }
 }

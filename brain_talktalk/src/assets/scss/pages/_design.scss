@@ -1,19 +1,41 @@
 @charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 :root {
+  --gray: #585e65;
+  --gray1: #abb5be;
+  --gray2: #9ea4ab;
+  --border: #e3e3e3;
+  --primary: #00402d;
+
+  --hd_height: 9rem;
+  --hd_height_m: 7rem;
+  --height_sm: 3.2rem;
+  --height_md: 4.2rem;
+  --height: 4.8rem;
+  --height_lg: 5rem;
+  --ic_date: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cg id='ic_calenda' transform='translate(-0.214)'%3E%3Crect id='사각형_9174' data-name='사각형 9174' width='25' height='25' transform='translate(0.214)' fill='none'/%3E%3Cpath id='calendar_month_FILL0_wght400_GRAD0_opsz24' d='M122.193-858.068a2.112,2.112,0,0,1-1.549-.644,2.112,2.112,0,0,1-.644-1.549v-15.352a2.112,2.112,0,0,1,.644-1.549,2.112,2.112,0,0,1,1.549-.644h1.1V-880h2.193v2.193h8.773V-880h2.193v2.193h1.1a2.112,2.112,0,0,1,1.549.644,2.112,2.112,0,0,1,.644,1.549v15.352a2.112,2.112,0,0,1-.644,1.549,2.112,2.112,0,0,1-1.549.644Zm0-2.193h15.352v-10.966H122.193Zm0-13.159h15.352v-2.193H122.193Zm0,0v0Zm7.676,6.58a1.061,1.061,0,0,1-.781-.315,1.061,1.061,0,0,1-.315-.781,1.061,1.061,0,0,1,.315-.781,1.061,1.061,0,0,1,.781-.315,1.061,1.061,0,0,1,.781.315,1.061,1.061,0,0,1,.315.781,1.061,1.061,0,0,1-.315.781A1.061,1.061,0,0,1,129.869-866.841Zm-4.386,0a1.061,1.061,0,0,1-.781-.315,1.061,1.061,0,0,1-.315-.781,1.061,1.061,0,0,1,.315-.781,1.061,1.061,0,0,1,.781-.315,1.061,1.061,0,0,1,.781.315,1.061,1.061,0,0,1,.315.781,1.061,1.061,0,0,1-.315.781A1.061,1.061,0,0,1,125.483-866.841Zm8.773,0a1.061,1.061,0,0,1-.781-.315,1.061,1.061,0,0,1-.315-.781,1.061,1.061,0,0,1,.315-.781,1.061,1.061,0,0,1,.781-.315,1.061,1.061,0,0,1,.781.315,1.061,1.061,0,0,1,.315.781,1.061,1.061,0,0,1-.315.781A1.061,1.061,0,0,1,134.256-866.841Zm-4.386,4.386a1.061,1.061,0,0,1-.781-.315,1.061,1.061,0,0,1-.315-.781,1.061,1.061,0,0,1,.315-.781,1.061,1.061,0,0,1,.781-.315,1.061,1.061,0,0,1,.781.315,1.061,1.061,0,0,1,.315.781,1.061,1.061,0,0,1-.315.781A1.061,1.061,0,0,1,129.869-862.454Zm-4.386,0a1.061,1.061,0,0,1-.781-.315,1.061,1.061,0,0,1-.315-.781,1.061,1.061,0,0,1,.315-.781,1.061,1.061,0,0,1,.781-.315,1.061,1.061,0,0,1,.781.315,1.061,1.061,0,0,1,.315.781,1.061,1.061,0,0,1-.315.781A1.061,1.061,0,0,1,125.483-862.454Zm8.773,0a1.061,1.061,0,0,1-.781-.315,1.061,1.061,0,0,1-.315-.781,1.061,1.061,0,0,1,.315-.781,1.061,1.061,0,0,1,.781-.315,1.061,1.061,0,0,1,.781.315,1.061,1.061,0,0,1,.315.781,1.061,1.061,0,0,1-.315.781A1.061,1.061,0,0,1,134.256-862.454Z' transform='translate(-116.786 882)' fill='%23585e65'/%3E%3C/g%3E%3C/svg%3E%0A");
+  --ic_time: url("data:image/svg+xml,%3Csvg id='ic_clock' xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Crect id='사각형_9176' data-name='사각형 9176' width='25' height='25' fill='none'/%3E%3Cpath id='schedule_FILL0_wght400_GRAD0_opsz24_1_' data-name='schedule_FILL0_wght400_GRAD0_opsz24 (1)' d='M94.319-864.173l1.507-1.507-3.984-3.984v-4.953H89.69v5.814Zm-3.553,5.706a10.484,10.484,0,0,1-4.2-.848,10.873,10.873,0,0,1-3.418-2.3,10.873,10.873,0,0,1-2.3-3.418,10.484,10.484,0,0,1-.848-4.2,10.484,10.484,0,0,1,.848-4.2,10.873,10.873,0,0,1,2.3-3.418,10.875,10.875,0,0,1,3.418-2.3,10.485,10.485,0,0,1,4.2-.848,10.485,10.485,0,0,1,4.2.848,10.875,10.875,0,0,1,3.418,2.3,10.872,10.872,0,0,1,2.3,3.418,10.484,10.484,0,0,1,.848,4.2,10.484,10.484,0,0,1-.848,4.2,10.873,10.873,0,0,1-2.3,3.418,10.873,10.873,0,0,1-3.418,2.3A10.484,10.484,0,0,1,90.766-858.467ZM90.766-869.234Zm0,8.613a8.3,8.3,0,0,0,6.1-2.517,8.3,8.3,0,0,0,2.517-6.1,8.3,8.3,0,0,0-2.517-6.1,8.3,8.3,0,0,0-6.1-2.517,8.3,8.3,0,0,0-6.1,2.517,8.3,8.3,0,0,0-2.517,6.1,8.3,8.3,0,0,0,2.517,6.1A8.3,8.3,0,0,0,90.766-860.62Z' transform='translate(-78 882)' fill='%23585e65'/%3E%3C/svg%3E%0A");
+
   --wrap: 1000px;
   --wrap_wd: 500px;
   --wrap_wd_2: 250px;
   --menu_w: 400px;
 }
+
 body {
   font-size: 1.6rem;
   line-height: 1.15;
+}
+
+html {
+  font-size: 10px;
 }
 
 #wrap {
@@ -93,6 +115,10 @@ body {
 .zd_2 {
   position: relative;
   z-index: 2;
+}
+
+.btn {
+  height: 100%;
 }
 
 /* 헤더 */
@@ -349,7 +375,7 @@ body.menu_on {
   opacity: 0;
   position: fixed;
   top: 0;
-  left: calc(50% + var(--wrap_wd_2) + (var(--wrap_wd_2) - var(--menu_w)));
+  right: 0;
   width: 50%;
   height: 100%;
   max-width: var(--menu_w);
@@ -431,7 +457,7 @@ body.menu_on {
 
 .menu_bg {
   position: fixed;
-  left: calc(50% + var(--wrap_wd_2));
+  left: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.6);
   transition: all 0.4s ease-in-out;
@@ -440,7 +466,6 @@ body.menu_on {
   z-index: 99998;
   visibility: hidden;
   opacity: 0;
-  transform: translateX(-50%);
 }
 .menu_on .menu_bg {
   visibility: visible;
@@ -641,7 +666,6 @@ body.menu_on {
 .mem_filter {
   position: fixed;
   transform: translateX(0%);
-  max-width: 1000px;
   width: 100%;
   top: var(--hd_height_m);
   z-index: 40;
@@ -851,47 +875,6 @@ body.menu_on {
 .asking_price table td {
   padding: 0.5rem 0rem;
   vertical-align: top;
-}
-
-/*회원권보러가기*/
-.map_view {
-  height: 100%;
-}
-.mem_filter {
-  position: fixed;
-  transform: translateX(0%);
-  max-width: 1000px;
-  width: 100%;
-  top: var(--hd_height_m);
-  z-index: 40;
-  background-color: #f5f5f5;
-}
-.srchfltr_wrap {
-  padding-top: 1rem;
-}
-.srchfltr .touch_scroll {
-  margin-right: -2rem;
-}
-.srchfltr .btn img {
-  width: 14px;
-  opacity: 0.6;
-}
-.srchfltr .btn {
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  margin-right: 0.5rem;
-}
-.srchfltr .btn span {
-  white-space: nowrap;
-}
-.srchfltr .btn-group-toggle {
-  display: flex;
-}
-.map_view {
-  background-color: #999;
-  width: 100%;
-  height: calc(100vh - var(--hd_height_m));
-  position: relative;
 }
 
 /* 반응형 */
