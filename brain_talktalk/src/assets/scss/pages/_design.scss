@@ -70,7 +70,11 @@ p {
   justify-content: flex-end;
   margin: 0 auto;
 }
-
+/*메인*/
+.idx_pg {
+  padding-top: var(--hd_height_m);
+  padding-bottom: 5rem;
+}
 .right_wrapper {
   width: 50%;
   -ms-overflow-style: none;
