@@ -56,11 +56,14 @@
     .m_menu_btn {
         display: block;
         width: 30px;
+        img {
+            width: 100%;
+        }
         @include media-breakpoint-up(sm) {
             width: 30px;
         }
         @include media-breakpoint-up(lg) {
-            width: 50px;
+            width: 40px;
         }
     }
 }

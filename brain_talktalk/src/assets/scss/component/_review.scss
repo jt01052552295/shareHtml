@@ -228,6 +228,9 @@
         padding: 0.7rem 1.2rem;
         border-radius: 0.4rem;
         background-color: #efefef;
+        .btn_box {
+          flex-shrink: 0;
+        }
         .reply_register {
           border: none;
           outline: none;
@@ -250,6 +253,9 @@
         border: none;
         outline: none;
         background: none;
+      }
+      .btn {
+        flex-shrink: 0;
       }
     }
   }
