@@ -23,3 +23,9 @@
     color: #a5a5a5;
   }
 }
+
+.badge {
+  &.text-bg-info {
+    color: #fff !important;
+  }
+}
