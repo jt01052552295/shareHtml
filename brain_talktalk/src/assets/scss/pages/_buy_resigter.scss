@@ -1,28 +1,28 @@
 .buy_info {
   .tit {
     font: {
-      size: 1.6rem;
+      size: 16px;
       weight: 700;
     }
   }
   .d-flex {
-    gap: 1.6rem;
+    gap: 16px;
     .t1 {
       font: {
-        size: 1.4rem;
+        size: 14px;
         weight: 500;
       }
     }
     .t2 {
       font: {
-        size: 1.4rem;
+        size: 14px;
         weight: 700;
       }
     }
   }
   .border-bb {
-    margin-block: 2rem;
-    border: 0.4rem solid var(--border);
+    margin-block: 20px;
+    border: 4px solid var(--border);
   }
 }
 
@@ -31,7 +31,7 @@
     .policy_view {
       text-decoration: underline;
       font: {
-        size: 1.2rem;
+        size: 12px;
         weight: 700;
       }
     }

@@ -1,47 +1,47 @@
 .community_search {
   .sch_ip {
-    margin-top: 2rem;
+    margin-top: 20px;
   }
   .region {
-    padding-top: 2rem;
+    padding-top: 20px;
     overflow-x: scroll;
     label {
       flex-shrink: 0;
     }
   }
   .border-bb {
-    margin-top: 2rem;
+    margin-top: 20px;
   }
 }
 
 .community_review {
   .title_con {
-    padding: 1.7rem 2.8rem;
-    border-radius: 0.6rem;
+    padding: 17px 28px;
+    border-radius: 6px;
     background-color: #f5f5f5;
     .tit {
       position: relative;
       display: inline-block;
-      padding-right: 2rem;
+      padding-right: 20px;
       font: {
-        size: 2rem;
+        size: 20px;
         weight: 700;
       }
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         display: block;
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 16px;
+        height: 16px;
         top: 50%;
         right: 0;
         transform: translateY(-50%);
-        background: url('../../assets/images/icon/ico_right_arr.png') no-repeat center / cover;
+        background: url("../../assets/images/icon/ico_right_arr.png") no-repeat center / cover;
       }
     }
     .review_sum {
       font: {
-        size: 1.6rem;
+        size: 16px;
         weight: 700;
       }
       color: var(--primary);
@@ -59,7 +59,7 @@
       .title {
         .writer {
           font: {
-            size: 1.6rem;
+            size: 16px;
             weight: 500;
           }
         }
@@ -67,11 +67,11 @@
       .info_summation {
         display: flex;
         align-items: center;
-        gap: 1rem;
-        margin-block: 1.5rem 1.2rem;
+        gap: 10px;
+        margin-block: 15px 12px;
         .t1 {
           font: {
-            size: 1.6rem;
+            size: 16px;
             weight: 400;
           }
         }
@@ -83,13 +83,13 @@
             align-items: center;
             .star {
               img {
-                width: 1.8rem;
+                width: 18px;
               }
             }
           }
           .num {
             font: {
-              size: 1.6rem;
+              size: 16px;
               weight: 400;
             }
             color: #777;

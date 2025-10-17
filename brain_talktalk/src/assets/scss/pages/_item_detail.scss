@@ -1,32 +1,32 @@
 .other_amount {
   .tit {
     font: {
-      size: 2rem;
+      size: 20px;
       weight: 700;
     }
   }
   .t1 {
     font: {
-      size: 1.6rem;
+      size: 16px;
       weight: 400;
     }
-    line-height: 2.4rem;
+    line-height: 24px;
   }
   .tax {
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
     .tax_con {
       .list {
         position: relative;
-        padding-left: 2rem;
+        padding-left: 20px;
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           display: block;
           width: 3px;
           height: 3px;
           border-radius: 50%;
           top: 50%;
-          left: 0.5rem;
+          left: 5px;
           transform: translateY(-50%);
           background-color: #222;
         }

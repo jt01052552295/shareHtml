@@ -2,7 +2,7 @@
   .title_con {
     .t1 {
       font: {
-        size: 2rem;
+        size: 20px;
         weight: 700;
       }
       span {
@@ -10,12 +10,12 @@
     }
     .btn_con {
       display: flex;
-      gap: 0.7rem;
+      gap: 7px;
       .btn {
         height: auto;
-        padding: 0.5rem 0.7rem;
+        padding: 5px 7px;
         font: {
-          size: 1.3rem;
+          size: 13px;
           weight: 600;
         }
       }
@@ -24,26 +24,26 @@
 
   .review_list {
     .list {
-      margin-bottom: 3rem;
-      padding-bottom: 3rem;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
       border-bottom: 1px solid var(--border);
       .rating_con {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-block: 1.4rem;
+        margin-block: 14px;
         .rating {
           position: relative;
           display: flex;
           align-items: center;
-          gap: 0.3rem;
-          padding-left: 2rem;
+          gap: 3px;
+          padding-left: 20px;
           &::before {
             content: "";
             position: absolute;
             display: block;
-            width: 2rem;
-            height: 2rem;
+            width: 20px;
+            height: 20px;
             left: 0;
             top: 40%;
             transform: translateY(-50%);
@@ -51,14 +51,14 @@
           }
           .avg {
             font: {
-              size: 1.6rem;
+              size: 16px;
               weight: 700;
             }
             color: var(--primary);
           }
           .sum {
             font: {
-              size: 1.6rem;
+              size: 16px;
               weight: 400;
             }
           }
@@ -70,10 +70,10 @@
       .review_contents {
         .t1 {
           font: {
-            size: 1.6rem;
+            size: 16px;
             weight: 400;
           }
-          line-height: 2.4rem;
+          line-height: 24px;
         }
       }
 
@@ -81,13 +81,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 1.5rem;
+        margin-top: 15px;
         color: #a2a2a2;
         .writer {
           display: flex;
           align-items: center;
           font: {
-            size: 1.4rem;
+            size: 14px;
             weight: 500;
           }
           .name {
@@ -98,9 +98,9 @@
         .like_con {
           display: flex;
           align-items: center;
-          gap: 1.5rem;
+          gap: 15px;
           font: {
-            size: 1.4rem !important;
+            size: 14px !important;
             weight: 500;
           }
           .like {
@@ -135,7 +135,7 @@
       }
 
       .tag_con {
-        margin-top: 1.5rem;
+        margin-top: 15px;
         button {
           &:hover {
             background-color: transparent;
@@ -155,36 +155,36 @@
 .reply_con {
   .tit {
     font: {
-      size: 2rem;
+      size: 20px;
       weight: 700;
     }
   }
 
   .reply_box {
-    margin-top: 2rem;
+    margin-top: 20px;
     .box {
       .name_con {
-        margin-bottom: 1rem;
+        margin-bottom: 10px;
         .name {
           font: {
-            size: 1.6rem;
+            size: 16px;
             weight: 500;
           }
         }
       }
       .reply {
         font: {
-          size: 1.6rem;
+          size: 16px;
           weight: 400;
         }
-        line-height: 2.4rem;
+        line-height: 24px;
       }
       .date_con {
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 20px;
         font: {
-          size: 1.4rem;
+          size: 14px;
           weight: 500;
         }
         color: #a2a2a2;
@@ -193,7 +193,7 @@
         .re_reply {
           height: auto;
           font: {
-            size: 1.4rem;
+            size: 14px;
             weight: 500;
           }
           color: #a2a2a2;
@@ -201,21 +201,21 @@
       }
 
       &.border-bottom {
-        padding-bottom: 2rem;
+        padding-bottom: 20px;
       }
 
       &.re {
         position: relative;
-        margin-top: 2rem;
-        padding-left: 2rem;
+        margin-top: 20px;
+        padding-left: 20px;
         &::before {
           content: "";
           position: absolute;
           display: block;
-          top: 2rem;
-          left: 0.5rem;
-          width: 0.8rem;
-          height: 0.8rem;
+          top: 20px;
+          left: 5px;
+          width: 8px;
+          height: 8px;
           background: url("../../assets/images/icon/ico_reply.png") no-repeat center / cover;
         }
       }
@@ -223,10 +223,10 @@
       .reply_input {
         display: flex;
         align-items: center;
-        gap: 1rem;
-        // height: 4.6rem;
-        padding: 0.7rem 1.2rem;
-        border-radius: 0.4rem;
+        gap: 10px;
+        // height: 4.6px;
+        padding: 7px 12px;
+        border-radius: 4px;
         background-color: #efefef;
         .btn_box {
           flex-shrink: 0;
@@ -245,9 +245,9 @@
     .input_box {
       display: flex;
       align-items: center;
-      // height: 4.6rem;
-      padding: 0.7rem 1.2rem;
-      border-radius: 0.4rem;
+      // height: 4.6px;
+      padding: 7px 12px;
+      border-radius: 4px;
       background-color: #efefef;
       .reply_register {
         border: none;

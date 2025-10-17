@@ -9,36 +9,36 @@
     left: 50%;
     right: initial;
     transform: translate(-50%, 100%);
-    border-radius: 1.6rem 1.6rem 0 0;
+    border-radius: 16px 16px 0 0;
     .offcanvas-header {
       position: relative;
-      padding: 3.2rem 1.6rem 0;
+      padding: 32px 16px 0;
       .btn {
         position: absolute;
         top: 8px;
         left: 50%;
         transform: translateX(-50%);
-        width: 5rem;
-        height: 0.4rem;
+        width: 50px;
+        height: 4px;
         border-radius: 30px;
         background-color: #d9d9d9;
       }
       .offcanvas-title {
         // font: {
-        //   size: 1.4rem;
+        //   size: 1.4px;
         //   weight: 700;
         // }
       }
       .unit {
         font: {
-          size: 1.2rem;
+          size: 12px;
           weight: 500;
         }
         color: #a5a5a5;
       }
       .all-check {
         font: {
-          size: 1.4rem;
+          size: 14px;
           weight: 400;
         }
         color: var(--success);
@@ -48,16 +48,16 @@
 
     .offcanvas-body {
       .check_box {
-        margin-bottom: 3rem;
+        margin-bottom: 30px;
         .title {
-          margin-bottom: 1rem;
+          margin-bottom: 10px;
           font: {
-            size: 1.4rem;
+            size: 14px;
             weight: 700;
           }
           .all-check {
             font: {
-              size: 1.4rem;
+              size: 14px;
               weight: 400;
             }
             color: var(--success);
@@ -68,29 +68,29 @@
 
       .check_group {
         flex-wrap: wrap;
-        gap: 0.8rem;
+        gap: 8px;
         label {
           font: {
-            size: 1.2rem;
+            size: 12px;
             weight: 500;
           }
         }
         &.three {
           label {
-            width: calc((100% - 1.6rem) / 3);
-            padding-block: 1.6rem;
+            width: calc((100% - 16px) / 3);
+            padding-block: 16px;
           }
         }
         &.four {
           label {
-            width: calc((100% - 2.4rem) / 4);
-            padding-block: 1.6rem;
+            width: calc((100% - 24px) / 4);
+            padding-block: 16px;
           }
         }
         &.five {
           label {
-            width: calc((100% - 3.2rem) / 5);
-            padding-block: 1.6rem;
+            width: calc((100% - 32px) / 5);
+            padding-block: 16px;
           }
         }
         .btn-check:checked + .btn-outline-light {
@@ -115,7 +115,7 @@
     border-bottom: 4px solid var(--border);
     .offcanvas-title {
       font: {
-        size: 1.6rem;
+        size: 16px;
         weight: 700;
       }
     }
@@ -123,14 +123,14 @@
 
   .offcanvas-body {
     .list_con {
-      padding-bottom: 2rem;
+      padding-bottom: 20px;
       border-bottom: 1px solid var(--border);
     }
     .price_card {
       .tit {
-        margin-bottom: 0.8rem;
+        margin-bottom: 8px;
         font: {
-          size: 1.6rem;
+          size: 16px;
           weight: 700;
         }
       }
@@ -139,31 +139,31 @@
         border-radius: 8px;
         overflow: hidden;
         .bill_list {
-          padding: 1.8rem 3rem;
+          padding: 18px 30px;
           background-color: #f5f5f5;
           .quick_sell {
-            margin-bottom: 1.2rem;
+            margin-bottom: 12px;
             font: {
-              size: 1.6rem;
+              size: 16px;
               weight: 700;
             }
           }
           .list {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 0.3rem;
+            margin-bottom: 3px;
             &:last-child {
               margin-bottom: 0;
             }
             .t1 {
               font: {
-                size: 1.6rem;
+                size: 16px;
                 weight: 400;
               }
             }
             .t2 {
               font: {
-                size: 1.6rem;
+                size: 16px;
                 weight: 400;
               }
             }
@@ -172,30 +172,30 @@
         .summation {
           display: flex;
           justify-content: space-between;
-          padding: 1.5rem 3rem;
+          padding: 15px 30px;
           background-color: #222;
           p {
             color: #fff;
           }
           .t1 {
             font: {
-              size: 1.6rem;
+              size: 16px;
               weight: 700;
             }
           }
           .t2 {
             position: relative;
-            padding-right: 3rem;
+            padding-right: 30px;
             font: {
-              size: 1.6rem;
+              size: 16px;
               weight: 500;
             }
             &::after {
               content: "";
               position: absolute;
               display: block;
-              width: 2.1rem;
-              height: 2.1rem;
+              width: 21px;
+              height: 21px;
               top: 50%;
               right: 0;
               transform: translateY(-50%);
@@ -207,7 +207,7 @@
     }
     .caution_txt {
       font: {
-        size: 1.2rem;
+        size: 12px;
         weight: 500;
       }
       color: #a2a2a2;
@@ -218,7 +218,7 @@
 .report_offcanvas {
   .report_con {
     .list {
-      margin-bottom: 1.2rem;
+      margin-bottom: 12px;
       &:last-child {
         margin-bottom: 0;
       }
@@ -230,9 +230,9 @@
 }
 
 .canvas_list {
-  padding-inline: 1.6rem;
+  padding-inline: 16px;
   .list {
-    padding-block: 1rem;
+    padding-block: 10px;
   }
 }
 

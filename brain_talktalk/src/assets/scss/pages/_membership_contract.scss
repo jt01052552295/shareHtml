@@ -4,18 +4,18 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 2rem;
-      padding: 3.5rem 2.5rem;
+      margin-bottom: 20px;
+      padding: 35px 25px;
       border: 1px solid var(--border);
-      border-radius: 0.8rem;
+      border-radius: 8px;
       &:last-child {
         margin-bottom: 0;
       }
       .left {
         .t1 {
-          margin-bottom: 0.5rem;
+          margin-bottom: 5px;
           font: {
-            size: 1.4rem;
+            size: 14px;
             weight: 500;
           }
           &.sell {
@@ -27,7 +27,7 @@
         }
         .t2 {
           font: {
-            size: 1.6rem;
+            size: 16px;
             weight: 600;
           }
         }
@@ -35,18 +35,18 @@
       .right {
         text-align: right;
         .badge_custom {
-          width: 6.7rem;
-          margin-bottom: 0.5rem;
+          width: 67px;
+          margin-bottom: 5px;
           text-align: center;
         }
         .price {
           font: {
-            size: 1.8rem;
+            size: 18px;
             weight: 700;
           }
           span {
             font: {
-              size: 1.4rem;
+              size: 14px;
               weight: 700;
             }
           }

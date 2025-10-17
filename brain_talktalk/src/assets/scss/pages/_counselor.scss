@@ -1,6 +1,13 @@
 .counselor {
     display: flex;
-    gap: 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+        align-items: start;
+        gap: 80px;
+    }
     .left_box {
         flex-shrink: 0;
         .thumb_con {
@@ -13,7 +20,7 @@
         .txt_con {
             .name {
                 font: {
-                    size: 2.4rem;
+                    size: 24px;
                     weight: 700;
                 }
             }
@@ -23,7 +30,7 @@
                     position: relative;
                     padding-left: 30px;
                     font: {
-                        size: 2.4rem;
+                        size: 24px;
                         weight: 700;
                     }
                     &::before {
@@ -39,7 +46,7 @@
                     }
                     span {
                         font: {
-                            size: 1.6rem;
+                            size: 16px;
                             weight: 500;
                         }
                         color: #b2b2b2;
@@ -55,7 +62,7 @@
                 padding: 3px 6px;
                 border-radius: 10px;
                 font: {
-                    size: 1.2rem;
+                    size: 12px;
                     weight: 500;
                 }
                 &:nth-child(1) {
@@ -88,17 +95,27 @@
     .right_box {
         width: 100%;
         .point_con {
-            padding: 45px 35px;
+            padding: 20px;
             background-color: #e3f2fd;
             border-radius: 15px;
+            @include media-breakpoint-up(md) {
+                padding: 45px 35px;
+            }
             .list {
                 position: relative;
                 margin-bottom: 20px;
-                padding-left: 30px;
+                padding-left: 20px;
                 font: {
-                    size: 1.8rem;
+                    size: 1rem;
                     weight: 500;
                 }
+                @include media-breakpoint-up(md) {
+                    padding-left: 30px;
+                    font: {
+                        size: 18px;
+                    }
+                }
+
                 &::before {
                     content: "";
                     position: absolute;
@@ -121,10 +138,15 @@
             .txt_con {
                 p {
                     font: {
-                        size: 1.8rem;
-                        weight: 500;
+                        size: 1rem;
                     }
                     line-height: 24px;
+                    @include media-breakpoint-up(md) {
+                        font: {
+                            size: 18px;
+                            weight: 500;
+                        }
+                    }
                 }
             }
         }
@@ -139,8 +161,14 @@
                     margin-bottom: 10px;
                     padding-left: 16px;
                     font: {
-                        size: 1.8rem;
+                        size: 1rem;
                         weight: 700;
+                    }
+                    line-height: 24px;
+                    @include media-breakpoint-up(md) {
+                        font: {
+                            size: 18px;
+                        }
                     }
                     &:last-child {
                         margin-bottom: 0;
@@ -189,8 +217,86 @@
             border-bottom: 1px solid #eee;
             .t1 {
                 font: {
-                    size: 1.8rem;
-                    weight: 500;
+                    size: 1rem;
+                }
+                line-height: 24px;
+                @include media-breakpoint-up(md) {
+                    font: {
+                        size: 18px;
+                        weight: 500;
+                    }
+                }
+            }
+        }
+
+        .service {
+            margin-block: 45px;
+            padding-bottom: 45px;
+            border-bottom: 1px solid #eee;
+            .service_list {
+                .list {
+                    margin-bottom: 30px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .link {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: start;
+                        gap: 30px;
+
+                        .info_con {
+                            .t1 {
+                                margin-bottom: 10px;
+                                font: {
+                                    size: 1rem;
+                                    weight: 700;
+                                }
+                                @include media-breakpoint-up(md) {
+                                    font: {
+                                        size: 18px;
+                                        weight: 700;
+                                    }
+                                }
+                            }
+                            .t2 {
+                                font: {
+                                    size: 0.9rem;
+                                    weight: 400;
+                                }
+                                @include media-breakpoint-up(md) {
+                                    font: {
+                                        size: 18px;
+                                        weight: 400;
+                                    }
+                                }
+                            }
+                        }
+                        .img_con {
+                            position: relative;
+                            width: 75px;
+                            flex-shrink: 0;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            @include media-breakpoint-up(md) {
+                                width: 150px;
+                            }
+                            &::before {
+                                content: "";
+                                display: block;
+                                padding-bottom: 70%;
+                            }
+                            img {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -199,7 +305,14 @@
     .treatment_list {
         .list {
             display: flex;
-            gap: 20px;
+            flex-direction: column;
+            gap: 0px;
+            margin-bottom: 30px;
+            @include media-breakpoint-up(sm) {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
             .thumb_con {
                 .img_con {
                     width: 50px;
@@ -218,8 +331,14 @@
                     padding-block: 15px;
                     .name {
                         font: {
-                            size: 1.6rem;
+                            size: 0.9rem;
                             weight: 700;
+                        }
+                        @include media-breakpoint-up(sm) {
+                            font: {
+                                size: 16px;
+                                weight: 700;
+                            }
                         }
                     }
                     .rating {
@@ -227,8 +346,14 @@
                             position: relative;
                             padding-left: 25px;
                             font: {
-                                size: 1.8rem;
+                                size: 1rem;
                                 weight: 700;
+                            }
+                            @include media-breakpoint-up(sm) {
+                                font: {
+                                    size: 18px;
+                                    weight: 700;
+                                }
                             }
                             &::before {
                                 content: "";
@@ -246,10 +371,15 @@
                 }
                 .desc {
                     font: {
-                        size: 1.6rem;
+                        size: 1rem;
                         weight: 500;
                     }
                     line-height: 26px;
+                    @include media-breakpoint-up(md) {
+                        font: {
+                            size: 18px;
+                        }
+                    }
                 }
             }
         }
@@ -258,7 +388,7 @@
     .tit {
         margin-bottom: 15px;
         font: {
-            size: 2.4rem;
+            size: 24px;
             weight: 700;
         }
         .num {
@@ -273,7 +403,7 @@
         .btn {
             padding-block: 10px;
             font: {
-                size: 1.8rem;
+                size: 18px;
                 weight: 700;
             }
         }
@@ -288,6 +418,13 @@
         border-radius: 50%;
         overflow: hidden;
         .img_thumb {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }

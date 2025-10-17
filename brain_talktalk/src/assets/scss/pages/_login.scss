@@ -7,7 +7,7 @@
 
 .login_txt {
   font: {
-    size: 2.4rem;
+    size: 24px;
     weight: 700;
   }
 }
@@ -16,11 +16,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 20px;
   .list {
     position: relative;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       width: 1px;

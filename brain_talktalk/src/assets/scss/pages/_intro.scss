@@ -6,12 +6,12 @@
     }
     .title {
         font: {
-            size: 3rem;
+            size: 30px;
             weight: 700;
         }
         line-height: 1.4;
         @include media-breakpoint-up(lg) {
-            font-size: 4.5rem;
+            font-size: 45px;
             text-align: center;
         }
         span {
@@ -21,12 +21,17 @@
     .t1 {
         margin-top: 15px;
         font: {
-            size: 1.8rem;
+            size: 1rem;
             weight: 400;
         }
         line-height: 1.7;
         @include media-breakpoint-up(sm) {
             margin-top: 30px;
+            font: {
+                size: 18px;
+                weight: 400;
+            }
+            line-height: 1.7;
         }
     }
 }
@@ -94,20 +99,28 @@
                 .tit {
                     margin-bottom: 5px;
                     font: {
-                        size: 2rem;
+                        size: 1.1rem;
                         weight: 700;
+                    }
+                    @include media-breakpoint-up(sm) {
+                        font: {
+                            size: 20px;
+                            weight: 700;
+                        }
                     }
                 }
                 .desc {
                     font: {
-                        size: 1.8rem;
+                        size: 1rem;
                         weight: 400;
                     }
                     line-height: 1.7;
                     @include media-breakpoint-up(sm) {
                         font: {
-                            size: 1.4rem;
+                            size: 18px;
+                            weight: 400;
                         }
+                        line-height: 1.2;
                     }
                 }
             }
@@ -136,7 +149,7 @@
         }
         .tit {
             font: {
-                size: 2.4rem;
+                size: 24px;
                 weight: 400;
             }
             color: var(--main);
@@ -144,24 +157,38 @@
         .t1 {
             margin-top: 15px;
             font: {
-                size: 3rem;
+                size: 1.5rem;
                 weight: 700;
             }
             line-height: 1.4;
+            @include media-breakpoint-up(sm) {
+                font: {
+                    size: 30px;
+                    weight: 700;
+                }
+                line-height: 1.4;
+            }
             @include media-breakpoint-up(lg) {
                 margin-top: 30px;
                 font: {
-                    size: 4.5rem;
+                    size: 45px;
                 }
             }
         }
         .t2 {
             margin-top: 20px;
             font: {
-                size: 1.8rem;
+                size: 1rem;
                 weight: 400;
             }
             line-height: 1.7;
+            @include media-breakpoint-up(sm) {
+                font: {
+                    size: 18px;
+                    weight: 400;
+                }
+                line-height: 1.7;
+            }
         }
     }
     .right_box {
@@ -206,8 +233,8 @@
         left: 0;
         bottom: 0;
         transform: translate(-75%, 50%);
-        width: 200rem;
-        height: 200rem;
+        width: 2000px;
+        height: 2000px;
         background: radial-gradient(
             circle farthest-corner at 50% 50%,
             rgba(0, 128, 0, 0.2),
@@ -282,7 +309,7 @@
             width: 50%;
             flex-shrink: 0;
             padding-top: 30%;
-            border-radius: 3rem;
+            border-radius: 30px;
             overflow: hidden;
             img {
                 position: absolute;
@@ -301,18 +328,32 @@
             opacity: 0;
             .tit {
                 font: {
-                    size: 3.6rem;
+                    size: 1.4rem;
                     weight: 700;
+                }
+                @include media-breakpoint-up(sm) {
+                    font: {
+                        size: 36px;
+                        weight: 700;
+                    }
                 }
             }
             .t1 {
                 margin-top: 20px;
                 font: {
-                    size: 1.8rem;
+                    size: 1rem;
                     weight: 400;
                 }
                 line-height: 1.7;
                 color: #3c3c3c;
+                @include media-breakpoint-up(sm) {
+                    font: {
+                        size: 18px;
+                        weight: 400;
+                    }
+                    line-height: 1.7;
+                    color: #3c3c3c;
+                }
             }
         }
         &.swiper-slide-active {
@@ -356,8 +397,8 @@
         right: 0;
         bottom: 0;
         transform: translate(75%, 50%);
-        width: 200rem;
-        height: 200rem;
+        width: 2000px;
+        height: 2000px;
         background: radial-gradient(
             circle farthest-corner at 50% 50%,
             rgba(0, 128, 0, 0.2),
@@ -394,27 +435,42 @@
                 margin-top: 20px;
                 .t1 {
                     font: {
-                        size: 1.8rem;
+                        size: 1rem;
                         weight: 500;
                     }
                     color: var(--main);
+                    @include media-breakpoint-up(sm) {
+                        font: {
+                            size: 18px;
+                        }
+                    }
                 }
                 .t2 {
                     margin-top: 10px;
                     font: {
-                        size: 2.4rem;
+                        size: 1.3rem;
                         weight: 700;
                     }
                     color: var(--main);
+                    @include media-breakpoint-up(sm) {
+                        font: {
+                            size: 24px;
+                        }
+                    }
                 }
                 .t3 {
                     margin-top: 10px;
                     font: {
-                        size: 1.8rem;
+                        size: 1rem;
                         weight: 400;
                     }
                     color: #3c3c3c;
                     line-height: 1.4;
+                    @include media-breakpoint-up(sm) {
+                        font: {
+                            size: 18px;
+                        }
+                    }
                 }
             }
         }
@@ -469,17 +525,27 @@
                 }
                 .t1 {
                     font: {
-                        size: 2.4rem;
+                        size: 1.3rem;
                         weight: 700;
+                    }
+                    @include media-breakpoint-up(sm) {
+                        font: {
+                            size: 24px;
+                        }
                     }
                 }
                 .t2 {
                     margin-top: 10px;
                     font: {
-                        size: 1.6rem;
+                        size: 0.9rem;
                         weight: 400;
                     }
                     line-height: 1.7;
+                    @include media-breakpoint-up(sm) {
+                        font: {
+                            size: 16px;
+                        }
+                    }
                 }
             }
         }
@@ -502,7 +568,7 @@
             position: relative;
             @include media-breakpoint-up(sm) {
                 position: sticky;
-                top: 12rem;
+                top: 120px;
                 display: flex;
                 width: 45%;
                 flex-direction: column;
@@ -510,19 +576,29 @@
             .sub_tit_wrap {
                 .tit {
                     font: {
-                        size: 4.8rem;
+                        size: 30px;
                         weight: 700;
                     }
                     line-height: 1.4;
+                    @include media-breakpoint-up(sm) {
+                        font: {
+                            size: 48px;
+                        }
+                    }
                 }
                 .txt {
                     margin-top: 15px;
                     font: {
-                        size: 1.8rem;
+                        size: 1rem;
                         weight: 400;
                     }
                     color: #3c3c3c;
                     line-height: 1.7;
+                    @include media-breakpoint-up(sm) {
+                        font: {
+                            size: 18px;
+                        }
+                    }
                 }
             }
             .image {
@@ -533,8 +609,8 @@
                     padding-top: 55%;
                     background-color: #fff;
                     transition: top 0.3s;
-                    border-radius: 3.33rem;
-                    margin-top: 5.92rem;
+                    border-radius: 3px;
+                    margin-top: 5px;
                     overflow: hidden;
                     position: relative;
                 }
@@ -575,7 +651,7 @@
                 display: flex;
                 align-items: start;
                 gap: 10px;
-                margin-bottom: 18rem;
+                margin-bottom: 180px;
                 opacity: 0.3;
                 transition: opacity 0.3s ease-in-out;
             }
@@ -609,7 +685,7 @@
                 flex-shrink: 0;
                 width: 30px;
                 height: 30px;
-                font-size: 1.4rem;
+                font-size: 14px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -621,18 +697,28 @@
                 margin-top: 6px;
                 .tit {
                     font: {
-                        size: 1.8rem;
+                        size: 1rem;
                         weight: 700;
+                    }
+                    @include media-breakpoint-up(sm) {
+                        font: {
+                            size: 18px;
+                        }
                     }
                 }
                 .desc {
                     margin-top: 15px;
                     font: {
-                        size: 1.6rem;
+                        size: 0.9rem;
                         weight: 500;
                     }
                     line-height: 1.7;
                     color: #3c3c3c;
+                    @include media-breakpoint-up(sm) {
+                        font: {
+                            size: 16px;
+                        }
+                    }
                 }
             }
         }
@@ -669,14 +755,14 @@
     }
     .t1 {
         font: {
-            size: 3rem;
+            size: 24px;
             weight: 700;
         }
         line-height: 1.7;
         color: #fff;
         @include media-breakpoint-up(sm) {
             font: {
-                size: 4.8rem;
+                size: 48px;
             }
         }
     }
