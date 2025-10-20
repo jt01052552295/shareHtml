@@ -13,10 +13,13 @@
         }
         .ft_logo {
             width: 200px;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
             @include media-breakpoint-up(sm) {
                 width: 200px;
                 margin-bottom: 0;
+            }
+            img {
+                width: 100%;
             }
         }
         .policy {
@@ -54,5 +57,65 @@
         .copy {
             color: #fff;
         }
+    }
+}
+
+.ft_nav {
+    position: fixed;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 -4px 4px 0 rgba($color: #000000, $alpha: 0.25);
+    z-index: 100;
+    @include media-breakpoint-up(sm) {
+        display: none;
+    }
+    .ft_menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 15px;
+        .list {
+            width: calc(100% / 4);
+            &.on {
+                .link {
+                    .img_con {
+                        .icon {
+                        }
+                    }
+                    .tit {
+                        color: var(--main);
+                        font: {
+                            weight: 700;
+                        }
+                    }
+                }
+            }
+            .link {
+                text-align: center;
+                .img_con {
+                    .icon {
+                        height: 24px;
+                    }
+                }
+                .tit {
+                    margin-top: 5px;
+                    font: {
+                        size: 14px;
+                        weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .ft_nav {
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
     }
 }

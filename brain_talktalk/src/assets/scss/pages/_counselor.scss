@@ -211,6 +211,31 @@
             }
         }
 
+        .work_time {
+            margin-block: 45px;
+            padding-bottom: 45px;
+            border-bottom: 1px solid #eee;
+            .time_con {
+                .time {
+                    font: {
+                        size: 1rem;
+                    }
+                    line-height: 24px;
+                    @include media-breakpoint-up(md) {
+                        font: {
+                            size: 18px;
+                            weight: 500;
+                        }
+                    }
+                    .date {
+                    }
+                    &.holiday {
+                        color: #e53935;
+                    }
+                }
+            }
+        }
+
         .specialization {
             margin-block: 45px;
             padding-bottom: 45px;

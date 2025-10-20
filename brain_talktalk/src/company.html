@@ -37,6 +37,45 @@
             </div>
         </div>
     </div>
+
+    <nav class="ft_nav">
+        <div class="inner">
+            <ul class="ft_menu">
+                <li class="list">
+                    <a href="order_list.html" class="link">
+                        <div class="img_con">
+                            <img src="@@imgPath/icon/ico_ft_order.png" alt="예약하기" class="icon">
+                        </div>
+                        <p class="tit">예약하기</p>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="search.html" class="link">
+                        <div class="img_con">
+                            <img src="@@imgPath/icon/ico_ft_search.png" alt="검색" class="icon">
+                        </div>
+                        <p class="tit">검색</p>
+                    </a>
+                </li>
+                <li class="list on">
+                    <a href="./" class="link">
+                        <div class="img_con">
+                            <img src="@@imgPath/icon/ico_ft_home_on.png" alt="홈" class="icon">
+                        </div>
+                        <p class="tit">홈</p>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="mypage.html" class="link">
+                        <div class="img_con">
+                            <img src="@@imgPath/icon/ico_ft_mypage.png" alt="내정보" class="icon">
+                        </div>
+                        <p class="tit">내정보</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
 <script>
     const text = document.getElementById('animated-text');
@@ -61,8 +100,7 @@
 
     spans.forEach((span, index) => {
         setTimeout(() => {
-            span.style.color = `#00402d`;
+            span.style.color = `#1b3d7b`;
         }, index * 100);
     });
 </script>
-@@include('partials/html-end1.html')
