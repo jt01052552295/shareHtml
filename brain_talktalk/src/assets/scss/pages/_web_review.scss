@@ -1,22 +1,3 @@
-.store_img {
-    position: relative;
-    overflow: hidden;
-    &::before {
-        content: "";
-        display: block;
-        padding-bottom: 220px;
-    }
-    img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        object-fit: cover;
-    }
-}
-
 .web_review {
     margin-top: 50px;
     padding-bottom: 50px;
@@ -31,24 +12,22 @@
 }
 
 .review_con {
-    &.web {
-        margin-top: 50px;
-        .title_con {
-            margin-bottom: 30px;
-        }
-        .review_list {
-            .list {
-                .specialist {
-                    margin-bottom: 5px;
-                    font: {
-                        size: 20px;
-                        weight: 700;
-                    }
+    margin-top: 50px;
+    .title_con {
+        margin-bottom: 30px;
+    }
+    .review_list {
+        .list {
+            .specialist {
+                margin-bottom: 5px;
+                font: {
+                    size: 20px;
+                    weight: 700;
                 }
-                .rating_con {
-                }
-                .review_contents {
-                }
+            }
+            .rating_con {
+            }
+            .review_contents {
             }
         }
     }

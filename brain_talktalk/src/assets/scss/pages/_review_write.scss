@@ -74,6 +74,27 @@
   border-radius: 10px;
   background-color: #f7f8fa;
 
+  .company_profile {
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    .thumb_con {
+      margin-bottom: 20px;
+      .img_con {
+        .img_thumb {
+        }
+      }
+    }
+    .txt_con {
+      text-align: center;
+      .name {
+        font: {
+          size: 24px;
+          weight: 700;
+        }
+      }
+    }
+  }
+
   .avg_num {
     position: relative;
     width: 35%;
