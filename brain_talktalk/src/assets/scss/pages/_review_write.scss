@@ -64,3 +64,172 @@
     }
   }
 }
+
+// 리뷰전체보기
+.review_avg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f7f8fa;
+
+  .avg_num {
+    position: relative;
+    width: 35%;
+    text-align: center;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 100px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background-color: var(--gray1);
+    }
+    .avg {
+      font: {
+        size: 36px;
+        weight: 500;
+      }
+    }
+    .star_con {
+      display: flex;
+      justify-content: center;
+      gap: 2px;
+      .list {
+        width: 12px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .rating-graph {
+    width: 60%;
+    .rating-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .rating-label {
+        width: 22px;
+        margin-right: 10px;
+        color: var(--gray1);
+        font: {
+          size: 14px;
+          weight: 500;
+        }
+
+        &.active {
+          color: var(--main);
+          font-weight: 600;
+        }
+      }
+
+      .rating-bar {
+        flex-grow: 1;
+        margin-right: 8px;
+
+        .progress {
+          height: 6px;
+          background-color: #e6e6e6;
+          border-radius: 4px;
+          overflow: hidden;
+
+          .progress-bar {
+            background-color: var(--main); // 활성 바 색상
+          }
+        }
+      }
+
+      .rating-count {
+        width: 30px;
+        margin-left: 10px;
+        text-align: left;
+        color: var(--gray1);
+        font: {
+          size: 14px;
+          weight: 500;
+        }
+      }
+    }
+  }
+  @media (max-width: 450px) {
+    flex-direction: column;
+    .avg_num {
+      width: 100%;
+      margin-bottom: 30px;
+      &::after {
+        display: none;
+      }
+    }
+    .rating-graph {
+      width: 100%;
+    }
+  }
+}
+
+.review_all {
+  .review {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--gray1);
+    .thumb_nail {
+      .img_con {
+        width: 50px;
+        height: 50px;
+        .img {
+        }
+      }
+      .txt_con {
+        .name {
+        }
+        .star_con {
+          display: flex;
+          .list {
+            img {
+              width: 15px;
+            }
+          }
+        }
+        .date {
+          margin-top: 3px;
+          margin-left: 5px;
+          font: {
+            size: 12px;
+            weight: 500;
+          }
+          color: var(--gray1);
+        }
+      }
+    }
+
+    .review_img {
+      display: flex;
+      gap: 5px;
+      margin-top: 15px;
+      .list {
+        flex-shrink: 0;
+        width: calc((100% - 15px) / 4);
+      }
+    }
+
+    .desc_con {
+      margin-top: 15px;
+      .desc {
+        font: {
+          size: 14px;
+          weight: 500;
+        }
+        line-height: 22px;
+      }
+    }
+  }
+}

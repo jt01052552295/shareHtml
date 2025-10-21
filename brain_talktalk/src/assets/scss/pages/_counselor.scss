@@ -266,33 +266,60 @@
                     }
                     .link {
                         display: flex;
-                        justify-content: space-between;
                         align-items: start;
-                        gap: 30px;
+                        gap: 15px;
 
                         .info_con {
-                            .t1 {
-                                margin-bottom: 10px;
-                                font: {
-                                    size: 1rem;
-                                    weight: 700;
-                                }
-                                @include media-breakpoint-up(md) {
+                            .opt_1 {
+                                .t1 {
+                                    margin-bottom: 10px;
                                     font: {
-                                        size: 18px;
+                                        size: 1rem;
                                         weight: 700;
+                                    }
+                                    @include media-breakpoint-up(md) {
+                                        font: {
+                                            size: 18px;
+                                            weight: 700;
+                                        }
+                                    }
+                                }
+                                .t2 {
+                                    font: {
+                                        size: 0.9rem;
+                                        weight: 400;
+                                    }
+                                    @include media-breakpoint-up(md) {
+                                        font: {
+                                            size: 18px;
+                                            weight: 400;
+                                        }
                                     }
                                 }
                             }
-                            .t2 {
-                                font: {
-                                    size: 0.9rem;
-                                    weight: 400;
-                                }
-                                @include media-breakpoint-up(md) {
+                            .opt_2 {
+                                margin-top: 5px;
+                                .t1 {
+                                    position: relative;
+                                    margin-bottom: 5px;
+                                    padding-left: 10px;
                                     font: {
-                                        size: 18px;
+                                        size: 14px;
                                         weight: 400;
+                                    }
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        display: block;
+                                        width: 3px;
+                                        height: 3px;
+                                        top: 7px;
+                                        left: 0;
+                                        border-radius: 50%;
+                                        background-color: var(--main);
+                                    }
+                                    &:last-child {
+                                        margin-bottom: 0;
                                     }
                                 }
                             }
@@ -309,7 +336,7 @@
                             &::before {
                                 content: "";
                                 display: block;
-                                padding-bottom: 70%;
+                                padding-bottom: 100%;
                             }
                             img {
                                 position: absolute;
@@ -327,83 +354,79 @@
         }
     }
 
-    .treatment_list {
-        .list {
-            display: flex;
-            flex-direction: column;
-            gap: 0px;
-            margin-bottom: 30px;
-            @include media-breakpoint-up(sm) {
-                display: flex;
-                flex-direction: row;
-                gap: 20px;
-            }
-            .thumb_con {
-                .img_con {
-                    width: 50px;
-                    height: 50px;
-                    .img_thumb {
+    .treatment {
+        .reivew_slide {
+            .swiper-wrapper {
+                .swiper-slide {
+                    flex-direction: column;
+                    align-items: start;
+                    padding: 10px;
+                    border: 1px solid var(--gray1);
+                    border-radius: 6px;
+                    .thumb_nail {
+                        gap: 5px;
+                        margin-bottom: 10px;
+                        .img_con {
+                            .img {
+                            }
+                        }
+                        .txt_con {
+                            .name {
+                            }
+                        }
                     }
-                }
-            }
 
-            .review_desc {
-                margin-bottom: 10px;
-                .writer_info {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    padding-block: 15px;
-                    .name {
-                        font: {
-                            size: 0.9rem;
-                            weight: 700;
-                        }
-                        @include media-breakpoint-up(sm) {
-                            font: {
-                                size: 16px;
-                                weight: 700;
-                            }
-                        }
-                    }
-                    .rating {
-                        .sum {
+                    .info_date {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        .rating {
                             position: relative;
-                            padding-left: 25px;
+                            padding-left: 14px;
                             font: {
-                                size: 1rem;
-                                weight: 700;
-                            }
-                            @include media-breakpoint-up(sm) {
-                                font: {
-                                    size: 18px;
-                                    weight: 700;
-                                }
+                                size: 12px;
+                                weight: 500;
                             }
                             &::before {
                                 content: "";
                                 position: absolute;
                                 display: block;
-                                width: 20px;
-                                height: 20px;
-                                top: 50%;
+                                width: 12px;
+                                height: 12px;
+                                top: 42%;
                                 left: 0;
                                 transform: translateY(-50%);
-                                background: url("../../assets/images/icon/ico_rate_star.png") no-repeat center / cover;
+                                background: url("../../assets/images/icon/ico_star_on.png") no-repeat center / cover;
+                            }
+                            .rate {
+                                .sum {
+                                    color: var(--gray1);
+                                }
+                            }
+                        }
+                        .date {
+                            font: {
+                                size: 12px;
+                                weight: 500;
                             }
                         }
                     }
-                }
-                .desc {
-                    font: {
-                        size: 1rem;
-                        weight: 500;
-                    }
-                    line-height: 26px;
-                    @include media-breakpoint-up(md) {
-                        font: {
-                            size: 18px;
+
+                    .pet_img {
+                        display: flex;
+                        gap: 5px;
+                        width: 100%;
+                        .list {
+                            width: calc(100% / 3);
                         }
+                    }
+                    .desc {
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+                        line-height: 1.4;
                     }
                 }
             }

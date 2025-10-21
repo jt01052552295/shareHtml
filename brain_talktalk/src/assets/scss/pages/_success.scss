@@ -1,6 +1,13 @@
 .success {
+  .img_con {
+    width: 220px;
+    margin: 150px auto 0;
+    img {
+      width: 100%;
+    }
+  }
   .txt_con {
-    margin-block: 150px 60px;
+    margin-block: 60px;
     text-align: center;
     .t1 {
       font: {

@@ -1,6 +1,6 @@
 .ani_txt {
     position: relative;
-    margin-top: 95px;
+    margin-top: 60px;
     &::after {
         content: "";
         position: absolute;
@@ -23,15 +23,12 @@
         overflow: hidden;
         z-index: 1;
         h1 {
-            font-size: 1.3rem;
+            font-size: 18px;
             font-weight: bold;
             flex-direction: column; // 줄마다 세로 정렬
             white-space: pre-wrap; // 줄바꿈과 띄어쓰기 유지
             text-align: center;
             line-height: 1.5;
-            @include media-breakpoint-up(md) {
-                font-size: 40px;
-            }
             span {
                 color: #888; // 기본 회색
                 transition: color 0.2s ease;
@@ -97,22 +94,19 @@
         .sub_tit {
             margin-bottom: 30px;
             font: {
-                size: 36px;
+                size: 24px;
                 weight: 700;
             }
         }
         .t1 {
             margin-bottom: 15px;
             font: {
-                size: 1.1rem;
+                size: 16px;
                 weight: 400;
             }
-            line-height: 1.5;
+            line-height: 1.4;
             &:last-child {
                 margin-bottom: 0;
-            }
-            @include media-breakpoint-up(md) {
-                font-size: 20px;
             }
         }
     }

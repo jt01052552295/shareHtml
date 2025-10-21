@@ -8,32 +8,46 @@
   .list {
     position: relative;
     padding-top: 24px;
-    .delete_btn {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      .delete_img {
+    a {
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
         width: 16px;
         height: 16px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background: url("../../assets/images/icon/ico_right_arr.png") no-repeat center / cover;
       }
-    }
-    .t1 {
-      margin-bottom: 5px;
-      font: {
-        size: 16px;
-        weight: 400;
+      .delete_btn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        .delete_img {
+          width: 16px;
+          height: 16px;
+        }
       }
-    }
-    .date {
-      font: {
-        size: 14px;
-        weight: 500;
+      .t1 {
+        width: calc(100% - 20px);
+        margin-bottom: 5px;
+        font: {
+          size: 16px;
+          weight: 400;
+        }
       }
-      color: #a2a2a2;
-    }
-    .border-bl {
-      padding-bottom: 24px;
+      .date {
+        font: {
+          size: 14px;
+          weight: 500;
+        }
+        color: #a2a2a2;
+      }
+      .border-bl {
+        padding-bottom: 24px;
+      }
     }
   }
 }
