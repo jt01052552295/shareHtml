@@ -7,8 +7,16 @@
     }
   }
   .txt_con {
-    margin-block: 60px;
+    margin-block: 30px 60px;
     text-align: center;
+    .tit {
+      margin-bottom: 15px;
+      font: {
+        size: 24px;
+        weight: 700;
+      }
+      word-break: keep-all;
+    }
     .t1 {
       font: {
         size: 20px;

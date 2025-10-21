@@ -70,6 +70,26 @@
                     .img_con {
                         .icon {
                         }
+                        &.home {
+                            width: 21px;
+                            margin: 0 auto;
+                            background: url("../../assets/images/icon/ico_ft_home_on.png") no-repeat center / cover;
+                        }
+                        &.reser {
+                            width: 19px;
+                            margin: 0 auto;
+                            background: url("../../assets/images/icon/ico_reser_on.png") no-repeat center / cover;
+                        }
+                        &.self_test {
+                            width: 22px;
+                            margin: 0 auto;
+                            background: url("../../assets/images/icon/ico_ft_self_test_on.png") no-repeat center / cover;
+                        }
+                        &.my_info {
+                            width: 17px;
+                            margin: 0 auto;
+                            background: url("../../assets/images/icon/ico_ft_mypage_on.png") no-repeat center / cover;
+                        }
                     }
                     .tit {
                         color: var(--main);
@@ -82,8 +102,30 @@
             .link {
                 text-align: center;
                 .img_con {
+                    position: relative;
+                    height: 24px;
                     .icon {
                         height: 24px;
+                    }
+                    &.home {
+                        width: 21px;
+                        margin: 0 auto;
+                        background: url("../../assets/images/icon/ico_ft_home.png") no-repeat center / cover;
+                    }
+                    &.reser {
+                        width: 19px;
+                        margin: 0 auto;
+                        background: url("../../assets/images/icon/ico_reser.png") no-repeat center / cover;
+                    }
+                    &.self_test {
+                        width: 22px;
+                        margin: 0 auto;
+                        background: url("../../assets/images/icon/ico_ft_self_test.png") no-repeat center / cover;
+                    }
+                    &.my_info {
+                        width: 17px;
+                        margin: 0 auto;
+                        background: url("../../assets/images/icon/ico_ft_mypage.png") no-repeat center / cover;
                     }
                 }
                 .tit {
