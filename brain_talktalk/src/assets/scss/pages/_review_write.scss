@@ -68,6 +68,7 @@
 // 리뷰전체보기
 .review_avg {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 25px;
@@ -166,6 +167,7 @@
 
           .progress-bar {
             background-color: var(--main); // 활성 바 색상
+            border-radius: 15px;
           }
         }
       }
@@ -203,31 +205,38 @@
     padding-bottom: 15px;
     border-bottom: 1px solid var(--gray1);
     .thumb_nail {
-      .img_con {
-        width: 50px;
-        height: 50px;
-        .img {
+      align-items: center;
+      .info_con {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        .img_con {
+          width: 50px;
+          height: 50px;
+          .img {
+          }
         }
-      }
-      .txt_con {
-        .name {
-        }
-        .star_con {
-          display: flex;
-          .list {
-            img {
-              width: 15px;
+        .txt_con {
+          .name {
+          }
+          .star_con {
+            display: flex;
+            .list {
+              img {
+                width: 15px;
+              }
             }
           }
-        }
-        .date {
-          margin-top: 3px;
-          margin-left: 5px;
-          font: {
-            size: 12px;
-            weight: 500;
+          .date {
+            margin-top: 3px;
+            margin-left: 5px;
+            font: {
+              size: 12px;
+              weight: 500;
+            }
+            color: var(--gray1);
           }
-          color: var(--gray1);
         }
       }
     }

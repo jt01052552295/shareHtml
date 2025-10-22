@@ -87,6 +87,7 @@
                 position: absolute;
                 bottom: 25px;
                 left: 15px;
+                width: calc(100% - 35px);
                 color: #fff;
                 .tit {
                     margin-bottom: 5px;
@@ -448,7 +449,7 @@
                 .txt {
                     margin-top: 15px;
                     font: {
-                        size: 18px;
+                        size: 16px;
                         weight: 500;
                     }
                     color: #3c3c3c;
@@ -485,12 +486,11 @@
 
     .box_wrap {
         display: flex;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
+        flex-direction: column;
         margin-top: 15px;
         gap: 15px;
         .box {
-            width: 80%;
+            width: 100%;
             flex-shrink: 0;
             &.active {
                 opacity: 1;
@@ -537,7 +537,7 @@
                     }
                 }
                 .desc {
-                    margin-top: 15px;
+                    margin-top: 10px;
                     font: {
                         size: 0.9rem;
                         weight: 500;

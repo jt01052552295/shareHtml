@@ -1409,6 +1409,13 @@ body.menu_on {
   }
 }
 
+@media (max-width: 480px) {
+  .m_menu_wr {
+    left: initial;
+    right: 0;
+  }
+}
+
 @media (max-width: 460px) {
   .map_info_wp .infobox .media_img {
     width: 30%;
