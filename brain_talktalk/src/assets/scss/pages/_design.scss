@@ -280,10 +280,6 @@ p {
 /*메인*/
 .idx_pg {
   padding-top: 50px;
-  // padding-bottom: 50px;
-  @include media-breakpoint-up(sm) {
-    padding-top: var(--hd_height_m);
-  }
 }
 .right_wrapper {
   width: 100%;
