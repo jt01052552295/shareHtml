@@ -230,10 +230,6 @@
                         display: flex;
                         align-items: start;
                         gap: 15px;
-                        flex-direction: column;
-                        @include media-breakpoint-up(sm) {
-                            flex-direction: row;
-                        }
                         .info_con {
                             .opt_1 {
                                 margin-bottom: 10px;
@@ -279,7 +275,7 @@
                         }
                         .img_con {
                             position: relative;
-                            width: 100%;
+                            width: 75px;
                             flex-shrink: 0;
                             border-radius: 10px;
                             overflow: hidden;
