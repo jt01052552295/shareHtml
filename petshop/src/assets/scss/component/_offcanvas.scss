@@ -209,6 +209,10 @@
                 weight: 500;
             }
             cursor: pointer;
+            .link {
+                display: block;
+            }
+
             &:last-child {
                 margin-bottom: 0;
             }

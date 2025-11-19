@@ -1,0 +1,85 @@
+@@include('partials/html-start.html', { "title": "특징" })
+<header class="header_menu sty_1">
+  <div class="inner">
+    <div class="back_btn" onclick="history.back()">
+      <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+    </div>
+    <p class="page_tit center_txt">반려견 특징</p>
+  </div>
+</header>
+
+<section class="contents">
+  <div class="inner">
+    <ul class="pet_list">
+      <!-- <li class="list">
+        <a href="javascript:void(0)" class="link">
+          <img class="pet_img" src="@@imgPath/img/img_detail_sample.png" alt="">
+          <div class="txt_con">
+            <p class="t1">펫종류</p>
+          </div>
+        </a>
+      </li>
+      <li class="list">
+        <a href="javascript:void(0)" class="link">
+          <img class="pet_img" src="@@imgPath/img/img_detail_sample.png" alt="">
+          <div class="txt_con">
+            <p class="t1">펫종류</p>
+          </div>
+        </a>
+      </li>
+      <li class="list">
+        <a href="javascript:void(0)" class="link">
+          <img class="pet_img" src="@@imgPath/img/img_detail_sample.png" alt="">
+          <div class="txt_con">
+            <p class="t1">펫종류</p>
+          </div>
+        </a>
+      </li>
+      <li class="list">
+        <a href="javascript:void(0)" class="link">
+          <img class="pet_img" src="@@imgPath/img/img_detail_sample.png" alt="">
+          <div class="txt_con">
+            <p class="t1">펫종류</p>
+          </div>
+        </a>
+      </li> -->
+    </ul>
+  </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+<script>
+
+  async function categoryData() {
+    try {
+      let response = await fetch('assets/data/petDetail.json')
+      if (!response.ok) {
+        throw new Error('데이터를 불러올 수 없습니다.')
+      }
+
+      let data = await response.json();
+      // console.log(data)
+
+      const petList = document.querySelector('.pet_list')
+
+      petList.innerHTML = data.map(pet => `
+          <li class="list">
+        <a href="characteristic_detail.html?id=${pet.id}" class="link">
+          <img class="pet_img" src="${pet.img}" alt="">
+          <div class="txt_con">
+            <p class="t1">${pet.breed}</p>
+          </div>
+        </a>
+      </li>
+      `).join('')
+
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  categoryData()
+</script>
+
+@@include('partials/html-end.html')

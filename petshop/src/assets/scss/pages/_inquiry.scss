@@ -16,10 +16,8 @@
 .inquiry_list {
     .list {
         padding: 15px 22px;
-        border-top: 1px solid var(--gray-color);
-        &:last-child {
-            border-bottom: 1px solid var(--gray-color);
-        }
+        border-bottom: 1px solid var(--gray-color);
+
         .link {
             position: relative;
             display: flex;

@@ -1,4 +1,11 @@
 .cart_item {
+    .cart_empty {
+        text-align: center;
+        font: {
+            size: 18px;
+            weight: 500;
+        }
+    }
     .list {
         margin-bottom: 10px;
         border: 1px solid var(--gray-color);

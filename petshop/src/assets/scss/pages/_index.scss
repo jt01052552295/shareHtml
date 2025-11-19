@@ -120,6 +120,17 @@
     }
 }
 
+.recent {
+    .swiper-wrapper {
+        .swiper-slide {
+            .item_box {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+
 // 상품 레이아웃
 
 .item_box {
@@ -137,8 +148,8 @@
         }
         .shop_name {
             font: {
-                size: 1.2rem;
-                weight: 500;
+                size: 1.4rem;
+                weight: 700;
             }
         }
         .breed {

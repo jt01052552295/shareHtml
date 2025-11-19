@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <title>@@title</title>
+
+  <link rel="stylesheet" href="@@cssPath/bootstrap.min.css" />
+  <link rel="stylesheet" href="@@cssPath/style.css?v=2" />
+  <script src="@@jsPath/bootstrap.js"></script>
+
+  <!-- plugin -->
+  <!-- jqury -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!--부트스트랩-->
+  <script src="@@jsPath/bootstrap.bundle.min.js"></script>
+  <!-- plugin -->
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header_menu">
+      <div class="inner">
+        <nav class="nav_con">
+          <a href="/" class="head_logo">
+            <img src="@@imgPath/logo/logo_white.png" alt="" class="logo">
+          </a>
+
+          <div class="gnb">
+            <div class="lang">
+              <p class="lang_tit">ngôn ngữ</p>
+              <div class="box">
+                <p class="tit">ngôn ngữ : EN</p>
+                <ul class="lang_list">
+                  <li class="list">
+                    <a href="@@baseUrl/" class="link">
+                      <span>KR</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="@@baseUrl/en" class="link">
+                      <span>EN</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="@@baseUrl/vn" class="link">
+                      <span>VN</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button type="button" class="btn start_link" data-bs-toggle="modal" data-bs-target="#exampleModal">Bắt
+              đầu</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Modal -->
+    <div class="modal fade down_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Download</h1>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body">
+            <div class="method">
+              <div class="left box">
+                <p class="title">Store</p>
+                <ul class="link_con">
+                  <li class="link app">
+                    <a href="javascript:void(0)">
+                      App Store
+                    </a>
+                  </li>
+                  <li class="link play">
+                    <a href="javascript:void(0)">
+                      Play Store
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="right box">
+                <p class="title">mã QR</p>
+                <div class="img_con">
+                  <img class="qr" src="@@imgPath/img/img_qr.png" alt="mã QR">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const langBox = document.querySelector('.lang .box');
+      const langTit = document.querySelector('.lang_tit');
+
+      langTit.addEventListener('click', () => {
+        langBox.classList.toggle('on');
+        langTit.classList.toggle('on')
+      })
+
+
+    </script>

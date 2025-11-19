@@ -6,7 +6,7 @@
         </div>
         <p class="page_tit center_txt">견종정보</p>
         <div class="cart_btn">
-            <a class="link" href="javascript:void(0)">
+            <a class="link" href="cart.html">
                 <img src="@@imgPath/ico/ico_cart.png" alt="" class="cart_img">
             </a>
         </div>
@@ -34,7 +34,7 @@
 
     <div class="inner">
         <div class="detail_info mt-20">
-            <div class="seller_thumb">
+            <!-- <div class="seller_thumb">
                 <div class="img_con">
                     <img src="@@imgPath/img/img_item_sample.jpg" alt="" class="thumb_img">
                 </div>
@@ -116,8 +116,8 @@
                     프로필 이외에 정보를 입력할 수 있습니다. 상세프로필 이외에 정보를 입력할 수 있습니다.
                 </p>
                 <button class="btn btn-outline-main w-100 mt-15 btn-lg"
-                    onclick="location.href=`inquiry_write.html`">문의하기</button>
-            </div>
+                    onclick="location.href=inquiry_write.html">문의하기</button>
+            </div> -->
         </div>
     </div>
 
@@ -285,7 +285,7 @@
         </div>
     </div>
     <div class="fixed_bottom buy_btn">
-        <button class="btn btn-link">
+        <button class="btn btn-link" id="addCartBtn">
             <img src="@@imgPath/ico/ico_+.png" alt="" class="cart">
         </button>
         <button class="btn btn-main w-100">구매하기</button>
@@ -317,5 +317,145 @@
         spaceBetween: 8,
 
     });
+
+
+    async function fetchData(id) {
+        try {
+            let response = await fetch('assets/data/pets.json')
+            if (!response.ok) {
+                console.log("에러")
+                return
+            }
+            const data = await response.json()
+            // console.log(data)
+            const idNum = Number(id);
+            const pet = data.find(item => item.id === idNum)
+
+            window.pet = pet;
+
+            const target = document.querySelector('.detail_info');
+            console.log(target)
+            const { shop_name, price, img } = pet;
+
+            if (pet) {
+                const vaccinHtml = pet.details.vaccinations.map(vac => {
+                    const statusClass = vac.completed ? 'on' : 'off';
+                    return `<li class="vaccin ${statusClass}">${vac.name} ${vac.dose ? vac.dose + '차' : ""}</li>`
+                }).join('')
+
+
+
+                target.innerHTML = `
+             <div class="seller_thumb">
+                <div class="img_con">
+                    <img src="${img}" alt="" class="thumb_img">
+                </div>
+                <p class="name">${shop_name}</p>
+            </div>
+
+            <div class="price_con mt-15 mb-20">
+                <p class="price">${price.toLocaleString()}원</p>
+            </div>
+
+            <div class="detail_profile border-bottom pb-25">
+                <p class="sub_tit mb-15">${pet.details.dog.breed}</p>
+                <ul class="info_list">
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">모견</p>
+                            <p class="t2">${pet.details.dog.father_breed}</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">부견</p>
+                            <p class="t2">${pet.details.dog.mother_breed}</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">견종</p>
+                            <p class="t2">${pet.details.dog.breed}</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">성별</p>
+                            <p class="t2">${pet.details.dog.gender}</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">출생</p>
+                            <p class="t2">${pet.details.dog.birth_date}</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">체중</p>
+                            <p class="t2">${pet.details.dog.weight_kg}kg</p>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">예방접종 여부</p>
+                        </div>
+                        <ul class="vaccination">
+                            ${vaccinHtml}
+                        </ul>
+                    </li>
+                    <li class="list">
+                        <div class="box">
+                            <p class="t1">비문등록</p>
+                        </div>
+                        <p class="register">${pet.details.dog.registration_status}</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="add_info border-bottom mt-25 pb-25">
+                <p class="sub_tit mb-15">추가정보</p>
+                <p class="info">
+                    상세프로필 이외에 정보를 입력할 수 있습니다. 상세프로필 이외
+                    에 정보를 입력할 수 있습니다. 상세프로필 이외에 정보를 입력할
+                    수 있습니다. 상세프로필 이외에 정보를 입력할 수 있습니다. 상세
+                    프로필 이외에 정보를 입력할 수 있습니다. 상세프로필 이외에 정보를 입력할 수 있습니다.
+                </p>
+                <button class="btn btn-outline-main w-100 mt-15 btn-lg"
+                  onclick="location.href='inquiry_write.html'">문의하기</button>
+            </div>
+            `
+            } else {
+                target.innerHTML = `<p>해당 반려동물을 찾을 수 없습니다.</p>`
+            }
+
+
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
+    const params = new URLSearchParams(window.location.search)
+    const id = params.get('id')
+    console.log(id)
+    fetchData(id);
+
+    // 장바구니 추가 
+    const addCartBtn = document.querySelector('#addCartBtn');
+
+    addCartBtn.addEventListener('click', () => {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const exist = cart.some(c => c.id === window.pet.id);
+        if (exist) {
+            alert('이미 장바구니에 담겨 있습니다.')
+            return
+        }
+
+        cart.push(window.pet);
+        console.log(cart)
+        localStorage.setItem('cart', JSON.stringify(cart));
+    })
+
 </script>
 @@include('partials/html-end.html')

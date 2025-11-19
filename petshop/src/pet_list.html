@@ -19,7 +19,7 @@
     <div class="inner">
         <div class="search_con">
             <input type="text" class="form-control search_input" placeholder="검색어를 입력하세요">
-            <button class="btn btn-link">
+            <button class="btn btn-link search_btn">
                 <img src="@@imgPath/ico/ico_search.png" alt="검색" class="search_icon">
             </button>
         </div>
@@ -28,6 +28,9 @@
             <div class="swiper mySwiper filter_slide">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide active">
+                        <p class="t1">전체</p>
+                    </div>
+                    <div class="swiper-slide">
                         <p class="t1">포메라니안</p>
                     </div>
                     <div class="swiper-slide">
@@ -58,8 +61,8 @@
                 <button class="btn btn-outline-link p-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
                     aria-controls="offcanvasBottom">최신순</button>
             </div>
-            <ul class="item_list mt-10 pb-100">
-                <li class="item">
+            <ul id="pet_list" class="item_list mt-10 pb-100">
+                <!-- <li class="item">
                     <a href="pet_detail.html" class="link">
                         <div class="img_con rect">
                             <img src="@@imgPath/img/img_item_sample.png" alt="" class="img">
@@ -75,126 +78,7 @@
                             <p class="rating">5.0<span class="sum"> (22)</span></p>
                         </div>
                     </a>
-                </li>
-                <li class="item">
-                    <a href="pet_detail.html" class="link">
-                        <div class="img_con rect">
-                            <img src="@@imgPath/img/img_item_sample.png" alt="" class="img">
-                        </div>
-                        <div class="txt_con">
-                            <p class="region">[부산]</p>
-                            <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
-                            </p>
-                            <p class="breed">포메라니안</p>
-                            <p class="price">400,000원</p>
-                        </div>
-                        <div class="rate_con">
-                            <p class="rating">5.0<span class="sum"> (22)</span></p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="pet_detail.html" class="link">
-                        <div class="img_con rect">
-                            <img src="@@imgPath/img/img_item_sample.png" alt="" class="img">
-                        </div>
-                        <div class="txt_con">
-                            <p class="region">[부산]</p>
-                            <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
-                            </p>
-                            <p class="breed">포메라니안</p>
-                            <p class="price">400,000원</p>
-                        </div>
-                        <div class="rate_con">
-                            <p class="rating">5.0<span class="sum"> (22)</span></p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="pet_detail.html" class="link">
-                        <div class="img_con rect">
-                            <img src="@@imgPath/img/img_item_sample.png" alt="" class="img">
-                        </div>
-                        <div class="txt_con">
-                            <p class="region">[부산]</p>
-                            <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
-                            </p>
-                            <p class="breed">포메라니안</p>
-                            <p class="price">400,000원</p>
-                        </div>
-                        <div class="rate_con">
-                            <p class="rating">5.0<span class="sum"> (22)</span></p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="pet_detail.html" class="link">
-                        <div class="img_con rect">
-                            <img src="@@imgPath/img/img_item_sample.png" alt="" class="img">
-                        </div>
-                        <div class="txt_con">
-                            <p class="region">[부산]</p>
-                            <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
-                            </p>
-                            <p class="breed">포메라니안</p>
-                            <p class="price">400,000원</p>
-                        </div>
-                        <div class="rate_con">
-                            <p class="rating">5.0<span class="sum"> (22)</span></p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="pet_detail.html" class="link">
-                        <div class="img_con rect">
-                            <img src="@@imgPath/img/img_item_sample.png" alt="" class="img">
-                        </div>
-                        <div class="txt_con">
-                            <p class="region">[부산]</p>
-                            <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
-                            </p>
-                            <p class="breed">포메라니안</p>
-                            <p class="price">400,000원</p>
-                        </div>
-                        <div class="rate_con">
-                            <p class="rating">5.0<span class="sum"> (22)</span></p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="pet_detail.html" class="link">
-                        <div class="img_con rect">
-                            <img src="@@imgPath/img/img_item_sample.png" alt="" class="img">
-                        </div>
-                        <div class="txt_con">
-                            <p class="region">[부산]</p>
-                            <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
-                            </p>
-                            <p class="breed">포메라니안</p>
-                            <p class="price">400,000원</p>
-                        </div>
-                        <div class="rate_con">
-                            <p class="rating">5.0<span class="sum"> (22)</span></p>
-                        </div>
-                    </a>
-                </li>
-                <li class="item">
-                    <a href="pet_detail.html" class="link">
-                        <div class="img_con rect">
-                            <img src="@@imgPath/img/img_item_sample.png" alt="" class="img">
-                        </div>
-                        <div class="txt_con">
-                            <p class="region">[부산]</p>
-                            <p class="shop_name text_line_1">견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름 견사이름
-                            </p>
-                            <p class="breed">포메라니안</p>
-                            <p class="price">400,000원</p>
-                        </div>
-                        <div class="rate_con">
-                            <p class="rating">5.0<span class="sum"> (22)</span></p>
-                        </div>
-                    </a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
@@ -265,10 +149,128 @@
 
 <!-- Initialize Swiper -->
 <script>
-    var filter = new Swiper(".filter_slide", {
+
+    var filter_slide = new Swiper(".filter_slide", {
         slidesPerView: "auto",
         spaceBetween: 8,
 
     });
+
+    let petsData = []; // 전체 데이터를 저장해둘 변수
+
+    // JSON 데이터 불러오기
+    fetch('assets/data/pets.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('데이터를 불러올 수 없습니다.')
+            }
+            return response.json();
+        })
+        .then(data => {
+            petsData = data; // 불러온 데이터를 저장
+            renderList(petsData); // 초기 전체 리스트 렌더
+        })
+        .catch(error => console.log(error));
+
+    // 리스트 렌더 함수
+    function renderList(data) {
+        const listEl = document.querySelector('#pet_list');
+        listEl.innerHTML = data.map(item =>
+            `
+        <li class="item">
+            <a href="pet_detail.html?id=${item.id}" class="link">
+                <div class="img_con rect">
+                    <img src="${item.img}" alt="${item.breed}" class="img">
+                </div>
+                <div class="txt_con">
+                    <p class="region">[${item.region}]</p>
+                    <p class="shop_name text_line_1">${item.shop_name}</p>
+                    <p class="breed">${item.breed}</p>
+                    <p class="price">${item.price.toLocaleString()}원</p>
+                </div>
+                <div class="rate_con">
+                    <p class="rating">${item.rating}<span class="sum"> (${item.reviews})</span></p>
+                </div>
+            </a>
+        </li>
+        `
+        ).join('');
+
+        const itemSum = document.querySelector('.item_sum .sum')
+        const count = Array.isArray(data) ? data.length : 0;
+
+        itemSum.innerHTML = `총 <span class="num">${count}</span>개`;
+
+    }
+
+    // 검색 기능
+    const searchInput = document.querySelector('.search_input');
+    const searchBtn = document.querySelector('.search_btn');
+
+    searchBtn.addEventListener('click', () => {
+        const keyword = searchInput.value.trim().toLowerCase();
+        const filtered = petsData.filter(item =>
+            item.breed.toLowerCase().includes(keyword) ||
+            item.shop_name.toLowerCase().includes(keyword) ||
+            item.region.toLowerCase().includes(keyword)
+        );
+        renderList(filtered);
+    });
+
+    // Enter 키로도 검색 가능
+    searchInput.addEventListener('keyup', (e) => {
+        if (e.key === 'Enter') searchBtn.click();
+    });
+
+    const filterCon = document.querySelector('.filter_con');
+    const filterBtns = filterCon.querySelectorAll('.filter_slide .swiper-slide')
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // 1️⃣ 모든 버튼 active 제거 후 클릭한 버튼만 추가
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // 2️⃣ 버튼 텍스트 가져오기
+            const btnText = btn.innerText.trim().toLowerCase();
+
+            // 3️⃣ 필터링
+            let filtereds;
+            if (btnText === '전체') {
+                filtereds = petsData; // 전체
+            } else {
+                filtereds = petsData.filter(item =>
+                    item.breed.toLowerCase().includes(btnText)
+                );
+            }
+
+            // 4️⃣ 총 개수 업데이트
+            const itemSum = document.querySelector('.item_sum .sum');
+            const count = Array.isArray(filtereds) ? filtereds.length : 0;
+            if (itemSum) {
+                itemSum.innerHTML = `총 <span class="num">${count}</span>개`;
+            }
+
+            // 5️⃣ 리스트 렌더링
+            const listEl = document.querySelector('#pet_list');
+            if (!listEl) return;
+
+            if (count === 0) {
+                // 데이터 없는 경우
+                listEl.innerHTML = `
+        <li class="no_data">
+          <img src="@@imgPath/img/img_no_data.png" alt="no data" />
+          <p>해당 종류의 펫이 없습니다.</p>
+        </li>
+      `;
+            } else {
+                // 데이터 있을 때 렌더
+                renderList(filtereds);
+            }
+        });
+    });
+
+
+
 </script>
 @@include('partials/html-end.html')

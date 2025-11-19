@@ -78,5 +78,18 @@
         z-index: 9998 !important;
     }
 </style>
+<script>
+    const tabCon = document.querySelector('.tab_con');
+    const tabs = document.querySelectorAll('.tab');
 
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(tb => {
+                tb.classList.remove('active')
+            });
+            tab.classList.add('active')
+        })
+    });
+
+</script>
 @@include('partials/html-end.html')

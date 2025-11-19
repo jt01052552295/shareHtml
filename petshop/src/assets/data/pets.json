@@ -1,0 +1,2952 @@
+[
+  {
+    "id": 1,
+    "region": "광주",
+    "shop_name": "포메라니안 전문샵",
+    "breed": "포메라니안",
+    "price": 390000,
+    "rating": 4.8,
+    "reviews": 27,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "포메라니안",
+        "father_breed": "포메라니안",
+        "mother_breed": "포메라니안",
+        "gender": "암컷",
+        "birth_date": "2024-12-27",
+        "weight_kg": 3.2,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "region": "울산",
+    "shop_name": "포메라니안 전문샵",
+    "breed": "포메라니안",
+    "price": 520000,
+    "rating": 4.9,
+    "reviews": 22,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "포메라니안",
+        "father_breed": "포메라니안",
+        "mother_breed": "포메라니안",
+        "gender": "수컷",
+        "birth_date": "2025-01-17",
+        "weight_kg": 1.5,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "region": "부산",
+    "shop_name": "포메라니안 전문샵",
+    "breed": "포메라니안",
+    "price": 340000,
+    "rating": 4.6,
+    "reviews": 18,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "포메라니안",
+        "father_breed": "포메라니안",
+        "mother_breed": "포메라니안",
+        "gender": "암컷",
+        "birth_date": "2024-12-03",
+        "weight_kg": 2.1,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "region": "대전",
+    "shop_name": "포메라니안 전문샵",
+    "breed": "포메라니안",
+    "price": 340000,
+    "rating": 4.6,
+    "reviews": 27,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "포메라니안",
+        "father_breed": "포메라니안",
+        "mother_breed": "포메라니안",
+        "gender": "수컷",
+        "birth_date": "2025-02-04",
+        "weight_kg": 3.0,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "region": "대전",
+    "shop_name": "포메라니안 전문샵",
+    "breed": "포메라니안",
+    "price": 350000,
+    "rating": 4.8,
+    "reviews": 35,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "포메라니안",
+        "father_breed": "포메라니안",
+        "mother_breed": "포메라니안",
+        "gender": "암컷",
+        "birth_date": "2024-11-22",
+        "weight_kg": 1.4,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "region": "인천",
+    "shop_name": "말티즈 전문샵",
+    "breed": "말티즈",
+    "price": 350000,
+    "rating": 4.5,
+    "reviews": 22,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "말티즈",
+        "father_breed": "말티즈",
+        "mother_breed": "말티즈",
+        "gender": "암컷",
+        "birth_date": "2024-12-24",
+        "weight_kg": 2.0,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "region": "울산",
+    "shop_name": "말티즈 전문샵",
+    "breed": "말티즈",
+    "price": 380000,
+    "rating": 4.8,
+    "reviews": 25,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "말티즈",
+        "father_breed": "말티즈",
+        "mother_breed": "말티즈",
+        "gender": "암컷",
+        "birth_date": "2025-03-17",
+        "weight_kg": 1.6,
+        "nose_print_registered": false,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "region": "제주",
+    "shop_name": "말티즈 전문샵",
+    "breed": "말티즈",
+    "price": 330000,
+    "rating": 4.7,
+    "reviews": 12,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "말티즈",
+        "father_breed": "말티즈",
+        "mother_breed": "말티즈",
+        "gender": "암컷",
+        "birth_date": "2025-01-18",
+        "weight_kg": 2.0,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "region": "부산",
+    "shop_name": "말티즈 전문샵",
+    "breed": "말티즈",
+    "price": 450000,
+    "rating": 4.6,
+    "reviews": 26,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "말티즈",
+        "father_breed": "말티즈",
+        "mother_breed": "말티즈",
+        "gender": "수컷",
+        "birth_date": "2024-11-01",
+        "weight_kg": 2.2,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "region": "창원",
+    "shop_name": "말티즈 전문샵",
+    "breed": "말티즈",
+    "price": 570000,
+    "rating": 4.9,
+    "reviews": 12,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "말티즈",
+        "father_breed": "말티즈",
+        "mother_breed": "말티즈",
+        "gender": "암컷",
+        "birth_date": "2024-12-25",
+        "weight_kg": 2.9,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "region": "수원",
+    "shop_name": "시츄 전문샵",
+    "breed": "시츄",
+    "price": 450000,
+    "rating": 4.6,
+    "reviews": 11,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "시츄",
+        "father_breed": "시츄",
+        "mother_breed": "시츄",
+        "gender": "수컷",
+        "birth_date": "2025-02-15",
+        "weight_kg": 3.5,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "region": "대전",
+    "shop_name": "시츄 전문샵",
+    "breed": "시츄",
+    "price": 320000,
+    "rating": 4.9,
+    "reviews": 26,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "시츄",
+        "father_breed": "시츄",
+        "mother_breed": "시츄",
+        "gender": "수컷",
+        "birth_date": "2025-03-06",
+        "weight_kg": 1.5,
+        "nose_print_registered": false,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "region": "수원",
+    "shop_name": "시츄 전문샵",
+    "breed": "시츄",
+    "price": 600000,
+    "rating": 4.9,
+    "reviews": 27,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "시츄",
+        "father_breed": "시츄",
+        "mother_breed": "시츄",
+        "gender": "수컷",
+        "birth_date": "2024-11-15",
+        "weight_kg": 2.1,
+        "nose_print_registered": false,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "region": "울산",
+    "shop_name": "시츄 전문샵",
+    "breed": "시츄",
+    "price": 400000,
+    "rating": 4.5,
+    "reviews": 23,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "시츄",
+        "father_breed": "시츄",
+        "mother_breed": "시츄",
+        "gender": "암컷",
+        "birth_date": "2025-01-26",
+        "weight_kg": 2.0,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "region": "창원",
+    "shop_name": "시츄 전문샵",
+    "breed": "시츄",
+    "price": 320000,
+    "rating": 4.9,
+    "reviews": 8,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "시츄",
+        "father_breed": "시츄",
+        "mother_breed": "시츄",
+        "gender": "수컷",
+        "birth_date": "2024-11-25",
+        "weight_kg": 2.1,
+        "nose_print_registered": false,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "region": "서울",
+    "shop_name": "푸들 전문샵",
+    "breed": "푸들",
+    "price": 460000,
+    "rating": 4.7,
+    "reviews": 19,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "푸들",
+        "father_breed": "푸들",
+        "mother_breed": "푸들",
+        "gender": "암컷",
+        "birth_date": "2025-01-31",
+        "weight_kg": 1.7,
+        "nose_print_registered": false,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "region": "서울",
+    "shop_name": "푸들 전문샵",
+    "breed": "푸들",
+    "price": 400000,
+    "rating": 5.0,
+    "reviews": 34,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "푸들",
+        "father_breed": "푸들",
+        "mother_breed": "푸들",
+        "gender": "암컷",
+        "birth_date": "2024-11-14",
+        "weight_kg": 3.2,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "region": "수원",
+    "shop_name": "푸들 전문샵",
+    "breed": "푸들",
+    "price": 530000,
+    "rating": 4.8,
+    "reviews": 29,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "푸들",
+        "father_breed": "푸들",
+        "mother_breed": "푸들",
+        "gender": "수컷",
+        "birth_date": "2025-02-16",
+        "weight_kg": 2.4,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "region": "창원",
+    "shop_name": "푸들 전문샵",
+    "breed": "푸들",
+    "price": 330000,
+    "rating": 4.8,
+    "reviews": 17,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "푸들",
+        "father_breed": "푸들",
+        "mother_breed": "푸들",
+        "gender": "수컷",
+        "birth_date": "2024-12-14",
+        "weight_kg": 3.3,
+        "nose_print_registered": false,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "region": "제주",
+    "shop_name": "푸들 전문샵",
+    "breed": "푸들",
+    "price": 480000,
+    "rating": 5.0,
+    "reviews": 18,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "푸들",
+        "father_breed": "푸들",
+        "mother_breed": "푸들",
+        "gender": "암컷",
+        "birth_date": "2024-11-18",
+        "weight_kg": 1.4,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "region": "대구",
+    "shop_name": "진돗개 전문샵",
+    "breed": "진돗개",
+    "price": 520000,
+    "rating": 4.9,
+    "reviews": 26,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "진돗개",
+        "father_breed": "진돗개",
+        "mother_breed": "진돗개",
+        "gender": "수컷",
+        "birth_date": "2024-12-09",
+        "weight_kg": 2.9,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "region": "제주",
+    "shop_name": "진돗개 전문샵",
+    "breed": "진돗개",
+    "price": 510000,
+    "rating": 4.5,
+    "reviews": 22,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "진돗개",
+        "father_breed": "진돗개",
+        "mother_breed": "진돗개",
+        "gender": "암컷",
+        "birth_date": "2025-03-04",
+        "weight_kg": 1.2,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "region": "제주",
+    "shop_name": "진돗개 전문샵",
+    "breed": "진돗개",
+    "price": 500000,
+    "rating": 4.5,
+    "reviews": 33,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "진돗개",
+        "father_breed": "진돗개",
+        "mother_breed": "진돗개",
+        "gender": "암컷",
+        "birth_date": "2024-12-14",
+        "weight_kg": 2.1,
+        "nose_print_registered": false,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "region": "부산",
+    "shop_name": "진돗개 전문샵",
+    "breed": "진돗개",
+    "price": 370000,
+    "rating": 4.9,
+    "reviews": 32,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "진돗개",
+        "father_breed": "진돗개",
+        "mother_breed": "진돗개",
+        "gender": "수컷",
+        "birth_date": "2024-11-24",
+        "weight_kg": 1.2,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "region": "창원",
+    "shop_name": "진돗개 전문샵",
+    "breed": "진돗개",
+    "price": 330000,
+    "rating": 4.5,
+    "reviews": 16,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "진돗개",
+        "father_breed": "진돗개",
+        "mother_breed": "진돗개",
+        "gender": "수컷",
+        "birth_date": "2025-01-15",
+        "weight_kg": 2.2,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "region": "울산",
+    "shop_name": "비숑프리제 전문샵",
+    "breed": "비숑프리제",
+    "price": 560000,
+    "rating": 4.9,
+    "reviews": 34,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "비숑프리제",
+        "father_breed": "비숑프리제",
+        "mother_breed": "비숑프리제",
+        "gender": "암컷",
+        "birth_date": "2024-11-15",
+        "weight_kg": 1.8,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "region": "대구",
+    "shop_name": "비숑프리제 전문샵",
+    "breed": "비숑프리제",
+    "price": 470000,
+    "rating": 4.8,
+    "reviews": 33,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "비숑프리제",
+        "father_breed": "비숑프리제",
+        "mother_breed": "비숑프리제",
+        "gender": "암컷",
+        "birth_date": "2025-02-19",
+        "weight_kg": 2.1,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "region": "수원",
+    "shop_name": "비숑프리제 전문샵",
+    "breed": "비숑프리제",
+    "price": 330000,
+    "rating": 4.7,
+    "reviews": 23,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "비숑프리제",
+        "father_breed": "비숑프리제",
+        "mother_breed": "비숑프리제",
+        "gender": "암컷",
+        "birth_date": "2025-03-20",
+        "weight_kg": 1.7,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "region": "대전",
+    "shop_name": "비숑프리제 전문샵",
+    "breed": "비숑프리제",
+    "price": 380000,
+    "rating": 4.5,
+    "reviews": 28,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "비숑프리제",
+        "father_breed": "비숑프리제",
+        "mother_breed": "비숑프리제",
+        "gender": "수컷",
+        "birth_date": "2024-12-18",
+        "weight_kg": 3.3,
+        "nose_print_registered": false,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "region": "수원",
+    "shop_name": "비숑프리제 전문샵",
+    "breed": "비숑프리제",
+    "price": 430000,
+    "rating": 4.9,
+    "reviews": 26,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "비숑프리제",
+        "father_breed": "비숑프리제",
+        "mother_breed": "비숑프리제",
+        "gender": "수컷",
+        "birth_date": "2024-11-23",
+        "weight_kg": 2.6,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "region": "부산",
+    "shop_name": "시바견 전문샵",
+    "breed": "시바견",
+    "price": 560000,
+    "rating": 4.5,
+    "reviews": 24,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "시바견",
+        "father_breed": "시바견",
+        "mother_breed": "시바견",
+        "gender": "암컷",
+        "birth_date": "2025-01-26",
+        "weight_kg": 1.9,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "region": "제주",
+    "shop_name": "시바견 전문샵",
+    "breed": "시바견",
+    "price": 480000,
+    "rating": 4.7,
+    "reviews": 21,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "시바견",
+        "father_breed": "시바견",
+        "mother_breed": "시바견",
+        "gender": "암컷",
+        "birth_date": "2024-11-09",
+        "weight_kg": 1.3,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "region": "광주",
+    "shop_name": "시바견 전문샵",
+    "breed": "시바견",
+    "price": 380000,
+    "rating": 4.8,
+    "reviews": 25,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "시바견",
+        "father_breed": "시바견",
+        "mother_breed": "시바견",
+        "gender": "수컷",
+        "birth_date": "2025-01-14",
+        "weight_kg": 1.3,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "region": "대구",
+    "shop_name": "시바견 전문샵",
+    "breed": "시바견",
+    "price": 470000,
+    "rating": 4.6,
+    "reviews": 26,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "시바견",
+        "father_breed": "시바견",
+        "mother_breed": "시바견",
+        "gender": "암컷",
+        "birth_date": "2025-01-13",
+        "weight_kg": 1.1,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "region": "인천",
+    "shop_name": "시바견 전문샵",
+    "breed": "시바견",
+    "price": 300000,
+    "rating": 4.8,
+    "reviews": 18,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "시바견",
+        "father_breed": "시바견",
+        "mother_breed": "시바견",
+        "gender": "수컷",
+        "birth_date": "2024-11-22",
+        "weight_kg": 3.1,
+        "nose_print_registered": false,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "region": "대구",
+    "shop_name": "요크셔테리어 전문샵",
+    "breed": "요크셔테리어",
+    "price": 440000,
+    "rating": 4.8,
+    "reviews": 27,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "요크셔테리어",
+        "father_breed": "요크셔테리어",
+        "mother_breed": "요크셔테리어",
+        "gender": "암컷",
+        "birth_date": "2025-02-05",
+        "weight_kg": 1.8,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "region": "대구",
+    "shop_name": "요크셔테리어 전문샵",
+    "breed": "요크셔테리어",
+    "price": 580000,
+    "rating": 4.9,
+    "reviews": 32,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "요크셔테리어",
+        "father_breed": "요크셔테리어",
+        "mother_breed": "요크셔테리어",
+        "gender": "암컷",
+        "birth_date": "2024-12-02",
+        "weight_kg": 1.3,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "region": "창원",
+    "shop_name": "요크셔테리어 전문샵",
+    "breed": "요크셔테리어",
+    "price": 330000,
+    "rating": 4.9,
+    "reviews": 8,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "요크셔테리어",
+        "father_breed": "요크셔테리어",
+        "mother_breed": "요크셔테리어",
+        "gender": "암컷",
+        "birth_date": "2024-11-12",
+        "weight_kg": 2.1,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "region": "창원",
+    "shop_name": "요크셔테리어 전문샵",
+    "breed": "요크셔테리어",
+    "price": 570000,
+    "rating": 4.7,
+    "reviews": 27,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "요크셔테리어",
+        "father_breed": "요크셔테리어",
+        "mother_breed": "요크셔테리어",
+        "gender": "암컷",
+        "birth_date": "2025-01-05",
+        "weight_kg": 1.9,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "region": "제주",
+    "shop_name": "요크셔테리어 전문샵",
+    "breed": "요크셔테리어",
+    "price": 480000,
+    "rating": 4.8,
+    "reviews": 15,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "요크셔테리어",
+        "father_breed": "요크셔테리어",
+        "mother_breed": "요크셔테리어",
+        "gender": "수컷",
+        "birth_date": "2024-11-30",
+        "weight_kg": 3.4,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "region": "울산",
+    "shop_name": "말티푸 전문샵",
+    "breed": "말티푸",
+    "price": 500000,
+    "rating": 5.0,
+    "reviews": 8,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "말티푸",
+        "father_breed": "말티푸",
+        "mother_breed": "말티푸",
+        "gender": "수컷",
+        "birth_date": "2025-02-04",
+        "weight_kg": 1.2,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "region": "대전",
+    "shop_name": "말티푸 전문샵",
+    "breed": "말티푸",
+    "price": 380000,
+    "rating": 4.6,
+    "reviews": 11,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "말티푸",
+        "father_breed": "말티푸",
+        "mother_breed": "말티푸",
+        "gender": "암컷",
+        "birth_date": "2024-12-09",
+        "weight_kg": 2.9,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "region": "대구",
+    "shop_name": "말티푸 전문샵",
+    "breed": "말티푸",
+    "price": 410000,
+    "rating": 4.6,
+    "reviews": 11,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "말티푸",
+        "father_breed": "말티푸",
+        "mother_breed": "말티푸",
+        "gender": "수컷",
+        "birth_date": "2025-03-19",
+        "weight_kg": 2.4,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "region": "부산",
+    "shop_name": "말티푸 전문샵",
+    "breed": "말티푸",
+    "price": 560000,
+    "rating": 4.6,
+    "reviews": 30,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "말티푸",
+        "father_breed": "말티푸",
+        "mother_breed": "말티푸",
+        "gender": "암컷",
+        "birth_date": "2025-01-05",
+        "weight_kg": 2.7,
+        "nose_print_registered": false,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "region": "울산",
+    "shop_name": "말티푸 전문샵",
+    "breed": "말티푸",
+    "price": 530000,
+    "rating": 4.8,
+    "reviews": 16,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "말티푸",
+        "father_breed": "말티푸",
+        "mother_breed": "말티푸",
+        "gender": "암컷",
+        "birth_date": "2024-11-25",
+        "weight_kg": 3.1,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "region": "서울",
+    "shop_name": "보더콜리 전문샵",
+    "breed": "보더콜리",
+    "price": 440000,
+    "rating": 5.0,
+    "reviews": 31,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "보더콜리",
+        "father_breed": "보더콜리",
+        "mother_breed": "보더콜리",
+        "gender": "암컷",
+        "birth_date": "2024-11-14",
+        "weight_kg": 3.1,
+        "nose_print_registered": true,
+        "registration_status": "미등록"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "region": "창원",
+    "shop_name": "보더콜리 전문샵",
+    "breed": "보더콜리",
+    "price": 410000,
+    "rating": 4.7,
+    "reviews": 29,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "보더콜리",
+        "father_breed": "보더콜리",
+        "mother_breed": "보더콜리",
+        "gender": "암컷",
+        "birth_date": "2025-02-23",
+        "weight_kg": 1.9,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "region": "울산",
+    "shop_name": "보더콜리 전문샵",
+    "breed": "보더콜리",
+    "price": 390000,
+    "rating": 4.7,
+    "reviews": 16,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "보더콜리",
+        "father_breed": "보더콜리",
+        "mother_breed": "보더콜리",
+        "gender": "수컷",
+        "birth_date": "2025-01-15",
+        "weight_kg": 3.2,
+        "nose_print_registered": false,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "region": "광주",
+    "shop_name": "보더콜리 전문샵",
+    "breed": "보더콜리",
+    "price": 520000,
+    "rating": 4.8,
+    "reviews": 31,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "보더콜리",
+        "father_breed": "보더콜리",
+        "mother_breed": "보더콜리",
+        "gender": "수컷",
+        "birth_date": "2024-11-01",
+        "weight_kg": 2.2,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": false
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "region": "대구",
+    "shop_name": "보더콜리 전문샵",
+    "breed": "보더콜리",
+    "price": 510000,
+    "rating": 4.7,
+    "reviews": 20,
+    "img": "assets/images/img/img_item_sample.png",
+    "details": {
+      "dog": {
+        "breed": "보더콜리",
+        "father_breed": "보더콜리",
+        "mother_breed": "보더콜리",
+        "gender": "수컷",
+        "birth_date": "2025-03-06",
+        "weight_kg": 2.6,
+        "nose_print_registered": true,
+        "registration_status": "등록완료"
+      },
+      "vaccinations": [
+        {
+          "name": "코로나 장염",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "코로나 장염",
+          "dose": 2,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "켄넬코프",
+          "dose": 2,
+          "completed": false
+        },
+        {
+          "name": "신종플루",
+          "dose": 1,
+          "completed": true
+        },
+        {
+          "name": "광견병 예방접종",
+          "dose": null,
+          "completed": true
+        },
+        {
+          "name": "심장사상충 예방",
+          "dose": null,
+          "completed": false
+        }
+      ]
+    }
+  }
+]

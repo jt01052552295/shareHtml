@@ -11,6 +11,21 @@
 <section class="contents">
     <div class="inner">
         <div class="form-group">
+            <p class="member_tit">회원정보</p>
+            <div class="mb-20">
+                <label class="input_label require" for="item">회원분류</label>
+                <div class="opt-select">
+                    <div class="option w-100">
+                        <input type="radio" id="male" name="gender" checked>
+                        <label class="w-100" for="male">견사회원</label>
+                    </div>
+
+                    <div class="option w-100">
+                        <input type="radio" id="female" name="gender">
+                        <label class="w-100" for="female">펫샵회원</label>
+                    </div>
+                </div>
+            </div>
             <div class="mb-20">
                 <label class="input_label require" for="email">이메일</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
@@ -50,6 +65,7 @@
                 <button class="btn btn-secondary w-100 btn-height mt-10">인증번호 전송</button>
             </div>
 
+            <p class="member_tit mt-40">회원정보</p>
             <div class="mb-20">
                 <label class="input_label require" for="company_num">사업자등록증</label>
                 <input type="text" class="form-control" id="company_num" aria-describedby="emailHelp"
@@ -57,6 +73,14 @@
                 <div class="valid-feedback">
                     Looks good!
                 </div>
+            </div>
+            <div class="mb-20">
+                <label class="input_label require" for="address">주소</label>
+                <div class="address_input mb-10">
+                    <input type="text" class="form-control" id="address" aria-describedby="emailHelp" placeholder="주소">
+                    <button class="btn btn-outline-main address_btn">검색</button>
+                </div>
+                <input type="text" class="form-control" id="address" aria-describedby="address" placeholder="상세주소">
             </div>
         </div>
 
@@ -90,5 +114,29 @@
 </section>
 
 <nav class="ft_nav"></nav>
+
+<script>
+    const allAgreeBtn = document.getElementById('cb1');
+    let subBtns = document.querySelectorAll('.cb_list .cb-input')
+
+    allAgreeBtn.addEventListener('click', () => {
+        subBtns.forEach(subBtn => {
+            subBtn.checked = allAgreeBtn.checked;
+        })
+    })
+
+    subBtns.forEach(subBtn => {
+        subBtn.addEventListener('click', () => {
+            let allAgree = true;
+            for (let i = 0; i < subBtns.length; i++) {
+                if (!subBtns[i].checked) {
+                    allAgree = false;
+                    break
+                }
+            }
+            allAgreeBtn.checked = allAgree;
+        })
+    })
+</script>
 
 @@include('partials/html-end.html')

@@ -1,0 +1,38 @@
+.footer {
+    padding-block: 60px;
+    background-color: #222;
+    .inner {
+        .layout {
+            .footer_logo {
+                .link {
+                    img {
+                        width: 200px;
+                    }
+                }
+            }
+
+            .info_con {
+                .info {
+                    font: {
+                        size: 16px;
+                        weight: 500;
+                    }
+                    color: #9f9f9f;
+                }
+            }
+        }
+
+        .copyright {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #9f9f9f;
+            p {
+                font: {
+                    size: 16px;
+                    weight: 500;
+                }
+                color: #9f9f9f;
+            }
+        }
+    }
+}

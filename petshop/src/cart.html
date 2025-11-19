@@ -12,10 +12,10 @@
     <div class="inner">
         <div class="checkbox-wrap pt-15 pb-15 mb-15">
             <input type="checkbox" id="cb1" class="cb-input" />
-            <label for="cb1" class="cb-label tit">전체선택 (1/2)</label>
+            <label for="cb1" class="cb-label all_sum">전체선택 (1/2)</label>
         </div>
         <ul class="cart_item">
-            <li class="list">
+            <!-- <li class="list">
                 <div class="d-flex justify-content-between align-items-center border-bottom">
                     <div class="seller_thumb">
                         <div class="img_con">
@@ -102,7 +102,7 @@
                     <p class="t1">금액</p>
                     <p class="price">250,000원</p>
                 </div>
-            </li>
+            </li> -->
         </ul>
 
         <div class="payment_con mt-20">
@@ -164,5 +164,92 @@
     </div>
 </div>
 <nav class="ft_nav"></nav>
+<script>
+    function renderCart() {
+        const cartList = document.querySelector('.cart_item');
+        const cartTotal = document.querySelector('.price');
 
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        if (cart.length === 0) {
+            cartList.innerHTML = '<li class="cart_empty">장바구니가 비었습니다.</li>';
+            return;
+        }
+
+        cartList.innerHTML = cart.map(item => `
+        <li class="list">
+                <div class="d-flex justify-content-between align-items-center border-bottom">
+                    <div class="seller_thumb">
+                        <div class="img_con">
+                            <img src="${item.img}" alt="" class="thumb_img">
+                        </div>
+                        <p class="name">${item.shop_name}</p>
+                    </div>
+                    <button class="btn btn-link">
+                        <img src="@@imgPath/ico/ico_delete.png" data-id="${item.id}" class="remove delete_btn" alt="">
+                    </button>
+                </div>
+
+                <div class="info_con">
+                    <div class="checkbox-wrap">
+                        <input type="checkbox" id="${item.id}" class="cb-input" />
+                        <label for="${item.id}" class="cb-label tit"></label>
+                    </div>
+                    <div class="item_info">
+                        <div class="box">
+                            <div class="rect">
+                                <img class="img" src="${item.img}" alt="상품이미지">
+                            </div>
+                            <div class="txt_con">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="brand">${item.breed} / ${item.details.dog.gender}</p>
+                                    <p class="nose on">비문</p>
+                                </div>
+                                <div class="breed_con">
+                                    <p class="breed"><b>모견</b>${item.details.dog.mother_breed}</p>
+                                    <p class="breed"><b>부견</b>${item.details.dog.father_breed}</p>
+                                </div>
+                                <p class="birth">${item.details.dog.birth_date}</p>
+                            </div>
+                        </div>
+                        <p class="vaccine" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                            aria-controls="offcanvasBottom">예방접종여부</p>
+                    </div>
+                </div>
+                <div class="price_con">
+                    <p class="t1">금액</p>
+                    <p class="price">${item.price.toLocaleString()}원</p>
+                </div>
+            </li>
+    `).join('');
+
+        // 총액 계산
+        // const total = cart.reduce((sum, c) => sum + c.price, 0);
+        // cartTotal.textContent = total.toLocaleString();
+        // console.log(cartTotal)
+
+        // 삭제 버튼 이벤트
+        document.querySelectorAll('.remove').forEach(btn => {
+            btn.addEventListener('click', e => {
+                const id = Number(e.target.dataset.id);
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart = cart.filter(c => c.id !== id);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                renderCart();
+            });
+        });
+    }
+
+    const allCheck = document.querySelector('#cb1');
+    let allItem = document.querySelector('.all_sum');
+
+    allCheck.addEventListener('click', () => {
+        allCheck = true;
+
+        allItem.forEach()
+    })
+
+    // 초기 렌더링
+    renderCart();
+</script>
 @@include('partials/html-end.html')

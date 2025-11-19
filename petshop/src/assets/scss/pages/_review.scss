@@ -152,6 +152,7 @@
 }
 
 .my_review {
+    padding-top: 15px;
     .review_cnt {
         padding-bottom: 15px;
         border-bottom: 1px solid var(--gray-color);
@@ -432,4 +433,8 @@
             }
         }
     }
+}
+
+.register_btn {
+    padding-bottom: 15px;
 }
