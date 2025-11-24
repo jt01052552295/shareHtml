@@ -4,6 +4,9 @@
     height: 100px;
     background-color: var(--main-color);
     z-index: 100;
+    @media (max-width: 480px) {
+        height: 65px;
+    }
     .inner {
         height: 100%;
         .nav_con {
@@ -14,6 +17,9 @@
             .head_logo {
                 .logo {
                     width: 200px;
+                    @media (max-width: 480px) {
+                        width: 100px;
+                    }
                 }
             }
 

@@ -48,50 +48,87 @@
 
         <div class="detail_func">
             <h1 class="title">From Attendance to Payslips<span class="nl pt">All Remote with SignChain!</span></h1>
-            <ul class="list_con">
-                <li class="list">
-                    <div class="img_con">
-                        <img src="@@imgPath/img/img_detail_1.png" alt="">
-                    </div>
-                    <div class="txt_con">
-                        <p class="icon">📆</p>
-                        <p class="t1">Easy <span class="nl">Schedule Management</span></p>
-                        <p class="t2">Real-time<span class="nl">Staff Status & Work Info</span></p>
-                    </div>
-                </li>
-                <li class="list">
-                    <div class="txt_con">
-                        <p class="icon">💸</p>
-                        <p class="t1">Accurate Payroll</p>
-                        <p class="t2">Precise Pay Based on <span class="nl">Recorded Work Hours</span></p>
-                    </div>
-                    <div class="img_con">
-                        <img src="@@imgPath/img/img_detail_2.png" alt="">
-                    </div>
-                </li>
-                <li class="list">
-                    <div class="img_con">
-                        <img src="@@imgPath/img/img_detail_3.png" alt="">
-                    </div>
-                    <div class="txt_con">
-                        <p class="icon">⏰</p>
-                        <p class="t1">Accurate <span class="nl">Attendance Check</span></p>
-                        <p class="t2">Track Work <span class="nl">Conditions and Hours Precisely</span></p>
-                    </div>
-                </li>
-                <li class="list">
-                    <div class="txt_con">
-                        <p class="icon">💸</p>
-                        <p class="t1">Convenient <span class="nl">Employment Contracts</span></p>
-                        <p class="t2">Skip the Paper, <span class="nl">Sign from Home</span></p>
-                    </div>
-                    <div class="img_con">
-                        <img src="@@imgPath/img/img_detail_4.png" alt="">
-                    </div>
-                </li>
-            </ul>
-        </div>
 
+            <div class="tab_con">
+                <ul class="tab_btn">
+                    <li class="tab active">Staff</li>
+                    <li class="tab">Manager</li>
+                </ul>
+
+                <ul class="list_con active">
+                    <li class="list">
+                        <div class="txt_con">
+                            <p class="icon">📆</p>
+                            <p class="t1">Check your work schedule <span class="nl">at a glance for the current
+                                    month.</span></p>
+                            <p class="t2">Tap any date to see working hours, hourly wage, and daily pay.</p>
+                        </div>
+                        <div class="img_con">
+                            <img src="@@imgPath/img/img_en_detail_1.png" alt="">
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="txt_con">
+                            <p class="icon">💸</p>
+                            <p class="t1">Track when you worked <span class="nl">and how much you earned this
+                                    month.</span></p>
+                            <p class="t2">Check total pay, statistics, goals, and detailed info for each workplace.</p>
+                        </div>
+                        <div class="img_con">
+                            <img src="@@imgPath/img/img_en_detail_2.png" alt="">
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="txt_con">
+                            <p class="icon">⏰</p>
+                            <p class="t1">Manage attendance, payroll, and employer <span class="nl">connection in one
+                                    place.</span></p>
+                            <p class="t2">Manage clock-in/out, connection requests, attendance records, and your
+                                document inbox—all in one place.</p>
+                        </div>
+                        <div class="img_con">
+                            <img src="@@imgPath/img/img_en_detail_3.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="list_con">
+                    <li class="list">
+                        <div class="txt_con">
+                            <p class="icon">📆</p>
+                            <p class="t1">Check your monthly schedule<span class="nl">at a glance with the mobile
+                                    calendar.</span></p>
+                            <p class="t2">Tap any date to view working hours, hourly wage, and daily earnings.</p>
+                        </div>
+                        <div class="img_con">
+                            <img src="@@imgPath/img/img_en_detail_6.png" alt="">
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="txt_con">
+                            <p class="icon">💸</p>
+                            <p class="t1">Manage payroll, contracts, and work records<span class="nl">all from your
+                                    mobile device.</span></p>
+                            <p class="t2">Instantly check each employee’s payroll, attendance details, and send required
+                                documents.</p>
+                        </div>
+                        <div class="img_con">
+                            <img src="@@imgPath/img/img_en_detail_5.png" alt="">
+                        </div>
+                    </li>
+                    <li class="list">
+                        <div class="txt_con">
+                            <p class="icon">⏰</p>
+                            <p class="t1">Check employee attendance <span class="nl">status at a glance.</span></p>
+                            <p class="t2">View each employee’s attendance status and detailed profile.</p>
+                        </div>
+                        <div class="img_con">
+                            <img src="@@imgPath/img/img_en_detail_4.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
     </div>
     <div class="count">
@@ -171,6 +208,30 @@
 
 
 <script>
+
+    // 탭버튼
+    const tabBtn = document.querySelectorAll('.tab_btn .tab')
+    const tabCon = document.querySelectorAll('.tab_con .list_con')
+
+
+    tabBtn.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+
+            console.log(index)
+            tabBtn.forEach(a => {
+                a.classList.remove('active')
+            })
+            tabCon.forEach(b => {
+                b.classList.remove('active')
+            });
+
+            tab.classList.add('active')
+            tabCon[index].classList.add('active')
+
+        })
+    })
+
+
     document.addEventListener('DOMContentLoaded', function () {
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {

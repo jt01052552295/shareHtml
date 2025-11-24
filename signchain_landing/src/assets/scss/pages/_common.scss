@@ -168,3 +168,45 @@ h1.title {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+
+// tab
+
+.tab_con {
+  .tab_btn {
+    display: flex;
+    width: 50%;
+    margin: 0 auto 60px;
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+    .tab {
+      width: 50%;
+      padding-block: 15px;
+      border-bottom: 2px solid #eee;
+      text-align: center;
+      cursor: pointer;
+      font: {
+        size: 18px;
+        weight: 500;
+      }
+      color: #eee;
+      &.active {
+        border-bottom: 2px solid var(--main-color);
+        font: {
+          size: 18px;
+          weight: 700;
+        }
+        color: var(--main-color);
+      }
+    }
+  }
+
+  .list_con {
+    display: none;
+    &.active {
+      display: block;
+    }
+    .list {
+    }
+  }
+}

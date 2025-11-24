@@ -1,5 +1,8 @@
 .contents {
     padding-top: 100px;
+    @media (max-width: 480px) {
+        padding-top: 65px;
+    }
     .main_banner {
         position: relative;
         width: 100%;
@@ -34,7 +37,7 @@
                         weight: 500;
                     }
                     @media (max-width: 480px) {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
                 }
                 .t2 {
@@ -44,7 +47,7 @@
                     }
                     color: var(--main-color);
                     @media (max-width: 480px) {
-                        font-size: 3rem;
+                        font-size: 2rem;
                     }
                 }
                 .link {
@@ -147,33 +150,24 @@
     .detail_func {
         .list_con {
             .list {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 200px;
+                margin-bottom: 60px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
                 @media (max-width: 768px) {
-                    flex-direction: column;
-                    gap: 40px;
-                    margin-bottom: 60px;
-                    &:nth-child(odd) {
-                        .img_con {
-                            order: 2;
-                        }
-                        .txt_con {
-                            order: 1;
-                        }
-                    }
                 }
                 .img_con {
-                    width: 300px;
+                    margin-top: 30px;
+                    text-align: center;
                     img {
-                        width: 100%;
+                        width: 80%;
+                        @media (max-width: 480px) {
+                            width: 100%;
+                        }
                     }
                 }
                 .txt_con {
-                    @media (max-width: 480px) {
-                        text-align: center;
-                    }
+                    text-align: center;
                     .icon {
                         font-size: 48px;
                         @media (max-width: 480px) {
@@ -182,20 +176,20 @@
                     }
                     .t1 {
                         font: {
-                            size: 48px;
+                            size: 28px;
                             weight: 700;
                         }
                         color: var(--main-color);
                         line-height: 1.2;
 
                         @media (max-width: 480px) {
-                            font-size: 2rem;
+                            font-size: 1.2rem;
                         }
                     }
                     .t2 {
-                        margin-top: 30px;
+                        margin-top: 15px;
                         font: {
-                            size: 18px;
+                            size: 16px;
                             weight: 400;
                         }
 
