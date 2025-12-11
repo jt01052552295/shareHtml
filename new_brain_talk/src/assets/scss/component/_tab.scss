@@ -1,0 +1,30 @@
+.tab_con {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+
+    .tab {
+        flex: 1;
+        padding-block: 15px;
+        border-bottom: 2px solid var(--border-color);
+        text-align: center;
+        color: var(--gray-color);
+
+        .link {
+            .txt {
+                font: {
+                    size: 16px;
+                    weight: 500
+                }
+
+                line-height: 28px;
+                letter-spacing: -1px;
+            }
+        }
+
+        &.active {
+            border-bottom: 2px solid var(--main-color);
+            color: #000;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.switch_con {
+    display: inline-block;
+    position: relative;
+
+    .switch_input {
+        display: none;
+
+        &:checked {
+            &+.switch_label {
+                background-color: var(--main-color);
+
+                &::before {
+                    left: calc(100% - 23px);
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    .switch_label {
+        position: relative;
+        display: block;
+        width: 44px;
+        height: 19px;
+        background-color: #Dadada;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 1px;
+            transform: translateY(-50%);
+            width: 22px;
+            height: 17px;
+            background-color: var(--main-color);
+            border-radius: 4px;
+            transition: left 0.3s ease;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.class_history {
+    background-color: #fff;
+}
+
+.date_select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .form-group {
+        flex: 1;
+
+        label {
+            font: {
+                size: 14px;
+                weight: 400
+            }
+
+            color: #000;
+        }
+
+        .form-control {
+            padding-block: 0;
+
+            font: {
+                size: 14px;
+                weight: 400
+            }
+
+        }
+    }
+}

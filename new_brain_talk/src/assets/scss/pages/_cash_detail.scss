@@ -1,0 +1,30 @@
+.cash_detail {
+    .date_con {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-block: 30px;
+
+        .date {
+            font: {
+                size: 20px;
+                weight: 500
+            }
+
+            line-height: 28px;
+            letter-spacing: -1px;
+        }
+    }
+
+    .info_list_con {
+        &.delivery {
+            .list {
+                justify-content: start;
+
+                .tit {
+                    width: 85px;
+                }
+            }
+        }
+    }
+}

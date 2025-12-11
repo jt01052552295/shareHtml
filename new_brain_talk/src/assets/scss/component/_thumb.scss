@@ -1,0 +1,78 @@
+.profile_thumb {
+    position: relative;
+    display: inline-block;
+
+    .thumb_con {
+        position: relative;
+        width: 105px;
+        height: 105px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        .thumb {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .thumb_upload {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        .upload_input {
+            display: none;
+        }
+
+        .upload_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+            svg {
+                width: 18px;
+                height: 18px;
+                fill: #fff;
+            }
+
+            &:hover {
+                background-color: darken(#437fec, 10%);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+    }
+}
+
+.user_info {
+    .name {
+        margin-bottom: 10px;
+
+        font: {
+            size: 24px;
+            weight: 700;
+        }
+    }
+
+    .email,
+    .phone {
+        font: {
+            size: 16px;
+            weight: 500;
+        }
+    }
+}

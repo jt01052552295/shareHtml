@@ -1,0 +1,60 @@
+@@include('partials/html-start.html', { "title": "진단내역" })
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">진단내역</p>
+    <div class="right_area">
+        <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+            <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+        </button>
+    </div>
+</header>
+<section class="contents">
+    <div class="wrap_bg">
+        <div class="diagnosis_detail">
+            <div class="banner">
+                <img src="@@imgPath/img/img_diagnosis_sample.png" alt="">
+            </div>
+            <div class="inner">
+                <div class="profile_con">
+                    <div class="profile_thumb">
+                        <div class="circular_chart">
+                            <svg class="circle_svg" viewBox="0 0 100 100">
+                                <circle class="circle_bg" cx="50" cy="50" r="45"></circle>
+                                <circle class="circle_progress" cx="50" cy="50" r="45"></circle>
+                            </svg>
+                            <div class="score_text">20</div>
+                        </div>
+                    </div>
+                    <div class="profile_info">
+                        <div class="name_con">
+                            <p class="name">이솜</p>
+
+                        </div>
+
+                        <div class="func_con">
+                            <p class="career">여자 (25세) <span class="nl">11/10/2025 (수)</span></p>
+
+                            <div class="opt_btn">
+                                <a href="javascript:void(0);" class="link share">
+                                    <img src="@@imgPath/ico/ico_export.png" alt="">
+                                </a>
+                                <div class="like_con">
+                                    <input type="checkbox" id="like">
+                                    <label class="like_label" for="like"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

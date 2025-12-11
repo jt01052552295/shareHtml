@@ -1,0 +1,114 @@
+@@include('partials/html-start.html', { "title": "예약설정" })
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">예약설정</p>
+</header>
+<section class="contents">
+    <div class="wrap_bg">
+        <div class="reser_setting">
+            <ul class="tab_con">
+                <li class="tab active">
+                    <a href="javascript:void(0)" class="link">
+                        <p class="txt">기본설정</p>
+                    </a>
+                </li>
+                <li class="tab">
+                    <a href="javascript:void(0)" class="link">
+                        <p class="txt">예약불가 설정</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="inner">
+
+                <div class="week_select pt-25">
+                    <p class="sub_tit mb-15">요일선택</p>
+
+                    <ul class="week_con">
+                        <li class="list">
+                            <input type="checkbox" id="monday" class="week_box">
+                            <label class="day" for="monday">월</label>
+                        </li>
+                        <li class="list">
+                            <input type="checkbox" id="tuesday" class="week_box">
+                            <label class="day" for="tuesday">화</label>
+                        </li>
+                        <li class="list">
+                            <input type="checkbox" id="wednesday" class="week_box">
+                            <label class="day" for="wednesday">수</label>
+                        </li>
+                        <li class="list">
+                            <input type="checkbox" id="thursday" class="week_box">
+                            <label class="day" for="thursday">목</label>
+                        </li>
+                        <li class="list">
+                            <input type="checkbox" id="friday" class="week_box">
+                            <label class="day" for="friday">금</label>
+                        </li>
+                        <li class="list">
+                            <input type="checkbox" id="saturday" class="week_box">
+                            <label class="day" for="saturday">토</label>
+                        </li>
+                        <li class="list">
+                            <input type="checkbox" id="sunday" class="week_box">
+                            <label class="day" for="sunday">일</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="working_time mt-35">
+                    <p class="sub_tit mb-15">영업시간</p>
+
+                    <div class="input_con">
+                        <div class="input_box">
+                            <input type="text" class="time_box">
+                        </div>
+                        <div class="input_box">
+                            <input type="text" class="time_box">
+                        </div>
+                    </div>
+
+                    <p class="caution">입력외 시간은 예약받지않습니다.</p>
+                </div>
+
+
+                <div class="working_time mt-35">
+                    <div class="d-flex justify-content-between  mb-15">
+                        <p class="sub_tit gray_txt">브레이크 타임</p>
+                        <div class="switch_con d-flex justify-content-between align-items-center">
+                            <p class="switch_txt">사용안함</p>
+                            <input type="checkbox" id="switch1" class="switch_input">
+                            <label for="switch1" class="switch_label"></label>
+                        </div>
+                    </div>
+
+                    <div class="input_con">
+                        <div class="input_box">
+                            <input type="text" class="time_box">
+                        </div>
+                        <div class="input_box">
+                            <input type="text" class="time_box">
+                        </div>
+                    </div>
+
+                    <div class="reser_confirm mt-35">
+                        <p class="sub_tit mb-15">예약 설정</p>
+                        <div class="btn_con">
+                            <button class="btn btn-outline-secondary">예약가능</button>
+                            <button class="btn btn-primary">확인</button>
+                        </div>
+                        <p class="caution">위 설정보다 우선 적용됩니다.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

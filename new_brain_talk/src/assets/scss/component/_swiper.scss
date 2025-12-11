@@ -1,0 +1,199 @@
+@import url('//fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.common_slide {
+    .swiper-wrapper {
+        .swiper-slide {
+            border-radius: 20px;
+            overflow: hidden;
+            text-align: left;
+
+            .img_con {
+                .img {}
+            }
+
+            .txt_con {
+                height: 200px;
+                padding: 25px;
+                background-color: #fff;
+
+                .tit {
+                    margin-bottom: 10px;
+
+                    font: {
+                        size: 20px;
+                        weight: 700;
+                        family: 'Nanum Myeongjo', serif;
+                    }
+
+                    line-height: 28px;
+                }
+
+                .solution {
+                    margin-bottom: 10px;
+
+                    font: {
+                        size: 12px;
+                        weight: 700;
+                        family: 'Nanum Myeongjo', serif;
+                    }
+
+                }
+
+                .t1 {
+                    font: {
+                        size: 15px;
+                        weight: 300;
+                    }
+
+                    line-height: 22px;
+                    letter-spacing: -1px;
+                }
+            }
+        }
+    }
+}
+
+.therapy_slide {
+    .swiper-wrapper {
+        .swiper-slide {
+            border-radius: 20px;
+            overflow: hidden;
+            text-align: left;
+
+            .img_con {
+                .img {}
+            }
+
+            .txt_con {
+                padding: 30px 20px;
+                background-color: #fff;
+
+                .link {
+                    position: relative;
+                    display: block;
+                    margin-bottom: 20px;
+
+                    font: {
+                        size: 20px;
+                        weight: 600;
+                    }
+
+                    line-height: 20px;
+                    letter-spacing: -1.5px;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        width: 8px;
+                        height: 17px;
+                        background: url('../../assets/images/ico/ico_link_arr.png') no-repeat center / cover;
+                    }
+                }
+
+                .txt {
+                    position: relative;
+                    padding-left: 60px;
+                    margin-bottom: 15px;
+
+                    font: {
+                        size: 16px;
+                        weight: 400
+                    }
+
+                    color: #909090;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+
+                    &.t1 {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_stethoscope.png') no-repeat center / cover;
+                        }
+                    }
+
+                    &.t2 {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_book_open.png') no-repeat center / cover;
+                        }
+                    }
+
+                    &.t3 {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_glass.png') no-repeat center / cover;
+                        }
+                    }
+
+                    &.t4 {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_signs.png') no-repeat center / cover;
+                        }
+                    }
+
+                    &.t5 {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_Home_light.png') no-repeat center / cover;
+                        }
+                    }
+
+                    &.t6 {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_group_add.png') no-repeat center / cover;
+                        }
+                    }
+
+                    &.t7 {
+                        &::before {
+                            background: url('../../assets/images/ico/Lamp_light.png') no-repeat center / cover;
+                        }
+                    }
+
+                    &.t8 {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_book.png') no-repeat center / cover;
+                        }
+                    }
+
+                    &.t9 {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_chat.png') no-repeat center / cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

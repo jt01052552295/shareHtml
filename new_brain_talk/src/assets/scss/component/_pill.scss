@@ -1,0 +1,25 @@
+.pill_con {
+    .pill_list {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+
+        .pill_item {
+            padding: 2px 19px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+
+            font: {
+                size: 14px;
+                weight: 400
+            }
+
+            cursor: pointer;
+
+            &.active {
+                background-color: var(--brown-color);
+                color: #fff;
+            }
+        }
+    }
+}

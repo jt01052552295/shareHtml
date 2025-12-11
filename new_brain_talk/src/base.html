@@ -1,0 +1,26 @@
+@@include('partials/html-start.html', { "title": "메인" })
+<header class="header_menu type_sub">
+  <div class="left_area">
+    <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+      <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+    </button>
+    <button class="btn_icon btn_home" type="button" aria-label="홈" onclick="location.href='index.html'">
+      <img src="@@imgPath/ico/ico_hd_home.png" alt="">
+    </button>
+  </div>
+  <p class="page_title">마이페이지</p>
+  <div class="right_area">
+    <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+      <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+    </button>
+  </div>
+</header>
+<section class="contents">
+  <div class="inner">
+
+  </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

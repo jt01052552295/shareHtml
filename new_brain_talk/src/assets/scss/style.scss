@@ -1,0 +1,35 @@
+// common
+@import "./pages/common";
+@import "./pages/font";
+
+// page
+@import "./pages/index";
+@import "./pages/mypage";
+@import "./pages/rehab";
+@import "./pages/rehabilitator";
+@import "./pages/class_history";
+@import "./pages/diagnosis_history";
+@import "./pages/diagnosis_detail";
+@import "./pages/diagnosis_list";
+@import "./pages/class_info_edit";
+@import "./pages/rehab_register";
+@import "./pages/reser_list";
+@import "./pages/reser_detail";
+@import "./pages/reser_setting";
+@import "./pages/cash_list";
+@import "./pages/cash_detail";
+
+// component
+@import "./component/header";
+@import "./component/footer";
+@import "./component/thumb";
+@import "./component/offcanvas";
+@import "./component/select";
+@import "./component/search";
+@import "./component/swiper";
+@import "./component/menu";
+@import "./component/radio";
+@import "./component/form";
+@import "./component/pill";
+@import "./component/tab";
+@import "./component/switch";

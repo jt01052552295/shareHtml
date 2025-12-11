@@ -1,0 +1,17 @@
+.offcanvas {
+    &.offcanvas-bottom {
+        max-width: 580px;
+        width: 100%;
+        height: auto;
+        left: 50%;
+        right: initial;
+        transform: translate(-50%, 100%);
+        border-radius: 16px 16px 0 0;
+
+        .offcanvas-header {}
+    }
+
+    &.show:not(.hiding) {
+        transform: translate(-50%, 0);
+    }
+}

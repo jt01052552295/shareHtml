@@ -1,0 +1,256 @@
+@@include('partials/html-start.html', { "title": "숏츠목록" })
+<header class="header_menu sty_1">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">숏츠목록</p>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="inner">
+        <ul class="shorts_list_row pt-20 pb-50">
+            <li class="list">
+                <a href="javascript:void(0)" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_shorts_01.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="tit">숏츠제목</p>
+                        <p class="view">조회수 : 150</p>
+                        <p class="date">2025.08.13 | 18:32</p>
+                        <ul class="opt_con mt-10">
+                            <li class="opt good">10</li>
+                            <li class="opt review" data-bs-toggle="offcanvas" data-bs-target="#review"
+                                aria-controls="offcanvasBottom">20</li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="list">
+                <a href="javascript:void(0)" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_shorts_01.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="tit">숏츠제목</p>
+                        <p class="view">조회수 : 150</p>
+                        <p class="date">2025.08.13 | 18:32</p>
+                        <ul class="opt_con mt-10">
+                            <li class="opt good">10</li>
+                            <li class="opt review" data-bs-toggle="offcanvas" data-bs-target="#review"
+                                aria-controls="offcanvasBottom">20</li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="list">
+                <a href="javascript:void(0)" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_shorts_01.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="tit">숏츠제목</p>
+                        <p class="view">조회수 : 150</p>
+                        <p class="date">2025.08.13 | 18:32</p>
+                        <ul class="opt_con mt-10">
+                            <li class="opt good">10</li>
+                            <li class="opt review" data-bs-toggle="offcanvas" data-bs-target="#review"
+                                aria-controls="offcanvasBottom">20</li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+            <li class="list">
+                <a href="javascript:void(0)" class="link">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_shorts_01.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="tit">숏츠제목</p>
+                        <p class="view">조회수 : 150</p>
+                        <p class="date">2025.08.13 | 18:32</p>
+                        <ul class="opt_con mt-10">
+                            <li class="opt good">10</li>
+                            <li class="opt review" data-bs-toggle="offcanvas" data-bs-target="#review"
+                                aria-controls="offcanvasBottom">20</li>
+                        </ul>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+<div class="offcanvas offcanvas-bottom exposure" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">설정</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+        <ul class="exposure_con">
+            <li class="list p-0">수정</li>
+            <li class="list p-0">삭제</li>
+        </ul>
+    </div>
+</div>
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-bottom shorts_reply" tabindex="-1" id="review" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header justify-content-center">
+        <p class="offcanvas-title" id="offcanvasBottomLabel">댓글</p>
+    </div>
+    <div class="offcanvas-body small">
+        <ul class="reply_con mb-100">
+            <li class="comment">
+                <div class="thumb_nail">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_detail_sample.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">야옹아멍멍해봐</p>
+                        <p class="ment">너무 귀여웡여~~~</p>
+                        <p class="reply_write">답글달기</p>
+                    </div>
+                </div>
+                <label class="like_btn" data-gmt-idx="213">
+                    <input type="checkbox" name="chk_like" checked>
+                    <div class="ic_heart"></div>
+                    <p class="num">10</p>
+                </label>
+            </li>
+            <li class="comment">
+                <div class="thumb_nail">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_detail_sample.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">야옹아멍멍해봐</p>
+                        <p class="ment">너무 귀여웡여~~~</p>
+                        <p class="reply_write">답글달기</p>
+                        <p class="reply_more">답글 1개 더 보기</p>
+                    </div>
+                </div>
+                <label class="like_btn" data-gmt-idx="213">
+                    <input type="checkbox" name="chk_like">
+                    <div class="ic_heart"></div>
+                </label>
+            </li>
+            <li class="comment">
+                <div class="thumb_nail">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_detail_sample.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">야옹아멍멍해봐</p>
+                        <p class="ment">너무 귀여웡여~~~</p>
+                        <p class="reply_write">답글달기</p>
+                    </div>
+                </div>
+                <label class="like_btn" data-gmt-idx="213">
+                    <input type="checkbox" name="chk_like">
+                    <div class="ic_heart"></div>
+                </label>
+
+                <ul class="ment_reply">
+                    <li class="list">
+                        <div class="thumb_nail">
+                            <div class="img_con">
+                                <img src="@@imgPath/img/img_detail_sample.png" alt="" class="img">
+                            </div>
+                            <div class="txt_con">
+                                <p class="name">야옹아멍멍해봐</p>
+                                <p class="ment">너무 귀여웡여~~~너무 귀여웡여~~~너무 귀여웡여~~~</p>
+                                <p class="reply_write">답글달기</p>
+                            </div>
+                        </div>
+                        <label class="like_btn" data-gmt-idx="213">
+                            <input type="checkbox" name="chk_like">
+                            <div class="ic_heart"></div>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+            <li class="comment">
+                <div class="thumb_nail">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_detail_sample.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">야옹아멍멍해봐</p>
+                        <p class="ment">너무 귀여웡여~~~</p>
+                        <p class="reply_write">답글달기</p>
+                    </div>
+                </div>
+                <label class="like_btn" data-gmt-idx="213">
+                    <input type="checkbox" name="chk_like" checked>
+                    <div class="ic_heart"></div>
+                    <p class="num">10</p>
+                </label>
+            </li>
+            <li class="comment">
+                <div class="thumb_nail">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_detail_sample.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">야옹아멍멍해봐</p>
+                        <p class="ment">너무 귀여웡여~~~</p>
+                        <p class="reply_write">답글달기</p>
+                        <p class="reply_more">답글 1개 더 보기</p>
+                    </div>
+                </div>
+                <label class="like_btn" data-gmt-idx="213">
+                    <input type="checkbox" name="chk_like">
+                    <div class="ic_heart"></div>
+                </label>
+            </li>
+            <li class="comment">
+                <div class="thumb_nail">
+                    <div class="img_con">
+                        <img src="@@imgPath/img/img_detail_sample.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <p class="name">야옹아멍멍해봐</p>
+                        <p class="ment">너무 귀여웡여~~~</p>
+                        <p class="reply_write">답글달기</p>
+                    </div>
+                </div>
+                <label class="like_btn" data-gmt-idx="213">
+                    <input type="checkbox" name="chk_like">
+                    <div class="ic_heart"></div>
+                </label>
+
+                <ul class="ment_reply">
+                    <li class="list">
+                        <div class="thumb_nail">
+                            <div class="img_con">
+                                <img src="@@imgPath/img/img_detail_sample.png" alt="" class="img">
+                            </div>
+                            <div class="txt_con">
+                                <p class="name">야옹아멍멍해봐</p>
+                                <p class="ment">너무 귀여웡여~~~너무 귀여웡여~~~너무 귀여웡여~~~</p>
+                                <p class="reply_write">답글달기</p>
+                            </div>
+                        </div>
+                        <label class="like_btn" data-gmt-idx="213">
+                            <input type="checkbox" name="chk_like">
+                            <div class="ic_heart"></div>
+                        </label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="reply_input">
+            <div class="input_box">
+                <input class="reply_form" type="text">
+                <button class="btn btn-link">
+                    <img src="@@imgPath/ico/ico_send.png" alt="댓글 작성하기">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('partials/html-end.html')

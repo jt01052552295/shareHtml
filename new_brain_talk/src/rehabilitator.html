@@ -1,0 +1,103 @@
+@@include('partials/html-start.html', { "title": "상담사" })
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+        <button class="btn_icon btn_home" type="button" aria-label="홈" onclick="location.href='index.html'">
+            <img src="@@imgPath/ico/ico_hd_home.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">상담사</p>
+    <div class="right_area">
+        <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+            <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+        </button>
+    </div>
+</header>
+<section class="contents pt-50">
+
+    <div class="rehabilitator">
+        <div class="inner">
+            <div class="profile_thumb">
+                <div class="thumb_con">
+                    <img src="@@imgPath/logo/logo_thumb_basic.png" alt="" class="thumb">
+                </div>
+            </div>
+            <div class="info">
+                <p class="company_name">소리길 커뮤니케이션 클리닉</p>
+                <div class="rating_con">
+                    <p class="avg">0.0<span class="sum">(0)</span></p>
+
+                </div>
+            </div>
+
+            <ul class="info_list">
+                <li class="list">
+                    <p class="tit">소개</p>
+                    <p class="desc">성인 실어증, 구음장애 재활과 집에서 하는 홈코칭</p>
+                </li>
+                <li class="list">
+                    <p class="tit">경력</p>
+                    <p class="desc">하프물범 노인복지관 인지 재활 프로그램 2년</p>
+                    <p class="desc">산토끼 방문재활 센터 언어치료 2년</p>
+                    <p class="desc">부산 솜이 노인 체육센터 언어치료 2년</p>
+                </li>
+                <li class="list">
+                    <p class="tit">소개</p>
+                    <p class="desc">실어증 언어 재활 고급 과정</p>
+                    <p class="desc">연하장애, 구음장애 평가 중재 과정</p>
+                    <p class="desc">보완대체의사소통 (AAC) 전문가 과정</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="fixed_right_bottom">
+    <a href="javascript:void(0);" class="link">
+        <div class="img_con">
+            <img src="@@imgPath/ico/ico_reser_btn.png" alt="">
+        </div>
+        <p class="txt">예약하기</p>
+    </a>
+</div>
+
+<nav class="ft_nav">
+    <ul class="ft_menu">
+        <li class="menu">
+            <a href="javascript:void(0);" class="link">
+                <div class="img_con">
+                    <img src="@@imgPath/ico/ico_nav_home.png" alt="">
+                </div>
+                <p class="txt">홈</p>
+            </a>
+        </li>
+        <li class="menu on">
+            <a href="javascript:void(0);" class="link">
+                <div class="img_con">
+                    <img src="@@imgPath/ico/ico_nav_reser_on.png" alt="">
+                </div>
+                <p class="txt">예약</p>
+            </a>
+        </li>
+        <li class="menu">
+            <a href="javascript:void(0);" class="link">
+                <div class="img_con">
+                    <img src="@@imgPath/ico/ico_nav_self.png" alt="">
+                </div>
+                <p class="txt">자가진단</p>
+            </a>
+        </li>
+        <li class="menu">
+            <a href="javascript:void(0);" class="link">
+                <div class="img_con">
+                    <img src="@@imgPath/ico/ico_nav_mypage.png" alt="">
+                </div>
+                <p class="txt">내정보</p>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+@@include('partials/html-end.html')

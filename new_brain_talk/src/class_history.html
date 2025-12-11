@@ -1,0 +1,62 @@
+@@include('partials/html-start.html', { "title": "수업내역" })
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+        <button class="btn_icon btn_home" type="button" aria-label="홈" onclick="location.href='index.html'">
+            <img src="@@imgPath/ico/ico_hd_home.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">수업내역</p>
+    <div class="right_area">
+        <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+            <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+        </button>
+    </div>
+</header>
+<section class="contents">
+    <div class="wrap_bg">
+        <div class="class_history">
+            <div class="inner">
+                <div class="pill_con pt-20 pb-20">
+                    <ul class="pill_list">
+                        <li class="pill_item active">전체</li>
+                        <li class="pill_item">최근 3개월</li>
+                        <li class="pill_item">최근 6개월</li>
+                        <li class="pill_item">최근 1년</li>
+                    </ul>
+                </div>
+
+                <div class="date_pill">
+                    <div class="form-group">
+                        <label for="name">시작월</label>
+                        <input type="text" class="form-control" id="name" value="11/07/25">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">종료일</label>
+                        <input type="text" class="form-control" id="name" value="11/10/25">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<nav class="ft_nav"></nav>
+<script>
+    const pillCon = document.querypillor('.pill_con');
+    const pillList = document.querypillor('.pill_list');
+    const pillItems = document.querypillorAll('.pill_item');
+
+    pillItems.forEach(list => {
+        list.addEventListener('click', () => {
+            pillItems.forEach(item => {
+                item.classList.remove('active')
+            })
+            list.classList.add('active')
+        })
+    })
+</script>
+@@include('partials/html-end.html')

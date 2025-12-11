@@ -1,0 +1,72 @@
+.diagnosis_list_con {
+    .list {
+        border-bottom: 1px solid var(--gray-color);
+
+        .link {
+            position: relative;
+            display: block;
+            padding-block: 20px;
+            padding-left: 70px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 20px;
+                left: 0;
+                width: 53px;
+                height: 53px;
+                background: url('../../assets/images/ico/ico_order.png') no-repeat center / cover;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 25px;
+                right: 0;
+                width: 8px;
+                height: 17px;
+                background: url('../../assets/images/ico/ico_menu_arr.png') no-repeat center / cover;
+            }
+
+            .txt_con {
+                .tit {
+                    font: {
+                        size: 16px;
+                        weight: 500
+                    }
+
+                    line-height: 28px;
+                    letter-spacing: -1px;
+                }
+
+                .desc {
+                    font: {
+                        size: 14px;
+                        weight: 500
+                    }
+
+                    line-height: 18px;
+                    letter-spacing: -0.7px;
+                    color: var(--brown-color);
+
+                    &.end {
+                        color: var(--gray-color);
+                    }
+                }
+
+                .date {
+                    font: {
+                        size: 10px;
+                        weight: 500
+                    }
+
+                    line-height: 18px;
+                    letter-spacing: -0.7px;
+                    color: var(--gray-color);
+                }
+            }
+        }
+    }
+}

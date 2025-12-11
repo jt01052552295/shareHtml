@@ -1,0 +1,23 @@
+.form-control {
+    padding: 7.5px 10px;
+
+    font: {
+        size: 16px;
+        weight: 400
+    }
+}
+
+.form-group {
+    .address_con {
+        display: flex;
+        gap: 10px;
+
+        .form-control {
+            flex: 1;
+        }
+
+        .btn {
+            flex-shrink: 0;
+        }
+    }
+}

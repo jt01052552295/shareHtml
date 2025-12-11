@@ -1,0 +1,438 @@
+﻿@@include('partials/html-start.html', { "title": "메인" })
+
+<header class="header_menu type_main">
+  <div class="left_area">
+    <a href="/" class="hd_logo">
+      <img src="@@imgPath/logo/logo_hd_logo.png" alt="" class="logo">
+    </a>
+  </div>
+  <div class="right_area">
+    <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+      <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+    </button>
+  </div>
+</header>
+<section class="contents">
+  <div class="wrap_bg">
+    <div class="inner">
+      <div class="therapist mb-15">
+        <div class="left">
+          <div class="profile_thumb">
+            <div class="thumb_con">
+              <img src="@@imgPath/logo/logo_logo.png" alt="" class="thumb">
+            </div>
+            <div class="thumb_upload">
+              <input type="file" id="profileUpload" accept="image/*" class="upload_input">
+              <label for="profileUpload" class="upload_btn">
+                <img src="@@imgPath/ico/ico_dimond.png" alt="" class="img">
+              </label>
+            </div>
+          </div>
+          <p class="name">솜회장 <span class="degree">1급 치료사</span></p>
+        </div>
+        <div class="right">
+          <ul class="therap_menu">
+            <li class="menu">
+              <a href="javascript:void(0);" class="link">예약내역</a>
+            </li>
+            <li class="menu">
+              <a href="javascript:void(0);" class="link">수업관리</a>
+            </li>
+            <li class="menu border-top border-bottom">
+              <a href="javascript:void(0);" class="link">진단내역</a>
+            </li>
+            <li class="menu border-top border-bottom">
+              <a href="javascript:void(0);" class="link">수업내역</a>
+            </li>
+            <li class="menu">
+              <a href="javascript:void(0);" class="link">Q&A 게시판</a>
+            </li>
+            <li class="menu">
+              <a href="javascript:void(0);" class="link">치료후기</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="therapy_banner mb-15">
+        <div class="swiper mySwiper talk_banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="@@imgPath/img/img_therapy_banner1.png" alt="" class="bg_img">
+              <div class="txt_con">
+                <p class="t1">골든브레인케어</p>
+                <p class="t2">2만번을 외쳐야 <br>언어가 된다</p>
+                <div class="box">
+                  <p class="t3">소중한 일상으로의 회복을 먼저 생각하는 브레인톡톡은 환자분들이 언어장애로 겪는 불편을 덜어드리고, 다시 삶의 자신감과 즐거움을 되찾을 수 있도록 함께합니다.
+                  </p>
+                  <p class="t3">정성을 다한 재활치료로 작은 발음 하나부터 원활한 소통의 기쁨까지 이어드리며 환자분들의 일상속 행복한 변화를 만들어갑니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="@@imgPath/img/img_therapy_banner2.png" alt="" class="bg_img">
+              <div class="txt_con">
+                <p class="t1">브레인톡톡</p>
+                <p class="t2">말의 회복, <br>연결의 시작</p>
+                <div class="box">
+                  <p class="t3">잃어버린 '언어'를 되찾고 환자의 일상과 마음을 함께 회복시키는 디지털 언어재활 솔루션입니다. 소중한 일상으로의 회복은 언어재활에서 시작됩니다.</p>
+                  <p class="t3">천천히 이어지는 문장 하나에도 회복의 가능성을 믿습니다. 정성을 다한 재활 치료로 올바른 발음에서 자유로운 대화까지 환자분들의 일상 속 행복한 변화를
+                    만들어갑니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="@@imgPath/img/img_therapy_banner3.png" alt="" class="bg_img">
+              <div class="txt_con">
+                <p class="t1">비앙쥬에</p>
+                <p class="t2">치유의 타임, <br>골든타임</p>
+                <div class="box">
+                  <p class="t3">향으로 마음을 치유하는 웰니스 디퓨저 브랜드입니다. 전문 언어재활사가 직접 완성한 치유의 향입니다.</p>
+                  <p class="t3">지친 하루를 위로하고, 무너진 균형을 다시 세워주는 작은 치유의 시간을 바랍니다. 향이 남기고 가는 건, 단순한 냄새가 아니라 회복의 흔적입니다. 그 잔향
+                    속에서 우리는 천천히, 다시 자신을 만나게 됩니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="main_card_con">
+        <ul class="card_list">
+          <li class="list reser mb-10">
+            <div class="txt_con">
+              <p class="t1">가장 빠른 회복, 같이 시작하세요</p>
+              <p class="t2">실시간 가능한 전문 치료 시간 확인</p>
+            </div>
+            <div class="link_con">
+              <a href="javascript:void(0);" class="link">빠른 예약</a>
+            </div>
+          </li>
+          <li class="list consulting">
+            <div class="txt_con">
+              <p class="t1">시작할지 막막하신가요?</p>
+              <p class="t2">1:1 맞춤 상담으로 함께 길을 찾아드릴께요</p>
+            </div>
+            <div class="link_con">
+              <a href="javascript:void(0);" class="link">빠른 상담</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="talk_therapy mt-35">
+        <h3 class="sub_title mb-15">브레인톡톡 재활치료 소개</h3>
+        <div class="swiper mySwiper therapy_slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_brain_therpy1.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <a href="javascript:void(0);" class="link">비대면 언어재활 프로그램</a>
+                <p class="txt t1">언제 어디서나 언어재활사와 <span class="nl">함께하는 디지털 재활 서비스</span></p>
+                <p class="txt t2">개인별 발화 패턴 분석 및 <span class="nl">맞춤형 훈련 제공</span></p>
+                <p class="txt t3">실시간 피드백으로 <span class="nl">발음 교정 및 유창성 향상</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_brain_therpy2.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <a href="javascript:void(0);" class="link">방문 언어 재활 서비스</a>
+                <p class="txt t4">직접 찾아가서 진행하는 <span class="nl">맞춤형 방문 언어치료</span></p>
+                <p class="txt t5">전문 언어 재활사가 <span class="nl">가정으로 방문</span></p>
+                <p class="txt t6">환자의 환경과 상태에 <span class="nl">맞춘 1:1케어</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_brain_therpy1.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <a href="javascript:void(0);" class="link">언어 재활 교재 및 훈련 콘텐츠</a>
+                <p class="txt t7">일상속에서도 훈련이 <span class="nl">이어지는 가정연계 언어재활</span></p>
+                <p class="txt t8">상황별 대화 훈련 <span class="nl">교재 및 워크북</span></p>
+                <p class="txt t9">실시간 피드백으로 <span class="nl">발음 교정 및 유창성 향상</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="treatment mt-35">
+        <h3 class="sub_title mb-15">개별맞춤 언어치료 솔루션</h3>
+        <div class="swiper mySwiper common_slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_reason1.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="tit">1차 골든 타임 프로그램</p>
+                  <p class="solution">일상회복솔루션</p>
+                </div>
+                <p class="t1">일상 생활의 복귀에 목적을 둔 언어재활의 치료 과정으로, 언어의 이해와 표현 능력을 증진시키기 위한 다양한 언어치료 중재방법의 훈련을 통해 뇌의 언어적 기능을
+                  회복 시키는 것을 목표로 합니다.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_reason2.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="tit">2차 골든 타임 프로그램</p>
+                  <p class="solution">사회복귀솔루션</p>
+                </div>
+                <p class="t1">언어의 일상화를 넘어 사회생활의 복귀에 목적을 둔 언어재활의 치료 과정으로 1차 프로그램 재활 후, 언어적인 기능의 회복을 넘어 직무와 관련된 언어능력과 사회적응
+                  훈련까지 이어집니다.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <button class="btn btn-secondary w-100 mt-25">더보기</button>
+      </div>
+
+      <div class="recomend_con mt-35">
+        <h3 class="sub_title mb-15">언어 재활 누구에게 필요할까요?</h3>
+        <div class="swiper mySwiper common_slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_recomend1.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <p class="tit">실어증</p>
+                <p class="t1">언어 습득 이후 후천적 뇌 또는 중추신경계 손상으로 언어를 이해하거나 표현이 어려워요. 말이 잘 나오지 않는 경우가 많으며 일상적인 대화에 큰 불편을 겪을 수
+                  있습니다.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_recomend2.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <p class="tit">마비말 장애</p>
+                <p class="t1">신경 손상으로 인해 말을 산출하는 근육(혀, 입술 등) 통제가 어려워 근육의 마비, 약화, 불협음으로 인해 말하기가 어려워요. 발음이 부정확해지고 의사 소통이
+                  원활하지 않게 됩니다.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_recomend3.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <p class="tit">치매</p>
+                <p class="t1">인지저하로 인한 인지 기능장애로 언어적인 문제도 동반되기도 해요! 기억력 저하와 더불어 단어 선택이 어려워지거나, 같은 말을 반복하는 등의 증상이 나타날 수
+                  있습니다.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_recomend4.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <p class="tit">실독증 / 실서증</p>
+                <p class="t1">글을 읽는것과 쓰는것이 어려워요! 문장을 제대로 이해하지 못하거나 단어를 정확히 쓰지 못해 학습과 일상 생활에서 큰 불편을 겪게 됩니다.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_recomend5.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <p class="tit">유창성 정체</p>
+                <p class="t1">말을 하는데 더듬는 증상(막힘, 반복 등)으로 인해 말하는데 어려움을 겪거나, 막힐때 탈출하기 위한 행동을 해요! 긴장하면 증상이 심해지고, 사회적 상황에서 의사
+                  소통에 큰 부담을 느끼게 됩니다.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_recomend6.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <p class="tit">음성장애</p>
+                <p class="t1">과한 근육 긴장과 심리적인 원인으로 음성 산출이 어려워 목소리가 잘 나오지 않아요! 목소리가 갈라지거나, 쉰소리가 나는 등 발성이 불분명해져서 원활한 대화가
+                  힘들어질 수 있습니다.</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img_con">
+                <img src="@@imgPath/img/img_recomend7.png" alt="" class="img">
+              </div>
+              <div class="txt_con">
+                <p class="tit">조음음운 장애</p>
+                <p class="t1">특정 발음이 어렵고 자꾸 오류가 나거나 문장이 길어질수록 말이 명료해지지 않아요! 발음을 정확히 하지 못해 의사 소통이 원활하지 않으며 특히 어린시절 학습
+                  발달에도 영향을 줄 수 있습니다.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <button class="btn btn-secondary w-100 mt-25">더보기</button>
+      </div>
+
+      <div class="rehabilitator mt-35 pb-65">
+        <h3 class="sub_title mb-15">재활사 더보기</h3>
+        <ul class="rehabilitator_list">
+          <li class="list">
+            <div class="img_con">
+              <img class="img" src="@@imgPath/img/img_rehabilitator1.png" alt="">
+            </div>
+            <div class="txt_con">
+              <p class="name">이현송</p>
+              <p class="job">2급 언어치료 재활사</p>
+              <div class="rating_con">
+                <p class="rate">0 <span class="sum">(0)</span> · 경력 7년이상</p>
+              </div>
+            </div>
+          </li>
+          <li class="list">
+            <div class="img_con">
+              <img class="img" src="@@imgPath/img/img_rehabilitator2.png" alt="">
+            </div>
+            <div class="txt_con">
+              <p class="name">이지후</p>
+              <p class="job">1급 언어치료 재활사</p>
+              <div class="rating_con">
+                <p class="rate">0 <span class="sum">(0)</span> · 경력 7년이상</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn-secondary w-100 mt-25">더보기</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="process mt-35">
+    <div class="inner">
+      <h3 class="sub_title mb-15">언어치료 간편 프로세스</h3>
+      <ul class="process_list">
+        <li class="list">
+          <div class="img_con">
+            <img src="@@imgPath/img/img_process1.png" alt="" class="img">
+          </div>
+          <div class="txt_con">
+            <p class="tit">상담의뢰 및 <span class="ln">온라인 언어 상담 진행</span></p>
+            <p class="desc">전문 온라인 어어상담을 통해 초기 언어검사를 실시해 보호자 및 치료 대상자가 원하는 의사소통의 욕구를 면밀히 파악합니다.</p>
+          </div>
+        </li>
+        <li class="list">
+          <div class="img_con">
+            <img src="@@imgPath/img/img_process2.png" alt="" class="img">
+          </div>
+          <div class="txt_con">
+            <p class="tit">공식 언어 검사 실시 후, 언어 검사 기록지 제공</p>
+            <p class="desc">공식 언어검사를 통해 전반적인 언어 유형 및 정도, 현재 상태를 파악하여, 언어검사 기록지 및 피드백을 제공합니다.</p>
+          </div>
+        </li>
+        <li class="list">
+          <div class="img_con">
+            <img src="@@imgPath/img/img_process3.png" alt="" class="img">
+          </div>
+          <div class="txt_con">
+            <p class="tit">개인별 만춤형 언어재활사 매칭</p>
+            <p class="desc">3가지 유형의 언어재활사 추천 시스템을 통해 맞춤형 언어재활사를 매칭합니다.</p>
+          </div>
+        </li>
+        <li class="list">
+          <div class="img_con">
+            <img src="@@imgPath/img/img_process4.png" alt="" class="img">
+          </div>
+          <div class="txt_con">
+            <p class="tit">치료 계획 수립 및 언어재활 치료 시작</p>
+            <p class="desc">공식 검사를 통해 치료 계획을 수립하고, 자체 개발 프로그램을 이용해 전문적인 언어재활 치료할 때 당일 언어상태에 따른 언어 과제 및 복습자료를 제공합니다.</p>
+          </div>
+        </li>
+        <li class="list">
+          <div class="img_con">
+            <img src="@@imgPath/img/img_process5.png" alt="" class="img">
+          </div>
+          <div class="txt_con">
+            <p class="tit">중간 평가 및 진행 정보 제공</p>
+            <p class="desc">6개월 마다 실시하는 정기적인 중간 평가를 기반하여 언어능력 상승정도를 가시적으로 확인할 수 있는 그래프를 제공합니다.</p>
+          </div>
+        </li>
+        <li class="list">
+          <div class="img_con">
+            <img src="@@imgPath/img/img_process6.png" alt="" class="img">
+          </div>
+          <div class="txt_con">
+            <p class="tit">정기적인 추적 관리</p>
+            <p class="desc">프로그램 종료 후 정기적 추적 관리를 통해 언어능력 상태의 유지정도를 관찰합니다.</p>
+          </div>
+        </li>
+      </ul>
+      <button class="btn btn-secondary w-100 mt-25">더보기</button>
+    </div>
+  </div>
+
+  <div class="main_bottom mt-70">
+    <div class="inner">
+      <div class="img_con">
+        <img src="@@imgPath/img/img_bottom_img.png" alt="" class="img">
+      </div>
+      <div class="logo_con">
+        <img src="@@imgPath/logo/logo_yellow.png" alt="" class="logo">
+        <img src="@@imgPath/logo/logo_text.png" alt="" class="txt_logo">
+      </div>
+      <div class="btn_con">
+        <button class="btn policy">개인정보 처리방침</button>
+        <button class="btn terms">이용약관</button>
+      </div>
+      <div class="bottom_footer">
+        <img src="@@imgPath/logo/logo_golden.png" alt="" class="txt_logo">
+        <p class="copyright">Copyright @ BrainTalkTalk. All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<nav class="ft_nav"></nav>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var talk_banner = new Swiper(".talk_banner", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    // autoplay: {
+    //   delay: 2500,
+    // },
+    loop: true,
+    spaceBetween: 30,
+  });
+
+  var recomend_slide = new Swiper(".common_slide", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    autoplay: {
+      delay: 2500,
+    },
+    loop: true,
+    spaceBetween: 30,
+  });
+
+  var therapy_slide = new Swiper(".therapy_slide", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    autoplay: {
+      delay: 2500,
+    },
+    loop: true,
+    spaceBetween: 30,
+  });
+</script>
+
+@@include('partials/html-end.html')

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <title>@@title</title>
+
+  <link rel="stylesheet" href="@@cssPath/bootstrap.min.css" />
+  <link rel="stylesheet" href="@@cssPath/style.css" />
+  <script src="@@jsPath/bootstrap.js"></script>
+
+  <!-- plugin -->
+  <!-- jqury -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!--부트스트랩-->
+  <script src="@@jsPath/bootstrap.bundle.min.js"></script>
+  <!-- plugin -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="landing-header border-bottom">
+      <div class="inner">
+        <a href="#" class="logo">
+          <img src="@@imgPath/logo/logo_text.png" alt="SignChain" height="24">
+        </a>
+        <div class="gnb">
+          <div class="lang_con">
+            <p class="lang ko">한국어</p>
+            <ul class="lang_list">
+              <li class="list on">
+                <a class="link" href="@@baseUrl/index.html">한국어</a>
+              </li>
+              <li class="list">
+                <a class="link" href="@@baseUrl/en/index.html">English</a>
+              </li>
+              <li class="list">
+                <a class="link" href="@@baseUrl/vn/index.html">Tiếng Việt</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="start_btn nav_start" data-bs-toggle="modal" data-bs-target="#exampleModal">시작하기</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade down_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">다운로드</h1>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body">
+            <div class="method">
+              <div class="left box">
+                <p class="title">스토어</p>
+                <ul class="link_con">
+                  <li class="link app">
+                    <a href="javascript:void(0)">
+                      App Store
+                    </a>
+                  </li>
+                  <li class="link play">
+                    <a href="javascript:void(0)">
+                      Play Store
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="right box">
+                <p class="title">QR코드</p>
+                <div class="img_con">
+                  <img class="qr" src="@@imgPath/img/img_qr.png" alt="다운로드 QR">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const langCon = document.querySelector('.lang_con');
+      const langList = document.querySelector('.lang_list');
+
+      langCon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langList.classList.toggle('on');
+      });
+
+      document.addEventListener('click', () => {
+        if (langList.classList.contains('on')) {
+          langList.classList.remove('on');
+        }
+      })
+    </script>

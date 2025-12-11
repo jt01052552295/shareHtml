@@ -1,0 +1,202 @@
+.reser_setting {
+    .sub_txt {
+        padding-block: 30px 25px;
+
+        font: {
+            size: 14px;
+            weight: 500
+        }
+
+        line-height: 28px;
+        letter-spacing: -1px;
+    }
+
+    .sub_tit {
+
+        font: {
+            size: 14px;
+            weight: 500
+        }
+
+        line-height: 28px;
+        letter-spacing: -1px;
+    }
+
+    .caution {
+        margin-top: 5px;
+
+        font: {
+            size: 12px;
+            weight: 500;
+        }
+
+        line-height: 28px;
+        color: var(--gray-color);
+    }
+
+    .reser_method {
+        .list {
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .link {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                padding: 15px 30px;
+
+                .img_con {
+                    width: 50px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .txt_con {
+                    .tit {
+                        margin-bottom: 5px;
+
+                        font: {
+                            size: 16px;
+                            weight: 600
+                        }
+
+                        line-height: 22px;
+                        letter-spacing: -0.8px;
+                    }
+
+                    .desc {
+                        font: {
+                            size: 13px;
+                            weight: 400
+                        }
+
+                        line-height: 18px;
+                        letter-spacing: -0.8px;
+
+                    }
+                }
+
+                input {
+                    position: absolute;
+                    width: 21px;
+                    height: 21px;
+                    right: 30px;
+                    top: 15px;
+                }
+
+            }
+
+            &:nth-child(1) {
+                background-color: #FFCC00;
+            }
+
+            &:nth-child(2) {
+                background-color: #784D03;
+                color: #fff;
+            }
+
+            &:nth-child(3) {
+                background-color: #A3C4FA;
+            }
+        }
+    }
+
+    .reser_confirm {
+        .btn_con {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            .btn {
+                flex: 1;
+            }
+        }
+
+    }
+}
+
+.week_select {
+    .week_con {
+        display: flex;
+        justify-content: space-between;
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            .week_box {
+                width: 21px;
+                height: 21px;
+            }
+
+            .day {
+                font: {
+                    size: 14px;
+                    weight: 500
+                }
+
+                color: var(--gray-color);
+            }
+        }
+    }
+
+
+}
+
+.working_time {
+    .input_con {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 35px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 15px;
+            height: 2px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--border-color);
+        }
+
+        .input_box {
+            width: calc((100% - 35px) / 2);
+
+            .time_box {
+                width: 100%;
+                padding-block: 8px;
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+                background: url('../../assets/images/ico/ico_time.png') no-repeat 8px center / 24px;
+            }
+        }
+    }
+
+
+
+    .switch_con {
+        .switch_txt {
+            margin-right: 10px;
+
+            font: {
+                size: 12px;
+                weight: 500;
+            }
+
+            color: var(--gray-color);
+        }
+    }
+}

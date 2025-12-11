@@ -1,0 +1,303 @@
+:root {
+    --primary-color: #FF5A00;
+    --text-dark: #111111;
+    --text-gray: #666666;
+    --bg-light: #F8F9FA;
+    --white: #FFFFFF;
+    --border-color: #EEEEEE;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.5;
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.btn-start {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 0 60px;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    color: var(--text-gray);
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.hero-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.hero-title span {
+    color: var(--primary-color);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 60px;
+}
+
+.btn {
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-dark {
+    background-color: #333;
+    color: var(--white);
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    opacity: 0.7;
+    margin-top: 40px;
+}
+
+.partner-logo {
+    height: 24px;
+    background: #eee;
+    width: 80px;
+    /* Placeholder */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #999;
+}
+
+/* Section Common */
+.section {
+    padding: 100px 0;
+}
+
+.section-title-area {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-title span {
+    color: var(--primary-color);
+}
+
+.section-desc {
+    font-size: 18px;
+    color: var(--text-gray);
+}
+
+/* Feature 1: Alba Management */
+.feature-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    background: var(--bg-light);
+    padding: 40px 30px;
+    border-radius: 16px;
+    height: 300px;
+    /* Placeholder height */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card-desc {
+    font-size: 15px;
+    color: var(--text-gray);
+}
+
+/* Feature 2: Employee UI */
+.feature-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.ui-card {
+    background: var(--bg-light);
+    border-radius: 24px;
+    padding: 50px 40px 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.ui-card-content {
+    margin-bottom: 40px;
+}
+
+.ui-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.ui-card p {
+    color: var(--text-gray);
+    line-height: 1.6;
+    vertical-align: middle;
+}
+
+.ui-card ul {
+    margin-top: 20px;
+}
+
+.ui-card li {
+    color: var(--primary-color);
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.phone-mockup {
+    width: 240px;
+    height: 300px;
+    background: #fff;
+    border: 4px solid #ddd;
+    border-radius: 24px 24px 0 0;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Testimonial / CTA Section */
+.cta-pink {
+    background-color: #FFEFEA;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.quote {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    word-break: keep-all;
+}
+
+.quote-sub {
+    color: var(--text-gray);
+    margin-bottom: 40px;
+}
+
+/* Detailed Features */
+.detail-features {
+    padding: 100px 0;
+}
+
+/* Bottom CTA */
+.bottom-cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #8FB6D6;
+    /* Fallback color */
+    padding: 120px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.bottom-cta h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .feature-grid-3,
+    .feature-grid-2 {
+        grid-template-columns: 1fr;
+    }
+}

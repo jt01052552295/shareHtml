@@ -1,0 +1,89 @@
+.rehabilitator {
+    .profile_thumb {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 30px;
+
+        .thumb_con {
+            position: relative;
+            width: 165px;
+            height: auto;
+
+            &::before {
+                content: '';
+                display: block;
+                padding-bottom: 100%;
+            }
+        }
+    }
+
+    .info {
+        margin-bottom: 30px;
+        text-align: center;
+
+        .company_name {
+            font: {
+                size: 20px;
+                weight: 600;
+            }
+
+            line-height: 22px;
+            letter-spacing: -0.8px;
+        }
+
+        .rating_con {
+            position: relative;
+            display: inline-block;
+            margin-top: 10px;
+            padding-left: 30px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 30px;
+                background: url('../../assets/images/ico/ico_rating_star.png') no-repeat center / cover;
+
+                .avg {
+                    .sum {}
+                }
+            }
+        }
+    }
+
+    .info_list {
+        .list {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .tit {
+                margin-bottom: 15px;
+
+                font: {
+                    size: 20px;
+                    weight: 600
+                }
+
+                line-height: 22px;
+                letter-spacing: -0.8px;
+            }
+
+            .desc {
+                font: {
+                    size: 15px;
+                    weight: 400
+                }
+
+                line-height: 22px;
+                letter-spacing: -0.8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+@@include('partials/html-start.html', { "title": "재활치료 관리" })
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+        <button class="btn_icon btn_home" type="button" aria-label="홈" onclick="location.href='index.html'">
+            <img src="@@imgPath/ico/ico_hd_home.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">재활치료 관리</p>
+    <div class="right_area">
+        <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+            <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+        </button>
+    </div>
+</header>
+<section class="contents">
+    <div class="wrap_bg">
+        <div class="rehab_register">
+            <div class="inner">
+                <div class="select_con pt-20">
+                    <p class="tit">카테고리</p>
+                    <ul class="select_list three">
+                        <li class="select_item">대면</li>
+                        <li class="select_item">물리치료</li>
+                        <li class="select_item">1급</li>
+                    </ul>
+                </div>
+
+                <form class=" mt-25">
+                    <div class="form-group mb-20">
+                        <label for="class_name">수업관리</label>
+                        <input type="text" class="form-control" id="class_name" value="">
+
+                        <p class="caution mt-20">* 판매 서비스와 직접 관련이 없는 다른 서비스명, 스팸성 키워드 입력 시 관리자에 의해 판매금지 될 수 있습니다.</p>
+                        <p class="caution">* 유명 서비스 유사문구를 무단으로 도용하여 -스타일, -st 등과 같이 기재하는 경우 별도 고지 없이 제재 될 수 있습니다.</p>
+                    </div>
+
+                    <div class="form-group mb-20">
+                        <label for="desc">한줄설명</label>
+                        <input type="text" class="form-control" id="desc" value="">
+                    </div>
+
+                    <div class="form-group mb-20">
+                        <label for="desc">재활사 서비스</label>
+                        <input type="text" class="form-control mb-10" id="desc" value="" placeholder="서비스명(50자 이내)">
+                        <input type="text" class="form-control mb-10" id="desc" value="" placeholder="서비스설명(50자 이내)">
+                        <input type="text" class="form-control mb-10" id="desc" value="" placeholder="가격 (숫자만)">
+                        <input type="text" class="form-control mb-10" id="desc" value="" placeholder="수업횟수(월기준)">
+                    </div>
+                </form>
+
+                <div class="select_con">
+                    <p class="tit">선호하시는 재활 서비스 분야 목록이 있으십니까?</p>
+                    <ul class="select_list one">
+                        <li class="select_item">대면</li>
+                    </ul>
+                </div>
+
+                <div class="image_upload_con mt-25">
+                    <p class="tit">재활사 서비스</p>
+                    <div class="upload_box">
+                        <input type="file" id="serviceImageUpload" accept="image/*" class="upload_input">
+                        <label for="serviceImageUpload" class="upload_label">
+                            <div class="icon">
+                                <img src="@@imgPath/logo/logo_symbol.png" alt="" width="80px">
+                            </div>
+                            <p class="txt">이미지 등록</p>
+
+                        </label>
+                    </div>
+                    <p class="size mt-15">* 권장 사이즈 (px): 500 x 500</p>
+                </div>
+
+                <div class="one_line mt-25">
+                    <p class="tit">한줄설명</p>
+                    <div class="btn_con">
+                        <button class="btn btn-primary">노출</button>
+                        <button class="btn btn-outline-secondary">비노출</button>
+                    </div>
+                </div>
+
+                <button class="btn btn-secondary w-100 mt-25 mb-50">등록</button>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+        </button>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+<!-- <div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+@@include('partials/html-end.html')

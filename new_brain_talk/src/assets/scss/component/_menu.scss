@@ -1,0 +1,122 @@
+.main_menu {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    max-width: 580px;
+    height: 100vh;
+    padding-block: 20px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #fff;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .inner {
+        .user_info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 10px solid var(--border-color);
+
+            .left {
+                display: flex;
+                gap: 30px;
+
+                .user_profile {
+                    width: 27px;
+
+                    .img {
+                        width: 100%;
+                    }
+                }
+
+                .user_name {
+                    .t1 {
+                        font-size: 20px;
+                        font-weight: 700;
+                        letter-spacing: -1px;
+                    }
+
+                    .t2 {
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: -1.4px;
+                        color: #909090;
+                    }
+                }
+            }
+        }
+
+
+        .close_btn {
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+
+            .close_icon {
+                width: 100%;
+            }
+        }
+
+        .menu_list {
+            margin-block: 30px 65px;
+            padding-inline: 20px;
+
+            .menu {
+                margin-bottom: 20px;
+
+                .link {
+                    font: {
+                        size: 16px;
+                        weight: 600;
+                    }
+
+                    line-height: 26px;
+                    letter-spacing: -0.94px;
+                }
+            }
+        }
+    }
+
+    .menu_footer {
+        padding: 30px 50px;
+        background: rgba(255, 191, 0, 0.2);
+
+
+        .company_name {
+            margin-bottom: 20px;
+
+            font: {
+                size: 20px;
+                weight: 700;
+            }
+
+            line-height: 18px;
+            letter-spacing: -1px;
+            color: rgba(120, 77, 3, 0.6);
+        }
+
+        .company_info {
+            .txt {
+                font: {
+                    size: 14px;
+                    weight: 700;
+                }
+
+                color: rgba(120, 77, 3, 0.6);
+
+            }
+        }
+    }
+}

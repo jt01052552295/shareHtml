@@ -1,0 +1,34 @@
+.check_con {
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    input {
+        display: none;
+
+        &:checked {
+            &+.form-check-label {
+                border: 1px solid var(--brown-color);
+                background-color: var(--brown-color);
+                color: #fff;
+            }
+        }
+    }
+
+    .form-check-label {
+        display: block;
+        padding: 10px 20px;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+
+        font: {
+            size: 18px;
+            weight: 500
+        }
+
+
+    }
+}

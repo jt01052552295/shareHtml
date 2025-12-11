@@ -1,0 +1,99 @@
+@@include('partials/html-start.html', { "title": "주문완료" })
+<header class="header_menu sty_2">
+    <div class="inner">
+        <div class="back_btn" onclick="history.back()">
+            <img class="back" src="@@imgPath/ico/ico_back.png" alt="뒤로가기">
+        </div>
+        <p class="page_tit center_txt">주문완료</p>
+        <div class="d-flex gap-4">
+            <div class="search_btn">
+                <a href="search.html">
+                    <a href="search.html">
+                        <img src="@@imgPath/ico/ico_search.png" style="width: 25px;" alt="">
+                    </a>
+                </a>
+            </div>
+            <div class="cart_btn">
+                <a href="cart.html">
+                    <img src="@@imgPath/ico/ico_cart.png" style="width: 25px;" alt="장바구니">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="inner">
+        <div class="order_complete">
+            <img src="@@imgPath/ico/ico_success.png" alt="" class="img">
+        </div>
+
+        <div class="order_complete_info pb-50">
+            <div class="txt_con">
+                <p class="t1">주문이 완료되었습니다.</p>
+                <p class="t2">주문하신 상품을 준비하고 있습니다.</p>
+            </div>
+
+            <div class="info_con">
+                <ul class="info_list">
+                    <li class="list">
+                        <p class="tit">주문번호</p>
+                        <p class="info">ORD20251206601120</p>
+                    </li>
+                    <li class="list">
+                        <p class="tit">결제금액</p>
+                        <p class="info point">1,000원</p>
+                    </li>
+                    <li class="list">
+                        <p class="tit">결제방법</p>
+                        <p class="info">카드결제</p>
+                    </li>
+                    <li class="list">
+                        <p class="tit">결제일시</p>
+                        <p class="info">2025-12-06 09:33</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info_con">
+                <p class="info_tit">수령인 정보</p>
+                <ul class="info_list">
+                    <li class="list">
+                        <p class="tit">수령인</p>
+                        <p class="info">최대표</p>
+                    </li>
+                    <li class="list">
+                        <p class="tit">연락처</p>
+                        <p class="info">010-1111-2222</p>
+                    </li>
+                    <li class="list">
+                        <p class="tit">주소</p>
+                        <p class="info">서울특별시 강남구 역삼동 123-456</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info_con">
+                <p class="info_tit">주문 상품 (1건)</p>
+                <ul class="info_list">
+                    <li class="list">
+                        <p class="tit">상품명</p>
+                        <p class="info">푸들</p>
+                    </li>
+                    <li class="list">
+                        <p class="tit">이름</p>
+                        <p class="info">부들</p>
+                    </li>
+                    <li class="list">
+                        <p class="tit">총 금액</p>
+                        <p class="info">1,000원</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

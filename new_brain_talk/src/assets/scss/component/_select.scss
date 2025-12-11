@@ -1,0 +1,40 @@
+.select_con {
+    .select_list {
+        display: flex;
+        align-items: center;
+
+        &.one {
+            .select_item {
+                width: 100%;
+            }
+        }
+
+        &.three {
+            gap: 10px;
+
+            .select_item {
+                width: calc((100% - 10px) / 3);
+            }
+        }
+
+        .select_item {
+            position: relative;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 13px;
+                height: 6px;
+                top: 50%;
+                right: 10px;
+                transform: translateY(-50%);
+                background: url('../../assets/images/ico/ico_down_arr.png') no-repeat center / cover;
+            }
+        }
+    }
+}

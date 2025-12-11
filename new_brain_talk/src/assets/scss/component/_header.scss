@@ -1,0 +1,108 @@
+.header_menu {
+    position: fixed;
+    width: 100%;
+    max-width: 580px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+
+    &.type_main {
+        justify-content: space-between;
+        padding: 0 16px;
+
+        .left_area,
+        .right_area {
+            display: flex;
+            align-items: center;
+            width: 40px; // 균형을 위해 고정 너비 또는 min-width 설정
+        }
+
+        .left_area {
+            gap: 20px;
+            justify-content: flex-start;
+
+            img {
+                height: 24px;
+            }
+        }
+
+        .right_area {
+            justify-content: flex-end;
+
+            img {
+                width: 24px;
+            }
+        }
+
+        .btn_icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+
+        }
+    }
+
+    &.type_sub {
+        justify-content: space-between;
+        padding: 0 16px;
+
+
+
+        .left_area,
+        .right_area {
+            display: flex;
+            align-items: center;
+            width: 40px; // 균형을 위해 고정 너비 또는 min-width 설정
+        }
+
+        .left_area {
+            gap: 20px;
+            justify-content: flex-start;
+
+            img {
+                height: 24px;
+            }
+        }
+
+        .right_area {
+            justify-content: flex-end;
+
+            img {
+                width: 24px;
+            }
+        }
+
+        .page_title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #333;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .btn_icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+
+        }
+    }
+}

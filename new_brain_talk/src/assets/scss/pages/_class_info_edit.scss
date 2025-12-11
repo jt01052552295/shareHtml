@@ -1,0 +1,69 @@
+.class_info_edit {
+    padding-bottom: 73px;
+
+    .inner {
+        margin-bottom: 15px;
+        padding-block: 25px;
+        background-color: #fff;
+    }
+
+    .class_info {
+        .list {
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .tit {
+                margin-bottom: 10px;
+
+                font: {
+                    size: 16px;
+                    weight: 500
+                }
+            }
+
+            .link {
+                position: relative;
+                display: block;
+
+                .txt {
+                    font: {
+                        size: 16px;
+                        weight: 500
+                    }
+
+                    color: var(--gray-color);
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    width: 8px;
+                    height: 17px;
+                    background: url("../../assets/images/ico/ico_menu_arr.png") no-repeat center / cover;
+                }
+            }
+        }
+
+        &.secession {
+            .list {
+
+                .link {
+                    .txt {
+                        color: #ff1500;
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+    }
+}

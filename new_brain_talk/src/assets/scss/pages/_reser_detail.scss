@@ -1,0 +1,377 @@
+.reser_detail {
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        padding-top: 60px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+    }
+
+    .reser_txt {
+        padding-block: 30px 50px;
+
+        font: {
+            size: 14px;
+            weight: 400;
+        }
+
+        text-align: center;
+        line-height: 18px;
+        letter-spacing: -0.7px;
+
+        .brown_txt {
+            font: {
+                weight: 500
+            }
+        }
+    }
+
+    .profile_con {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        .profile_thumb {
+            .thumb_con {
+                width: 84px;
+                height: 84px;
+            }
+        }
+
+        .profile_info {
+            flex: 1;
+
+            .name_con {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                .name {
+                    font: {
+                        size: 20px;
+                        weight: 500
+                    }
+
+                    line-height: 28px;
+                    letter-spacing: -1px;
+                }
+
+                .rating_con {
+                    .rate {
+                        position: relative;
+                        display: inline-block;
+                        padding-left: 20px;
+
+                        font: {
+                            size: 14px;
+                            weight: 500;
+                        }
+
+                        line-height: 18px;
+                        letter-spacing: -0.7px;
+                        color: var(--gray-color);
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 16px;
+                            height: 16px;
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-50%);
+                            background: url('../../assets/images/ico/ico_rating_star.png') no-repeat center/ cover;
+                        }
+                    }
+                }
+            }
+
+            .func_con {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                margin-top: 20px;
+
+                .career {
+                    font: {
+                        size: 14px;
+                        weight: 400
+                    }
+
+                    line-height: 18px;
+                    letter-spacing: -0.7px;
+                    color: var(--gray-color);
+                }
+
+                .opt_btn {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 60px;
+
+                    .link {
+                        &.share {
+                            display: block;
+                            width: 24px;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .like_con {
+                        position: relative;
+
+                        #like {
+                            display: none;
+
+                            &:checked {
+                                &+.like_label {
+                                    &::before {
+                                        background: url('../../assets/images/ico/ico_like_on.png') no-repeat center/ cover;
+                                    }
+                                }
+                            }
+                        }
+
+                        .like_label {
+                            position: relative;
+                            display: block;
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                display: block;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 24px;
+                                height: 24px;
+                                background: url('../../assets/images/ico/ico_like.png') no-repeat center/ cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .career_list {
+        .list {
+            position: relative;
+            margin-bottom: 35px;
+            padding-left: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 24px;
+                height: 24px;
+            }
+
+            .tit {
+                margin-bottom: 10px;
+
+                font: {
+                    size: 14px;
+                    weight: 500;
+                }
+
+                line-height:18px;
+                letter-spacing:-0.7px;
+            }
+
+            .txt {
+                font: {
+                    size: 14px;
+                    weight: 500
+                }
+
+                line-height:18px;
+                letter-spacing:-0.7px;
+                color: var(--gray-color);
+            }
+
+            &.desc {
+                &::before {
+                    background: url('../../assets/images/ico/ico_achievement.png') no-repeat center/ cover;
+                }
+
+            }
+
+            &.university {
+                &::before {
+                    background: url('../../assets/images/ico/ico_student.png') no-repeat center/ cover;
+                }
+
+            }
+
+            &.career {
+                &::before {
+                    background: url('../../assets/images/ico/ico_school.png') no-repeat center/ cover;
+                }
+            }
+        }
+    }
+
+    .person_desc {
+        .txt {
+            margin-top: 25px;
+
+            font: {
+                size: 14px;
+                weight: 400
+            }
+
+            line-height: 18px;
+            letter-spacing: -0.7px;
+        }
+    }
+
+    .review_link {
+        position: relative;
+        display: block;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 17px;
+            background: url('../../assets/images/ico/ico_menu_arr.png') no-repeat center / cover;
+        }
+
+        .sub_title {}
+    }
+
+    .schdule_change {
+        .btn {
+            color: #fff;
+            font-weight: 500
+        }
+    }
+}
+
+.count_box {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    .count_con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .list {
+            position: relative;
+            width: calc((100% - 20px) / 3);
+            border-right: 1px solid var(--border-color);
+            text-align: center;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            .tit {
+                margin-bottom: 15px;
+
+                font: {
+                    size: 14px;
+                    weight: 500
+                }
+
+                line-height: 18px;
+                letter-spacing: -0.7px;
+                color: var(--gray-color);
+            }
+
+            .num {
+                font: {
+                    size: 20px;
+                    weight: 500
+                }
+
+                line-height: 28px;
+                letter-spacing: -1px;
+            }
+        }
+
+    }
+}
+
+.rehab_list_con {
+    .list_con {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .list {
+            width: calc((100% - 10px) / 2);
+            border-radius: 10px;
+            overflow: hidden;
+            ;
+
+            .link {
+                .img_con {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        padding-bottom: 100%;
+                    }
+
+                    .img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .txt_con {
+                    .tit {
+                        margin-block: 10px;
+
+                        font: {
+                            size: 16px;
+                            weight: 700;
+                        }
+                    }
+
+                    .pill_con {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

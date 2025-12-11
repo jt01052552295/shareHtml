@@ -1,0 +1,129 @@
+.landing-header {
+    .inner {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+
+        @media(max-width:768px) {
+            height: 60px;
+        }
+
+        .logo {
+            img {
+                height: 37px;
+
+                @media(max-width:768px) {
+                    height: 25px;
+                }
+            }
+        }
+
+        .gnb {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .lang_con {
+                position: relative;
+
+                .lang {
+                    position: relative;
+
+                    font: {
+                        size: 16px;
+                        weight: 500;
+                    }
+
+                    cursor: pointer;
+
+                    &.ko {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            top: 50%;
+                            left: -25px;
+                            transform: translateY(-50%);
+                            border-radius: 50%;
+                            overflow: hidden;
+                            object-fit: cover;
+                            background: url('../../assets/images/ico/ico_kr.png') no-repeat center / cover;
+                        }
+
+
+                    }
+
+                    &.en {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            top: 50%;
+                            left: -25px;
+                            transform: translateY(-50%);
+                            border-radius: 50%;
+                            overflow: hidden;
+                            object-fit: cover;
+                            background: url('../../assets/images/ico/ico_en.png') no-repeat center / cover;
+                        }
+                    }
+
+                    &.vn {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            top: 50%;
+                            left: -25px;
+                            transform: translateY(-50%);
+                            border-radius: 50%;
+                            overflow: hidden;
+                            object-fit: cover;
+                            background: url('../../assets/images/ico/ico_vn.png') no-repeat center / cover;
+                        }
+                    }
+                }
+
+                .lang_list {
+                    position: absolute;
+                    display: none;
+                    width: 100px;
+                    top: 115%;
+                    left: calc(50% - 10px);
+                    transform: translateX(-50%);
+                    padding: 10px;
+                    border: 1px solid #eee;
+                    border-radius: 5px;
+                    background-color: #fff;
+
+                    &.on {
+                        display: block;
+                    }
+
+                    .list {
+                        .link {
+                            font: {
+                                size: 14px;
+                                weight: 400
+                            }
+                        }
+
+                        &.on {
+                            .link {
+                                color: var(--main-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

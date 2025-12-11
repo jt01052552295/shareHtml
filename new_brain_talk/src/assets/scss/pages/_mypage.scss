@@ -1,0 +1,215 @@
+.mypage_profile {
+    padding-block: 30px;
+    background-color: #fff;
+
+    .d-flex {
+        gap: 20px;
+    }
+
+    .btn {
+        margin-top: 30px;
+    }
+}
+
+.mypage_menu {
+    background-color: #fff;
+
+    .menu_con {
+        padding-block: 25px;
+
+        .menu_tit {
+            margin-bottom: 28px;
+
+            font: {
+                size: 24px;
+                weight: 700;
+            }
+        }
+
+        .menu_list {
+            .list {
+                margin-bottom: 25px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .link {
+                    position: relative;
+                    display: block;
+                    padding-left: 40px;
+
+                    font: {
+                        size: 16px;
+                        weight: 500;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 26px;
+                        height: 26px;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        background: url('../../assets/images/ico/ico_setting.png') no-repeat center / cover;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 8px;
+                        height: 17px;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        background: url('../../assets/images/ico/ico_menu_arr.png') no-repeat center / cover;
+                    }
+                }
+
+                //  계정관리 섹션
+                &.info-edit {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_setting.png') no-repeat center / cover;
+                    }
+                }
+
+                &.password-change {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_lock.png') no-repeat center / cover;
+                    }
+                }
+
+                &.phone-change {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_phone.png') no-repeat center / cover;
+                    }
+                }
+
+                //  재활사 관리 섹션
+                &.rehab-management {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_check_ring.png') no-repeat center / cover;
+                    }
+                }
+
+                &.reservation-setting {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_desk.png') no-repeat center / cover;
+                    }
+                }
+
+                &.reservation-status {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_notebook.png') no-repeat center / cover;
+                    }
+                }
+
+                &.diagnosis-request {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_order.png') no-repeat center / cover;
+                    }
+                }
+
+                &.class-management {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_pin.png') no-repeat center / cover;
+                    }
+                }
+
+                &.class-schedule {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_pen.png') no-repeat center / cover;
+                    }
+                }
+
+                &.review-history {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_chat.png') no-repeat center / cover;
+                    }
+                }
+
+                &.business-info {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_chield_check.png') no-repeat center / cover;
+                    }
+                }
+
+                &.therapist-info {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_stethoscope.png') no-repeat center / cover;
+                    }
+                }
+
+                //  사용자 관리 섹션
+                &.reservation-history {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_nav_mypage.png') no-repeat center / cover;
+                    }
+                }
+
+                &.diagnosis-history {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_arhive.png') no-repeat center / cover;
+                    }
+                }
+
+                &.class-history {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_bookmark.png') no-repeat center / cover;
+                    }
+                }
+
+                &.inquiry {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_group_add.png') no-repeat center / cover;
+                    }
+                }
+
+                &.treatment-review {
+                    .link::before {
+                        background: url('../../assets/images/ico/ico_menu_star_light.png') no-repeat center / cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .alarm {
+        .form-check {
+            .form-check-label {
+                font: {
+                    size: 13px;
+                    weight: 500;
+                }
+
+                color: #9f9f9f;
+            }
+        }
+    }
+}
+
+.info_edit {
+    padding-block: 30px;
+    background-color: #fff;
+
+    .btn_con {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        .link {
+            text-decoration: underline;
+
+            &.logout {
+                color: var(--gray-color);
+            }
+
+            &.secession {
+                color: var(--brown-color);
+            }
+        }
+    }
+}

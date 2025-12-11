@@ -1,0 +1,171 @@
+// 공통
+
+:root {
+  --text-color: #333;
+  --bg-light: #f8f9fa;
+  --bg-dark: #343a40;
+  --main-color: #e7410c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Pretendard" !important;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @media(max-width:1280px) {
+    padding-inline: 20px;
+  }
+}
+
+.contents {}
+
+/* 레이아웃 */
+
+.text_align_r {
+  text-align: right;
+}
+
+.text_line_1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.text_line_2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.text_line_3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.nl {
+  display: block;
+  line-height: inherit;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Padding Top */
+@for $i from 0 through 20 {
+  .pt_#{$i * 5} {
+    padding-top: #{$i * 5}px;
+  }
+}
+
+/* Padding Bottom */
+@for $i from 0 through 20 {
+  .pb_#{$i * 5} {
+    padding-bottom: #{$i * 5}px;
+  }
+}
+
+/* Padding right */
+@for $i from 0 through 20 {
+  .pr_#{$i * 5} {
+    padding-right: #{$i * 5}px;
+  }
+}
+
+/* Padding left */
+@for $i from 0 through 20 {
+  .pl_#{$i * 5} {
+    padding-left: #{$i * 5}px;
+  }
+}
+
+/* Margin Top */
+@for $i from 0 through 20 {
+  .mt_#{$i * 5} {
+    margin-top: #{$i * 5}px;
+  }
+}
+
+/* Margin Bottom */
+@for $i from 0 through 20 {
+  .mb_#{$i * 5} {
+    margin-bottom: #{$i * 5}px;
+  }
+}
+
+/* Margin right */
+@for $i from 0 through 20 {
+  .mr_#{$i * 5} {
+    margin-right: #{$i * 5}px;
+  }
+}
+
+/* Margin left */
+@for $i from 0 through 20 {
+  .ml_#{$i * 5} {
+    margin-left: #{$i * 5}px;
+  }
+}
+
+// button
+.start_btn {
+  padding: 14px 40px;
+  border-radius: 40px;
+  background-color: var(--main-color);
+
+  font: {
+    size: 16px;
+    weight: 700;
+  }
+
+  color: #fff;
+
+  &.nav_start {
+    @media(max-width:480px) {
+      display: none;
+    }
+  }
+
+  @media(max-width:768px) {
+    padding: 10px 20px;
+
+    font: {
+      size: 14px;
+    }
+
+  }
+}

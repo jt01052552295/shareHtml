@@ -1,0 +1,151 @@
+@@include('partials/html-start.html', { "title": "마이페이지" })
+
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+        <button class="btn_icon btn_home" type="button" aria-label="홈" onclick="location.href='index.html'">
+            <img src="@@imgPath/ico/ico_hd_home.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">마이페이지</p>
+    <div class="right_area">
+        <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+            <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+        </button>
+    </div>
+</header>
+
+<section class="contents">
+    <div class="wrap_bg">
+        <div class="mypage_profile mb-15">
+            <div class="inner">
+                <div class="d-flex">
+                    <div class="profile_thumb">
+                        <div class="thumb_con">
+                            <img src="@@imgPath/logo/logo_logo.png" alt="" class="thumb">
+                        </div>
+                        <div class="thumb_upload">
+                            <input type="file" id="profileUpload" accept="image/*" class="upload_input">
+                            <label for="profileUpload" class="upload_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 12.5c1.38 0 2.5-1.12 2.5-2.5S13.38 7.5 12 7.5 9.5 8.62 9.5 10s1.12 2.5 2.5 2.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-1.85.63-3.55 1.69-4.9l10.21 10.21C14.55 18.37 13.35 20 12 20zm6.31-3.1L7.1 5.69C8.45 4.63 10.15 4 12 4c4.41 0 8 3.59 8 8 0 1.85-.63 3.55-1.69 4.9z" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="user_info">
+                        <p class="name">이솜 (j**)</p>
+                        <p class="email">j5031004@naver.com</p>
+                        <p class="phone">010-1111-1111</p>
+                    </div>
+                </div>
+                <button class="btn btn-outline-secondary w-100">재활자 신청중</button>
+            </div>
+        </div>
+
+        <div class="mypage_menu mb-15">
+            <div class="inner">
+                <div class="menu_con">
+                    <p class="menu_tit">계정관리</p>
+                    <ul class="menu_list">
+                        <li class="list info-edit">
+                            <a class="link" href="javascript:void(0)">정보수정</a>
+                        </li>
+                        <li class="list password-change">
+                            <a class="link" href="javascript:void(0)">비밀번호 변경</a>
+                        </li>
+                        <li class="list phone-change">
+                            <a class="link" href="javascript:void(0)">휴대폰 번호 변경</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mypage_menu mb-15">
+            <div class="inner">
+                <div class="menu_con">
+                    <p class="menu_tit">재활사 관리</p>
+                    <ul class="menu_list">
+                        <li class="list rehab-management">
+                            <a class="link" href="javascript:void(0)">재활치료 관리</a>
+                        </li>
+                        <li class="list reservation-setting">
+                            <a class="link" href="javascript:void(0)">예약 설정</a>
+                        </li>
+                        <li class="list reservation-status">
+                            <a class="link" href="javascript:void(0)">예약 현황</a>
+                        </li>
+                        <li class="list diagnosis-request">
+                            <a class="link" href="javascript:void(0)">진단신청</a>
+                        </li>
+                        <li class="list class-management">
+                            <a class="link" href="javascript:void(0)">수업관리</a>
+                        </li>
+                        <li class="list class-schedule">
+                            <a class="link" href="javascript:void(0)">수업일정</a>
+                        </li>
+                        <li class="list review-history">
+                            <a class="link" href="javascript:void(0)">후기내역</a>
+                        </li>
+                        <li class="list business-info">
+                            <a class="link" href="javascript:void(0)">사업자 정보</a>
+                        </li>
+                        <li class="list therapist-info">
+                            <a class="link" href="javascript:void(0)">재활사 정보</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mypage_menu mb-15">
+            <div class="inner">
+                <div class="menu_con">
+                    <p class="menu_tit">계정관리</p>
+                    <ul class="menu_list">
+                        <li class="list reservation-history">
+                            <a class="link" href="javascript:void(0)">예약내역</a>
+                        </li>
+                        <li class="list diagnosis-history">
+                            <a class="link" href="javascript:void(0)">진단내역</a>
+                        </li>
+                        <li class="list class-history">
+                            <a class="link" href="javascript:void(0)">수업내역</a>
+                        </li>
+                        <li class="list class-schedule">
+                            <a class="link" href="javascript:void(0)">수업일정</a>
+                        </li>
+                        <li class="list inquiry">
+                            <a class="link" href="javascript:void(0)">1:1문의</a>
+                        </li>
+                        <li class="list treatment-review">
+                            <a class="link" href="javascript:void(0)">치료 후기</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mypage_menu alarm mb-15">
+            <div class="inner">
+                <div class="menu_con">
+                    <p class="menu_tit">알림 설정</p>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">공지 및 이벤트 알림 수신합니다.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')
