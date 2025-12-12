@@ -1,0 +1,55 @@
+@@include('partials/html-start.html', { "title": "메인" })
+<section class="contents">
+    <div class="class_score">
+        <div class="inner">
+            <div class="title_con pt-50 mb-25">
+                <P class="big_tit">오늘의 수업 점수</P>
+                <p class="time">12월 11일 목요일 오후9시30분</p>
+            </div>
+
+            <div class="circular_chart">
+                <svg class="circle_svg" viewBox="0 0 100 100">
+                    <circle class="circle_bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="circle_progress" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="txt_con">
+                    <p class="score_text">20</p>
+                    <p class="level">단계:중</p>
+                </div>
+            </div>
+
+            <div class="end_ment mt-25">
+                <p class="big_tit">오늘의 훈련을 잘 마치셨어요</p>
+                <p class="ment">꾸준한 연습이 회복의 가장 큰 힘입니다. <span class="nl">우리,계속 함께 나아가요!</span></p>
+            </div>
+
+            <div class="graph_img">
+                <img src="@@imgPath/img/img_bar_graph.png" alt="">
+            </div>
+
+            <div class="banner_con mt-20 pb-50">
+                <ul class="list_con">
+                    <li class="list up">
+                        <div class="txt_con">
+                            <p class="t1">어제보다 <b>이해력 점수</b>가 5점 상승했어요. <span class="nl">같이 나아가요!</span></p>
+                        </div>
+                    </li>
+                    <li class="list down">
+                        <div class="txt_con">
+                            <p class="t1">오늘은 <b>발음 점수</b>가 어제보다 5점 낮아요. <span class="nl">꾸준히 함께해요!</span></p>
+                        </div>
+                    </li>
+                    <li class="list comment">
+                        <div class="txt_con">
+                            <p class="t1">코멘트가 곧 도착합니다. <span class="nl">잠시만 기다려주세요</span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

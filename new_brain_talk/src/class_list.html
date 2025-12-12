@@ -1,0 +1,66 @@
+@@include('partials/html-start.html', { "title": "수업내역" })
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+        <button class="btn_icon btn_home" type="button" aria-label="홈" onclick="location.href='index.html'">
+            <img src="@@imgPath/ico/ico_hd_home.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">수업내역</p>
+    <div class="right_area">
+        <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+            <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+        </button>
+    </div>
+</header>
+<section class="contents">
+    <div class="wrap_bg">
+        <div class="class_list">
+            <div class="inner">
+                <div class="pill_con pt-20 pb-20">
+                    <ul class="pill_list">
+                        <li class="pill_item active">전체</li>
+                        <li class="pill_item">최근 3개월</li>
+                        <li class="pill_item">최근 6개월</li>
+                        <li class="pill_item">최근 1년</li>
+                    </ul>
+                </div>
+                <ul class="class_list_con">
+                    <li class="list">
+                        <a href="javascript:void(0)" class="link">
+                            <div class="txt_con">
+                                <p class="tit">언어 재활수업</p>
+                                <p class="desc">이솜 재활사</p>
+                                <p class="date">[비대면]11/10/25 (월) 16:00시</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="javascript:void(0)" class="link">
+                            <div class="txt_con">
+                                <p class="tit">언어 재활수업</p>
+                                <p class="desc">김수현 재활사</p>
+                                <p class="date">[비대면]11/10/25 (월) 16:00시</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="javascript:void(0)" class="link art">
+                            <div class="txt_con">
+                                <p class="tit">미술 치료 수업</p>
+                                <p class="desc">이화정 재활사</p>
+                                <p class="date">[비대면]11/10/25 (월) 13:00시</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

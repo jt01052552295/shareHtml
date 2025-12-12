@@ -1,0 +1,224 @@
+.class_manage {
+    .therapist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 20px 25px;
+        background-color: #fff;
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+
+        .left {
+            .profile_thumb {
+                .thumb_con {
+                    width: 75px;
+                    height: 75px;
+
+                    .thumb {}
+                }
+
+                .thumb_upload {
+                    .upload_input {}
+
+                    .upload_btn {
+                        width: 23px;
+                        height: 23px;
+
+                        .img {
+                            width: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            min-width: 180px;
+            width: 100%;
+
+            .name_con {
+                position: relative;
+                max-width: 340px;
+                margin-bottom: 20px;
+                margin-left: auto;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    width: 5px;
+                    height: 10px;
+                    background: url('../../assets/images/ico/ico_link_arr.png') no-repeat center / cover;
+                }
+
+                .link {
+                    .name {
+                        font: {
+                            size: 14px;
+                            weight: 400
+                        }
+
+                        color: var(--gray-color);
+
+                        b {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+            .class_info {
+                display: flex;
+                align-items: center;
+
+                .list {
+                    width: calc(100% / 3);
+                    text-align: center;
+                    border-right: 1px solid var(--border-color);
+
+                    &:last-child {
+                        border-right: none;
+                    }
+
+                    .tit {
+                        font: {
+                            size: 12px;
+                            weight: 400
+                        }
+
+                        color: var(--gray-color);
+                        line-height: 18px;
+                        letter-spacing: -0.7px;
+                    }
+
+                    .num {
+                        margin-top: 10px;
+
+                        font: {
+                            size: 16px;
+                            weight: 600
+                        }
+
+                        line-height: 18px;
+                        letter-spacing: -0.7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.calendar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .cal_btn {
+        width: 30px;
+        cursor: pointer;
+
+        &.prve_btn {}
+
+        &.next_btn {
+            text-align: right;
+        }
+
+        img {
+            width: 8px;
+        }
+    }
+
+    .date {
+        font: {
+            size: 18px;
+            weight: 500
+        }
+
+        line-height: 22px;
+        letter-spacing: -0.8px;
+    }
+}
+
+.class_card {
+    .date {
+        margin-bottom: 15px;
+
+        font: {
+            size: 20px;
+            weight: 600
+        }
+
+        line-height: 28px;
+        letter-spacing: 0px;
+    }
+
+    .card_con {
+        .list {
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .txt_con {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .tit {
+                    font: {
+                        size: 14px;
+                        weight: 500
+                    }
+
+                    line-height: 23px;
+                    letter-spacing: -1px;
+                }
+
+                .txt {
+                    font: {
+                        size: 14px;
+                        weight: 300
+                    }
+
+                    line-height: 23px;
+                    letter-spacing: -1px;
+                }
+            }
+
+            &.user {
+                padding: 0;
+
+                .link {
+                    position: relative;
+                    display: block;
+                    padding: 15px 20px;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        top: 15px;
+                        right: 20px;
+                        width: 6px;
+                        height: 11px;
+                        background: url('../../assets/images/ico/ico_link_arr.png') no-repeat center / cover;
+                    }
+
+                    .therapist {
+                        padding: 0;
+                        border: none;
+                    }
+                }
+
+            }
+        }
+    }
+}

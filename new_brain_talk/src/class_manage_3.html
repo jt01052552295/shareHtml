@@ -1,0 +1,189 @@
+@@include('partials/html-start.html', { "title": "수업관리" })
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+        <button class="btn_icon btn_home" type="button" aria-label="홈" onclick="location.href='index.html'">
+            <img src="@@imgPath/ico/ico_hd_home.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">수업관리</p>
+    <div class="right_area">
+        <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+            <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+        </button>
+    </div>
+</header>
+<section class="contents">
+    <div class="wrap_bg">
+        <div class="class_manage">
+            <div class="inner pt-35">
+                <div class="therapist">
+                    <div class="left">
+                        <div class="profile_thumb">
+                            <div class="thumb_con">
+                                <img src="@@imgPath/logo/logo_logo.png" alt="" class="thumb">
+                            </div>
+                            <div class="thumb_upload">
+                                <input type="file" id="profileUpload" accept="image/*" class="upload_input">
+                                <label for="profileUpload" class="upload_btn">
+                                    <img src="@@imgPath/ico/ico_dimond.png" alt="" class="img">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="name_con">
+                            <a href="javascript:void(0);" class="link">
+                                <p class="name"><b>솜회장</b> 1급 치료사</p>
+                            </a>
+                        </div>
+
+                        <ul class="class_info">
+                            <li class="list">
+                                <p class="tit">수업완료</p>
+                                <p class="num">23</p>
+                            </li>
+                            <li class="list">
+                                <p class="tit">일정변경</p>
+                                <p class="num">10%</p>
+                            </li>
+                            <li class="list">
+                                <p class="tit">재학생수</p>
+                                <p class="num">8명</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="tab_con pt-45">
+                <li class="tab">
+                    <a href="class_manage_1.html" class="link">
+                        <p class="txt">수업시작</p>
+                    </a>
+                </li>
+                <li class="tab">
+                    <a href="class_manage_2.html" class="link">
+                        <p class="txt">수업완료</p>
+                    </a>
+                </li>
+                <li class="tab active">
+                    <a href="class_manage_3.html" class="link">
+                        <p class="txt">재학생수</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="inner">
+                <div class="calendar pt-30 pb-25">
+                    <div class="cal_btn prev_btn">
+                        <img src="@@imgPath/ico/ico_calendar_prve.png" alt="">
+                    </div>
+                    <div class="date">2025년 11월 2일-8일</div>
+                    <div class="cal_btn next_btn">
+                        <img src="@@imgPath/ico/ico_calendar_next.png" alt="">
+                    </div>
+                </div>
+
+                <div class="pill_con pb-45">
+                    <ul class="pill_list">
+                        <li class="pill_item active">전체</li>
+                        <li class="pill_item">최근 3개월</li>
+                        <li class="pill_item">최근 6개월</li>
+                        <li class="pill_item">최근 1년</li>
+                    </ul>
+                </div>
+
+                <div class="class_card">
+                    <ul class="card_con">
+                        <li class="list user">
+                            <a href="javascript:void(0);" class="link">
+                                <div class="therapist">
+                                    <div class="left">
+                                        <div class="profile_thumb">
+                                            <div class="thumb_con">
+                                                <img src="@@imgPath/logo/logo_logo.png" alt="" class="thumb">
+                                            </div>
+                                            <div class="thumb_upload">
+                                                <input type="file" id="profileUpload" accept="image/*"
+                                                    class="upload_input">
+                                                <label for="profileUpload" class="upload_btn">
+                                                    <img src="@@imgPath/ico/ico_dimond.png" alt="" class="img">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <div class="txt_con">
+                                            <p class="tit">이름</p>
+                                            <p class="txt">전은주</p>
+                                        </div>
+                                        <div class="txt_con">
+                                            <p class="tit">일정</p>
+                                            <p class="txt">[대면] 11/10(월) 18:30~22:00</p>
+                                        </div>
+                                        <div class="txt_con">
+                                            <p class="tit">수업</p>
+                                            <p class="txt">언어 재활 치료</p>
+                                        </div>
+                                        <div class="txt_con">
+                                            <p class="tit">위치</p>
+                                            <p class="txt text_line_1">부산 해운대구 253, 104-201</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list user">
+                            <a href="javascript:void(0);" class="link">
+                                <div class="therapist">
+                                    <div class="left">
+                                        <div class="profile_thumb">
+                                            <div class="thumb_con">
+                                                <img src="@@imgPath/logo/logo_logo.png" alt="" class="thumb">
+                                            </div>
+                                            <div class="thumb_upload">
+                                                <input type="file" id="profileUpload" accept="image/*"
+                                                    class="upload_input">
+                                                <label for="profileUpload" class="upload_btn">
+                                                    <img src="@@imgPath/ico/ico_dimond.png" alt="" class="img">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="right">
+                                        <div class="txt_con">
+                                            <p class="tit">이름</p>
+                                            <p class="txt">전은주</p>
+                                        </div>
+                                        <div class="txt_con">
+                                            <p class="tit">일정</p>
+                                            <p class="txt">[대면] 11/10(월) 18:30~22:00</p>
+                                        </div>
+                                        <div class="txt_con">
+                                            <p class="tit">수업</p>
+                                            <p class="txt">언어 재활 치료</p>
+                                        </div>
+                                        <div class="txt_con">
+                                            <p class="tit">위치</p>
+                                            <p class="txt text_line_1">부산 해운대구 253, 104-201</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+
+@@include('partials/html-end.html')

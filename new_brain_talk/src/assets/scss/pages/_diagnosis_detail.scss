@@ -1,4 +1,14 @@
 .diagnosis_detail {
+    .sub_tit {
+        font: {
+            size: 16px;
+            weight: 600
+        }
+
+        line-height: 25px;
+        letter-spacing: -2px;
+    }
+
     .banner {
         position: relative;
         width: 100%;
@@ -122,42 +132,145 @@
                         }
                     }
 
-                    .like_con {
-                        position: relative;
 
-                        #like {
-                            display: none;
-
-                            &:checked {
-                                &+.like_label {
-                                    &::before {
-                                        background: url('../../assets/images/ico/ico_like_on.png') no-repeat center/ cover;
-                                    }
-                                }
-                            }
-                        }
-
-                        .like_label {
-                            position: relative;
-                            display: block;
-                            width: 24px;
-                            height: 24px;
-                            cursor: pointer;
-
-                            &::before {
-                                content: '';
-                                position: absolute;
-                                display: block;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                                width: 24px;
-                                height: 24px;
-                                background: url('../../assets/images/ico/ico_like.png') no-repeat center/ cover;
-                            }
-                        }
-                    }
                 }
+            }
+        }
+    }
+}
+
+.result_con {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .list {
+        width: calc((100% - 10px) / 2);
+        padding: 12px 20px;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+
+        .tit {
+            font: {
+                size: 16px;
+                weight: 400;
+            }
+
+            line-height: 28px;
+            letter-spacing: -1px;
+            color: var(--gray-color);
+        }
+
+        .txt {
+            margin-top: 10px;
+
+            font: {
+                size: 16px;
+                weight: 700
+            }
+        }
+
+        .t1 {
+            font: {
+                size: 10px;
+                weight: 600
+            }
+
+            line-height: 20px;
+            letter-spacing: -1px;
+            color: var(--brown-color);
+        }
+    }
+
+}
+
+.summary_con {
+    .desc {
+        font: {
+            size: 16px;
+            weight: 400;
+        }
+
+        line-height: 25px;
+        letter-spacing: -1px;
+    }
+}
+
+.graph_con {
+    .comment {
+        position: relative;
+        padding-right: 20px;
+
+        font: {
+            size: 14px;
+            weight: 400
+        }
+
+        line-height: 25px;
+        letter-spacing: -1px;
+        color: var(--gray-color);
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 4px;
+            right: 0;
+            width: 16px;
+            height: 16px;
+        }
+
+        &.up {
+            &::after {
+                background: url('../../assets/images/ico/ico_arrow_up.png') no-repeat center/ cover;
+            }
+        }
+
+        &.down {
+            &::after {
+                background: url('../../assets/images/ico/ico_arrow_down.png') no-repeat center/ cover;
+            }
+        }
+
+        &.rest {
+            &::after {
+                width: 8px;
+                height: 12px;
+                background: url('../../assets/images/ico/ico_rest.png') no-repeat center/ cover;
+            }
+        }
+    }
+}
+
+.comment_con {
+    .comment {
+        font: {
+            size: 14px;
+            weight: 500
+        }
+
+        line-height: 25px;
+        letter-spacing: -1px;
+        color: var(--brown-color);
+    }
+
+    .comment_box {
+        padding: 30px;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+
+        .txt_con {
+            border-top: 1px solid var(--border-color);
+            padding-top: 30px;
+
+            .desc {
+                font: {
+                    size: 16px;
+                    weight: 400
+                }
+
+                line-height: 25px;
+                letter-spacing: -1px;
             }
         }
     }

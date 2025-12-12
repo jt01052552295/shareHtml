@@ -192,6 +192,7 @@
 }
 
 .info_edit {
+    position: relative;
     padding-block: 30px;
     background-color: #fff;
 
@@ -209,6 +210,136 @@
 
             &.secession {
                 color: var(--brown-color);
+            }
+        }
+    }
+
+    &.success {
+        position: relative;
+        min-height: calc(100vh - 50px);
+
+        .complete_con {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .complete_img {
+                width: 140px;
+                margin: 0 auto 90px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .complete_txt {
+                text-align: center;
+
+                .t1 {
+                    margin-bottom: 30px;
+
+                    font: {
+                        size: 18px;
+                        weight: 600
+                    }
+
+                    line-height: 22px;
+                    letter-spacing: -0.8px;
+                }
+
+                .t2 {
+                    font: {
+                        size: 18px;
+                        weight: 400;
+                    }
+
+                    line-height: 22px;
+                    letter-spacing: -0.7px;
+                }
+            }
+        }
+    }
+
+
+}
+
+// 다운로드 섹션
+.download_section {
+    padding-bottom: 30px;
+
+    .download_item {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .download_title {
+            margin-bottom: 10px;
+
+            font: {
+                size: 16px;
+                weight: 600;
+            }
+
+            color: #333;
+        }
+
+        .btn_download {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+            padding: 8px 10px;
+            background-color: #F8F9FA;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            img {
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+                filter: brightness(0);
+            }
+
+            span {
+                font: {
+                    size: 14px;
+                    weight: 400;
+                }
+
+                color: #999;
+                text-align: left;
+            }
+
+            &:hover {
+                background-color: #f0f0f0;
+                border-color: #d5d5d5;
+            }
+
+            &:active {
+                background-color: #e8e8e8;
+            }
+        }
+
+        // 파일 업로드 input 숨김
+        .file_input {
+            display: none;
+        }
+
+        // 파일이 선택된 상태 (JavaScript로 클래스 추가 시)
+        &.has_file {
+            .btn_download {
+                background-color: #fff;
+                border-color: var(--primary-color, #4a90e2);
+
+                span {
+                    color: #333;
+                    font-weight: 500;
+                }
             }
         }
     }

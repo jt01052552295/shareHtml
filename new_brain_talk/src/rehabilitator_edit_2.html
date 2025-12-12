@@ -1,0 +1,62 @@
+@@include('partials/html-start.html', { "title": "재활사 수정" })
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+        <button class="btn_icon btn_home" type="button" aria-label="홈" onclick="location.href='index.html'">
+            <img src="@@imgPath/ico/ico_hd_home.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">재활사 수정</p>
+    <div class="right_area">
+        <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+            <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+        </button>
+    </div>
+</header>
+<section class="contents">
+    <div class="wrap_bg">
+        <div class="info_edit">
+            <div class="inner">
+                <form>
+                    <div class="form-group mb-30">
+                        <label for="address">주소</label>
+                        <div class="address_con mb-10">
+                            <input type="text" class="form-control">
+                            <button type="button" class="btn btn-secondary">주소검색</button>
+                        </div>
+
+                        <input type="text" class="form-control mb-10" id="address" value="부산 부산진구 가야공원1 (가야동)">
+                        <input type="text" class="form-control" id="address" value="포메빌라 102동 205호">
+                    </div>
+                </form>
+
+                <button class="btn btn-primary w-100 mt_20">확인</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<nav class="ft_nav"></nav>
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">성별</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+        <div class="check_con">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+                남성
+            </label>
+        </div>
+        <div class="check_con">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                여성
+            </label>
+        </div>
+    </div>
+</div>
+@@include('partials/html-end.html')

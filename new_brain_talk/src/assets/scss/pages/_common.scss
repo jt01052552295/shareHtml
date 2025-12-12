@@ -169,6 +169,23 @@ h3.sub_title {
   -webkit-box-orient: vertical;
 }
 
+.text_line_4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.text_line_5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+
 
 // border
 
@@ -185,6 +202,16 @@ h3.sub_title {
 }
 
 //fixed button
+
+.bottom_fixed {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 580px;
+  padding-inline: 20px;
+}
 
 .fixed_right_bottom {
   position: fixed;
@@ -352,6 +379,42 @@ h3.sub_title {
     .list {
       width: calc((100% - 20px) / 2);
       margin-bottom: 20px;
+    }
+  }
+}
+
+.like_con {
+  position: relative;
+
+  #like {
+    display: none;
+
+    &:checked {
+      &+.like_label {
+        &::before {
+          background: url('../../assets/images/ico/ico_like_on.png') no-repeat center/ cover;
+        }
+      }
+    }
+  }
+
+  .like_label {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px;
+      height: 24px;
+      background: url('../../assets/images/ico/ico_like.png') no-repeat center/ cover;
     }
   }
 }
