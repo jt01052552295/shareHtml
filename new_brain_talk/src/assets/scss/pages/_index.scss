@@ -529,19 +529,21 @@
 
                 font: {
                     size: 14px;
-                    weight: 700
+                    weight: 700;
+                    family: 'Nanum Myeongjo',
+                        serif;
                 }
 
                 line-height: 20px;
-                letter-spacing: -1.75;
+                letter-spacing: -1.75px;
             }
 
             .policy {
-                padding: 5px 10px;
+                padding: 3px 10px;
             }
 
             .terms {
-                padding: 5px 25px;
+                padding: 3px 25px;
             }
         }
 

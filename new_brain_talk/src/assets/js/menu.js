@@ -8,3 +8,15 @@ btnMenu.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     mainMenu.classList.remove('active');
 });
+
+// 해더
+
+const headerMenu = document.querySelector('.header_menu');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+        headerMenu.classList.add('active');
+    } else {
+        headerMenu.classList.remove('active');
+    }
+});

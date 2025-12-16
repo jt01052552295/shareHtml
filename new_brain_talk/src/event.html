@@ -1,0 +1,72 @@
+@@include('partials/html-start.html', { "title": "이벤트" })
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">이벤트</p>
+    <div class="right_area">
+        <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+            <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+        </button>
+    </div>
+</header>
+<div class="contents">
+    <div class="wrap_bg">
+        <div class="event">
+            <div class="box">
+                <div class="search_con">
+                    <input class="search_input" type="text" placeholder="이벤트 검색하기">
+                    <button class="btn p-0 search_btn">
+                        <img src="@@imgPath/ico/ico_search.png" alt="" width="20px">
+                    </button>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="btn-group gap-2 " data-bs-toggle="buttons">
+                    <input type="radio" class="btn-check" name="btnradio2" id="btnradio11" autocomplete="off"
+                        checked="">
+                    <label class="btn btn-outline-primary rounded-pill" for="btnradio11">전체</label>
+
+                    <input type="radio" class="btn-check" name="btnradio2" id="btnradio22" autocomplete="off">
+                    <label class="btn btn-outline-primary rounded-pill" for="btnradio22">진행</label>
+
+                    <input type="radio" class="btn-check" name="btnradio2" id="btnradio33" autocomplete="off">
+                    <label class="btn btn-outline-primary rounded-pill" for="btnradio33">마감</label>
+                </div>
+                <div class="border-bb"></div>
+                <ul class="event_list">
+                    <li class="list">
+                        <a class="link" href="event_detail.html">
+                            <div class="txt_con">
+                                <p class="tit text_line_1">이벤트 제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다
+                                </p>
+                                <p class="date">이벤트 기간 : 2024.06.09 - 2023.06.14</p>
+                            </div>
+                            <button class="btn btn-primary btn-sm rounded-pill">진행중</button>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a class="link" href="event_detail.html">
+                            <div class="txt_con">
+                                <p class="tit text_line_1">이벤트 제목입니다</p>
+                                <p class="date">이벤트 기간 : 2024.06.09 - 2023.06.14</p>
+                            </div>
+                            <button class="btn btn-primary btn-sm rounded-pill">진행중</button>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a class="link" href="event_detail.html">
+                            <div class="txt_con">
+                                <p class="tit text_line_1">이벤트 제목입니다</p>
+                                <p class="date">이벤트 기간 : 2024.06.09 - 2023.06.14</p>
+                            </div>
+                            <button class="btn btn-light btn-sm rounded-pill">마감</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -42,3 +42,44 @@
         }
     }
 }
+
+
+
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    &.form-switch {
+        .form-check-input {
+            margin-top: 0;
+            background-image: url('../../assets/images/ico/ico_switch_circle.png');
+            background-size: 18px;
+            background-position: left 3px center;
+
+            &:checked {
+                background-color: var(--brown-color);
+                border-color: var(--brown-color);
+                background-image: url('../../assets/images/ico/ico_switch_white.png');
+                background-size: 18px;
+                background-position: right 3px center;
+            }
+
+            &:focus {
+                border-color: var(--brown-color);
+                box-shadow: 0 0 0 .25rem rgba($color: var(--brown-color), $alpha: 0.5)
+            }
+        }
+
+        .form-check-label {
+            font: {
+                size: 14px;
+                weight: 500
+            }
+
+            color: var(--gray-color);
+        }
+    }
+}

@@ -23,12 +23,25 @@
         padding: 10px 20px;
         border: 1px solid var(--border-color);
         border-radius: 10px;
+        cursor: pointer;
 
         font: {
             size: 18px;
             weight: 500
         }
+    }
+}
 
+.event {
+    .btn-group-toggle {
+        label.btn {
+            input {
+                display: none;
 
+                &[type="radio"] {
+                    &:checked {}
+                }
+            }
+        }
     }
 }

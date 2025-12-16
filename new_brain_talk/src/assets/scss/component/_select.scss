@@ -12,13 +12,14 @@
         &.three {
             gap: 10px;
 
-            .select_item {
-                width: calc((100% - 10px) / 3);
-            }
+            // .select_item {
+            //     width: calc((100% - 10px) / 3);
+            // }
         }
 
         .select_item {
             position: relative;
+            flex: 1;
             padding: 10px;
             border: 1px solid #eee;
             border-radius: 10px;

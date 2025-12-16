@@ -3,7 +3,12 @@
     align-items: center;
     border: 1px solid #eee;
     border-radius: 10px;
-    padding-inline: 10px;
+    padding: 6px 10px;
+    transition: border 0.2s ease;
+
+    &:focus-within {
+        border: 1px solid #000;
+    }
 
     .search_input {
         flex: auto;
@@ -13,6 +18,11 @@
             size: 16px;
             weight: 400;
         }
+
+        &:focus {
+            outline: none;
+            border: none;
+        }
     }
 
     .search_btn {
@@ -20,6 +30,7 @@
         flex-shrink: 0;
     }
 }
+
 
 .search_filter {
     display: flex;
