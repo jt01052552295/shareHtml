@@ -71,8 +71,10 @@ p {
 }
 
 .contents {
-  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(163, 196, 250, 0.2) 0%, rgba(255, 191, 0, 0.2) 100%);
 }
+
+.page-wrap {}
 
 /* 레이아웃 */
 

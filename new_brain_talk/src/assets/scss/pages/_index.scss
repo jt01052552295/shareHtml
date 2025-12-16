@@ -1,14 +1,12 @@
 .contents {
-    .wrap_bg {
-        padding-top: 50px;
-        background: linear-gradient(180deg, rgba(163, 196, 250, 0.2) 0%, rgba(255, 191, 0, 0.2) 100%);
-
+    .page-wrap {
         .main_page {
             .therapist {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 25px;
+                margin-block: 30px 15px;
                 background-color: #fff;
                 border: 1px solid var(--border-color);
                 border-radius: 20px;
@@ -84,6 +82,10 @@
     }
 }
 
+.therapy_banner {
+    margin-bottom: 15px;
+}
+
 .talk_banner {
     .swiper-wrapper {
         .swiper-slide {
@@ -94,6 +96,14 @@
             background-color: #fff;
             // background: url('../../assets/images/img/img_therapy_banner1.png') no-repeat right 20px top 20px/ 150px, #fff;
             text-align: left;
+
+            @media(max-width:550px) {
+                height: 380px;
+            }
+
+            @media(max-width:410px) {
+                height: auto;
+            }
 
             .bg_img {
                 position: absolute;
@@ -153,6 +163,7 @@
 }
 
 .main_card_con {
+
     .card_list {
         .list {
             display: flex;
@@ -162,6 +173,14 @@
             padding: 30px 25px;
             border: 1px solid var(--border-color);
             border-radius: 20px;
+
+            @media(max-width:380px) {
+                flex-direction: column;
+
+                .txt_con {
+                    text-align: center;
+                }
+            }
 
             &.reser {
                 background: url('../../assets/images/img/img_main_card1.png') no-repeat center/ cover;
@@ -222,6 +241,10 @@
     }
 }
 
+.talk_therapy {
+    margin-top: 35px;
+}
+
 .recomend_con {
     .btn-secondary {
         background-color: var(--border-color);
@@ -241,6 +264,25 @@
 }
 
 .treatment {
+    margin-top: 35px;
+
+    .common_slide {
+        .swiper-wrapper {
+            .swiper-slide {
+                @media(max-width:480px) {
+                    .txt_con {
+
+                        &>.d-flex {
+                            align-items: flex-start !important;
+                            flex-direction: column;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
     .btn-secondary {
         background-color: var(--border-color);
         border-color: var(--border-color);
@@ -250,6 +292,8 @@
 }
 
 .rehabilitator {
+    margin-top: 35px;
+
     .rehabilitator_list {
         display: flex;
         align-items: center;
@@ -331,6 +375,16 @@
                     }
                 }
             }
+
+        }
+
+
+        @media(max-width:340px) {
+            flex-direction: column;
+
+            .list {
+                width: 100%;
+            }
         }
     }
 
@@ -343,6 +397,8 @@
 }
 
 .process {
+    margin-top: 35px;
+
     .process_list {
         .list {
             display: flex;
@@ -495,6 +551,10 @@
             margin: 0 auto;
 
             .img {
+                width: 100%;
+            }
+
+            @media(max-width:480px) {
                 width: 100%;
             }
         }

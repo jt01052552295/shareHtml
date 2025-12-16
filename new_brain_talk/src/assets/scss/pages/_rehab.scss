@@ -18,6 +18,14 @@
     .rehab_item {
         border-bottom: 1px solid var(--border-color);
 
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:first-child {
+            border-bottom: 1px solid var(--border-color);
+        }
+
         a.link {
             position: relative;
             display: flex;

@@ -20,15 +20,53 @@
 
             .link {
                 .img_con {
+                    position: relative;
                     width: 40px;
+                    height: 40px;
                     margin: 0 auto;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
 
                     img {
                         width: 100%;
                     }
+
+                    &.home {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_nav_home.png') no-repeat center/ cover;
+                        }
+                    }
+
+                    &.reser {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_nav_reser.png') no-repeat center/ cover;
+                        }
+                    }
+
+                    &.self_test {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_nav_self.png') no-repeat center/ cover;
+                        }
+                    }
+
+                    &.my_info {
+                        &::before {
+                            background: url('../../assets/images/ico/ico_nav_mypage.png') no-repeat center/ cover;
+                        }
+                    }
                 }
 
-                .txt {
+                .tit {
                     font: {
                         size: 13px;
                         weight: 500

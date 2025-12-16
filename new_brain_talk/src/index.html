@@ -12,11 +12,11 @@
     </button>
   </div>
 </header>
-<section class="contents">
-  <div class="wrap_bg">
-    <div class="inner" style="background:none;">
+<main class="contents">
+  <div class="page-wrap pt-50">
+    <section class="inner" style="background:none;">
       <div class="main_page">
-        <div class="therapist mt-30 mb-15">
+        <div class="therapist">
           <div class="left">
             <div class="profile_thumb">
               <div class="thumb_con">
@@ -55,7 +55,7 @@
           </div>
         </div>
 
-        <div class="therapy_banner mb-15">
+        <div class="therapy_banner">
           <div class="swiper mySwiper talk_banner">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -123,7 +123,7 @@
           </ul>
         </div>
 
-        <div class="talk_therapy mt-35">
+        <div class="talk_therapy ">
           <h3 class="sub_title mb-15">브레인톡톡 재활치료 소개</h3>
           <div class="swiper mySwiper therapy_slide">
             <div class="swiper-wrapper">
@@ -165,7 +165,7 @@
           </div>
         </div>
 
-        <div class="treatment mt-35">
+        <div class="treatment">
           <h3 class="sub_title mb-15">개별맞춤 언어치료 솔루션</h3>
           <div class="swiper mySwiper common_slide">
             <div class="swiper-wrapper">
@@ -282,7 +282,7 @@
           <button class="btn btn-secondary w-100 mt-25">더보기</button>
         </div>
 
-        <div class="rehabilitator mt-35 ">
+        <div class="rehabilitator">
           <h3 class="sub_title mb-15">재활사 더보기</h3>
           <ul class="rehabilitator_list">
             <li class="list">
@@ -313,9 +313,9 @@
           <button class="btn btn-secondary w-100 mt-25">더보기</button>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="process mt-35 ">
+    <div class="process">
       <div class="inner pt-30 pb-70">
         <h3 class="sub_title mb-15">언어치료 간편 프로세스</h3>
         <ul class="process_list">
@@ -399,9 +399,40 @@
       </div>
     </div>
   </div>
-</section>
+</main>
 
-<nav class="ft_nav"></nav>
+<nav class="ft_nav">
+  <ul class="ft_menu">
+    <li class="menu">
+      <a href="/" class="link">
+        <div class="img_con home">
+        </div>
+        <p class="tit">홈</p>
+      </a>
+    </li>
+    <li class="menu">
+      <a href="javascript:void(0);" class="link">
+        <div class="img_con reser">
+        </div>
+        <p class="tit">예약</p>
+      </a>
+    </li>
+    <li class="menu on">
+      <a href="javascript:void(0);" class="link">
+        <div class="img_con self_test">
+        </div>
+        <p class="tit">자가진단</p>
+      </a>
+    </li>
+    <li class="menu">
+      <a href="javascript:void(0);" class="link">
+        <div class="img_con my_info">
+        </div>
+        <p class="tit">내정보</p>
+      </a>
+    </li>
+  </ul>
+</nav>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -411,9 +442,9 @@
     pagination: {
       el: ".swiper-pagination",
     },
-    // autoplay: {
-    //   delay: 2500,
-    // },
+    autoplay: {
+      delay: 2500,
+    },
     loop: true,
     spaceBetween: 30,
   });

@@ -15,172 +15,170 @@
         </button>
     </div>
 </header>
-<section class="contents">
-    <div class="wrap_bg">
-        <div class="rehab_register">
-            <div class="inner">
-                <div class="select_con pt-20">
-                    <p class="tit">카테고리</p>
-                    <ul class="select_list three">
-                        <li class="select_item" data-bs-toggle="offcanvas" data-bs-target="#cata1"
-                            aria-controls="offcanvasBottom">대면</li>
-                        <li class="select_item" data-bs-toggle="offcanvas" data-bs-target="#cata2"
-                            aria-controls="offcanvasBottom">물리치료</li>
-                        <li class="select_item" data-bs-toggle="offcanvas" data-bs-target="#cata3"
-                            aria-controls="offcanvasBottom">1급</li>
-                    </ul>
+<main class="contents">
+    <div class="rehab_register pt-50">
+        <div class="inner">
+            <section class="select_con pt-20">
+                <p class="tit">카테고리</p>
+                <ul class="select_list three">
+                    <li class="select_item" data-bs-toggle="offcanvas" data-bs-target="#cata1"
+                        aria-controls="offcanvasBottom">대면</li>
+                    <li class="select_item" data-bs-toggle="offcanvas" data-bs-target="#cata2"
+                        aria-controls="offcanvasBottom">물리치료</li>
+                    <li class="select_item" data-bs-toggle="offcanvas" data-bs-target="#cata3"
+                        aria-controls="offcanvasBottom">1급</li>
+                </ul>
+            </section>
+
+            <form class=" mt-25">
+                <div class="form-group mb-20">
+                    <label for="class_name">수업관리</label>
+                    <input type="text" class="form-control" id="class_name" value="">
+
+                    <p class="caution mt-20">* 판매 서비스와 직접 관련이 없는 다른 서비스명, 스팸성 키워드 입력 시 관리자에 의해 판매금지 될 수 있습니다.</p>
+                    <p class="caution">* 유명 서비스 유사문구를 무단으로 도용하여 -스타일, -st 등과 같이 기재하는 경우 별도 고지 없이 제재 될 수 있습니다.</p>
                 </div>
 
-                <form class=" mt-25">
-                    <div class="form-group mb-20">
-                        <label for="class_name">수업관리</label>
-                        <input type="text" class="form-control" id="class_name" value="">
-
-                        <p class="caution mt-20">* 판매 서비스와 직접 관련이 없는 다른 서비스명, 스팸성 키워드 입력 시 관리자에 의해 판매금지 될 수 있습니다.</p>
-                        <p class="caution">* 유명 서비스 유사문구를 무단으로 도용하여 -스타일, -st 등과 같이 기재하는 경우 별도 고지 없이 제재 될 수 있습니다.</p>
-                    </div>
-
-                    <div class="form-group mb-20">
-                        <label for="desc">한줄설명</label>
-                        <input type="text" class="form-control" id="desc" value="">
-                    </div>
-
-                    <div class="form-group mb-20">
-                        <label for="desc">재활사 서비스</label>
-                        <input type="text" class="form-control mb-10" id="desc" value="" placeholder="서비스명(50자 이내)">
-                        <input type="text" class="form-control mb-10" id="desc" value="" placeholder="서비스설명(50자 이내)">
-                        <input type="text" class="form-control mb-10" id="desc" value="" placeholder="가격 (숫자만)">
-                        <input type="text" class="form-control mb-10" id="desc" value="" placeholder="수업횟수(월기준)">
-                    </div>
-                </form>
-
-                <div class="select_con">
-                    <p class="tit">선호하시는 재활 서비스 분야 목록이 있으십니까?</p>
-                    <ul class="select_list one">
-                        <li class="select_item">대면</li>
-                    </ul>
+                <div class="form-group mb-20">
+                    <label for="desc">한줄설명</label>
+                    <input type="text" class="form-control" id="desc" value="">
                 </div>
 
-                <div class="image_upload_con mt-25">
-                    <p class="tit">재활사 서비스</p>
-                    <div class="upload_box">
-                        <input type="file" id="serviceImageUpload" accept="image/*" class="upload_input">
-                        <label for="serviceImageUpload" class="upload_label">
-                            <div class="icon">
-                                <img src="@@imgPath/logo/logo_symbol.png" alt="" width="80px">
-                            </div>
-                            <p class="txt">이미지 등록</p>
-
-                        </label>
-                    </div>
-                    <p class="size mt-15">* 권장 사이즈 (px): 500 x 500</p>
+                <div class="form-group mb-20">
+                    <label for="desc">재활사 서비스</label>
+                    <input type="text" class="form-control mb-10" id="desc" value="" placeholder="서비스명(50자 이내)">
+                    <input type="text" class="form-control mb-10" id="desc" value="" placeholder="서비스설명(50자 이내)">
+                    <input type="text" class="form-control mb-10" id="desc" value="" placeholder="가격 (숫자만)">
+                    <input type="text" class="form-control mb-10" id="desc" value="" placeholder="수업횟수(월기준)">
                 </div>
+            </form>
 
-                <div class="one_line mt-25">
-                    <p class="tit">한줄설명</p>
-                    <div class="btn_con">
-                        <button class="btn btn-primary">노출</button>
-                        <button class="btn btn-outline-secondary">비노출</button>
+            <section class="select_con">
+                <p class="tit">선호하시는 재활 서비스 분야 목록이 있으십니까?</p>
+                <ul class="select_list one">
+                    <li class="select_item">대면</li>
+                </ul>
+            </section>
+
+            <section class="image_upload_con mt-25">
+                <p class="tit">재활사 서비스</p>
+                <div class="upload_box">
+                    <input type="file" id="serviceImageUpload" accept="image/*" class="upload_input">
+                    <label for="serviceImageUpload" class="upload_label">
+                        <div class="icon">
+                            <img src="@@imgPath/logo/logo_symbol.png" alt="" width="80px">
+                        </div>
+                        <p class="txt">이미지 등록</p>
+
+                    </label>
+                </div>
+                <p class="size mt-15">* 권장 사이즈 (px): 500 x 500</p>
+            </section>
+
+            <section class="one_line mt-25">
+                <p class="tit">한줄설명</p>
+                <div class="btn_con">
+                    <button class="btn btn-primary">노출</button>
+                    <button class="btn btn-outline-secondary">비노출</button>
+                </div>
+            </section>
+
+            <button class="btn btn-secondary w-100 mt-25 mb-50" data-toggle="modal"
+                data-target="#modal_md_1">등록</button>
+        </div>
+    </div>
+    </section>
+
+    <nav class="ft_nav"></nav>
+    <div class="modal fade" id="modal_md_1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="">2차 승인 요청을 <span class="nl">기다려주세요</span></p>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-row">
+                        <div class="col">
+                            <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">확인</button>
+                        </div>
                     </div>
                 </div>
-
-                <button class="btn btn-secondary w-100 mt-25 mb-50" data-toggle="modal"
-                    data-target="#modal_md_1">등록</button>
             </div>
         </div>
     </div>
-</section>
 
-<nav class="ft_nav"></nav>
-<div class="modal fade" id="modal_md_1" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-body">
-                <p class="">2차 승인 요청을 <span class="nl">기다려주세요</span></p>
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="cata1" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div class="check_con">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                    대면
+                </label>
             </div>
-            <div class="modal-footer">
-                <div class="form-row">
-                    <div class="col">
-                        <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">확인</button>
-                    </div>
-                </div>
+            <div class="check_con">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    비대면
+                </label>
+            </div>
+            <div class="check_con">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                    방문
+                </label>
             </div>
         </div>
     </div>
-</div>
 
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="cata1" aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">
-        <div class="check_con">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-            <label class="form-check-label" for="flexRadioDefault1">
-                대면
-            </label>
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="cata2" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="check_con">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-            <label class="form-check-label" for="flexRadioDefault2">
-                비대면
-            </label>
-        </div>
-        <div class="check_con">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-            <label class="form-check-label" for="flexRadioDefault3">
-                방문
-            </label>
+        <div class="offcanvas-body small">
+            <div class="check_con">
+                <input class="form-check-input" type="radio" name="therapy" id="music" checked>
+                <label class="form-check-label" for="music">
+                    물리치료
+                </label>
+            </div>
+            <div class="check_con">
+                <input class="form-check-input" type="radio" name="therapy" id="physical">
+                <label class="form-check-label" for="physical">
+                    음악치료
+                </label>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="cata2" aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">
-        <div class="check_con">
-            <input class="form-check-input" type="radio" name="therapy" id="music" checked>
-            <label class="form-check-label" for="music">
-                물리치료
-            </label>
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="cata3" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="check_con">
-            <input class="form-check-input" type="radio" name="therapy" id="physical">
-            <label class="form-check-label" for="physical">
-                음악치료
-            </label>
-        </div>
-    </div>
-</div>
-
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="cata3" aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">
-        <div class="check_con">
-            <input class="form-check-input" type="radio" name="degree" id="degree1" checked>
-            <label class="form-check-label" for="degree1">
-                1급
-            </label>
-        </div>
-        <div class="check_con">
-            <input class="form-check-input" type="radio" name="degree" id="degree2">
-            <label class="form-check-label" for="degree2">
-                2급
-            </label>
-        </div>
-        <div class="check_con">
-            <input class="form-check-input" type="radio" name="degree" id="degree3">
-            <label class="form-check-label" for="degree3">
-                3급
-            </label>
+        <div class="offcanvas-body small">
+            <div class="check_con">
+                <input class="form-check-input" type="radio" name="degree" id="degree1" checked>
+                <label class="form-check-label" for="degree1">
+                    1급
+                </label>
+            </div>
+            <div class="check_con">
+                <input class="form-check-input" type="radio" name="degree" id="degree2">
+                <label class="form-check-label" for="degree2">
+                    2급
+                </label>
+            </div>
+            <div class="check_con">
+                <input class="form-check-input" type="radio" name="degree" id="degree3">
+                <label class="form-check-label" for="degree3">
+                    3급
+                </label>
+            </div>
         </div>
     </div>
-</div>
-@@include('partials/html-end.html')
+    @@include('partials/html-end.html')
