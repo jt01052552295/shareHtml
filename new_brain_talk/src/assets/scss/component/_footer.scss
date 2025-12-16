@@ -7,6 +7,7 @@
     transform: translateX(-50%);
     border-top: 1px solid var(--border-color);
     background-color: #fff;
+    z-index: 2000;
 
     .ft_menu {
         display: flex;

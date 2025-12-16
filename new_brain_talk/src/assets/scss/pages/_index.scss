@@ -1,84 +1,77 @@
-.contents {
-    .page-wrap {
-        .main_page {
-            .therapist {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 25px;
-                margin-block: 30px 15px;
-                background-color: #fff;
-                border: 1px solid var(--border-color);
-                border-radius: 20px;
+.therapist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-block: 30px 15px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
 
-                .left {
-                    .profile_thumb {
-                        .thumb_con {
-                            width: 70px;
-                            height: 70px;
+    .left {
+        .profile_thumb {
+            .thumb_con {
+                width: 70px;
+                height: 70px;
 
-                            .thumb {}
-                        }
+                .thumb {}
+            }
 
-                        .thumb_upload {
+            .thumb_upload {
 
 
-                            .upload_input {}
+                .upload_input {}
 
-                            .upload_btn {
-                                width: 22px;
-                                height: 22px;
+                .upload_btn {
+                    width: 22px;
+                    height: 22px;
 
-                                .img {
-                                    width: 14px;
-                                }
-                            }
-                        }
-                    }
-
-                    .name {
-                        font: {
-                            size: 12px;
-                            weight: 700;
-                        }
-
-                        .degree {
-                            font: {
-                                size: 12px;
-                                weight: 500;
-                            }
-
-                            color: #909090;
-                        }
-                    }
-                }
-
-
-                .right {
-                    .therap_menu {
-                        display: flex;
-                        flex-wrap: wrap;
-                        gap: 0 10px;
-                        width: 140px;
-                        padding-block: 10px;
-
-                        .menu {
-                            width: calc((100% - 10px) / 2);
-                            padding-block: 10px;
-                            text-align: center;
-
-                            .link {
-                                font: {
-                                    size: 12px;
-                                    weight: 600
-                                }
-                            }
-                        }
+                    .img {
+                        width: 14px;
                     }
                 }
             }
         }
 
+        .name {
+            font: {
+                size: 12px;
+                weight: 700;
+            }
+
+            .degree {
+                font: {
+                    size: 12px;
+                    weight: 500;
+                }
+
+                color: #909090;
+            }
+        }
+    }
+
+
+    .right {
+        .therap_menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 10px;
+            width: 140px;
+            padding-block: 10px;
+
+            .menu {
+                width: calc((100% - 10px) / 2);
+                padding-block: 10px;
+                text-align: center;
+
+                .link {
+                    font: {
+                        size: 12px;
+                        weight: 600
+                    }
+                }
+            }
+        }
     }
 }
 
