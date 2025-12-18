@@ -83,8 +83,10 @@
 
         .title_con {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: start;
+            gap: 10px;
             margin-bottom: 20px;
 
             .txt_con {
@@ -112,31 +114,7 @@
                 }
             }
 
-            .download_con {
-                padding: 5px 10px;
-                border: 1px solid var(--border-color);
-                border-radius: 5px;
-                background-color: #dadada;
 
-                .download {
-                    display: flex;
-                    align-items: center;
-                    gap: 7px;
-
-                    font: {
-                        size: 12px;
-                        weight: 500
-                    }
-
-                    line-height: 14px;
-                    letter-spacing: -0.6px;
-                    color: var(--gray-color);
-
-                    img {
-                        width: 18px;
-                    }
-                }
-            }
         }
 
         .daily_comment {
@@ -159,4 +137,57 @@
         }
     }
 
+    .no_comment {
+        text-align: center;
+
+        .img_con {
+            max-width: 180px;
+            width: calc(100% - 40px);
+            margin: 50px auto 30px;
+
+            .img {
+                width: 100%;
+            }
+        }
+
+        .txt {
+            font: {
+                size: 14px;
+                weight: 400
+            }
+
+            line-height: 25px;
+            letter-spacing: -0.6px;
+            color: var(--gray-color);
+            text-align: center;
+        }
+    }
+
+}
+
+.download_con {
+    flex-shrink: 0;
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: #dadada;
+
+    .download {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        font: {
+            size: 12px;
+            weight: 500
+        }
+
+        line-height: 14px;
+        letter-spacing: -0.6px;
+        color: var(--gray-color);
+
+        img {
+            width: 18px;
+        }
+    }
 }

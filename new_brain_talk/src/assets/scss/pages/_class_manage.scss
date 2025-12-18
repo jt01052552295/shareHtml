@@ -1,115 +1,121 @@
 .class_manage {
-    .therapist {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        padding: 20px 25px;
-        background-color: #fff;
-        border: 1px solid var(--border-color);
-        border-radius: 20px;
+    .box {
+        padding-bottom: 20px;
 
-        .left {
-            .profile_thumb {
-                .thumb_con {
-                    width: 75px;
-                    height: 75px;
+        .therapist {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            padding: 20px 25px;
+            margin: 0;
+            background-color: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
 
-                    .thumb {}
-                }
+            .left {
+                .profile_thumb {
+                    .thumb_con {
+                        width: 75px;
+                        height: 75px;
 
-                .thumb_upload {
-                    .upload_input {}
-
-                    .upload_btn {
-                        width: 23px;
-                        height: 23px;
-
-                        .img {
-                            width: 15px;
-                        }
+                        .thumb {}
                     }
-                }
-            }
-        }
 
-        .right {
-            min-width: 180px;
-            width: 100%;
+                    .thumb_upload {
+                        .upload_input {}
 
-            .name_con {
-                position: relative;
-                max-width: 340px;
-                margin-bottom: 20px;
-                margin-left: auto;
+                        .upload_btn {
+                            width: 23px;
+                            height: 23px;
 
-                &::after {
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    top: 50%;
-                    right: 0;
-                    transform: translateY(-50%);
-                    width: 5px;
-                    height: 10px;
-                    background: url('../../assets/images/ico/ico_link_arr.png') no-repeat center / cover;
-                }
-
-                .link {
-                    .name {
-                        font: {
-                            size: 14px;
-                            weight: 400
-                        }
-
-                        color: var(--gray-color);
-
-                        b {
-                            color: #000;
+                            .img {
+                                width: 15px;
+                            }
                         }
                     }
                 }
             }
 
-            .class_info {
-                display: flex;
-                align-items: center;
+            .right {
+                min-width: 180px;
+                width: 100%;
 
-                .list {
-                    width: calc(100% / 3);
-                    text-align: center;
-                    border-right: 1px solid var(--border-color);
+                .name_con {
+                    position: relative;
+                    max-width: 340px;
+                    margin-bottom: 20px;
+                    margin-left: auto;
 
-                    &:last-child {
-                        border-right: none;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        width: 5px;
+                        height: 10px;
+                        background: url('../../assets/images/ico/ico_link_arr.png') no-repeat center / cover;
                     }
 
-                    .tit {
-                        font: {
-                            size: 12px;
-                            weight: 400
-                        }
+                    .link {
+                        .name {
+                            font: {
+                                size: 14px;
+                                weight: 400
+                            }
 
-                        color: var(--gray-color);
-                        line-height: 18px;
-                        letter-spacing: -0.7px;
+                            color: var(--gray-color);
+
+                            b {
+                                color: #000;
+                            }
+                        }
                     }
+                }
 
-                    .num {
-                        margin-top: 10px;
+                .class_info {
+                    display: flex;
+                    align-items: center;
 
-                        font: {
-                            size: 16px;
-                            weight: 600
+                    .list {
+                        width: calc(100% / 3);
+                        text-align: center;
+                        border-right: 1px solid var(--border-color);
+
+                        &:last-child {
+                            border-right: none;
                         }
 
-                        line-height: 18px;
-                        letter-spacing: -0.7px;
+                        .tit {
+                            font: {
+                                size: 12px;
+                                weight: 400
+                            }
+
+                            color: var(--gray-color);
+                            line-height: 18px;
+                            letter-spacing: -0.7px;
+                        }
+
+                        .num {
+                            margin-top: 10px;
+
+                            font: {
+                                size: 16px;
+                                weight: 600
+                            }
+
+                            line-height: 18px;
+                            letter-spacing: -0.7px;
+                        }
                     }
                 }
             }
         }
     }
+
 }
 
 .calendar {
@@ -118,14 +124,9 @@
     justify-content: space-between;
 
     .cal_btn {
-        width: 30px;
-        cursor: pointer;
-
         &.prve_btn {}
 
-        &.next_btn {
-            text-align: right;
-        }
+        &.next_btn {}
 
         img {
             width: 8px;
@@ -215,8 +216,10 @@
                     }
 
                     .therapist {
+                        justify-content: start;
                         padding: 0;
                         border: none;
+                        margin-block: 0;
                     }
                 }
 

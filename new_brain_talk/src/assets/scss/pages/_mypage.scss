@@ -7,7 +7,10 @@
     }
 
     .btn {
-        margin-top: 30px;
+        &.w-100 {
+            margin-top: 30px;
+
+        }
     }
 }
 

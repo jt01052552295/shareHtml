@@ -5,10 +5,6 @@
 @import "../bootstrap/scss/mixins";
 @import "../bootstrap/scss/utilities";
 
-// common
-@import "./pages/common";
-@import "./pages/font";
-
 // page
 @import "./pages/index";
 @import "./pages/mypage";
@@ -32,6 +28,10 @@
 @import "./pages/class_manage";
 @import "./pages/notice";
 @import "./pages/event";
+@import "./pages/my_inquiry";
+@import "./pages/company";
+@import "./pages/process";
+@import "./pages/solution";
 
 // component
 @import "./component/header";
@@ -48,3 +48,8 @@
 @import "./component/tab";
 @import "./component/switch";
 @import "./component/modal";
+
+
+// common
+@import "./pages/common";
+@import "./pages/font";

@@ -66,6 +66,7 @@
   .title_con {
     margin-bottom: 15px;
     padding-block: 20px;
+    border-bottom: 1px solid var(--border-color);
 
     .d-flex {
       gap: 12px;
@@ -94,6 +95,7 @@
   .notice_contents {
     min-height: 200px;
     padding-top: 20px;
+    border-bottom: 1px solid var(--border-color);
 
     p {
       font: {
@@ -102,6 +104,51 @@
       }
 
       line-height: 24px;
+    }
+  }
+}
+
+.notice_reply {
+  .inner {
+    padding-top: 20px;
+
+  }
+
+  .reply_box {
+    position: relative;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f6f6f6;
+
+    &::before {
+      content: "A.";
+      position: absolute;
+      display: block;
+      top: 12px;
+      left: 12px;
+
+      font: {
+        size: 16px;
+        weight: 500;
+      }
+    }
+
+    p {
+      font: {
+        size: 16px;
+        weight: 500;
+      }
+
+      color: #454545;
+    }
+
+    .reply {
+      min-height: 95px;
+      padding-left: 18px;
+    }
+
+    .date {
+      text-align: right;
     }
   }
 }

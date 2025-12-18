@@ -1,0 +1,36 @@
+@@include('partials/html-start.html', { "title": "문의하기" })
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+        <button class="btn_icon btn_home" type="button" aria-label="홈" onclick="location.href='index.html'">
+            <img src="@@imgPath/ico/ico_hd_home.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">문의하기</p>
+    <div class="right_area">
+        <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+            <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+        </button>
+    </div>
+</header>
+<main class="contents">
+    <div class="page-wrap pt-50">
+        <div class="inner pt-20">
+            <div class="input_con">
+                <label for="validationCustom01" class="form-label">문의내용</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="상담 제목을 입력해주세요." value=""
+                    required="">
+            </div>
+
+            <div class="mt-10">
+                <textarea class="form-control text_area" placeholder="입력해주세요" rows="5"></textarea>
+            </div>
+
+            <div class="bottom_fixed">
+                <button class="btn btn-secondary w-100">문의하기</button>
+            </div>
+        </div>
+    </div>
+</main>

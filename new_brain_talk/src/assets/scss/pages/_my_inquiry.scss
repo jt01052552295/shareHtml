@@ -1,0 +1,32 @@
+.my_inquiry_list {
+  background-color: #fff;
+
+  .title_con {
+    padding-block: 15px;
+    border-bottom: 1px solid var(--border-color);
+
+
+    .d-flex {
+      gap: 10px;
+      margin-bottom: 15px;
+
+      .title {
+        font: {
+          size: 16px;
+          weight: 700;
+        }
+      }
+
+      .btn {}
+    }
+
+    .date {
+      font: {
+        size: 12px;
+        weight: 500;
+      }
+
+      color: #777;
+    }
+  }
+}

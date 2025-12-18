@@ -83,8 +83,10 @@
 
         .title_con {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: start;
+            gap: 10px;
             margin-bottom: 20px;
 
             .txt_con {
@@ -175,33 +177,132 @@
         }
     }
 
+
     .like_con {
-        position: relative;
+        .like_label {
 
-        #like {
-            display: none;
+            input[type='checkbox'] {
 
-            &:checked {
-                &+.like_label {
-                    &::before {
-                        background: url('../../assets/images/ico/ico_like_comment_on.png') no-repeat center/ cover;
-                    }
+                /* 체크되었을 때 */
+                &:checked+.ic_heart {
+                    background-image: url('../../assets/images/ico/ico_like_comment_on.png');
                 }
             }
-        }
 
-        .like_label {
-            position: relative;
-            display: block;
-            width: 33px;
-            height: 33px;
-            cursor: pointer;
-
-            &::before {
-                top: 46%;
+            .ic_heart {
                 width: 33px;
                 height: 33px;
-                background: url('../../assets/images/ico/ico_like_comment.png') no-repeat center/ cover;
+                background: url('../../assets/images/ico/ico_like_comment.png') no-repeat center / cover;
+            }
+
+            &:active .ic_heart {}
+        }
+    }
+
+}
+
+.comment_reply {
+    margin-top: 20px;
+    padding: 20px 15px;
+    border-top: 1px solid var(--border-color);
+
+    .txt {
+        font: {
+            size: 14px;
+            weight: 400
+        }
+
+        line-height: 25px;
+        letter-spacing: -0.6px;
+        color: var(--gray-color);
+        text-align: center;
+    }
+
+
+    .reply_con {
+        .reply {
+            display: flex;
+            align-items: start;
+            gap: 15px;
+            margin-bottom: 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .profile_thumb {
+                flex-shrink: 0;
+
+                .thumb_con {
+                    width: 54px;
+                    height: 54px;
+
+                    .thumb {}
+                }
+            }
+
+            .txt_con {
+                flex: 1;
+
+                .comment_header {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 10px;
+
+                    .menu {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .name {
+                            font: {
+                                size: 16px;
+                                weight: 500
+                            }
+
+                            letter-spacing: -0.8px;
+                            line-height: 22px;
+
+                        }
+
+                        .delete {
+                            width: 20px;
+                            transform: translateY(-3px);
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .comment_down {}
+                }
+
+
+                .desc {
+                    margin-block: 10px 5px;
+
+                    font: {
+                        size: 16px;
+                        weight: 400
+                    }
+
+                    line-height: 18px;
+                    letter-spacing: -0.7px;
+                }
+
+                .date {
+                    font: {
+                        size: 12px;
+                        weight: 400;
+                    }
+
+                    letter-spacing: -0.7px;
+                    line-height: 18px;
+                    color: var(--gray-color);
+                }
             }
         }
     }

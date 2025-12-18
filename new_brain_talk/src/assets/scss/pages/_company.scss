@@ -1,0 +1,145 @@
+.ani_txt {
+    position: relative;
+    padding-block: 70px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 150px;
+        height: 150px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url("../../assets/images/icon/ico_point.png") no-repeat center / cover;
+        z-index: 0;
+        filter: invert(0.5);
+        opacity: 0.2;
+    }
+
+    .text-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        z-index: 1;
+
+        h1 {
+            font-size: 18px;
+            font-weight: bold;
+            flex-direction: column; // 줄마다 세로 정렬
+            white-space: pre-wrap; // 줄바꿈과 띄어쓰기 유지
+            text-align: center;
+            line-height: 1.5;
+
+            span {
+                color: #888; // 기본 회색
+                transition: color 0.2s ease;
+            }
+        }
+    }
+}
+
+.sub_banner {
+    position: relative;
+    width: 100%;
+    height: 140px;
+
+    @include media-breakpoint-up(md) {
+        height: 250px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        z-index: 0;
+    }
+
+    .txt_con {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        .t1 {
+            font: {
+                size: 1.5rem;
+                weight: 700;
+            }
+
+            color: #fff;
+
+            @include media-breakpoint-up(md) {
+                font: {
+                    size: 36px;
+                }
+            }
+        }
+    }
+
+    &.review_banner {
+        background: url("../../assets/images/img/img_review_banner.jpg") no-repeat center / cover;
+    }
+}
+
+.about {
+    flex-direction: column;
+    margin-block: 30px 100px;
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 30px;
+        margin-block: 100px 30px;
+    }
+
+    .txt_con {
+        flex: 2;
+
+        .sub_tit {
+            margin-bottom: 30px;
+
+            font: {
+                size: 24px;
+                weight: 700;
+            }
+        }
+
+        .t1 {
+            margin-bottom: 15px;
+
+            font: {
+                size: 16px;
+                weight: 400;
+            }
+
+            line-height: 1.4;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .img_con {
+        flex: 1;
+        display: none;
+
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

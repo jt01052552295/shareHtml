@@ -1,0 +1,105 @@
+@@include('partials/html-start.html', { "title": "브레인톡톡" })
+<header class="header_menu type_sub">
+    <div class="left_area">
+        <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
+            <img src="@@imgPath/ico/ico_back_arr.png" alt="">
+        </button>
+        <button class="btn_icon btn_home" type="button" aria-label="홈" onclick="location.href='index.html'">
+            <img src="@@imgPath/ico/ico_hd_home.png" alt="">
+        </button>
+    </div>
+    <p class="page_title">브레인톡톡</p>
+    <div class="right_area">
+        <button class="btn_icon btn_menu" type="button" aria-label="메뉴">
+            <img src="@@imgPath/ico/ico_hd_menu.png" alt="">
+        </button>
+    </div>
+</header>
+<div class="contents">
+    <div class="page-wrap pt-50">
+        <div class="inner ">
+            <div class="ani_txt">
+                <div class="text-container">
+                    <h1 id="animated-text">브레인톡톡은 언어 발달과 소통 능력을 위해 <br>전문 언어치료를 제공하는 치료센터입니다.</h1>
+                </div>
+            </div>
+
+            <div class="about">
+                <div class="txt_con">
+                    <p class="sub_tit">늘 환자의 회복을<br> 먼저 생각하는 <span class="point">브레인 톡톡</span></p>
+                    <p class="t1">언어재활을 통해 환자분들의 삶에 긍정적인 변화를 만들어갑니다.
+                        저희는 단순한 치료가 아닌, 환자 한 분 한 분의 일상과 행복을 회복시키는 것을 최우선으로 합니다.</p>
+                    <p class="t1">브레인 톡톡은 체계적이고 맞춤형 언어재활 프로그램을 제공합니다.
+                        전문 언어치료사들이 환자의 상태를 세밀하게 분석하고, 작은 발음 하나부터 정확한 소통 능력까지 단계별로 개선할 수 있도록 지원합니다.
+                        이를 통해 언어장애로 인한 불편을 최소화하고, 자신감 있는 소통이 가능하도록 돕습니다.</p>
+                    <p class="t1">환자분들은 저희와 함께하면서 단순히 언어 능력을 회복하는 것을 넘어, 일상 속 즐거움과 자신감을 되찾습니다.
+                        작은 성취 하나하나가 큰 변화를 만들며, 환자와 가족 모두가 느낄 수 있는 생활 속 행복으로 이어집니다.</p>
+                    <p class="t1">브레인 톡톡은 앞으로도 환자 중심의 혁신적인 언어재활 서비스를 제공하며, 모든 사람이 자유롭게 소통하고 즐거운 일상을 누릴 수 있는 세상을 만들기 위해
+                        노력합니다.
+                        정성을 다한 치료와 세심한 관심으로, 환자분들의 회복 여정에 함께하는 든든한 동반자가 되겠습니다.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<nav class="ft_nav">
+    <ul class="ft_menu">
+        <li class="menu">
+            <a href="/" class="link">
+                <div class="img_con home">
+                </div>
+                <p class="tit">홈</p>
+            </a>
+        </li>
+        <li class="menu">
+            <a href="javascript:void(0);" class="link">
+                <div class="img_con reser">
+                </div>
+                <p class="tit">예약</p>
+            </a>
+        </li>
+        <li class="menu on">
+            <a href="javascript:void(0);" class="link">
+                <div class="img_con self_test">
+                </div>
+                <p class="tit">자가진단</p>
+            </a>
+        </li>
+        <li class="menu">
+            <a href="javascript:void(0);" class="link">
+                <div class="img_con my_info">
+                </div>
+                <p class="tit">내정보</p>
+            </a>
+        </li>
+    </ul>
+</nav>
+<script>
+    const text = document.getElementById('animated-text');
+    const str = text.innerHTML;
+
+    // 줄바꿈(<br>) 기준으로 처리
+    const lines = str.split('<br>');
+
+    text.innerHTML = ''; // 초기화
+
+    lines.forEach(line => {
+        const lineDiv = document.createElement('div'); // 줄마다 div
+        line.split('').forEach(char => {
+            const span = document.createElement('span');
+            span.textContent = char === ' ' ? '\u00A0' : char; // 띄어쓰기 처리
+            lineDiv.appendChild(span);
+        });
+        text.appendChild(lineDiv);
+    });
+
+    const spans = text.querySelectorAll('span');
+
+    spans.forEach((span, index) => {
+        setTimeout(() => {
+            span.style.color = `#1b3d7b`;
+        }, index * 100);
+    });
+</script>

@@ -100,6 +100,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: end;
+                gap: 30px;
                 margin-top: 20px;
 
                 .career {
@@ -116,12 +117,13 @@
                 .opt_btn {
                     display: flex;
                     justify-content: space-between;
+                    flex-shrink: 0;
                     width: 60px;
 
                     .link {
                         &.share {
                             display: block;
-                            width: 24px;
+                            width: 26px;
 
                             img {
                                 width: 100%;
@@ -129,41 +131,6 @@
                         }
                     }
 
-                    .like_con {
-                        position: relative;
-
-                        #like {
-                            display: none;
-
-                            &:checked {
-                                &+.like_label {
-                                    &::before {
-                                        background: url('../../assets/images/ico/ico_like_on.png') no-repeat center/ cover;
-                                    }
-                                }
-                            }
-                        }
-
-                        .like_label {
-                            position: relative;
-                            display: block;
-                            width: 24px;
-                            height: 24px;
-                            cursor: pointer;
-
-                            &::before {
-                                content: '';
-                                position: absolute;
-                                display: block;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                                width: 24px;
-                                height: 24px;
-                                background: url('../../assets/images/ico/ico_like.png') no-repeat center/ cover;
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -229,6 +196,24 @@
             &.career {
                 &::before {
                     background: url('../../assets/images/ico/ico_school.png') no-repeat center/ cover;
+                }
+            }
+
+            &.action {
+                &::before {
+                    background: url('../../assets/images/ico/ico_nav_mypage.png') no-repeat center/ cover;
+                }
+            }
+
+            &.time {
+                &::before {
+                    background: url('../../assets/images/ico/ico_time_black.png') no-repeat center/ cover;
+                }
+            }
+
+            &.special {
+                &::before {
+                    background: url('../../assets/images/ico/ico_stethoscope.png') no-repeat center/ cover;
                 }
             }
         }
