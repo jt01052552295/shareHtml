@@ -11,6 +11,7 @@ const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const replace = require('gulp-replace');
 const fs = require('fs');
+const path = require('path');
 const dotenv = require('dotenv');
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -33,8 +34,8 @@ const assetsPath = '/assets/images'; // 로컬 이미지 경로
 // 경로 설정
 const paths = {
   html: {
-    src: ['src/**/*.html', '!src/partials/**'],
-    watch: ['src/**/*.html', 'src/partials/**/*.html'],
+    src: ['src/**/*.html', '!src/include/**'],
+    watch: ['src/**/*.html', 'src/include/**/*.html'],
     dest: 'dist'
   },
   css: {
@@ -57,7 +58,7 @@ const paths = {
     src: [
       'src/**/*',
       '!src/**/*.html',
-      '!src/partials/**',
+      '!src/include/**',
       '!src/assets/scss/**',
       '!src/assets/js/**',
       '!src/assets/css/**'
@@ -80,13 +81,87 @@ function clean(done) {
   done(); // 작업 완료를 알림
 }
 
+// 파일 목록 생성 (link.html)
+function makeFileList(done) {
+  const startPath = 'src';
+  let fileList = [];
+
+  function walkDir(dir, relativePath = '') {
+    if (!fs.existsSync(dir)) return;
+    
+    const files = fs.readdirSync(dir);
+    files.forEach(file => {
+      const filePath = path.join(dir, file);
+      const stat = fs.statSync(filePath);
+      
+      if (stat.isDirectory()) {
+        if (file !== 'include' && file !== 'assets' && file !== 'fonts') { // 제외할 폴더
+             walkDir(filePath, path.join(relativePath, file));
+        }
+      } else {
+        if (file.endsWith('.html') && file !== 'link.html') { // link.html 제외
+           fileList.push(path.join(relativePath, file).replace(/\\/g, '/'));
+        }
+      }
+    });
+  }
+
+  try {
+    walkDir(startPath);
+  } catch (e) {
+    console.error('파일 목록 생성 중 오류:', e);
+  }
+
+  const listHtml = fileList.map(f => {
+      return `
+      <div class="col-12 col-md-6 col-lg-4 mb-3">
+        <a href="${f}" target="_blank" class="card h-100 text-decoration-none text-dark shadow-sm hover-shadow transition">
+            <div class="card-body d-flex align-items-center">
+                <span class="badge bg-primary me-2">PAGE</span>
+                <span class="text-truncate w-100" title="${f}">${f}</span>
+            </div>
+        </a>
+      </div>`;
+  }).join('\n');
+
+  const template = `<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼블리싱 파일 목록</title>
+    <link rel="stylesheet" href="${templateData.cssPath}/bootstrap.min.css" />
+    <link rel="stylesheet" href="${templateData.cssPath}/style.css">
+    <style>
+        .hover-shadow:hover { box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; transform: translateY(-2px); }
+        .transition { transition: all 0.2s; }
+    </style>
+</head>
+<body>
+<main class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+        <h1 class="h3 m-0">퍼블리싱 파일 목록</h1>
+        <span class="badge bg-secondary">${fileList.length} files</span>
+    </div>
+    <div class="row">
+        ${listHtml}
+    </div>
+</main>
+</body>
+</html>`;
+
+  fs.writeFileSync('src/link.html', template);
+  console.log('✅ src/link.html 파일 목록 생성 완료');
+  done();
+}
+
 // HTML 빌드 (file-include + 템플릿 변수)
 function html() {
   return src(paths.html.src)
     .pipe(
       fileInclude({
         prefix: '@@',
-        basepath: '@file',
+        basepath: 'src',
         context: templateData
       })
     )
@@ -163,7 +238,7 @@ function serve() {
 }
 
 // 전체 작업 정의
-exports.default = series(clean, parallel(html, css, scss, js, copyStatic), serve);
+exports.default = series(clean, makeFileList, parallel(html, css, scss, js, copyStatic), serve);
 
 // 빌드만 실행 (서버 실행 없이)
-exports.build = series(clean, parallel(html, css, scss, js, copyStatic));
+exports.build = series(clean, makeFileList, parallel(html, css, scss, js, copyStatic));

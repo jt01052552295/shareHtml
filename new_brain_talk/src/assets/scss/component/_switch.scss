@@ -7,11 +7,10 @@
 
         &:checked {
             &+.switch_label {
-                background-color: var(--main-color);
+                background-color: var(--brown-color);
 
                 &::before {
                     left: calc(100% - 23px);
-                    background-color: #fff;
                 }
             }
         }

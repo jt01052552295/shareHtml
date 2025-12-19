@@ -1,0 +1,51 @@
+.event {
+  .box {
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: #fff;
+
+    .search_con {}
+  }
+
+  .btn-group {
+    gap: 4px;
+    padding-block: 20px;
+  }
+
+  .event_list {
+    .list {
+      .link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding-block: 24px;
+        border-bottom: 1px solid var(--border-color);
+
+        .txt_con {
+          .tit {
+            margin-bottom: 7px;
+
+            font: {
+              size: 16px;
+              weight: 500;
+            }
+          }
+
+          .date {
+            font: {
+              size: 14px;
+              weight: 400;
+            }
+
+            color: var(--gray-color);
+          }
+        }
+
+        .btn {
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@@include('partials/html-start.html', { "title": "예약내역" })
+@@include('include/html-start.html', { "title": "예약내역" })
 <header class="header_menu type_sub">
     <div class="left_area">
         <button class="btn_icon btn_back" type="button" aria-label="뒤로가기" onclick="history.back()">
@@ -38,64 +38,64 @@
 
             <ul class="reser_list_con">
                 <li class="list">
-                    <a href="rehabilitator.html" class="link">
-                        <div class="img_con">
-                            <img src="@@imgPath/logo/logo_thumb_yellow.png" alt="" class="img">
-                        </div>
-                        <div class="txt_con">
+                    <div class="img_con">
+                        <img src="@@imgPath/logo/logo_thumb_yellow.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <a href="reser_detail.html" class="link">
                             <div class="class_name">
                                 <p class="pill_badge">언어치료</p>
                                 <p class="name">이솜</p>
                             </div>
-                            <p class="career">부산 가톨릭 대학교 언어재학과 졸업</p>
-                            <div class="cash_list" onclick="location.href=`cash_list.html`">결제내역</div>
-                        </div>
-                    </a>
+                            <p class="career">부산 가톨릭 대학교 <br>언어재학과 졸업</p>
+                        </a>
+                        <a href="cash_list.html" class="cash_list">결제내역</a>
+                    </div>
                 </li>
                 <li class="list">
-                    <a href="rehabilitator.html" class="link">
-                        <div class="img_con">
-                            <img src="@@imgPath/logo/logo_thumb_yellow.png" alt="" class="img">
-                        </div>
-                        <div class="txt_con">
+                    <div class="img_con">
+                        <img src="@@imgPath/logo/logo_thumb_yellow.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <a href="reser_detail.html" class="link">
                             <div class="class_name">
                                 <p class="pill_badge">언어치료</p>
                                 <p class="name">이솜</p>
                             </div>
-                            <p class="career">부산 가톨릭 대학교 언어재학과 졸업</p>
-                            <div class="cash_list" onclick="location.href=`cash_list.html`">결제내역</div>
-                        </div>
-                    </a>
+                            <p class="career">부산 가톨릭 대학교 <br>언어재학과 졸업</p>
+                        </a>
+                        <a href="cash_list.html" class="cash_list">결제내역</a>
+                    </div>
                 </li>
                 <li class="list">
-                    <a href="rehabilitator.html" class="link">
-                        <div class="img_con">
-                            <img src="@@imgPath/logo/logo_thumb_yellow.png" alt="" class="img">
-                        </div>
-                        <div class="txt_con">
+                    <div class="img_con">
+                        <img src="@@imgPath/logo/logo_thumb_yellow.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <a href="reser_detail.html" class="link">
                             <div class="class_name">
                                 <p class="pill_badge">언어치료</p>
                                 <p class="name">이솜</p>
                             </div>
-                            <p class="career">부산 가톨릭 대학교 언어재학과 졸업</p>
-                            <div class="cash_list" onclick="location.href=`cash_list.html`">결제내역</div>
-                        </div>
-                    </a>
+                            <p class="career">부산 가톨릭 대학교 <br>언어재학과 졸업</p>
+                        </a>
+                        <a href="cash_list.html" class="cash_list">결제내역</a>
+                    </div>
                 </li>
                 <li class="list">
-                    <a href="rehabilitator.html" class="link">
-                        <div class="img_con">
-                            <img src="@@imgPath/logo/logo_thumb_yellow.png" alt="" class="img">
-                        </div>
-                        <div class="txt_con">
+                    <div class="img_con">
+                        <img src="@@imgPath/logo/logo_thumb_yellow.png" alt="" class="img">
+                    </div>
+                    <div class="txt_con">
+                        <a href="reser_detail.html" class="link">
                             <div class="class_name">
                                 <p class="pill_badge">언어치료</p>
                                 <p class="name">이솜</p>
                             </div>
-                            <p class="career">부산 가톨릭 대학교 언어재학과 졸업</p>
-                            <div class="cash_list" onclick="location.href=`cash_list.html`">결제내역</div>
-                        </div>
-                    </a>
+                            <p class="career">부산 가톨릭 대학교 <br>언어재학과 졸업</p>
+                        </a>
+                        <a href="cash_list.html" class="cash_list">결제내역</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -108,28 +108,28 @@
             <a href="/" class="link">
                 <div class="img_con home">
                 </div>
-                <p class="txt">홈</p>
-            </a>
-        </li>
-        <li class="menu on">
-            <a href="javascript:void(0);" class="link">
-                <div class="img_con reservation">
-                </div>
-                <p class="txt">예약</p>
+                <p class="tit">홈</p>
             </a>
         </li>
         <li class="menu">
             <a href="javascript:void(0);" class="link">
+                <div class="img_con reser">
+                </div>
+                <p class="tit">예약</p>
+            </a>
+        </li>
+        <li class="menu on">
+            <a href="javascript:void(0);" class="link">
                 <div class="img_con self_test">
                 </div>
-                <p class="txt">자가진단</p>
+                <p class="tit">자가진단</p>
             </a>
         </li>
         <li class="menu">
             <a href="javascript:void(0);" class="link">
                 <div class="img_con my_info">
                 </div>
-                <p class="txt">내정보</p>
+                <p class="tit">내정보</p>
             </a>
         </li>
     </ul>
@@ -146,4 +146,4 @@
 
 </script>
 
-@@include('partials/html-end.html')
+@@include('include/html-end.html')

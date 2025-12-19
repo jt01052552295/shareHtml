@@ -1,0 +1,423 @@
+.rate_setting {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  .list {
+    width: calc((100% - 5px) / 2);
+    margin-top: 25px;
+
+    .tit {
+      margin-bottom: 10px;
+
+      font: {
+        size: 18px;
+        weight: 700;
+      }
+    }
+
+    .star_con {
+      display: flex;
+      gap: 4px;
+
+      .star {
+        width: 27px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.form-group {
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px 0;
+
+  .box {
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    &:has(textarea:focus) {
+      border: 2px solid #333;
+    }
+
+    .form-textarea {
+      width: 100%;
+      min-height: 225px;
+      border: none;
+      outline: none;
+
+      font: {
+        size: 16px;
+        weight: 400;
+      }
+
+      resize: none;
+
+      // textarea 자체에는 focus 효과 없음
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .char-count {
+      text-align: right;
+
+      font: {
+        size: 14px;
+        weight: 400;
+      }
+
+      color: #a2a2a2;
+      margin-top: 3px;
+    }
+  }
+}
+
+// 리뷰전체보기
+.review_avg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f7f8fa;
+
+  .company_profile {
+    flex-shrink: 0;
+    margin-bottom: 20px;
+
+    .thumb_con {
+      margin-bottom: 20px;
+
+      .img_con {
+        .img_thumb {}
+      }
+    }
+
+    .txt_con {
+      text-align: center;
+
+      .name {
+        font: {
+          size: 24px;
+          weight: 700;
+        }
+      }
+    }
+  }
+
+  .avg_num {
+    position: relative;
+    width: 35%;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 100px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background-color: var(--gray1);
+    }
+
+    .avg {
+      font: {
+        size: 36px;
+        weight: 500;
+      }
+    }
+
+    .star_con {
+      display: flex;
+      justify-content: center;
+      gap: 2px;
+
+      .list {
+        width: 12px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .rating-graph {
+    width: 60%;
+
+    .rating-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .rating-label {
+        width: 23px;
+        margin-right: 10px;
+        color: var(--gray-color);
+
+        font: {
+          size: 14px;
+          weight: 500;
+        }
+
+        &.active {
+          color: var(--main-color);
+          font-weight: 600;
+        }
+      }
+
+      .rating-bar {
+        flex-grow: 1;
+        margin-right: 8px;
+
+        .progress {
+          height: 6px;
+          background-color: #e6e6e6;
+          border-radius: 4px;
+          overflow: hidden;
+
+          .progress-bar {
+            background-color: var(--main-color); // 활성 바 색상
+            border-radius: 15px;
+          }
+        }
+      }
+
+      .rating-count {
+        width: 30px;
+        margin-left: 10px;
+        text-align: left;
+        color: var(--gray1);
+
+        font: {
+          size: 14px;
+          weight: 500;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+
+    .avg_num {
+      width: 100%;
+      margin-bottom: 30px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .rating-graph {
+      width: 100%;
+    }
+  }
+}
+
+.review_all {
+  .review {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--gray1);
+
+    .thumb_nail {
+      align-items: center;
+
+      .info_con {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+
+        .img_con {
+          width: 50px;
+          height: 50px;
+
+          .img {}
+        }
+
+        .txt_con {
+          .name {}
+
+          .star_con {
+            display: flex;
+
+            .list {
+              img {
+                width: 15px;
+              }
+            }
+          }
+
+          .date {
+            margin-top: 3px;
+            margin-left: 5px;
+
+            font: {
+              size: 12px;
+              weight: 500;
+            }
+
+            color: var(--gray1);
+          }
+        }
+      }
+    }
+
+    .review_img {
+      display: flex;
+      gap: 5px;
+      margin-top: 15px;
+
+      .list {
+        flex-shrink: 0;
+        width: calc((100% - 15px) / 4);
+      }
+    }
+
+    .desc_con {
+      margin-top: 15px;
+
+      .desc {
+        font: {
+          size: 14px;
+          weight: 500;
+        }
+
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.counselor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .left_box {
+    flex-shrink: 0;
+
+    .thumb_con {
+      margin-bottom: 20px;
+
+      .img_con {
+        .img_thumb {}
+      }
+    }
+
+    .txt_con {
+      .name {
+        font: {
+          size: 24px;
+          weight: 700;
+        }
+      }
+
+      .rating {
+        padding-left: 10px;
+
+        .rate {
+          position: relative;
+          padding-left: 30px;
+
+          font: {
+            size: 24px;
+            weight: 700;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 25px;
+            height: 25px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: url("../../assets/images/icon/ico_rate_star.png") no-repeat center / cover;
+          }
+
+          span {
+            font: {
+              size: 16px;
+              weight: 500;
+            }
+
+            color: #b2b2b2;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+.thumb_con {
+  .img_con {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .img_thumb {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.thumb_nail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  .img_con {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .txt_con {
+    .name {
+      font: {
+        size: 16px;
+        weight: 700;
+      }
+    }
+  }
+}
